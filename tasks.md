@@ -18,7 +18,7 @@ Execution rule:
 
 - [x] `T01` Audit 2-4 real RSS briefing files and record exact section patterns.
   Acceptance: documented section names, repeated patterns, and edge cases for RSS inputs.
-- [ ] `T02` Audit 2-4 real X briefing files and record exact section patterns.
+- [x] `T02` Audit 2-4 real X briefing files and record exact section patterns.
   Acceptance: documented section names, repeated patterns, and edge cases for X inputs.
 - [ ] `T03` Decide the v1 normalized field mapping from raw sections to `Insight`.
   Acceptance: every target field has a source rule or explicit `optional` decision.

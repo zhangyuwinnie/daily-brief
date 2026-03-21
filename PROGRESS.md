@@ -234,13 +234,24 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - single-entry days, high-cardinality days, and trailing footer prose
 - Locked one concrete parser lesson for Batch 2:
   - split RSS entries by H2 insight headings, not by `---`
+- Completed `T02` and created `plans/task-plans/T02_plan.md`.
+- Added `plans/input-audits/x-briefing-v1-audit.md` after auditing all 21 X-style briefing files and deep-reading representative normal and variant samples.
+- Confirmed the X format is structurally different from RSS:
+  - it is a day-level aggregate briefing, not a repeated per-entry article list
+  - the core shape is section-based with `今日3条要点`, grouped tweet buckets, actions, scores, and an optional source-link index
+- Recorded concrete X parser edge cases already present upstream:
+  - `原帖链接索引` is optional
+  - some curated subsections are missing in real files
+  - bullet syntax varies across plain handles, linked handles, multiple handles, and irregular indentation
+  - one curated bullet can cite multiple source posts
+- Locked one concrete parser lesson for Batch 2:
+  - the X parser should extract one structured day document first, then normalize bullets later
 
 ## Known Gaps / Risks
 
 - The most important architecture work has not started yet: parser + normalized data model.
 - Current TS types are thinner than the planned model.
-- Batch 1 is still incomplete after `T01`:
-  - X briefing audit is pending
+- Batch 1 is still incomplete after `T02`:
   - normalized schema decisions are pending
   - audio manifest and generated artifact layout are pending
 - Build queue state is ephemeral and will disappear on refresh.
@@ -269,7 +280,7 @@ Build the real data foundation before any more UI expansion.
 Recommended next batch:
 
 1. Execute `Batch 1` from `tasks.md`.
-2. Finish the remaining Batch 1 contract work in order, starting with the X briefing audit.
+2. Use the completed RSS and X audits to lock the normalized schema next.
 3. Lock the v1 normalized schema for:
    - `Insight`
    - `DailyAudio`
@@ -281,9 +292,9 @@ Recommended next batch:
 
 The next concrete thing to do is:
 
-1. Execute `T02` and audit 2-4 real X briefing files from `/Users/yuzhang/.openclaw/workspace/briefings/`.
-2. Document the exact section patterns for the X format in a matching audit doc.
-3. Use both audit docs to complete `T03` through `T05`.
+1. Execute `T03` and decide the v1 normalized field mapping from RSS sections and X briefing sections into `Insight`.
+2. Use both audit docs to make explicit `required`, `derived`, and `optional` decisions for every target field.
+3. Then execute `T04` and `T05` to lock the audio manifest contract and generated artifact layout.
 4. Keep audio work at the metadata-contract level until real audio artifacts exist.
 
 Expected deliverables for that batch:
@@ -329,6 +340,8 @@ Once the parser path works:
 - 2026-03-21: added a first-principles guidance block to all `AGENTS.md` generation templates and the current repo `AGENTS.md`.
 - 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
+- 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.
+- 2026-03-21: `npm run build` passed after the `T02` planning and audit documentation updates using Node `v22.17.1`.
 
 ## Update Rule
 
