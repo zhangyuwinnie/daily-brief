@@ -60,7 +60,7 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 1 input/schema audit in progress`
+Overall status: `frontend prototype working, Batch 1 contracts and model alignment complete`
 
 Implemented:
 
@@ -258,15 +258,39 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - `isTopSignal` is derived deterministically from normalized source order, not a fabricated per-item score
 - Captured one key lesson for the next implementation tasks:
   - do not hide missing upstream structure behind aggressive heuristics; preserve optionality where the source is genuinely weak
+- Completed `T04` and created `plans/task-plans/T04_plan.md`.
+- Added `plans/data-contracts/daily-audio-v1-manifest.md` to lock one day-keyed `DailyAudio` record per date, with explicit `pending`, `ready`, and `failed` validation rules that work even before real audio files exist.
+- Completed `T05` and created `plans/task-plans/T05_plan.md`.
+- Added `plans/data-contracts/generated-artifact-layout-v1.md` to lock:
+  - JSON artifacts under `src/generated/`
+  - `briefings-index.json`, `briefings-by-date.json`, and `audio-index.json` as the required writer outputs
+  - static audio binaries under `public/generated/audio/`
+- Completed `T06` and created `plans/task-plans/T06_plan.md`.
+- Replaced the thin prototype model in `src/types/models.ts` with the v1-aligned contracts for:
+  - `BriefingRecord`
+  - `Insight`
+  - `DailyAudio`
+  - `InsightState`
+  - `DailyBriefPageData`
+- Updated the mock-driven UI to compile against the new contracts without pretending parser-enriched data already exists:
+  - `takeaway` -> `take`
+  - `source` -> `sourceLabel` / `sourceType`
+  - `effort` -> optional `effortEstimate`
+  - `isTopPick` -> `isTopSignal`
+  - `DailyAudio` now uses `briefingDate`, `durationSec`, and enum-backed `provider`
+- Added graceful UI fallbacks where the locked v1 contract intentionally leaves fields optional:
+  - build idea fallback text
+  - effort fallback text
+  - disabled non-ready audio playback state
 
 ## Known Gaps / Risks
 
-- The most important architecture work has not started yet: parser + normalized data model.
-- Current TS types are thinner than the planned model.
-- Batch 1 is still incomplete after `T03`:
-  - audio manifest and generated artifact layout are pending
-- The TypeScript model is now clearly misaligned with the locked v1 mapping:
-  - current `src/types/models.ts` still uses `source`, `takeaway`, and required fields that the audited sources do not reliably provide
+- The most important implementation work has not started yet: parser + normalizer + generated artifact writer.
+- Batch 1 is now complete, but the real data path still does not exist:
+  - no fixtures
+  - no parser tests
+  - no parser modules
+  - no generated JSON artifacts yet
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
 - Current upstream asset state is asymmetric:
@@ -292,22 +316,19 @@ Build the real data foundation before any more UI expansion.
 
 Recommended next batch:
 
-1. Execute `Batch 1` from `tasks.md`.
-2. Finish the remaining contract tasks in Batch 1 before changing runtime code.
-3. Lock the remaining contracts for:
-   - `Insight`
-   - `DailyAudio`
-   - `InsightState`
-4. Lock the generated artifact shape and output location.
-5. Do not start UI refactors until the parser contract is agreed.
+1. Start `Batch 2` from `tasks.md`.
+2. Create sanitized fixtures for both RSS and X formats.
+3. Add parser tests before parser implementation.
+4. Implement parser + normalizer against the now-locked contracts.
+5. Do not start more UI expansion until generated real data exists.
 
 ## Immediate Next To Do
 
 The next concrete thing to do is:
 
-1. Execute `T04` and decide the v1 audio metadata manifest shape without assuming audio files already exist.
-2. Execute `T05` and lock the generated artifact layout, preferably in a way that matches the now-locked `Insight` mapping.
-3. Then execute `T06` to align `src/types/models.ts` with the agreed v1 contracts.
+1. Execute `T07` and create sanitized RSS parser fixtures from the real samples already audited.
+2. Execute `T08` and create sanitized X parser fixtures that preserve the key section and bullet variants.
+3. Execute `T09` and `T10` to lock parser behavior with tests before implementation.
 4. Keep audio work at the metadata-contract level until real audio artifacts exist.
 
 Expected deliverables for that batch:
@@ -357,6 +378,10 @@ Once the parser path works:
 - 2026-03-21: `npm run build` passed after the `T02` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T03` by locking the v1 `Insight` field mapping and source-specific normalization rules in `plans/data-contracts/insight-v1-field-mapping.md`.
 - 2026-03-21: `npm run build` passed after the `T03` mapping-contract documentation updates using Node `v22.17.1`.
+- 2026-03-21: completed `T04` by locking the `DailyAudio` manifest contract in `plans/data-contracts/daily-audio-v1-manifest.md`.
+- 2026-03-21: completed `T05` by locking the generated artifact layout in `plans/data-contracts/generated-artifact-layout-v1.md`.
+- 2026-03-21: completed `T06` by aligning `src/types/models.ts` and the current mock-driven UI with the locked v1 contracts.
+- 2026-03-21: `npm run build` passed after completing `T04` through `T06` using Node `v22.17.1`.
 
 ## Update Rule
 

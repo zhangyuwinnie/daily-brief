@@ -7,6 +7,9 @@ type BuildItemCardProps = {
 };
 
 export function BuildItemCard({ item, onUpdateStatus }: BuildItemCardProps) {
+  const buildIdea = item.insight.buildIdea ?? item.insight.take;
+  const effortEstimate = item.insight.effortEstimate ?? "TBD";
+
   return (
     <article
       className={`group relative overflow-hidden rounded-2xl border bg-white p-4 shadow-sm transition-colors hover:border-[#cbebb2] ${
@@ -31,7 +34,7 @@ export function BuildItemCard({ item, onUpdateStatus }: BuildItemCardProps) {
       </div>
 
       <h4 className="mb-1 line-clamp-2 pl-1 text-sm font-bold leading-tight text-slate-800">
-        {item.insight.buildIdea}
+        {buildIdea}
       </h4>
       <p className="mb-3 line-clamp-1 pl-1 text-xs text-slate-500">From: {item.insight.title}</p>
 
@@ -47,7 +50,7 @@ export function BuildItemCard({ item, onUpdateStatus }: BuildItemCardProps) {
       <div className="mt-3 flex items-center justify-between gap-3 border-t border-slate-50 pt-3 pl-1">
         <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400">
           <Clock className="h-3 w-3" />
-          {item.insight.effort}
+          {effortEstimate}
         </div>
 
         <select
@@ -62,6 +65,7 @@ export function BuildItemCard({ item, onUpdateStatus }: BuildItemCardProps) {
           }`}
         >
           <option value="Inbox">Inbox</option>
+          <option value="Interested">Interested</option>
           <option value="Building">Building</option>
           <option value="Learned">Learned</option>
           <option value="Archived">Archived</option>

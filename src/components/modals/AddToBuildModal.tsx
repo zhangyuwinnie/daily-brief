@@ -28,6 +28,8 @@ export function AddToBuildModal({
     return null;
   }
 
+  const buildIdea = activeInsight.buildIdea ?? activeInsight.take;
+
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center p-3 sm:items-center sm:p-4">
       <button
@@ -40,7 +42,7 @@ export function AddToBuildModal({
       <div className="relative z-10 w-full max-w-lg rounded-[2rem] border border-slate-100 bg-white p-6 shadow-2xl sm:p-8">
         <h3 className="mb-2 text-2xl font-black text-slate-800">Add to Build Queue</h3>
         <p className="mb-6 line-clamp-2 border-l-2 border-brand-500 pl-2 text-sm text-slate-500">
-          {activeInsight.buildIdea}
+          {buildIdea}
         </p>
 
         <div className="flex flex-col gap-5">

@@ -1,28 +1,71 @@
 export type SkillFocus = "agents" | "evals" | "rag" | "tooling" | "security";
+export type EffortEstimate = "30m" | "2h" | "weekend";
+export type SourceType = "rss" | "x";
+export type AudioStatus = "pending" | "ready" | "failed";
+export type AudioProvider = "notebooklm" | "manual";
+
+export type BriefingRecord = {
+  id: string;
+  date: string;
+  sourceType: SourceType;
+  title: string;
+  filePath: string;
+  summaryTopline?: string;
+  insightIds: string[];
+};
 
 export type Insight = {
   id: string;
+  briefingId: string;
   date: string;
-  source: string;
+  sourceType: SourceType;
+  sourceLabel: string;
+  sourceName?: string;
+  sourceUrl?: string;
   title: string;
   summary: string;
-  takeaway: string;
-  buildIdea: string;
-  effort: "30m" | "2h" | "weekend";
+  take: string;
+  whyItMatters?: string;
+  buildIdea?: string;
+  learnGoal?: string;
   topics: string[];
-  skillFocus: SkillFocus;
-  isTopPick?: boolean;
+  entities: string[];
+  signalScore?: number;
+  effortEstimate?: EffortEstimate;
+  isTopSignal: boolean;
 };
 
 export type DailyAudio = {
   id: string;
-  date: string;
-  status: "pending" | "ready" | "failed";
-  duration: string;
-  provider: string;
+  briefingDate: string;
+  status: AudioStatus;
+  provider: AudioProvider;
+  title?: string;
+  audioUrl?: string;
+  durationSec?: number;
+  transcript?: string;
+  errorMessage?: string;
+  createdAt?: string;
+  updatedAt?: string;
 };
 
-export type BuildStatus = "Inbox" | "Building" | "Learned" | "Archived";
+export type InsightState = {
+  insightId: string;
+  status: "Inbox" | "Interested" | "Building" | "Learned" | "Archived";
+  note?: string;
+  personalTakeaway?: string;
+  lastTouchedAt: string;
+};
+
+export type DailyBriefPageData = {
+  date: string;
+  availableDates: string[];
+  briefings: BriefingRecord[];
+  insights: Insight[];
+  audio?: DailyAudio;
+};
+
+export type BuildStatus = InsightState["status"];
 
 export type BuildItem = {
   id: string;

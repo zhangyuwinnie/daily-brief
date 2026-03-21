@@ -22,11 +22,11 @@ Execution rule:
   Acceptance: documented section names, repeated patterns, and edge cases for X inputs.
 - [x] `T03` Decide the v1 normalized field mapping from raw sections to `Insight`.
   Acceptance: every target field has a source rule or explicit `optional` decision.
-- [ ] `T04` Decide the v1 audio metadata manifest shape.
+- [x] `T04` Decide the v1 audio metadata manifest shape.
   Acceptance: fields for status, url, duration, provider, and failure reason are specified.
-- [ ] `T05` Decide the generated artifact layout.
+- [x] `T05` Decide the generated artifact layout.
   Acceptance: exact file names and whether output lives under `src/generated/` or `public/generated/` are locked.
-- [ ] `T06` Expand `src/types/models.ts` or replace it with the v1 normalized model.
+- [x] `T06` Expand `src/types/models.ts` or replace it with the v1 normalized model.
   Depends on: `T03`, `T04`
   Acceptance: `Insight`, `DailyAudio`, `InsightState`, and page-level loader types compile.
 

@@ -6,6 +6,28 @@ import { MOCK_INSIGHTS } from "../data/mockInsights";
 import type { AppOutletContext } from "./outlet-context";
 import type { BuildItem, BuildStatus, Insight, SkillFocus } from "../types/models";
 
+function inferSkillFocus(insight: Insight): SkillFocus {
+  const normalizedTopics = insight.topics.map((topic) => topic.toLowerCase());
+
+  if (normalizedTopics.includes("security")) {
+    return "security";
+  }
+
+  if (normalizedTopics.includes("evals")) {
+    return "evals";
+  }
+
+  if (normalizedTopics.includes("rag") || normalizedTopics.includes("retrieval")) {
+    return "rag";
+  }
+
+  if (normalizedTopics.includes("tooling")) {
+    return "tooling";
+  }
+
+  return "agents";
+}
+
 export function App() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -25,7 +47,7 @@ export function App() {
 
   const handleOpenModal = (insight: Insight) => {
     setActiveInsight(insight);
-    setModalSkill(insight.skillFocus);
+    setModalSkill(inferSkillFocus(insight));
     setModalNote("");
     setIsModalOpen(true);
   };

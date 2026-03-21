@@ -60,7 +60,7 @@ export function InsightSharePage() {
           </h4>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 w-1 rounded-full bg-brand-500" />
-            <p className="pl-4 text-lg italic text-slate-600">&quot;{selectedInsight.takeaway}&quot;</p>
+            <p className="pl-4 text-lg italic text-slate-600">&quot;{selectedInsight.take}&quot;</p>
           </div>
         </section>
 

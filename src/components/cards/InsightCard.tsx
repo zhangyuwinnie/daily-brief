@@ -8,9 +8,12 @@ type InsightCardProps = {
 };
 
 export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
+  const buildIdea = insight.buildIdea ?? "Explore this signal and turn it into a concrete build.";
+  const effortEstimate = insight.effortEstimate ?? "TBD";
+
   return (
     <article className="group relative rounded-card border border-white/80 bg-white/70 p-5 shadow-soft backdrop-blur-md transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-6">
-      {insight.isTopPick ? (
+      {insight.isTopSignal ? (
         <div className="absolute -right-2 -top-2 z-10 flex items-center gap-1 rounded-full border border-white bg-gradient-to-r from-[#8bd84a] to-[#a2ea5c] px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-slate-900 shadow-md animate-pulse-slow sm:-right-3 sm:-top-3">
           <Sparkles className="h-3 w-3" />
           Top Pick
@@ -20,7 +23,7 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span className="rounded-lg border border-slate-100 bg-white px-2.5 py-1 text-[10px] font-black uppercase text-slate-500 shadow-sm">
-            {insight.source}
+            {insight.sourceLabel}
           </span>
           <span className="text-xs font-medium text-slate-400">{insight.date}</span>
         </div>
@@ -37,7 +40,7 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
           <h4 className="mb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             Takeaway
           </h4>
-          <p className="text-sm font-medium text-slate-700">{insight.takeaway}</p>
+          <p className="text-sm font-medium text-slate-700">{insight.take}</p>
         </section>
 
         <section className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[#cbebb2] bg-[#f2faed] p-4">
@@ -49,10 +52,10 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
             </h4>
             <div className="flex items-center gap-1 rounded bg-[#e3f4d7] px-2 py-0.5 text-[10px] font-bold text-[#629d31]">
               <Clock className="h-3 w-3" />
-              {insight.effort}
+              {effortEstimate}
             </div>
           </div>
-          <p className="text-sm font-semibold text-slate-800">{insight.buildIdea}</p>
+          <p className="text-sm font-semibold text-slate-800">{buildIdea}</p>
         </section>
       </div>
 
