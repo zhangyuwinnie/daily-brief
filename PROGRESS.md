@@ -246,14 +246,27 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - one curated bullet can cite multiple source posts
 - Locked one concrete parser lesson for Batch 2:
   - the X parser should extract one structured day document first, then normalize bullets later
+- Completed `T03` and created `plans/task-plans/T03_plan.md`.
+- Added `plans/data-contracts/insight-v1-field-mapping.md` to lock the v1 `Insight` contract against the audited inputs.
+- Locked the normalized content unit decision:
+  - RSS uses one article entry = one `Insight`
+  - X uses one curated bullet under `值得关注的推文` = one `Insight`
+  - X `今日3条要点` and `可执行动作` stay at the day level for now instead of being force-mapped into per-insight rows
+- Locked the v1 field policy:
+  - `title`, `summary`, and `take` must be recoverable for every normalized insight
+  - `whyItMatters`, `buildIdea`, `learnGoal`, `signalScore`, and `effortEstimate` remain explicitly optional in v1 parser output
+  - `isTopSignal` is derived deterministically from normalized source order, not a fabricated per-item score
+- Captured one key lesson for the next implementation tasks:
+  - do not hide missing upstream structure behind aggressive heuristics; preserve optionality where the source is genuinely weak
 
 ## Known Gaps / Risks
 
 - The most important architecture work has not started yet: parser + normalized data model.
 - Current TS types are thinner than the planned model.
-- Batch 1 is still incomplete after `T02`:
-  - normalized schema decisions are pending
+- Batch 1 is still incomplete after `T03`:
   - audio manifest and generated artifact layout are pending
+- The TypeScript model is now clearly misaligned with the locked v1 mapping:
+  - current `src/types/models.ts` still uses `source`, `takeaway`, and required fields that the audited sources do not reliably provide
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
 - Current upstream asset state is asymmetric:
@@ -280,8 +293,8 @@ Build the real data foundation before any more UI expansion.
 Recommended next batch:
 
 1. Execute `Batch 1` from `tasks.md`.
-2. Use the completed RSS and X audits to lock the normalized schema next.
-3. Lock the v1 normalized schema for:
+2. Finish the remaining contract tasks in Batch 1 before changing runtime code.
+3. Lock the remaining contracts for:
    - `Insight`
    - `DailyAudio`
    - `InsightState`
@@ -292,9 +305,9 @@ Recommended next batch:
 
 The next concrete thing to do is:
 
-1. Execute `T03` and decide the v1 normalized field mapping from RSS sections and X briefing sections into `Insight`.
-2. Use both audit docs to make explicit `required`, `derived`, and `optional` decisions for every target field.
-3. Then execute `T04` and `T05` to lock the audio manifest contract and generated artifact layout.
+1. Execute `T04` and decide the v1 audio metadata manifest shape without assuming audio files already exist.
+2. Execute `T05` and lock the generated artifact layout, preferably in a way that matches the now-locked `Insight` mapping.
+3. Then execute `T06` to align `src/types/models.ts` with the agreed v1 contracts.
 4. Keep audio work at the metadata-contract level until real audio artifacts exist.
 
 Expected deliverables for that batch:
@@ -342,6 +355,8 @@ Once the parser path works:
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T02` planning and audit documentation updates using Node `v22.17.1`.
+- 2026-03-21: completed `T03` by locking the v1 `Insight` field mapping and source-specific normalization rules in `plans/data-contracts/insight-v1-field-mapping.md`.
+- 2026-03-21: `npm run build` passed after the `T03` mapping-contract documentation updates using Node `v22.17.1`.
 
 ## Update Rule
 
