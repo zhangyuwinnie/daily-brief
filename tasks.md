@@ -1,6 +1,6 @@
 # Daily Brief MVP Tasks
 
-Last updated: 2026-03-20
+Last updated: 2026-03-21
 Source docs:
 
 - `plans/mvp-prd.md`
@@ -16,7 +16,7 @@ Execution rule:
 
 ## Batch 1: Data Contract and Sample Audit
 
-- [ ] `T01` Audit 2-4 real RSS briefing files and record exact section patterns.
+- [x] `T01` Audit 2-4 real RSS briefing files and record exact section patterns.
   Acceptance: documented section names, repeated patterns, and edge cases for RSS inputs.
 - [ ] `T02` Audit 2-4 real X briefing files and record exact section patterns.
   Acceptance: documented section names, repeated patterns, and edge cases for X inputs.
