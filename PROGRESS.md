@@ -1,6 +1,6 @@
 # Daily Brief Explore - Progress
 
-Last updated: 2026-03-20
+Last updated: 2026-03-21
 
 ## Project Snapshot
 
@@ -60,7 +60,7 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, data layer not started`
+Overall status: `frontend prototype working, Batch 1 input/schema audit in progress`
 
 Implemented:
 
@@ -198,6 +198,14 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - preferring Node `v22.17.1` if the default local Node install is broken
 - Standardized the repo on `PROGRESS.md` instead of `progress.md` and updated current docs, scripts, templates, and skill references to match.
 - Initialized git for this repo and added a basic `.gitignore` for Node/Vite artifacts.
+- Added a second reusable skill bundle in `skills/task-driven-project-bootstrap/` for heavier project setup that includes:
+  - `AGENTS.md`
+  - `PROGRESS.md`
+  - `tasks.md`
+  - continue-task behavior
+  - task planning / verification workflow
+- Clarified that `skills/project-tracking-bootstrap/` remains the lightweight tracking bootstrap and should not be used when the user wants the fuller task-driven execution protocol.
+- Added a reusable first-principles guidance block to the current repo `AGENTS.md` and to all bundled `AGENTS.md` generation templates so future generated projects inherit the same clarification-first behavior.
 
 ### Planning and execution docs
 
@@ -215,12 +223,31 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - acceptance criteria
   - suggested stop points
 
+### Batch 1 progress
+
+- Completed `T01` and created `plans/task-plans/T01_plan.md`.
+- Added `plans/input-audits/rss-briefing-v1-audit.md` after auditing 39 RSS-style briefing files and deep-reading 4 representative samples.
+- Confirmed the RSS parser must support both blockquote-inline and plain-bold multiline variants for `Chinese Summary` and `R2 Take`.
+- Recorded concrete parser edge cases already present upstream:
+  - automated fallback content such as `No summary available.` and `Matched keywords: ...`
+  - raw HTML / CSS noise inside summary bodies
+  - single-entry days, high-cardinality days, and trailing footer prose
+- Locked one concrete parser lesson for Batch 2:
+  - split RSS entries by H2 insight headings, not by `---`
+
 ## Known Gaps / Risks
 
 - The most important architecture work has not started yet: parser + normalized data model.
 - Current TS types are thinner than the planned model.
+- Batch 1 is still incomplete after `T01`:
+  - X briefing audit is pending
+  - normalized schema decisions are pending
+  - audio manifest and generated artifact layout are pending
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
+- Current upstream asset state is asymmetric:
+  - RSS briefings and X briefings are present in `/Users/yuzhang/.openclaw/workspace/briefings`
+  - audio files are not generated yet, so audio work should remain contract-first for now
 - The current app can look more complete than it really is because several elements are presentational only.
 - Some UI elements are still decorative or disconnected:
   - Topics page chips are not interactive
@@ -242,7 +269,7 @@ Build the real data foundation before any more UI expansion.
 Recommended next batch:
 
 1. Execute `Batch 1` from `tasks.md`.
-2. Inspect both upstream Markdown formats using real sample files.
+2. Finish the remaining Batch 1 contract work in order, starting with the X briefing audit.
 3. Lock the v1 normalized schema for:
    - `Insight`
    - `DailyAudio`
@@ -254,10 +281,10 @@ Recommended next batch:
 
 The next concrete thing to do is:
 
-1. Open 2-4 real briefing files from `/Users/yuzhang/.openclaw/workspace/briefings/`.
-2. Document the exact section patterns for both formats.
-3. Confirm the v1 schema and generated artifact layout from `plans/mvp-prd.md`.
-4. Implement the parser contract before touching more UI.
+1. Execute `T02` and audit 2-4 real X briefing files from `/Users/yuzhang/.openclaw/workspace/briefings/`.
+2. Document the exact section patterns for the X format in a matching audit doc.
+3. Use both audit docs to complete `T03` through `T05`.
+4. Keep audio work at the metadata-contract level until real audio artifacts exist.
 
 Expected deliverables for that batch:
 
@@ -297,6 +324,11 @@ Once the parser path works:
 - 2026-03-20: `npm run build` passed after using Node `v22.17.1` because the default `/usr/local/bin/node` points to an older broken local install.
 - 2026-03-20: updated `AGENTS.md` with an autonomous per-task workflow for future sessions, including task selection, plan-file creation, TDD, Playwright, review, commit, and progress-saving rules.
 - 2026-03-20: renamed `progress.md` to `PROGRESS.md`, aligned repo tooling to the uppercase convention, initialized git, and added `.gitignore`.
+- 2026-03-21: created and smoke-tested `skills/task-driven-project-bootstrap/` by generating `AGENTS.md`, `PROGRESS.md`, and `tasks.md` into a temp directory.
+- 2026-03-21: `npm run build` passed after adding the new reusable skill bundle and updating the existing lightweight bootstrap skill boundary.
+- 2026-03-21: added a first-principles guidance block to all `AGENTS.md` generation templates and the current repo `AGENTS.md`.
+- 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
+- 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 
 ## Update Rule
 

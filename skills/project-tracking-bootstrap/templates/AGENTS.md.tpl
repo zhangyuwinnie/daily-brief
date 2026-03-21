@@ -3,6 +3,10 @@
 - Read `__PROGRESS_FILE__` before doing any work.
 - Treat `__PLAN_PATH__` as the source plan when product scope or data model is unclear.
 
+# First Principles
+
+请使用第一性原理思考。你不能总是假设我非常清楚自己想要什么和该怎么得到。请保持审慎，从原始需求和问题出发，如果动机和目标不清晰，停下来和我讨论。如果目标清晰但是路径不是最短，告诉我，并且建议更好的办法。
+
 # Vibe Coding Protocol
 
 1. Batch Execution: Work in explicit batches. Do not jump ahead to future phases unless the user asks.

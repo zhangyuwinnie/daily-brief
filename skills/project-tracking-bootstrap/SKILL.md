@@ -12,6 +12,8 @@ Use this skill when a user wants to:
 - standardize project handoff / session-start tracking
 - reuse the same tracking setup across multiple projects
 
+Do not use this skill when the user wants `tasks.md`, strict `continue task` behavior, or a task execution protocol with TDD / E2E / commit workflow. Use `task-driven-project-bootstrap` for that.
+
 ## What This Skill Produces
 
 A lightweight tracking system with:
