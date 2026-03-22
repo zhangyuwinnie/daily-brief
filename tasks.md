@@ -32,28 +32,28 @@ Execution rule:
 
 ## Batch 2: Parser and Normalizer
 
-- [ ] `T07` Create sanitized parser fixtures from real RSS briefing examples.
+- [x] `T07` Create sanitized parser fixtures from real RSS briefing examples.
   Depends on: `T01`
   Acceptance: fixture files cover at least one normal case and one edge case.
-- [ ] `T08` Create sanitized parser fixtures from real X briefing examples.
+- [x] `T08` Create sanitized parser fixtures from real X briefing examples.
   Depends on: `T02`
   Acceptance: fixture files cover at least one normal case and one edge case.
-- [ ] `T09` Add parser tests for RSS briefing extraction.
+- [x] `T09` Add parser tests for RSS briefing extraction.
   Depends on: `T07`, `T06`
   Acceptance: tests assert title, summary, take, topics, and score extraction behavior.
-- [ ] `T10` Add parser tests for X briefing extraction.
+- [x] `T10` Add parser tests for X briefing extraction.
   Depends on: `T08`, `T06`
   Acceptance: tests assert title, summary, take, topics, and source link extraction behavior.
-- [ ] `T11` Implement RSS briefing parser.
+- [x] `T11` Implement RSS briefing parser.
   Depends on: `T09`
   Acceptance: parser returns structured intermediate records and passes tests.
-- [ ] `T12` Implement X briefing parser.
+- [x] `T12` Implement X briefing parser.
   Depends on: `T10`
   Acceptance: parser returns structured intermediate records and passes tests.
-- [ ] `T13` Implement shared normalizer to produce final `Insight` records.
+- [x] `T13` Implement shared normalizer to produce final `Insight` records.
   Depends on: `T11`, `T12`
   Acceptance: both raw parser outputs normalize into one shared shape with deterministic IDs.
-- [ ] `T14` Implement warning collection for malformed sections.
+- [x] `T14` Implement warning collection for malformed sections.
   Depends on: `T11`, `T12`, `T13`
   Acceptance: parsing a broken section reports warnings without crashing the whole run.
 

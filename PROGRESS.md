@@ -60,7 +60,7 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 1 contracts and model alignment complete`
+Overall status: `frontend prototype working, Batch 2 parser and normalizer complete`
 
 Implemented:
 
@@ -283,14 +283,35 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - effort fallback text
   - disabled non-ready audio playback state
 
+### Batch 2 progress
+
+- Completed `T07` and `T08` by creating sanitized parser fixtures for both formats under `src/lib/briefings/fixtures/`.
+- Completed `T09` and `T10` by adding executable parser tests for:
+  - RSS title / summary / take / topics / score behavior
+  - X title / summary / take / topics / source-link / day-score behavior
+- Added minimal parser test infrastructure:
+  - `vitest`
+  - `@types/node`
+  - `npm test`
+  - `vite.config.ts` test configuration
+  - `src/vite-env.d.ts` raw markdown fixture typing
+- Completed `T11` and `T12` by implementing:
+  - `parseRssBriefing()`
+  - `parseXBriefing()`
+  - shared topic derivation rules
+  - raw parser output types for both source formats
+- Completed `T13` by implementing `normalizeParsedBriefing()` so RSS and X outputs converge into one shared `Insight` shape with deterministic IDs.
+- Completed `T14` by wiring warning collection into parsing so malformed sections emit explicit warnings while valid sections in the same file still parse.
+- Locked one important implementation boundary:
+  - X parser returns a day-level document plus normalized bullet candidates, but it still does not force `今日3条要点` or `可执行动作` into per-insight rows
+
 ## Known Gaps / Risks
 
-- The most important implementation work has not started yet: parser + normalizer + generated artifact writer.
-- Batch 1 is now complete, but the real data path still does not exist:
-  - no fixtures
-  - no parser tests
-  - no parser modules
-  - no generated JSON artifacts yet
+- The parser and normalizer now exist, but the real data path is still incomplete:
+  - no generated artifact writer yet
+  - no sync command yet
+  - no frontend loaders yet
+  - product pages still read mock data
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
 - Current upstream asset state is asymmetric:
@@ -316,20 +337,20 @@ Build the real data foundation before any more UI expansion.
 
 Recommended next batch:
 
-1. Start `Batch 2` from `tasks.md`.
-2. Create sanitized fixtures for both RSS and X formats.
-3. Add parser tests before parser implementation.
-4. Implement parser + normalizer against the now-locked contracts.
-5. Do not start more UI expansion until generated real data exists.
+1. Start `Batch 3` from `tasks.md`.
+2. Implement the generated artifact writer and local sync command.
+3. Fail loudly on missing or malformed generated outputs.
+4. Document the regeneration workflow.
+5. Do not switch UI routes off mocks until the generated data path is stable.
 
 ## Immediate Next To Do
 
 The next concrete thing to do is:
 
-1. Execute `T07` and create sanitized RSS parser fixtures from the real samples already audited.
-2. Execute `T08` and create sanitized X parser fixtures that preserve the key section and bullet variants.
-3. Execute `T09` and `T10` to lock parser behavior with tests before implementation.
-4. Keep audio work at the metadata-contract level until real audio artifacts exist.
+1. Execute `T15` and implement the generated artifact writer for briefing index, daily records, and audio index.
+2. Execute `T16` and add one local sync command to package scripts.
+3. Execute `T17` so missing or malformed artifacts fail loudly.
+4. Execute `T18` and document the regeneration workflow end to end.
 
 Expected deliverables for that batch:
 
@@ -382,6 +403,10 @@ Once the parser path works:
 - 2026-03-21: completed `T05` by locking the generated artifact layout in `plans/data-contracts/generated-artifact-layout-v1.md`.
 - 2026-03-21: completed `T06` by aligning `src/types/models.ts` and the current mock-driven UI with the locked v1 contracts.
 - 2026-03-21: `npm run build` passed after completing `T04` through `T06` using Node `v22.17.1`.
+- 2026-03-21: completed `T07` and `T08` by creating sanitized RSS and X parser fixtures under `src/lib/briefings/fixtures/`.
+- 2026-03-21: completed `T09` through `T14` by adding parser tests, implementing both parsers, implementing the shared normalizer, and preserving warning collection for malformed sections.
+- 2026-03-21: `npm test` passed with 3 test files / 6 tests covering RSS parsing, X parsing, and normalization behavior.
+- 2026-03-21: `npm run build` passed after completing Batch 2 using Node `v22.17.1`.
 
 ## Update Rule
 
