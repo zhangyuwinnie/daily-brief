@@ -59,16 +59,16 @@ Execution rule:
 
 ## Batch 3: Generated Data Pipeline
 
-- [ ] `T15` Implement generated artifact writer for briefing index, daily records, and audio index.
+- [x] `T15` Implement generated artifact writer for briefing index, daily records, and audio index.
   Depends on: `T13`, `T14`, `T05`
   Acceptance: command writes valid JSON files in the agreed location.
-- [ ] `T16` Add a sync command to package scripts.
+- [x] `T16` Add a sync command to package scripts.
   Depends on: `T15`
   Acceptance: one documented npm script regenerates content artifacts locally.
-- [ ] `T17` Fail loudly when expected generated artifacts are missing or invalid.
+- [x] `T17` Fail loudly when expected generated artifacts are missing or invalid.
   Depends on: `T15`
   Acceptance: broken generation exits non-zero and explains what file or shape is wrong.
-- [ ] `T18` Document the external input paths and generation workflow.
+- [x] `T18` Document the external input paths and generation workflow.
   Depends on: `T16`
   Acceptance: another engineer can regenerate local content without reading source code.
 

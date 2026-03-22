@@ -60,7 +60,20 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 2 parser and normalizer complete`
+Overall status: `frontend prototype working, Batch 3 generated-data pipeline complete`
+
+Current worktree snapshot:
+
+- Batch 3 is complete locally and ready to commit.
+- `src/generated/` now contains:
+  - `briefings-index.json`
+  - `briefings-by-date.json`
+  - `audio-index.json`
+- current generated snapshot was built from:
+  - 60 upstream briefing markdown files
+  - 39 available dates
+  - 0 ready audio files
+- audio records are currently `pending` for every date because `public/generated/audio/` is empty.
 
 Implemented:
 
@@ -76,52 +89,57 @@ Implemented:
 - Add-to-build modal
 - In-memory build queue state
 - Mock audio player UI
+- Locked v1 contracts for:
+  - normalized `Insight`
+  - day-level `DailyAudio`
+  - generated JSON artifact layout
+- Parser fixtures, parser tests, and parser implementations for:
+  - RSS briefings
+  - X briefings
+- Shared normalizer with deterministic insight IDs and warning collection
+- Generated artifact pipeline for:
+  - date-grouped briefing JSON
+  - day-level audio manifest JSON
+  - fail-loud artifact validation
+  - one-command local sync
 - reusable project-tracking bootstrap docs / script / skill package
 
 Not implemented yet:
 
-- Markdown parser for daily briefings
-- normalization layer into shared `Insight` model
 - SQLite or other persistent storage
-- real audio metadata ingestion
+- real audio metadata ingestion from generated manifest
 - real audio playback URL
 - persisted build/learning state
 - historical briefing browsing
-- date switching backed by real data
-- any backend or local data-serving layer for real brief content
+- date switching backed by real generated data
+- frontend loaders that read generated content
 
 ## Code-to-Plan Mismatches
 
-The architecture plan is ahead of the current TypeScript model and UI.
+The main mismatch is no longer the shared TypeScript contract.
+The locked v1 types and parser pipeline now exist.
 
-- Current `Insight` type is still minimal:
-  - has `title`, `summary`, `takeaway`, `buildIdea`, `effort`, `topics`
-  - does not yet include planned fields such as:
-    - `sourceUrl`
-    - `whyItMatters`
-    - `learnGoal`
-    - `signalScore`
-    - `sourceType`
-- Current `DailyAudio` type is also thinner than planned:
-  - no `audioUrl`
-  - no `durationSec`
-  - no `transcript`
-  - no `errorMessage`
-- Current build state model is thinner than planned:
-  - no `Interested` state
-  - no `personalTakeaway`
-  - no `lastTouchedAt`
-  - build items are still stored as nested `insight` objects in frontend state instead of persisted records
+The real gap is now the missing frontend consumption layer for generated content:
 
-This means the UI prototype is useful for product shaping, but not yet aligned with the planned MVP data model.
+- no frontend loaders consuming `src/generated/*.json` yet
+- product routes still render mock content instead of normalized real data
+- audio metadata exists in generated form, but the UI still reads mock audio
+
+This means the codebase is now contract- and parser-ready, but the product loop is still not wired end to end.
 
 ## What Is Actually True In Code
 
-Current codebase is still mock-data driven.
+Current codebase has a real local content pipeline, but the UI is still mock-data driven.
 
 - `src/data/mockInsights.ts` is the main content source.
 - `src/data/mockAudio.ts` is the current audio source.
 - `src/app/App.tsx` stores build queue state only in React memory.
+- `src/lib/briefings/` now contains:
+  - parser logic
+  - normalizer logic
+  - generated artifact builder
+  - sync runner
+- `scripts/sync-generated-content.ts` now regenerates `src/generated/*.json` from the upstream briefing directory.
 - UI flows exist, but they are not connected to real brief files yet.
 - `Today` currently renders only:
   - audio card
@@ -305,78 +323,95 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 - Locked one important implementation boundary:
   - X parser returns a day-level document plus normalized bullet candidates, but it still does not force `今日3条要点` or `可执行动作` into per-insight rows
 
+### Batch 3 progress
+
+- Completed `T15` by implementing the generated artifact builder and writer for:
+  - `src/generated/briefings-index.json`
+  - `src/generated/briefings-by-date.json`
+  - `src/generated/audio-index.json`
+- Completed `T16` by adding `npm run sync:generated` and a thin script entrypoint at `scripts/sync-generated-content.ts`.
+- Completed `T17` by adding fail-loud validation for:
+  - missing day payloads
+  - missing `byDate` metadata
+  - mismatched audio keys and `briefingDate`
+  - invalid `audioUrl` prefixes
+  - empty day payloads
+  - empty upstream input directories
+- Completed `T18` by documenting the regeneration workflow in `plans/generated-content-workflow.md`.
+- Added generator tests that cover:
+  - mixed RSS + X artifact generation
+  - ready-vs-pending audio state derivation
+  - validation failures for malformed generated shapes
+- Regenerated the local content snapshot from the real upstream briefing directory:
+  - 60 markdown inputs
+  - 39 dates
+  - 0 ready audio files, so all generated audio records are currently `pending`
+
 ## Known Gaps / Risks
 
-- The parser and normalizer now exist, but the real data path is still incomplete:
-  - no generated artifact writer yet
-  - no sync command yet
+- The generated-data pipeline now exists, but the app still does not consume it:
   - no frontend loaders yet
-  - product pages still read mock data
+  - `/today`, `/topics`, and permalink routes still read mock data
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
 - Current upstream asset state is asymmetric:
   - RSS briefings and X briefings are present in `/Users/yuzhang/.openclaw/workspace/briefings`
   - audio files are not generated yet, so audio work should remain contract-first for now
+- Generated JSON is a local snapshot, not a live link:
+  - if upstream briefing markdown changes, `npm run sync:generated` must be re-run
 - The current app can look more complete than it really is because several elements are presentational only.
 - Some UI elements are still decorative or disconnected:
   - Topics page chips are not interactive
   - recent briefs in the right rail are static
   - insight preview in the right rail is route-param-driven and not very useful on current pages
 - `selectedInsight` in app state is route-param-derived, which is fine for permalink pages but not a great fit for Today/Topics right-rail preview behavior.
-- There is still no decision implemented for how real data reaches the frontend:
-  - direct file read during build/startup
-  - JSON cache
-  - SQLite-backed loader
-  - API layer
+- The remaining content-ingestion decision for MVP is now settled:
+  - generated JSON is the local persistence layer
+  - the next missing step is typed loader wiring, not storage selection
 
 ## Next Recommended Batch
 
 Priority: `highest`
 
-Build the real data foundation before any more UI expansion.
+Use the generated data path on the first real user-facing route before any more polish.
 
 Recommended next batch:
 
-1. Start `Batch 3` from `tasks.md`.
-2. Implement the generated artifact writer and local sync command.
-3. Fail loudly on missing or malformed generated outputs.
-4. Document the regeneration workflow.
-5. Do not switch UI routes off mocks until the generated data path is stable.
+1. Start `Batch 4` from `tasks.md`.
+2. Implement typed frontend loaders over `src/generated/*.json`.
+3. Move `/today` off `mockInsights` and `mockAudio`.
+4. Add recent-date switching and explicit missing-day / missing-audio states.
+5. Keep `/topics` and permalink pages on mocks until `/today` is stable.
 
 ## Immediate Next To Do
 
 The next concrete thing to do is:
 
-1. Execute `T15` and implement the generated artifact writer for briefing index, daily records, and audio index.
-2. Execute `T16` and add one local sync command to package scripts.
-3. Execute `T17` so missing or malformed artifacts fail loudly.
-4. Execute `T18` and document the regeneration workflow end to end.
+1. Execute `T19` and implement typed loaders for daily data, available dates, and insight lookup.
+2. Execute `T20` and move `/today` off `mockInsights` and `mockAudio`.
+3. Execute `T21` and add generated-date switching.
+4. Execute `T22` and add explicit empty/error states for missing day or audio.
 
 Expected deliverables for that batch:
 
-- one documented sample audit for daily briefings
-- one documented sample audit for X briefings
-- one shared normalized model definition
-- one locked generated output contract the frontend can read next
+1. one typed generated-data loader layer
+2. one real-data `/today` page
+3. recent-date switching backed by generated dates
+4. visible empty/error states instead of silent mock fallback
 
 ## After That
 
-Once the parser path works:
+Once `/today` is stable on real data:
 
-1. finalize persistence shape
-2. wire `/topics` and `/insights/:insightId` to real data
-3. add lightweight persisted `InsightState` / build state
-4. define audio metadata schema
-5. wire real audio player data
+1. wire `/topics` and `/insights/:insightId` to real data
+2. add lightweight persisted `InsightState` / build state
+3. wire real audio player data
+4. add route-level tests and E2E coverage
 
 ## Open Questions
 
-- What is the exact normalized schema for v1:
-  - only fields needed by current UI
-  - or the fuller architecture-plan model?
-- Should storage start with JSON cache for speed or go directly to SQLite?
-- Where should pre-generated audio files live, and what exact metadata file should the web app read?
-- Should topic tagging be rule-based only in v1, or allow some lightweight enrichment step?
+- What exact upstream process will populate `public/generated/audio/` and on what cadence?
+- Should future topic enrichment remain rule-based only, or should it add a lightweight enrichment step after the real-data UI is stable?
 
 ## Verification Log
 
@@ -407,6 +442,12 @@ Once the parser path works:
 - 2026-03-21: completed `T09` through `T14` by adding parser tests, implementing both parsers, implementing the shared normalizer, and preserving warning collection for malformed sections.
 - 2026-03-21: `npm test` passed with 3 test files / 6 tests covering RSS parsing, X parsing, and normalization behavior.
 - 2026-03-21: `npm run build` passed after completing Batch 2 using Node `v22.17.1`.
+- 2026-03-21: started Batch 3 preparation by adding `tsx` to `devDependencies` so the upcoming local generation script can run without relying on Node's fragile TypeScript ESM support; Batch 3 implementation is still incomplete and has not been re-verified yet.
+- 2026-03-21: completed `T15` through `T18` by adding the generated artifact builder, writer, validator, sync script, workflow docs, and real generated JSON outputs under `src/generated/`.
+- 2026-03-21: `npm run sync:generated` passed against `/Users/yuzhang/.openclaw/workspace/briefings`, producing 3 JSON artifacts from 60 markdown files across 39 dates.
+- 2026-03-21: `BRIEFINGS_DIR=/tmp/daily-brief-missing npm run sync:generated` failed non-zero with an explicit missing-input error as intended.
+- 2026-03-21: `npm test` passed with 4 test files / 9 tests covering parsing, normalization, generated artifact writing, and validation behavior.
+- 2026-03-21: `npm run build` passed after completing Batch 3 using Node `v22.17.1`.
 
 ## Update Rule
 
