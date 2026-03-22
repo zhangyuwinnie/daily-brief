@@ -77,7 +77,7 @@ Execution rule:
 - [x] `T19` Create frontend loaders for daily data, available dates, and insight lookup.
   Depends on: `T15`, `T06`
   Acceptance: loader APIs return typed data without importing mock files.
-- [ ] `T20` Remove `mockInsights` and `mockAudio` from `/today`.
+- [x] `T20` Remove `mockInsights` and `mockAudio` from `/today`.
   Depends on: `T19`
   Acceptance: `/today` renders from generated data only.
 - [ ] `T21` Add recent date switching backed by available generated dates.
