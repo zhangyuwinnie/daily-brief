@@ -6,7 +6,8 @@ import {
   getAvailableBriefingDates,
   getDailyBriefPageData
 } from "../lib/briefings/generatedContentLoader";
-import { TodayPage } from "./TodayPage";
+import { getAudioStatusNotice, TodayPage } from "./TodayPage";
+import type { DailyAudio } from "../types/models";
 
 const noop = () => {};
 
@@ -49,6 +50,39 @@ function renderTodayPage(initialEntry = "/today") {
 }
 
 describe("TodayPage", () => {
+  it("returns explicit failure guidance when generated audio fails", () => {
+    const failedAudio: DailyAudio = {
+      id: "audio-2026-03-21",
+      briefingDate: "2026-03-21",
+      status: "failed",
+      provider: "notebooklm",
+      title: "Daily Brief for 2026-03-21",
+      errorMessage: "provider returned no audio file"
+    };
+
+    expect(getAudioStatusNotice("2026-03-21", failedAudio, false)).toEqual({
+      tone: "error",
+      message:
+        "Audio generation failed for 2026-03-21: provider returned no audio file"
+    });
+  });
+
+  it("returns explicit invalid-ready guidance when audio metadata has no playable url", () => {
+    const incompleteReadyAudio: DailyAudio = {
+      id: "audio-2026-03-21",
+      briefingDate: "2026-03-21",
+      status: "ready",
+      provider: "notebooklm",
+      title: "Daily Brief for 2026-03-21"
+    };
+
+    expect(getAudioStatusNotice("2026-03-21", incompleteReadyAudio, false)).toEqual({
+      tone: "warning",
+      message:
+        "Audio for 2026-03-21 is marked ready, but no playable file URL was generated. Re-run the upstream audio job and regenerate the audio manifest."
+    });
+  });
+
   it("renders the latest generated day instead of the static mock content", () => {
     const pageData = getDailyBriefPageData();
 

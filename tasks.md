@@ -137,13 +137,13 @@ Execution rule:
 
 ## Batch 7: Real Audio Wiring
 
-- [ ] `T36` Replace mock audio metadata with generated audio manifest loading.
+- [x] `T36` Replace mock audio metadata with generated audio manifest loading.
   Depends on: `T19`, `T04`
   Acceptance: `/today` reads real `pending`, `ready`, and `failed` audio states.
-- [ ] `T37` Update `AudioPlayer` to support real playback URL and non-ready states.
+- [x] `T37` Update `AudioPlayer` to support real playback URL and non-ready states.
   Depends on: `T36`
   Acceptance: no simulated progress remains when audio is not actually playable.
-- [ ] `T38` Add visible copy for failed audio generation and missing URLs.
+- [x] `T38` Add visible copy for failed audio generation and missing URLs.
   Depends on: `T37`
   Acceptance: audio issues are explicit and actionable.
 
@@ -192,6 +192,6 @@ Execution rule:
 - Batch 4: `npm run build` and manual `/today` smoke test
 - Batch 5: `npm run build` and permalink/topic smoke test
 - Batch 6: state-store tests + `npm run build`
-- Batch 7: `npm run build` and manual audio state smoke test
+- Batch 7: targeted audio tests + `npm run test:e2e` + `npm run build` and manual audio state smoke test
 - Batch 8: full automated test pass + `npm run build`
 - Batch 9: `npm run build` and manual regression sweep

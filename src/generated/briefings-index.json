@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-03-22",
     "2026-03-21",
     "2026-03-20",
     "2026-03-19",
@@ -41,6 +42,35 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-03-22": {
+      "briefingIds": [
+        "rss-2026-03-22",
+        "x-2026-03-22"
+      ],
+      "insightIds": [
+        "rss-2026-03-22-01-using-git-with-coding-agents",
+        "rss-2026-03-22-02-brute-forcing-my-algorithmic-ignorance-with-an-llm-in-7-days",
+        "rss-2026-03-22-03-hoptabfreeopen-source-macos-app-switcher-and-tiler-that-replaces-cmdtab",
+        "rss-2026-03-22-04-a-visual-guide-to-attention-variants-in-modern-llms",
+        "x-2026-03-22-trend-01-chamath",
+        "x-2026-03-22-trend-02-agentic-ai",
+        "x-2026-03-22-trend-03-openai-greg-brockman-agentic-ai-foundation",
+        "x-2026-03-22-tools-01-claude",
+        "x-2026-03-22-tools-02-lightpanda",
+        "x-2026-03-22-tools-03-mirofish",
+        "x-2026-03-22-opinion-01-andrej-karpathy",
+        "x-2026-03-22-opinion-02-agentic",
+        "x-2026-03-22-opinion-03-ai-agents-ai-agents",
+        "x-2026-03-22-opinion-04-agentic-ai-agents-vibe-coding",
+        "x-2026-03-22-news-01-patientdeskai-ai",
+        "x-2026-03-22-news-02-workday-ai-agent"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
     "2026-03-21": {
       "briefingIds": [
         "rss-2026-03-21",
@@ -87,7 +117,7 @@
         "x-2026-03-20-news-02-nvidiaainemoclaw",
         "x-2026-03-20-news-03-alt-x-ai"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss",
         "x"

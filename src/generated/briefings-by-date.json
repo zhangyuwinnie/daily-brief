@@ -1,4 +1,331 @@
 {
+  "2026-03-22": {
+    "date": "2026-03-22",
+    "briefings": [
+      {
+        "id": "rss-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-03-22",
+        "filePath": "2026-03-22.md",
+        "summaryTopline": "Using Git with coding agents",
+        "insightIds": [
+          "rss-2026-03-22-01-using-git-with-coding-agents",
+          "rss-2026-03-22-02-brute-forcing-my-algorithmic-ignorance-with-an-llm-in-7-days",
+          "rss-2026-03-22-03-hoptabfreeopen-source-macos-app-switcher-and-tiler-that-replaces-cmdtab",
+          "rss-2026-03-22-04-a-visual-guide-to-attention-variants-in-modern-llms"
+        ]
+      },
+      {
+        "id": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "title": "X Morning Briefing - 2026-03-22",
+        "filePath": "x_briefing_2026-03-22.md",
+        "summaryTopline": "**Agentic AI 商业模式**：Agentic系统盈利点在于编排、托管、分析等高附加值服务，而非原始内容。",
+        "insightIds": [
+          "x-2026-03-22-trend-01-chamath",
+          "x-2026-03-22-trend-02-agentic-ai",
+          "x-2026-03-22-trend-03-openai-greg-brockman-agentic-ai-foundation",
+          "x-2026-03-22-tools-01-claude",
+          "x-2026-03-22-tools-02-lightpanda",
+          "x-2026-03-22-tools-03-mirofish",
+          "x-2026-03-22-opinion-01-andrej-karpathy",
+          "x-2026-03-22-opinion-02-agentic",
+          "x-2026-03-22-opinion-03-ai-agents-ai-agents",
+          "x-2026-03-22-opinion-04-agentic-ai-agents-vibe-coding",
+          "x-2026-03-22-news-01-patientdeskai-ai",
+          "x-2026-03-22-news-02-workday-ai-agent"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-03-22-01-using-git-with-coding-agents",
+        "briefingId": "rss-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/#atom-everything",
+        "title": "Using Git with coding agents",
+        "summary": "编码Agent与Git的结合是其工程化和协作的关键。这使得Agent能够像人类开发者一样，对代码进行版本控制、追踪修改、回溯错误，确保其生成代码和自动化流程的可靠性与可管理性。Agent利用Git可以更好地管理项目、协同开发，并为持续集成与部署打下基础。",
+        "take": "对于Dayu而言，让Agent掌握Git操作是构建复杂、可靠Agent工作流的基石。这不仅能帮助Agent管理自身生成的代码和实验结果，还能实现Agent间的协作开发，甚至发现Agent在代码管理或自动化CI/CD方面的潜在开源贡献机会，是提升Agent工程化水平的核心实践。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-03-22-02-brute-forcing-my-algorithmic-ignorance-with-an-llm-in-7-days",
+        "briefingId": "rss-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "http://blog.dominikrudnik.pl/my-google-recruitment-journey-part-1",
+        "title": "Brute-Forcing My Algorithmic Ignorance with an LLM in 7 Days",
+        "summary": "这篇文章展示了作者如何在短短7天内，利用大型语言模型（LLM）高效地攻克了自己对算法的盲区。它揭示了LLM在个性化学习和加速技术技能掌握方面的强大潜力，为快速获取新知识提供了新思路。",
+        "take": "Dayu可以借鉴这种模式，利用LLM构建一个“AI学习助手Agent”，专门用于快速学习构建Agent所需的新框架、库或领域知识，极大地提升学习效率。这同时也是一个绝佳的开源贡献机会，可以尝试开发一个通用的“技能加速获取Agent”框架。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-03-22-03-hoptabfreeopen-source-macos-app-switcher-and-tiler-that-replaces-cmdtab",
+        "briefingId": "rss-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.royalbhati.com/hoptab",
+        "title": "HopTab–free,open source macOS app switcher and tiler that replaces Cmd+Tab",
+        "summary": "HopTab 是一款免费且开源的 macOS 应用程序切换器和窗口管理工具。它旨在替代 macOS 自带的 Cmd+Tab 功能，提供更强大和灵活的应用切换及窗口平铺布局能力，从而显著提升用户在多任务处理时的效率。",
+        "take": "对于追求极致效率和自动化工作流的 Dayu 而言，HopTab 是一个优秀的桌面级效率工具，能有效优化 macOS 上的多应用任务切换和窗口管理。作为开源项目，这也为 Dayu 提供了一个深入了解桌面工具开发、甚至贡献代码、从而提升其在开源社区中影响力的绝佳机会。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-03-22-04-a-visual-guide-to-attention-variants-in-modern-llms",
+        "briefingId": "rss-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Ahead of AI",
+        "sourceUrl": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+        "title": "A Visual Guide to Attention Variants in Modern LLMs",
+        "summary": "这篇文章提供了一份关于现代LLM中各种注意力机制的视觉指南。它详细介绍了从多头注意力（MHA）、分组查询注意力（GQA）到多查询注意力（MLA）、稀疏注意力以及混合架构等多种注意力变体，对于深入理解LLM的内部工作原理及其性能优化至关重要。",
+        "take": "Dayu作为AI超个体，深入理解这些注意力机制能帮助你更好地选择、优化用于构建智能体或自动化流程的LLM模型，特别是在追求效率和性能时。这也能为你在开源社区中贡献新思路，比如改进现有注意力机制或探索更适合特定生物信息学任务的稀疏/混合架构。",
+        "topics": [
+          "Agents",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-trend-01-chamath",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Rohan Paul",
+        "sourceUrl": "https://x.com/rohanpaul_ai/status/2034558710547370332",
+        "title": "Chamath 认为",
+        "summary": "Chamath 认为，AI agents 正在消除“10倍工程师”的差异，使高效代码路径普世化。",
+        "take": "Chamath 认为，AI agents 正在消除“10倍工程师”的差异，使高效代码路径普世化。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "x-2026-03-22-trend-02-agentic-ai",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Andrew Ng",
+        "sourceUrl": "https://x.com/AndrewYNg/status/1975614372799283423",
+        "title": "吴恩达发布新课程“Agentic AI”",
+        "summary": "吴恩达发布新课程“Agentic AI”，教授如“反射”（Reflection）等核心代理设计模式，以满足市场人才需求。",
+        "take": "吴恩达发布新课程“Agentic AI”，教授如“反射”（Reflection）等核心代理设计模式，以满足市场人才需求。",
+        "topics": [
+          "Agents",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "x-2026-03-22-trend-03-openai-greg-brockman-agentic-ai-foundation",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Greg Brockman",
+        "sourceUrl": "https://x.com/gdb/status/1998897086079832513",
+        "title": "OpenAI 联合创始人 Greg Brockman 关注 Agentic AI Foundation",
+        "summary": "OpenAI 联合创始人 Greg Brockman 关注 Agentic AI Foundation，该基金会致力于推动开源 Agentic AI 发展。",
+        "take": "OpenAI 联合创始人 Greg Brockman 关注 Agentic AI Foundation，该基金会致力于推动开源 Agentic AI 发展。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "x-2026-03-22-tools-01-claude",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Akshay",
+        "sourceUrl": "https://x.com/akshay_pachaar/status/2035706568142893229",
+        "title": "建议 Claude 代码项目应结构化设置",
+        "summary": "建议 Claude 代码项目应结构化设置，如在 `.claude/` 文件夹中以 `CLAUDE.md` 作为指令手册，避免直接开始提示。",
+        "take": "建议 Claude 代码项目应结构化设置，如在 `.claude/` 文件夹中以 `CLAUDE.md` 作为指令手册，避免直接开始提示。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-tools-02-lightpanda",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Ryan Hart",
+        "sourceUrl": "https://x.com/thisdudelikesAI/status/2032020679827341603",
+        "title": "Lightpanda 是一款开源无头浏览器",
+        "summary": "Lightpanda 是一款开源无头浏览器，专为 AI agents、爬虫和自动化设计，运行速度比 Chrome 快11倍，内存使用少9倍，是全新构建而非 Chromium 分支。",
+        "take": "Lightpanda 是一款开源无头浏览器，专为 AI agents、爬虫和自动化设计，运行速度比 Chrome 快11倍，内存使用少9倍，是全新构建而非 Chromium 分支。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-tools-03-mirofish",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Muhammad Ayan",
+        "sourceUrl": "https://x.com/socialwithaayan/status/2032054540166648115",
+        "title": "MiroFish 是一个通用的群体智能引擎",
+        "summary": "MiroFish 是一个通用的群体智能引擎，能模拟数千个拥有真实记忆和个性的 AI agents，并用于预测未来。",
+        "take": "MiroFish 是一个通用的群体智能引擎，能模拟数千个拥有真实记忆和个性的 AI agents，并用于预测未来。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-opinion-01-andrej-karpathy",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Haider.",
+        "sourceUrl": "https://x.com/slow_developer/status/2035455153864925621",
+        "title": "Andrej Karpathy 认为",
+        "summary": "Andrej Karpathy 认为，短期内软件需求将激增，因为代码可即时重写、修改。但长期来看，AI 甚至可能自动化 AI 研究人员自身的工作。",
+        "take": "Andrej Karpathy 认为，短期内软件需求将激增，因为代码可即时重写、修改。但长期来看，AI 甚至可能自动化 AI 研究人员自身的工作。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-opinion-02-agentic",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Garry Tan",
+        "sourceUrl": "https://x.com/garrytan/status/2035096653594861970",
+        "title": "建议 Agentic 系统和开发工具的创始人",
+        "summary": "建议 Agentic 系统和开发工具的创始人，盈利点应放在编排、托管、更新、协作、可移植性、分析和托管执行等服务上，而非原始 Markdown 内容。",
+        "take": "建议 Agentic 系统和开发工具的创始人，盈利点应放在编排、托管、更新、协作、可移植性、分析和托管执行等服务上，而非原始 Markdown 内容。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-opinion-03-ai-agents-ai-agents",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2032889536066498595",
+        "title": "强调将 AI agents 应用于现有流程与从零开始为 AI agents 设计流程存在根本性差异",
+        "summary": "强调将 AI agents 应用于现有流程与从零开始为 AI agents 设计流程存在根本性差异，后者将带来显著优势。",
+        "take": "强调将 AI agents 应用于现有流程与从零开始为 AI agents 设计流程存在根本性差异，后者将带来显著优势。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-opinion-04-agentic-ai-agents-vibe-coding",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Santiago",
+        "sourceUrl": "https://x.com/svpino/status/2035705567998841280",
+        "title": "指出没有计划的 Agentic 编码（即通过 AI agents 生成代码）只是增加了步骤的“随意编码”（vibe-coding）",
+        "summary": "指出没有计划的 Agentic 编码（即通过 AI agents 生成代码）只是增加了步骤的“随意编码”（vibe-coding），强调清晰规划的重要性。",
+        "take": "指出没有计划的 Agentic 编码（即通过 AI agents 生成代码）只是增加了步骤的“随意编码”（vibe-coding），强调清晰规划的重要性。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-news-01-patientdeskai-ai",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Y Combinator",
+        "sourceUrl": "https://x.com/ycombinator/status/2035412229022163276",
+        "title": "@PatientdeskAI 正在构建一个针对牙科诊所的 AI 原生操作系统",
+        "summary": "@PatientdeskAI 正在构建一个针对牙科诊所的 AI 原生操作系统，可自主处理来电、预约等，一个系统替代了多个传统工具。",
+        "take": "@PatientdeskAI 正在构建一个针对牙科诊所的 AI 原生操作系统，可自主处理来电、预约等，一个系统替代了多个传统工具。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "x-2026-03-22-news-02-workday-ai-agent",
+        "briefingId": "x-2026-03-22",
+        "date": "2026-03-22",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "sourceName": "@Garry Tan",
+        "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+        "title": "披露传统巨头 Workday 的高管称 AI agent 初创公司为“寄生虫”",
+        "summary": "披露传统巨头 Workday 的高管称 AI agent 初创公司为“寄生虫”，预示着新旧势力之间的市场竞争正在开始，并强调用户数据属于用户而非供应商。",
+        "take": "披露传统巨头 Workday 的高管称 AI agent 初创公司为“寄生虫”，预示着新旧势力之间的市场竞争正在开始，并强调用户数据属于用户而非供应商。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ],
+    "xToplines": [
+      "**Agentic AI 商业模式**：Agentic系统盈利点在于编排、托管、分析等高附加值服务，而非原始内容。",
+      "**AI Agent 开发范式**：AI agents 正模糊“10倍工程师”界限，短期内因代码“短暂性”而激增软件需求。",
+      "**结构化与创新工具**：大模型项目需结构化（如 Claude）；同时，Lightpanda 等高效新工具正为 AI agents 带来突破。"
+    ],
+    "xActionItems": [
+      "实践 Claude 项目的结构化设置，并探索 Lightpanda 等高效 AI agent 工具，提升开发效率。",
+      "学习 Andrew Ng 的 Agentic AI 课程，深入研究代理设计模式，思考从零开始构建 AI agent 方案。",
+      "探索 AI agent 领域的商业模式，考虑提供编排、托管、分析等高附加值服务。"
+    ]
+  },
   "2026-03-21": {
     "date": "2026-03-21",
     "briefings": [

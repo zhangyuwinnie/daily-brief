@@ -1,5 +1,5 @@
 import { Headphones, Pause, Play } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { DailyAudio } from "../../types/models";
 
 type AudioPlayerProps = {
@@ -7,7 +7,7 @@ type AudioPlayerProps = {
 };
 
 function formatDuration(durationSec?: number) {
-  if (!durationSec || durationSec <= 0) {
+  if (durationSec === undefined || durationSec < 0) {
     return "--:--";
   }
 
@@ -18,35 +18,98 @@ function formatDuration(durationSec?: number) {
 }
 
 export function AudioPlayer({ data }: AudioPlayerProps) {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
+  const [currentTimeSec, setCurrentTimeSec] = useState(0);
+  const [loadedDurationSec, setLoadedDurationSec] = useState(data.durationSec ?? 0);
   const isPlayable = data.status === "ready" && Boolean(data.audioUrl);
   const statusLabel =
     data.status === "ready" ? "Ready" : data.status === "failed" ? "Failed" : "Generating...";
+  const effectiveDurationSec = loadedDurationSec > 0 ? loadedDurationSec : data.durationSec ?? 0;
+  const progress = effectiveDurationSec > 0 ? Math.min((currentTimeSec / effectiveDurationSec) * 100, 100) : 0;
 
   useEffect(() => {
-    if (!isPlaying || !isPlayable) {
+    setIsPlaying(false);
+    setCurrentTimeSec(0);
+    setLoadedDurationSec(data.durationSec ?? 0);
+  }, [data.audioUrl, data.durationSec, data.id, data.status]);
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    if (!audioElement || !isPlayable) {
       return undefined;
     }
 
-    const interval = window.setInterval(() => {
-      setProgress((current) => (current >= 100 ? 0 : current + 0.5));
-    }, 1000);
+    const syncDuration = () => {
+      if (Number.isFinite(audioElement.duration) && audioElement.duration > 0) {
+        setLoadedDurationSec(Math.floor(audioElement.duration));
+      }
+    };
 
-    return () => window.clearInterval(interval);
-  }, [isPlayable, isPlaying]);
+    const handleTimeUpdate = () => {
+      setCurrentTimeSec(audioElement.currentTime);
+    };
+
+    const handlePlay = () => {
+      setIsPlaying(true);
+    };
+
+    const handlePause = () => {
+      setIsPlaying(false);
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setCurrentTimeSec(audioElement.currentTime);
+    };
+
+    audioElement.addEventListener("loadedmetadata", syncDuration);
+    audioElement.addEventListener("durationchange", syncDuration);
+    audioElement.addEventListener("timeupdate", handleTimeUpdate);
+    audioElement.addEventListener("play", handlePlay);
+    audioElement.addEventListener("pause", handlePause);
+    audioElement.addEventListener("ended", handleEnded);
+
+    return () => {
+      audioElement.removeEventListener("loadedmetadata", syncDuration);
+      audioElement.removeEventListener("durationchange", syncDuration);
+      audioElement.removeEventListener("timeupdate", handleTimeUpdate);
+      audioElement.removeEventListener("play", handlePlay);
+      audioElement.removeEventListener("pause", handlePause);
+      audioElement.removeEventListener("ended", handleEnded);
+    };
+  }, [isPlayable]);
+
+  const handleTogglePlayback = () => {
+    if (!isPlayable) {
+      return;
+    }
+
+    const audioElement = audioRef.current;
+
+    if (!audioElement) {
+      return;
+    }
+
+    if (isPlaying) {
+      audioElement.pause();
+      return;
+    }
+
+    void audioElement.play().catch(() => {
+      setIsPlaying(false);
+    });
+  };
 
   return (
     <div className="flex flex-col gap-4 rounded-card border border-[#bce89d] bg-gradient-to-r from-[#e3f4d7] to-[#d0efba] p-5 shadow-sm sm:flex-row sm:items-center">
-      <button
-        onClick={() => {
-          if (!isPlayable) {
-            return;
-          }
+      {isPlayable ? <audio ref={audioRef} preload="metadata" src={data.audioUrl} /> : null}
 
-          setIsPlaying((current) => !current);
-        }}
+      <button
+        onClick={handleTogglePlayback}
         disabled={!isPlayable}
+        aria-label={isPlaying ? "Pause audio brief" : "Play audio brief"}
         className="flex h-14 w-14 flex-shrink-0 items-center justify-center self-start rounded-full bg-slate-900 text-brand-500 shadow-lg transition-transform hover:scale-105 hover:bg-slate-800 active:scale-95 disabled:cursor-not-allowed disabled:bg-slate-500 disabled:text-slate-200 disabled:hover:scale-100"
       >
         {isPlaying ? (
@@ -75,9 +138,9 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
               {statusLabel}
             </span>
           </div>
-          <span className="font-mono text-xs font-bold text-slate-500">
-            {formatDuration(data.durationSec)}
-          </span>
+          <span className="font-mono text-xs font-bold text-slate-500">{`${formatDuration(
+            currentTimeSec
+          )} / ${formatDuration(effectiveDurationSec)}`}</span>
         </div>
 
         <div
@@ -89,8 +152,22 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
               return;
             }
 
+            const audioElement = audioRef.current;
+            const seekDurationSec =
+              audioElement && Number.isFinite(audioElement.duration) && audioElement.duration > 0
+                ? audioElement.duration
+                : effectiveDurationSec;
+
+            if (!audioElement || !seekDurationSec || seekDurationSec <= 0) {
+              return;
+            }
+
             const rect = event.currentTarget.getBoundingClientRect();
-            setProgress(((event.clientX - rect.left) / rect.width) * 100);
+            const nextProgress = Math.min(Math.max((event.clientX - rect.left) / rect.width, 0), 1);
+            const nextTime = nextProgress * seekDurationSec;
+
+            audioElement.currentTime = nextTime;
+            setCurrentTimeSec(nextTime);
           }}
         >
           <div

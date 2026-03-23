@@ -158,6 +158,149 @@ describe("generatedContentLoader", () => {
     });
   });
 
+  it("passes through failed audio records without collapsing them into a missing-audio state", () => {
+    const selectedDate = "2026-03-20";
+
+    expect(
+      resolveDailyBriefPageState(selectedDate, {
+        briefingsIndex: {
+          availableDates: [selectedDate],
+          byDate: {
+            [selectedDate]: {
+              briefingIds: ["briefing-1"],
+              insightIds: ["insight-1"],
+              hasAudio: false,
+              sourceTypes: ["rss"]
+            }
+          }
+        },
+        briefingsByDate: {
+          [selectedDate]: {
+            date: selectedDate,
+            briefings: [
+              {
+                id: "briefing-1",
+                date: selectedDate,
+                sourceType: "rss",
+                title: "Test Briefing",
+                filePath: "/tmp/test.md",
+                insightIds: ["insight-1"]
+              }
+            ],
+            insights: [
+              {
+                id: "insight-1",
+                briefingId: "briefing-1",
+                date: selectedDate,
+                sourceType: "rss",
+                sourceLabel: "RSS",
+                title: "Test Insight",
+                summary: "Summary",
+                take: "Take",
+                topics: ["Agents"],
+                entities: [],
+                isTopSignal: true
+              }
+            ]
+          }
+        },
+        audioIndex: {
+          [selectedDate]: {
+            id: "audio-2026-03-20",
+            briefingDate: selectedDate,
+            status: "failed",
+            provider: "notebooklm",
+            title: "Daily Brief for 2026-03-20",
+            errorMessage: "provider returned no audio file"
+          }
+        }
+      })
+    ).toMatchObject({
+      requestedDate: selectedDate,
+      resolvedDate: selectedDate,
+      requestedDateWasUnavailable: false,
+      missingAudio: false,
+      pageData: {
+        date: selectedDate,
+        audio: {
+          status: "failed",
+          errorMessage: "provider returned no audio file"
+        }
+      }
+    });
+  });
+
+  it("passes through ready audio records even when the URL is missing so the UI can fail visibly", () => {
+    const selectedDate = "2026-03-20";
+
+    const pageState = resolveDailyBriefPageState(selectedDate, {
+      briefingsIndex: {
+        availableDates: [selectedDate],
+        byDate: {
+          [selectedDate]: {
+            briefingIds: ["briefing-1"],
+            insightIds: ["insight-1"],
+            hasAudio: true,
+            sourceTypes: ["rss"]
+          }
+        }
+      },
+      briefingsByDate: {
+        [selectedDate]: {
+          date: selectedDate,
+          briefings: [
+            {
+              id: "briefing-1",
+              date: selectedDate,
+              sourceType: "rss",
+              title: "Test Briefing",
+              filePath: "/tmp/test.md",
+              insightIds: ["insight-1"]
+            }
+          ],
+          insights: [
+            {
+              id: "insight-1",
+              briefingId: "briefing-1",
+              date: selectedDate,
+              sourceType: "rss",
+              sourceLabel: "RSS",
+              title: "Test Insight",
+              summary: "Summary",
+              take: "Take",
+              topics: ["Agents"],
+              entities: [],
+              isTopSignal: true
+            }
+          ]
+        }
+      },
+      audioIndex: {
+        [selectedDate]: {
+          id: "audio-2026-03-20",
+          briefingDate: selectedDate,
+          status: "ready",
+          provider: "notebooklm",
+          title: "Daily Brief for 2026-03-20"
+        }
+      }
+    });
+
+    expect(pageState).toMatchObject({
+      requestedDate: selectedDate,
+      resolvedDate: selectedDate,
+      requestedDateWasUnavailable: false,
+      missingAudio: false,
+      pageData: {
+        date: selectedDate,
+        audio: {
+          status: "ready"
+        }
+      }
+    });
+    expect(pageState.pageData?.audio ? "audioUrl" in pageState.pageData.audio : false).toBe(false);
+  });
+
   it("returns one insight by id and null for unknown ids", () => {
     const latestDate = briefingsIndex.availableDates[0];
     const expectedInsight = briefingsByDate[latestDate].insights[0];

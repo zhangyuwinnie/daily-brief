@@ -1,6 +1,6 @@
 # Daily Brief Explore - Progress
 
-Last updated: 2026-03-22
+Last updated: 2026-03-23
 
 ## Project Snapshot
 
@@ -60,12 +60,12 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 6 is complete locally, and the MVP read/build flow now persists personal state across /today and /build using generated insight data plus versioned localStorage`
+Overall status: `frontend prototype working, Batch 7 is complete locally, and the MVP now reads manifest-backed audio states on /today, plays a real generated audio file when one exists, and verifies the audio path with focused Playwright coverage`
 
 Current worktree snapshot:
 
-- Batch 6 is complete locally.
-- `T30` through `T35` are complete locally and ready to commit.
+- Batch 7 is complete locally.
+- `T36` through `T38` are complete locally and ready to commit.
 - `src/lib/insightStateStore.ts` now provides a versioned localStorage-backed personal-state layer for:
   - loading saved `InsightState[]`
   - writing one stable persisted payload
@@ -117,10 +117,22 @@ Current worktree snapshot:
   - `briefings-by-date.json`
   - `audio-index.json`
 - current generated snapshot was built from:
-  - 60 upstream briefing markdown files
-  - 39 available dates
-  - 0 ready audio files
-- audio records are currently `pending` for every date because `public/generated/audio/` is empty.
+  - 62 upstream briefing markdown files
+  - 40 available dates
+  - 1 ready audio file
+- `public/generated/audio/2026-03-20.wav` now provides one local ready audio fixture so the app and browser tests can verify real playback behavior.
+- `src/pages/TodayPage.tsx` now distinguishes:
+  - missing audio manifest entries
+  - `pending` audio generation
+  - `failed` audio generation
+  - invalid `ready` records missing a playable URL
+- `src/components/audio/AudioPlayer.tsx` now renders a real hidden `<audio>` element, drives play/pause/progress from browser media events, and disables playback cleanly when audio is not actually playable.
+- automated verification now also includes:
+  - loader coverage for failed and invalid-ready audio records
+  - `AudioPlayer` component coverage for real playback controls
+  - `/today` audio notice coverage
+  - Playwright coverage for one ready `/today?date=2026-03-20` path plus the default pending `/today` path
+- next recommended batch is `Batch 8: Testing and Hardening`.
 
 Implemented:
 
@@ -135,7 +147,10 @@ Implemented:
 - Static insight share page
 - Add-to-build modal
 - Persisted localStorage-backed build queue state
-- Mock audio player UI
+- Manifest-backed `/today` audio state loading for `pending`, `ready`, and `failed` records
+- Real HTML-audio playback wiring for ready daily audio files
+- Explicit `/today` audio recovery copy for failed generation, missing manifest records, and invalid ready-without-URL states
+- Focused Playwright coverage for the `/today` audio entry flow
 - Locked v1 contracts for:
   - normalized `Insight`
   - day-level `DailyAudio`
@@ -161,24 +176,23 @@ Implemented:
 Not implemented yet:
 
 - SQLite or other persistent storage
-- real audio metadata ingestion from generated manifest
-- real audio playback URL
 - historical briefing browsing
 - deletion of obsolete mock content files and disconnected controls
+- broader Batch 8 route hardening and end-to-end coverage beyond the audio slice
 
 ## Code-to-Plan Mismatches
 
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The remaining MVP gaps are now mainly the audio leg of the loop plus cleanup work:
+The remaining MVP gaps are now mainly testing/hardening breadth plus cleanup work:
 
 - `/today`, `/topics`, and permalink routes now read generated data
 - `/build` now persists local personal state through versioned localStorage
-- the current app still has no real audio playback URL
+- `/today` now reads real audio manifest states and can play a real generated audio file when a URL exists
 - obsolete mock files still remain in the repo as cleanup work
 
-This means the read flow and the basic build loop are now wired end to end, but real audio playback is still incomplete.
+This means the read, build, and listen legs of the MVP loop now exist end to end locally, but the repo still needs broader regression coverage and cleanup work.
 
 ## What Is Actually True In Code
 
@@ -218,9 +232,15 @@ Current codebase has a real local content pipeline, and the main read surfaces n
 - `TopicsPage` now reads generated insights across dates and applies the selected topic filter directly from page-level controls.
 - `InsightSharePage` now resolves the normalized insight from the URL id on refresh and surfaces source-link plus explicit why/build blocks.
 - `BuildQueuePage` now renders persisted real-data cards grouped into `Inbox`, `Interested`, and `Building & Finished`.
-- `AudioPlayer` simulates progress locally instead of playing a real audio file.
+- `AudioPlayer` now mounts a real `<audio>` element when the manifest provides a playable URL, updates progress from browser media events, and disables playback for non-playable states.
+- `TodayPage` now surfaces actionable audio notices for:
+  - pending generation
+  - failed generation
+  - missing manifest records
+  - ready records missing a playable URL
+- `src/generated/audio-index.json` now contains one ready record for `2026-03-20` pointing to `/generated/audio/2026-03-20.wav`, while newer dates remain `pending`.
 
-This means the product read loop and the local persisted build queue both exist end to end, but the real audio playback loop is still incomplete.
+This means the product read loop, local persisted build queue, and real browser audio playback path now all exist end to end locally.
 
 ## Existing Input Shape
 

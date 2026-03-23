@@ -3,17 +3,58 @@ import type { AppOutletContext } from "../app/outlet-context";
 import { AudioPlayer } from "../components/audio/AudioPlayer";
 import { InsightCard } from "../components/cards/InsightCard";
 import { getDailyBriefPageState } from "../lib/briefings/generatedContentLoader";
+import type { DailyAudio } from "../types/models";
 import type { TodaySectionItem } from "./todaySections";
 import { buildTodaySections } from "./todaySections";
 
-function getAudioStatusMessage(date: string, status: "pending" | "failed", errorMessage?: string) {
-  if (status === "failed") {
-    return errorMessage
-      ? `Audio generation failed for ${date}: ${errorMessage}`
-      : `Audio generation failed for ${date}. Re-run the upstream audio job and refresh.`;
+type AudioStatusNotice = {
+  tone: "warning" | "error";
+  message: string;
+};
+
+export function getAudioStatusNotice(
+  date: string,
+  audio: DailyAudio | undefined,
+  missingAudio: boolean
+): AudioStatusNotice | null {
+  if (!audio) {
+    if (!missingAudio) {
+      return null;
+    }
+
+    return {
+      tone: "warning",
+      message: `No audio metadata was generated for ${date} yet. Run the upstream audio job, then refresh this page.`
+    };
   }
 
-  return `Audio for ${date} is still generating. Check back after the upstream audio job finishes.`;
+  if (audio.status === "failed") {
+    return audio.errorMessage
+      ? {
+          tone: "error",
+          message: `Audio generation failed for ${date}: ${audio.errorMessage}`
+        }
+      : {
+          tone: "error",
+          message: `Audio generation failed for ${date}. Re-run the upstream audio job and refresh.`
+        };
+  }
+
+  if (audio.status === "pending") {
+    return {
+      tone: "warning",
+      message: `Audio for ${date} is still generating. Check back after the upstream audio job finishes.`
+    };
+  }
+
+  if (!audio.audioUrl) {
+    return {
+      tone: "warning",
+      message: `Audio for ${date} is marked ready, but no playable file URL was generated. Re-run the upstream audio job and regenerate the audio manifest.`
+    };
+  }
+
+  return null;
 }
 
 type TodaySignalSectionProps = {
@@ -109,6 +150,7 @@ export function TodayPage() {
     ? pageData.insights.filter((insight) => insight.topics.includes(topicFilter))
     : pageData.insights;
   const todaySections = buildTodaySections(insights);
+  const audioStatusNotice = getAudioStatusNotice(pageData.date, pageData.audio, pageState.missingAudio);
   const visibleSignalSections = [
     todaySections.whyItMatters.length > 0 ? (
       <TodaySignalSection
@@ -170,24 +212,20 @@ export function TodayPage() {
         {pageData.audio ? (
           <div>
             <AudioPlayer data={pageData.audio} />
-            {pageData.audio.status === "pending" || pageData.audio.status === "failed" ? (
+            {audioStatusNotice ? (
               <p
                 className={`mt-3 text-sm ${
-                  pageData.audio.status === "failed" ? "text-rose-700" : "text-amber-700"
+                  audioStatusNotice.tone === "error" ? "text-rose-700" : "text-amber-700"
                 }`}
               >
-                {getAudioStatusMessage(pageData.date, pageData.audio.status, pageData.audio.errorMessage)}
+                {audioStatusNotice.message}
               </p>
             ) : null}
           </div>
         ) : (
           <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
             <h3 className="mb-1 font-bold text-slate-800">Audio brief unavailable</h3>
-            <p>
-              {pageState.missingAudio
-                ? `No audio metadata was generated for ${pageData.date} yet. Run the upstream audio job, then refresh this page.`
-                : `Audio metadata is unavailable for ${pageData.date}.`}
-            </p>
+            <p>{audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}</p>
           </section>
         )}
       </div>
