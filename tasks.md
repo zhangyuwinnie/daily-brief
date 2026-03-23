@@ -1,6 +1,6 @@
 # Daily Brief MVP Tasks
 
-Last updated: 2026-03-21
+Last updated: 2026-03-22
 Source docs:
 
 - `plans/mvp-prd.md`
@@ -86,13 +86,13 @@ Execution rule:
 - [x] `T21` Add recent date switching backed by available generated dates.
   Depends on: `T19`
   Acceptance: switching date updates audio and insight content together.
-- [ ] `T22` Add explicit empty and error states for missing day or missing audio.
+- [x] `T22` Add explicit empty and error states for missing day or missing audio.
   Depends on: `T20`, `T21`
   Acceptance: the page never silently renders fake content.
-- [ ] `T23` Refactor `InsightCard` to use the richer v1 fields where available.
+- [x] `T23` Refactor `InsightCard` to use the richer v1 fields where available.
   Depends on: `T20`, `T06`
   Acceptance: card supports summary, take, why-it-matters/build idea cues, topics, and effort cleanly.
-- [ ] `T24` Implement `/today` sections for top signals, why it matters, build this today, and learn this next.
+- [x] `T24` Implement `/today` sections for top signals, why it matters, build this today, and learn this next.
   Depends on: `T20`, `T23`
   Acceptance: the page structure matches the PRD and real data drives each section.
 

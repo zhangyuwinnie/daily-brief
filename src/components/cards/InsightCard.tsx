@@ -1,4 +1,4 @@
-import { Clock, Plus, Share2, Sparkles, Target } from "lucide-react";
+import { BookOpen, Clock, Plus, Share2, Sparkles, Target } from "lucide-react";
 import type { Insight } from "../../types/models";
 
 type InsightCardProps = {
@@ -8,10 +8,37 @@ type InsightCardProps = {
 };
 
 export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
-  const buildIdea = insight.buildIdea ?? "Explore this signal and turn it into a concrete build.";
-  const effortEstimate = insight.effortEstimate ?? "TBD";
   const titleClassName =
     "mb-2 text-xl font-black leading-tight text-slate-800 transition-colors group-hover:text-[#5c962c] sm:text-2xl";
+  const cueSections = [
+    insight.whyItMatters
+      ? {
+          title: "Why It Matters",
+          value: insight.whyItMatters,
+          accentClassName: "bg-slate-300",
+          panelClassName: "border-slate-100 bg-slate-50/80 text-slate-700",
+          headingClassName: "text-slate-400"
+        }
+      : null,
+    insight.buildIdea
+      ? {
+          title: "Build Cue",
+          value: insight.buildIdea,
+          accentClassName: "bg-brand-500",
+          panelClassName: "border-[#cbebb2] bg-[#f2faed] text-slate-800",
+          headingClassName: "text-[#5c962c]"
+        }
+      : null,
+    insight.learnGoal
+      ? {
+          title: "Learn Next",
+          value: insight.learnGoal,
+          accentClassName: "bg-sky-400",
+          panelClassName: "border-sky-100 bg-sky-50/80 text-slate-800",
+          headingClassName: "text-sky-700"
+        }
+      : null
+  ].filter((section): section is NonNullable<typeof section> => Boolean(section));
 
   return (
     <article className="group relative rounded-card border border-white/80 bg-white/70 p-5 shadow-soft backdrop-blur-md transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-6">
@@ -23,12 +50,21 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
       ) : null}
 
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-lg border border-slate-100 bg-white px-2.5 py-1 text-[10px] font-black uppercase text-slate-500 shadow-sm">
             {insight.sourceLabel}
           </span>
+          {insight.sourceName ? (
+            <span className="text-xs font-semibold text-slate-500">{insight.sourceName}</span>
+          ) : null}
           <span className="text-xs font-medium text-slate-400">{insight.date}</span>
         </div>
+        {insight.effortEstimate ? (
+          <div className="flex items-center gap-1 rounded-full border border-[#cbebb2] bg-[#f2faed] px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-[#629d31]">
+            <Clock className="h-3 w-3" />
+            {insight.effortEstimate}
+          </div>
+        ) : null}
       </div>
 
       <h3 className={titleClassName}>
@@ -47,7 +83,7 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
       </h3>
       <p className="mb-5 text-sm leading-relaxed text-slate-500">{insight.summary}</p>
 
-      <div className="mb-6 grid gap-4 md:grid-cols-2">
+      <div className="mb-6 grid gap-4">
         <section className="relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
           <div className="absolute inset-y-0 left-0 w-1 rounded-l-2xl bg-slate-300" />
           <h4 className="mb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400">
@@ -56,20 +92,31 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
           <p className="text-sm font-medium text-slate-700">{insight.take}</p>
         </section>
 
-        <section className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[#cbebb2] bg-[#f2faed] p-4">
-          <div className="absolute inset-y-0 left-0 w-1 rounded-l-2xl bg-brand-500" />
-          <div className="mb-2 flex items-center justify-between gap-3">
-            <h4 className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#5c962c]">
-              <Target className="h-3 w-3" />
-              Build This
-            </h4>
-            <div className="flex items-center gap-1 rounded bg-[#e3f4d7] px-2 py-0.5 text-[10px] font-bold text-[#629d31]">
-              <Clock className="h-3 w-3" />
-              {effortEstimate}
-            </div>
+        {cueSections.length > 0 ? (
+          <div className="grid gap-4 md:grid-cols-3">
+            {cueSections.map((section) => (
+              <section
+                key={section.title}
+                className={`relative overflow-hidden rounded-2xl border p-4 ${section.panelClassName}`}
+              >
+                <div className={`absolute inset-y-0 left-0 w-1 rounded-l-2xl ${section.accentClassName}`} />
+                <h4
+                  className={`mb-2 flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest ${section.headingClassName}`}
+                >
+                  {section.title === "Build Cue" ? (
+                    <Target className="h-3 w-3" />
+                  ) : section.title === "Learn Next" ? (
+                    <BookOpen className="h-3 w-3" />
+                  ) : (
+                    <Sparkles className="h-3 w-3" />
+                  )}
+                  {section.title}
+                </h4>
+                <p className="text-sm font-medium">{section.value}</p>
+              </section>
+            ))}
           </div>
-          <p className="text-sm font-semibold text-slate-800">{buildIdea}</p>
-        </section>
+        ) : null}
       </div>
 
       <div className="flex flex-col gap-4 border-t border-slate-100/50 pt-4 sm:flex-row sm:items-center sm:justify-between">

@@ -60,12 +60,12 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 4 has T19-T21 complete locally, and /today now reads both content and recent-date switching from generated data`
+Overall status: `frontend prototype working, Batch 4 is complete locally, and /today now ships the planned real-data read flow with explicit state handling and sectioned content`
 
 Current worktree snapshot:
 
-- Batch 4 has started.
-- `T19` through `T21` are complete locally and ready to commit.
+- Batch 4 is complete locally.
+- `T19` through `T24` are complete locally and ready to commit.
 - `/today` insight titles now open the persisted real `sourceUrl` when one exists.
 - `/today` now reads `?date=YYYY-MM-DD` and falls back to the latest generated date when the query param is missing or invalid.
 - `/today` recent-date links now come from generated available dates instead of static mock labels.
@@ -74,10 +74,24 @@ Current worktree snapshot:
   - latest-date fallback
   - daily page data
   - insight lookup by ID
+- `src/lib/briefings/generatedContentLoader.ts` now also exposes explicit page-state resolution for:
+  - invalid requested dates
+  - missing generated days
+  - missing audio records
 - `src/pages/TodayPage.tsx` now renders:
   - latest generated day content
-  - generated audio state
-  - topic-filtered insight cards from the real day dataset
+  - explicit missing-day and missing-audio state copy
+  - top signals
+  - why it matters
+  - build this today
+  - learn this next
+  - remaining signals for the selected day
+- `src/components/cards/InsightCard.tsx` now renders optional richer v1 cues when present:
+  - why it matters
+  - build cue
+  - learn next
+  - effort estimate
+  without falling back to fake `TBD` or generic filler copy
 - `src/generated/` now contains:
   - `briefings-index.json`
   - `briefings-by-date.json`
@@ -137,13 +151,13 @@ Not implemented yet:
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The real gap is now partial route integration and remaining mock-backed chrome:
+The real gap is now the remaining mock-backed routes and shell chrome:
 
-- `/today` now uses generated data for both day selection and main content, but the right rail topic list is still mock-backed
+- `/today` now uses generated data for day selection, sectioned content, and explicit empty/error state handling, but the right rail topic list is still mock-backed
 - `/topics` and permalink routes still render mock content
-- empty/error states for missing day or missing audio are still thin and not yet explicit
+- the current app still has no persisted personal state or real audio playback
 
-This means the codebase is now contract- and parser-ready, but the product loop is still not wired end to end.
+This means the codebase now has one stable real-data read surface, but the rest of the MVP loop is still not wired end to end.
 
 ## What Is Actually True In Code
 
@@ -163,18 +177,17 @@ Current codebase has a real local content pipeline, and `/today` now reads it fo
   - `src/generated/briefings-index.json`
   - `src/generated/briefings-by-date.json`
   - `src/generated/audio-index.json`
-  and exposes typed helpers for available dates, daily data, and insight lookup.
-- `TodayPage` now reads the selected generated daily payload from `/today?date=...`, with latest-date fallback.
-- `InsightCard` now renders the title as an external link when the normalized `Insight` includes `sourceUrl`.
-- The `/today` right rail now renders generated recent dates as `/today?date=...` links, but topic chips are still shell-level mock values.
-- `Today` currently renders only:
-  - audio card
-  - filtered insight list
-  - generated recent-date switching
-  and does not yet implement planned sections like:
+  and exposes typed helpers for available dates, daily data, insight lookup, and `/today` page-state resolution.
+- `TodayPage` now reads the selected generated daily payload from `/today?date=...`, with latest-date fallback plus visible invalid-date messaging.
+- `TodayPage` now groups the selected real day into:
+  - top signals
   - why it matters
-  - learn this next
   - build this today
+  - learn this next
+  - more signals
+- `src/pages/todaySections.ts` now derives those `/today` sections from one filtered day dataset with conservative fallback rules when optional fields are absent.
+- `InsightCard` now renders the title as an external link when the normalized `Insight` includes `sourceUrl`, and only shows why/build/learn/effort cues when real data exists for them.
+- The `/today` right rail now renders generated recent dates as `/today?date=...` links, but topic chips are still shell-level mock values.
 - `Topics` page top chips are display-only; actual topic switching currently happens from the right rail, not the page itself.
 - `InsightSharePage` is visually present, but still does not surface the full planned share payload:
   - no source link
@@ -434,31 +447,31 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 
 Priority: `highest`
 
-Use the generated data path on the first real user-facing route before any more polish.
+Pause before starting the next batch and get approval, because Batch 4 is now complete.
 
 Recommended next batch:
 
-1. Continue `Batch 4` from `tasks.md`.
-2. Execute `T22` and add explicit missing-day / missing-audio states.
-3. Execute `T23` and refactor `InsightCard` to expose richer v1 fields cleanly.
-4. Keep `/topics` and permalink pages on mocks until `/today` is stable.
-5. Stop after Batch 4 and confirm the first real end-to-end read flow before moving to Batch 5.
+1. Start `Batch 5` from `tasks.md` after approval.
+2. Execute `T25` and replace mock topic sourcing with normalized generated topics.
+3. Execute `T26` through `T29` to wire `/topics` and `/insights/:insightId` to real generated data.
+4. Keep persistence and audio playback changes out of scope until those route integrations are stable.
+5. Stop after Batch 5 and confirm the full read flow across `/today`, `/topics`, and permalink pages before moving to persisted state.
 
 ## Immediate Next To Do
 
-The next concrete thing to do is:
+The next concrete thing to do after approval is:
 
-1. Execute `T22` and make missing day / missing audio states explicit.
-2. Execute `T23` and refactor `InsightCard` to use richer v1 fields where available.
-3. Execute `T24` and finish the planned Today sections once the state handling is explicit.
-4. Keep the rest of Batch 4 scoped to `/today` only.
+1. Execute `T25` and replace mock topic sourcing with normalized generated topics.
+2. Execute `T26` and make `/topics` chips control the page directly.
+3. Execute `T27` through `T29` to move the permalink route off mocks and harden its not-found behavior.
+4. Keep the next batch scoped to `/topics` and `/insights/:insightId`.
 
 Expected deliverables for that batch:
 
-1. visible empty/error states instead of silent or generic fallback
-2. richer real-data Today cards
-3. one stable real-data `/today` flow end to end
-4. a clean stop point before `/topics` and permalink rewiring
+1. real topic chips and filtered topic content
+2. permalink pages that load from generated normalized insights on refresh
+3. clearer route-level not-found handling outside `/today`
+4. a clean stop point before persisted personal state and audio playback work
 
 ## After That
 
@@ -501,6 +514,11 @@ Once `/today` is stable on real data:
 - 2026-03-22: `npm test` passed with 7 test files / 18 tests after completing `T21`.
 - 2026-03-22: `npm run build` passed after wiring `/today` query-param date selection and generated recent-date links, with the same chunk-size warning because generated JSON is still bundled client-side.
 - 2026-03-22: `npm run dev -- --host 127.0.0.1 --port 5173` loaded `/today?date=2026-03-20` successfully in headless Chrome, and the dumped DOM showed the selected date plus generated recent-date links.
+- 2026-03-22: `npm test -- src/lib/briefings/generatedContentLoader.test.ts src/pages/TodayPage.test.tsx` failed first for missing explicit empty/error state handling, then passed after adding `/today` page-state resolution plus visible invalid-date and pending-audio copy.
+- 2026-03-22: `npm test -- src/components/cards/InsightCard.test.tsx src/pages/TodayPage.test.tsx` failed first for missing richer cue rendering and fake placeholder copy, then passed after refactoring `InsightCard`.
+- 2026-03-22: `npm test -- src/pages/todaySections.test.ts src/pages/TodayPage.test.tsx` failed first for the missing Today section builder and planned section layout, then passed after adding `src/pages/todaySections.ts` and restructuring `/today`.
+- 2026-03-22: `npm test` passed with 9 test files / 29 tests after completing `T22` through `T24`.
+- 2026-03-22: `npm run build` passed after completing Batch 4, with the same chunk-size warning because generated JSON is still bundled client-side.
 - 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.

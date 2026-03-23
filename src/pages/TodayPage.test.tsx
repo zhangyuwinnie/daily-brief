@@ -82,7 +82,35 @@ describe("TodayPage", () => {
 
     const html = renderTodayPage("/today?date=1900-01-01");
 
+    expect(html).toContain("Requested date 1900-01-01 is unavailable.");
+    expect(html).toContain(`Showing the latest generated brief for ${latestPageData!.date} instead.`);
     expect(html).toContain(latestPageData!.date);
     expect(html).toContain(latestPageData!.insights[0].title);
+  });
+
+  it("shows an explicit pending-audio message when the selected day audio is still generating", () => {
+    const pageData = getDailyBriefPageData();
+
+    expect(pageData).not.toBeNull();
+    expect(pageData!.audio?.status).toBe("pending");
+
+    const html = renderTodayPage();
+
+    expect(html).toContain(`Audio for ${pageData!.date} is still generating.`);
+    expect(html).toContain("Check back after the upstream audio job finishes.");
+  });
+
+  it("renders the planned Today sections from generated data", () => {
+    const pageData = getDailyBriefPageData();
+
+    expect(pageData).not.toBeNull();
+
+    const html = renderTodayPage();
+
+    expect(html).toContain("Top Signals");
+    expect(html).toContain("Why It Matters");
+    expect(html).toContain("Build This Today");
+    expect(html).toContain("Learn This Next");
+    expect(html).toContain(pageData!.insights.find((insight) => insight.isTopSignal)?.title ?? "");
   });
 });

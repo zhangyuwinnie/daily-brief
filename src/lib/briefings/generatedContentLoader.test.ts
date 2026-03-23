@@ -5,8 +5,10 @@ import briefingsIndexJson from "../../generated/briefings-index.json";
 import {
   getAvailableBriefingDates,
   getDailyBriefPageData,
+  getDailyBriefPageState,
   getInsightById,
-  getLatestBriefingDate
+  getLatestBriefingDate,
+  resolveDailyBriefPageState
 } from "./generatedContentLoader";
 import type {
   GeneratedAudioIndex,
@@ -58,6 +60,99 @@ describe("generatedContentLoader", () => {
       briefings: latestDay.briefings,
       insights: latestDay.insights,
       audio: audioIndex[latestDate]
+    });
+  });
+
+  it("reports when a requested date is unavailable and the loader falls back", () => {
+    const latestDate = briefingsIndex.availableDates[0];
+
+    expect(getDailyBriefPageState("1900-01-01")).toMatchObject({
+      requestedDate: "1900-01-01",
+      resolvedDate: latestDate,
+      requestedDateWasUnavailable: true,
+      missingAudio: false,
+      pageData: {
+        date: latestDate
+      }
+    });
+  });
+
+  it("returns an explicit empty state when no generated dates exist", () => {
+    expect(
+      resolveDailyBriefPageState(undefined, {
+        briefingsIndex: {
+          availableDates: [],
+          byDate: {}
+        },
+        briefingsByDate: {},
+        audioIndex: {}
+      })
+    ).toEqual({
+      requestedDate: undefined,
+      resolvedDate: null,
+      requestedDateWasUnavailable: false,
+      missingAudio: false,
+      pageData: null
+    });
+  });
+
+  it("reports when a resolved day has no audio record", () => {
+    const selectedDate = "2026-03-20";
+
+    expect(
+      resolveDailyBriefPageState(selectedDate, {
+        briefingsIndex: {
+          availableDates: [selectedDate],
+          byDate: {
+            [selectedDate]: {
+              briefingIds: ["briefing-1"],
+              insightIds: ["insight-1"],
+              hasAudio: false,
+              sourceTypes: ["rss"]
+            }
+          }
+        },
+        briefingsByDate: {
+          [selectedDate]: {
+            date: selectedDate,
+            briefings: [
+              {
+                id: "briefing-1",
+                date: selectedDate,
+                sourceType: "rss",
+                title: "Test Briefing",
+                filePath: "/tmp/test.md",
+                insightIds: ["insight-1"]
+              }
+            ],
+            insights: [
+              {
+                id: "insight-1",
+                briefingId: "briefing-1",
+                date: selectedDate,
+                sourceType: "rss",
+                sourceLabel: "RSS",
+                title: "Test Insight",
+                summary: "Summary",
+                take: "Take",
+                topics: ["agents"],
+                entities: [],
+                isTopSignal: true
+              }
+            ]
+          }
+        },
+        audioIndex: {}
+      })
+    ).toMatchObject({
+      requestedDate: selectedDate,
+      resolvedDate: selectedDate,
+      requestedDateWasUnavailable: false,
+      missingAudio: true,
+      pageData: {
+        date: selectedDate,
+        audio: undefined
+      }
     });
   });
 
