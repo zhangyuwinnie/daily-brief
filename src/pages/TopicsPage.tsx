@@ -18,7 +18,7 @@ export function TopicsPage() {
       <div className="mb-8 mt-2">
         <h2 className="mb-2 text-3xl font-black text-slate-800">Topics</h2>
         <p className="text-slate-500">
-          Filter the daily brief by topic without turning the MVP into a full knowledge graph.
+          Track the themes showing up across recent briefs and open the signals worth acting on.
         </p>
       </div>
 
@@ -54,7 +54,7 @@ export function TopicsPage() {
 
       <div className="mb-5 flex items-center gap-2 rounded-2xl border border-white/60 bg-white/40 px-4 py-3 text-sm text-slate-600">
         <BookOpen className="h-4 w-4 text-slate-400" />
-        {topicFilter ? `Showing insights for ${topicFilter}` : "Showing all generated topics"}
+        {topicFilter ? `Showing signals tagged ${topicFilter}` : "Browsing signals across all tracked topics"}
       </div>
 
       {visibleInsights.length > 0 ? (
@@ -70,7 +70,7 @@ export function TopicsPage() {
         </div>
       ) : (
         <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
-          No generated insights are available for the {topicFilter} topic yet.
+          No recent signals are tagged {topicFilter} yet.
         </section>
       )}
     </div>

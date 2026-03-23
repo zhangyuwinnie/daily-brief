@@ -130,6 +130,18 @@ describe("App integration", () => {
     expect(getTextContent(container)).toContain("Original Source");
   });
 
+  it("does not render disconnected search or start-learning shell controls", async () => {
+    const router = createTestRouter("/today");
+
+    await act(async () => {
+      root.render(<RouterProvider router={router} />);
+    });
+    await flushUpdates();
+
+    expect(container.querySelector('input[placeholder="Search insights or topics..."]')).toBeNull();
+    expect(getTextContent(container)).not.toContain("Start Learning");
+  });
+
   it("loads /topics and updates the visible insights when a topic chip is clicked", async () => {
     const selectedTopic = getAvailableTopics()[0];
     const matchingInsight = getAllInsights().find((insight) => insight.topics.includes(selectedTopic));
@@ -151,7 +163,7 @@ describe("App integration", () => {
     await clickElement(findButtonByText(container, selectedTopic) ?? null);
     await flushUpdates();
 
-    expect(getTextContent(container)).toContain(`Showing insights for ${selectedTopic}`);
+    expect(getTextContent(container)).toContain(`Showing signals tagged ${selectedTopic}`);
     expect(getTextContent(container)).toContain(matchingInsight!.title);
     expect(getTextContent(container)).not.toContain(nonMatchingInsight!.title);
   });

@@ -167,13 +167,13 @@ Execution rule:
 
 ## Batch 9: Cleanup and Deletion
 
-- [ ] `T44` Remove obsolete mock content files and mock-only code paths.
+- [x] `T44` Remove obsolete mock content files and mock-only code paths.
   Depends on: `T20`, `T25`, `T27`, `T36`
   Acceptance: no product page imports mock briefing or audio data.
-- [ ] `T45` Remove or rework presentational-only controls that remain disconnected.
+- [x] `T45` Remove or rework presentational-only controls that remain disconnected.
   Depends on: `T24`, `T26`, `T34`
   Acceptance: all visible controls on MVP routes are either working or intentionally removed.
-- [ ] `T46` Audit copy and empty states against the MVP positioning.
+- [x] `T46` Audit copy and empty states against the MVP positioning.
   Depends on: `T22`, `T29`, `T38`
   Acceptance: user-facing copy reflects the product as a personal AI learning system, not a generic content app.
 

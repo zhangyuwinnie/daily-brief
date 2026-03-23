@@ -60,29 +60,27 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 8 is complete locally, and the MVP now has loader/store hardening plus route-level and browser-level regression coverage across the core read/build/listen loop`
+Overall status: `frontend MVP cleanup is complete locally, and the current task list now finishes with real-data routes, persisted personal state, real audio playback, and regression coverage in place`
 
 Current worktree snapshot:
 
-- Batch 8 is complete locally.
-- `T39` through `T43` are complete locally and ready to commit.
-- `plans/task-plans/T39-T43_plan.md` now records the Batch 8 scope, file targets, verification plan, Playwright impact, and manual QA notes.
-- `src/lib/briefings/generatedContentLoader.test.ts` now also covers:
-  - unavailable requested dates when no generated days exist
-  - stale latest-date fallback where the index resolves a date but the generated day payload is missing
-- `src/lib/insightStateStore.test.ts` now also covers:
-  - no-op writes when storage is unavailable
-  - unsupported-version saved payload reset behavior for safe upgrades
-- `src/app/App.integration.test.tsx` now adds jsdom-backed route integration coverage for:
-  - `/today` loading generated data
-  - `/topics` topic-filter interaction
-  - permalink navigation and direct permalink loading
-- Playwright coverage now also includes:
-  - `tests/e2e/core-loop.spec.ts` for Today -> Add to Build -> Refresh -> Build page persistence
-  - `tests/e2e/navigation.spec.ts` for recent-date switching and permalink reload stability
-- `src/components/modals/AddToBuildModal.tsx` now binds the Quick Note label to its textarea so the core add-to-build flow is accessible and browser-testable.
+- Batch 9 is complete locally.
+- `T44` through `T46` are complete locally and ready to commit.
+- `plans/task-plans/T44-T46_plan.md` now records the Batch 9 cleanup scope, file targets, verification approach, and manual QA notes.
+- obsolete mock-only files have been removed:
+  - `src/data/mockInsights.ts`
+  - `src/data/mockAudio.ts`
+- no source files now import mock briefing or audio data.
+- `src/components/layout/AppShell.tsx` no longer renders dead-end search or start-learning controls in the header.
+- `src/pages/InsightSharePage.tsx` no longer renders dead-end poster/copy buttons, and its back link now matches the `/today` destination.
+- route copy has been tightened in:
+  - `/today`
+  - `/build`
+  - `/topics`
+  - `/insights/:insightId`
+  so the product reads like a personal AI learning system instead of a prototype.
 - full automated verification now passes with:
-  - `58` Vitest tests
+  - `59` Vitest tests
   - `5` Playwright tests
   - `npm run build`
 - `src/lib/insightStateStore.ts` now provides a versioned localStorage-backed personal-state layer for:
@@ -151,7 +149,7 @@ Current worktree snapshot:
   - `AudioPlayer` component coverage for real playback controls
   - `/today` audio notice coverage
   - Playwright coverage for one ready `/today?date=2026-03-20` path plus the default pending `/today` path
-- next recommended batch is `Batch 9: Cleanup and Deletion`.
+- next recommended batch is `None. Pause for the next scope decision.`
 
 Implemented:
 
@@ -175,6 +173,8 @@ Implemented:
   - Today -> Add to Build -> Refresh -> Build page
   - recent date switching on `/today`
   - permalink reload stability
+- Removed obsolete mock content files and mock-only route-test dependencies
+- Removed dead-end shell/permalink controls and tightened MVP route copy
 - Locked v1 contracts for:
   - normalized `Insight`
   - day-level `DailyAudio`
@@ -201,21 +201,20 @@ Not implemented yet:
 
 - SQLite or other persistent storage
 - historical briefing browsing
-- deletion of obsolete mock content files and disconnected controls
 
 ## Code-to-Plan Mismatches
 
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The remaining MVP gaps are now mainly cleanup work:
+There are no material task-list mismatches left in the MVP implementation.
 
-- `/today`, `/topics`, and permalink routes now read generated data
-- `/build` now persists local personal state through versioned localStorage
-- `/today` now reads real audio manifest states and can play a real generated audio file when a URL exists
-- obsolete mock files still remain in the repo as cleanup work
+The remaining gaps are deliberate deferrals:
 
-This means the read, build, and listen legs of the MVP loop now exist end to end locally, with meaningful regression coverage in place, but the repo still needs cleanup work.
+- SQLite or another durable persistence layer beyond localStorage
+- broader historical browsing beyond the current recent-date switcher
+
+This means the read, build, learn, and listen legs of the MVP loop now exist end to end locally, with meaningful regression coverage and cleanup in place.
 
 ## What Is Actually True In Code
 

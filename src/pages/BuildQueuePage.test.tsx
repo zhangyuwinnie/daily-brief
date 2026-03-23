@@ -50,7 +50,8 @@ describe("BuildQueuePage", () => {
     const html = renderBuildQueuePage([]);
 
     expect(html).toContain("Your queue is empty");
-    expect(html).toContain("Browse Today");
+    expect(html).toContain("Review today&#x27;s brief to find something worth building or learning.");
+    expect(html).toContain("Open Today&#x27;s Brief");
   });
 
   it("renders Interested items in their own section", () => {

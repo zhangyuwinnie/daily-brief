@@ -15,7 +15,7 @@ export function BuildQueuePage() {
     <div className="animate-enter flex h-full flex-col">
       <div className="mb-8 mt-2">
         <h2 className="mb-2 text-3xl font-black text-slate-800">Build Queue</h2>
-        <p className="text-slate-500">Turn your daily signals into action.</p>
+        <p className="text-slate-500">Turn today&apos;s signals into concrete build and learning moves.</p>
       </div>
 
       {buildQueue.length === 0 ? (
@@ -23,13 +23,13 @@ export function BuildQueuePage() {
           <Target className="mb-4 h-16 w-16 text-slate-300" />
           <h3 className="text-lg font-bold text-slate-600">Your queue is empty</h3>
           <p className="mb-6 mt-1 text-sm text-slate-500">
-            Go to Today&apos;s signals to find something to build.
+            Review today&apos;s brief to find something worth building or learning.
           </p>
           <Link
             to="/today"
             className="rounded-full border border-slate-100 bg-white px-6 py-2.5 text-sm font-semibold text-slate-800 shadow-sm transition-all hover:bg-slate-50"
           >
-            Browse Today
+            Open Today&apos;s Brief
           </Link>
         </div>
       ) : (

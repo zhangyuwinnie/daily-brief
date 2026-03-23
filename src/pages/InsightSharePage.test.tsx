@@ -57,8 +57,11 @@ describe("InsightSharePage", () => {
     expect(html).toContain(`href="${insight!.sourceUrl}"`);
     expect(html).toContain("Why It Matters");
     expect(html).toContain("Build Idea");
+    expect(html).toContain("Back to Today");
     expect(html).toContain("No why-it-matters cue was extracted for this insight yet.");
     expect(html).toContain("No build idea was extracted for this insight yet.");
+    expect(html).not.toContain("Download Poster");
+    expect(html).not.toContain("Copy Link");
   });
 
   it("shows a clear recovery state for unknown insight ids", () => {

@@ -1,4 +1,4 @@
-import { ArrowLeft, Download, ExternalLink, Sparkles, Target, Zap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Sparkles, Target, Zap } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { getInsightById } from "../lib/briefings/generatedContentLoader";
 
@@ -36,7 +36,7 @@ export function InsightSharePage() {
         className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-slate-500 transition-colors hover:text-slate-800"
       >
         <ArrowLeft className="h-4 w-4" />
-        Back to Insights
+        Back to Today
       </Link>
 
       <article className="relative overflow-hidden rounded-shell border border-white bg-gradient-to-br from-white to-[#f4fcf7] p-6 shadow-float sm:p-10">
@@ -126,15 +126,6 @@ export function InsightSharePage() {
         </div>
       </article>
 
-      <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-        <button className="flex items-center justify-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all hover:bg-slate-800">
-          <Download className="h-4 w-4" />
-          Download Poster
-        </button>
-        <button className="flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-800 shadow-sm transition-all hover:bg-slate-50">
-          Copy Link
-        </button>
-      </div>
     </div>
   );
 }

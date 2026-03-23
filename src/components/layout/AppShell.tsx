@@ -1,4 +1,4 @@
-import { Search, Sparkles, Zap } from "lucide-react";
+import { Sparkles, Zap } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { getAvailableTopics } from "../../lib/briefings/generatedContentLoader";
 import { RightRail } from "./RightRail";
@@ -48,22 +48,17 @@ export function AppShell({
               </div>
             </div>
 
-            <div className="relative w-full max-w-xl">
-              <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Search insights or topics..."
-                className="w-full rounded-full border border-white/60 bg-white/50 py-2.5 pl-11 pr-4 text-sm transition-all placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-500/40"
-              />
+            <div className="hidden lg:block">
+              <p className="text-sm font-semibold text-slate-700">
+                Personal AI learning system for agent builders.
+              </p>
+              <p className="text-xs text-slate-500">Brief -&gt; Build -&gt; Learn -&gt; Reflect</p>
             </div>
 
             <div className="flex items-center gap-3">
-              <button className="w-full rounded-full bg-gradient-to-r from-brand-400 to-brand-300 px-5 py-2.5 text-sm font-bold text-slate-900 shadow-[0_4px_14px_rgba(162,234,92,0.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(162,234,92,0.55)] sm:w-auto">
-                Start Learning
-              </button>
               <NavLink
                 to="/topics"
-                className="hidden rounded-full border border-white/60 bg-white/50 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-white sm:inline-flex"
+                className="inline-flex rounded-full border border-white/60 bg-white/50 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-white"
               >
                 Explore Topics
               </NavLink>

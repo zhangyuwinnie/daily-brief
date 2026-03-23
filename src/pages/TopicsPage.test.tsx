@@ -1,7 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { Outlet, RouterProvider, createMemoryRouter } from "react-router-dom";
-import { MOCK_INSIGHTS } from "../data/mockInsights";
 import { getAllInsights, getAvailableTopics } from "../lib/briefings/generatedContentLoader";
 import { TopicsPage } from "./TopicsPage";
 
@@ -57,8 +56,8 @@ describe("TopicsPage", () => {
 
     expect(html).toContain(generatedInsights[0].title);
     expect(html).toContain(generatedTopics[0]);
-    expect(html).not.toContain(MOCK_INSIGHTS[0].title);
-    expect(html).not.toContain("Showing all current topics");
+    expect(html).toContain("Track the themes showing up across recent briefs and open the signals worth acting on.");
+    expect(html).toContain("Browsing signals across all tracked topics");
   });
 
   it("renders page-level topic controls and filters the visible insights", () => {
@@ -72,7 +71,7 @@ describe("TopicsPage", () => {
 
     const html = renderTopicsPage(selectedTopic);
 
-    expect(html).toContain(`Showing insights for ${selectedTopic}`);
+    expect(html).toContain(`Showing signals tagged ${selectedTopic}`);
     expect(html).toContain('aria-pressed="true"');
     expect(html).toContain(`>${selectedTopic}</button>`);
     expect(html).toContain(">All</button>");

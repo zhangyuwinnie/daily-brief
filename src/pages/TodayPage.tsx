@@ -167,7 +167,7 @@ export function TodayPage() {
       <TodaySignalSection
         key="build"
         title="Build This Today"
-        description="Pull the most buildable next step out of the same real dataset."
+        description="Pick one concrete build move from today&apos;s signals."
         items={todaySections.buildThisToday}
         accentClassName="bg-brand-500"
         borderClassName="border-[#cbebb2]"
@@ -201,7 +201,9 @@ export function TodayPage() {
       <div className="mb-6 mt-2 flex items-end justify-between gap-4">
         <div>
           <h2 className="mb-2 text-3xl font-black text-slate-800">Today&apos;s Brief</h2>
-          <p className="text-slate-500">Listen to the highlights or scan the top signals below.</p>
+          <p className="text-slate-500">
+            Listen to the brief or scan the signals worth acting on today.
+          </p>
         </div>
         <div className="rounded-full border border-white/60 bg-white/60 px-4 py-2 text-sm font-semibold text-slate-700">
           {pageData.date}
@@ -276,7 +278,7 @@ export function TodayPage() {
               <div className="mb-5">
                 <h3 className="text-2xl font-black text-slate-800">More Signals</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  The rest of the selected day, kept on the page without crowding the primary sections.
+                  The rest of today&apos;s signals, kept in view after the top picks.
                 </p>
               </div>
               <div className="flex flex-col gap-6">
@@ -295,7 +297,7 @@ export function TodayPage() {
       ) : (
         <div className="flex flex-col gap-6">
           <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
-            No insights are available for {pageData.date}
+            No signals are available for {pageData.date}
             {topicFilter ? ` under the ${topicFilter} topic filter.` : "."}
           </section>
         </div>

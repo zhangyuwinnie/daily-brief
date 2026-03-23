@@ -1,7 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { Outlet, RouterProvider, createMemoryRouter } from "react-router-dom";
-import { MOCK_INSIGHTS } from "../data/mockInsights";
 import {
   getAvailableBriefingDates,
   getDailyBriefPageData
@@ -93,7 +92,6 @@ describe("TodayPage", () => {
 
     expect(html).toContain(pageData!.insights[0].title);
     expect(html).toContain(`href="${pageData!.insights[0].sourceUrl}"`);
-    expect(html).not.toContain(MOCK_INSIGHTS[0].title);
     expect(html).toContain("Generating...");
   });
 
