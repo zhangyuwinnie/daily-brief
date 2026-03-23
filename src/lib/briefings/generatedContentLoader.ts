@@ -16,9 +16,22 @@ const generatedContentSources = {
   briefingsByDate,
   audioIndex
 };
+const approvedTopicOrder = [
+  "Agents",
+  "Coding Agents",
+  "Evals",
+  "RAG",
+  "Retrieval",
+  "Security",
+  "Tooling",
+  "Learning Resource"
+] as const;
+const allInsights = briefingsIndex.availableDates.flatMap(
+  (date) => briefingsByDate[date]?.insights ?? []
+);
 
 const insightsById = new Map<string, Insight>(
-  Object.values(briefingsByDate).flatMap((day) => day.insights.map((insight) => [insight.id, insight] as const))
+  allInsights.map((insight) => [insight.id, insight] as const)
 );
 
 type GeneratedContentSources = {
@@ -49,6 +62,16 @@ export function getAvailableBriefingDates() {
 
 export function getLatestBriefingDate() {
   return briefingsIndex.availableDates[0] ?? null;
+}
+
+export function getAllInsights() {
+  return allInsights;
+}
+
+export function getAvailableTopics() {
+  const derivedTopics = new Set(allInsights.flatMap((insight) => insight.topics));
+
+  return approvedTopicOrder.filter((topic) => derivedTopics.has(topic));
 }
 
 export function resolveDailyBriefPageState(

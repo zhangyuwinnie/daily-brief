@@ -4,6 +4,8 @@ import briefingsByDateJson from "../../generated/briefings-by-date.json";
 import briefingsIndexJson from "../../generated/briefings-index.json";
 import {
   getAvailableBriefingDates,
+  getAvailableTopics,
+  getAllInsights,
   getDailyBriefPageData,
   getDailyBriefPageState,
   getInsightById,
@@ -162,5 +164,26 @@ describe("generatedContentLoader", () => {
 
     expect(getInsightById(expectedInsight.id)).toEqual(expectedInsight);
     expect(getInsightById("missing-insight-id")).toBeNull();
+  });
+
+  it("returns all generated insights in available-date order", () => {
+    const expectedInsights = briefingsIndex.availableDates.flatMap(
+      (date) => briefingsByDate[date]?.insights ?? []
+    );
+
+    expect(getAllInsights()).toEqual(expectedInsights);
+  });
+
+  it("returns topics derived from normalized insights in approved MVP order", () => {
+    expect(getAvailableTopics()).toEqual([
+      "Agents",
+      "Coding Agents",
+      "Evals",
+      "RAG",
+      "Retrieval",
+      "Security",
+      "Tooling",
+      "Learning Resource"
+    ]);
   });
 });

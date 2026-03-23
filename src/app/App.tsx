@@ -2,7 +2,7 @@ import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { AppShell } from "../components/layout/AppShell";
 import { AddToBuildModal } from "../components/modals/AddToBuildModal";
-import { MOCK_INSIGHTS } from "../data/mockInsights";
+import { getInsightById } from "../lib/briefings/generatedContentLoader";
 import type { AppOutletContext } from "./outlet-context";
 import type { BuildItem, BuildStatus, Insight, SkillFocus } from "../types/models";
 
@@ -41,7 +41,7 @@ export function App() {
   const [topicFilter, setTopicFilter] = useState<string | null>(null);
 
   const selectedInsight = useMemo(
-    () => MOCK_INSIGHTS.find((insight) => insight.id === params.insightId) ?? null,
+    () => (params.insightId ? getInsightById(params.insightId) : null),
     [params.insightId]
   );
 
@@ -104,6 +104,7 @@ export function App() {
             topicFilter,
             onAddToBuild: handleOpenModal,
             onInsightShare: (insight: Insight) => navigate(`/insights/${insight.id}`),
+            onTopicFilterChange: setTopicFilter,
             onUpdateStatus: handleUpdateStatus
           } satisfies AppOutletContext}
         />

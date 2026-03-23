@@ -60,38 +60,34 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 4 is complete locally, and /today now ships the planned real-data read flow with explicit state handling and sectioned content`
+Overall status: `frontend prototype working, Batches 4 and 5 are complete locally, and the MVP read flow now runs on generated data across /today, /topics, and /insights/:insightId`
 
 Current worktree snapshot:
 
-- Batch 4 is complete locally.
-- `T19` through `T24` are complete locally and ready to commit.
-- `/today` insight titles now open the persisted real `sourceUrl` when one exists.
-- `/today` now reads `?date=YYYY-MM-DD` and falls back to the latest generated date when the query param is missing or invalid.
-- `/today` recent-date links now come from generated available dates instead of static mock labels.
+- Batch 5 is complete locally.
+- `T25` through `T29` are complete locally and ready to commit.
 - `src/lib/briefings/generatedContentLoader.ts` now provides typed loader APIs for:
   - available generated dates
   - latest-date fallback
   - daily page data
   - insight lookup by ID
+  - all generated insights in date order
+  - approved generated topic derivation
 - `src/lib/briefings/generatedContentLoader.ts` now also exposes explicit page-state resolution for:
   - invalid requested dates
   - missing generated days
   - missing audio records
-- `src/pages/TodayPage.tsx` now renders:
-  - latest generated day content
-  - explicit missing-day and missing-audio state copy
-  - top signals
-  - why it matters
-  - build this today
-  - learn this next
-  - remaining signals for the selected day
-- `src/components/cards/InsightCard.tsx` now renders optional richer v1 cues when present:
-  - why it matters
-  - build cue
-  - learn next
-  - effort estimate
-  without falling back to fake `TBD` or generic filler copy
+- `src/components/layout/AppShell.tsx` now derives shell-level topic chips from generated normalized topics instead of mock constants.
+- `src/pages/TopicsPage.tsx` now renders:
+  - generated insights across all available dates
+  - direct page-level topic filter buttons
+  - explicit empty-state copy when a selected topic has no matches
+- `src/pages/InsightSharePage.tsx` now resolves insights from the permalink route param through generated lookup, so refresh works without mock memory.
+- `src/pages/InsightSharePage.tsx` now shows:
+  - original source link when one exists
+  - why-it-matters and build-idea sections
+  - explicit missing-data copy when those richer fields are absent
+  - a clearer recovery path for missing insight IDs
 - `src/generated/` now contains:
   - `briefings-index.json`
   - `briefings-by-date.json`
@@ -144,26 +140,27 @@ Not implemented yet:
 - real audio playback URL
 - persisted build/learning state
 - historical briefing browsing
-- product routes consuming the generated-content loader instead of mocks
+- deletion of obsolete mock content files and disconnected controls
 
 ## Code-to-Plan Mismatches
 
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The real gap is now the remaining mock-backed routes and shell chrome:
+The remaining MVP gaps are now the personal-state and audio legs of the loop:
 
-- `/today` now uses generated data for day selection, sectioned content, and explicit empty/error state handling, but the right rail topic list is still mock-backed
-- `/topics` and permalink routes still render mock content
-- the current app still has no persisted personal state or real audio playback
+- `/today`, `/topics`, and permalink routes now read generated data
+- the current app still has no persisted personal state
+- the current app still has no real audio playback URL
+- obsolete mock files still remain in the repo as cleanup work
 
-This means the codebase now has one stable real-data read surface, but the rest of the MVP loop is still not wired end to end.
+This means the read flow is now wired end to end, but the build/reflect loop is still local-memory-only.
 
 ## What Is Actually True In Code
 
-Current codebase has a real local content pipeline, and `/today` now reads it for both content and date selection.
+Current codebase has a real local content pipeline, and the main read surfaces now consume it directly.
 
-- `src/data/mockInsights.ts` is still the content source for `/topics` and the shell-level topic list.
+- `src/data/mockInsights.ts` is no longer used by product routes, but still exists as a cleanup candidate and test fixture source.
 - `src/data/mockAudio.ts` is no longer used by `TodayPage`, but still exists in the repo as a cleanup candidate.
 - `src/app/App.tsx` stores build queue state only in React memory.
 - `src/lib/briefings/` now contains:
@@ -177,7 +174,7 @@ Current codebase has a real local content pipeline, and `/today` now reads it fo
   - `src/generated/briefings-index.json`
   - `src/generated/briefings-by-date.json`
   - `src/generated/audio-index.json`
-  and exposes typed helpers for available dates, daily data, insight lookup, and `/today` page-state resolution.
+  and exposes typed helpers for available dates, daily data, insight lookup, all-insight flattening, topic derivation, and `/today` page-state resolution.
 - `TodayPage` now reads the selected generated daily payload from `/today?date=...`, with latest-date fallback plus visible invalid-date messaging.
 - `TodayPage` now groups the selected real day into:
   - top signals
@@ -187,15 +184,12 @@ Current codebase has a real local content pipeline, and `/today` now reads it fo
   - more signals
 - `src/pages/todaySections.ts` now derives those `/today` sections from one filtered day dataset with conservative fallback rules when optional fields are absent.
 - `InsightCard` now renders the title as an external link when the normalized `Insight` includes `sourceUrl`, and only shows why/build/learn/effort cues when real data exists for them.
-- The `/today` right rail now renders generated recent dates as `/today?date=...` links, but topic chips are still shell-level mock values.
-- `Topics` page top chips are display-only; actual topic switching currently happens from the right rail, not the page itself.
-- `InsightSharePage` is visually present, but still does not surface the full planned share payload:
-  - no source link
-  - no why-it-matters section
-  - no explicit build idea block
+- The `/today` and `/topics` shell topic chips now derive from generated topics instead of mock constants.
+- `TopicsPage` now reads generated insights across dates and applies the selected topic filter directly from page-level controls.
+- `InsightSharePage` now resolves the normalized insight from the URL id on refresh and surfaces source-link plus explicit why/build blocks.
 - `AudioPlayer` simulates progress locally instead of playing a real audio file.
 
-This means the product shell exists, but the actual product loop does not yet exist end-to-end.
+This means the product read loop exists end to end, but the actual build-state persistence and real audio playback loop are still incomplete.
 
 ## Existing Input Shape
 
@@ -447,24 +441,24 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 
 Priority: `highest`
 
-Pause before starting the next batch and get approval, because Batch 4 is now complete.
+Pause before starting the next batch and get approval, because Batch 5 is now complete.
 
 Recommended next batch:
 
-1. Start `Batch 5` from `tasks.md` after approval.
-2. Execute `T25` and replace mock topic sourcing with normalized generated topics.
-3. Execute `T26` through `T29` to wire `/topics` and `/insights/:insightId` to real generated data.
-4. Keep persistence and audio playback changes out of scope until those route integrations are stable.
-5. Stop after Batch 5 and confirm the full read flow across `/today`, `/topics`, and permalink pages before moving to persisted state.
+1. Start `Batch 6` from `tasks.md` after approval.
+2. Execute `T30` and introduce a versioned localStorage-backed `InsightState` store.
+3. Execute `T31` through `T35` to move `/build` and add-to-build behavior off in-memory-only state.
+4. Keep real audio playback changes out of scope until persisted personal state is stable.
+5. Stop after Batch 6 and confirm refresh-safe build-state behavior before moving to audio wiring.
 
 ## Immediate Next To Do
 
 The next concrete thing to do after approval is:
 
-1. Execute `T25` and replace mock topic sourcing with normalized generated topics.
-2. Execute `T26` and make `/topics` chips control the page directly.
-3. Execute `T27` through `T29` to move the permalink route off mocks and harden its not-found behavior.
-4. Keep the next batch scoped to `/topics` and `/insights/:insightId`.
+1. Execute `T30` and introduce the stable localStorage key and schema versioning for `InsightState`.
+2. Execute `T31` through `T33` and derive add-to-build behavior from persisted insight state instead of raw in-memory `BuildItem[]`.
+3. Execute `T34` and `T35` to move `/build` to persisted derived items and recover safely from invalid saved payloads.
+4. Keep the next batch scoped to persistence and build-state flows.
 
 Expected deliverables for that batch:
 
@@ -477,10 +471,10 @@ Expected deliverables for that batch:
 
 Once `/today` is stable on real data:
 
-1. wire `/topics` and `/insights/:insightId` to real data
-2. add lightweight persisted `InsightState` / build state
-3. wire real audio player data
-4. add route-level tests and E2E coverage
+1. add lightweight persisted `InsightState` / build state
+2. wire real audio player data
+3. add route-level tests and E2E coverage
+4. remove obsolete mock files and disconnected controls
 
 ## Open Questions
 
@@ -519,6 +513,11 @@ Once `/today` is stable on real data:
 - 2026-03-22: `npm test -- src/pages/todaySections.test.ts src/pages/TodayPage.test.tsx` failed first for the missing Today section builder and planned section layout, then passed after adding `src/pages/todaySections.ts` and restructuring `/today`.
 - 2026-03-22: `npm test` passed with 9 test files / 29 tests after completing `T22` through `T24`.
 - 2026-03-22: `npm run build` passed after completing Batch 4, with the same chunk-size warning because generated JSON is still bundled client-side.
+- 2026-03-22: `npm test -- src/lib/briefings/generatedContentLoader.test.ts src/pages/TopicsPage.test.tsx src/pages/InsightSharePage.test.tsx` failed first for missing generated topic APIs, page-level topic controls, and permalink route-param lookup, then passed after completing `T25` through `T29`.
+- 2026-03-22: `npm test` passed with 11 test files / 36 tests after completing Batch 5.
+- 2026-03-22: `npm run build` passed after completing Batch 5, with the same chunk-size warning because generated JSON is still bundled client-side.
+- 2026-03-22: `npm run dev -- --host 127.0.0.1 --port 5173` loaded `/topics` successfully in headless Chrome, and the dumped DOM showed generated topic chips plus generated insight cards.
+- 2026-03-22: `npm run dev -- --host 127.0.0.1 --port 5173` loaded `/insights/rss-2026-03-21-01-opencode-open-source-ai-coding-agent` successfully in headless Chrome, and the dumped DOM showed route-param lookup plus source-link / why-it-matters / build-idea sections.
 - 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.

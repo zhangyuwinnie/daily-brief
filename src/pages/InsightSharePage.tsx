@@ -1,21 +1,30 @@
-import { ArrowLeft, Download, Sparkles, Zap } from "lucide-react";
-import { Link, useOutletContext } from "react-router-dom";
-import type { AppOutletContext } from "../app/outlet-context";
+import { ArrowLeft, Download, ExternalLink, Sparkles, Target, Zap } from "lucide-react";
+import { Link, useParams } from "react-router-dom";
+import { getInsightById } from "../lib/briefings/generatedContentLoader";
 
 export function InsightSharePage() {
-  const { selectedInsight } = useOutletContext<AppOutletContext>();
+  const { insightId } = useParams();
+  const selectedInsight = insightId ? getInsightById(insightId) : null;
 
   if (!selectedInsight) {
     return (
       <div className="animate-enter mt-8 rounded-card border border-white/60 bg-white/40 p-8 text-center">
         <h2 className="mb-2 text-2xl font-black text-slate-800">Insight not found</h2>
         <p className="mb-6 text-slate-500">The permalink is missing or no longer exists.</p>
-        <Link
-          to="/today"
-          className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
-        >
-          Back to Today
-        </Link>
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link
+            to="/today"
+            className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
+          >
+            Back to Today
+          </Link>
+          <Link
+            to="/topics"
+            className="inline-flex rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-800"
+          >
+            Browse Topics
+          </Link>
+        </div>
       </div>
     );
   }
@@ -62,6 +71,47 @@ export function InsightSharePage() {
             <div className="absolute inset-y-0 left-0 w-1 rounded-full bg-brand-500" />
             <p className="pl-4 text-lg italic text-slate-600">&quot;{selectedInsight.take}&quot;</p>
           </div>
+        </section>
+
+        <div className="mb-8 grid gap-4 md:grid-cols-2">
+          <section className="rounded-2xl border border-slate-100 bg-white/70 p-5">
+            <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+              Why It Matters
+            </h4>
+            <p className="text-sm leading-relaxed text-slate-600">
+              {selectedInsight.whyItMatters ??
+                "No why-it-matters cue was extracted for this insight yet."}
+            </p>
+          </section>
+
+          <section className="rounded-2xl border border-[#d3ecd9] bg-[#f0f9f3] p-5">
+            <h4 className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#5c962c]">
+              <Target className="h-3 w-3" />
+              Build Idea
+            </h4>
+            <p className="text-sm leading-relaxed text-slate-700">
+              {selectedInsight.buildIdea ?? "No build idea was extracted for this insight yet."}
+            </p>
+          </section>
+        </div>
+
+        <section className="mb-8 rounded-2xl border border-slate-100 bg-white/70 p-5">
+          <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+            Original Source
+          </h4>
+          {selectedInsight.sourceUrl ? (
+            <a
+              href={selectedInsight.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 underline-offset-4 hover:text-slate-900 hover:underline"
+            >
+              <ExternalLink className="h-4 w-4" />
+              {selectedInsight.sourceName ?? selectedInsight.sourceLabel}
+            </a>
+          ) : (
+            <p className="text-sm text-slate-600">No original source link is available for this insight.</p>
+          )}
         </section>
 
         <div className="flex flex-wrap gap-2 border-t border-slate-100 pt-6">

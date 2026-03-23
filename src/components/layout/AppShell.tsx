@@ -1,9 +1,9 @@
 import { Search, Sparkles, Zap } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import { getAvailableTopics } from "../../lib/briefings/generatedContentLoader";
 import { RightRail } from "./RightRail";
 import { Sidebar } from "./Sidebar";
 import type { BuildItem, Insight } from "../../types/models";
-import { FOCUS_TOPICS } from "../../data/mockInsights";
 
 type AppShellProps = {
   children: React.ReactNode;
@@ -27,6 +27,7 @@ export function AppShell({
   onTopicFilterChange
 }: AppShellProps) {
   const showRightRail = currentPath === "/today" || currentPath === "/topics";
+  const topics = getAvailableTopics();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#e0f7ea] via-[#c8eed8] to-[#9adfb9] px-3 py-3 text-slate-800 sm:px-4 md:px-6">
@@ -78,7 +79,7 @@ export function AppShell({
               <RightRail
                 selectedInsight={selectedInsight}
                 topicFilter={topicFilter}
-                topics={FOCUS_TOPICS}
+                topics={topics}
                 onAddToBuild={onAddToBuild}
                 onInsightShare={onInsightShare}
                 onTopicFilterChange={onTopicFilterChange}

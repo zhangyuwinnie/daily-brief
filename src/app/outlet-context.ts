@@ -6,5 +6,6 @@ export type AppOutletContext = {
   topicFilter: string | null;
   onAddToBuild: (insight: Insight) => void;
   onInsightShare: (insight: Insight) => void;
+  onTopicFilterChange: (topic: string | null) => void;
   onUpdateStatus: (itemId: string, status: BuildStatus) => void;
 };

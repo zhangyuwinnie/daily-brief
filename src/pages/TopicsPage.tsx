@@ -2,13 +2,16 @@ import { BookOpen } from "lucide-react";
 import { useOutletContext } from "react-router-dom";
 import type { AppOutletContext } from "../app/outlet-context";
 import { InsightCard } from "../components/cards/InsightCard";
-import { FOCUS_TOPICS, MOCK_INSIGHTS } from "../data/mockInsights";
+import { getAllInsights, getAvailableTopics } from "../lib/briefings/generatedContentLoader";
 
 export function TopicsPage() {
-  const { topicFilter, onAddToBuild, onInsightShare } = useOutletContext<AppOutletContext>();
+  const { topicFilter, onAddToBuild, onInsightShare, onTopicFilterChange } =
+    useOutletContext<AppOutletContext>();
+  const topics = getAvailableTopics();
+  const insights = getAllInsights();
   const visibleInsights = topicFilter
-    ? MOCK_INSIGHTS.filter((insight) => insight.topics.includes(topicFilter))
-    : MOCK_INSIGHTS;
+    ? insights.filter((insight) => insight.topics.includes(topicFilter))
+    : insights;
 
   return (
     <div className="animate-enter">
@@ -20,35 +23,56 @@ export function TopicsPage() {
       </div>
 
       <div className="mb-6 flex flex-wrap gap-2">
-        {FOCUS_TOPICS.map((topic) => (
-          <span
+        <button
+          type="button"
+          aria-pressed={topicFilter === null}
+          onClick={() => onTopicFilterChange(null)}
+          className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+            topicFilter === null
+              ? "border-brand-500 bg-white text-slate-800"
+              : "border-white/60 bg-white/40 text-slate-600 hover:bg-white"
+          }`}
+        >
+          All
+        </button>
+        {topics.map((topic) => (
+          <button
             key={topic}
+            type="button"
+            aria-pressed={topicFilter === topic}
+            onClick={() => onTopicFilterChange(topic)}
             className={`rounded-full border px-4 py-2 text-sm font-semibold ${
               topicFilter === topic
                 ? "border-brand-500 bg-white text-slate-800"
-                : "border-white/60 bg-white/40 text-slate-600"
+                : "border-white/60 bg-white/40 text-slate-600 hover:bg-white"
             }`}
           >
             {topic}
-          </span>
+          </button>
         ))}
       </div>
 
       <div className="mb-5 flex items-center gap-2 rounded-2xl border border-white/60 bg-white/40 px-4 py-3 text-sm text-slate-600">
         <BookOpen className="h-4 w-4 text-slate-400" />
-        {topicFilter ? `Showing insights for ${topicFilter}` : "Showing all current topics"}
+        {topicFilter ? `Showing insights for ${topicFilter}` : "Showing all generated topics"}
       </div>
 
-      <div className="flex flex-col gap-6">
-        {visibleInsights.map((insight) => (
-          <InsightCard
-            key={insight.id}
-            insight={insight}
-            onAdd={() => onAddToBuild(insight)}
-            onShare={() => onInsightShare(insight)}
-          />
-        ))}
-      </div>
+      {visibleInsights.length > 0 ? (
+        <div className="flex flex-col gap-6">
+          {visibleInsights.map((insight) => (
+            <InsightCard
+              key={insight.id}
+              insight={insight}
+              onAdd={() => onAddToBuild(insight)}
+              onShare={() => onInsightShare(insight)}
+            />
+          ))}
+        </div>
+      ) : (
+        <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
+          No generated insights are available for the {topicFilter} topic yet.
+        </section>
+      )}
     </div>
   );
 }

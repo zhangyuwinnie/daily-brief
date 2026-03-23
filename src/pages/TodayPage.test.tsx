@@ -19,6 +19,7 @@ function TestLayout() {
         topicFilter: null,
         onAddToBuild: noop,
         onInsightShare: noop,
+        onTopicFilterChange: noop,
         onUpdateStatus: noop
       }}
     />

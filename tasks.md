@@ -98,19 +98,19 @@ Execution rule:
 
 ## Batch 5: Real Data on `/topics` and `/insights/:insightId`
 
-- [ ] `T25` Replace mock topic sourcing with normalized topics from generated data.
+- [x] `T25` Replace mock topic sourcing with normalized topics from generated data.
   Depends on: `T19`
   Acceptance: topic chips and filtered content use real data.
-- [ ] `T26` Make topic chips on `/topics` directly interactive.
+- [x] `T26` Make topic chips on `/topics` directly interactive.
   Depends on: `T25`
   Acceptance: topic changes can be triggered from the page itself, not just the right rail.
-- [ ] `T27` Replace permalink page mock dependency with real insight lookup.
+- [x] `T27` Replace permalink page mock dependency with real insight lookup.
   Depends on: `T19`
   Acceptance: refresh on `/insights/:insightId` still loads the insight.
-- [ ] `T28` Add missing permalink fields: source link, why it matters, build idea.
+- [x] `T28` Add missing permalink fields: source link, why it matters, build idea.
   Depends on: `T27`, `T06`
   Acceptance: permalink page exposes the full MVP share payload.
-- [ ] `T29` Improve not-found handling for missing insight IDs.
+- [x] `T29` Improve not-found handling for missing insight IDs.
   Depends on: `T27`
   Acceptance: invalid URLs produce a clear recovery path.
 
