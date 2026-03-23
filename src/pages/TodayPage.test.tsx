@@ -27,6 +27,7 @@ describe("TodayPage", () => {
     const pageData = getDailyBriefPageData();
 
     expect(pageData).not.toBeNull();
+    expect(pageData!.insights[0].sourceUrl).toBeTruthy();
 
     const router = createMemoryRouter(
       [
@@ -49,6 +50,7 @@ describe("TodayPage", () => {
     const html = renderToStaticMarkup(<RouterProvider router={router} />);
 
     expect(html).toContain(pageData!.insights[0].title);
+    expect(html).toContain(`href="${pageData!.insights[0].sourceUrl}"`);
     expect(html).not.toContain(MOCK_INSIGHTS[0].title);
     expect(html).toContain("Generating...");
   });

@@ -1,6 +1,6 @@
 # Daily Brief Explore - Progress
 
-Last updated: 2026-03-21
+Last updated: 2026-03-22
 
 ## Project Snapshot
 
@@ -60,12 +60,13 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 4 has T19-T20 complete and Today main content on real data`
+Overall status: `frontend prototype working, Batch 4 has T19-T20 plus Today source-link wiring complete, and Today main content on real data`
 
 Current worktree snapshot:
 
 - Batch 4 has started.
 - `T19` and `T20` are complete locally and ready to commit.
+- `/today` insight titles now open the persisted real `sourceUrl` when one exists.
 - `src/lib/briefings/generatedContentLoader.ts` now provides typed loader APIs for:
   - available generated dates
   - latest-date fallback
@@ -117,6 +118,7 @@ Implemented:
   - daily page payloads
   - insight lookup
 - Real `/today` main-column content driven by generated data instead of `mockInsights` / `mockAudio`
+- Real `/today` insight titles linked to generated `sourceUrl` values when present
 - reusable project-tracking bootstrap docs / script / skill package
 
 Not implemented yet:
@@ -163,6 +165,7 @@ Current codebase has a real local content pipeline, and the `/today` main column
   - `src/generated/audio-index.json`
   and exposes typed helpers for available dates, daily data, and insight lookup.
 - `TodayPage` now reads the latest generated daily payload instead of importing `MOCK_INSIGHTS` or `MOCK_AUDIO`.
+- `InsightCard` now renders the title as an external link when the normalized `Insight` includes `sourceUrl`.
 - The `/today` right rail still uses mock recent briefs and topic chips from the shell layer.
 - `Today` currently renders only:
   - audio card
@@ -387,10 +390,15 @@ The missing layer is parsing, normalization, storage, and productized consumptio
   - `mockInsights`
   - `mockAudio`
   and onto the latest generated day payload from `generatedContentLoader`.
+- Completed `T20a` and created `plans/task-plans/source-link-title_plan.md`.
+- Extended the `/today` route test so it asserts the rendered card links to the generated insight `sourceUrl`.
+- Wired `InsightCard` to expose persisted source URLs directly in the title without changing add/share behavior.
 - Added one small testing-infrastructure adjustment:
   - `vite.config.ts` now includes `src/**/*.test.tsx` so component-level Vitest files are picked up.
 - Locked one immediate follow-up lesson for `T21`:
   - the right rail still leaks mock recent dates, so date switching should move shell-level date metadata and Today content onto the same generated source in one pass
+- Locked one small product lesson from the source-link fix:
+  - the original URL was already persisted end to end; the remaining gap was only route-level presentation
 
 ## Known Gaps / Risks
 
@@ -482,6 +490,8 @@ Once `/today` is stable on real data:
 - 2026-03-21: `npm test -- src/pages/TodayPage.test.tsx` passed after switching the Today route to generated content.
 - 2026-03-21: `npm run build` passed after removing `mockInsights` and `mockAudio` from `TodayPage`, with a chunk-size warning because generated JSON is bundled client-side.
 - 2026-03-21: `npm run preview -- --host 127.0.0.1 --port 4173` loaded `/today` successfully after the real-data Today wiring.
+- 2026-03-22: `npm run test -- src/pages/TodayPage.test.tsx` passed after asserting `/today` renders the generated `sourceUrl` as a title link.
+- 2026-03-22: `npm run build` passed after wiring `InsightCard` to open real source URLs in a new tab when available.
 - 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.

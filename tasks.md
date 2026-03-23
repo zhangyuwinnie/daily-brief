@@ -80,6 +80,9 @@ Execution rule:
 - [x] `T20` Remove `mockInsights` and `mockAudio` from `/today`.
   Depends on: `T19`
   Acceptance: `/today` renders from generated data only.
+- [x] `T20a` Link `/today` insight titles to persisted `sourceUrl` values when present.
+  Depends on: `T20`
+  Acceptance: cards open the original source in a new tab without reintroducing mock content.
 - [ ] `T21` Add recent date switching backed by available generated dates.
   Depends on: `T19`
   Acceptance: switching date updates audio and insight content together.

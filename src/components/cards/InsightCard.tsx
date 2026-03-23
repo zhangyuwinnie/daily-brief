@@ -10,6 +10,8 @@ type InsightCardProps = {
 export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
   const buildIdea = insight.buildIdea ?? "Explore this signal and turn it into a concrete build.";
   const effortEstimate = insight.effortEstimate ?? "TBD";
+  const titleClassName =
+    "mb-2 text-xl font-black leading-tight text-slate-800 transition-colors group-hover:text-[#5c962c] sm:text-2xl";
 
   return (
     <article className="group relative rounded-card border border-white/80 bg-white/70 p-5 shadow-soft backdrop-blur-md transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-6">
@@ -29,8 +31,19 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
         </div>
       </div>
 
-      <h3 className="mb-2 text-xl font-black leading-tight text-slate-800 transition-colors group-hover:text-[#5c962c] sm:text-2xl">
-        {insight.title}
+      <h3 className={titleClassName}>
+        {insight.sourceUrl ? (
+          <a
+            href={insight.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-transparent underline-offset-4 transition-colors transition-[text-decoration-color] hover:decoration-current"
+          >
+            {insight.title}
+          </a>
+        ) : (
+          insight.title
+        )}
       </h3>
       <p className="mb-5 text-sm leading-relaxed text-slate-500">{insight.summary}</p>
 
