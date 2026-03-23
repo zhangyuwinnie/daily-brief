@@ -98,6 +98,61 @@ describe("generatedContentLoader", () => {
     });
   });
 
+  it("keeps the requested-date-unavailable flag when no generated dates exist", () => {
+    expect(
+      resolveDailyBriefPageState("1900-01-01", {
+        briefingsIndex: {
+          availableDates: [],
+          byDate: {}
+        },
+        briefingsByDate: {},
+        audioIndex: {}
+      })
+    ).toEqual({
+      requestedDate: "1900-01-01",
+      resolvedDate: null,
+      requestedDateWasUnavailable: true,
+      missingAudio: false,
+      pageData: null
+    });
+  });
+
+  it("returns a null page payload when the resolved latest date is missing its generated day record", () => {
+    const selectedDate = "2026-03-20";
+
+    expect(
+      resolveDailyBriefPageState(undefined, {
+        briefingsIndex: {
+          availableDates: [selectedDate],
+          byDate: {
+            [selectedDate]: {
+              briefingIds: ["briefing-1"],
+              insightIds: ["insight-1"],
+              hasAudio: true,
+              sourceTypes: ["rss"]
+            }
+          }
+        },
+        briefingsByDate: {},
+        audioIndex: {
+          [selectedDate]: {
+            id: "audio-2026-03-20",
+            briefingDate: selectedDate,
+            status: "ready",
+            provider: "manual",
+            audioUrl: "/generated/audio/2026-03-20.wav"
+          }
+        }
+      })
+    ).toEqual({
+      requestedDate: undefined,
+      resolvedDate: selectedDate,
+      requestedDateWasUnavailable: false,
+      missingAudio: false,
+      pageData: null
+    });
+  });
+
   it("reports when a resolved day has no audio record", () => {
     const selectedDate = "2026-03-20";
 

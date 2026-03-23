@@ -68,10 +68,14 @@ export function AddToBuildModal({
           </div>
 
           <div>
-            <label className="mb-2 block text-xs font-bold uppercase tracking-wider text-slate-500">
+            <label
+              htmlFor="build-queue-note"
+              className="mb-2 block text-xs font-bold uppercase tracking-wider text-slate-500"
+            >
               Quick Note
             </label>
             <textarea
+              id="build-queue-note"
               value={modalNote}
               onChange={(event) => onNoteChange(event.target.value)}
               placeholder="Why do you want to build this? Any initial ideas?"

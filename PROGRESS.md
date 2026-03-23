@@ -60,12 +60,31 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 7 is complete locally, and the MVP now reads manifest-backed audio states on /today, plays a real generated audio file when one exists, and verifies the audio path with focused Playwright coverage`
+Overall status: `frontend prototype working, Batch 8 is complete locally, and the MVP now has loader/store hardening plus route-level and browser-level regression coverage across the core read/build/listen loop`
 
 Current worktree snapshot:
 
-- Batch 7 is complete locally.
-- `T36` through `T38` are complete locally and ready to commit.
+- Batch 8 is complete locally.
+- `T39` through `T43` are complete locally and ready to commit.
+- `plans/task-plans/T39-T43_plan.md` now records the Batch 8 scope, file targets, verification plan, Playwright impact, and manual QA notes.
+- `src/lib/briefings/generatedContentLoader.test.ts` now also covers:
+  - unavailable requested dates when no generated days exist
+  - stale latest-date fallback where the index resolves a date but the generated day payload is missing
+- `src/lib/insightStateStore.test.ts` now also covers:
+  - no-op writes when storage is unavailable
+  - unsupported-version saved payload reset behavior for safe upgrades
+- `src/app/App.integration.test.tsx` now adds jsdom-backed route integration coverage for:
+  - `/today` loading generated data
+  - `/topics` topic-filter interaction
+  - permalink navigation and direct permalink loading
+- Playwright coverage now also includes:
+  - `tests/e2e/core-loop.spec.ts` for Today -> Add to Build -> Refresh -> Build page persistence
+  - `tests/e2e/navigation.spec.ts` for recent-date switching and permalink reload stability
+- `src/components/modals/AddToBuildModal.tsx` now binds the Quick Note label to its textarea so the core add-to-build flow is accessible and browser-testable.
+- full automated verification now passes with:
+  - `58` Vitest tests
+  - `5` Playwright tests
+  - `npm run build`
 - `src/lib/insightStateStore.ts` now provides a versioned localStorage-backed personal-state layer for:
   - loading saved `InsightState[]`
   - writing one stable persisted payload
@@ -132,7 +151,7 @@ Current worktree snapshot:
   - `AudioPlayer` component coverage for real playback controls
   - `/today` audio notice coverage
   - Playwright coverage for one ready `/today?date=2026-03-20` path plus the default pending `/today` path
-- next recommended batch is `Batch 8: Testing and Hardening`.
+- next recommended batch is `Batch 9: Cleanup and Deletion`.
 
 Implemented:
 
@@ -151,6 +170,11 @@ Implemented:
 - Real HTML-audio playback wiring for ready daily audio files
 - Explicit `/today` audio recovery copy for failed generation, missing manifest records, and invalid ready-without-URL states
 - Focused Playwright coverage for the `/today` audio entry flow
+- Route-level integration coverage for `/today`, `/topics`, and permalink loading
+- Playwright coverage for:
+  - Today -> Add to Build -> Refresh -> Build page
+  - recent date switching on `/today`
+  - permalink reload stability
 - Locked v1 contracts for:
   - normalized `Insight`
   - day-level `DailyAudio`
@@ -178,21 +202,20 @@ Not implemented yet:
 - SQLite or other persistent storage
 - historical briefing browsing
 - deletion of obsolete mock content files and disconnected controls
-- broader Batch 8 route hardening and end-to-end coverage beyond the audio slice
 
 ## Code-to-Plan Mismatches
 
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The remaining MVP gaps are now mainly testing/hardening breadth plus cleanup work:
+The remaining MVP gaps are now mainly cleanup work:
 
 - `/today`, `/topics`, and permalink routes now read generated data
 - `/build` now persists local personal state through versioned localStorage
 - `/today` now reads real audio manifest states and can play a real generated audio file when a URL exists
 - obsolete mock files still remain in the repo as cleanup work
 
-This means the read, build, and listen legs of the MVP loop now exist end to end locally, but the repo still needs broader regression coverage and cleanup work.
+This means the read, build, and listen legs of the MVP loop now exist end to end locally, with meaningful regression coverage in place, but the repo still needs cleanup work.
 
 ## What Is Actually True In Code
 

@@ -1,6 +1,6 @@
 # Daily Brief MVP Tasks
 
-Last updated: 2026-03-22
+Last updated: 2026-03-23
 Source docs:
 
 - `plans/mvp-prd.md`
@@ -149,19 +149,19 @@ Execution rule:
 
 ## Batch 8: Testing and Hardening
 
-- [ ] `T39` Add tests for generated data loaders and date fallback behavior.
+- [x] `T39` Add tests for generated data loaders and date fallback behavior.
   Depends on: `T19`, `T21`, `T22`
   Acceptance: latest-date fallback and missing-date handling are covered.
-- [ ] `T40` Add tests for the `InsightState` store and corruption recovery.
+- [x] `T40` Add tests for the `InsightState` store and corruption recovery.
   Depends on: `T30`, `T35`
   Acceptance: invalid payload, missing payload, and upgrade cases are covered.
-- [ ] `T41` Add UI integration tests for `/today`, `/topics`, and permalink loading.
+- [x] `T41` Add UI integration tests for `/today`, `/topics`, and permalink loading.
   Depends on: `T24`, `T26`, `T28`
   Acceptance: tests cover core real-data rendering and basic user interaction.
-- [ ] `T42` Add E2E coverage for the core loop: Today -> Add to Build -> Refresh -> Build page.
+- [x] `T42` Add E2E coverage for the core loop: Today -> Add to Build -> Refresh -> Build page.
   Depends on: `T34`, `T37`
   Acceptance: the core user flow passes in a browser test.
-- [ ] `T43` Add E2E coverage for date switching and permalink reloads.
+- [x] `T43` Add E2E coverage for date switching and permalink reloads.
   Depends on: `T21`, `T27`
   Acceptance: changing dates and reloading permalink pages remain stable.
 

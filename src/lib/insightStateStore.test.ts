@@ -72,6 +72,10 @@ describe("insightStateStore", () => {
     expect(readInsightStates(storage)).toEqual(states);
   });
 
+  it("does nothing when asked to write state without an available storage adapter", () => {
+    expect(() => writeInsightStates([createInsightState()], null)).not.toThrow();
+  });
+
   it("upserts one saved record per insight instead of creating duplicates", () => {
     const initialStates = [
       createInsightState({
@@ -162,6 +166,18 @@ describe("insightStateStore", () => {
             status: "Unknown"
           }
         ]
+      })
+    });
+
+    expect(readInsightStates(storage)).toEqual([]);
+    expect(storage.dump()).toEqual({});
+  });
+
+  it("resets saved payloads from unsupported versions so upgrades fail safely", () => {
+    const storage = createMemoryStorage({
+      [INSIGHT_STATE_STORAGE_KEY]: JSON.stringify({
+        version: 99,
+        items: [createInsightState()]
       })
     });
 
