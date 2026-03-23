@@ -6,7 +6,10 @@ import { BuildItemCard } from "../components/cards/BuildItemCard";
 export function BuildQueuePage() {
   const { buildQueue, onUpdateStatus } = useOutletContext<AppOutletContext>();
   const inboxItems = buildQueue.filter((item) => item.status === "Inbox");
-  const activeItems = buildQueue.filter((item) => item.status !== "Inbox");
+  const interestedItems = buildQueue.filter((item) => item.status === "Interested");
+  const activeItems = buildQueue.filter(
+    (item) => item.status === "Building" || item.status === "Learned" || item.status === "Archived"
+  );
 
   return (
     <div className="animate-enter flex h-full flex-col">
@@ -30,7 +33,7 @@ export function BuildQueuePage() {
           </Link>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
           <section className="rounded-card border border-white/50 bg-white/30 p-6">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="flex items-center gap-2 font-bold text-slate-800">
@@ -48,11 +51,34 @@ export function BuildQueuePage() {
             </div>
           </section>
 
+          <section className="rounded-card border border-white/60 bg-white/35 p-6 shadow-sm">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="flex items-center gap-2 font-bold text-slate-800">
+                <span className="h-2 w-2 rounded-full bg-amber-400" />
+                Interested
+              </h3>
+              <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-slate-400">
+                {interestedItems.length}
+              </span>
+            </div>
+            <div className="flex flex-col gap-4">
+              {interestedItems.length === 0 ? (
+                <div className="rounded-2xl border border-dashed border-white/60 py-8 text-center text-sm text-slate-400">
+                  Move an item to Interested when you want to keep it warm without starting yet.
+                </div>
+              ) : (
+                interestedItems.map((item) => (
+                  <BuildItemCard key={item.id} item={item} onUpdateStatus={onUpdateStatus} />
+                ))
+              )}
+            </div>
+          </section>
+
           <section className="rounded-card border border-white/60 bg-white/40 p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="flex items-center gap-2 font-bold text-slate-800">
                 <span className="h-2 w-2 rounded-full bg-brand-500" />
-                In Progress & Done
+                Building & Finished
               </h3>
               <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-slate-400">
                 {activeItems.length}
@@ -61,7 +87,7 @@ export function BuildQueuePage() {
             <div className="flex flex-col gap-4">
               {activeItems.length === 0 ? (
                 <div className="rounded-2xl border border-dashed border-white/60 py-8 text-center text-sm text-slate-400">
-                  Change status from Inbox to start building.
+                  Move an item to Building, Learned, or Archived to track progress here.
                 </div>
               ) : (
                 activeItems.map((item) => (

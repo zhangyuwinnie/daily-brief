@@ -116,22 +116,22 @@ Execution rule:
 
 ## Batch 6: Persisted Personal State
 
-- [ ] `T30` Introduce a localStorage-backed `InsightState` store.
+- [x] `T30` Introduce a localStorage-backed `InsightState` store.
   Depends on: `T06`
   Acceptance: state can be read, written, and versioned under one stable key.
-- [ ] `T31` Replace in-memory `BuildItem[]` state with `InsightState`-driven derived build data.
+- [x] `T31` Replace in-memory `BuildItem[]` state with `InsightState`-driven derived build data.
   Depends on: `T30`, `T19`
   Acceptance: refresh preserves queue membership and status.
-- [ ] `T32` Add the `Interested` status to the state model and UI flows.
+- [x] `T32` Add the `Interested` status to the state model and UI flows.
   Depends on: `T31`
   Acceptance: the model supports all planned statuses even if the UI only emphasizes a subset initially.
-- [ ] `T33` Update add-to-build behavior to create or update `InsightState`.
+- [x] `T33` Update add-to-build behavior to create or update `InsightState`.
   Depends on: `T31`
   Acceptance: duplicate adds do not create duplicate queue records.
-- [ ] `T34` Update `/build` to render from persisted derived items.
+- [x] `T34` Update `/build` to render from persisted derived items.
   Depends on: `T31`, `T33`
   Acceptance: build queue cards come from real insight data plus local personal state.
-- [ ] `T35` Add corruption recovery for invalid saved state.
+- [x] `T35` Add corruption recovery for invalid saved state.
   Depends on: `T30`
   Acceptance: invalid local storage resets safely without breaking the app.
 

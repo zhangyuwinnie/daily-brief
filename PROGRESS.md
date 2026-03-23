@@ -60,12 +60,36 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batches 4 and 5 are complete locally, and the MVP read flow now runs on generated data across /today, /topics, and /insights/:insightId`
+Overall status: `frontend prototype working, Batch 6 is complete locally, and the MVP read/build flow now persists personal state across /today and /build using generated insight data plus versioned localStorage`
 
 Current worktree snapshot:
 
-- Batch 5 is complete locally.
-- `T25` through `T29` are complete locally and ready to commit.
+- Batch 6 is complete locally.
+- `T30` through `T35` are complete locally and ready to commit.
+- `src/lib/insightStateStore.ts` now provides a versioned localStorage-backed personal-state layer for:
+  - loading saved `InsightState[]`
+  - writing one stable persisted payload
+  - duplicate-safe add-to-build upserts
+  - status updates
+  - corruption recovery for invalid saved payloads
+  - derived `/build` queue items from saved state plus generated insights
+- `src/app/App.tsx` now derives the build queue from persisted `InsightState` records instead of React-memory `BuildItem[]`.
+- add-to-build now reuses the existing saved note and skill focus when an insight was already queued.
+- duplicate add-to-build actions now update one saved record per insight instead of creating duplicate queue cards.
+- `/build` now renders three explicit persisted sections:
+  - `Inbox`
+  - `Interested`
+  - `Building & Finished`
+- `src/components/cards/BuildItemCard.tsx` now shows distinct visual treatment for:
+  - `Inbox`
+  - `Interested`
+  - `Building`
+  - `Learned`
+  - `Archived`
+- automated verification now includes:
+  - store round-trip and corruption-recovery coverage
+  - derived build queue coverage
+  - `/build` route rendering coverage for empty and `Interested` states
 - `src/lib/briefings/generatedContentLoader.ts` now provides typed loader APIs for:
   - available generated dates
   - latest-date fallback
@@ -110,7 +134,7 @@ Implemented:
 - Static Topics page
 - Static insight share page
 - Add-to-build modal
-- In-memory build queue state
+- Persisted localStorage-backed build queue state
 - Mock audio player UI
 - Locked v1 contracts for:
   - normalized `Insight`
@@ -129,6 +153,7 @@ Implemented:
   - available dates
   - daily page payloads
   - insight lookup
+- versioned localStorage-backed personal state with duplicate-safe build queue derivation and corruption recovery
 - Real `/today` main-column content driven by generated data instead of `mockInsights` / `mockAudio`
 - Real `/today` insight titles linked to generated `sourceUrl` values when present
 - reusable project-tracking bootstrap docs / script / skill package
@@ -138,7 +163,6 @@ Not implemented yet:
 - SQLite or other persistent storage
 - real audio metadata ingestion from generated manifest
 - real audio playback URL
-- persisted build/learning state
 - historical briefing browsing
 - deletion of obsolete mock content files and disconnected controls
 
@@ -147,14 +171,14 @@ Not implemented yet:
 The main mismatch is no longer the shared TypeScript contract.
 The locked v1 types and parser pipeline now exist.
 
-The remaining MVP gaps are now the personal-state and audio legs of the loop:
+The remaining MVP gaps are now mainly the audio leg of the loop plus cleanup work:
 
 - `/today`, `/topics`, and permalink routes now read generated data
-- the current app still has no persisted personal state
+- `/build` now persists local personal state through versioned localStorage
 - the current app still has no real audio playback URL
 - obsolete mock files still remain in the repo as cleanup work
 
-This means the read flow is now wired end to end, but the build/reflect loop is still local-memory-only.
+This means the read flow and the basic build loop are now wired end to end, but real audio playback is still incomplete.
 
 ## What Is Actually True In Code
 
@@ -162,7 +186,13 @@ Current codebase has a real local content pipeline, and the main read surfaces n
 
 - `src/data/mockInsights.ts` is no longer used by product routes, but still exists as a cleanup candidate and test fixture source.
 - `src/data/mockAudio.ts` is no longer used by `TodayPage`, but still exists in the repo as a cleanup candidate.
-- `src/app/App.tsx` stores build queue state only in React memory.
+- `src/app/App.tsx` now initializes persisted `InsightState[]`, writes updates back to localStorage, and derives `/build` cards from generated insights plus saved state.
+- `src/lib/insightStateStore.ts` now owns:
+  - the stable localStorage key and versioned payload shape
+  - add-to-build upsert semantics
+  - status updates with timestamps
+  - invalid-payload reset behavior
+  - derived build queue assembly from saved state plus real insight data
 - `src/lib/briefings/` now contains:
   - parser logic
   - normalizer logic
@@ -187,9 +217,10 @@ Current codebase has a real local content pipeline, and the main read surfaces n
 - The `/today` and `/topics` shell topic chips now derive from generated topics instead of mock constants.
 - `TopicsPage` now reads generated insights across dates and applies the selected topic filter directly from page-level controls.
 - `InsightSharePage` now resolves the normalized insight from the URL id on refresh and surfaces source-link plus explicit why/build blocks.
+- `BuildQueuePage` now renders persisted real-data cards grouped into `Inbox`, `Interested`, and `Building & Finished`.
 - `AudioPlayer` simulates progress locally instead of playing a real audio file.
 
-This means the product read loop exists end to end, but the actual build-state persistence and real audio playback loop are still incomplete.
+This means the product read loop and the local persisted build queue both exist end to end, but the real audio playback loop is still incomplete.
 
 ## Existing Input Shape
 
@@ -231,8 +262,8 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 - Implemented static card-based Today / Topics / Build Queue / Share views.
 - Implemented basic local interactions:
   - topic filter state
-  - add to build queue
-  - build item status update
+  - persisted add-to-build queue
+  - persisted build item status update
 
 ### Project operations
 

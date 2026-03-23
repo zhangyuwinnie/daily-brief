@@ -52,8 +52,10 @@ export type DailyAudio = {
 export type InsightState = {
   insightId: string;
   status: "Inbox" | "Interested" | "Building" | "Learned" | "Archived";
+  skillFocus?: SkillFocus;
   note?: string;
   personalTakeaway?: string;
+  createdAt: string;
   lastTouchedAt: string;
 };
 
