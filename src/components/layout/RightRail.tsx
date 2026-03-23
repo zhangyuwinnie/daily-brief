@@ -1,6 +1,9 @@
 import { Calendar, Share2, Tag, Target } from "lucide-react";
-import { Link } from "react-router-dom";
-import { RECENT_BRIEFS } from "../../data/mockInsights";
+import { Link, useLocation } from "react-router-dom";
+import {
+  getAvailableBriefingDates,
+  getDailyBriefPageData
+} from "../../lib/briefings/generatedContentLoader";
 import type { Insight } from "../../types/models";
 
 type RightRailProps = {
@@ -20,6 +23,11 @@ export function RightRail({
   onInsightShare,
   onTopicFilterChange
 }: RightRailProps) {
+  const location = useLocation();
+  const requestedDate = new URLSearchParams(location.search).get("date") ?? undefined;
+  const selectedDate = getDailyBriefPageData(requestedDate)?.date ?? null;
+  const recentDates = getAvailableBriefingDates().slice(0, 4);
+
   return (
     <aside className="border-t border-white/40 bg-white/10 p-4 lg:w-72 lg:flex-shrink-0 lg:border-l lg:border-t-0 lg:p-6">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
@@ -29,17 +37,18 @@ export function RightRail({
             Recent Briefs
           </h3>
           <div className="flex flex-col gap-2">
-            {RECENT_BRIEFS.map((date, index) => (
-              <button
+            {recentDates.map((date) => (
+              <Link
                 key={date}
+                to={`/today?date=${date}`}
                 className={`rounded-xl px-4 py-2.5 text-left text-sm font-medium transition-all ${
-                  index === 0
+                  selectedDate === date && location.pathname === "/today"
                     ? "border border-white/60 bg-white text-slate-800 shadow-sm"
                     : "text-slate-500 hover:bg-white/40"
                 }`}
               >
                 {date}
-              </button>
+              </Link>
             ))}
           </div>
         </section>

@@ -60,13 +60,15 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend prototype working, Batch 4 has T19-T20 plus Today source-link wiring complete, and Today main content on real data`
+Overall status: `frontend prototype working, Batch 4 has T19-T21 complete locally, and /today now reads both content and recent-date switching from generated data`
 
 Current worktree snapshot:
 
 - Batch 4 has started.
-- `T19` and `T20` are complete locally and ready to commit.
+- `T19` through `T21` are complete locally and ready to commit.
 - `/today` insight titles now open the persisted real `sourceUrl` when one exists.
+- `/today` now reads `?date=YYYY-MM-DD` and falls back to the latest generated date when the query param is missing or invalid.
+- `/today` recent-date links now come from generated available dates instead of static mock labels.
 - `src/lib/briefings/generatedContentLoader.ts` now provides typed loader APIs for:
   - available generated dates
   - latest-date fallback
@@ -128,8 +130,6 @@ Not implemented yet:
 - real audio playback URL
 - persisted build/learning state
 - historical briefing browsing
-- date switching backed by real generated data
-- `/today` right-rail dates backed by generated data
 - product routes consuming the generated-content loader instead of mocks
 
 ## Code-to-Plan Mismatches
@@ -139,17 +139,17 @@ The locked v1 types and parser pipeline now exist.
 
 The real gap is now partial route integration and remaining mock-backed chrome:
 
-- `/today` main content uses the typed loader, but the right rail still uses mock recent dates and topic lists
+- `/today` now uses generated data for both day selection and main content, but the right rail topic list is still mock-backed
 - `/topics` and permalink routes still render mock content
-- latest-date fallback exists in the loader, but user-facing date switching is not wired yet
+- empty/error states for missing day or missing audio are still thin and not yet explicit
 
 This means the codebase is now contract- and parser-ready, but the product loop is still not wired end to end.
 
 ## What Is Actually True In Code
 
-Current codebase has a real local content pipeline, and the `/today` main column now reads it.
+Current codebase has a real local content pipeline, and `/today` now reads it for both content and date selection.
 
-- `src/data/mockInsights.ts` is still the content source for `/topics` and some shell-level chrome.
+- `src/data/mockInsights.ts` is still the content source for `/topics` and the shell-level topic list.
 - `src/data/mockAudio.ts` is no longer used by `TodayPage`, but still exists in the repo as a cleanup candidate.
 - `src/app/App.tsx` stores build queue state only in React memory.
 - `src/lib/briefings/` now contains:
@@ -164,16 +164,17 @@ Current codebase has a real local content pipeline, and the `/today` main column
   - `src/generated/briefings-by-date.json`
   - `src/generated/audio-index.json`
   and exposes typed helpers for available dates, daily data, and insight lookup.
-- `TodayPage` now reads the latest generated daily payload instead of importing `MOCK_INSIGHTS` or `MOCK_AUDIO`.
+- `TodayPage` now reads the selected generated daily payload from `/today?date=...`, with latest-date fallback.
 - `InsightCard` now renders the title as an external link when the normalized `Insight` includes `sourceUrl`.
-- The `/today` right rail still uses mock recent briefs and topic chips from the shell layer.
+- The `/today` right rail now renders generated recent dates as `/today?date=...` links, but topic chips are still shell-level mock values.
 - `Today` currently renders only:
   - audio card
   - filtered insight list
+  - generated recent-date switching
   and does not yet implement planned sections like:
   - why it matters
   - learn this next
-  - recent date switcher
+  - build this today
 - `Topics` page top chips are display-only; actual topic switching currently happens from the right rail, not the page itself.
 - `InsightSharePage` is visually present, but still does not surface the full planned share payload:
   - no source link
@@ -393,18 +394,23 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 - Completed `T20a` and created `plans/task-plans/source-link-title_plan.md`.
 - Extended the `/today` route test so it asserts the rendered card links to the generated insight `sourceUrl`.
 - Wired `InsightCard` to expose persisted source URLs directly in the title without changing add/share behavior.
+- Completed `T21` and created `plans/task-plans/T21_plan.md`.
+- Extended `/today` route coverage so the page must honor a valid `date` query param and fall back to the latest generated date when the query param is invalid.
+- Added `RightRail` coverage so recent-date links must come from generated available dates and route through `/today?date=...`.
+- Wired `TodayPage` to resolve its dataset from the route query param instead of always reading the latest day.
+- Replaced the mock recent-brief labels in `RightRail` with generated date links, keeping the selected state aligned with the active `/today` day.
 - Added one small testing-infrastructure adjustment:
   - `vite.config.ts` now includes `src/**/*.test.tsx` so component-level Vitest files are picked up.
-- Locked one immediate follow-up lesson for `T21`:
-  - the right rail still leaks mock recent dates, so date switching should move shell-level date metadata and Today content onto the same generated source in one pass
+- Locked one immediate follow-up lesson for `T22`:
+  - once date selection is real, the next gap is explicit empty/error copy for missing day and missing audio instead of thin generic fallback text
 - Locked one small product lesson from the source-link fix:
   - the original URL was already persisted end to end; the remaining gap was only route-level presentation
 
 ## Known Gaps / Risks
 
 - The generated-data pipeline and typed loader now exist, but the app still does not consume them:
-  - `/today` main content is real, but `/topics` and permalink routes still read mock data
-  - `/today` right rail still shows mock recent briefs and mock topic chips
+  - `/today` now uses generated content and generated recent dates, but `/topics` and permalink routes still read mock data
+  - `/today` right rail topic chips are still mock-backed
 - Build queue state is ephemeral and will disappear on refresh.
 - Audio player currently simulates playback instead of playing a real file.
 - Current upstream asset state is asymmetric:
@@ -415,7 +421,6 @@ The missing layer is parsing, normalization, storage, and productized consumptio
 - The current app can look more complete than it really is because several elements are presentational only.
 - Some UI elements are still decorative or disconnected:
   - Topics page chips are not interactive
-  - recent briefs in the right rail are still static mock values
   - insight preview in the right rail is route-param-driven and not very useful on current pages
 - `selectedInsight` in app state is route-param-derived, which is fine for permalink pages but not a great fit for Today/Topics right-rail preview behavior.
 - The remaining content-ingestion decision for MVP is now settled:
@@ -434,26 +439,26 @@ Use the generated data path on the first real user-facing route before any more 
 Recommended next batch:
 
 1. Continue `Batch 4` from `tasks.md`.
-2. Execute `T21` and add recent-date switching through the new loader layer.
-3. Execute `T22` and add explicit missing-day / missing-audio states.
-4. Use `T21` to remove the remaining mock recent-brief behavior from the `/today` right rail.
-5. Keep `/topics` and permalink pages on mocks until `/today` is stable.
+2. Execute `T22` and add explicit missing-day / missing-audio states.
+3. Execute `T23` and refactor `InsightCard` to expose richer v1 fields cleanly.
+4. Keep `/topics` and permalink pages on mocks until `/today` is stable.
+5. Stop after Batch 4 and confirm the first real end-to-end read flow before moving to Batch 5.
 
 ## Immediate Next To Do
 
 The next concrete thing to do is:
 
-1. Execute `T21` and bind `/today` date switching to `availableDates`.
-2. Remove the remaining mock recent-brief behavior from the Today shell path.
-3. Execute `T22` and make missing day / missing audio states explicit.
+1. Execute `T22` and make missing day / missing audio states explicit.
+2. Execute `T23` and refactor `InsightCard` to use richer v1 fields where available.
+3. Execute `T24` and finish the planned Today sections once the state handling is explicit.
 4. Keep the rest of Batch 4 scoped to `/today` only.
 
 Expected deliverables for that batch:
 
-1. recent-date switching backed by generated dates
-2. visible empty/error states instead of silent mock fallback
-3. no remaining mock recent-brief behavior on the Today route
-4. one stable real-data `/today` flow end to end
+1. visible empty/error states instead of silent or generic fallback
+2. richer real-data Today cards
+3. one stable real-data `/today` flow end to end
+4. a clean stop point before `/topics` and permalink rewiring
 
 ## After That
 
@@ -492,6 +497,10 @@ Once `/today` is stable on real data:
 - 2026-03-21: `npm run preview -- --host 127.0.0.1 --port 4173` loaded `/today` successfully after the real-data Today wiring.
 - 2026-03-22: `npm run test -- src/pages/TodayPage.test.tsx` passed after asserting `/today` renders the generated `sourceUrl` as a title link.
 - 2026-03-22: `npm run build` passed after wiring `InsightCard` to open real source URLs in a new tab when available.
+- 2026-03-22: `npm test -- src/pages/TodayPage.test.tsx src/components/layout/RightRail.test.tsx` failed first for missing `/today?date=...` selection and mock recent-brief links, then passed after wiring real date switching.
+- 2026-03-22: `npm test` passed with 7 test files / 18 tests after completing `T21`.
+- 2026-03-22: `npm run build` passed after wiring `/today` query-param date selection and generated recent-date links, with the same chunk-size warning because generated JSON is still bundled client-side.
+- 2026-03-22: `npm run dev -- --host 127.0.0.1 --port 5173` loaded `/today?date=2026-03-20` successfully in headless Chrome, and the dumped DOM showed the selected date plus generated recent-date links.
 - 2026-03-21: completed `T01` by auditing the RSS briefing format and documenting the stable section markers, variants, and parser edge cases in `plans/input-audits/rss-briefing-v1-audit.md`.
 - 2026-03-21: `npm run build` passed after the `T01` planning and audit documentation updates using Node `v22.17.1`.
 - 2026-03-21: completed `T02` by auditing the X briefing format and documenting the stable section markers, optional subsections, bullet variants, and parser edge cases in `plans/input-audits/x-briefing-v1-audit.md`.

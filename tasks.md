@@ -83,7 +83,7 @@ Execution rule:
 - [x] `T20a` Link `/today` insight titles to persisted `sourceUrl` values when present.
   Depends on: `T20`
   Acceptance: cards open the original source in a new tab without reintroducing mock content.
-- [ ] `T21` Add recent date switching backed by available generated dates.
+- [x] `T21` Add recent date switching backed by available generated dates.
   Depends on: `T19`
   Acceptance: switching date updates audio and insight content together.
 - [ ] `T22` Add explicit empty and error states for missing day or missing audio.

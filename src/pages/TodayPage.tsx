@@ -1,12 +1,14 @@
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import type { AppOutletContext } from "../app/outlet-context";
 import { AudioPlayer } from "../components/audio/AudioPlayer";
 import { InsightCard } from "../components/cards/InsightCard";
 import { getDailyBriefPageData } from "../lib/briefings/generatedContentLoader";
 
 export function TodayPage() {
+  const [searchParams] = useSearchParams();
   const { topicFilter, onAddToBuild, onInsightShare } = useOutletContext<AppOutletContext>();
-  const pageData = getDailyBriefPageData();
+  const requestedDate = searchParams.get("date") ?? undefined;
+  const pageData = getDailyBriefPageData(requestedDate);
 
   if (!pageData) {
     return (
