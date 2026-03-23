@@ -100,7 +100,7 @@ describe("TodayPage", () => {
     expect(html).toContain("Check back after the upstream audio job finishes.");
   });
 
-  it("renders the planned Today sections from generated data", () => {
+  it("only renders the extra Today sections when distinct why/build/learn content exists", () => {
     const pageData = getDailyBriefPageData();
 
     expect(pageData).not.toBeNull();
@@ -108,9 +108,9 @@ describe("TodayPage", () => {
     const html = renderTodayPage();
 
     expect(html).toContain("Top Signals");
-    expect(html).toContain("Why It Matters");
-    expect(html).toContain("Build This Today");
-    expect(html).toContain("Learn This Next");
+    expect(html).not.toContain("Why It Matters");
+    expect(html).not.toContain("Build This Today");
+    expect(html).not.toContain("Learn This Next");
     expect(html).toContain(pageData!.insights.find((insight) => insight.isTopSignal)?.title ?? "");
   });
 });

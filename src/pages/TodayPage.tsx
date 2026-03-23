@@ -109,6 +109,41 @@ export function TodayPage() {
     ? pageData.insights.filter((insight) => insight.topics.includes(topicFilter))
     : pageData.insights;
   const todaySections = buildTodaySections(insights);
+  const visibleSignalSections = [
+    todaySections.whyItMatters.length > 0 ? (
+      <TodaySignalSection
+        key="why"
+        title="Why It Matters"
+        description="Keep the day grounded in the practical significance of each signal."
+        items={todaySections.whyItMatters}
+        accentClassName="bg-slate-300"
+        borderClassName="border-slate-200"
+        backgroundClassName="bg-slate-50/70"
+      />
+    ) : null,
+    todaySections.buildThisToday.length > 0 ? (
+      <TodaySignalSection
+        key="build"
+        title="Build This Today"
+        description="Pull the most buildable next step out of the same real dataset."
+        items={todaySections.buildThisToday}
+        accentClassName="bg-brand-500"
+        borderClassName="border-[#cbebb2]"
+        backgroundClassName="bg-[#f2faed]"
+      />
+    ) : null,
+    todaySections.learnThisNext.length > 0 ? (
+      <TodaySignalSection
+        key="learn"
+        title="Learn This Next"
+        description="Keep one concrete learning thread alive while the signal is still fresh."
+        items={todaySections.learnThisNext}
+        accentClassName="bg-sky-400"
+        borderClassName="border-sky-200"
+        backgroundClassName="bg-sky-50/80"
+      />
+    ) : null
+  ].filter(Boolean);
 
   return (
     <div className="animate-enter">
@@ -184,32 +219,19 @@ export function TodayPage() {
             </div>
           </section>
 
-          <div className="grid gap-4 xl:grid-cols-3">
-            <TodaySignalSection
-              title="Why It Matters"
-              description="Keep the day grounded in the practical significance of each signal."
-              items={todaySections.whyItMatters}
-              accentClassName="bg-slate-300"
-              borderClassName="border-slate-200"
-              backgroundClassName="bg-slate-50/70"
-            />
-            <TodaySignalSection
-              title="Build This Today"
-              description="Pull the most buildable next step out of the same real dataset."
-              items={todaySections.buildThisToday}
-              accentClassName="bg-brand-500"
-              borderClassName="border-[#cbebb2]"
-              backgroundClassName="bg-[#f2faed]"
-            />
-            <TodaySignalSection
-              title="Learn This Next"
-              description="Keep one concrete learning thread alive while the signal is still fresh."
-              items={todaySections.learnThisNext}
-              accentClassName="bg-sky-400"
-              borderClassName="border-sky-200"
-              backgroundClassName="bg-sky-50/80"
-            />
-          </div>
+          {visibleSignalSections.length > 0 ? (
+            <div
+              className={`grid gap-4 ${
+                visibleSignalSections.length === 1
+                  ? "grid-cols-1"
+                  : visibleSignalSections.length === 2
+                    ? "xl:grid-cols-2"
+                    : "xl:grid-cols-3"
+              }`}
+            >
+              {visibleSignalSections}
+            </div>
+          ) : null}
 
           {todaySections.moreSignals.length > 0 ? (
             <section>

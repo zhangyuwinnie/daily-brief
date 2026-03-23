@@ -39,15 +39,15 @@ describe("buildTodaySections", () => {
     expect(sections.moreSignals.map((insight) => insight.id)).toEqual(["3", "5"]);
   });
 
-  it("falls back to summary and take when richer fields are absent", () => {
+  it("hides repeated why/build/learn sections when richer fields are absent", () => {
     const sections = buildTodaySections([
       createInsight({ id: "1", title: "One", isTopSignal: true, summary: "One summary", take: "One take" }),
       createInsight({ id: "2", title: "Two", isTopSignal: true, summary: "Two summary", take: "Two take" })
     ]);
 
-    expect(sections.whyItMatters.map((item) => item.content)).toEqual(["One summary", "Two summary"]);
-    expect(sections.buildThisToday.map((item) => item.content)).toEqual(["One take", "Two take"]);
-    expect(sections.learnThisNext.map((item) => item.content)).toEqual(["One summary", "Two summary"]);
+    expect(sections.whyItMatters).toEqual([]);
+    expect(sections.buildThisToday).toEqual([]);
+    expect(sections.learnThisNext).toEqual([]);
   });
 
   it("uses richer why/build/learn fields when available", () => {
@@ -65,6 +65,25 @@ describe("buildTodaySections", () => {
     expect(sections.whyItMatters[0].content).toBe("Why one matters");
     expect(sections.buildThisToday[0].content).toBe("Build one");
     expect(sections.learnThisNext[0].content).toBe("Learn one");
+  });
+
+  it("drops richer fields when they only repeat the existing summary or take", () => {
+    const sections = buildTodaySections([
+      createInsight({
+        id: "1",
+        title: "One",
+        isTopSignal: true,
+        summary: "Repeated summary",
+        take: "Repeated take",
+        whyItMatters: "Repeated summary",
+        buildIdea: "Repeated take",
+        learnGoal: "Repeated summary"
+      })
+    ]);
+
+    expect(sections.whyItMatters).toEqual([]);
+    expect(sections.buildThisToday).toEqual([]);
+    expect(sections.learnThisNext).toEqual([]);
   });
 
   it("falls back to the first insights when no top signal is available", () => {

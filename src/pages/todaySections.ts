@@ -30,6 +30,20 @@ function toSectionItem(insight: Insight, content: string): TodaySectionItem {
   };
 }
 
+function normalizeContent(value: string | undefined) {
+  return value?.trim().replace(/\s+/g, " ").toLowerCase() ?? "";
+}
+
+function isDistinctContent(candidate: string | undefined, ...existingValues: Array<string | undefined>) {
+  const normalizedCandidate = normalizeContent(candidate);
+
+  if (!normalizedCandidate) {
+    return false;
+  }
+
+  return existingValues.every((value) => normalizeContent(value) !== normalizedCandidate);
+}
+
 export function buildTodaySections(insights: Insight[]): TodaySections {
   const topSignals = insights.filter((insight) => insight.isTopSignal).slice(0, 3);
   const spotlightInsights = (topSignals.length > 0 ? topSignals : insights.slice(0, 3)).slice(0, 3);
@@ -37,14 +51,20 @@ export function buildTodaySections(insights: Insight[]): TodaySections {
 
   return {
     topSignals: spotlightInsights,
-    whyItMatters: spotlightInsights.map((insight) =>
-      toSectionItem(insight, insight.whyItMatters ?? insight.summary)
+    whyItMatters: spotlightInsights.flatMap((insight) =>
+      isDistinctContent(insight.whyItMatters, insight.summary, insight.take)
+        ? [toSectionItem(insight, insight.whyItMatters!)]
+        : []
     ),
-    buildThisToday: spotlightInsights.map((insight) =>
-      toSectionItem(insight, insight.buildIdea ?? insight.take)
+    buildThisToday: spotlightInsights.flatMap((insight) =>
+      isDistinctContent(insight.buildIdea, insight.take, insight.summary, insight.whyItMatters)
+        ? [toSectionItem(insight, insight.buildIdea!)]
+        : []
     ),
-    learnThisNext: spotlightInsights.map((insight) =>
-      toSectionItem(insight, insight.learnGoal ?? insight.summary)
+    learnThisNext: spotlightInsights.flatMap((insight) =>
+      isDistinctContent(insight.learnGoal, insight.summary, insight.take, insight.whyItMatters, insight.buildIdea)
+        ? [toSectionItem(insight, insight.learnGoal!)]
+        : []
     ),
     moreSignals: insights.filter((insight) => !spotlightIds.has(insight.id))
   };
