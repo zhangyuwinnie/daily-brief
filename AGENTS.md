@@ -10,10 +10,6 @@
   - choose the first unchecked and unblocked task in the current approved batch
   - if the current batch is fully done, stop and ask for approval before starting the next batch
 
-# First Principles
-
-请使用第一性原理思考。你不能总是假设我非常清楚自己想要什么和该怎么得到。请保持审慎，从原始需求和问题出发，如果动机和目标不清晰，停下来和我讨论。如果目标清晰但是路径不是最短，告诉我，并且建议更好的办法。
-
 # Task Execution Protocol
 
 When taking a task from `tasks.md`, use this workflow:
@@ -57,20 +53,15 @@ When taking a task from `tasks.md`, use this workflow:
    - Record:
      - what changed
      - what was verified
-     - lesson learned from the session
-     - what remains
-     - the next recommended task or batch
-11. Save progress
-   - Reference scripts:
-     - `/Users/yuzhang/Desktop/work/pocket_buddy_worktree/scripts/save_progress.sh`
-     - `/Users/yuzhang/Desktop/work/pocket_buddy_worktree/.claude/commands/save-progress.md`
-   - Use them only if they fit this repo's setup.
-   - This repo uses `PROGRESS.md`.
-   - If the external scripts do not fit the current repo state, manually apply the same intent to `PROGRESS.md`.
-12. Open the app
-   - Start the app with the appropriate command.
-   - Open the relevant page or otherwise verify it loads.
-   - Then stop and wait for user feedback before taking the next task.
+     - key lesson or risk
+   - Do not duplicate task-by-task status already tracked in `tasks.md`.
+   - If `tasks.md` already makes the next step obvious, do not restate it in detail here.
+11. Final handoff
+   - start app for the user
+   - verify the target page loads in a real browser
+   - do not use a sandboxed browser for final handoff verification
+   - leave the server running
+   - pause for feedback
 
 # Vibe Coding Protocol
 
