@@ -1,7 +1,4 @@
-import { describe, expect, it } from "vitest";
-import audioIndexJson from "../../generated/audio-index.json";
-import briefingsByDateJson from "../../generated/briefings-by-date.json";
-import briefingsIndexJson from "../../generated/briefings-index.json";
+import { describe, expect, it, vi } from "vitest";
 import {
   getAvailableBriefingDates,
   getAvailableTopics,
@@ -10,19 +7,60 @@ import {
   getDailyBriefPageState,
   getInsightById,
   getLatestBriefingDate,
+  loadGeneratedContentSources,
+  primeGeneratedContentSources,
+  resetGeneratedContentSources,
   resolveDailyBriefPageState
 } from "./generatedContentLoader";
-import type {
-  GeneratedAudioIndex,
-  GeneratedBriefingsByDate,
-  GeneratedBriefingsIndex
-} from "./generatedArtifacts";
+import { generatedContentFixture } from "../../test/generatedContentFixture";
 
-const briefingsIndex = briefingsIndexJson as GeneratedBriefingsIndex;
-const briefingsByDate = briefingsByDateJson as GeneratedBriefingsByDate;
-const audioIndex = audioIndexJson as GeneratedAudioIndex;
+const { briefingsIndex, briefingsByDate, audioIndex } = generatedContentFixture;
 
 describe("generatedContentLoader", () => {
+  it("loads generated content from runtime public JSON endpoints and reuses the cached result", async () => {
+    resetGeneratedContentSources();
+    const fetchMock = vi.fn(async (input: string | URL | Request) => {
+      const url = String(input);
+
+      if (url.endsWith("/generated/briefings-index.json")) {
+        return {
+          ok: true,
+          json: async () => briefingsIndex
+        };
+      }
+
+      if (url.endsWith("/generated/briefings-by-date.json")) {
+        return {
+          ok: true,
+          json: async () => briefingsByDate
+        };
+      }
+
+      if (url.endsWith("/generated/audio-index.json")) {
+        return {
+          ok: true,
+          json: async () => audioIndex
+        };
+      }
+
+      throw new Error(`Unexpected fetch request: ${url}`);
+    });
+
+    const firstLoad = await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
+    const secondLoad = await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
+
+    expect(firstLoad).toEqual(generatedContentFixture);
+    expect(secondLoad).toBe(firstLoad);
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+    expect(fetchMock.mock.calls.map(([url]) => String(url))).toEqual([
+      "/generated/briefings-index.json",
+      "/generated/briefings-by-date.json",
+      "/generated/audio-index.json"
+    ]);
+
+    primeGeneratedContentSources(generatedContentFixture);
+  });
+
   it("returns the available briefing dates from the generated index", () => {
     expect(getAvailableBriefingDates()).toEqual(briefingsIndex.availableDates);
   });

@@ -1,0 +1,381 @@
+{
+  "2026-04-06": {
+    "id": "audio-2026-04-06",
+    "briefingDate": "2026-04-06",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-06"
+  },
+  "2026-04-05": {
+    "id": "audio-2026-04-05",
+    "briefingDate": "2026-04-05",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-05"
+  },
+  "2026-04-04": {
+    "id": "audio-2026-04-04",
+    "briefingDate": "2026-04-04",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-04"
+  },
+  "2026-04-03": {
+    "id": "audio-2026-04-03",
+    "briefingDate": "2026-04-03",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-03"
+  },
+  "2026-04-02": {
+    "id": "audio-2026-04-02",
+    "briefingDate": "2026-04-02",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-02"
+  },
+  "2026-04-01": {
+    "id": "audio-2026-04-01",
+    "briefingDate": "2026-04-01",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-01"
+  },
+  "2026-03-31": {
+    "id": "audio-2026-03-31",
+    "briefingDate": "2026-03-31",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-31"
+  },
+  "2026-03-29": {
+    "id": "audio-2026-03-29",
+    "briefingDate": "2026-03-29",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-29"
+  },
+  "2026-03-28": {
+    "id": "audio-2026-03-28",
+    "briefingDate": "2026-03-28",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-28"
+  },
+  "2026-03-27": {
+    "id": "audio-2026-03-27",
+    "briefingDate": "2026-03-27",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-27"
+  },
+  "2026-03-26": {
+    "id": "audio-2026-03-26",
+    "briefingDate": "2026-03-26",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-26"
+  },
+  "2026-03-25": {
+    "id": "audio-2026-03-25",
+    "briefingDate": "2026-03-25",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-25"
+  },
+  "2026-03-24": {
+    "id": "audio-2026-03-24",
+    "briefingDate": "2026-03-24",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-24"
+  },
+  "2026-03-23": {
+    "id": "audio-2026-03-23",
+    "briefingDate": "2026-03-23",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-23"
+  },
+  "2026-03-22": {
+    "id": "audio-2026-03-22",
+    "briefingDate": "2026-03-22",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-22"
+  },
+  "2026-03-21": {
+    "id": "audio-2026-03-21",
+    "briefingDate": "2026-03-21",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-21"
+  },
+  "2026-03-20": {
+    "id": "audio-2026-03-20",
+    "briefingDate": "2026-03-20",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-20",
+    "audioUrl": "/generated/audio/2026-03-20.wav"
+  },
+  "2026-03-19": {
+    "id": "audio-2026-03-19",
+    "briefingDate": "2026-03-19",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-19"
+  },
+  "2026-03-18": {
+    "id": "audio-2026-03-18",
+    "briefingDate": "2026-03-18",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-18"
+  },
+  "2026-03-17": {
+    "id": "audio-2026-03-17",
+    "briefingDate": "2026-03-17",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-17"
+  },
+  "2026-03-16": {
+    "id": "audio-2026-03-16",
+    "briefingDate": "2026-03-16",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-16"
+  },
+  "2026-03-15": {
+    "id": "audio-2026-03-15",
+    "briefingDate": "2026-03-15",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-15"
+  },
+  "2026-03-14": {
+    "id": "audio-2026-03-14",
+    "briefingDate": "2026-03-14",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-14"
+  },
+  "2026-03-13": {
+    "id": "audio-2026-03-13",
+    "briefingDate": "2026-03-13",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-13"
+  },
+  "2026-03-12": {
+    "id": "audio-2026-03-12",
+    "briefingDate": "2026-03-12",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-12"
+  },
+  "2026-03-11": {
+    "id": "audio-2026-03-11",
+    "briefingDate": "2026-03-11",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-11"
+  },
+  "2026-03-10": {
+    "id": "audio-2026-03-10",
+    "briefingDate": "2026-03-10",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-10"
+  },
+  "2026-03-09": {
+    "id": "audio-2026-03-09",
+    "briefingDate": "2026-03-09",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-09"
+  },
+  "2026-03-08": {
+    "id": "audio-2026-03-08",
+    "briefingDate": "2026-03-08",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-08"
+  },
+  "2026-03-07": {
+    "id": "audio-2026-03-07",
+    "briefingDate": "2026-03-07",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-07"
+  },
+  "2026-03-06": {
+    "id": "audio-2026-03-06",
+    "briefingDate": "2026-03-06",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-06"
+  },
+  "2026-03-05": {
+    "id": "audio-2026-03-05",
+    "briefingDate": "2026-03-05",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-05"
+  },
+  "2026-03-04": {
+    "id": "audio-2026-03-04",
+    "briefingDate": "2026-03-04",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-04"
+  },
+  "2026-03-03": {
+    "id": "audio-2026-03-03",
+    "briefingDate": "2026-03-03",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-03"
+  },
+  "2026-03-02": {
+    "id": "audio-2026-03-02",
+    "briefingDate": "2026-03-02",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-03-02"
+  },
+  "2026-02-28": {
+    "id": "audio-2026-02-28",
+    "briefingDate": "2026-02-28",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-28"
+  },
+  "2026-02-27": {
+    "id": "audio-2026-02-27",
+    "briefingDate": "2026-02-27",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-27"
+  },
+  "2026-02-26": {
+    "id": "audio-2026-02-26",
+    "briefingDate": "2026-02-26",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-26"
+  },
+  "2026-02-25": {
+    "id": "audio-2026-02-25",
+    "briefingDate": "2026-02-25",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-25"
+  },
+  "2026-02-24": {
+    "id": "audio-2026-02-24",
+    "briefingDate": "2026-02-24",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-24"
+  },
+  "2026-02-23": {
+    "id": "audio-2026-02-23",
+    "briefingDate": "2026-02-23",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-23"
+  },
+  "2026-02-22": {
+    "id": "audio-2026-02-22",
+    "briefingDate": "2026-02-22",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-22"
+  },
+  "2026-02-21": {
+    "id": "audio-2026-02-21",
+    "briefingDate": "2026-02-21",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-21"
+  },
+  "2026-02-20": {
+    "id": "audio-2026-02-20",
+    "briefingDate": "2026-02-20",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-20"
+  },
+  "2026-02-19": {
+    "id": "audio-2026-02-19",
+    "briefingDate": "2026-02-19",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-19"
+  },
+  "2026-02-17": {
+    "id": "audio-2026-02-17",
+    "briefingDate": "2026-02-17",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-17"
+  },
+  "2026-02-16": {
+    "id": "audio-2026-02-16",
+    "briefingDate": "2026-02-16",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-16"
+  },
+  "2026-02-14": {
+    "id": "audio-2026-02-14",
+    "briefingDate": "2026-02-14",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-14"
+  },
+  "2026-02-13": {
+    "id": "audio-2026-02-13",
+    "briefingDate": "2026-02-13",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-13"
+  },
+  "2026-02-12": {
+    "id": "audio-2026-02-12",
+    "briefingDate": "2026-02-12",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-12"
+  },
+  "2026-02-11": {
+    "id": "audio-2026-02-11",
+    "briefingDate": "2026-02-11",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-11"
+  },
+  "2026-02-10": {
+    "id": "audio-2026-02-10",
+    "briefingDate": "2026-02-10",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-10"
+  },
+  "2026-02-09": {
+    "id": "audio-2026-02-09",
+    "briefingDate": "2026-02-09",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-09"
+  },
+  "2026-02-08": {
+    "id": "audio-2026-02-08",
+    "briefingDate": "2026-02-08",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-02-08"
+  }
+}

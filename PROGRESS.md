@@ -1,6 +1,6 @@
 # Daily Brief Explore - Progress
 
-Last updated: 2026-03-23
+Last updated: 2026-04-07
 
 ## Project Snapshot
 
@@ -60,13 +60,32 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend MVP cleanup is complete locally, and the current task list now finishes with real-data routes, persisted personal state, real audio playback, and regression coverage in place`
+Overall status: `frontend MVP now loads generated data at runtime from public assets, route bundles are split, and the core real-data/read-build-listen loop still passes full regression coverage locally`
 
 Current worktree snapshot:
 
-- Batch 9 is complete locally.
-- `T44` through `T46` are complete locally and ready to commit.
-- `plans/task-plans/T44-T46_plan.md` now records the Batch 9 cleanup scope, file targets, verification approach, and manual QA notes.
+- Batch 10 is complete locally.
+- `plans/task-plans/runtime-data-and-lazy-routes_plan.md` records the runtime-data and route-splitting scope, file targets, verification approach, and manual QA notes.
+- generated JSON is no longer bundled into the app from `src/generated/`.
+- `scripts/sync-generated-content.ts` now writes JSON artifacts to `public/generated/`, alongside the existing `public/generated/audio/` delivery path.
+- `src/lib/briefings/generatedContentLoader.ts` now:
+  - fetches generated JSON from `/generated/*.json` at runtime
+  - caches one loaded payload in memory
+  - keeps pure selector APIs for available dates, daily page state, topic derivation, and insight lookup
+- `src/app/App.tsx` now blocks route rendering on one generated-content bootstrap request and shows explicit loading / failure states instead of assuming compile-time data imports exist.
+- `src/app/router.tsx` now lazy loads `App`, `/today`, `/build`, `/topics`, and `/insights/:insightId` route modules behind a lightweight route fallback.
+- `tests/e2e/navigation.spec.ts` no longer hardcodes stale dates or permalink IDs; it now reads the current generated dataset so navigation coverage survives daily content refreshes.
+- full automated verification now passes with:
+  - `61` Vitest tests
+  - `5` Playwright tests
+  - `npm run build`
+- current production build output now splits route code and reduces the main entry chunk to:
+  - `dist/assets/index-*.js` at about `235.82 kB` (`77.29 kB` gzip)
+  instead of the earlier single oversized `~720 kB` entry bundle.
+- `public/generated/` now contains:
+  - `briefings-index.json`
+  - `briefings-by-date.json`
+  - `audio-index.json`
 - obsolete mock-only files have been removed:
   - `src/data/mockInsights.ts`
   - `src/data/mockAudio.ts`
@@ -134,8 +153,8 @@ Current worktree snapshot:
   - `briefings-by-date.json`
   - `audio-index.json`
 - current generated snapshot was built from:
-  - 62 upstream briefing markdown files
-  - 40 available dates
+  - 89 upstream briefing markdown files
+  - 54 available dates
   - 1 ready audio file
 - `public/generated/audio/2026-03-20.wav` now provides one local ready audio fixture so the app and browser tests can verify real playback behavior.
 - `src/pages/TodayPage.tsx` now distinguishes:
@@ -192,6 +211,8 @@ Implemented:
   - available dates
   - daily page payloads
   - insight lookup
+- runtime fetch of generated JSON from `public/generated/` with in-memory caching
+- route-level code splitting for App and MVP page modules
 - versioned localStorage-backed personal state with duplicate-safe build queue derivation and corruption recovery
 - Real `/today` main-column content driven by generated data instead of `mockInsights` / `mockAudio`
 - Real `/today` insight titles linked to generated `sourceUrl` values when present
@@ -215,6 +236,8 @@ The remaining gaps are deliberate deferrals:
 - broader historical browsing beyond the current recent-date switcher
 
 This means the read, build, learn, and listen legs of the MVP loop now exist end to end locally, with meaningful regression coverage and cleanup in place.
+
+The main current lesson is that compile-time importing day-indexed content works for early prototyping, but it pushes data volume directly into the entry bundle. Once the briefing history grows, generated JSON needs to behave like runtime content, not application code.
 
 ## What Is Actually True In Code
 

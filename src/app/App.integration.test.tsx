@@ -2,7 +2,7 @@
 
 import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { Navigate, RouterProvider, createMemoryRouter } from "react-router-dom";
 import { BuildQueuePage } from "../pages/BuildQueuePage";
 import { InsightSharePage } from "../pages/InsightSharePage";
@@ -13,6 +13,8 @@ import {
   getAvailableTopics,
   getDailyBriefPageData
 } from "../lib/briefings/generatedContentLoader";
+import { resetGeneratedContentSources } from "../lib/briefings/generatedContentLoader";
+import { generatedContentFixture } from "../test/generatedContentFixture";
 import { App } from "./App";
 
 function getTextContent(node: ParentNode) {
@@ -82,11 +84,45 @@ function createTestRouter(initialEntry: string) {
   );
 }
 
+function installGeneratedContentFetchMock() {
+  const fetchMock = vi.fn(async (input: string | URL | Request) => {
+    const url = String(input);
+
+    if (url.endsWith("/generated/briefings-index.json")) {
+      return {
+        ok: true,
+        json: async () => generatedContentFixture.briefingsIndex
+      };
+    }
+
+    if (url.endsWith("/generated/briefings-by-date.json")) {
+      return {
+        ok: true,
+        json: async () => generatedContentFixture.briefingsByDate
+      };
+    }
+
+    if (url.endsWith("/generated/audio-index.json")) {
+      return {
+        ok: true,
+        json: async () => generatedContentFixture.audioIndex
+      };
+    }
+
+    throw new Error(`Unexpected fetch request: ${url}`);
+  });
+
+  vi.stubGlobal("fetch", fetchMock as unknown as typeof fetch);
+  return fetchMock;
+}
+
 describe("App integration", () => {
   let container: HTMLDivElement;
   let root: Root;
 
   beforeEach(() => {
+    resetGeneratedContentSources();
+    installGeneratedContentFetchMock();
     window.localStorage.clear();
     container = document.createElement("div");
     document.body.appendChild(container);
@@ -101,8 +137,25 @@ describe("App integration", () => {
     window.localStorage.clear();
   });
 
+  it("shows a loading state before runtime generated content is available", async () => {
+    const neverResolvingFetch = vi.fn(
+      () => new Promise<Response>(() => undefined)
+    );
+    vi.stubGlobal("fetch", neverResolvingFetch as unknown as typeof fetch);
+
+    const router = createTestRouter("/today");
+
+    await act(async () => {
+      root.render(<RouterProvider router={router} />);
+    });
+
+    expect(getTextContent(container)).toContain("Loading generated briefings");
+  });
+
   it("loads /today from generated data and can navigate to a real permalink route", async () => {
-    const pageData = getDailyBriefPageData("2026-03-20") ?? getDailyBriefPageData();
+    const pageData =
+      getDailyBriefPageData("2026-03-20", generatedContentFixture) ??
+      getDailyBriefPageData(undefined, generatedContentFixture);
 
     expect(pageData).not.toBeNull();
 
@@ -143,9 +196,11 @@ describe("App integration", () => {
   });
 
   it("loads /topics and updates the visible insights when a topic chip is clicked", async () => {
-    const selectedTopic = getAvailableTopics()[0];
-    const matchingInsight = getAllInsights().find((insight) => insight.topics.includes(selectedTopic));
-    const nonMatchingInsight = getAllInsights().find(
+    const selectedTopic = getAvailableTopics(generatedContentFixture)[0];
+    const matchingInsight = getAllInsights(generatedContentFixture).find((insight) =>
+      insight.topics.includes(selectedTopic)
+    );
+    const nonMatchingInsight = getAllInsights(generatedContentFixture).find(
       (insight) => !insight.topics.includes(selectedTopic)
     );
 
@@ -169,7 +224,9 @@ describe("App integration", () => {
   });
 
   it("loads a real insight permalink directly from the route entry", async () => {
-    const permalinkInsight = getAllInsights().find((insight) => insight.sourceUrl) ?? getAllInsights()[0];
+    const permalinkInsight =
+      getAllInsights(generatedContentFixture).find((insight) => insight.sourceUrl) ??
+      getAllInsights(generatedContentFixture)[0];
     const router = createTestRouter(`/insights/${permalinkInsight.id}`);
 
     await act(async () => {

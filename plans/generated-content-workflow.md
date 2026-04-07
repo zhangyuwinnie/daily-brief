@@ -1,7 +1,7 @@
 # Generated Content Workflow
 
-Last updated: 2026-03-21
-Batch: `Batch 3`
+Last updated: 2026-04-07
+Batch: `Batch 10`
 
 ## Scope
 
@@ -24,9 +24,9 @@ The generator scans that directory directly.
 
 Generated JSON artifacts:
 
-- `src/generated/briefings-index.json`
-- `src/generated/briefings-by-date.json`
-- `src/generated/audio-index.json`
+- `public/generated/briefings-index.json`
+- `public/generated/briefings-by-date.json`
+- `public/generated/audio-index.json`
 
 Expected audio file directory:
 
@@ -53,7 +53,7 @@ What the command does:
 4. groups data by date
 5. generates one `DailyAudio` record per date
 6. validates the generated artifact shapes
-7. writes the three JSON files under `src/generated/`
+7. writes the three JSON files under `public/generated/`
 
 ## Current Audio Behavior
 
@@ -92,6 +92,20 @@ The sync script supports these environment variables:
 
 These are useful if another machine stores the upstream briefings or generated audio in different locations.
 
+## Runtime Consumption
+
+The frontend no longer imports generated JSON at build time.
+
+Instead:
+
+1. `App` fetches `/generated/briefings-index.json`
+2. `App` fetches `/generated/briefings-by-date.json`
+3. `App` fetches `/generated/audio-index.json`
+4. the loader caches the combined payload in memory for the session
+5. pages read from that cached payload through the shared selector helpers
+
+This keeps date-indexed content out of the main JavaScript bundle and allows daily briefing refreshes to update static hosting more cleanly.
+
 ## Verification
 
 Recommended local verification sequence:
@@ -104,7 +118,7 @@ env PATH=/Users/yuzhang/.nvm/versions/node/v22.17.1/bin:$PATH npm run build
 
 ## Notes For Next Batch
 
-- Batch 4 loaders should import from `src/generated/*`.
 - `briefings-index.json` is the fast path for available dates.
 - `briefings-by-date.json` is the source of daily briefing and insight content.
 - `audio-index.json` is the source of day-level audio state.
+- route bundles are lazy loaded so non-active pages do not enlarge the entry chunk.

@@ -1,6 +1,5 @@
 import { Sparkles, Zap } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import { getAvailableTopics } from "../../lib/briefings/generatedContentLoader";
 import { RightRail } from "./RightRail";
 import { Sidebar } from "./Sidebar";
 import type { BuildItem, Insight } from "../../types/models";
@@ -9,6 +8,7 @@ type AppShellProps = {
   children: React.ReactNode;
   buildQueue: BuildItem[];
   currentPath: string;
+  topics: string[];
   selectedInsight: Insight | null;
   topicFilter: string | null;
   onAddToBuild: (insight: Insight) => void;
@@ -20,6 +20,7 @@ export function AppShell({
   children,
   buildQueue,
   currentPath,
+  topics,
   selectedInsight,
   topicFilter,
   onAddToBuild,
@@ -27,7 +28,6 @@ export function AppShell({
   onTopicFilterChange
 }: AppShellProps) {
   const showRightRail = currentPath === "/today" || currentPath === "/topics";
-  const topics = getAvailableTopics();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#e0f7ea] via-[#c8eed8] to-[#9adfb9] px-3 py-3 text-slate-800 sm:px-4 md:px-6">

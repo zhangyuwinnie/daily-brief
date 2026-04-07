@@ -1,6 +1,6 @@
 # Daily Brief MVP Tasks
 
-Last updated: 2026-03-23
+Last updated: 2026-04-07
 Source docs:
 
 - `plans/mvp-prd.md`
@@ -177,6 +177,13 @@ Execution rule:
   Depends on: `T22`, `T29`, `T38`
   Acceptance: user-facing copy reflects the product as a personal AI learning system, not a generic content app.
 
+## Batch 10: Runtime Delivery Performance
+
+- [x] `T47` Move generated JSON output and consumption to `public/generated/` with runtime loading.
+  Acceptance: generated data is fetched at runtime instead of being bundled into the main app JavaScript.
+- [x] `T48` Lazy load route modules and keep regression coverage current.
+  Acceptance: non-active routes no longer inflate the initial route bundle, and tests still cover boot, navigation, and permalink flows.
+
 ## Suggested Stop Points
 
 - Stop after Batch 1 to confirm the schema and file layout.
@@ -195,3 +202,4 @@ Execution rule:
 - Batch 7: targeted audio tests + `npm run test:e2e` + `npm run build` and manual audio state smoke test
 - Batch 8: full automated test pass + `npm run build`
 - Batch 9: `npm run build` and manual regression sweep
+- Batch 10: `npm run sync:generated`, `npm test`, `npm run test:e2e`, and `npm run build`
