@@ -7,7 +7,10 @@ import {
   getDailyBriefPageState,
   getInsightById,
   getLatestBriefingDate,
+  loadAllInsights,
+  loadDayData,
   loadGeneratedContentSources,
+  loadInsightById,
   primeGeneratedContentSources,
   resetGeneratedContentSources,
   resolveDailyBriefPageState
@@ -29,13 +32,6 @@ describe("generatedContentLoader", () => {
         };
       }
 
-      if (url.endsWith("/generated/briefings-by-date.json")) {
-        return {
-          ok: true,
-          json: async () => briefingsByDate
-        };
-      }
-
       if (url.endsWith("/generated/audio-index.json")) {
         return {
           ok: true,
@@ -49,16 +45,151 @@ describe("generatedContentLoader", () => {
     const firstLoad = await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
     const secondLoad = await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
 
-    expect(firstLoad).toEqual(generatedContentFixture);
+    expect(firstLoad).toEqual({
+      briefingsIndex,
+      audioIndex
+    });
     expect(secondLoad).toBe(firstLoad);
-    expect(fetchMock).toHaveBeenCalledTimes(3);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
     expect(fetchMock.mock.calls.map(([url]) => String(url))).toEqual([
       "/generated/briefings-index.json",
-      "/generated/briefings-by-date.json",
       "/generated/audio-index.json"
     ]);
 
     primeGeneratedContentSources(generatedContentFixture);
+  });
+
+  it("lazy loads one day payload on demand and caches repeat fetches", async () => {
+    resetGeneratedContentSources();
+    const selectedDate = briefingsIndex.availableDates[0];
+    const fetchMock = vi.fn(async (input: string | URL | Request) => {
+      const url = String(input);
+
+      if (url.endsWith("/generated/briefings-index.json")) {
+        return {
+          ok: true,
+          json: async () => briefingsIndex
+        };
+      }
+
+      if (url.endsWith("/generated/audio-index.json")) {
+        return {
+          ok: true,
+          json: async () => audioIndex
+        };
+      }
+
+      if (url.endsWith(`/generated/briefings/${selectedDate}.json`)) {
+        return {
+          ok: true,
+          json: async () => briefingsByDate[selectedDate]
+        };
+      }
+
+      throw new Error(`Unexpected fetch request: ${url}`);
+    });
+
+    await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
+
+    expect(getDailyBriefPageData(selectedDate)).toBeNull();
+
+    const firstDayLoad = await loadDayData(selectedDate, undefined, fetchMock as unknown as typeof fetch);
+    const secondDayLoad = await loadDayData(selectedDate, undefined, fetchMock as unknown as typeof fetch);
+
+    expect(firstDayLoad).toEqual(briefingsByDate[selectedDate]);
+    expect(secondDayLoad).toBe(firstDayLoad);
+    expect(getDailyBriefPageData(selectedDate)).toEqual({
+      date: selectedDate,
+      availableDates: briefingsIndex.availableDates,
+      briefings: briefingsByDate[selectedDate].briefings,
+      insights: briefingsByDate[selectedDate].insights,
+      audio: audioIndex[selectedDate]
+    });
+    expect(fetchMock.mock.calls.map(([url]) => String(url))).toEqual([
+      "/generated/briefings-index.json",
+      "/generated/audio-index.json",
+      `/generated/briefings/${selectedDate}.json`
+    ]);
+  });
+
+  it("loads the owning day when resolving an insight by id at runtime", async () => {
+    resetGeneratedContentSources();
+    const selectedDate = briefingsIndex.availableDates[1];
+    const expectedInsight = briefingsByDate[selectedDate].insights[0];
+    const fetchMock = vi.fn(async (input: string | URL | Request) => {
+      const url = String(input);
+
+      if (url.endsWith("/generated/briefings-index.json")) {
+        return {
+          ok: true,
+          json: async () => briefingsIndex
+        };
+      }
+
+      if (url.endsWith("/generated/audio-index.json")) {
+        return {
+          ok: true,
+          json: async () => audioIndex
+        };
+      }
+
+      if (url.endsWith(`/generated/briefings/${selectedDate}.json`)) {
+        return {
+          ok: true,
+          json: async () => briefingsByDate[selectedDate]
+        };
+      }
+
+      throw new Error(`Unexpected fetch request: ${url}`);
+    });
+
+    await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
+
+    expect(getInsightById(expectedInsight.id)).toBeNull();
+    expect(
+      await loadInsightById(expectedInsight.id, undefined, fetchMock as unknown as typeof fetch)
+    ).toEqual(expectedInsight);
+    expect(getInsightById(expectedInsight.id)).toEqual(expectedInsight);
+  });
+
+  it("loads every available day when all insights are requested asynchronously", async () => {
+    resetGeneratedContentSources();
+    const fetchMock = vi.fn(async (input: string | URL | Request) => {
+      const url = String(input);
+
+      if (url.endsWith("/generated/briefings-index.json")) {
+        return {
+          ok: true,
+          json: async () => briefingsIndex
+        };
+      }
+
+      if (url.endsWith("/generated/audio-index.json")) {
+        return {
+          ok: true,
+          json: async () => audioIndex
+        };
+      }
+
+      const matchedDate = briefingsIndex.availableDates.find((date) =>
+        url.endsWith(`/generated/briefings/${date}.json`)
+      );
+
+      if (matchedDate) {
+        return {
+          ok: true,
+          json: async () => briefingsByDate[matchedDate]
+        };
+      }
+
+      throw new Error(`Unexpected fetch request: ${url}`);
+    });
+
+    await loadGeneratedContentSources(fetchMock as unknown as typeof fetch);
+
+    expect(await loadAllInsights(undefined, fetchMock as unknown as typeof fetch)).toEqual(
+      briefingsIndex.availableDates.flatMap((date) => briefingsByDate[date].insights)
+    );
   });
 
   it("returns the available briefing dates from the generated index", () => {

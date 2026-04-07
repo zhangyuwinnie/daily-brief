@@ -1,0 +1,93 @@
+{
+  "date": "2026-02-20",
+  "briefings": [
+    {
+      "id": "rss-2026-02-20",
+      "date": "2026-02-20",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-20",
+      "filePath": "2026-02-20.md",
+      "summaryTopline": "How to Use Memory in Agent Builder",
+      "insightIds": [
+        "rss-2026-02-20-01-how-to-use-memory-in-agent-builder",
+        "rss-2026-02-20-02-gemini-31-pro",
+        "rss-2026-02-20-03-minions-stripes-coding-agents-part-2",
+        "rss-2026-02-20-04-nvidia-and-openai-abandon-unfinished-100b-deal-in-favour-of-30b-investment"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-20-01-how-to-use-memory-in-agent-builder",
+      "briefingId": "rss-2026-02-20",
+      "date": "2026-02-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-to-use-memory-in-agent-builder/",
+      "title": "How to Use Memory in Agent Builder",
+      "summary": "LangChain 发布了 Agent Builder 中记忆功能的使用指南。Agent Builder 基于开源的 Deep Agents 框架，支持短期记忆（任务内）和长期记忆（跨对话持久化，使用 Markdown 文件存储）。文章提供了三个实用技巧，让 Agent 能记住你的反馈和偏好，越用越好用。",
+      "take": "这个记忆架构和 R2 自己的设计思路很像（MEMORY.md + daily files）。对 Dayu 来说，研究 Deep Agents 的 long-term memory 实现方式可以直接应用到自己的 agent 项目中，值得深挖源码。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-20-02-gemini-31-pro",
+      "briefingId": "rss-2026-02-20",
+      "date": "2026-02-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind / Simon Willison's Weblog",
+      "sourceUrl": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "title": "Gemini 3.1 Pro",
+      "summary": "Google 发布 Gemini 3.1 Pro，价格与 Gemini 3 Pro 相同（$2/M input, $12/M output），但 benchmark 接近 Claude Opus 4.6（后者价格翻倍以上）。新模型在复杂推理、SVG 生成等方面显著提升，thinking 时间更长但质量更高。",
+      "take": "价格不到 Opus 的一半，能力接近——这对构建 agent 的成本控制意义重大。Dayu 可以考虑在 agent workflow 中用 Gemini 3.1 Pro 替代更贵的模型，尤其是需要长推理链的场景。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-20-03-minions-stripes-coding-agents-part-2",
+      "briefingId": "rss-2026-02-20",
+      "date": "2026-02-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Stripe Engineering (via Hacker News)",
+      "sourceUrl": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "title": "Minions – Stripe's Coding Agents Part 2",
+      "summary": "Stripe 发布了 Minions 系列第二篇文章，详细介绍其内部 coding agent 的架构和实践。Minions 是 one-shot、end-to-end 的编码代理，每周合并超过一千个 PR。虽然人类负责代码审查，但代码从头到尾由 Minions 编写。",
+      "take": "Stripe 在生产环境大规模使用 coding agents 的经验非常有参考价值。每周 1000+ PR 的规模说明 agent 已经不是实验品了。Dayu 可以学习他们的 prompt 设计和 one-shot 架构思路，应用到自己的开发工作流中。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-20-04-nvidia-and-openai-abandon-unfinished-100b-deal-in-favour-of-30b-investment",
+      "briefingId": "rss-2026-02-20",
+      "date": "2026-02-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "title": "Nvidia and OpenAI abandon unfinished $100B deal in favour of $30B investment",
+      "summary": "Nvidia 和 OpenAI 放弃了此前未完成的 1000 亿美元合作计划，转而达成一项 300 亿美元的投资协议。这一变化反映了 AI 行业资本配置的最新动态。",
+      "take": "行业格局在变——关注资本流向有助于判断哪些方向会获得更多资源和支持。对 Dayu 做技术选型和开源贡献方向判断有间接参考价值。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

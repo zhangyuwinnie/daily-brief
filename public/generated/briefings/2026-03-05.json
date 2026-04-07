@@ -1,0 +1,396 @@
+{
+  "date": "2026-03-05",
+  "briefings": [
+    {
+      "id": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-05",
+      "filePath": "2026-03-05.md",
+      "summaryTopline": "LangSmith CLI & Skills",
+      "insightIds": [
+        "rss-2026-03-05-01-langsmith-cli-skills",
+        "rss-2026-03-05-02-langchain-skills",
+        "rss-2026-03-05-03-understanding-ai-and-learning-outcomes",
+        "rss-2026-03-05-04-how-axios-uses-ai-to-help-deliver-high-impact-local-journalism",
+        "rss-2026-03-05-05-teaching-llms-to-reason-like-bayesians",
+        "rss-2026-03-05-06-gemini-31-flash-lite",
+        "rss-2026-03-05-07-show-hn-jido-20-elixir-agent-framework",
+        "rss-2026-03-05-08-the-l-in-llm-stands-for-lying",
+        "rss-2026-03-05-09-phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model"
+      ]
+    },
+    {
+      "id": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-05",
+      "filePath": "x_briefing_2026-03-05.md",
+      "summaryTopline": "**AI代理开发升温**: 随着DeepLearning.AI和Andrew Ng等推出大量专业课程，涵盖代理设计、治理、优化等，AI代理的构建技能正成为市场热门需求。",
+      "insightIds": [
+        "x-2026-03-05-trend-01-aimcp",
+        "x-2026-03-05-trend-02-yann-lecun",
+        "x-2026-03-05-trend-03-governing-ai-agentsai",
+        "x-2026-03-05-tools-01-agentic-ai",
+        "x-2026-03-05-tools-02-google-antigravity",
+        "x-2026-03-05-tools-03-qwen3-coder-next",
+        "x-2026-03-05-tools-04-chatgptinstant-checkout",
+        "x-2026-03-05-tools-05-gemini-robotics-15",
+        "x-2026-03-05-opinion-01-cracked-agentic-engineer",
+        "x-2026-03-05-opinion-02-2026aisaasai-first-saas"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-05-01-langsmith-cli-skills",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/langsmith-cli-skills/",
+      "title": "LangSmith CLI & Skills",
+      "summary": "LangSmith 发布了命令行工具 (CLI) 及首套技能，旨在赋予AI编程Agent在LangSmith生态系统中的专业能力。这使得Agent能够更有效地进行执行追踪、理解运行状态、构建测试集并评估性能。",
+      "take": "对于Dayu构建AI编程Agent或自动化工作流来说，LangSmith的CLI和新技能是不可或缺的利器。它能显著提升Agent的开发、调试与性能评估效率，是实现可靠Agentic Workflow和高级Tool Use的关键工具，Dayu应深入学习并应用于实际项目。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-05-02-langchain-skills",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/langchain-skills/",
+      "title": "LangChain Skills",
+      "summary": "LangChain发布了其首批技能集，旨在显著提升AI编程智能体在LangChain开源生态系统中的专业能力。这些技能涵盖了使用LangChain、LangGraph和Deep Agents构建智能体，并在评估集上将Claude Code在相关任务上的表现从29%提升至惊人的95%。",
+      "take": "Dayu，这套LangChain技能集对你构建高效AI编程智能体至关重要，能大幅提升自动化代码生成和工作流的效率。建议深入研究这些技能的实现方式，并考虑如何将其应用于生物信息学Agent的开发，甚至可以尝试为这些开源技能集贡献生物领域特有的工具和能力，这绝对是一个极佳的贡献机会。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-05-03-understanding-ai-and-learning-outcomes",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/understanding-ai-and-learning-outcomes",
+      "title": "Understanding AI and learning outcomes",
+      "summary": "OpenAI近期推出了一套“学习成果衡量套件”，旨在系统地评估AI技术在不同教育环境中对学生学习成果的长期影响。此举表明OpenAI正致力于量化AI在教育领域的实际效益和效果。",
+      "take": "这提示Dayu，在构建自己的AI Agent和自动化工作流时，效能和学习成果的量化评估至关重要。他可以借鉴这种思路，为自己构建的Agent设计一套评估其效率或学习进步的框架，甚至考虑开发相关的开源工具。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-05-04-how-axios-uses-ai-to-help-deliver-high-impact-local-journalism",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/axios-allison-murphy",
+      "title": "How Axios uses AI to help deliver high-impact local journalism",
+      "summary": "Axios 运营总监 Allison Murphy 阐述了公司如何利用 AI 技术赋能地方新闻业，通过辅助记者、优化新闻编辑室工作流程，实现高质量新闻内容的规模化产出与分发。这表明 AI 在内容创作与分发领域的流程优化和效率提升方面展现出巨大潜力。",
+      "take": "这种利用 AI 驱动特定领域工作流程优化的模式，对 Dayu 构建生物信息学自动化 Agent 具有很强的借鉴意义。Dayu 可以思考如何将“AI辅助-流程优化”理念应用于数据处理、文献分析等科研工作流，并探索开发通用性强、可复用的工作流自动化 AI 工具，甚至贡献至开源社区。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-05-05-teaching-llms-to-reason-like-bayesians",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/teaching-llms-to-reason-like-bayesians/",
+      "title": "Teaching LLMs to reason like Bayesians",
+      "summary": "这篇文章探讨了如何教授大型语言模型（LLMs）进行贝叶斯推理。通过引入贝叶斯方法，LLMs能更好地处理不确定性、依据证据更新信念，从而做出更稳健、更具解释性的决策，提升其推理能力。",
+      "take": "Dayu，这项技术对构建能进行复杂决策的智能Agent至关重要。一个能进行贝叶斯推理的Agent，在执行自动化工作流时，将能更好地处理不确定性、融合多源信息并做出更稳健的判断，大大提升Agent的可靠性和效率。你可以关注相关研究进展，寻找或尝试为开源Agent框架集成此类概率推理模块。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-05-06-gemini-31-flash-lite",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything",
+      "title": "Gemini 3.1 Flash-Lite",
+      "summary": "Google新发布的Gemini 3.1 Flash-Lite是一款强调速度和效率的轻量级AI模型。它旨在提供更低的推理延迟和更优的成本效益，特别适用于需要快速响应和大规模部署的实际应用场景。",
+      "take": "对于Dayu这类追求效率和自动化构建AI代理的工程师，Gemini 3.1 Flash-Lite 的“快”与“轻”至关重要，能显著降低Agent的运行成本并加速决策链。Dayu可尝试用它来驱动生物信息学领域的快速文本摘要、智能数据分析或构建低延迟的工具调用Agent，同时也有机会围绕其API构建Agentic工具集或性能基准，并贡献到开源社区。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-05-07-show-hn-jido-20-elixir-agent-framework",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://jido.run/blog/jido-2-0-is-here",
+      "title": "Show HN: Jido 2.0, Elixir Agent Framework",
+      "summary": "Jido 2.0 是一个基于 Elixir 的智能体框架新版本，旨在简化开发者构建并发、容错和可扩展智能体应用的过程。它利用 Elixir 和 Erlang VM 的强大能力，为创建稳定可靠的后台服务和自动化系统提供了便捷工具。",
+      "take": "Jido 2.0 提供了一个强大的 Elixir 平台来构建高度并发和容错的 Agent，这对于 Dayu 自动化生物信息学流程、管理数据管道或调度 AI 任务来说非常实用。考虑深入学习 Elixir 并尝试 Jido，这不仅是掌握 Agent 开发的实践机会，也可能成为参与开源贡献的切入点。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-05-08-the-l-in-llm-stands-for-lying",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://acko.net/blog/the-l-in-llm-stands-for-lying/",
+      "title": "The L in \"LLM\" Stands for Lying",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: LLM.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-05-09-phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model",
+      "briefingId": "rss-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/",
+      "title": "Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model",
+      "summary": "微软发布了Phi-4-reasoning-vision-15B，一个拥有150亿参数的开源多模态推理模型。该模型在图像标注等多种视觉-语言任务上表现出色，并通过Microsoft Foundry、HuggingFace和GitHub开放获取，文章还分享了训练此类模型的经验。",
+      "take": "对于Dayu而言，这个开源多模态推理模型是构建能同时理解图像和文本的智能体的强大工具。他可以利用它来自动化生物信息学中需要视觉分析的工作流（例如分析科学图表、标注显微图像），显著提升效率，并有机会在HuggingFace或GitHub上进行模型集成和开源贡献。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-trend-01-aimcp",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Akshay",
+      "sourceUrl": "https://x.com/akshay_pachaar/status/2029534926828388537",
+      "title": "强调AI代理的“心智能力”（MCP",
+      "summary": "强调AI代理的“心智能力”（MCP，即Mastery, Comprehension, Planning）与“技能”（Skills）不同，理解二者对构建高级代理至关重要。",
+      "take": "强调AI代理的“心智能力”（MCP，即Mastery, Comprehension, Planning）与“技能”（Skills）不同，理解二者对构建高级代理至关重要。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-05-trend-02-yann-lecun",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Rohan Paul",
+      "sourceUrl": "https://x.com/rohanpaul_ai/status/2029533545161740321",
+      "title": "引述Yann LeCun等顶尖研究者观点",
+      "summary": "引述Yann LeCun等顶尖研究者观点，呼吁AI发展应聚焦“超强适应性专家型代理”，而非追求通用AI。",
+      "take": "引述Yann LeCun等顶尖研究者观点，呼吁AI发展应聚焦“超强适应性专家型代理”，而非追求通用AI。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-05-trend-03-governing-ai-agentsai",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1981056313661559155",
+      "title": "新课程“Governing AI Agents”（AI代理治理）关注代理治理的重要性",
+      "summary": "新课程“Governing AI Agents”（AI代理治理）关注代理治理的重要性，旨在避免未经授权访问或修改敏感数据。",
+      "take": "新课程“Governing AI Agents”（AI代理治理）关注代理治理的重要性，旨在避免未经授权访问或修改敏感数据。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-05-tools-01-agentic-ai",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1975614372799283423",
+      "title": "宣布新课程“Agentic AI!”",
+      "summary": "宣布新课程“Agentic AI!”，教授四种关键代理设计模式（如Reflection），这是目前市场最受欢迎的技能之一。",
+      "take": "宣布新课程“Agentic AI!”，教授四种关键代理设计模式（如Reflection），这是目前市场最受欢迎的技能之一。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-tools-02-google-antigravity",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Google DeepMind",
+      "sourceUrl": "https://x.com/GoogleDeepMind/status/1990827890435346787",
+      "title": "推出“Google Antigravity”",
+      "summary": "推出“Google Antigravity”，一个利用AI代理协助开发者在编辑器、终端和浏览器中自主操作的开发平台。",
+      "take": "推出“Google Antigravity”，一个利用AI代理协助开发者在编辑器、终端和浏览器中自主操作的开发平台。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-tools-03-qwen3-coder-next",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Alibaba_Qwen",
+      "sourceUrl": "https://x.com/Alibaba_Qwen/status/2018718453570707465",
+      "title": "发布Qwen3-Coder-Next",
+      "summary": "发布Qwen3-Coder-Next，一款为编码代理和本地开发设计的开源大语言模型，在SWE-Bench Pro基准测试中表现出色。",
+      "take": "发布Qwen3-Coder-Next，一款为编码代理和本地开发设计的开源大语言模型，在SWE-Bench Pro基准测试中表现出色。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-tools-04-chatgptinstant-checkout",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "sourceUrl": "https://x.com/OpenAI/status/1972708279043367238",
+      "title": "ChatGPT推出“Instant Checkout”功能",
+      "summary": "ChatGPT推出“Instant Checkout”功能，并开源其“Agentic Commerce Protocol”，旨在简化电商交易流程。",
+      "take": "ChatGPT推出“Instant Checkout”功能，并开源其“Agentic Commerce Protocol”，旨在简化电商交易流程。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-tools-05-gemini-robotics-15",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Google AI",
+      "sourceUrl": "https://x.com/GoogleAI/status/1971258198779887674",
+      "title": "Gemini Robotics 1.5正式将代理能力引入机器人",
+      "summary": "Gemini Robotics 1.5正式将代理能力引入机器人，使其能够完成复杂的、多步骤的任务。",
+      "take": "Gemini Robotics 1.5正式将代理能力引入机器人，使其能够完成复杂的、多步骤的任务。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-opinion-01-cracked-agentic-engineer",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@rohit4verse",
+      "sourceUrl": "https://x.com/rohit4verse/status/2029323346631147735",
+      "title": "推荐一篇可能让你成为“顶尖代理工程师”（cracked agentic engineer）的文章",
+      "summary": "推荐一篇可能让你成为“顶尖代理工程师”（cracked agentic engineer）的文章，凸显了AI代理开发人才的重要性。",
+      "take": "推荐一篇可能让你成为“顶尖代理工程师”（cracked agentic engineer）的文章，凸显了AI代理开发人才的重要性。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-05-opinion-02-2026aisaasai-first-saas",
+      "briefingId": "x-2026-03-05",
+      "date": "2026-03-05",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@gregisenberg",
+      "sourceUrl": "https://x.com/gregisenberg/status/2029546127846945055",
+      "title": "分享了如何在2026年构建一个“AI优先的SaaS”（AI-first SaaS）的策略",
+      "summary": "分享了如何在2026年构建一个“AI优先的SaaS”（AI-first SaaS）的策略，建议从大市场入手并深入细分，详细绘制用户工作流程。",
+      "take": "分享了如何在2026年构建一个“AI优先的SaaS”（AI-first SaaS）的策略，建议从大市场入手并深入细分，详细绘制用户工作流程。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI代理开发升温**: 随着DeepLearning.AI和Andrew Ng等推出大量专业课程，涵盖代理设计、治理、优化等，AI代理的构建技能正成为市场热门需求。",
+    "**聚焦专业化而非通用化**: 顶尖研究者（如Yann LeCun）建议，AI发展应更多关注构建能在特定领域表现卓越的“超强适应性专家型代理”，而非盲目追求通用人工智能。",
+    "**应用场景加速落地**: Google DeepMind的“Antigravity”开发平台和“Gemini Robotics”，以及OpenAI的“Agentic Commerce Protocol”等，均展示了AI代理在实际领域（开发、机器人、电商）的即时价值。"
+  ],
+  "xActionItems": [
+    "浏览DeepLearning.AI或Andrew Ng等新发布的AI代理相关课程，提升代理设计与构建技能。",
+    "关注并研究Google Antigravity、Qwen3-Coder-Next等新工具，评估其在项目中的应用潜力。",
+    "思考自身业务或工作流程中可由“专家型代理”自动化的环节，探索其具体落地场景。"
+  ]
+}

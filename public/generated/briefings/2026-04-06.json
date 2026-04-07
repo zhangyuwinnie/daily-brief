@@ -1,0 +1,355 @@
+{
+  "date": "2026-04-06",
+  "briefings": [
+    {
+      "id": "rss-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-06",
+      "filePath": "2026-04-06.md",
+      "summaryTopline": "Continual learning for AI agents",
+      "insightIds": [
+        "rss-2026-04-06-01-continual-learning-for-ai-agents",
+        "rss-2026-04-06-02-show-hn-i-built-a-tiny-llm-to-demystify-how-language-models-work",
+        "rss-2026-04-06-03-ask-hn-how-do-systems-or-people-detect-when-a-text-is-written-by-an-llm"
+      ]
+    },
+    {
+      "id": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-04-06",
+      "filePath": "x_briefing_2026-04-06.md",
+      "summaryTopline": "**AI Agent 应用场景爆炸式增长**: 从中国职场中的员工替代，到屋顶公司的销售线索生成，再到复杂的文档提取和知识图谱构建，AI Agent 正迅速渗透并改变传统行业和专业工作流程。",
+      "insightIds": [
+        "x-2026-04-06-trend-01-ai-agent",
+        "x-2026-04-06-trend-02-ai-agent",
+        "x-2026-04-06-trend-03-workday-ai-agent",
+        "x-2026-04-06-trend-04-ai",
+        "x-2026-04-06-tools-01-omma",
+        "x-2026-04-06-tools-02-free-code",
+        "x-2026-04-06-tools-03-landingai-agentic-document-extraction",
+        "x-2026-04-06-tools-04-agentic-reviewer",
+        "x-2026-04-06-tools-05-grok-420-beta-agentic-tool-use",
+        "x-2026-04-06-opinion-01-clis",
+        "x-2026-04-06-opinion-02-anthropic-ai-agent",
+        "x-2026-04-06-opinion-03-ai",
+        "x-2026-04-06-news-01-agentic-knowledge-graph-construction",
+        "x-2026-04-06-news-02-nvidias-nemo-agent-toolkit"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-06-01-continual-learning-for-ai-agents",
+      "briefingId": "rss-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/continual-learning-for-ai-agents/",
+      "title": "Continual learning for AI agents",
+      "summary": "传统的持续学习多侧重于更新模型权重，但针对AI智能体，学习可在模型、框架（harness）和上下文三个独立层面发生。理解这些层面的差异，对于构建能够随时间推移持续改进的智能体系统至关重要。",
+      "take": "Dayu在搭建生物信息学智能体时，可借鉴这种多层学习视角，除了微调模型，还需思考如何让智能体的“框架”行为（如工具选择逻辑、提示词策略）和“上下文”知识库（如RAG索引）也能动态学习与适应，从而实现智能体的持续进化和效率提升。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-06-02-show-hn-i-built-a-tiny-llm-to-demystify-how-language-models-work",
+      "briefingId": "rss-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/arman-bd/guppylm",
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "summary": "有人构建了一个“迷你版”的LLM，其核心目的是帮助开发者和学习者揭示语言模型的工作原理，将复杂的概念变得更易于理解和掌握。",
+      "take": "对于Dayu来说，深入理解LLM底层机制对于构建高效、鲁棒的AI Agent至关重要。这个“微型LLM”提供了一个绝佳的学习沙盒，可以帮助他理解模型限制和设计更优的Agentic工作流；同时，作为开源项目，这也是一个很好的参与贡献、实践代码和提升技能的机会，比如优化其教育性展示或添加小规模工具集成。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-06-03-ask-hn-how-do-systems-or-people-detect-when-a-text-is-written-by-an-llm",
+      "briefingId": "rss-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47659807",
+      "title": "Ask HN: How do systems (or people) detect when a text is written by an LLM",
+      "summary": "这篇文章讨论了系统和人类如何识别文本是否由大型语言模型（LLM）生成的问题。评论区详细探讨了各种检测方法，例如统计特征分析、困惑度评估、AI水印技术以及人类直觉和经验判断。核心观点是，随着LLM技术的飞速发展，有效且准确地识别AI生成内容正变得越来越具挑战性，这是一个持续演进的猫鼠游戏。",
+      "take": "对于Dayu而言，理解LLM文本检测技术能帮助他构建更可靠的AI代理。他可以利用这些技术来验证自己代理生成内容的原创性，或将检测工具集成到自动化工作流中，作为数据过滤和内容审查的一环，提升效率和可信度，甚至可以探索在相关开源项目中贡献自己的力量。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-06-trend-01-ai-agent",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ejaaz",
+      "sourceUrl": "https://x.com/cryptopunk7213/status/2040586809311371413",
+      "title": "中国有人训练 AI Agent 秘密替代同事",
+      "summary": "中国有人训练 AI Agent 秘密替代同事，凸显职场伦理与冲击。",
+      "take": "中国有人训练 AI Agent 秘密替代同事，凸显职场伦理与冲击。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-06-trend-02-ai-agent",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2039345791077371921",
+      "title": "屋顶公司用 AI Agent 分析图像生成销售线索",
+      "summary": "屋顶公司用 AI Agent 分析图像生成销售线索，传统行业应用潜力大。",
+      "take": "屋顶公司用 AI Agent 分析图像生成销售线索，传统行业应用潜力大。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-06-trend-03-workday-ai-agent",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+      "title": "Workday 称 AI Agent 初创公司为“寄生虫”",
+      "summary": "Workday 称 AI Agent 初创公司为“寄生虫”，反映新旧公司数据与市场竞争。",
+      "take": "Workday 称 AI Agent 初创公司为“寄生虫”，反映新旧公司数据与市场竞争。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-06-trend-04-ai",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Tanay Kothari",
+      "sourceUrl": "https://x.com/tankots/status/2038458701627981972",
+      "title": "印度在 AI 交互上追求直达意图",
+      "summary": "印度在 AI 交互上追求直达意图，而非多轮追问，值得 Agent 设计者借鉴。",
+      "take": "印度在 AI 交互上追求直达意图，而非多轮追问，值得 Agent 设计者借鉴。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-tools-01-omma",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Spline",
+      "sourceUrl": "https://x.com/splinetool/status/2036517448112021863",
+      "title": "发布 Omma",
+      "summary": "发布 Omma，一个利用 AI Agent 创建 3D 模型、网站和应用的平台，简化创意工作流。",
+      "take": "发布 Omma，一个利用 AI Agent 创建 3D 模型、网站和应用的平台，简化创意工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-tools-02-free-code",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@4nzn",
+      "sourceUrl": "https://x.com/paoloanzn/status/2039022418698907949",
+      "title": "推出 free-code",
+      "summary": "推出 free-code，增强版 Claude 源代码，含“ultraplan mode”多 Agent 研究功能。",
+      "take": "推出 free-code，增强版 Claude 源代码，含“ultraplan mode”多 Agent 研究功能。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-tools-03-landingai-agentic-document-extraction",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1973090336068215058",
+      "title": "LandingAI 升级 Agentic Document Extraction",
+      "summary": "LandingAI 升级 Agentic Document Extraction，DPT 模型能准确提取复杂文档信息。",
+      "take": "LandingAI 升级 Agentic Document Extraction，DPT 模型能准确提取复杂文档信息。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-tools-04-agentic-reviewer",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1993001922773893273",
+      "title": "发布“Agentic Reviewer”",
+      "summary": "发布“Agentic Reviewer”，用 Agent 辅助研究论文评审，提升效率。",
+      "take": "发布“Agentic Reviewer”，用 Agent 辅助研究论文评审，提升效率。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-tools-05-grok-420-beta-agentic-tool-use",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@X Freeze",
+      "sourceUrl": "https://x.com/XFreeze/status/2038914700411346949",
+      "title": "Grok 4.20 Beta 在 Agentic Tool Use 基准测试中表现优异",
+      "summary": "Grok 4.20 Beta 在 Agentic Tool Use 基准测试中表现优异，强调工具调用对 Agent 至关重要。",
+      "take": "Grok 4.20 Beta 在 Agentic Tool Use 基准测试中表现优异，强调工具调用对 Agent 至关重要。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-opinion-01-clis",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2026360908398862478",
+      "title": "命令行界面（CLIs）作为“传统”技术",
+      "summary": "命令行界面（CLIs）作为“传统”技术，因易用性成为 AI Agent 交互和组合工具的理想选择。",
+      "take": "命令行界面（CLIs）作为“传统”技术，因易用性成为 AI Agent 交互和组合工具的理想选择。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-opinion-02-anthropic-ai-agent",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2038024584595968058",
+      "title": "Anthropic 工程师正转向管理 AI Agent",
+      "summary": "Anthropic 工程师正转向管理 AI Agent，预示新编程范式：导演而非编码。",
+      "take": "Anthropic 工程师正转向管理 AI Agent，预示新编程范式：导演而非编码。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-opinion-03-ai",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1963631698987684272",
+      "title": "AI 开发者需求大",
+      "summary": "AI 开发者需求大，但大学教育滞后，导致人才缺口和应届生就业挑战。",
+      "take": "AI 开发者需求大，但大学教育滞后，导致人才缺口和应届生就业挑战。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-news-01-agentic-knowledge-graph-construction",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1960731961494004077",
+      "title": "新课程“Agentic Knowledge Graph Construction”",
+      "summary": "新课程“Agentic Knowledge Graph Construction”，教用 Agent 构建知识图谱优化 RAG 系统。",
+      "take": "新课程“Agentic Knowledge Graph Construction”，教用 Agent 构建知识图谱优化 RAG 系统。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-06-news-02-nvidias-nemo-agent-toolkit",
+      "briefingId": "x-2026-04-06",
+      "date": "2026-04-06",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/2001728276289704213",
+      "title": "新课程“Nvidia's NeMo Agent Toolkit",
+      "summary": "新课程“Nvidia's NeMo Agent Toolkit: Making Agents Reliable”，教授如何将 Agent 演示转化为可靠生产系统。",
+      "take": "新课程“Nvidia's NeMo Agent Toolkit: Making Agents Reliable”，教授如何将 Agent 演示转化为可靠生产系统。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI Agent 应用场景爆炸式增长**: 从中国职场中的员工替代，到屋顶公司的销售线索生成，再到复杂的文档提取和知识图谱构建，AI Agent 正迅速渗透并改变传统行业和专业工作流程。",
+    "**Agent 工作流正重塑开发范式**: 工程师的角色正从编写代码转向管理和协调多个 AI Agent。同时，命令行界面（CLIs）因其易用性正成为 AI Agent 交互和组合工具的关键。",
+    "**Agent 生产落地需关注可靠性与教育**: 尽管 Agent 演示令人印象深刻，但将其转化为可靠的生产系统仍面临挑战。同时，AI 开发者人才需求旺盛但大学教育滞后，导致人才缺口。"
+  ],
+  "xActionItems": [
+    "探索 AI Agent 在自身业务中的自动化潜力，从小任务开始尝试。",
+    "研究 Agent 工作流和工具调用（如 CLIs 或 Nvidia's NeMo Agent Toolkit），提升 Agent 项目可靠性。",
+    "积极学习 AI Agent 相关的开发技能和知识（如“Agentic Knowledge Graph Construction”），把握行业人才需求。"
+  ]
+}

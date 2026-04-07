@@ -72,10 +72,14 @@ describe("generatedArtifacts", () => {
     const briefingsIndex = JSON.parse(await readFile(join(outputDir, "briefings-index.json"), "utf8"));
     const briefingsByDate = JSON.parse(await readFile(join(outputDir, "briefings-by-date.json"), "utf8"));
     const audioIndex = JSON.parse(await readFile(join(outputDir, "audio-index.json"), "utf8"));
+    const singleDayRecord = JSON.parse(
+      await readFile(join(outputDir, "briefings", "2026-03-20.json"), "utf8")
+    );
 
     expect(briefingsIndex.availableDates).toEqual(["2026-03-20"]);
     expect(briefingsByDate["2026-03-20"].briefings).toHaveLength(2);
     expect(audioIndex["2026-03-20"].status).toBe("pending");
+    expect(singleDayRecord).toEqual(briefingsByDate["2026-03-20"]);
   });
 
   it("marks audio ready when a matching generated audio file exists", () => {

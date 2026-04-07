@@ -1,0 +1,99 @@
+{
+  "date": "2026-02-22",
+  "briefings": [
+    {
+      "id": "rss-2026-02-22",
+      "date": "2026-02-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-22",
+      "filePath": "2026-02-22.md",
+      "summaryTopline": "How we built Agent Builder’s memory system",
+      "insightIds": [
+        "rss-2026-02-22-01-how-we-built-agent-builders-memory-system",
+        "rss-2026-02-22-02-agent-observability-powers-agent-evaluation",
+        "rss-2026-02-22-03-how-taalas-prints-llm-onto-a-chip",
+        "rss-2026-02-22-04-how-i-use-claude-code-separation-of-planning-and-execution"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-22-01-how-we-built-agent-builders-memory-system",
+      "briefingId": "rss-2026-02-22",
+      "date": "2026-02-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-we-built-agent-builders-memory-system/",
+      "title": "How we built Agent Builder’s memory system",
+      "summary": "本文详细介绍了Agent Builder记忆系统的构建过程，涵盖了其设计理念、技术实现细节以及构建过程中的经验教训。理解记忆系统对于开发能够长期、有效执行任务的智能体至关重要，并展望了未来的演进方向。",
+      "take": "对于Dayu来说，构建高效能的AI智能体是核心，而记忆系统是实现这一目标的关键基石。这篇文章提供了构建具有持续学习和上下文感知能力的智能体的工作流和技术范例，可以作为你开发多步骤Agentic Workflow或RAG应用的实践指南，甚至启发开源贡献方向。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-22-02-agent-observability-powers-agent-evaluation",
+      "briefingId": "rss-2026-02-22",
+      "date": "2026-02-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/agent-observability-powers-agent-evaluation/",
+      "title": "Agent Observability Powers Agent Evaluation",
+      "summary": "构建可靠的AI Agent，核心在于深入理解其推理过程并进行系统性评估以验证改进。Agent的可观测性是赋能这些评估的关键，它提供了理解Agent内部决策机制的洞察，从而确保Agent的性能和可靠性。",
+      "take": "对于Dayu构建自动化Agent而言，这意味着必须将可观测性（Observability）作为核心设计原则。它能极大提升Agent的迭代效率和可靠性，尤其在调试复杂Agent行为、优化工具调用和RAG策略时至关重要。Dayu应积极探索现有Agent框架（如LangChain/LlamaIndex）的观测与追踪功能，甚至可考虑在此领域进行开源贡献。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-22-03-how-taalas-prints-llm-onto-a-chip",
+      "briefingId": "rss-2026-02-22",
+      "date": "2026-02-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.anuragk.com/blog/posts/Taalas.html",
+      "title": "How Taalas “prints” LLM onto a chip?",
+      "summary": "Taalas公司正致力于将大型语言模型（LLM）直接“刻录”到专用芯片上。这项技术旨在从硬件层面显著提升LLM的运行效率、降低能耗和部署成本，为AI模型的普及化和在边缘设备上的高效运行奠定基础。",
+      "take": "这对Dayu构建本地运行、高效率的AI代理至关重要。未来，Dayu可以在个人工作站上更高效、更低成本地运行复杂的LLM，赋能生物信息学代理自动化，甚至探索相关硬件加速工具链的开源贡献。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-22-04-how-i-use-claude-code-separation-of-planning-and-execution",
+      "briefingId": "rss-2026-02-22",
+      "date": "2026-02-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://boristane.com/blog/how-i-use-claude-code/",
+      "title": "How I use Claude Code: Separation of planning and execution",
+      "summary": "这篇文章介绍了作者如何运用Claude Code，核心在于强调“规划与执行分离”的思想。通过将复杂的任务拆解为独立的规划阶段和执行阶段，可以显著提升AI在代码生成和解决复杂问题时的效率与准确性。",
+      "take": "对于Dayu构建AI代理而言，这种“规划与执行分离”的范式至关重要，它提供了一种设计更健壮Agent的新思路。 Dayu应将其应用于Agentic Workflow设计中，指导Agent先进行周密规划（如RAG策略、工具选择），再逐步执行，从而大幅提升生物信息学自动化工作的效率和可靠性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

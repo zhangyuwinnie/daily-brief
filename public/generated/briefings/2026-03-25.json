@@ -1,0 +1,187 @@
+{
+  "date": "2026-03-25",
+  "briefings": [
+    {
+      "id": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-25",
+      "filePath": "2026-03-25.md",
+      "summaryTopline": "How Moda Builds Production-Grade AI Design Agents with Deep Agents",
+      "insightIds": [
+        "rss-2026-03-25-01-how-moda-builds-production-grade-ai-design-agents-with-deep-agents",
+        "rss-2026-03-25-02-helping-developers-build-safer-ai-experiences-for-teens",
+        "rss-2026-03-25-03-update-on-the-openai-foundation",
+        "rss-2026-03-25-04-malicious-litellm_initpth-in-litellm-1828-credential-stealer",
+        "rss-2026-03-25-05-local-llm-app-by-ente",
+        "rss-2026-03-25-06-building-a-coding-agent-in-swift-from-scratch",
+        "rss-2026-03-25-07-run-cloud-agents-in-your-own-infrastructure"
+      ]
+    },
+    {
+      "id": "x-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-25",
+      "filePath": "x_briefing_2026-03-25.md",
+      "summaryTopline": "How Moda Builds Production-Grade AI Design Agents with Deep Agents",
+      "insightIds": [
+        "x-2026-03-25-trend-01-x"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-25-01-how-moda-builds-production-grade-ai-design-agents-with-deep-agents",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/",
+      "title": "How Moda Builds Production-Grade AI Design Agents with Deep Agents",
+      "summary": "Moda uses a multi-agent system built on Deep Agents and traced through LangSmith to let non-designers create and iterate on professional-grade visuals. (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-25-02-helping-developers-build-safer-ai-experiences-for-teens",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
+      "title": "Helping developers build safer AI experiences for teens",
+      "summary": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems. (Automated Snippet)",
+      "take": "Matched keywords: OpenAI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-25-03-update-on-the-openai-foundation",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/update-on-the-openai-foundation",
+      "title": "Update on the OpenAI Foundation",
+      "summary": "OpenAI基金会宣布了一项宏大计划，承诺将投入至少10亿美元。这笔资金将主要用于支持疾病治疗、经济机会、AI韧性以及社区项目等多个关键领域。此举彰显了OpenAI对AI技术长期社会影响和人类福祉的深远关注。",
+      "take": "虽然这不是AI新工具的发布，但OpenAI基金会重金投入“疾病治疗”领域，对Dayu的生物信息学背景是一个强烈的信号。Dayu应密切关注此方向可能衍生的开源项目、数据挑战或资助机会，提前思考如何构建结合生物信息知识的AI Agent，实现相关工作流自动化，甚至贡献于这些高影响力项目。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-25-04-malicious-litellm_initpth-in-litellm-1828-credential-stealer",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/24/malicious-litellm/#atom-everything",
+      "title": "Malicious litellm_init.pth in litellm 1.82.8 — credential stealer",
+      "summary": "`litellm` 1.82.8 版本被披露含有一个恶意文件 `litellm_init.pth`，该文件被设计为凭证窃取器。这是一个关键的安全警报，提醒所有使用此版本库的用户需要立即检查并更新，以防API密钥等敏感信息被盗取。",
+      "take": "作为AI代理构建者，Dayu很可能使用`litellm`来统一管理各种LLM接口。这个警报直接关系到Dayu自动化工作流和RAG应用的核心安全，务必立即检查项目中`litellm`的版本并升级到安全版本，避免凭证泄露风险，确保你的AI特工们能在安全的环境下高效运行。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-25-05-local-llm-app-by-ente",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://ente.com/blog/ensu/",
+      "title": "Local LLM App by Ente",
+      "summary": "由 Ente 推出的本地 LLM 应用程序，提供了一种在个人设备上安全运行大型语言模型的新方案。它主要解决了用户对数据隐私和离线使用的需求，为个人或小团队提供了更自主的AI工具，并且该产品已发布并引发关注。",
+      "take": "这款本地 LLM 应用对 Dayu 极具吸引力，因为它能确保敏感生物信息数据的隐私，同时提供高性能离线 AI 能力。Dayu 可以利用它作为核心，构建完全本地化的 AI Agent 来自动化工作流、实现本地 RAG 问答或生成代码，大幅提升效率并减少对云服务的依赖。这是Dayu尝试开发专属Agent和探索开源贡献的好机会。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-25-06-building-a-coding-agent-in-swift-from-scratch",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/ivan-magda/swift-claude-code",
+      "title": "Building a coding agent in Swift from scratch",
+      "summary": "本文深入探讨了如何利用 Swift 语言从零开始构建一个编程智能体。它提供了一套实践性的指南，帮助读者理解并亲手实现智能体的核心功能和逻辑。",
+      "take": "Dayu，作为致力于构建Agent和提升效率的你，这篇文章极具实战价值。学习 Swift 从零构建编程智能体，不仅能让你深入理解Agent的底层逻辑，还能将其能力复用到自动化个人开发流程、生成代码，甚至为你的生物信息学工具开发Swift驱动的智能模块，探索潜在的开源贡献机会。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-25-07-run-cloud-agents-in-your-own-infrastructure",
+      "briefingId": "rss-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/self-hosted-cloud-agents",
+      "title": "Run cloud agents in your own infrastructure",
+      "summary": "这篇文章介绍了一种在用户自己的基础设施中运行云代理（Cloud Agents）的新方法。通过自托管（self-hosted）这些代理，用户可以确保所有代码和工具的执行都完全在自己的网络环境中进行，极大地提升了数据安全性和隐私保护。这对于需要处理敏感信息或有严格合规要求的AI工作流来说，是一个非常实用的部署选项。",
+      "take": "对于Dayu来说，这意味着他可以构建和部署处理高度敏感生物信息学数据（如基因组序列或患者记录）的AI代理，同时完全掌控数据安全和隐私。这种能力让Dayu能够放心地将AI代理应用于需要严格数据治理的领域，解锁了更多AI自动化在科研和医疗中的潜力，是Agent实用落地的关键考量。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-25-trend-01-x",
+      "briefingId": "x-2026-03-25",
+      "date": "2026-03-25",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "title": "本轮 X 抓取失败",
+      "summary": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "take": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ],
+  "xToplines": [
+    "How Moda Builds Production-Grade AI Design Agents with Deep Agents",
+    "Helping developers build safer AI experiences for teens",
+    "Update on the OpenAI Foundation"
+  ],
+  "xActionItems": [
+    "检查 Chrome 中 X 是否仍保持登录",
+    "5-10 分钟后重试 x brief",
+    "若连续失败，改用 RSS/HN briefing 作为当天输入"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-02-11",
+  "briefings": [
+    {
+      "id": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-11",
+      "filePath": "2026-02-11.md",
+      "summaryTopline": "Last year, all my non-programmer friends built apps",
+      "insightIds": [
+        "rss-2026-02-11-01-last-year-all-my-non-programmer-friends-built-apps",
+        "rss-2026-02-11-02-pluralistic-europe-takes-a-big-step-towards-a-post-dollar-world-11-feb-2026",
+        "rss-2026-02-11-03-some-disconcerting-facts-about-ai-and-banking-that-may-have-profound-consequences",
+        "rss-2026-02-11-04-super-bowl-matchup-anthropic-vs-openai",
+        "rss-2026-02-11-05-programming-aphorisms"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-11-01-last-year-all-my-non-programmer-friends-built-apps",
+      "briefingId": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "iDiallo.com",
+      "sourceUrl": "https://idiallo.com/blog/my-non-programmer-friends-built-apps?src=feed",
+      "title": "Last year, all my non-programmer friends built apps",
+      "summary": "Last year, all my non-programmer friends were building apps. Yet today, those apps are nowhere to be found. Everyone followed the ads. They signed up for Lovable and all the fancy app-building services that exist. My LinkedIn feed was filled with PMs who had discovered new powers. Some posted bullet-point lists of \"things to do to be successful with AI.\" \"Don't work hard, work smart,\" they said, as if it were a deep insight. I must admit, I was a bit jealous. With a full-time job, I don't get to (Automated Snippet)",
+      "take": "Matched keywords: AI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-11-02-pluralistic-europe-takes-a-big-step-towards-a-post-dollar-world-11-feb-2026",
+      "briefingId": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Pluralistic: Daily links from Cory Doctorow",
+      "sourceUrl": "https://pluralistic.net/2026/02/11/post-dollar-world/",
+      "title": "Pluralistic: Europe takes a big step towards a post-dollar world (11 Feb 2026)",
+      "summary": "这篇文章探讨了欧洲通过推动自主支付系统（如Wero），试图从Visa和Mastercard手中夺回价值24万亿美元交易市场的控制权，标志着其向“后美元”世界迈出重要一步。此外，文中还涉及了国会API、技术治理以及对硅谷巨头权力制衡等多元议题。",
+      "take": "这种底层基础设施的去中心化与主权回归，正如具身智能领域中从通用大模型转向垂直物理系统的演进：在学习Sim-to-Real和C++时，建议你关注系统底层架构的鲁棒性，像欧洲重构支付链条一样，理解并掌握机器人控制中的每一个关键节点，才能在物理世界建立真正的“自主权”。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-11-03-some-disconcerting-facts-about-ai-and-banking-that-may-have-profound-consequences",
+      "briefingId": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Marcus on AI",
+      "sourceUrl": "https://garymarcus.substack.com/p/some-disconcerting-facts-about-ai",
+      "title": "Some disconcerting facts about AI and banking that may have profound consequences",
+      "summary": "Disturbing new numbers (Automated Snippet - LLM Timeout)",
+      "take": "Matched keywords: AI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-11-04-super-bowl-matchup-anthropic-vs-openai",
+      "briefingId": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Marcus on AI",
+      "sourceUrl": "https://garymarcus.substack.com/p/super-bowl-matchup-anthropic-vs-openai",
+      "title": "Super Bowl Matchup: Anthropic vs OpenAI",
+      "summary": "You don’t have to be a football fan to enjoy the ads (Automated Snippet - LLM Timeout)",
+      "take": "Matched keywords: AI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-11-05-programming-aphorisms",
+      "briefingId": "rss-2026-02-11",
+      "date": "2026-02-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "matklad",
+      "sourceUrl": "https://matklad.github.io/2026/02/11/programming-aphorisms.html",
+      "title": "Programming Aphorisms",
+      "summary": "Programming Aphorisms Feb 11, 2026  A meta programming post — looking at my thought process when coding and trying to pin down what is programming “knowledge”. Turns out, a significant fraction of that is just reducing new problems to a vocabulary of known tricks. This is a personal, descriptive post, not a prescriptive post for you. It starts with a question posted on Ziggit. The background here is that Zig is in the process of removing ambient IO capabilities. Currently, you can access program (Automated Snippet)",
+      "take": "Matched keywords: AI, Software Engineering.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

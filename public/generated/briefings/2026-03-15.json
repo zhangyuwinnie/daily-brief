@@ -1,0 +1,275 @@
+{
+  "date": "2026-03-15",
+  "briefings": [
+    {
+      "id": "rss-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-15",
+      "filePath": "2026-03-15.md",
+      "summaryTopline": "My fireside chat about agentic engineering at the Pragmatic Summit",
+      "insightIds": [
+        "rss-2026-03-15-01-my-fireside-chat-about-agentic-engineering-at-the-pragmatic-summit",
+        "rss-2026-03-15-02-mcp-is-dead-long-live-mcp"
+      ]
+    },
+    {
+      "id": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-15",
+      "filePath": "x_briefing_2026-03-15.md",
+      "summaryTopline": "**AI代理重塑软件开发：** AI代理正逐步接管软件开发生命周期（SDLC）的规划、编码、测试和部署等环节，带来效率革命，这是自GUI以来软件开发领域最大的转变。",
+      "insightIds": [
+        "x-2026-03-15-trend-01-aisdlc",
+        "x-2026-03-15-trend-02-agentic-general-intelligence-v3010",
+        "x-2026-03-15-trend-03-ai-dev-25-aiagentic-ai",
+        "x-2026-03-15-tools-01-anthropic-claude-3313ai",
+        "x-2026-03-15-tools-02-agentic-knowledge-graph-construction",
+        "x-2026-03-15-tools-03-jan-4b",
+        "x-2026-03-15-opinion-01-chain-of-thought",
+        "x-2026-03-15-opinion-02-20",
+        "x-2026-03-15-opinion-03-llm",
+        "x-2026-03-15-news-01-karpathy-karpathyjobs",
+        "x-2026-03-15-news-02-anthropic-claude"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-15-01-my-fireside-chat-about-agentic-engineering-at-the-pragmatic-summit",
+      "briefingId": "rss-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything",
+      "title": "My fireside chat about agentic engineering at the Pragmatic Summit",
+      "summary": "这篇内容是关于在Pragmatic Summit上进行的“智能体工程”炉边谈话。它很可能分享了关于构建和部署AI智能体的实际工程经验、最佳实践和未来趋势，为智能体系统的设计与实现提供了实用见解。",
+      "take": "Dayu，这篇关于智能体工程的炉边谈话，正是你构建AI智能体、实现工作流自动化的宝贵资源。它能提供工程实践层面的洞见，帮你设计更高效的Agentic工作流，甚至可能启发新的工具尝试或指明开源贡献方向。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-15-02-mcp-is-dead-long-live-mcp",
+      "briefingId": "rss-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/",
+      "title": "MCP is dead; long live MCP",
+      "summary": "\"MCP 已死，MCP 长存\" 这一表述通常意味着某个关键概念、工具或范式（MCP）的旧版本或旧实现已被淘汰，但其核心价值和功能在新一代的解决方案中得到了继承和重大创新。这篇文章很可能在探讨该领域一次重要的技术或方法论的革新。",
+      "take": "Dayu 应该将此视为一个深入探索新一代 MCP 范式或工具的绝佳机会。这可能为构建更高效的生物信息学或 AI 智能体工作流提供核心能力，同时也是参与其开源发展、贡献并塑造未来技术方向的潜在入口。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-15-trend-01-aisdlc",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Shraddha Bharuka",
+      "sourceUrl": "https://x.com/BharukaShraddha/status/2033069325490499967",
+      "title": "AI代理驱动的编码正悄然成为新的软件开发生命周期（SDLC）",
+      "summary": "AI代理驱动的编码正悄然成为新的软件开发生命周期（SDLC），涵盖规划、编码、测试和部署，这是自GUI以来软件开发最大的转变，多数工程师尚未完全察觉。",
+      "take": "AI代理驱动的编码正悄然成为新的软件开发生命周期（SDLC），涵盖规划、编码、测试和部署，这是自GUI以来软件开发最大的转变，多数工程师尚未完全察觉。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-15-trend-02-agentic-general-intelligence-v3010",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Varun",
+      "sourceUrl": "https://x.com/varun_mathur/status/2032671842230501729",
+      "title": "Agentic General Intelligence v3.0.10 发布",
+      "summary": "Agentic General Intelligence v3.0.10 发布，将Karpathy的自动研究循环通用化，用户可直接用自然语言提出优化问题，由分布式代理集群解决，无需代码，并在所有领域积累智能。",
+      "take": "Agentic General Intelligence v3.0.10 发布，将Karpathy的自动研究循环通用化，用户可直接用自然语言提出优化问题，由分布式代理集群解决，无需代码，并在所有领域积累智能。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-15-trend-03-ai-dev-25-aiagentic-ai",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1958165941369634825",
+      "title": "AI Dev 25 大会将深入探讨代理式AI（Agentic AI）",
+      "summary": "AI Dev 25 大会将深入探讨代理式AI（Agentic AI），包括多代理编排、工具使用、复杂推理链以及AI辅助编码等技术主题。",
+      "take": "AI Dev 25 大会将深入探讨代理式AI（Agentic AI），包括多代理编排、工具使用、复杂推理链以及AI辅助编码等技术主题。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-15-tools-01-anthropic-claude-3313ai",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2033165800933114035",
+      "title": "Anthropic 提供了构建 Claude 技能的33页“作弊指南”和13门免费AI课程",
+      "summary": "Anthropic 提供了构建 Claude 技能的33页“作弊指南”和13门免费AI课程，并附带官方证书。",
+      "take": "Anthropic 提供了构建 Claude 技能的33页“作弊指南”和13门免费AI课程，并附带官方证书。",
+      "topics": [
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-tools-02-agentic-knowledge-graph-construction",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1960731961494004077",
+      "title": "推出“Agentic Knowledge Graph Construction”课程",
+      "summary": "推出“Agentic Knowledge Graph Construction”课程，教你如何利用代理团队提取并连接参考资料，构建知识图谱以优化RAG（检索增强生成）。",
+      "take": "推出“Agentic Knowledge Graph Construction”课程，教你如何利用代理团队提取并连接参考资料，构建知识图谱以优化RAG（检索增强生成）。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-tools-03-jan-4b",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Thomas Wolf",
+      "sourceUrl": "https://x.com/Thom_Wolf/status/1955652567108608114",
+      "title": "Jan 发布了一款4B模型",
+      "summary": "Jan 发布了一款4B模型，针对本地代理任务进行了优化，在多项评估中性能超越了Perplexity Pro。",
+      "take": "Jan 发布了一款4B模型，针对本地代理任务进行了优化，在多项评估中性能超越了Perplexity Pro。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-opinion-01-chain-of-thought",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ihtesham Ali",
+      "sourceUrl": "https://x.com/ihtesham2005/status/2033189003449794969",
+      "title": "“思维链”（Chain of Thought）可能已过时",
+      "summary": "“思维链”（Chain of Thought）可能已过时。他测试的“思维骨架”（Skeleton of Thought）提示方法将结构化任务的响应延迟减半，并生成更清晰的输出，颠覆了AI文本生成方式的固有认知。",
+      "take": "“思维链”（Chain of Thought）可能已过时。他测试的“思维骨架”（Skeleton of Thought）提示方法将结构化任务的响应延迟减半，并生成更清晰的输出，颠覆了AI文本生成方式的固有认知。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-opinion-02-20",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@sachin.",
+      "sourceUrl": "https://x.com/sachinyadav699/status/2033114309644165615",
+      "title": "一位20岁的开发者在零资金",
+      "summary": "一位20岁的开发者在零资金、10天内利用AI构建了可模拟1000+数字人类对现实新闻做出反应的系统，这预示着一个由个人构建者创造复杂系统的时代。",
+      "take": "一位20岁的开发者在零资金、10天内利用AI构建了可模拟1000+数字人类对现实新闻做出反应的系统，这预示着一个由个人构建者创造复杂系统的时代。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-opinion-03-llm",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2033043881172885560",
+      "title": "LLM评估系统对于构建可重复改进的代理式系统至关重要",
+      "summary": "LLM评估系统对于构建可重复改进的代理式系统至关重要，它是通过优化工作流、上下文工程和提示来持续提升性能的唯一途径。",
+      "take": "LLM评估系统对于构建可重复改进的代理式系统至关重要，它是通过优化工作流、上下文工程和提示来持续提升性能的唯一途径。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-news-01-karpathy-karpathyjobs",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Kaito | 海斗",
+      "sourceUrl": "https://x.com/_kaitodev/status/2032927164883153402",
+      "title": "Karpathy 发布了 karpathy/jobs 项目",
+      "summary": "Karpathy 发布了 karpathy/jobs 项目，利用LLM评估了美国342个职业的AI暴露程度并可视化，发现完全在屏幕上完成的工作受影响最大。",
+      "take": "Karpathy 发布了 karpathy/jobs 项目，利用LLM评估了美国342个职业的AI暴露程度并可视化，发现完全在屏幕上完成的工作受影响最大。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-15-news-02-anthropic-claude",
+      "briefingId": "x-2026-03-15",
+      "date": "2026-03-15",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Phantom_Defi",
+      "sourceUrl": "https://x.com/0xPhantomDefi/status/2032925401765609734",
+      "title": "Anthropic 更新 Claude 后",
+      "summary": "Anthropic 更新 Claude 后，一位学生利用其在11天内将1400美元增值至23.8万美元，展示了非专业人士利用LLM的巨大潜力。",
+      "take": "Anthropic 更新 Claude 后，一位学生利用其在11天内将1400美元增值至23.8万美元，展示了非专业人士利用LLM的巨大潜力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI代理重塑软件开发：** AI代理正逐步接管软件开发生命周期（SDLC）的规划、编码、测试和部署等环节，带来效率革命，这是自GUI以来软件开发领域最大的转变。",
+    "**构建代理系统的工具与策略涌现：** 市场正涌现大量工具和课程，专注于提升AI代理的自主性、可靠性、降低成本并优化其性能，从通用代理框架到特定领域应用（如RAG、文档提取）。",
+    "**大模型能力的边界与权衡：** 最新案例显示，AI代理能赋予个人开发者巨大的创造力，但大模型在追求代码/推理能力的同时，可能牺牲部分“情商”或沟通风格，且代理的治理和评估至关重要。"
+  ],
+  "xActionItems": [
+    "**深入研究AI代理：** 关注AI代理在软件开发（SDLC）中的应用，思考如何将代理引入现有工作流以提升效率。可以从Anthropic的Claude技能构建指南和Andrew Ng的代理相关课程入手。",
+    "**探索新型提示工程技术：** 尝试使用“思维骨架”（Skeleton of Thought）等新兴提示方法，对比其与传统CoT在结构化任务上的效果，以优化模型响应质量和延迟。",
+    "**关注大模型评估与治理：** 了解LLM评估系统的重要性，特别是对代理式系统而言，并思考AI代理在实际应用中可能面临的数据安全和治理问题。"
+  ]
+}

@@ -24,6 +24,8 @@ function getTextContent(node: ParentNode) {
 async function flushUpdates() {
   await act(async () => {
     await Promise.resolve();
+    await Promise.resolve();
+    await Promise.resolve();
   });
 }
 
@@ -95,17 +97,21 @@ function installGeneratedContentFetchMock() {
       };
     }
 
-    if (url.endsWith("/generated/briefings-by-date.json")) {
-      return {
-        ok: true,
-        json: async () => generatedContentFixture.briefingsByDate
-      };
-    }
-
     if (url.endsWith("/generated/audio-index.json")) {
       return {
         ok: true,
         json: async () => generatedContentFixture.audioIndex
+      };
+    }
+
+    const matchedDate = generatedContentFixture.briefingsIndex.availableDates.find((date) =>
+      url.endsWith(`/generated/briefings/${date}.json`)
+    );
+
+    if (matchedDate) {
+      return {
+        ok: true,
+        json: async () => generatedContentFixture.briefingsByDate[matchedDate]
       };
     }
 

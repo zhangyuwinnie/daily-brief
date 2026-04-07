@@ -2,11 +2,11 @@ import { Sparkles, Zap } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { RightRail } from "./RightRail";
 import { Sidebar } from "./Sidebar";
-import type { BuildItem, Insight } from "../../types/models";
+import type { Insight } from "../../types/models";
 
 type AppShellProps = {
   children: React.ReactNode;
-  buildQueue: BuildItem[];
+  buildCount: number;
   currentPath: string;
   topics: string[];
   selectedInsight: Insight | null;
@@ -18,7 +18,7 @@ type AppShellProps = {
 
 export function AppShell({
   children,
-  buildQueue,
+  buildCount,
   currentPath,
   topics,
   selectedInsight,
@@ -32,7 +32,7 @@ export function AppShell({
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#e0f7ea] via-[#c8eed8] to-[#9adfb9] px-3 py-3 text-slate-800 sm:px-4 md:px-6">
       <div className="mx-auto flex min-h-[calc(100vh-1.5rem)] w-full max-w-[1400px] flex-col overflow-hidden rounded-shell border border-white/60 bg-white/40 shadow-glass backdrop-blur-xl lg:min-h-[calc(100vh-3rem)] lg:flex-row">
-        <Sidebar buildCount={buildQueue.length} />
+        <Sidebar buildCount={buildCount} />
 
         <main className="flex min-w-0 flex-1 flex-col">
           <header className="flex flex-col gap-4 border-b border-white/40 px-4 py-4 sm:px-6 lg:h-20 lg:flex-row lg:items-center lg:justify-between lg:px-8">

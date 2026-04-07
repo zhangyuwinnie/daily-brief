@@ -1,0 +1,94 @@
+{
+  "date": "2026-03-16",
+  "briefings": [
+    {
+      "id": "rss-2026-03-16",
+      "date": "2026-03-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-16",
+      "filePath": "2026-03-16.md",
+      "summaryTopline": "How coding agents work",
+      "insightIds": [
+        "rss-2026-03-16-01-how-coding-agents-work",
+        "rss-2026-03-16-02-what-is-agentic-engineering",
+        "rss-2026-03-16-03-how-i-write-software-with-llms",
+        "rss-2026-03-16-04-nango-yc-w23-api-access-for-agents-and-apps-is-hiring"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-16-01-how-coding-agents-work",
+      "briefingId": "rss-2026-03-16",
+      "date": "2026-03-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything",
+      "title": "How coding agents work",
+      "summary": "这篇文章深入探讨了编码Agent的运作机制，揭示了它们如何将自然语言指令转化为实际可执行代码的全过程。深入理解这些Agent的架构和工作流，对于有效利用AI来自动化软件开发任务具有指导意义。",
+      "take": "Dayu，深入理解编码Agent的工作原理，能让你在构建自己的AI编程辅助Agent时更有方向性。这不仅能帮助你优化生物信息学中的代码生成和自动化流程，还能识别潜在的开源项目贡献机会，加速你在该领域的AI赋能。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-16-02-what-is-agentic-engineering",
+      "briefingId": "rss-2026-03-16",
+      "date": "2026-03-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/#atom-everything",
+      "title": "What is agentic engineering?",
+      "summary": "\"Agentic Engineering\" 是一种专注于设计、构建和部署可靠AI代理（agents）的方法论。它强调如何将大型语言模型（LLMs）与其他AI工具结合，创建能够自主决策、规划和执行复杂任务的智能系统。",
+      "take": "对于Dayu构建AI代理和自动化工作流而言，理解“Agentic Engineering”是基础。它将指导Dayu在生物信息学领域，通过系统化的方法设计高效、可复用的智能代理，并能帮助他更好地评估现有开源Agent框架的优劣，甚至发掘贡献机会。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-16-03-how-i-write-software-with-llms",
+      "briefingId": "rss-2026-03-16",
+      "date": "2026-03-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.stavros.io/posts/how-i-write-software-with-llms/",
+      "title": "How I write software with LLMs",
+      "summary": "这篇文章探讨了作者如何利用大型语言模型（LLM）来编写软件的实践经验和具体方法。它可能详细介绍了将LLM融入软件开发生命周期的各个阶段，旨在提升开发效率、代码质量并实现部分开发任务的自动化。",
+      "take": "对于Dayu而言，这篇文章提供了构建AI编程Agent或自动化研发工作流的实战蓝图。他可以从中提炼出有效利用LLM生成代码、优化脚本或构建自定义开发工具的Agentic工作流，并将其应用于生物信息学领域，同时发掘将这些实践开源或贡献新工具的机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-16-04-nango-yc-w23-api-access-for-agents-and-apps-is-hiring",
+      "briefingId": "rss-2026-03-16",
+      "date": "2026-03-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://jobs.ashbyhq.com/Nango",
+      "title": "Nango (YC W23, API Access for Agents and Apps) Is Hiring",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

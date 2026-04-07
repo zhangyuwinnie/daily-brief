@@ -1,0 +1,123 @@
+{
+  "date": "2026-02-14",
+  "briefings": [
+    {
+      "id": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-14",
+      "filePath": "2026-02-14.md",
+      "summaryTopline": "GPT-5.2 derives a new result in theoretical physics",
+      "insightIds": [
+        "rss-2026-02-14-01-gpt-52-derives-a-new-result-in-theoretical-physics",
+        "rss-2026-02-14-02-introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+        "rss-2026-02-14-03-beyond-rate-limits-scaling-access-to-codex-and-sora",
+        "rss-2026-02-14-04-scaling-social-science-research",
+        "rss-2026-02-14-05-the-evolution-of-openais-mission-statement",
+        "rss-2026-02-14-06-testing-reachy-mini-hugging-faces-pi-powered-robot"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-14-01-gpt-52-derives-a-new-result-in-theoretical-physics",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/new-result-theoretical-physics",
+      "title": "GPT-5.2 derives a new result in theoretical physics",
+      "summary": "GPT-5.2 在理论物理领域取得了实质性突破，成功推导出一种新的胶子振幅公式，并获得了 OpenAI 及学术界的正式验证。这表明大语言模型已具备深度的逻辑推理与科学发现能力，能够处理极端复杂的数学和物理形式化问题。",
+      "take": "这种跨越式的符号推理能力将极大加速机器人控制算法的验证过程；建议关注 AI 如何辅助处理 Sim-to-Real 中的非线性物理建模，这对你从生物信息学转向物理 AI 时的底层 C++ 优化与强化学习（RL）策略构建具有重要借鉴意义。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-14-02-introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "summary": "OpenAI 为 ChatGPT 推出“锁定模式”（Lockdown Mode）和“高风险”标签，旨在防御针对大模型的提示词注入（prompt injection）和 AI 驱动的数据泄露。锁定模式通过严格限制模型与外部系统的交互（如仅允许访问缓存内容）来收缩攻击面，为处理敏感数据的企业级应用提供更高强度的安全保障。",
+      "take": "这种针对 LLM 指令注入的防御机制对你转型 Physical AI 极具启发：在具身智能中，防止恶意或错误指令进入底层的 C++ 控制循环是保障机器人“物理安全”的核心。建议在探索 RL 训练时同步思考如何构建鲁棒的系统边界，这种将安全融入工程底层的思维，是你从软件研发迈向高性能、高可靠机器人工程的关键跃迁。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-14-03-beyond-rate-limits-scaling-access-to-codex-and-sora",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/beyond-rate-limits",
+      "title": "Beyond rate limits: scaling access to Codex and Sora",
+      "summary": "OpenAI 介绍了其为 Codex 和 Sora 构建的实时访问系统，通过结合频率限制、使用跟踪和信用点计费，实现了在大规模并发下的持续访问。该架构解决了高负载 AI 模型调用中的中断问题，为开发者提供了更具伸缩性的资源管理方案。",
+      "take": "这种对大规模算力资源进行精准调度与实时监控的工程思维，是构建 Physical AI 仿真环境（Sim-to-Real）和机器人云端大脑的关键底座。掌握此类系统级架构逻辑，将帮助你从后端视角更深刻地理解如何优化具身智能开发中的计算效率与资源配置。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-14-04-scaling-social-science-research",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/scaling-social-science-research",
+      "title": "Scaling social science research",
+      "summary": "GABRIEL 是 OpenAI 推出的一款新型开源工具包，利用 GPT 模型将定性的文本和图像内容转化为定量的结构化数据。该工具旨在帮助社会科学家突破传统研究规模的限制，实现大规模、自动化的多模态数据分析。",
+      "take": "虽然这是社会科学工具，但其将非结构化多模态输入转化为定量数据的工程逻辑，对你构建机器人的感知系统和强化学习（RL）的奖励函数设计极具参考价值。掌握这种数据对齐思维，能帮助你在 Physical AI 领域更好地处理传感器信息，并为 Sim-to-Real 过程中的状态映射提供更精准的建模思路。",
+      "topics": [
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-14-05-the-evolution-of-openais-mission-statement",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/13/openai-mission-statement/#atom-everything",
+      "title": "The evolution of OpenAI's mission statement",
+      "summary": "OpenAI的使命自2015年成立以来经历了显著演变，从最初强调“公开分享”和“不受财务回报约束”的非营利愿景，逐步转向确保“通用人工智能（AGI）惠及全人类”。目前其将AGI定义为能胜任最具经济价值工作的“高度自主系统”，反映了从纯科研理想主义向大规模工程落地与实用主义的重心偏移。",
+      "take": "OpenAI对“高度自主系统”的聚焦预示了AI必然从数字世界跨越到具身智能（Physical AI），这印证了你从生信转向机器人领域的前瞻性。在攻克C++和强化学习（RL）时，建议重点研究如何将大模型的泛化能力通过Sim-to-Real技术转化为物理实体的精确控制。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-14-06-testing-reachy-mini-hugging-faces-pi-powered-robot",
+      "briefingId": "rss-2026-02-14",
+      "date": "2026-02-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Jeff Geerling",
+      "sourceUrl": "https://www.jeffgeerling.com/blog/2026/testing-reachy-mini-hugging-face-robot/",
+      "title": "Testing Reachy Mini - Hugging Face's Pi powered robot",
+      "summary": "Reachy Mini 是由 Hugging Face 与 Pollen Robotics 合作推出的开源桌面级 AI 机器人，旨在降低具身智能（Embodied AI）的探索门槛。它基于树莓派构建，深度集成了 Hugging Face 的模型库，虽然其定价亲民且提供 Python SDK，但实际评测指出，要实现如 CES 演示中那样流畅的端到端交互，仍需深度的 Linux 配置与机器人开发功底。",
+      "take": "对于正在向物理 AI 进军的大鱼，Reachy Mini 是一个完美的“低成本、高上限”实践平台，能让你直接在 6 自由度硬件上验证强化学习算法。建议你从其仿真 SDK 入手，深入理解 Sim-to-Real 的数据对齐过程，这正是从生信跨越到机器人工程所需的关键技能。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "date": "2026-03-18",
+  "briefings": [
+    {
+      "id": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-18",
+      "filePath": "2026-03-18.md",
+      "summaryTopline": "Open SWE: An Open-Source Framework for Internal Coding Agents",
+      "insightIds": [
+        "rss-2026-03-18-01-open-swe-an-open-source-framework-for-internal-coding-agents",
+        "rss-2026-03-18-02-introducing-deploy-cli",
+        "rss-2026-03-18-03-introducing-gpt-54-mini-and-nano",
+        "rss-2026-03-18-04-improving-breast-cancer-screening-workflows-with-machine-learning",
+        "rss-2026-03-18-05-use-subagents-and-custom-agents-in-codex",
+        "rss-2026-03-18-06-quoting-a-member-of-anthropics-alignment-science-team",
+        "rss-2026-03-18-07-investing-in-the-people-shaping-open-source-and-securing-the-future-together",
+        "rss-2026-03-18-08-a-ngrok-style-secure-tunnel-server-written-in-rust-and-open-source",
+        "rss-2026-03-18-09-get-shit-done-a-meta-prompting-context-engineering-and-spec-driven-dev-system",
+        "rss-2026-03-18-10-state-of-open-source-on-hugging-face-spring-2026",
+        "rss-2026-03-18-11-gpt-54-is-a-big-step-for-codex"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-18-01-open-swe-an-open-source-framework-for-internal-coding-agents",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/",
+      "title": "Open SWE: An Open-Source Framework for Internal Coding Agents",
+      "summary": "Built on Deep Agents and LangGraph, Open SWE provides the core architectural components for internal coding agents. (Automated Snippet)",
+      "take": "Matched keywords: Agent, Coding Agent.",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-18-02-introducing-deploy-cli",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/introducing-deploy-cli/",
+      "title": "Introducing deploy cli",
+      "summary": "We’re excited to introduce the deploy cli, a new set of commands within the langgraph-cli package that makes it simple to deploy and manage agents directly from the command line. The first command in this new set, langgraph deploy, lets you deploy an agent to LangSmith Deployment in (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-18-03-introducing-gpt-54-mini-and-nano",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "summary": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads. (Automated Snippet)",
+      "take": "Matched keywords: Agent, Reasoning.",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-18-04-improving-breast-cancer-screening-workflows-with-machine-learning",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/improving-breast-cancer-screening-workflows-with-machine-learning/",
+      "title": "Improving breast cancer screening workflows with machine learning",
+      "summary": "Health & Bioscience (Automated Snippet)",
+      "take": "Matched keywords: Workflow.",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-05-use-subagents-and-custom-agents-in-codex",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything",
+      "title": "Use subagents and custom agents in Codex",
+      "summary": "No summary available. (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-06-quoting-a-member-of-anthropics-alignment-science-team",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/16/blackmail/#atom-everything",
+      "title": "Quoting A member of Anthropic’s alignment-science team",
+      "summary": "这篇文章引用了Anthropic对齐科学团队成员的观点。尽管具体内容未提供，但通常此类讨论聚焦于确保大型语言模型（LLMs）的安全、可控和符合人类价值观，这是负责任AI开发的核心。",
+      "take": "Dayu在构建AI代理和自动化生物信息学工作流时，AI对齐原则是确保代理安全可靠的关键。他可以借鉴Anthropic在代理设计中融入安全性与可控性的理念，例如通过设计基于价值观的Prompting或内部反思机制，来提升代理的鲁棒性，并探索贡献于开源的代理安全框架。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-07-investing-in-the-people-shaping-open-source-and-securing-the-future-together",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/",
+      "title": "Investing in the people shaping open source and securing the future together",
+      "summary": "GitHub 正在加大对开源安全领域的投入，通过资助维护者并与 Alpha-Omega 合作，旨在减轻开源社区的负担。此举将有助于加强软件供应链的安全性，共同构建更安全的未来。",
+      "take": "对 Dayu 而言，GitHub 投资开源安全意味着他构建 AI 代理和自动化工具时，能依赖更稳固、更安全的开源组件。这提示我们可以构建一个自动化 Agent，专门用于持续监控和评估项目依赖的开源库安全性，从而确保其 AI 工作流的稳健性，甚至可以在相关开源安全项目中寻找贡献机会。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-08-a-ngrok-style-secure-tunnel-server-written-in-rust-and-open-source",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/joaoh82/rustunnel",
+      "title": "A ngrok-style secure tunnel server written in Rust and Open Source",
+      "summary": "这是一个用Rust编写的开源安全隧道服务器，功能类似ngrok。它提供了一种安全且可控的方式，将本地开发的服务或代理暴露到公共网络，非常适合需要内网穿透而又不愿依赖第三方服务的场景。",
+      "take": "对于Dayu这类AI超个体，这个Rust开源隧道服务器是搭建Agentic Workflows的利器。他可以用它安全地将本地AI服务或自定义工具接口暴露到公网进行测试或集成，同时，作为开源项目，这也是一个深入学习Rust并贡献代码、实现Agent专属网络管理功能的好机会。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-09-get-shit-done-a-meta-prompting-context-engineering-and-spec-driven-dev-system",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/gsd-build/get-shit-done",
+      "title": "Get Shit Done: A meta-prompting, context engineering and spec-driven dev system",
+      "summary": "这篇文章介绍了一个名为“Get Shit Done”的AI辅助开发系统，它通过结合元提示（meta-prompting）、上下文工程（context engineering）和规范驱动（spec-driven）的方法，旨在构建一个高效的代码生成与项目执行流程。其核心价值在于提供一套系统化的工程实践，以确保AI能够更精准地理解需求并交付高质量的开发成果。",
+      "take": "对于Dayu而言，这种元提示和上下文工程的系统设计思想，是构建自动化代理、提升开发效率的关键范式。他可以借鉴此方法论来开发自己的生物信息学“AI超级个体”工作流，并关注其是否有开源实现以寻找贡献机会，将AI agent的能力最大化。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-10-state-of-open-source-on-hugging-face-spring-2026",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "title": "State of Open Source on Hugging Face: Spring 2026",
+      "summary": "No summary available. (Automated Snippet)",
+      "take": "Matched keywords: Open Source.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-18-11-gpt-54-is-a-big-step-for-codex",
+      "briefingId": "rss-2026-03-18",
+      "date": "2026-03-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Interconnects AI",
+      "sourceUrl": "https://www.interconnects.ai/p/gpt-54-is-a-big-step-for-codex",
+      "title": "GPT 5.4 is a big step for Codex",
+      "summary": "这篇文章探讨了AI智能体技术的前沿进展，指出GPT 5.4在代码生成方面取得了重大突破。然而，作者在评估和构建智能体时，仍倾向于使用Claude模型。",
+      "take": "这提示Dayu在构建AI智能体时，可利用GPT 5.4增强代码生成与自动化能力，同时借鉴Claude在智能体评估和复杂推理上的优势来设计Agentic Workflow。这将有助于他更高效地自动化生物信息学任务，并为开源Agent框架提供实践反馈和贡献。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

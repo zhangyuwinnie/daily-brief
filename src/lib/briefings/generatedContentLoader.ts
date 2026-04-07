@@ -1,14 +1,15 @@
-import type { DailyBriefPageData, Insight } from "../../types/models";
+import type { DailyBriefPageData } from "../../types/models";
 import type {
   GeneratedAudioIndex,
   GeneratedBriefingsByDate,
-  GeneratedBriefingsIndex
+  GeneratedBriefingsIndex,
+  GeneratedDayRecord
 } from "./generatedArtifacts";
 
 export type GeneratedContentSources = {
   briefingsIndex: GeneratedBriefingsIndex;
-  briefingsByDate: GeneratedBriefingsByDate;
   audioIndex: GeneratedAudioIndex;
+  briefingsByDate?: GeneratedBriefingsByDate;
 };
 
 export type DailyBriefPageState = {
@@ -20,8 +21,8 @@ export type DailyBriefPageState = {
 };
 
 const GENERATED_BRIEFINGS_INDEX_PATH = "/generated/briefings-index.json";
-const GENERATED_BRIEFINGS_BY_DATE_PATH = "/generated/briefings-by-date.json";
 const GENERATED_AUDIO_INDEX_PATH = "/generated/audio-index.json";
+const GENERATED_BRIEFINGS_DIRECTORY_PATH = "/generated/briefings";
 const approvedTopicOrder = [
   "Agents",
   "Coding Agents",
@@ -33,16 +34,38 @@ const approvedTopicOrder = [
   "Learning Resource"
 ] as const;
 
+const insightDateLookups = new WeakMap<GeneratedContentSources, Map<string, string>>();
+
 let cachedGeneratedContentSources: GeneratedContentSources | null = null;
 let cachedGeneratedContentPromise: Promise<GeneratedContentSources> | null = null;
+let cachedDayRecords = new Map<string, GeneratedDayRecord>();
+let cachedDayRecordPromises = new Map<string, Promise<GeneratedDayRecord>>();
+let cachedFetchImplementation: typeof fetch | null = null;
+const generatedContentListeners = new Set<() => void>();
 
-const allInsightsCache = new WeakMap<GeneratedContentSources, Insight[]>();
-const insightsByIdCache = new WeakMap<GeneratedContentSources, Map<string, Insight>>();
-const availableTopicsCache = new WeakMap<GeneratedContentSources, string[]>();
+function notifyGeneratedContentListeners() {
+  generatedContentListeners.forEach((listener) => {
+    listener();
+  });
+}
+
+function hydrateCachedDayRecords(dataSources: GeneratedContentSources) {
+  if (!dataSources.briefingsByDate) {
+    return;
+  }
+
+  for (const [date, dayRecord] of Object.entries(dataSources.briefingsByDate)) {
+    cachedDayRecords.set(date, dayRecord);
+  }
+}
 
 function getFetchImplementation(fetchImpl?: typeof fetch) {
   if (fetchImpl) {
     return fetchImpl;
+  }
+
+  if (cachedFetchImplementation) {
+    return cachedFetchImplementation;
   }
 
   if (typeof fetch === "function") {
@@ -70,59 +93,92 @@ function requireGeneratedContentSources(
   }
 
   if (cachedGeneratedContentSources) {
+    hydrateCachedDayRecords(cachedGeneratedContentSources);
     return cachedGeneratedContentSources;
   }
 
   throw new Error("Generated content has not been loaded yet.");
 }
 
-function getAllInsightsForSources(dataSources: GeneratedContentSources) {
-  const cachedInsights = allInsightsCache.get(dataSources);
-
-  if (cachedInsights) {
-    return cachedInsights;
+async function ensureGeneratedContentSources(
+  dataSources?: GeneratedContentSources,
+  fetchImpl?: typeof fetch
+) {
+  if (dataSources) {
+    return dataSources;
   }
 
-  const allInsights = dataSources.briefingsIndex.availableDates.flatMap(
-    (date) => dataSources.briefingsByDate[date]?.insights ?? []
-  );
-  allInsightsCache.set(dataSources, allInsights);
-  return allInsights;
+  return loadGeneratedContentSources(fetchImpl);
 }
 
-function getInsightsByIdForSources(dataSources: GeneratedContentSources) {
-  const cachedInsightsById = insightsByIdCache.get(dataSources);
+function getInsightDateLookup(dataSources: GeneratedContentSources) {
+  const cachedLookup = insightDateLookups.get(dataSources);
 
-  if (cachedInsightsById) {
-    return cachedInsightsById;
+  if (cachedLookup) {
+    return cachedLookup;
   }
 
-  const nextInsightsById = new Map<string, Insight>(
-    getAllInsightsForSources(dataSources).map((insight) => [insight.id, insight] as const)
+  const nextLookup = new Map<string, string>();
+
+  for (const [date, metadata] of Object.entries(dataSources.briefingsIndex.byDate)) {
+    metadata.insightIds.forEach((insightId) => {
+      nextLookup.set(insightId, date);
+    });
+  }
+
+  insightDateLookups.set(dataSources, nextLookup);
+  return nextLookup;
+}
+
+function getCachedDayRecord(date: string, dataSources: GeneratedContentSources) {
+  if (dataSources.briefingsByDate?.[date]) {
+    return dataSources.briefingsByDate[date];
+  }
+
+  if (dataSources !== cachedGeneratedContentSources) {
+    return null;
+  }
+
+  hydrateCachedDayRecords(dataSources);
+  return cachedDayRecords.get(date) ?? null;
+}
+
+function getAllInsightsForSources(dataSources: GeneratedContentSources) {
+  return dataSources.briefingsIndex.availableDates.flatMap(
+    (date) => getCachedDayRecord(date, dataSources)?.insights ?? []
   );
-  insightsByIdCache.set(dataSources, nextInsightsById);
-  return nextInsightsById;
 }
 
 function getAvailableTopicsForSources(dataSources: GeneratedContentSources) {
-  const cachedTopics = availableTopicsCache.get(dataSources);
-
-  if (cachedTopics) {
-    return cachedTopics;
-  }
-
   const derivedTopics = new Set(getAllInsightsForSources(dataSources).flatMap((insight) => insight.topics));
-  const orderedTopics = approvedTopicOrder.filter((topic) => derivedTopics.has(topic));
-  availableTopicsCache.set(dataSources, orderedTopics);
-  return orderedTopics;
+  return approvedTopicOrder.filter((topic) => derivedTopics.has(topic));
 }
 
 function resolveBriefingDate(requestedDate: string | undefined, dataSources: GeneratedContentSources) {
-  if (requestedDate && dataSources.briefingsByDate[requestedDate]) {
+  if (requestedDate && dataSources.briefingsIndex.byDate[requestedDate]) {
     return requestedDate;
   }
 
   return dataSources.briefingsIndex.availableDates[0] ?? null;
+}
+
+function createDailyBriefPageData(
+  date: string,
+  dataSources: GeneratedContentSources
+): DailyBriefPageData | null {
+  const day = getCachedDayRecord(date, dataSources);
+
+  if (!day) {
+    return null;
+  }
+
+  return {
+    date,
+    availableDates: dataSources.briefingsIndex.availableDates,
+    briefings: day.briefings,
+    insights: day.insights,
+    audio: dataSources.audioIndex[date]
+  };
 }
 
 export async function loadGeneratedContentSources(
@@ -137,19 +193,19 @@ export async function loadGeneratedContentSources(
   }
 
   const nextFetch = getFetchImplementation(fetchImpl);
+  cachedFetchImplementation = nextFetch;
   cachedGeneratedContentPromise = Promise.all([
     fetchGeneratedJson<GeneratedBriefingsIndex>(GENERATED_BRIEFINGS_INDEX_PATH, nextFetch),
-    fetchGeneratedJson<GeneratedBriefingsByDate>(GENERATED_BRIEFINGS_BY_DATE_PATH, nextFetch),
     fetchGeneratedJson<GeneratedAudioIndex>(GENERATED_AUDIO_INDEX_PATH, nextFetch)
   ])
-    .then(([briefingsIndex, briefingsByDate, audioIndex]) => {
+    .then(([briefingsIndex, audioIndex]) => {
       const nextSources = {
         briefingsIndex,
-        briefingsByDate,
         audioIndex
       } satisfies GeneratedContentSources;
 
       cachedGeneratedContentSources = nextSources;
+      notifyGeneratedContentListeners();
       return nextSources;
     })
     .catch((error) => {
@@ -160,14 +216,101 @@ export async function loadGeneratedContentSources(
   return cachedGeneratedContentPromise;
 }
 
+export async function loadDayData(
+  date: string,
+  dataSources?: GeneratedContentSources,
+  fetchImpl?: typeof fetch
+): Promise<GeneratedDayRecord> {
+  const resolvedSources = await ensureGeneratedContentSources(dataSources, fetchImpl);
+
+  if (!resolvedSources.briefingsIndex.byDate[date]) {
+    throw new Error(`No generated day payload is indexed for ${date}.`);
+  }
+
+  const cachedDayRecord = getCachedDayRecord(date, resolvedSources);
+
+  if (cachedDayRecord) {
+    return cachedDayRecord;
+  }
+
+  const existingPromise = cachedDayRecordPromises.get(date);
+
+  if (existingPromise) {
+    return existingPromise;
+  }
+
+  const nextFetch = getFetchImplementation(fetchImpl);
+  cachedFetchImplementation = nextFetch;
+  const nextPromise = fetchGeneratedJson<GeneratedDayRecord>(
+    `${GENERATED_BRIEFINGS_DIRECTORY_PATH}/${date}.json`,
+    nextFetch
+  )
+    .then((dayRecord) => {
+      cachedDayRecords.set(date, dayRecord);
+      cachedDayRecordPromises.delete(date);
+      notifyGeneratedContentListeners();
+      return dayRecord;
+    })
+    .catch((error) => {
+      cachedDayRecordPromises.delete(date);
+      throw error;
+    });
+
+  cachedDayRecordPromises.set(date, nextPromise);
+  return nextPromise;
+}
+
+export async function loadInsightById(
+  insightId: string,
+  dataSources?: GeneratedContentSources,
+  fetchImpl?: typeof fetch
+) {
+  const resolvedSources = await ensureGeneratedContentSources(dataSources, fetchImpl);
+  const insightDate = getInsightDateLookup(resolvedSources).get(insightId);
+
+  if (!insightDate) {
+    return null;
+  }
+
+  await loadDayData(insightDate, resolvedSources, fetchImpl);
+  return getInsightById(insightId, resolvedSources);
+}
+
+export async function loadAllInsights(
+  dataSources?: GeneratedContentSources,
+  fetchImpl?: typeof fetch
+) {
+  const resolvedSources = await ensureGeneratedContentSources(dataSources, fetchImpl);
+
+  await Promise.all(
+    resolvedSources.briefingsIndex.availableDates.map((date) => loadDayData(date, resolvedSources, fetchImpl))
+  );
+
+  return getAllInsights(resolvedSources);
+}
+
+export function subscribeGeneratedContentUpdates(listener: () => void) {
+  generatedContentListeners.add(listener);
+
+  return () => {
+    generatedContentListeners.delete(listener);
+  };
+}
+
 export function primeGeneratedContentSources(dataSources: GeneratedContentSources) {
   cachedGeneratedContentSources = dataSources;
   cachedGeneratedContentPromise = Promise.resolve(dataSources);
+  hydrateCachedDayRecords(dataSources);
+  notifyGeneratedContentListeners();
 }
 
 export function resetGeneratedContentSources() {
   cachedGeneratedContentSources = null;
   cachedGeneratedContentPromise = null;
+  cachedDayRecords = new Map<string, GeneratedDayRecord>();
+  cachedDayRecordPromises = new Map<string, Promise<GeneratedDayRecord>>();
+  cachedFetchImplementation = null;
+  generatedContentListeners.clear();
 }
 
 export function getAvailableBriefingDates(dataSources?: GeneratedContentSources) {
@@ -176,6 +319,17 @@ export function getAvailableBriefingDates(dataSources?: GeneratedContentSources)
 
 export function getLatestBriefingDate(dataSources?: GeneratedContentSources) {
   return requireGeneratedContentSources(dataSources).briefingsIndex.availableDates[0] ?? null;
+}
+
+export function getResolvedBriefingDate(
+  requestedDate?: string,
+  dataSources?: GeneratedContentSources
+) {
+  return resolveBriefingDate(requestedDate, requireGeneratedContentSources(dataSources));
+}
+
+export function getInsightDateById(insightId: string, dataSources?: GeneratedContentSources) {
+  return getInsightDateLookup(requireGeneratedContentSources(dataSources)).get(insightId) ?? null;
 }
 
 export function getAllInsights(dataSources?: GeneratedContentSources) {
@@ -192,7 +346,9 @@ export function resolveDailyBriefPageState(
 ): DailyBriefPageState {
   const resolvedSources = requireGeneratedContentSources(dataSources);
   const resolvedDate = resolveBriefingDate(requestedDate, resolvedSources);
-  const requestedDateWasUnavailable = Boolean(requestedDate && !resolvedSources.briefingsByDate[requestedDate]);
+  const requestedDateWasUnavailable = Boolean(
+    requestedDate && !resolvedSources.briefingsIndex.byDate[requestedDate]
+  );
 
   if (!resolvedDate) {
     return {
@@ -204,18 +360,7 @@ export function resolveDailyBriefPageState(
     };
   }
 
-  const day = resolvedSources.briefingsByDate[resolvedDate];
-
-  if (!day) {
-    return {
-      requestedDate,
-      resolvedDate,
-      requestedDateWasUnavailable,
-      missingAudio: false,
-      pageData: null
-    };
-  }
-
+  const pageData = createDailyBriefPageData(resolvedDate, resolvedSources);
   const resolvedAudio = resolvedSources.audioIndex[resolvedDate];
 
   return {
@@ -223,13 +368,7 @@ export function resolveDailyBriefPageState(
     resolvedDate,
     requestedDateWasUnavailable,
     missingAudio: !resolvedAudio,
-    pageData: {
-      date: resolvedDate,
-      availableDates: resolvedSources.briefingsIndex.availableDates,
-      briefings: day.briefings,
-      insights: day.insights,
-      audio: resolvedAudio
-    }
+    pageData
   };
 }
 
@@ -248,5 +387,7 @@ export function getDailyBriefPageData(
 }
 
 export function getInsightById(insightId: string, dataSources?: GeneratedContentSources) {
-  return getInsightsByIdForSources(requireGeneratedContentSources(dataSources)).get(insightId) ?? null;
+  return getAllInsightsForSources(requireGeneratedContentSources(dataSources)).find(
+    (insight) => insight.id === insightId
+  ) ?? null;
 }

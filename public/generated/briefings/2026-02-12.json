@@ -1,0 +1,104 @@
+{
+  "date": "2026-02-12",
+  "briefings": [
+    {
+      "id": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-12",
+      "filePath": "2026-02-12.md",
+      "summaryTopline": "Skills in OpenAI API",
+      "insightIds": [
+        "rss-2026-02-12-01-skills-in-openai-api",
+        "rss-2026-02-12-02-kimwolf-botnet-swamps-anonymity-network-i2p",
+        "rss-2026-02-12-03-apple-creator-studio-usage-restrictions",
+        "rss-2026-02-12-04-markdownexe",
+        "rss-2026-02-12-05-the-discourse-has-been-automated"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-12-01-skills-in-openai-api",
+      "briefingId": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything",
+      "title": "Skills in OpenAI API",
+      "summary": "No summary available. (Automated Snippet - LLM Timeout)",
+      "take": "Matched keywords: AI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-12-02-kimwolf-botnet-swamps-anonymity-network-i2p",
+      "briefingId": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Krebs on Security",
+      "sourceUrl": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
+      "title": "Kimwolf Botnet Swamps Anonymity Network I2P",
+      "summary": "大规模物联网（IoT）僵尸网络 Kimwolf 最近一周持续干扰去中心化匿名通信网络 I2P。僵尸网络主控者利用 I2P 的匿名特性来规避对其控制服务器的封堵尝试，导致该安全通信网络遭遇大规模连接中断。",
+      "take": "物理 AI 的核心在于海量嵌入式设备的协同与安全。大鱼在攻克 C++ 和强化学习等核心技术时，了解 IoT 领域的网络鲁棒性挑战，有助于在从 Sim-to-Real 跨越到真实物理环境时，建立更深刻的分布式系统工程思维和边缘侧防御意识。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-12-03-apple-creator-studio-usage-restrictions",
+      "briefingId": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Daring Fireball",
+      "sourceUrl": "https://arstechnica.com/gadgets/2026/01/seven-things-to-know-about-how-apples-creator-studio-subscriptions-work/",
+      "title": "Apple Creator Studio Usage Restrictions",
+      "summary": "Apple 最近明确了其生成式 AI 功能（Creator Studio）的使用限制，特别是针对依赖外部服务的功能。目前设定的基础配额包括生成 50 张图像、50 份演示文稿以及 700 页演讲备注，更高级别的使用权限将取决于服务器负载和查询复杂度。",
+      "take": "物理 AI 开发者需要对算力资源边界极其敏感。大鱼，这种“保障配额”逻辑在机器人实时推理系统（如端云协同的控制策略）中非常典型，理解这种资源约束将帮助你从工程角度更好地优化具身智能的推理效率。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-12-04-markdownexe",
+      "briefingId": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "iDiallo.com",
+      "sourceUrl": "https://idiallo.com/byte-size/markdown-exe?src=feed",
+      "title": "Markdown.exe",
+      "summary": "I've been spending time looking through \"skills\" for LLMs, and I feel like I'm the only one panicking. Nobody else seems to care. .doparatgteersdfsd {display:none}  Agent skills are supposed to be a way to teach your LLM how to handle specific tasks. For example, if you have a particular method for adding tasks to your calendar, you write a skill file with step-by-step instructions on how to retrieve a task from an email and export it. Once the agent reads the file, it knows exactly what to do,  (Automated Snippet - LLM Timeout)",
+      "take": "Matched keywords: AI.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-12-05-the-discourse-has-been-automated",
+      "briefingId": "rss-2026-02-12",
+      "date": "2026-02-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Xe Iaso's blog",
+      "sourceUrl": "https://xeiaso.net/notes/2026/the-discourse-has-been-automated/",
+      "title": "The Discourse has been Automated",
+      "summary": "An AI agent submitted a PR to matplotlib, got rejected, and then wrote a callout blogpost attacking the maintainer. I have no idea how to feel about this. (Automated Snippet - LLM Timeout)",
+      "take": "Matched keywords: AI.",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

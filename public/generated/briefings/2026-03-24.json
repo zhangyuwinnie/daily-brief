@@ -1,0 +1,326 @@
+{
+  "date": "2026-03-24",
+  "briefings": [
+    {
+      "id": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-24",
+      "filePath": "2026-03-24.md",
+      "summaryTopline": "Join LangChain at Google Cloud Next 2026",
+      "insightIds": [
+        "rss-2026-03-24-01-join-langchain-at-google-cloud-next-2026",
+        "rss-2026-03-24-02-two-different-types-of-agent-authorization",
+        "rss-2026-03-24-03-github-expands-application-security-coverage-with-aipowered-detections",
+        "rss-2026-03-24-04-litellm-python-package-compromised-by-supply-chain-attack",
+        "rss-2026-03-24-05-nanoclaw-adopts-onecli-agent-vault",
+        "rss-2026-03-24-06-a-new-framework-for-evaluating-voice-agents-eva",
+        "rss-2026-03-24-07-fast-regex-search-indexing-text-for-agent-tools"
+      ]
+    },
+    {
+      "id": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-24",
+      "filePath": "x_briefing_2026-03-24.md",
+      "summaryTopline": "**智能体生产化提速：** 随着开源协调工具与集成设计能力发布，AI智能体正加速从实验走向生产级应用。",
+      "insightIds": [
+        "x-2026-03-24-trend-01-gpt-54-pro",
+        "x-2026-03-24-trend-02-use_figma-mcp",
+        "x-2026-03-24-tools-01-understand-anything",
+        "x-2026-03-24-tools-02-codebase-to-course",
+        "x-2026-03-24-opinion-01-",
+        "x-2026-03-24-opinion-02-cli",
+        "x-2026-03-24-news-01-",
+        "x-2026-03-24-news-02-anthropic-claude-ai-100"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-24-01-join-langchain-at-google-cloud-next-2026",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/",
+      "title": "Join LangChain at Google Cloud Next 2026",
+      "summary": "If you're attending Google Cloud Next 2026 in Las Vegas this year and working on agent development, here's what we have planned. Visit Us at Booth #5006 We'll be at Booth #5006 in the Expo Hall at the Mandalay Bay Convention Center, April 22-24. (Automated Snippet)",
+      "take": "Matched keywords: Agent, LangChain.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-24-02-two-different-types-of-agent-authorization",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/two-different-types-of-agent-authorization/",
+      "title": "Two different types of agent authorization",
+      "summary": "LangSmith Fleet引入了两种代理授权模式，旨在优化代理的安全性和灵活性。其中，“助手”模式允许代理使用终端用户自己的凭证，从而实现高度个性化的操作；而“爪子”模式则采用一套固定的凭证，适用于需要受控或共享访问权限的场景。",
+      "take": "对于Dayu构建个人AI助手或自动化工作流而言，理解LangSmith Fleet的这两种授权模式至关重要。助手模式能让Agent以用户身份无缝集成个人工具，实现更深度的个性化自动化；而爪子模式则为特定、受控的Agent任务提供了固定权限，便于企业级或共享工具的开发与部署。这直接影响Agent的能力边界和安全策略，值得在设计Agentic Workflow时深入研究其在LangChain生态中的具体实现。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-24-03-github-expands-application-security-coverage-with-aipowered-detections",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/",
+      "title": "GitHub expands application security coverage with AI‑powered detections",
+      "summary": "CodeQL and AI‑powered detections work together in GitHub Code Security to identify vulnerabilities across more languages and frameworks. The post GitHub expands application security coverage with AI‑powered detections appeared first on The GitHub Blog. (Automated Snippet)",
+      "take": "Matched keywords: RAG.",
+      "topics": [
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-24-04-litellm-python-package-compromised-by-supply-chain-attack",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/BerriAI/litellm/issues/24512",
+      "title": "LiteLLM Python package compromised by supply-chain attack",
+      "summary": "LiteLLM Python 包近日遭遇了严重的供应链攻击，导致部分版本被恶意代码篡改。这意味着使用受影响版本的开发者面临潜在的安全风险，务必及时检查并更新到安全版本。",
+      "take": "LiteLLM作为AI Agent开发中统一LLM接口的利器，遭遇攻击警示我们，构建Agent及自动化工作流时，依赖包的供应链安全是核心考量。Dayu在引入新库时务必进行安全审计，并积极关注开源社区的安全动态，这甚至可能是未来贡献安全工具的机会。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-24-05-nanoclaw-adopts-onecli-agent-vault",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://nanoclaw.dev/blog/nanoclaw-agent-vault/",
+      "title": "NanoClaw Adopts OneCLI Agent Vault",
+      "summary": "NanoClaw项目宣布采纳OneCLI Agent Vault。这表明他们正通过统一的命令行界面，实现对AI代理更安全、高效的管理和部署。这一举措有望提升代理的集中化控制能力与工具集成度。",
+      "take": "对于Dayu而言，`Agent Vault`与`OneCLI`的结合提供了一个构建个人“代理金库”的实用思路。他可以研究如何利用类似框架管理自己开发的各类AI助手，并通过统一CLI调用，从而优化生物信息学自动化工作流，甚至探索相关的开源贡献机会。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-24-06-a-new-framework-for-evaluating-voice-agents-eva",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/eva",
+      "title": "A New Framework for Evaluating Voice Agents (EVA)",
+      "summary": "该文章发布了一个名为EVA的全新语音代理评估框架，旨在为语音AI助手提供一个系统化、标准化的性能衡量工具。通过EVA，开发者和研究人员可以更有效地评估和提升语音代理的交互质量与用户体验。",
+      "take": "Dayu，构建高效AI代理后，如何科学评估其性能是关键。虽然EVA专为语音代理，但其系统化评估框架的理念，可启发你为生物信息学领域的RAG代理或自动化工具设计专属评估标准。这不仅能助你优化代理表现，提升自动化工作流效率，更有潜力将这种评估方法抽象化并贡献为通用Agent评估库。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-24-07-fast-regex-search-indexing-text-for-agent-tools",
+      "briefingId": "rss-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/fast-regex-search",
+      "title": "Fast regex search: indexing text for agent tools",
+      "summary": "这篇文章介绍了如何通过为正则表达式搜索构建索引，来显著加速AI代理在大型代码仓库中查找文本的速度。此方法旨在解决传统搜索工具（如ripgrep）在处理大规模单体代码库时可能出现的长达15秒的等待时间，从而大幅提升代理执行信息检索的效率和响应速度。",
+      "take": "Dayu，这项技术对于构建能够高效处理大规模代码或文档的AI代理至关重要。你的代理在执行RAG（检索增强生成）或需要精确查找特定代码片段时，可以将这种索引式快速正则搜索作为核心工具集成，大幅提升Agentic Workflows的效率。这不仅是一个值得探索的新工具库，如果它开放源代码，更是一个极佳的参与贡献或借鉴思想，为你生物信息学数据分析流程构建类似加速工具的机会。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-24-trend-01-gpt-54-pro",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "sourceUrl": "https://x.com/OpenAI/status/2029620619743219811",
+      "title": "GPT-5.4 及 Pro 版全面推出",
+      "summary": "GPT-5.4 及 Pro 版全面推出，强化推理、编码及智能体工作流。",
+      "take": "GPT-5.4 及 Pro 版全面推出，强化推理、编码及智能体工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-24-trend-02-use_figma-mcp",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Figma",
+      "sourceUrl": "https://x.com/figma/status/2036434766661296602",
+      "title": "推出 `use_figma MCP` 工具",
+      "summary": "推出 `use_figma MCP` 工具，赋能 AI 智能体直接在 Figma 画布上设计。",
+      "take": "推出 `use_figma MCP` 工具，赋能 AI 智能体直接在 Figma 画布上设计。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-24-tools-01-understand-anything",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ihtesham Ali",
+      "sourceUrl": "https://x.com/ihtesham2005/status/2036152262805119120",
+      "title": "“Understand Anything”开源",
+      "summary": "“Understand Anything”开源，此 Claude Code 插件可将代码库可视化为交互式知识图谱。",
+      "take": "“Understand Anything”开源，此 Claude Code 插件可将代码库可视化为交互式知识图谱。",
+      "topics": [
+        "Coding Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-24-tools-02-codebase-to-course",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Zara Zhang",
+      "sourceUrl": "https://x.com/zarazhangrui/status/2035962536474837019",
+      "title": "“codebase to course”技能发布",
+      "summary": "“codebase to course”技能发布，将代码库转换为带可视化、解释及测验的互动课程。",
+      "take": "“codebase to course”技能发布，将代码库转换为带可视化、解释及测验的互动课程。",
+      "topics": [
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-24-opinion-01-",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2035096653594861970",
+      "title": "智能体系统创始人应聚焦编排",
+      "summary": "智能体系统创始人应聚焦编排、托管、协作等服务，而非仅提供原始 Markdown 输出。",
+      "take": "智能体系统创始人应聚焦编排、托管、协作等服务，而非仅提供原始 Markdown 输出。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-24-opinion-02-cli",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2026360908398862478",
+      "title": "CLI（命令行界面）因原生易用性",
+      "summary": "CLI（命令行界面）因原生易用性，是 AI 智能体交互与组合的理想工具。",
+      "take": "CLI（命令行界面）因原生易用性，是 AI 智能体交互与组合的理想工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-24-news-01-",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/2011494188152733971",
+      "title": "发布新课程",
+      "summary": "发布新课程：“Document AI”和“Building Coding Agents with Tool Execution”。",
+      "take": "发布新课程：“Document AI”和“Building Coding Agents with Tool Execution”。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-24-news-02-anthropic-claude-ai-100",
+      "briefingId": "x-2026-03-24",
+      "date": "2026-03-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ronald_vanLoon",
+      "sourceUrl": "https://x.com/Ronald_vanLoon/status/2036261286174990697",
+      "title": "Anthropic 的 Claude AI 成功自主种植西红柿超100天",
+      "summary": "Anthropic 的 Claude AI 成功自主种植西红柿超100天，展示了其在物理世界的应用潜力。",
+      "take": "Anthropic 的 Claude AI 成功自主种植西红柿超100天，展示了其在物理世界的应用潜力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**智能体生产化提速：** 随着开源协调工具与集成设计能力发布，AI智能体正加速从实验走向生产级应用。",
+    "**代码理解效率提升：** 新工具能将复杂代码库转化为交互式知识图谱或课程，显著提高开发者的学习效率。",
+    "**智能体商业模式聚焦服务：** 商业价值更多体现在编排、托管、协作等增值服务，而非单纯内容生成。"
+  ],
+  "xActionItems": [
+    "了解 Composio Agent Orchestrator 或 NVIDIA NemoClaw，探索多智能体工作流管理。",
+    "尝试“Understand Anything”或“codebase to course”，提升代码库理解与学习效率。",
+    "思考如何利用 AI 智能体自动化重复性任务，尤其在设计（如 Figma）或文档处理领域。"
+  ]
+}

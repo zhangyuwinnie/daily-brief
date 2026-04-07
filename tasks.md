@@ -184,12 +184,27 @@ Execution rule:
 - [x] `T48` Lazy load route modules and keep regression coverage current.
   Acceptance: non-active routes no longer inflate the initial route bundle, and tests still cover boot, navigation, and permalink flows.
 
+## Batch 11: Per-Date Lazy Briefing Data
+
+- [x] `T49` Emit per-date generated day payloads under `public/generated/briefings/`.
+  Acceptance: `npm run sync:generated` writes one `YYYY-MM-DD.json` file per available date while keeping the existing aggregate artifact during the transition.
+- [x] `T50` Switch generated content startup to index-plus-audio only, with cached lazy day loading.
+  Depends on: `T49`
+  Acceptance: app boot no longer fetches `briefings-by-date.json`, day payloads load on demand, and cached repeat lookups do not refetch.
+- [x] `T51` Update `/today`, `/build`, and permalink flows to resolve lazy-loaded day data without blocking first render on all history.
+  Depends on: `T50`
+  Acceptance: selected day content, queued insights, and direct insight permalinks still render correctly after route-level day fetches.
+- [x] `T52` Update `/topics` to load historical insights asynchronously and keep regressions covered.
+  Depends on: `T50`
+  Acceptance: `/topics` still shows real topics and signals after async loading, and existing integration/browser coverage remains green.
+
 ## Suggested Stop Points
 
 - Stop after Batch 1 to confirm the schema and file layout.
 - Stop after Batch 3 to inspect generated artifacts before wiring the UI.
 - Stop after Batch 4 to validate the first real end-to-end read flow.
 - Stop after Batch 6 to confirm the local persistence model before polishing.
+- Stop after Batch 11 to validate the performance win before starting any new UX work.
 
 ## Verification By Batch
 
@@ -203,3 +218,4 @@ Execution rule:
 - Batch 8: full automated test pass + `npm run build`
 - Batch 9: `npm run build` and manual regression sweep
 - Batch 10: `npm run sync:generated`, `npm test`, `npm run test:e2e`, and `npm run build`
+- Batch 11: `npm run sync:generated`, targeted loader/app tests, `npm test`, `npm run test:e2e`, and `npm run build`

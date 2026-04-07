@@ -1,0 +1,363 @@
+{
+  "date": "2026-03-11",
+  "briefings": [
+    {
+      "id": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-11",
+      "filePath": "2026-03-11.md",
+      "summaryTopline": "The Anatomy of an Agent Harness",
+      "insightIds": [
+        "rss-2026-03-11-01-the-anatomy-of-an-agent-harness",
+        "rss-2026-03-11-02-how-coding-agents-are-reshaping-engineering-product-and-design",
+        "rss-2026-03-11-03-improving-instruction-hierarchy-in-frontier-llms",
+        "rss-2026-03-11-04-the-era-of-ai-as-text-is-over-execution-is-the-new-interface",
+        "rss-2026-03-11-05-ai-agent-hacks-mckinsey",
+        "rss-2026-03-11-06-agents-that-run-while-i-sleep",
+        "rss-2026-03-11-07-introducing-storage-buckets-on-the-hugging-face-hub",
+        "rss-2026-03-11-08-from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents"
+      ]
+    },
+    {
+      "id": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-11",
+      "filePath": "x_briefing_2026-03-11.md",
+      "summaryTopline": "**Claude Code 系统化构建：** Claude Code 的真正力量在于围绕提示词构建的系统与工程架构。Anthropic 公开的“AI代理”框架，将AI视为多专业团队协同工作，是高效构建AI产品的核心。",
+      "insightIds": [
+        "x-2026-03-11-trend-01-claude",
+        "x-2026-03-11-trend-02-ai19-soc-2",
+        "x-2026-03-11-tools-01-anthropic-claude-claudemd",
+        "x-2026-03-11-tools-02-karpathy-agenthub",
+        "x-2026-03-11-tools-03-",
+        "x-2026-03-11-opinion-01-claude-code",
+        "x-2026-03-11-opinion-02-cli",
+        "x-2026-03-11-news-01-nvidia-ai-nemoclaw",
+        "x-2026-03-11-news-02-anthropicai-claude-code"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-11-01-the-anatomy-of-an-agent-harness",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/the-anatomy-of-an-agent-harness/",
+      "title": "The Anatomy of an Agent Harness",
+      "summary": "这篇文章阐述了“Agent = 模型 + Harness”的核心理念，强调Harness工程对于将AI模型转化为实用工作引擎的重要性。模型提供智能，而Harness则负责围绕模型构建系统，使其智能能够被有效利用并执行实际任务。",
+      "take": "Dayu，理解Agent Harness的架构对你构建实用Agent至关重要，它指导如何将模型智能转化为高效工作流。这不只是一项新技术，更是Agent工程的基石，能帮助你在构建自动化Agent时有更清晰的设计思路，并发现开源贡献点。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-11-02-how-coding-agents-are-reshaping-engineering-product-and-design",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/",
+      "title": "How Coding Agents Are Reshaping Engineering, Product and Design",
+      "summary": "这篇文章探讨了编码智能体如何正在重塑软件公司的工程、产品和设计（EPD）领域。尽管这些角色分工不同，但其核心目标都是创造解决商业问题的可用软件，而最终交付的本质都是代码。编码智能体的崛起预示着软件开发流程将发生深刻变革。",
+      "take": "Dayu可以深入思考编码智能体如何赋能其生物信息学工作流程自动化，例如利用它们生成分析脚本或优化数据处理。这个领域对提升效率意义重大，也是探索构建自定义Agent和进行开源贡献的绝佳切入点。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-11-03-improving-instruction-hierarchy-in-frontier-llms",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/instruction-hierarchy-challenge",
+      "title": "Improving instruction hierarchy in frontier LLMs",
+      "summary": "这篇文章介绍了一种名为IH-Challenge的方法，旨在提升前沿大型语言模型（LLMs）处理指令的层级和可靠性。通过训练模型优先执行可信指令，它能显著增强模型的指令层级、安全可控性，并有效抵抗提示注入攻击。",
+      "take": "对于Dayu构建Agent而言，这项技术能显著提升Agent的“指令主权”，确保它在执行多步任务、调用工具或整合RAG时，不会被外部输入轻易劫持。这对于设计安全、可靠的自动化工作流至关重要，Dayu可以关注整合了类似指令层级加固机制的开源Agent框架或模型，甚至可以考虑在自己的Agent设计中探索并贡献相关实践。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-11-04-the-era-of-ai-as-text-is-over-execution-is-the-new-interface",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+      "title": "The era of “AI as text” is over. Execution is the new interface.",
+      "summary": "AI的交互方式正从简单的文本问答转向可编程执行，彻底告别“AI即文本”时代。GitHub Copilot SDK的推出标志着AI将作为直接执行的接口，在应用内部实现代理工作流。",
+      "take": "Dayu，这个GitHub Copilot SDK正是你构建高效AI代理和自动化工作流的利器。它使AI能直接在应用内部执行任务，彻底改变了AI交互方式，对你自动化生物信息学流程大有裨益，是值得立即尝试的新工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-11-05-ai-agent-hacks-mckinsey",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform",
+      "title": "AI Agent Hacks McKinsey",
+      "summary": "一篇名为“AI Agent Hacks McKinsey”的文章，暗示了AI智能体已能高效完成或颠覆麦肯锡这类顶级咨询公司的高阶战略分析与问题解决任务。这突显了AI智能体在自动化复杂知识工作、提供深度商业洞察方面的巨大潜力和实用性。",
+      "take": "对于Dayu而言，这明确展示了AI智能体处理复杂、知识密集型任务的能力。你可立即着手尝试利用LangChain或AutoGen等框架，结合RAG技术，构建能辅助生物信息学研究、自动化数据分析流程的Agent，其中为特定生物学工具集成提供接口，将是绝佳的开源贡献点。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-11-06-agents-that-run-while-i-sleep",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+      "title": "Agents that run while I sleep",
+      "summary": "这篇文章探讨了如何构建和运行可以在用户睡觉时自主工作的AI智能体。它聚焦于智能体的异步、持久化执行能力，旨在通过自动化长时间任务，大幅提升个人生产力和工作效率。",
+      "take": "对于Dayu，这种“日不落”智能体是实现生物信息学工作流深度自动化的关键，能让耗时的数据处理、模型训练等在夜间自主运行，极大提升白天的创造力。他应关注其框架和持久化机制，并探索为生物信息领域定制工具或贡献适配方案。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-11-07-introducing-storage-buckets-on-the-hugging-face-hub",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/storage-buckets",
+      "title": "Introducing Storage Buckets on the Hugging Face Hub",
+      "summary": "Hugging Face平台现在推出了存储桶（Storage Buckets）服务，使用户能够直接在Hub上存储和管理大型文件，而不仅仅是模型和数据集。这项新功能为AI项目提供了更一体化的数据管理解决方案，便于开发者在同一生态系统内存储和访问模型所需的各种非结构化或结构化数据。",
+      "take": "Dayu可以利用Hugging Face的存储桶来高效托管Agent的知识库（用于RAG）或存储工作流中的中间数据和日志，从而实现更流畅的AI Agent开发和自动化。他甚至可以探索为其构建LangChain或LlamaIndex连接器，为开源社区贡献实际用例和工具集成。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-11-08-from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents",
+      "briefingId": "rss-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/",
+      "title": "From raw interaction to reusable knowledge: Rethinking memory for AI agents",
+      "summary": "文章指出，AI智能体原始交互日志的累积反而可能降低其效率，因为它们需要筛选大量无关信息。因此，有必要重新思考智能体的记忆机制，从简单的原始交互记录转向结构化、可复用的知识。核心思想是通过优化记忆管理，让智能体更有效地检索和利用信息，从而提升整体性能。",
+      "take": "对于Dayu构建AI代理来说，这意味着需要将焦点从“堆砌更多原始记忆”转向“高效的记忆管理策略”。这提示我们，在设计Agentic Workflow时，应考虑如何将原始交互转化为结构化、可检索的知识（例如通过高级RAG或知识图谱），这是一个能显著提升效率的实践方向，也为开发相关开源工具提供了绝佳机会。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-trend-01-claude",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Tuki",
+      "sourceUrl": "https://x.com/TukiFromKL/status/2031206015899689238",
+      "title": "Claude 在代码审查上展现出惊人成本效益（远低于人工）",
+      "summary": "Claude 在代码审查上展现出惊人成本效益（远低于人工），预示AI代理对专业服务领域的颠覆潜力。",
+      "take": "Claude 在代码审查上展现出惊人成本效益（远低于人工），预示AI代理对专业服务领域的颠覆潜力。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-11-trend-02-ai19-soc-2",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Delve",
+      "sourceUrl": "https://x.com/getdelve/status/1927236340699033687/analytics",
+      "title": "AI代理仅用19天完成复杂 SOC 2 审计",
+      "summary": "AI代理仅用19天完成复杂 SOC 2 审计，彰显其在自动化关键业务流程中的高效能力。",
+      "take": "AI代理仅用19天完成复杂 SOC 2 审计，彰显其在自动化关键业务流程中的高效能力。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-11-tools-01-anthropic-claude-claudemd",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Alif Hossain",
+      "sourceUrl": "https://x.com/alifcoder/status/2031382426648555886",
+      "title": "Anthropic 披露内部 Claude 工作流 CLAUDE.md",
+      "summary": "Anthropic 披露内部 Claude 工作流 CLAUDE.md，揭示了构建“AI代理”团队来开发产品的方法。",
+      "take": "Anthropic 披露内部 Claude 工作流 CLAUDE.md，揭示了构建“AI代理”团队来开发产品的方法。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-11-tools-02-karpathy-agenthub",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2031418555657253253",
+      "title": "Karpathy 推出 AgentHub",
+      "summary": "Karpathy 推出 AgentHub，一个 100% 开源的 GitHub 替代品，专为 AI 代理协作开发而设计。",
+      "take": "Karpathy 推出 AgentHub，一个 100% 开源的 GitHub 替代品，专为 AI 代理协作开发而设计。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-tools-03-",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Om Patel",
+      "sourceUrl": "https://x.com/om_patel5/status/2029768439573696955",
+      "title": "开发者构建了一个聊天室",
+      "summary": "开发者构建了一个聊天室，让 Claude Code、Codex、Gemini 等 AI 代理可互相交流与协作。",
+      "take": "开发者构建了一个聊天室，让 Claude Code、Codex、Gemini 等 AI 代理可互相交流与协作。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-opinion-01-claude-code",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Shraddha Bharuka",
+      "sourceUrl": "https://x.com/BharukaShraddha/status/2031453500820041783",
+      "title": "Claude Code 的核心力量在于围绕提示词构建的完整系统和工程架构",
+      "summary": "Claude Code 的核心力量在于围绕提示词构建的完整系统和工程架构，而非简单提示。",
+      "take": "Claude Code 的核心力量在于围绕提示词构建的完整系统和工程架构，而非简单提示。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-opinion-02-cli",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2026360908398862478",
+      "title": "CLI（命令行界面）作为“传统”技术",
+      "summary": "CLI（命令行界面）作为“传统”技术，能被AI代理原生、便捷地利用和组合。",
+      "take": "CLI（命令行界面）作为“传统”技术，能被AI代理原生、便捷地利用和组合。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-news-01-nvidia-ai-nemoclaw",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Cointelegraph",
+      "sourceUrl": "https://x.com/Cointelegraph/status/2031165767949971824",
+      "title": "Nvidia 计划推出开源 AI 代理平台 NemoClaw",
+      "summary": "Nvidia 计划推出开源 AI 代理平台 NemoClaw，旨在赋能企业部署AI代理作为其劳动力。",
+      "take": "Nvidia 计划推出开源 AI 代理平台 NemoClaw，旨在赋能企业部署AI代理作为其劳动力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-11-news-02-anthropicai-claude-code",
+      "briefingId": "x-2026-03-11",
+      "date": "2026-03-11",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1953097967361245251",
+      "title": "与 AnthropicAI 合作推出 Claude Code 权威课程",
+      "summary": "与 AnthropicAI 合作推出 Claude Code 权威课程，聚焦AI长时间自主工作，而非仅完成代码片段。",
+      "take": "与 AnthropicAI 合作推出 Claude Code 权威课程，聚焦AI长时间自主工作，而非仅完成代码片段。",
+      "topics": [
+        "Coding Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**Claude Code 系统化构建：** Claude Code 的真正力量在于围绕提示词构建的系统与工程架构。Anthropic 公开的“AI代理”框架，将AI视为多专业团队协同工作，是高效构建AI产品的核心。",
+    "**Nvidia 进军 AI 代理平台：** Nvidia 计划推出开源 AI 代理平台 NemoClaw，旨在赋能企业部署AI代理作为员工队伍，预示AI代理将成为企业级应用的重要组成部分。",
+    "**开源工具加速开发：** Andrej Karpathy 发布 AgentHub（为AI代理设计的开源 GitHub 替代品），并强调 CLI 工具的集成潜力，正极大简化AI代理的协同开发与部署。"
+  ],
+  "xActionItems": [
+    "深入研究 Anthropic 的 CLAUDE.md 文件和“AI代理”框架，学习其系统化构建AI代理团队的思路。",
+    "探索 Andrej Karpathy 的 AgentHub，理解其如何促进 AI 代理的协同开发。",
+    "关注 Nvidia NemoClaw 平台的进展，评估其在企业级AI代理部署中的潜力。"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-03-28",
+  "briefings": [
+    {
+      "id": "rss-2026-03-28",
+      "date": "2026-03-28",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-28",
+      "filePath": "2026-03-28.md",
+      "summaryTopline": "STADLER reshapes knowledge work at a 230-year-old company",
+      "insightIds": [
+        "rss-2026-03-28-01-stadler-reshapes-knowledge-work-at-a-230-year-old-company"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-28-01-stadler-reshapes-knowledge-work-at-a-230-year-old-company",
+      "briefingId": "rss-2026-03-28",
+      "date": "2026-03-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/stadler",
+      "title": "STADLER reshapes knowledge work at a 230-year-old company",
+      "summary": "STADLER这家拥有230年历史的公司成功利用ChatGPT重塑了其知识工作流程，为650名员工显著节省了时间并加速提升了整体生产力。这展示了AI在传统企业中实现大规模效率提升的潜力。",
+      "take": "Dayu可以从STADLER的案例中学习，将ChatGPT或类似大模型整合到生物信息学工作流中，构建Agent自动化信息总结、文献分析等任务，从而大幅提升个人效率。他可探索LangChain等框架，甚至寻找开源贡献机会来优化知识型Agent工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ]
+}

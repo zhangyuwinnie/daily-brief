@@ -1,0 +1,264 @@
+{
+  "date": "2026-03-29",
+  "briefings": [
+    {
+      "id": "rss-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-29",
+      "filePath": "2026-03-29.md",
+      "insightIds": []
+    },
+    {
+      "id": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-29",
+      "filePath": "x_briefing_2026-03-29.md",
+      "summaryTopline": "**AI Agent正重塑开发工作流：** 越来越多的公司（如Anthropic）的工程师不再直接编写代码，而是利用AI Agent辅助甚至完成代码编写、版本升级和部署，将精力转向设计和评估。",
+      "insightIds": [
+        "x-2026-03-29-trend-01-anthropic-ceo",
+        "x-2026-03-29-trend-02-",
+        "x-2026-03-29-trend-03-ai-agent",
+        "x-2026-03-29-tools-01-figma-use_figma-mcp",
+        "x-2026-03-29-tools-02-spline-omma",
+        "x-2026-03-29-tools-03-qwen3-coder-next",
+        "x-2026-03-29-tools-04-devin",
+        "x-2026-03-29-opinion-01-google-421-agentic-design-patternsagent",
+        "x-2026-03-29-opinion-02-boris-cherny-claude-code",
+        "x-2026-03-29-opinion-03-ragnaive-ragagent-ragagentic-rag",
+        "x-2026-03-29-news-01-openai-promptfoo",
+        "x-2026-03-29-news-02-arc-agi-3",
+        "x-2026-03-29-news-03-alt-x-ai-agent"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "x-2026-03-29-trend-01-anthropic-ceo",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@CG",
+      "title": "Anthropic CEO表示",
+      "summary": "Anthropic CEO表示，公司内部工程师已很少亲自写代码，而是让 Claude 完成，他们主要负责编辑和审阅。他们认为“写代码”意味着设计下一代 Claude 本身。这预示着AI Agent正在深刻改变开发者的角色。",
+      "take": "Anthropic CEO表示，公司内部工程师已很少亲自写代码，而是让 Claude 完成，他们主要负责编辑和审阅。他们认为“写代码”意味着设计下一代 Claude 本身。这预示着AI Agent正在深刻改变开发者的角色。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-29-trend-02-",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Rohit",
+      "title": "优秀的程序员不再编写代码",
+      "summary": "优秀的程序员不再编写代码，而是撰写规范、测试和评估（Evals）。他们利用AI运行、部署代码，随后进行评审。Evals是多数开发者尚未重视的关键，也是顶尖Agent团队正确构建系统的秘密。",
+      "take": "优秀的程序员不再编写代码，而是撰写规范、测试和评估（Evals）。他们利用AI运行、部署代码，随后进行评审。Evals是多数开发者尚未重视的关键，也是顶尖Agent团队正确构建系统的秘密。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-29-trend-03-ai-agent",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Aaron Levie",
+      "title": "任何能有效运用AI Agent的员工",
+      "summary": "任何能有效运用AI Agent的员工，其计算预算将单调上涨。AI Agent将显著提升个人生产力，并带来潜在的经济影响。",
+      "take": "任何能有效运用AI Agent的员工，其计算预算将单调上涨。AI Agent将显著提升个人生产力，并带来潜在的经济影响。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-29-tools-01-figma-use_figma-mcp",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Figma",
+      "title": "Figma 宣布推出 use_figma MCP 工具和相关技能",
+      "summary": "Figma 宣布推出 use_figma MCP 工具和相关技能，让用户可以直接在 Figma 画布上使用 AI Agent 进行设计。开放测试版现已上线。",
+      "take": "Figma 宣布推出 use_figma MCP 工具和相关技能，让用户可以直接在 Figma 画布上使用 AI Agent 进行设计。开放测试版现已上线。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-tools-02-spline-omma",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Spline",
+      "title": "Spline 发布了 Omma",
+      "summary": "Spline 发布了 Omma，一个允许用户使用 AI Agent 创建 3D、网站和应用程序的工具。",
+      "take": "Spline 发布了 Omma，一个允许用户使用 AI Agent 创建 3D、网站和应用程序的工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-tools-03-qwen3-coder-next",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Qwen",
+      "title": "阿里巴巴发布了 Qwen3-Coder-Next",
+      "summary": "阿里巴巴发布了 Qwen3-Coder-Next，一个为编码 Agent 和本地开发设计的开源语言模型。它通过扩展 Agent 式训练，在 SWE-Bench Pro 等基准上表现出色。",
+      "take": "阿里巴巴发布了 Qwen3-Coder-Next，一个为编码 Agent 和本地开发设计的开源语言模型。它通过扩展 Agent 式训练，在 SWE-Bench Pro 等基准上表现出色。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-tools-04-devin",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Cognition",
+      "title": "Devin 能够自主处理语言迁移",
+      "summary": "Devin 能够自主处理语言迁移、代码库重构和依赖更新等任务，让工程师专注于更重要的构建工作。",
+      "take": "Devin 能够自主处理语言迁移、代码库重构和依赖更新等任务，让工程师专注于更重要的构建工作。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-opinion-01-google-421-agentic-design-patternsagent",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Utkarsh Sharma",
+      "title": "一位资深 Google 工程师发布了一份 421 页的“Agentic Design Patterns”（Agent式设计模式）文档",
+      "summary": "一位资深 Google 工程师发布了一份 421 页的“Agentic Design Patterns”（Agent式设计模式）文档，详细介绍了提示链、路由、记忆、多 Agent 协调、护栏、推理、规划等AI系统前沿概念。",
+      "take": "一位资深 Google 工程师发布了一份 421 页的“Agentic Design Patterns”（Agent式设计模式）文档，详细介绍了提示链、路由、记忆、多 Agent 协调、护栏、推理、规划等AI系统前沿概念。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-opinion-02-boris-cherny-claude-code",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Tech with Mak",
+      "title": "Boris Cherny 团队分享了使用 Claude Code 的最佳实践",
+      "summary": "Boris Cherny 团队分享了使用 Claude Code 的最佳实践：始终使用计划模式，给 Claude 验证方法；通过 AskUserQuestion 工具让 Claude 提问；使用 Git Worktrees。",
+      "take": "Boris Cherny 团队分享了使用 Claude Code 的最佳实践：始终使用计划模式，给 Claude 验证方法；通过 AskUserQuestion 工具让 Claude 提问；使用 Git Worktrees。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-opinion-03-ragnaive-ragagent-ragagentic-rag",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Avi Chawla",
+      "title": "通过视觉解释了“朴素 RAG”（Naive RAG）与“Agent式 RAG”（Agentic RAG）的区别",
+      "summary": "通过视觉解释了“朴素 RAG”（Naive RAG）与“Agent式 RAG”（Agentic RAG）的区别：Agent式 RAG 能进行多次检索和生成，适应复杂查询，克服了朴素 RAG 的局限性。",
+      "take": "通过视觉解释了“朴素 RAG”（Naive RAG）与“Agent式 RAG”（Agentic RAG）的区别：Agent式 RAG 能进行多次检索和生成，适应复杂查询，克服了朴素 RAG 的局限性。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-news-01-openai-promptfoo",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "title": "OpenAI 宣布收购 Promptfoo",
+      "summary": "OpenAI 宣布收购 Promptfoo，以加强其在 OpenAI Frontier 中的 Agent 式安全测试和评估能力。Promptfoo 将保持开源。",
+      "take": "OpenAI 宣布收购 Promptfoo，以加强其在 OpenAI Frontier 中的 Agent 式安全测试和评估能力。Promptfoo 将保持开源。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-news-02-arc-agi-3",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@ARC Prize",
+      "title": "发布了 ARC-AGI-3",
+      "summary": "发布了 ARC-AGI-3，这是一个衡量 Agent 式智能的独特基准。人类得分 100%，AI 低于 1%，表明我们尚未实现 AGI。它测试 AI 的学习能力，而非已知知识。",
+      "take": "发布了 ARC-AGI-3，这是一个衡量 Agent 式智能的独特基准。人类得分 100%，AI 低于 1%，表明我们尚未实现 AGI。它测试 AI 的学习能力，而非已知知识。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-29-news-03-alt-x-ai-agent",
+      "briefingId": "x-2026-03-29",
+      "date": "2026-03-29",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Y Combinator",
+      "title": "Alt-X 正在构建 AI Agent",
+      "summary": "Alt-X 正在构建 AI Agent，能自动将房地产交易文件转化为完整的 Excel 承保模型，并追溯每个数字的来源。",
+      "take": "Alt-X 正在构建 AI Agent，能自动将房地产交易文件转化为完整的 Excel 承保模型，并追溯每个数字的来源。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI Agent正重塑开发工作流：** 越来越多的公司（如Anthropic）的工程师不再直接编写代码，而是利用AI Agent辅助甚至完成代码编写、版本升级和部署，将精力转向设计和评估。",
+    "**Agent评估（Evals）是关键：** 构建可重复、高性能AI Agent系统的核心在于强大的评估机制。顶级团队正通过精细的Evals来验证和改进Agent的工作流程和提示工程。",
+    "**AI Agent加速渗透创意与专业领域：** 从设计工具Figma、3D/网站创建平台Spline，到房地产金融建模Alt-X，AI Agent正快速扩展其应用边界，实现自动化设计、数据分析等复杂任务。"
+  ],
+  "xActionItems": [
+    "深入阅读 Google 的“Agentic Design Patterns”文档，理解 AI Agent 的核心设计理念和模式。",
+    "探索 Figma 或 Spline 的 AI Agent 功能，尝试将 AI Agent 引入你的设计或创意工作流。",
+    "学习 Claude Code 的最佳实践，特别关注“计划模式”和“AskUserQuestion”工具，提高与编码 Agent 协作的效率。"
+  ]
+}

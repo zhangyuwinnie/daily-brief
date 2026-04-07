@@ -1,0 +1,192 @@
+{
+  "date": "2026-02-16",
+  "briefings": [
+    {
+      "id": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-16",
+      "filePath": "2026-02-16.md",
+      "summaryTopline": "Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control",
+      "insightIds": [
+        "rss-2026-02-16-01-towards-bridging-the-gap-between-large-scale-pretraining-and-efficient-finetuning-for-humanoid-control",
+        "rss-2026-02-16-02-rlinf-co-reinforcement-learning-based-sim-real-co-training-for-vla-models",
+        "rss-2026-02-16-03-pmg-parameterized-motion-generator-for-human-like-locomotion-control",
+        "rss-2026-02-16-04-trans-terrain-aware-reinforcement-learning-for-agile-navigation-of-quadruped-robots-under-social-interactions",
+        "rss-2026-02-16-05-sense-step-learning-sim-to-real-locomotion-for-a-sensory-enabled-soft-quadruped-robot",
+        "rss-2026-02-16-06-learning-to-feel-the-future-dreamtacvla-for-contact-rich-manipulation",
+        "rss-2026-02-16-07-self-supervised-jepa-based-world-models-for-lidar-occupancy-completion-and-forecasting",
+        "rss-2026-02-16-08-longnav-r1-horizon-adaptive-multi-turn-rl-for-long-horizon-vla-navigation",
+        "rss-2026-02-16-09-xiaomi-robotics-0-an-open-sourced-vision-language-action-model-with-real-time-execution",
+        "rss-2026-02-16-10-pa-mppi-perception-aware-model-predictive-path-integral-control-for-quadrotor-navigation-in-unknown-environments"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-16-01-towards-bridging-the-gap-between-large-scale-pretraining-and-efficient-finetuning-for-humanoid-control",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2601.21363",
+      "title": "Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control",
+      "summary": "本文提出了 LIFT（Large-scale pretraIning and efficient FineTuning）框架，旨在解决类人机器人控制中传统 PPO 算法采样效率低且难以安全适配新环境的问题。该框架通过大规模 Off-policy 策略预训练、结合拉格朗日动力学的物理感知世界模型构建，以及基于世界模型的安全微调，实现了在单张 RTX 4090 上训练一小时即可完成真机零样本部署与高效适配。",
+      "take": "对于正在转向物理 AI 的你，LIFT 展示了如何将经典物理动力学先验与强化学习算法深度融合，这是提升具身智能系统鲁棒性的核心路径。建议深入研究其“物理引擎+残差世界模型”的架构，并参考其开源的 JAX 高性能流水线，这将是你从算法逻辑跨越到软硬结合工程思维的极佳实践案例。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-16-02-rlinf-co-reinforcement-learning-based-sim-real-co-training-for-vla-models",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12628",
+      "title": "RLinf-Co: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models",
+      "summary": "论文提出了 RLinf-Co 框架，针对视觉-语言-动作（VLA）模型在协同训练中的局限性，将传统的监督微调（SFT）转向基于强化学习（RL）的闭环训练。通过在模拟器中进行大规模闭环交互，该方法摆脱了模拟数据仅作为静态演示的限制，显著增强了机器人策略在真实世界中的泛化能力和执行效果。",
+      "take": "这项研究揭示了从“静态模仿”向“闭环探索”转型的工程趋势，正是你从生信转向机器人领域需要掌握的核心概念。建议深入研究 RL 在 Sim-to-Real 中的闭环反馈机制，这能帮你理解如何利用 C++ 驱动的高性能仿真器通过大规模试错来弥补真实数据的稀缺，是进阶具身智能工程师的关键。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-16-03-pmg-parameterized-motion-generator-for-human-like-locomotion-control",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12656",
+      "title": "PMG: Parameterized Motion Generator for Human-like Locomotion Control",
+      "summary": "PMG 提出了一种用于类人机器人运动控制的参数化运动生成器，通过结合模仿学习与优化的 Sim-to-Real 电机参数辨识，解决了传统数据驱动强化学习对大规模数据集的过度依赖。该系统在 ZERITH Z1 机器人上实现了自然的人类步态，并支持实时高维指令响应和高效的物理迁移。",
+      "take": "PMG 展示了如何通过“参数化生成+参数辨识”来弥合仿真与现实的鸿沟，这正是你从生信转型物理 AI 的核心战场。建议重点研究其 Sim-to-Real 模块中对硬件特性的数学建模，这能帮你建立从算法逻辑到物理实体受力反馈的底层直觉。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-16-04-trans-terrain-aware-reinforcement-learning-for-agile-navigation-of-quadruped-robots-under-social-interactions",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12724",
+      "title": "TRANS: Terrain-aware Reinforcement Learning for Agile Navigation of Quadruped Robots under Social Interactions",
+      "summary": "本研究提出了 TRANS 框架，这是一个专为四足机器人在非结构化地形及社交互动环境下设计的深度强化学习（DRL）导航系统。该框架通过集成地形感知与全身约束，打破了传统导航中运动规划与步态控制分离的局限，实现了更具柔性和响应性的端到端复杂环境避障。",
+      "take": "这篇论文展示了强化学习如何处理物理世界中最棘手的“感知-决策-控制”一体化问题，是大鱼你理解 Sim-to-Real 和全身动态控制的极佳案例。从生信转型，你可以重点关注其如何利用物理仿真环境构建训练数据，这与数据驱动的思维高度契合，也是掌握机器人工程化思维的核心。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-05-sense-step-learning-sim-to-real-locomotion-for-a-sensory-enabled-soft-quadruped-robot",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.13078",
+      "title": "SENSE-STEP: Learning Sim-to-Real Locomotion for a Sensory-Enabled Soft Quadruped Robot",
+      "summary": "该研究提出了 SENSE-STEP 学习型控制框架，旨在解决气动软体四足机器人因高维动力学和执行器滞后导致的闭环运动控制难题。通过引入带触觉传感器的吸盘足部，研究人员成功实现了在复杂接触建模环境下的鲁棒运动，并通过实验验证了该方案在解决软体机器人 Sim-to-Real 差异方面的有效性。",
+      "take": "此文探讨了软体机器人中极具挑战性的致动器滞后和接触建模问题，非常适合你深入研究其 RL 训练策略及 Sim-to-Real 迁移技术；掌握如何将这些复杂的物理交互转化为高效的控制代码（如 C++ 实现），将为你从生物信息学跨向具身智能底层开发提供极佳的切入点。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-06-learning-to-feel-the-future-dreamtacvla-for-contact-rich-manipulation",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2512.23864",
+      "title": "Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation",
+      "summary": "DreamTacVLA 提出了一种将高分辨率触觉集成到视觉-语言-动作（VLA）模型中的新框架，填补了现有模型在物理接触感知上的空白。通过引入层次化空间对齐（HSA）和能够预测未来触觉信号的“触觉世界模型”，该系统让机器人具备了理解力反馈、纹理和滑动的能力，在复杂接触操作任务中实现了显著的性能提升。",
+      "take": "触觉反馈是物理 AI 区别于传统 AI 的核心，也是从生物信息转向机器人学时理解“具身感知”的关键。建议关注其如何利用数字孪生解决触觉数据稀缺的问题，这对于你掌握 Sim-to-Real 跨度及 C++ 高性能传感器数据处理具有很强的实战参考价值。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-07-self-supervised-jepa-based-world-models-for-lidar-occupancy-completion-and-forecasting",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12540",
+      "title": "Self-Supervised JEPA-based World Models for LiDAR Occupancy Completion and Forecasting",
+      "summary": "本文提出了 AD-LiST-JEPA，一种基于联合嵌入预测架构（JEPA）的自监督世界模型，专门用于自动驾驶中的 LiDAR 占用补全与预测。该模型通过在大规模无标注数据上学习环境时空演化的抽象嵌入，提升了感知与长程预测能力，有效解决了自动驾驶感知的可扩展性挑战。",
+      "take": "大鱼，JEPA 这种“预测抽象表示”而非“生成像素细节”的思路是目前 Physical AI 构建世界模型的核心趋势。建议关注其自监督学习在 3D 时空特征提取上的工程实现，这对于你掌握机器人如何通过高效的数据表征实现从模拟到现实（Sim-to-Real）的跨越至关重要。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-08-longnav-r1-horizon-adaptive-multi-turn-rl-for-long-horizon-vla-navigation",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12351",
+      "title": "LongNav-R1: Horizon-Adaptive Multi-Turn RL for Long-Horizon VLA Navigation",
+      "summary": "本文介绍了 LongNav-R1，一个专为优化视觉-语言-动作（VLA）模型长程导航能力的端到端多轮强化学习（RL）框架。该框架将传统的单轮导航决策重构为策略与具身环境之间的持续多轮“对话”，通过视界自适应机制显著提升了机器人在复杂、长路径任务中的执行效率与鲁棒性。",
+      "take": "从生物信息跨向物理 AI，LongNav-R1 展示了如何通过 RL 将语义推理与底层控制深度解耦并重构。这种将环境交互建模为“持续对话”的工程思路，对于你掌握 Sim-to-Real 过程中的闭环控制优化以及提升 VLA 模型的工程化落地能力非常有参考价值。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-09-xiaomi-robotics-0-an-open-sourced-vision-language-action-model-with-real-time-execution",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2602.12684",
+      "title": "Xiaomi-Robotics-0: An Open-Sourced Vision-Language-Action Model with Real-Time Execution",
+      "summary": "小米开源了 Xiaomi-Robotics-0 视觉-语言-动作（VLA）模型，该模型通过大规模跨具身机器人轨迹预训练，在复杂双手操作任务中实现了卓越的泛化能力。其核心亮点在于引入了异步执行和动作填充（Padding）策略，有效解决了大模型推理延迟带来的实时性难题。",
+      "take": "小米的开源项目为你提供了从算法到硬件部署的完整范式，特别是其解决实时控制延迟的工程思路，是理解“物理 AI”性能瓶颈的关键。建议重点剖析其 VLM 与 Diffusion Transformer 结合的逻辑，这将是你掌握具身智能核心技术栈（如端到端策略学习与高性能 C++ 部署）的极佳切入点。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-16-10-pa-mppi-perception-aware-model-predictive-path-integral-control-for-quadrotor-navigation-in-unknown-environments",
+      "briefingId": "rss-2026-02-16",
+      "date": "2026-02-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "cs.RO updates on arXiv.org",
+      "sourceUrl": "https://arxiv.org/abs/2509.14978",
+      "title": "PA-MPPI: Perception-Aware Model Predictive Path Integral Control for Quadrotor Navigation in Unknown Environments",
+      "summary": "该研究提出了一种感知增强的路径积分模型预测控制（PA-MPPI）框架，旨在解决无人机在未知复杂环境中的自主导航难题。通过在传统的 MPPI 控制器中引入“感知成本函数”，该方法使无人机在目标被遮挡时能主动探索未知区域，显著提升了在非凸自由空间中的避障能力与建图效率。",
+      "take": "建议大鱼重点关注 MPPI 这种基于采样的控制方法，它是连接路径规划与底层动力学优化的绝佳切入点。从生物信息转行物理 AI，理解这种将感知不确定性量化为“成本函数”并进行实时并行优化的工程思维，能帮你更快建立起从算法仿真到硬件实测（Sim-to-Real）的直觉。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

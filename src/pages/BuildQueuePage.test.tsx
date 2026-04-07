@@ -12,6 +12,8 @@ function TestLayout({ buildQueue }: { buildQueue: BuildItem[] }) {
     <Outlet
       context={{
         buildQueue,
+        buildQueueError: null,
+        buildQueueStatus: "ready",
         selectedInsight: null,
         topicFilter: null,
         onAddToBuild: noop,

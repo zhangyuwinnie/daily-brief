@@ -1,0 +1,257 @@
+{
+  "date": "2026-03-14",
+  "briefings": [
+    {
+      "id": "rss-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-14",
+      "filePath": "2026-03-14.md",
+      "summaryTopline": "Mouser: An open source alternative to Logi-Plus mouse software",
+      "insightIds": [
+        "rss-2026-03-14-01-mouser-an-open-source-alternative-to-logi-plus-mouse-software",
+        "rss-2026-03-14-02-i-found-39-algolia-admin-keys-exposed-across-open-source-documentation-sites",
+        "rss-2026-03-14-03-beyond-semantic-similarity-introducing-nvidia-nemo-retrievers-generalizable-agentic-retrieval-pipeline"
+      ]
+    },
+    {
+      "id": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-14",
+      "filePath": "x_briefing_2026-03-14.md",
+      "summaryTopline": "**AI Agent加速落地：** 从巨额融资和行业领袖言论看，AI Agent正从演示走向实际部署，尤其在机器人和前沿模型领域。",
+      "insightIds": [
+        "x-2026-03-14-trend-01-165",
+        "x-2026-03-14-trend-02-ai-agent",
+        "x-2026-03-14-trend-03-ai-agent",
+        "x-2026-03-14-tools-01-turing-pi-25",
+        "x-2026-03-14-tools-02-claude-coworkai",
+        "x-2026-03-14-tools-03-agentic-reviewer",
+        "x-2026-03-14-opinion-01-ami-labsworld-labs",
+        "x-2026-03-14-opinion-02-ai-agent",
+        "x-2026-03-14-news-01-databricksgoverning-ai-agentsai"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-14-01-mouser-an-open-source-alternative-to-logi-plus-mouse-software",
+      "briefingId": "rss-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/TomBadash/MouseControl",
+      "title": "Mouser: An open source alternative to Logi-Plus mouse software",
+      "summary": "Mouser是一个开源项目，旨在作为Logi-Plus等专有鼠标软件的替代品。它为用户提供了更多自定义和控制鼠标功能的选项，有望提升桌面操作的自由度和效率。",
+      "take": "对Dayu来说，Mouser的开源特性意味着可以深入定制鼠标操作，是构建桌面自动化代理和提升效率的绝佳工具，例如通过自定义鼠标手势或宏来触发复杂的AI工作流。这是一个很好的机会去探索系统级工具的开发，甚至可以贡献代码。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-14-02-i-found-39-algolia-admin-keys-exposed-across-open-source-documentation-sites",
+      "briefingId": "rss-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://benzimmermann.dev/blog/algolia-docsearch-admin-keys",
+      "title": "I found 39 Algolia admin keys exposed across open source documentation sites",
+      "summary": "文章指出，研究人员在多个开源文档网站中发现了多达39个Algolia管理员密钥被意外泄露。这凸显了开源项目在维护文档和代码时的安全疏忽，可能导致严重的敏感信息暴露风险。",
+      "take": "Dayu在构建AI代理和自动化工作流时，应高度重视安全防护。此案例提示我们可以开发一个自动化安全扫描代理，专门用于检测代码库和文档中的敏感信息泄露，从而保障AI Agent和集成工具链的安全性。这也是一个绝佳的开源贡献方向，可以参与或主导构建此类实用的安全审计工具。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-14-03-beyond-semantic-similarity-introducing-nvidia-nemo-retrievers-generalizable-agentic-retrieval-pipeline",
+      "briefingId": "rss-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval",
+      "title": "Beyond Semantic Similarity: Introducing NVIDIA NeMo Retriever’s Generalizable Agentic Retrieval Pipeline",
+      "summary": "英伟达推出了NeMo Retriever的通用Agentic检索管道，旨在超越传统的语义相似性匹配，提供更智能、更具泛化能力的检索解决方案。它为构建能理解复杂意图和上下文的AI代理提供了关键技术支持。",
+      "take": "Dayu作为AI超个体构建者，这个Agentic检索管道能显著提升代理的RAG能力，使其在处理复杂生物信息学数据时实现更精准、更高效的自动化工作流。建议深入探索NeMo Retriever库，尝试将其应用于具体任务场景，并关注潜在的开源贡献机会。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-14-trend-01-165",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Tony Zhao",
+      "sourceUrl": "https://x.com/tonyzzhao/status/2032131675027804461",
+      "title": "公司融资1.65亿美元",
+      "summary": "公司融资1.65亿美元，估值11.5亿美元。Memo（前沿模型）将从演示转向部署和研究，标志AI领域进入实际应用阶段。",
+      "take": "公司融资1.65亿美元，估值11.5亿美元。Memo（前沿模型）将从演示转向部署和研究，标志AI领域进入实际应用阶段。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-14-trend-02-ai-agent",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@YC (Yucheng Liu)",
+      "sourceUrl": "https://x.com/lyc_zh/status/2032793886993883426",
+      "title": "AI Agent正改变研究",
+      "summary": "AI Agent正改变研究：通过智能体网络，24小时内可完成1100次实验和55项改进，极大加速科学探索。",
+      "take": "AI Agent正改变研究：通过智能体网络，24小时内可完成1100次实验和55项改进，极大加速科学探索。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-14-trend-03-ai-agent",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1975614372799283423",
+      "title": "强调AI Agent是当前就业市场最抢手的技能之一",
+      "summary": "强调AI Agent是当前就业市场最抢手的技能之一，并推出Agentic AI课程，涵盖反思等核心设计模式。",
+      "take": "强调AI Agent是当前就业市场最抢手的技能之一，并推出Agentic AI课程，涵盖反思等核心设计模式。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-14-tools-01-turing-pi-25",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Turing Pi",
+      "sourceUrl": "https://x.com/turingpi/status/2030254179311358039/analytics",
+      "title": "发布Turing Pi 2.5集群",
+      "summary": "发布Turing Pi 2.5集群，一款桌面级紧凑型高性能AI加速器，具备32核、24 TOPS NPU（神经处理单元），适用于各类AI项目。",
+      "take": "发布Turing Pi 2.5集群，一款桌面级紧凑型高性能AI加速器，具备32核、24 TOPS NPU（神经处理单元），适用于各类AI项目。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-14-tools-02-claude-coworkai",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Corey Ganim",
+      "sourceUrl": "https://x.com/coreyganim/status/2032596647859953868",
+      "title": "分享将Claude Cowork（AI助手）转为高效员工的实战指南",
+      "summary": "分享将Claude Cowork（AI助手）转为高效员工的实战指南，含元提示（meta-prompt）、工作区设置等技巧。",
+      "take": "分享将Claude Cowork（AI助手）转为高效员工的实战指南，含元提示（meta-prompt）、工作区设置等技巧。",
+      "topics": [
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-14-tools-03-agentic-reviewer",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1993001922773893273",
+      "title": "推出Agentic Reviewer（智能体审稿人）",
+      "summary": "推出Agentic Reviewer（智能体审稿人），用AI加速研究论文反馈周期，解决传统审稿耗时长的问题。",
+      "take": "推出Agentic Reviewer（智能体审稿人），用AI加速研究论文反馈周期，解决传统审稿耗时长的问题。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-14-opinion-01-ami-labsworld-labs",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Zhuokai Zhao",
+      "sourceUrl": "https://x.com/zhuokaiz/status/2032201769053212682",
+      "title": "AMI Labs和World Labs巨额融资均押注“世界模型”",
+      "summary": "AMI Labs和World Labs巨额融资均押注“世界模型”，但其定义仍存分歧，并提出了五种分类。",
+      "take": "AMI Labs和World Labs巨额融资均押注“世界模型”，但其定义仍存分歧，并提出了五种分类。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-14-opinion-02-ai-agent",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1986500817613169025",
+      "title": "AI Agent能力增强凸显数据孤岛问题",
+      "summary": "AI Agent能力增强凸显数据孤岛问题，强调控制自有数据以安全供Agent访问的重要性。",
+      "take": "AI Agent能力增强凸显数据孤岛问题，强调控制自有数据以安全供Agent访问的重要性。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-14-news-01-databricksgoverning-ai-agentsai",
+      "briefingId": "x-2026-03-14",
+      "date": "2026-03-14",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1981056313661559155",
+      "title": "与Databricks合作推出“Governing AI Agents”（治理AI智能体）课程",
+      "summary": "与Databricks合作推出“Governing AI Agents”（治理AI智能体）课程，教授如何设计处理敏感数据的AI Agent，强调AI治理的重要性。",
+      "take": "与Databricks合作推出“Governing AI Agents”（治理AI智能体）课程，教授如何设计处理敏感数据的AI Agent，强调AI治理的重要性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI Agent加速落地：** 从巨额融资和行业领袖言论看，AI Agent正从演示走向实际部署，尤其在机器人和前沿模型领域。",
+    "**智能体变革工作流：** AI Agent正颠覆性地加速研究、编码、测试和文档处理等任务，极大提升效率。",
+    "**治理与数据是关键：** 随着Agent能力提升，数据安全、隐私保护及打破数据孤岛成为其广泛应用的重要挑战。"
+  ],
+  "xActionItems": [
+    "关注DeepLearning.AI上关于Agentic AI的新课程，深入学习其核心设计模式与实践。",
+    "审视企业或个人数据管理策略，确保重要数据能够安全地供AI Agent访问，避免形成数据孤岛。"
+  ]
+}

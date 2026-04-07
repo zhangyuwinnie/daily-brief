@@ -1,0 +1,74 @@
+{
+  "date": "2026-02-21",
+  "briefings": [
+    {
+      "id": "rss-2026-02-21",
+      "date": "2026-02-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-21",
+      "filePath": "2026-02-21.md",
+      "summaryTopline": "How to Use Memory in Agent Builder",
+      "insightIds": [
+        "rss-2026-02-21-01-how-to-use-memory-in-agent-builder",
+        "rss-2026-02-21-02-our-first-proof-submissions",
+        "rss-2026-02-21-03-skills-night-69000-ways-agents-are-getting-smarter"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-21-01-how-to-use-memory-in-agent-builder",
+      "briefingId": "rss-2026-02-21",
+      "date": "2026-02-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-to-use-memory-in-agent-builder/",
+      "title": "How to Use Memory in Agent Builder",
+      "summary": "这篇文章介绍了在Agent Builder中记忆功能的重要性。通过记忆，AI代理能够记住用户的反馈、偏好和有效的工作方式，从而在使用过程中不断学习和自我改进。这种记忆功能是让代理变得更智能、更高效的核心要素。",
+      "take": "对于Dayu而言，在构建自动化生物信息工作流的AI代理时，集成和优化记忆功能至关重要。一个能学习并适应Dayu个人工作习惯的代理，将大幅提升效率，值得Dayu深入研究Agent Builder这类工具的记忆机制，并寻找相关开源项目进行贡献或定制开发。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-21-02-our-first-proof-submissions",
+      "briefingId": "rss-2026-02-21",
+      "date": "2026-02-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/first-proof-submissions",
+      "title": "Our First Proof submissions",
+      "summary": "这篇文章分享了某个AI模型在First Proof数学挑战赛中的证明尝试，旨在测试其在解决专家级数学问题上的研究级推理能力。",
+      "take": "这种AI模型在专家级数学问题上展现的研究级推理能力，对于Dayu构建能处理复杂生物信息学任务的智能Agent至关重要。这不仅能开启自动化高阶决策与问题解决的新工作流，也提供了深入研究相关推理框架并贡献开源项目的机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-21-03-skills-night-69000-ways-agents-are-getting-smarter",
+      "briefingId": "rss-2026-02-21",
+      "date": "2026-02-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/skills-night-69000-ways-agents-are-getting-smarter",
+      "title": "Skills Night: 69,000+ ways agents are getting smarter",
+      "summary": "`skills.sh` 是一个快速发展的开放技能生态系统，目前已拥有超过 69,000 种技能，旨在帮助开发者构建更智能的代理。它起源于对 React 知识的文档化，现在已吸引了数百万的 CLI 安装用户，社区活跃度极高。这个平台的核心价值在于为代理提供丰富的工具集，使其能以更多方式变得更加智能和高效。",
+      "take": "对于Dayu来说，`skills.sh` 提供了一个绝佳的工具平台，可以将生物信息学任务封装成可复用的“技能”，直接集成到他的AI代理中，大幅提升工作流自动化和效率。他不仅可以尝试利用现有技能来增强代理能力，更有机会贡献自己独有的生物信息学技能，成为这个快速增长的开源社区的关键贡献者。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ]
+}

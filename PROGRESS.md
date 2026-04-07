@@ -60,11 +60,31 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend MVP now loads generated data at runtime from public assets, route bundles are split, and the core real-data/read-build-listen loop still passes full regression coverage locally`
+Overall status: `frontend MVP now boots from lightweight manifests, lazy-loads per-date briefing payloads by route, and the core real-data/read-build-listen loop still passes full regression coverage locally`
 
 Current worktree snapshot:
 
-- Batch 10 is complete locally.
+- Batch 11 is complete locally.
+- `plans/task-plans/T49-T52_plan.md` records the per-date lazy-loading scope, file targets, verification approach, and manual QA notes.
+- `src/lib/briefings/generatedArtifacts.ts` now writes one generated day payload per date under `public/generated/briefings/` while keeping `briefings-by-date.json` during the transition.
+- `public/generated/briefings/` now contains `54` date files, so `/today`, `/build`, and permalink routes can fetch only the days they need.
+- `src/lib/briefings/generatedContentLoader.ts` now:
+  - bootstraps from only `briefings-index.json` and `audio-index.json`
+  - caches day payloads by date on demand
+  - exposes async helpers for loading one day, one insight, or all insights when a route needs them
+  - keeps sync selectors working against already loaded day records
+- `src/app/App.tsx` now treats the app shell as ready after the lightweight manifests load, subscribes to lazy day-cache updates, and resolves `/build` queue cards from only the saved insight dates instead of all history.
+- `src/pages/TodayPage.tsx` now fetches the selected day payload on demand and shows explicit loading and failure states for that route-level fetch.
+- `src/pages/TopicsPage.tsx` now loads the historical day payloads asynchronously after the route mounts instead of forcing that cost into startup.
+- `src/pages/InsightSharePage.tsx` now resolves a permalink by looking up its indexed date and fetching only that day payload when needed.
+- `src/components/layout/RightRail.tsx` now resolves the selected day from the generated index metadata instead of assuming the day body was already loaded.
+- automated verification now passes with:
+  - `64` Vitest tests
+  - `5` Playwright tests
+  - `npm run sync:generated`
+  - `npm run build`
+- key lesson / risk:
+  - `/topics` still intentionally fans out across all per-date JSON files when opened; that is acceptable for a non-default route, but it should be revisited before adding heavier historical/archive UX.
 - `plans/task-plans/runtime-data-and-lazy-routes_plan.md` records the runtime-data and route-splitting scope, file targets, verification approach, and manual QA notes.
 - generated JSON is no longer bundled into the app from `src/generated/`.
 - `scripts/sync-generated-content.ts` now writes JSON artifacts to `public/generated/`, alongside the existing `public/generated/audio/` delivery path.

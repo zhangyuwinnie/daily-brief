@@ -1,0 +1,72 @@
+{
+  "date": "2026-02-08",
+  "briefings": [
+    {
+      "id": "rss-2026-02-08",
+      "date": "2026-02-08",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-08",
+      "filePath": "2026-02-08.md",
+      "summaryTopline": "Making AI work for everyone, everywhere: our approach to localization",
+      "insightIds": [
+        "rss-2026-02-08-01-making-ai-work-for-everyone-everywhere-our-approach-to-localization",
+        "rss-2026-02-08-02-structured-outputs-on-amazon-bedrock-schema-compliant-ai-responses",
+        "rss-2026-02-08-03-evaluate-generative-ai-models-with-an-amazon-nova-rubric-based-llm-judge"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-08-01-making-ai-work-for-everyone-everywhere-our-approach-to-localization",
+      "briefingId": "rss-2026-02-08",
+      "date": "2026-02-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/our-approach-to-localization",
+      "title": "Making AI work for everyone, everywhere: our approach to localization",
+      "summary": "OpenAI 分享了其 AI 本地化策略，旨在让全球共享的前沿模型适应各地的语言、法律和文化，同时不牺牲安全性。",
+      "take": "对于 Physical AI 而言，这也是 Sim-to-Real 的一部分——不仅是物理环境的适应，更是文化和社会规则的适应（Alignment）。随着机器人进入家庭，理解本地语境（Context）至关重要。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-08-02-structured-outputs-on-amazon-bedrock-schema-compliant-ai-responses",
+      "briefingId": "rss-2026-02-08",
+      "date": "2026-02-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "AWS Machine Learning Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-on-amazon-bedrock-schema-compliant-ai-responses/",
+      "title": "Structured outputs on Amazon Bedrock: Schema-compliant AI responses",
+      "summary": "AWS Bedrock 推出了结构化输出功能，允许开发者强制 LLM 生成符合特定 JSON Schema 的响应。这解决了传统 JSON 生成中的幻觉和格式错误问题。",
+      "take": "这是一个巨大的工程利好！在 Robotic Agent 中，我们需要 LLM 输出精确的控制指令（如 `{ \"action\": \"pick\", \"target\": \"apple\" }`）。结构化输出能显著提高系统的稳定性和下游执行的成功率。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-08-03-evaluate-generative-ai-models-with-an-amazon-nova-rubric-based-llm-judge",
+      "briefingId": "rss-2026-02-08",
+      "date": "2026-02-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "AWS Machine Learning Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/evaluate-generative-ai-models-with-an-amazon-nova-rubric-based-llm-judge-on-amazon-sagemaker-ai-part-2/",
+      "title": "Evaluate generative AI models with an Amazon Nova rubric-based LLM judge",
+      "summary": "本文介绍了如何使用 Amazon Nova 构建基于评分标准（Rubric-based）的 LLM 裁判，用于评估生成式 AI 模型。讨论了如何定义评估指标和校准裁判模型。",
+      "take": "在强化学习（RL）中，Reward Model 的设计非常困难。利用 LLM 作为 Judge 来提供稀疏奖励（Sparse Reward）或评估 Agent 的表现，是目前非常有前景的研究方向。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ]
+}

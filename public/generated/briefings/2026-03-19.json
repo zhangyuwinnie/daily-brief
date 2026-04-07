@@ -1,0 +1,262 @@
+{
+  "date": "2026-03-19",
+  "briefings": [
+    {
+      "id": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-19",
+      "filePath": "2026-03-19.md",
+      "summaryTopline": "Polly is generally available everywhere you work in LangSmith",
+      "insightIds": [
+        "rss-2026-03-19-01-polly-is-generally-available-everywhere-you-work-in-langsmith",
+        "rss-2026-03-19-02-openai-to-acquire-astral",
+        "rss-2026-03-19-03-autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-locally",
+        "rss-2026-03-19-04-2-of-icml-papers-desk-rejected-because-the-authors-used-llm-in-their-reviews",
+        "rss-2026-03-19-05-show-hn-duplicate-3-layers-in-a-24b-llm-logical-deduction-2276-no-training",
+        "rss-2026-03-19-06-money-forward-brings-cursors-coding-agents-to-product-design-and-qa"
+      ]
+    },
+    {
+      "id": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-19",
+      "filePath": "x_briefing_2026-03-19.md",
+      "summaryTopline": "AI代理正迅速成为构建“零人工”公司的关键，尤其在金融交易（加密钱包）和企业自动化领域展现巨大潜力。",
+      "insightIds": [
+        "x-2026-03-19-trend-01-coinbase-ceo",
+        "x-2026-03-19-tools-01-lightpanda",
+        "x-2026-03-19-tools-02-githubai",
+        "x-2026-03-19-opinion-01-workdayai",
+        "x-2026-03-19-news-01-voicebox",
+        "x-2026-03-19-news-02-ai"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-19-01-polly-is-generally-available-everywhere-you-work-in-langsmith",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/polly-langsmith-ga/",
+      "title": "Polly is generally available everywhere you work in LangSmith",
+      "summary": "LangSmith 最新推出了AI助手Polly，旨在解决AI代理（Agent）开发中调试复杂性高的难题。由于代理的执行轨迹（traces）通常深达数百步，提示（prompts）也可能长达数千行，传统调试方法难以定位问题。Polly作为AI助手，能够阅读并理解这些复杂的上下文信息，从而极大地简化调试过程。",
+      "take": "对于Dayu这样致力于构建AI代理并自动化工作流的生物信息工程师来说，Polly在LangSmith中的普及是一个非常实用的利好消息。它提供了一种更智能、更高效的代理调试方法，能够显著提升开发效率，是构建复杂Agent时值得尝试的工具，能帮助Dayu更快地实现他的“AI超个体”愿景。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-19-02-openai-to-acquire-astral",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-to-acquire-astral",
+      "title": "OpenAI to acquire Astral",
+      "summary": "OpenAI宣布收购Astral公司，此举旨在加速其Codex模型的发展，并致力于打造下一代Python开发者工具。这项收购将赋能更智能、更高效的AI辅助编程体验，特别是在Python生态系统中。",
+      "take": "这对Dayu构建AI Agent和自动化工作流至关重要，预示着OpenAI将推出更强大的AI驱动Python开发工具，极大提升代码生成与脚本自动化的效率。他应密切关注这些工具的具体发布，探索将其作为Agent的“工具”来强化其编程和数据处理能力，并寻找潜在的开源集成与贡献机会。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-19-03-autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-locally",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/18/llm-in-a-flash/#atom-everything",
+      "title": "Autoresearching Apple's \"LLM in a Flash\" to run Qwen 397B locally",
+      "summary": "本文探索了如何运用苹果的\"LLM in a Flash\"技术，在本地环境中成功运行像Qwen 397B这样的超大型语言模型。这项技术显著提升了大型LLM的本地部署能力和运行效率，是实现AI本地化的关键一步。",
+      "take": "Dayu，这项技术为你构建高性能、私密的本地AI代理提供了可能，能显著降低运行成本并提升效率。你可以深入研究其实现原理，将其应用于生物信息学工作流自动化，甚至贡献到优化本地LLM部署的开源项目中。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-19-04-2-of-icml-papers-desk-rejected-because-the-authors-used-llm-in-their-reviews",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.icml.cc/2026/03/18/on-violations-of-llm-review-policies/",
+      "title": "2% of ICML papers desk rejected because the authors used LLM in their reviews",
+      "summary": "顶级机器学习会议ICML有2%的投稿论文被直接拒稿，原因是作者在论文评审回复过程中使用了大型语言模型（LLM）。这一事件强调了学术界对AI工具在学术交流中应用规范性及伦理的严格要求。",
+      "take": "作为致力于构建AI代理和自动化工作流的Dayu，这次事件是一个重要警示。它提醒我们，在使用LLM提升效率时，尤其是在涉及专业判断和原创性的任务中，必须高度关注伦理规范和透明度，避免因不当使用而带来严重后果。Dayu在设计代理时，可以思考如何集成“AI使用合规性检查”模块，以确保其自动化流程的专业性和可靠性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-19-05-show-hn-duplicate-3-layers-in-a-24b-llm-logical-deduction-2276-no-training",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/alainnothere/llm-circuit-finder",
+      "title": "Show HN: Duplicate 3 layers in a 24B LLM, logical deduction .22→.76. No training",
+      "summary": "这篇文章展示了一种无需额外训练即可大幅提升24B大型语言模型逻辑推理能力的新方法。通过简单地复制模型中的3个层，该模型在逻辑演绎任务上的表现从0.22显著提高到0.76，突显了通过巧妙的模型结构调整优化LLM性能的潜力。",
+      "take": "Dayu，这种“无需训练”就能显著增强LLM逻辑推理能力的技术，对你构建更高效的AI Agent和自动化工作流来说非常有价值。这意味着你可以在不增加训练成本的前提下，提升Agent在复杂生物信息学任务中的推理表现；同时，这也是一个值得关注和探索将其应用于现有LLM框架（如transformers）的开源贡献机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-19-06-money-forward-brings-cursors-coding-agents-to-product-design-and-qa",
+      "briefingId": "rss-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/money-forward",
+      "title": "Money Forward brings Cursor’s coding agents to product, design, and QA",
+      "summary": "钱前公司（Money Forward）将其AI编码代理工具Cursor引入到产品、设计和QA团队，目前已有超过1000名员工日常使用。这标志着AI辅助编码能力已在企业内部实现了跨部门、规模化的应用。",
+      "take": "Cursor被Money Forward大规模应用于产品、设计和QA，说明AI编码代理已从单纯的“写代码”扩展到更广阔的“辅助多职能工作”。Dayu可以从中受到启发，思考如何在生物信息学领域构建类似Agent，例如自动化数据质控脚本生成、实验设计辅助或流程QA验证Agent，从而提升端到端的工作效率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-19-trend-01-coinbase-ceo",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Brian Armstrong",
+      "sourceUrl": "https://x.com/brian_armstrong/status/2031021867973194172",
+      "title": "Coinbase CEO预测",
+      "summary": "Coinbase CEO预测，AI代理交易量将很快超越人类，加密钱包因其开放性将成首选。",
+      "take": "Coinbase CEO预测，AI代理交易量将很快超越人类，加密钱包因其开放性将成首选。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-19-tools-01-lightpanda",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ryan Hart",
+      "sourceUrl": "https://x.com/thisdudelikesAI/status/2032020679827341603",
+      "title": "Lightpanda",
+      "summary": "Lightpanda：一款为AI代理、爬虫和自动化从零构建的开源无头浏览器，比Chrome快11倍，内存少9倍。",
+      "take": "Lightpanda：一款为AI代理、爬虫和自动化从零构建的开源无头浏览器，比Chrome快11倍，内存少9倍。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-19-tools-02-githubai",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Shraddha Bharuka",
+      "sourceUrl": "https://x.com/BharukaShraddha/status/2034219375197307323",
+      "title": "免费GitHub仓库提供高效率AI编码系统",
+      "summary": "免费GitHub仓库提供高效率AI编码系统，优化Claude Code的Token使用，降低成本。",
+      "take": "免费GitHub仓库提供高效率AI编码系统，优化Claude Code的Token使用，降低成本。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-19-opinion-01-workdayai",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+      "title": "Workday高管称AI代理初创公司为“寄生虫”",
+      "summary": "Workday高管称AI代理初创公司为“寄生虫”，凸显传统巨头与新生力量在数据所有权上的冲突。",
+      "take": "Workday高管称AI代理初创公司为“寄生虫”，凸显传统巨头与新生力量在数据所有权上的冲突。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-19-news-01-voicebox",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Charly Wargnier",
+      "sourceUrl": "https://x.com/DataChaz/status/2034624043903766978",
+      "title": "Voicebox发布",
+      "summary": "Voicebox发布：由Qwen3-TTS支持的开源本地语音克隆/编辑工具，或将挑战ElevenLabs。",
+      "take": "Voicebox发布：由Qwen3-TTS支持的开源本地语音克隆/编辑工具，或将挑战ElevenLabs。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-19-news-02-ai",
+      "briefingId": "x-2026-03-19",
+      "date": "2026-03-19",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@unusual_whales",
+      "sourceUrl": "https://x.com/unusual_whales/status/2032440791545581695",
+      "title": "报道称AI代理正“雇佣”人类执行其无法完成的现实任务",
+      "summary": "报道称AI代理正“雇佣”人类执行其无法完成的现实任务。",
+      "take": "报道称AI代理正“雇佣”人类执行其无法完成的现实任务。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "AI代理正迅速成为构建“零人工”公司的关键，尤其在金融交易（加密钱包）和企业自动化领域展现巨大潜力。",
+    "涌现出多款高效工具，如为AI代理定制的Lightpanda无头浏览器、优化Claude Token使用的编码系统，助力开发者提升效率。",
+    "伴随AI代理能力提升，其社会影响和风险（如数据所有权争议、军事AI可控性挑战）日益突出，需持续关注。"
+  ],
+  "xActionItems": [
+    "尝试使用Lightpanda等专为AI代理设计的开源工具，探索自动化和数据获取新范式。",
+    "学习Claude Code的Token优化技巧，提升AI辅助编码效率并控制成本。",
+    "关注AI代理与加密货币结合的趋势，评估其对未来金融交易模式的影响。"
+  ]
+}

@@ -1,10 +1,88 @@
+import { useEffect, useState } from "react";
 import { ArrowLeft, ExternalLink, Sparkles, Target, Zap } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
-import { getInsightById } from "../lib/briefings/generatedContentLoader";
+import {
+  getInsightById,
+  getInsightDateById,
+  loadInsightById
+} from "../lib/briefings/generatedContentLoader";
 
 export function InsightSharePage() {
   const { insightId } = useParams();
   const selectedInsight = insightId ? getInsightById(insightId) : null;
+  const insightDate = insightId ? getInsightDateById(insightId) : null;
+  const [insightLoadStatus, setInsightLoadStatus] = useState<"idle" | "loading" | "error">(
+    insightId && insightDate && !selectedInsight ? "loading" : "idle"
+  );
+  const [insightLoadError, setInsightLoadError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!insightId || !insightDate || selectedInsight) {
+      setInsightLoadStatus("idle");
+      setInsightLoadError(null);
+      return;
+    }
+
+    let isDisposed = false;
+    setInsightLoadStatus("loading");
+    setInsightLoadError(null);
+
+    loadInsightById(insightId)
+      .then(() => {
+        if (isDisposed) {
+          return;
+        }
+
+        setInsightLoadStatus("idle");
+      })
+      .catch((error) => {
+        if (isDisposed) {
+          return;
+        }
+
+        setInsightLoadStatus("error");
+        setInsightLoadError(error instanceof Error ? error.message : String(error));
+      });
+
+    return () => {
+      isDisposed = true;
+    };
+  }, [insightDate, insightId, selectedInsight]);
+
+  if (!selectedInsight && insightId && insightDate && insightLoadStatus === "loading") {
+    return (
+      <div className="animate-enter mt-8 rounded-card border border-white/60 bg-white/40 p-8 text-center">
+        <h2 className="mb-2 text-2xl font-black text-slate-800">Loading insight</h2>
+        <p className="text-slate-500">Fetching the generated day payload for this permalink.</p>
+      </div>
+    );
+  }
+
+  if (!selectedInsight && insightLoadStatus === "error") {
+    return (
+      <div className="animate-enter mt-8 rounded-card border border-rose-200 bg-rose-50 p-8 text-center">
+        <h2 className="mb-2 text-2xl font-black text-slate-800">Insight failed to load</h2>
+        <p className="mb-6 text-slate-500">
+          The generated day payload for this permalink could not be fetched.
+        </p>
+        {insightLoadError ? <p className="mb-6 text-xs text-rose-700">{insightLoadError}</p> : null}
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link
+            to="/today"
+            className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
+          >
+            Back to Today
+          </Link>
+          <Link
+            to="/topics"
+            className="inline-flex rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-800"
+          >
+            Browse Topics
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   if (!selectedInsight) {
     return (

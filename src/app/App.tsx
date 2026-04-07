@@ -1,12 +1,15 @@
-import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
+import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import { AppShell } from "../components/layout/AppShell";
 import { AddToBuildModal } from "../components/modals/AddToBuildModal";
 import {
   getAllInsights,
   getAvailableTopics,
+  getInsightDateById,
   getInsightById,
-  loadGeneratedContentSources
+  loadDayData,
+  loadGeneratedContentSources,
+  subscribeGeneratedContentUpdates
 } from "../lib/briefings/generatedContentLoader";
 import {
   deriveBuildQueueFromInsightStates,
@@ -16,8 +19,8 @@ import {
   updateInsightStateStatus,
   writeInsightStates
 } from "../lib/insightStateStore";
+import type { BuildItem, BuildStatus, Insight, InsightState, SkillFocus } from "../types/models";
 import type { AppOutletContext } from "./outlet-context";
-import type { BuildStatus, Insight, InsightState, SkillFocus } from "../types/models";
 
 export function App() {
   const navigate = useNavigate();
@@ -28,33 +31,34 @@ export function App() {
     "loading"
   );
   const [generatedContentError, setGeneratedContentError] = useState<string | null>(null);
+  const [generatedContentRevision, setGeneratedContentRevision] = useState(0);
   const [insightStates, setInsightStates] = useState<InsightState[]>(() => readInsightStates());
+  const [buildQueue, setBuildQueue] = useState<BuildItem[]>([]);
+  const [buildQueueStatus, setBuildQueueStatus] = useState<"idle" | "loading" | "ready" | "error">(
+    "idle"
+  );
+  const [buildQueueError, setBuildQueueError] = useState<string | null>(null);
   const [activeInsight, setActiveInsight] = useState<Insight | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalSkill, setModalSkill] = useState<SkillFocus>("agents");
   const [modalNote, setModalNote] = useState("");
   const [topicFilter, setTopicFilter] = useState<string | null>(null);
+
   const availableTopics = useMemo(
     () => (generatedContentStatus === "ready" ? getAvailableTopics() : []),
-    [generatedContentStatus]
-  );
-  const buildQueue = useMemo(
-    () =>
-      generatedContentStatus === "ready"
-        ? deriveBuildQueueFromInsightStates(insightStates, getAllInsights())
-        : [],
-    [generatedContentStatus, insightStates]
+    [generatedContentRevision, generatedContentStatus]
   );
   const insightStatesById = useMemo(
     () => new Map(insightStates.map((state) => [state.insightId, state] as const)),
     [insightStates]
   );
-
   const selectedInsight = useMemo(
     () =>
       generatedContentStatus === "ready" && params.insightId ? getInsightById(params.insightId) : null,
-    [generatedContentStatus, params.insightId]
+    [generatedContentRevision, generatedContentStatus, params.insightId]
   );
+
+  useEffect(() => subscribeGeneratedContentUpdates(() => setGeneratedContentRevision((current) => current + 1)), []);
 
   useEffect(() => {
     let isDisposed = false;
@@ -85,6 +89,65 @@ export function App() {
   useEffect(() => {
     writeInsightStates(insightStates);
   }, [insightStates]);
+
+  useEffect(() => {
+    if (generatedContentStatus !== "ready") {
+      setBuildQueue([]);
+      setBuildQueueStatus("idle");
+      setBuildQueueError(null);
+      return;
+    }
+
+    if (insightStates.length === 0) {
+      setBuildQueue([]);
+      setBuildQueueStatus("ready");
+      setBuildQueueError(null);
+      return;
+    }
+
+    const requiredDates = Array.from(
+      new Set(
+        insightStates.flatMap((state) => {
+          const insightDate = getInsightDateById(state.insightId);
+          return insightDate ? [insightDate] : [];
+        })
+      )
+    );
+
+    if (requiredDates.length === 0) {
+      setBuildQueue([]);
+      setBuildQueueStatus("ready");
+      setBuildQueueError(null);
+      return;
+    }
+
+    let isDisposed = false;
+    setBuildQueueStatus("loading");
+    setBuildQueueError(null);
+
+    Promise.all(requiredDates.map((date) => loadDayData(date)))
+      .then(() => {
+        if (isDisposed) {
+          return;
+        }
+
+        setBuildQueue(deriveBuildQueueFromInsightStates(insightStates, getAllInsights()));
+        setBuildQueueStatus("ready");
+      })
+      .catch((error) => {
+        if (isDisposed) {
+          return;
+        }
+
+        setBuildQueue([]);
+        setBuildQueueStatus("error");
+        setBuildQueueError(error instanceof Error ? error.message : String(error));
+      });
+
+    return () => {
+      isDisposed = true;
+    };
+  }, [generatedContentStatus, insightStates]);
 
   const handleOpenModal = (insight: Insight) => {
     const existingState = insightStatesById.get(insight.id);
@@ -133,7 +196,7 @@ export function App() {
           <div className="max-w-md">
             <h1 className="text-2xl font-black text-slate-800">Loading generated briefings...</h1>
             <p className="mt-3 text-sm text-slate-600">
-              Fetching the latest brief, topic, and audio manifests from <code>/generated</code>.
+              Fetching the latest brief and audio manifests from <code>/generated</code>.
             </p>
           </div>
         </div>
@@ -163,7 +226,7 @@ export function App() {
   return (
     <>
       <AppShell
-        buildQueue={buildQueue}
+        buildCount={insightStates.length}
         currentPath={location.pathname}
         topics={availableTopics}
         selectedInsight={selectedInsight}
@@ -175,6 +238,8 @@ export function App() {
         <Outlet
           context={{
             buildQueue,
+            buildQueueError,
+            buildQueueStatus,
             selectedInsight,
             topicFilter,
             onAddToBuild: handleOpenModal,

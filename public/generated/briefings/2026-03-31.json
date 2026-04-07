@@ -1,0 +1,282 @@
+{
+  "date": "2026-03-31",
+  "briefings": [
+    {
+      "id": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-31",
+      "filePath": "2026-03-31.md",
+      "summaryTopline": "Helping disaster response teams turn AI into action across Asia",
+      "insightIds": [
+        "rss-2026-03-31-01-helping-disaster-response-teams-turn-ai-into-action-across-asia",
+        "rss-2026-03-31-02-datasette-llm-01a3",
+        "rss-2026-03-31-03-llm-mrchatterbox-01",
+        "rss-2026-03-31-04-open-source-cad-in-the-browser-solvespace",
+        "rss-2026-03-31-05-anthropic-claude-code-users-hitting-usage-limits-way-faster-than-expected"
+      ]
+    },
+    {
+      "id": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-31",
+      "filePath": "x_briefing_2026-03-31.md",
+      "summaryTopline": "Claude Code 源码意外泄露，其精妙的内存架构引发技术社区热议，为开发者提供了宝贵的学习资料。",
+      "insightIds": [
+        "x-2026-03-31-trend-01-anthropic-npm",
+        "x-2026-03-31-trend-02-ai-agent",
+        "x-2026-03-31-tools-01-agentscope-python",
+        "x-2026-03-31-tools-02-ai-agent",
+        "x-2026-03-31-opinion-01-andrej-karpathy",
+        "x-2026-03-31-opinion-02-agent",
+        "x-2026-03-31-opinion-03-arc-agi-3",
+        "x-2026-03-31-news-01-npm-http-axios"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-31-01-helping-disaster-response-teams-turn-ai-into-action-across-asia",
+      "briefingId": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/helping-disaster-response-teams-asia",
+      "title": "Helping disaster response teams turn AI into action across Asia",
+      "summary": "OpenAI与盖茨基金会合作，在亚洲举办AI灾害响应研讨会，旨在帮助当地团队将人工智能技术切实应用于灾害应对。这强调了AI将信息转化为实际行动的能力，从而提升亚洲地区灾害管理的效率和决策水平。",
+      "take": "作为AI超级个体，Dayu可以从这种将AI落地为“行动”的实践中汲取灵感，思考如何利用OpenAI等大模型构建Agentic工作流，自动化生物信息学中的数据分析、文献综述和实验设计等环节。关注此类实际应用场景下的开源工具和框架，也是他寻找贡献或改进自身效率工具的切入点。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-31-02-datasette-llm-01a3",
+      "briefingId": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/30/datasette-llm/#atom-everything",
+      "title": "datasette-llm 0.1a3",
+      "summary": "`datasette-llm 0.1a3` 是一个将大型语言模型（LLM）能力集成到Datasette数据探索工具中的早期插件版本。它使用户能够利用LLM的自然语言处理能力，更直观、灵活地查询、分析和理解Datasette管理的数据。",
+      "take": "对于Dayu构建AI代理来说，`datasette-llm`提供了一个绝佳的工具，让代理能够以自然语言形式直接与结构化数据（如生物信息数据库）进行交互，实现数据查询和分析的自动化。鉴于其早期版本，这是一个非常好的机会去尝试，甚至可以参与其开源贡献，例如提出应用场景需求或提交代码，以加速其在实际工作流中的落地。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-31-03-llm-mrchatterbox-01",
+      "briefingId": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/30/llm-mrchatterbox-2/#atom-everything",
+      "title": "llm-mrchatterbox 0.1",
+      "summary": "llm-mrchatterbox 0.1 是一个新发布的、基于大型语言模型（LLM）的项目。从其名称和早期版本号（0.1）推测，它可能是一个旨在简化构建对话型AI应用或聊天机器人的基础工具或框架，目前正处于初期的开发和探索阶段。",
+      "take": "对于Dayu构建智能代理和自动化工作流而言，这个0.1版本的新库值得关注。它可能提供一个快速实现对话式交互（Agentic Workflows中用户与代理沟通的关键环节）的基础组件。作为一个极早期项目，这也意味着它有巨大的开源贡献潜力，Dayu可以深入研究其架构，并贡献代码以实现特定功能或工具集成。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-31-04-open-source-cad-in-the-browser-solvespace",
+      "briefingId": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://solvespace.com/webver.pl",
+      "title": "Open source CAD in the browser (Solvespace)",
+      "summary": "这篇文章介绍了开源CAD软件Solvespace如何在浏览器中运行，极大地提升了CAD设计的便捷性和易访问性。用户无需安装桌面应用即可在线进行复杂设计，降低了使用门槛。这种浏览器内的解决方案也为远程协作和未来自动化设计流程提供了新的可能性。",
+      "take": "对于Dayu而言，浏览器内的开源CAD工具如Solvespace，是构建AI智能体实现设计自动化、参数优化或根据自然语言生成草图的绝佳工具。同时，其开源属性也提供了宝贵的贡献机会，Dayu可以尝试开发API接口或自动化脚本，将其无缝集成到Agentic工作流中，以提升效率并扩展AI工具集。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-31-05-anthropic-claude-code-users-hitting-usage-limits-way-faster-than-expected",
+      "briefingId": "rss-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.theregister.com/2026/03/31/anthropic_claude_code_limits/",
+      "title": "Anthropic: Claude Code users hitting usage limits 'way faster than expected'",
+      "summary": "Anthropic报告称，使用Claude进行代码生成和辅助的用户比预期更快地达到了使用上限。这表明AI在编程领域的强大需求和用户对其高效性的高度认可，也反映出AI服务在资源分配上的挑战。",
+      "take": "对于Dayu来说，这意味着AI代码生成工具（如Claude）在自动化和效率提升方面潜力巨大，是构建代理和工作流的核心。但同时，也需关注API使用限制，可以考虑如何智能管理多模型调用或探索开源/本地化代码生成方案以规避此类瓶颈，甚至为开源项目贡献相关的API管理或模型调度策略工具。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-31-trend-01-anthropic-npm",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@HankAI 等",
+      "sourceUrl": "https://x.com/hank_aibtc/status/2038919948370616330",
+      "title": "Anthropic 在发布 npm 包时",
+      "summary": "Anthropic 在发布 npm 包时，因失误意外泄露了 Claude Code 的源代码，引发社区对其精妙内存架构的积极分析和讨论。",
+      "take": "Anthropic 在发布 npm 包时，因失误意外泄露了 Claude Code 的源代码，引发社区对其精妙内存架构的积极分析和讨论。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-31-trend-02-ai-agent",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@David Roberts",
+      "sourceUrl": "https://x.com/recap_david/status/2038756254818959795",
+      "title": "人们可能尚未完全理解 AI Agent 的深远影响",
+      "summary": "人们可能尚未完全理解 AI Agent 的深远影响：未来所有应用程序都将能构建一个通过 UI (用户界面) 自学习使用自身功能的 Agent，这将带来软件交互的革命性变化。",
+      "take": "人们可能尚未完全理解 AI Agent 的深远影响：未来所有应用程序都将能构建一个通过 UI (用户界面) 自学习使用自身功能的 Agent，这将带来软件交互的革命性变化。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-31-tools-01-agentscope-python",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Hasan Toor",
+      "sourceUrl": "https://x.com/hasantoxr/status/2036531659378663490",
+      "title": "中国发布了一个名为 AgentScope 的开源 Python 框架",
+      "summary": "中国发布了一个名为 AgentScope 的开源 Python 框架，用于构建 AI Agent，集成了可视化 Agent 设计、多智能体协同工具 (MCP)、记忆、RAG 和推理功能。",
+      "take": "中国发布了一个名为 AgentScope 的开源 Python 框架，用于构建 AI Agent，集成了可视化 Agent 设计、多智能体协同工具 (MCP)、记忆、RAG 和推理功能。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-31-tools-02-ai-agent",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2038258626641719740",
+      "title": "全球最大的 AI Agent 集成数据库被开源",
+      "summary": "全球最大的 AI Agent 集成数据库被开源，涵盖 250 多个应用的 47,000 多个 Agent 操作，旨在防止 Agent 产生 API 知识上的“幻觉”。",
+      "take": "全球最大的 AI Agent 集成数据库被开源，涵盖 250 多个应用的 47,000 多个 Agent 操作，旨在防止 Agent 产生 API 知识上的“幻觉”。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-31-opinion-01-andrej-karpathy",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Haider.",
+      "sourceUrl": "https://x.com/slow_developer/status/2035090249341444521",
+      "title": "Andrej Karpathy 指出",
+      "summary": "Andrej Karpathy 指出，AI Agent 失败通常是“技能问题”而非“能力问题”，强调指令、记忆工具和并行化设置的重要性。",
+      "take": "Andrej Karpathy 指出，AI Agent 失败通常是“技能问题”而非“能力问题”，强调指令、记忆工具和并行化设置的重要性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-31-opinion-02-agent",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2035096653594861970",
+      "title": "对 Agent 系统和开发工具创始人而言",
+      "summary": "对 Agent 系统和开发工具创始人而言，用户不会为原始 Markdown 付费，但会为编排、托管、更新等增值服务买单，这才是构建商业模式的关键。",
+      "take": "对 Agent 系统和开发工具创始人而言，用户不会为原始 Markdown 付费，但会为编排、托管、更新等增值服务买单，这才是构建商业模式的关键。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-31-opinion-03-arc-agi-3",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@ARC Prize",
+      "sourceUrl": "https://x.com/arcprize/status/2036860080541589529",
+      "title": "发布 ARC-AGI-3",
+      "summary": "发布 ARC-AGI-3，这是一个未饱和的 Agentic 智能基准测试，人类得分 100%，而 AI 不足 1%，凸显了当前 AGI 与人类智能之间的巨大差距。",
+      "take": "发布 ARC-AGI-3，这是一个未饱和的 Agentic 智能基准测试，人类得分 100%，而 AI 不足 1%，凸显了当前 AGI 与人类智能之间的巨大差距。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-31-news-01-npm-http-axios",
+      "briefingId": "x-2026-03-31",
+      "date": "2026-03-31",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2038849654423798197",
+      "title": "npm 的流行 HTTP 客户端库 `axios` 遭遇供应链攻击",
+      "summary": "npm 的流行 HTTP 客户端库 `axios` 遭遇供应链攻击，影响 3 亿周下载量，再次凸显开源组件安全的重要性。",
+      "take": "npm 的流行 HTTP 客户端库 `axios` 遭遇供应链攻击，影响 3 亿周下载量，再次凸显开源组件安全的重要性。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "Claude Code 源码意外泄露，其精妙的内存架构引发技术社区热议，为开发者提供了宝贵的学习资料。",
+    "AI Agent 工具与框架正快速发展，工程师工作模式已从编写代码转向对 Agent 的管理和编排，以自动化更复杂的宏观任务。",
+    "AI Agent 领域蕴藏巨大商业潜力，特别是通过 UI 自学习、跨应用集成以及提供 Agent 编排、托管等增值服务，为创业者和企业带来新机遇。"
+  ],
+  "xActionItems": [
+    "深入研究 Claude Code 泄露的源码，特别是其内存管理机制，以获取构建高效 AI 系统的灵感和最佳实践。",
+    "探索 AgentScope 等新兴的 AI Agent 框架和工具，尝试构建一个通过 UI 自学习的 Agent 或集成多应用的工作流。",
+    "关注 AI Agent 商业模式，思考如何将编排、托管、分析等服务打包提供，抓住新商业模式的机遇。"
+  ]
+}

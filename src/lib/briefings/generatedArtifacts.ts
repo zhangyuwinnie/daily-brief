@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import type { AudioProvider, BriefingRecord, DailyAudio, Insight, SourceType } from "../../types/models";
 import { normalizeParsedBriefing } from "./normalizeParsedBriefing";
@@ -279,6 +279,7 @@ export function validateGeneratedArtifacts(artifacts: GeneratedArtifacts) {
 
 export async function writeGeneratedArtifacts(artifacts: GeneratedArtifacts, outputDir: string) {
   await mkdir(outputDir, { recursive: true });
+  const briefingsOutputDir = join(outputDir, "briefings");
 
   const payloads = [
     { fileName: OUTPUT_FILE_NAMES[0], data: artifacts.briefingsIndex },
@@ -291,6 +292,16 @@ export async function writeGeneratedArtifacts(artifacts: GeneratedArtifacts, out
   for (const payload of payloads) {
     const filePath = join(outputDir, payload.fileName);
     await writeFile(filePath, `${JSON.stringify(payload.data, null, 2)}\n`, "utf8");
+    writtenPaths.push(filePath);
+  }
+
+  await rm(briefingsOutputDir, { recursive: true, force: true });
+  await mkdir(briefingsOutputDir, { recursive: true });
+
+  for (const date of artifacts.briefingsIndex.availableDates) {
+    const dayRecord = artifacts.briefingsByDate[date];
+    const filePath = join(briefingsOutputDir, `${date}.json`);
+    await writeFile(filePath, `${JSON.stringify(dayRecord, null, 2)}\n`, "utf8");
     writtenPaths.push(filePath);
   }
 

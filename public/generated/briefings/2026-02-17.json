@@ -1,0 +1,36 @@
+{
+  "date": "2026-02-17",
+  "briefings": [
+    {
+      "id": "rss-2026-02-17",
+      "date": "2026-02-17",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-17",
+      "filePath": "2026-02-17.md",
+      "summaryTopline": "Improving Deep Agents with Harness Engineering",
+      "insightIds": [
+        "rss-2026-02-17-01-improving-deep-agents-with-harness-engineering"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-17-01-improving-deep-agents-with-harness-engineering",
+      "briefingId": "rss-2026-02-17",
+      "date": "2026-02-17",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.dev/improving-deep-agents-with-harness-engineering/",
+      "title": "Improving Deep Agents with Harness Engineering",
+      "summary": "LangChain 团队分享了他们如何不更换模型（仅用 GPT-5.2-Codex），仅通过改进“Agent 外壳”（Harness Engineering），就将 Coding Agent 在 Terminal Bench 2.0 的得分从 52.8% 提升至 66.5%（进入 Top 5）。核心改进包括：1) **自动化 Trace 分析**：用另一个 Agent 分析失败日志并提出 Prompt 修改建议；2) **强制自我验证**：在 Agent 退出前通过中间件拦截，强制其运行测试；3) **死循环检测**：检测到反复修改同一文件无果时，强制 Agent 暂停并重新规划；4) **算力分配**：在“规划”和“验证”阶段分配高推理算力，而在“编码实现”阶段使用标准算力。",
+      "take": "这篇文章对 Dayu 构建自己的 Agent 极具指导意义，尤其是那个 **\"Trace Analyzer Skill\"** —— 这不仅是一个功能，更是一种“用 Agent 迭代 Agent”的方法论。你可以尝试在你目前的 Pi/OpenClaw 项目中引入类似的 **Middleware** 概念（比如在 `daily_briefing.js` 里加一个“空结果检测中间件”），而不是只盯着 Prompt 调优。这也是从“写脚本”进阶到“构建系统”的关键一步。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ]
+}

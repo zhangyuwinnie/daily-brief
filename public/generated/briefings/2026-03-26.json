@@ -1,0 +1,181 @@
+{
+  "date": "2026-03-26",
+  "briefings": [
+    {
+      "id": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-26",
+      "filePath": "2026-03-26.md",
+      "summaryTopline": "How Middleware Lets You Customize Your Agent Harness",
+      "insightIds": [
+        "rss-2026-03-26-01-how-middleware-lets-you-customize-your-agent-harness",
+        "rss-2026-03-26-02-skills-in-langsmith-fleet",
+        "rss-2026-03-26-03-inside-our-approach-to-the-model-spec",
+        "rss-2026-03-26-04-introducing-the-openai-safety-bug-bounty-program",
+        "rss-2026-03-26-05-vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini",
+        "rss-2026-03-26-06-datasette-llm-01a1",
+        "rss-2026-03-26-07-litellm-hack-were-you-one-of-the-47000"
+      ]
+    },
+    {
+      "id": "x-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-26",
+      "filePath": "x_briefing_2026-03-26.md",
+      "summaryTopline": "How Middleware Lets You Customize Your Agent Harness",
+      "insightIds": [
+        "x-2026-03-26-trend-01-x"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-26-01-how-middleware-lets-you-customize-your-agent-harness",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/",
+      "title": "How Middleware Lets You Customize Your Agent Harness",
+      "summary": "本文探讨了代理线束（Agent Harness），它是连接大型语言模型（LLM）与外部环境、让代理执行任务的关键。文章重点介绍“代理中间件”（Agent Middleware）如何赋能开发者，使其能够高度定制化这些线束，从而构建满足特定应用需求的智能代理。这对于实现灵活且高效的AI工作流至关重要。",
+      "take": "Dayu在构建生物信息领域的AI代理时，理解代理中间件至关重要。这能让他为特定任务深度定制Agent线束，实现更高效、精准的自动化Agentic Workflow，同时也是参与开源Agent框架贡献的好切入点。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-26-02-skills-in-langsmith-fleet",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/skills-in-langsmith-fleet/",
+      "title": "Skills in LangSmith Fleet",
+      "summary": "Fleet now supports shareable skills, so you equip agents across your team with knowledge for specialized tasks. (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-26-03-inside-our-approach-to-the-model-spec",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/our-approach-to-the-model-spec",
+      "title": "Inside our approach to the Model Spec",
+      "summary": "OpenAI发布了其“模型规范 (Model Spec)”，这是一个公开的框架，旨在定义和指导AI模型的行为。它致力于在AI系统进步过程中，平衡安全性、用户自由度和问责制，确保模型的负责任发展。",
+      "take": "对于Dayu构建AI代理和自动化工作流而言，理解这个模型规范至关重要。它能帮助Dayu在设计代理行为时，明确安全、自由与责任的边界，从而构建出更可靠、符合伦理的智能体，提升Agentic Workflows的质量与接受度。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-26-04-introducing-the-openai-safety-bug-bounty-program",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/safety-bug-bounty",
+      "title": "Introducing the OpenAI Safety Bug Bounty program",
+      "summary": "OpenAI 推出了安全漏洞赏金计划，旨在发现并解决人工智能的滥用和安全风险。该计划特别关注代理（agentic）漏洞、提示注入和数据泄露等关键安全问题。",
+      "take": "对于Dayu构建AI代理的工作流来说，这个计划提供了重要的安全视角。他不仅要关注如何让代理更智能，更要学习并理解“代理（agentic）漏洞”以构建更安全可靠的自动化系统，这甚至提供了潜在的贡献机会。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-26-05-vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini/",
+      "title": "Vibe Coding XR: Accelerating AI + XR prototyping with XR Blocks and Gemini",
+      "summary": "Human-Computer Interaction and Visualization (Automated Snippet)",
+      "take": "Matched keywords: Gemini.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-26-06-datasette-llm-01a1",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything",
+      "title": "datasette-llm 0.1a1",
+      "summary": "No summary available. (Automated Snippet)",
+      "take": "Matched keywords: LLM.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-26-07-litellm-hack-were-you-one-of-the-47000",
+      "briefingId": "rss-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything",
+      "title": "LiteLLM Hack: Were You One of the 47,000?",
+      "summary": "文章标题“LiteLLM Hack: Were You One of the 47,000?”强烈暗示流行的LLM统一接口库LiteLLM遭遇了安全事件或数据泄露，可能影响了多达47,000名用户。对于依赖LiteLLM连接多种大模型的开发者来说，这警示了在构建AI应用时关注供应链安全及数据防护的重要性。",
+      "take": "Dayu在使用LiteLLM开发Agent或自动化工作流时，应立即审视其环境是否受此安全事件影响，并评估所用AI工具链的整体安全性。这不仅是一个提高自身安全意识和实践的机会，也可能是在LiteLLM等关键开源项目中发现安全改进点并进行贡献的机会。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-26-trend-01-x",
+      "briefingId": "x-2026-03-26",
+      "date": "2026-03-26",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "title": "本轮 X 抓取失败",
+      "summary": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "take": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ],
+  "xToplines": [
+    "How Middleware Lets You Customize Your Agent Harness",
+    "Skills in LangSmith Fleet",
+    "Inside our approach to the Model Spec"
+  ],
+  "xActionItems": [
+    "检查 Chrome 中 X 是否仍保持登录",
+    "5-10 分钟后重试 x brief",
+    "若连续失败，改用 RSS/HN briefing 作为当天输入"
+  ]
+}

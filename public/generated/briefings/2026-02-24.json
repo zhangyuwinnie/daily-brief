@@ -1,0 +1,401 @@
+{
+  "date": "2026-02-24",
+  "briefings": [
+    {
+      "id": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-24",
+      "filePath": "2026-02-24.md",
+      "summaryTopline": "Writing about Agentic Engineering Patterns",
+      "insightIds": [
+        "rss-2026-02-24-01-writing-about-agentic-engineering-patterns",
+        "rss-2026-02-24-02-multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont",
+        "rss-2026-02-24-03-making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems",
+        "rss-2026-02-24-04-deploying-open-source-vision-language-models-vlm-on-jetson",
+        "rss-2026-02-24-05-safely-inject-credentials-in-http-headers-with-vercel-sandbox"
+      ]
+    },
+    {
+      "id": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-02-24",
+      "filePath": "x_briefing_2026-02-24.md",
+      "summaryTopline": "**代理能力与现实审视**：当前许多“AI代理”多为高级任务执行器，真正的自主智能代理仍在发展中。开发者需批判性评估其真实能力，并注意上下文管理（如AGENTS.md）的潜在问题。",
+      "insightIds": [
+        "x-2026-02-24-trend-01-",
+        "x-2026-02-24-trend-02-ai",
+        "x-2026-02-24-trend-03-ai",
+        "x-2026-02-24-tools-01-anthropic",
+        "x-2026-02-24-tools-02-claude-skills",
+        "x-2026-02-24-tools-03-antigravity",
+        "x-2026-02-24-tools-04-qwen3-coder",
+        "x-2026-02-24-tools-05-llama-32",
+        "x-2026-02-24-tools-06-",
+        "x-2026-02-24-tools-07-claude-code",
+        "x-2026-02-24-opinion-01-",
+        "x-2026-02-24-opinion-02-agentsmd",
+        "x-2026-02-24-opinion-03-",
+        "x-2026-02-24-news-01-gemini-robotics-15",
+        "x-2026-02-24-news-02-evmbench"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-24-01-writing-about-agentic-engineering-patterns",
+      "briefingId": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything",
+      "title": "Writing about Agentic Engineering Patterns",
+      "summary": "这篇文章探讨了构建AI智能体的工程设计模式，旨在为开发者提供在设计和实现智能体系统时的最佳实践、架构原则和通用方法。理解这些模式有助于提高智能体的效率、可靠性和可扩展性，是 Dayu 打造自己AI助手生态的理论基石。",
+      "take": "对Dayu而言，掌握这些Agentic工程模式至关重要，它能指导他设计更健壮、更高效的智能体来自动化生物信息工作流，并识别现有开源Agent框架的改进点或贡献机会，加速其向“AI超级个体”的转型。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-24-02-multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont",
+      "briefingId": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/",
+      "title": "Multi-agent workflows often fail. Here’s how to engineer ones that don’t.",
+      "summary": "多智能体工作流常常失败，但本文指出其主要原因并非模型能力不足，而是缺乏合适的结构设计。文章将揭示三种关键的工程模式，以帮助工程师构建出稳定可靠的智能体系统。",
+      "take": "Dayu在构建和部署AI代理时，这篇内容提供了核心的方法论指导。学习这些可靠的工程模式能让Dayu避免智能体工作流的常见陷阱，确保其自动化系统稳定运行，从而更高效地将AI应用于生物信息学流程。他可以将这些模式作为评估现有Agent框架（如CrewAI, AutoGen）或设计更鲁棒的开源工具时的重要参考。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-24-03-making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems",
+      "briefingId": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
+      "title": "Making Wolfram tech available as a foundation tool for LLM systems",
+      "summary": "Wolfram 技术现已作为大型语言模型系统的基础工具推出，这意味着 LLM 能够直接调用 Wolfram 强大的计算能力和庞大的知识库。这能显著弥补 LLM 在精确计算、数据分析和复杂逻辑推理上的短板，大幅提升其可靠性和功能性。",
+      "take": "这为 Dayu 构建能执行复杂生物信息学计算和精确数据分析的 AI 智能体提供了强大支撑。他可以利用 Wolfram 能力在 LLM Agentic 工作流中实现自动化实验设计、数据验证等，大幅提升效率与准确性，同时探索开发特定领域连接器或工具的开源贡献机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-24-04-deploying-open-source-vision-language-models-vlm-on-jetson",
+      "briefingId": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
+      "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
+      "summary": "这篇文章探讨了如何在NVIDIA Jetson嵌入式平台上部署开源视觉语言模型（VLM）。这使得强大的VLM能力得以在边缘设备上运行，从而实现实时的图像理解与语言交互功能，对于需要在本地处理视觉和文本数据的AI应用场景具有重要指导意义。",
+      "take": "Dayu可将此技术作为构建具备“视觉”能力的边缘Agent的核心。通过在Jetson上部署开源VLM，他能为Agent赋能实时、本地的图像理解与语言交互能力，例如自动化监控实验室设备或分析显微图像，并且有机会参与到部署优化和生物信息学特定VLM模型的开源贡献中。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-24-05-safely-inject-credentials-in-http-headers-with-vercel-sandbox",
+      "briefingId": "rss-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/safely-inject-credentials-in-http-headers-with-vercel-sandbox",
+      "title": "Safely inject credentials in HTTP headers with Vercel Sandbox",
+      "summary": "Vercel Sandbox现支持自动向沙盒内代码发起的出站请求注入HTTP头部，确保API密钥和令牌等敏感凭证始终隔离在沙盒VM外部。这使得沙盒应用能安全调用认证服务，无需直接访问或管理凭证，显著提升了安全性。",
+      "take": "这项安全特性对Dayu构建AI代理（Agent）和自动化工作流至关重要。它提供了一种更安全的API凭证管理机制，让代理能放心地调用外部工具和认证服务，极大简化了Agentic Workflows的开发与部署，提升了系统整体的鲁棒性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-trend-01-",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Hasan Toor",
+      "title": "**从提示到部署**",
+      "summary": "**从提示到部署**：强调AI开发应从单纯的提示工程转向实际的系统部署与执行。",
+      "take": "**从提示到部署**：强调AI开发应从单纯的提示工程转向实际的系统部署与执行。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-02-24-trend-02-ai",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Action Model",
+      "title": "**AI代理重塑互联网**",
+      "summary": "**AI代理重塑互联网**：讨论AI代理对互联网生态的潜在变革及其引发的价值分配新模式。",
+      "take": "**AI代理重塑互联网**：讨论AI代理对互联网生态的潜在变革及其引发的价值分配新模式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-02-24-trend-03-ai",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Anthropic",
+      "title": "**AI流畅性指数**",
+      "summary": "**AI流畅性指数**：一项研究衡量人类与AI（Claude.ai）协作效率的指标，揭示了用户交互模式。",
+      "take": "**AI流畅性指数**：一项研究衡量人类与AI（Claude.ai）协作效率的指标，揭示了用户交互模式。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-02-24-tools-01-anthropic",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ihtesham Ali",
+      "title": "**Anthropic开源代理构建手册**",
+      "summary": "**Anthropic开源代理构建手册**：公开用于生产级AI代理的“Agent Skills for Context Engineering”指南，涵盖多代理架构及记忆系统。",
+      "take": "**Anthropic开源代理构建手册**：公开用于生产级AI代理的“Agent Skills for Context Engineering”指南，涵盖多代理架构及记忆系统。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-02-claude-skills",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Vaishnavi",
+      "title": "**Claude Skills深度指南**",
+      "summary": "**Claude Skills深度指南**：Anthropic提供33页指南，通过`.tool_code`文件构建一致且可复用的Claude工作流。",
+      "take": "**Claude Skills深度指南**：Anthropic提供33页指南，通过`.tool_code`文件构建一致且可复用的Claude工作流。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-03-antigravity",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Google DeepMind",
+      "title": "**Antigravity开发平台**",
+      "summary": "**Antigravity开发平台**：新的代理开发平台，AI代理可在编辑器、终端、浏览器间自主协作。",
+      "take": "**Antigravity开发平台**：新的代理开发平台，AI代理可在编辑器、终端、浏览器间自主协作。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-04-qwen3-coder",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Qwen",
+      "title": "**Qwen3-Coder代码模型**",
+      "summary": "**Qwen3-Coder代码模型**：发布强大的开源代理代码模型，支持超大上下文（256K原生，可扩展至1M）。",
+      "take": "**Qwen3-Coder代码模型**：发布强大的开源代理代码模型，支持超大上下文（256K原生，可扩展至1M）。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-05-llama-32",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@AI at Meta",
+      "title": "**Llama 3.2轻量级代理模型**",
+      "summary": "**Llama 3.2轻量级代理模型**：1B和3B参数模型，赋能设备端（on-device）代理应用，支持摘要、工具使用和RAG（检索增强生成），保障数据隐私。",
+      "take": "**Llama 3.2轻量级代理模型**：1B和3B参数模型，赋能设备端（on-device）代理应用，支持摘要、工具使用和RAG（检索增强生成），保障数据隐私。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-06-",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "title": "**代理式知识图谱构建课程**",
+      "summary": "**代理式知识图谱构建课程**：推荐通过AI代理团队构建知识图谱，以优化RAG系统。",
+      "take": "**代理式知识图谱构建课程**：推荐通过AI代理团队构建知识图谱，以优化RAG系统。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-tools-07-claude-code",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@尹珉",
+      "title": "**Claude-Code入门教程**",
+      "summary": "**Claude-Code入门教程**：分享了适合初学者的Claude-Code使用指南。",
+      "take": "**Claude-Code入门教程**：分享了适合初学者的Claude-Code使用指南。",
+      "topics": [
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-opinion-01-",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Sukh Sroay",
+      "title": "**警惕“伪代理”**",
+      "summary": "**警惕“伪代理”**：引用DeepMind论文指出，多数AI代理仍是高级任务执行器，而非真正智能。",
+      "take": "**警惕“伪代理”**：引用DeepMind论文指出，多数AI代理仍是高级任务执行器，而非真正智能。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-opinion-02-agentsmd",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@elvis",
+      "title": "**AGENTS.md文件优化**",
+      "summary": "**AGENTS.md文件优化**：研究提示，编码代理的上下文文件（AGENTS.md）并非越多越好，需谨慎设计。",
+      "take": "**AGENTS.md文件优化**：研究提示，编码代理的上下文文件（AGENTS.md）并非越多越好，需谨慎设计。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-opinion-03-",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DeepLearning.AI",
+      "title": "**代码代理新范式**",
+      "summary": "**代码代理新范式**：解释代码代理通过生成完整代码块工作，有别于一步一步的工具调用代理。",
+      "take": "**代码代理新范式**：解释代码代理通过生成完整代码块工作，有别于一步一步的工具调用代理。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-news-01-gemini-robotics-15",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Google DeepMind",
+      "title": "**Gemini Robotics 1.5**",
+      "summary": "**Gemini Robotics 1.5**：增强型代理系统，提升机器人在物理世界中的推理、规划和工具使用能力。",
+      "take": "**Gemini Robotics 1.5**：增强型代理系统，提升机器人在物理世界中的推理、规划和工具使用能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-02-24-news-02-evmbench",
+      "briefingId": "x-2026-02-24",
+      "date": "2026-02-24",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "title": "**EVMbench智能合约基准**",
+      "summary": "**EVMbench智能合约基准**：推出新的基准测试EVMbench，用于评估AI代理检测、利用及修补智能合约高危漏洞的能力。",
+      "take": "**EVMbench智能合约基准**：推出新的基准测试EVMbench，用于评估AI代理检测、利用及修补智能合约高危漏洞的能力。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**代理能力与现实审视**：当前许多“AI代理”多为高级任务执行器，真正的自主智能代理仍在发展中。开发者需批判性评估其真实能力，并注意上下文管理（如AGENTS.md）的潜在问题。",
+    "**Anthropic的代理构建蓝图**：Anthropic发布了详尽的Claude Skills指南及开源的“Agent Skills for Context Engineering”手册，为构建稳定、可复用的生产级AI代理提供了关键实践。",
+    "**前沿代理工具与平台涌现**：Google DeepMind、Meta、Qwen等推出新模型、开发平台（如Antigravity）和机器人系统，显著拓展了代理在代码生成、设备端应用及物理世界中的边界。"
+  ],
+  "xActionItems": [
+    "**研读Anthropic代理实践**：深入学习Anthropic的“Agent Skills for Context Engineering”及Claude Skills指南，将最佳实践应用于自身AI代理项目。",
+    "**审慎评估与设计AI代理**：在构建或选择代理方案时，警惕“高级任务执行器”的局限，并优化上下文文件（如AGENTS.md）设计，追求真正智能的代理能力。",
+    "**探索新一代代理开发工具**：积极试用Google Antigravity、Qwen3-Coder或Llama 3.2等新平台与模型，体验并集成前沿的代理开发能力。"
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "date": "2026-03-10",
+  "briefings": [
+    {
+      "id": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-10",
+      "filePath": "2026-03-10.md",
+      "summaryTopline": "How we built LangChain’s GTM Agent",
+      "insightIds": [
+        "rss-2026-03-10-01-how-we-built-langchains-gtm-agent",
+        "rss-2026-03-10-02-openai-to-acquire-promptfoo",
+        "rss-2026-03-10-03-under-the-hood-security-architecture-of-github-agentic-workflows",
+        "rss-2026-03-10-04-redox-os-has-adopted-a-certificate-of-origin-policy-and-a-strict-no-llm-policy",
+        "rss-2026-03-10-05-no-it-doesnt-cost-anthropic-5k-per-claude-code-user"
+      ]
+    },
+    {
+      "id": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-10",
+      "filePath": "x_briefing_2026-03-10.md",
+      "summaryTopline": "**AI智能体能力与安全性并行：** Anthropic发布Claude Skills构建指南，OpenAI收购Promptfoo以强化智能体安全测试，显示行业对提升智能体效能和保障安全的高度关注。",
+      "insightIds": [
+        "x-2026-03-10-trend-01-advanced-machine-intelligence-ami-labs-103",
+        "x-2026-03-10-trend-02-gpt-54-thinkinggpt-54-pro",
+        "x-2026-03-10-trend-03-alphago",
+        "x-2026-03-10-trend-04-coinbase-ceo",
+        "x-2026-03-10-tools-01-anthropic32claude-skills",
+        "x-2026-03-10-tools-02-claude-codeskillmd",
+        "x-2026-03-10-tools-03-promptfoo",
+        "x-2026-03-10-tools-04-claudevisa",
+        "x-2026-03-10-tools-05-exom1-ultra-macs",
+        "x-2026-03-10-tools-06-agentic-ai",
+        "x-2026-03-10-tools-07-aisemantic-caching-for-ai-agents",
+        "x-2026-03-10-opinion-01-",
+        "x-2026-03-10-opinion-02-codexautoresearch",
+        "x-2026-03-10-opinion-03-claude-code"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-10-01-how-we-built-langchains-gtm-agent",
+      "briefingId": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-we-built-langchains-gtm-agent/",
+      "title": "How we built LangChain’s GTM Agent",
+      "summary": "LangChain成功构建了一个GTM（市场推广）代理，通过自动化流程将潜在客户转化率提升了250%，同时每月为每位销售代表节省了高达40小时的工作时间。这展示了AI代理在实际业务场景中实现显著效率提升和量化成果的巨大潜力。",
+      "take": "Dayu可以从这篇文章中学习LangChain构建高价值代理的实战经验，尤其是如何通过代理实现250%转化率提升和显著工时节省。这为Dayu在生物信息学或个人效率领域设计自动化代理提供了思路，并指明了LangChain这一关键工具的应用潜力与可能的开源贡献方向。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-10-02-openai-to-acquire-promptfoo",
+      "briefingId": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-to-acquire-promptfoo",
+      "title": "OpenAI to acquire Promptfoo",
+      "summary": "OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development. (Automated Snippet)",
+      "take": "Matched keywords: OpenAI.",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-10-03-under-the-hood-security-architecture-of-github-agentic-workflows",
+      "briefingId": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/",
+      "title": "Under the hood: Security architecture of GitHub Agentic Workflows",
+      "summary": "GitHub发布了其Agentic Workflows的安全架构细节，深入阐述了这些工作流如何通过隔离、约束输出和全面的日志记录来构建。这确保了AI代理能够在GitHub Actions中安全、可靠地运行，为团队在开发和部署AI代理时提供了重要的安全保障。",
+      "take": "对于Dayu来说，深入了解GitHub Agentic Workflows的底层安全设计非常有价值。这意味着你可以在GitHub Actions中更安心地部署和运行自己构建的AI代理，利用其提供的隔离和安全措施，专注于代理功能开发，而无需过度担心底层执行环境的安全问题，从而提高构建和自动化工作流的效率。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-10-04-redox-os-has-adopted-a-certificate-of-origin-policy-and-a-strict-no-llm-policy",
+      "briefingId": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
+      "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: LLM.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-10-05-no-it-doesnt-cost-anthropic-5k-per-claude-code-user",
+      "briefingId": "rss-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
+      "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
+      "summary": "这篇文章澄清了Anthropic旗下Claude Code工具的实际使用成本并非传闻中的高昂，这对于开发者和潜在用户来说是一个积极信号。它可能意味着利用Claude进行编程辅助或自动化任务的门槛比想象中要低。",
+      "take": "对于Dayu而言，了解Claude Code的真实成本有助于他更实际地规划和构建基于Anthropic模型的AI智能体。如果成本合理，他可以将其作为生成生物信息学脚本、自动化编码工作流的强大工具，甚至开发开源的领域特定助手。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-trend-01-advanced-machine-intelligence-ami-labs-103",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Yann LeCun",
+      "sourceUrl": "https://x.com/ylecun/status/2031268686984527936",
+      "title": "宣布新创公司Advanced Machine Intelligence (AMI Labs) 完成10.3亿美元种子轮融资",
+      "summary": "宣布新创公司Advanced Machine Intelligence (AMI Labs) 完成10.3亿美元种子轮融资，是欧洲公司中最大的一笔，并正在招聘人才。",
+      "take": "宣布新创公司Advanced Machine Intelligence (AMI Labs) 完成10.3亿美元种子轮融资，是欧洲公司中最大的一笔，并正在招聘人才。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-10-trend-02-gpt-54-thinkinggpt-54-pro",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "sourceUrl": "https://x.com/OpenAI/status/2029620619743219811",
+      "title": "正式推出GPT-5.4 Thinking和GPT-5.4 Pro",
+      "summary": "正式推出GPT-5.4 Thinking和GPT-5.4 Pro，并已在API和Codex中提供。GPT-5.4在推理、编码和agentic工作流方面带来显著进步。",
+      "take": "正式推出GPT-5.4 Thinking和GPT-5.4 Pro，并已在API和Codex中提供。GPT-5.4在推理、编码和agentic工作流方面带来显著进步。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-10-trend-03-alphago",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Demis Hassabis",
+      "sourceUrl": "https://x.com/demishassabis/status/2031387915348062567",
+      "title": "纪念AlphaGo十周年",
+      "summary": "纪念AlphaGo十周年，指出其里程碑式的胜利预示着AI技术在科学等真实世界问题中的应用，并启发了AGI的构建。",
+      "take": "纪念AlphaGo十周年，指出其里程碑式的胜利预示着AI技术在科学等真实世界问题中的应用，并启发了AGI的构建。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-10-trend-04-coinbase-ceo",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@TukiFromKL",
+      "sourceUrl": "https://x.com/TukiFromKL/status/2031056949626736886",
+      "title": "引用Coinbase CEO观点",
+      "summary": "引用Coinbase CEO观点，预测AI智能体未来在交易数量上将超越人类，并强调它们已拥有加密货币钱包，能绕过传统金融身份验证。",
+      "take": "引用Coinbase CEO观点，预测AI智能体未来在交易数量上将超越人类，并强调它们已拥有加密货币钱包，能绕过传统金融身份验证。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-01-anthropic32claude-skills",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@God of Prompt",
+      "sourceUrl": "https://x.com/godofprompt/status/2031055118838411600",
+      "title": "消息称Anthropic发布了32页的Claude Skills构建指南",
+      "summary": "消息称Anthropic发布了32页的Claude Skills构建指南，允许用户一次性教会Claude其精确工作流程，并在Claude.ai、Claude Code和API中重复执行。",
+      "take": "消息称Anthropic发布了32页的Claude Skills构建指南，允许用户一次性教会Claude其精确工作流程，并在Claude.ai、Claude Code和API中重复执行。",
+      "topics": [
+        "Coding Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-02-claude-codeskillmd",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@alphaXiv",
+      "sourceUrl": "https://x.com/askalphaxiv/status/2031120122619060445",
+      "title": "为Claude Code引入了SKILL.md",
+      "summary": "为Claude Code引入了SKILL.md，可从alphaXiv获取结构化、AI友好的论文概览，避免直接读取PDF的繁琐。",
+      "take": "为Claude Code引入了SKILL.md，可从alphaXiv获取结构化、AI友好的论文概览，避免直接读取PDF的繁琐。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-03-promptfoo",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "sourceUrl": "https://x.com/OpenAI/status/2031052793835106753",
+      "title": "宣布收购Promptfoo",
+      "summary": "宣布收购Promptfoo，其技术将用于强化OpenAI Frontier的agentic安全测试和评估能力，Promptfoo将继续保持开源。",
+      "take": "宣布收购Promptfoo，其技术将用于强化OpenAI Frontier的agentic安全测试和评估能力，Promptfoo将继续保持开源。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-04-claudevisa",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2030678680431628601",
+      "title": "宣布Claude智能体现在可以按需创建一次性Visa卡",
+      "summary": "宣布Claude智能体现在可以按需创建一次性Visa卡，实现了智能体在不接触真实卡片信息的情况下在线支付。",
+      "take": "宣布Claude智能体现在可以按需创建一次性Visa卡，实现了智能体在不接触真实卡片信息的情况下在线支付。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-05-exom1-ultra-macs",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@alexocheema",
+      "sourceUrl": "https://x.com/alexocheema/status/2030522524644065741",
+      "title": "中国一所学校利用EXO（一个用于集群计算的工具）将M1 Ultra Macs集群化",
+      "summary": "中国一所学校利用EXO（一个用于集群计算的工具）将M1 Ultra Macs集群化，并部署本地AI智能体处理学校资料，这一实践在中国社交媒体上走红。",
+      "take": "中国一所学校利用EXO（一个用于集群计算的工具）将M1 Ultra Macs集群化，并部署本地AI智能体处理学校资料，这一实践在中国社交媒体上走红。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-06-agentic-ai",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@AndrewYNg",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1975614372799283423",
+      "title": "宣布推出全新的“Agentic AI”课程",
+      "summary": "宣布推出全新的“Agentic AI”课程，教授构建AI智能体的四种关键设计模式，如“反思（Reflection）”，以应对市场对智能体开发技能的旺盛需求。",
+      "take": "宣布推出全新的“Agentic AI”课程，教授构建AI智能体的四种关键设计模式，如“反思（Reflection）”，以应对市场对智能体开发技能的旺盛需求。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-tools-07-aisemantic-caching-for-ai-agents",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DeepLearningAI",
+      "sourceUrl": "https://x.com/DeepLearningAI/status/1991182265007649020",
+      "title": "发布新课程“AI智能体语义缓存”（Semantic Caching for AI Agents）",
+      "summary": "发布新课程“AI智能体语义缓存”（Semantic Caching for AI Agents），旨在帮助AI智能体识别并避免对语义相同的问题进行重复的API调用。",
+      "take": "发布新课程“AI智能体语义缓存”（Semantic Caching for AI Agents），旨在帮助AI智能体识别并避免对语义相同的问题进行重复的API调用。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-opinion-01-",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Yuchenj_UW",
+      "sourceUrl": "https://x.com/Yuchenj_UW/status/2031044694441148709",
+      "title": "通过测试发现",
+      "summary": "通过测试发现，GPT-5.4 xhigh在自动研究（autoresearch）任务中遵循指令的能力不如Claude Opus 4.6，后者运行12小时完成了118项实验，而前者仅6项后就停止。",
+      "take": "通过测试发现，GPT-5.4 xhigh在自动研究（autoresearch）任务中遵循指令的能力不如Claude Opus 4.6，后者运行12小时完成了118项实验，而前者仅6项后就停止。",
+      "topics": [
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-opinion-02-codexautoresearch",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2031083551387701698",
+      "title": "确认Codex与自动研究（autoresearch）的兼容性问题",
+      "summary": "确认Codex与自动研究（autoresearch）的兼容性问题，并指出需要OpenAI提供类似\"/loop\"的功能来改善。",
+      "take": "确认Codex与自动研究（autoresearch）的兼容性问题，并指出需要OpenAI提供类似\"/loop\"的功能来改善。",
+      "topics": [
+        "Coding Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-10-opinion-03-claude-code",
+      "briefingId": "x-2026-03-10",
+      "date": "2026-03-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@thejayden",
+      "sourceUrl": "https://x.com/thejayden/status/2029899328400109732",
+      "title": "推荐了一篇关于利用Claude Code构建“首席参谋”的案例文章",
+      "summary": "推荐了一篇关于利用Claude Code构建“首席参谋”的案例文章，称其为他见过的关于智能体系统最佳的实际应用范例之一。",
+      "take": "推荐了一篇关于利用Claude Code构建“首席参谋”的案例文章，称其为他见过的关于智能体系统最佳的实际应用范例之一。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI智能体能力与安全性并行：** Anthropic发布Claude Skills构建指南，OpenAI收购Promptfoo以强化智能体安全测试，显示行业对提升智能体效能和保障安全的高度关注。",
+    "**Claude Code成为智能体开发核心：** Claude Code及Anthropic Skills正成为构建高自主性AI智能体的关键工具，而GPT-5.4在特定agentic工作流中的表现仍需优化。",
+    "**智能体应用场景加速拓展：** 从AI智能体自主支付到企业内部知识管理，再到教育和研究辅助，AI智能体正迅速融入多样化应用场景，其金融交易潜力尤其值得关注。"
+  ],
+  "xActionItems": [
+    "详细阅读Anthropic发布的Claude Skills构建指南，尝试为自己的Claude应用场景定制一个Skills，以实现自动化工作流。",
+    "关注OpenAI收购Promptfoo后的技术整合及安全评估工具的更新，考虑将其引入自己的AI智能体项目，加强安全性和鲁棒性测试。",
+    "如果对AI智能体开发感兴趣，可以深入学习Andrew Ng的“Agentic AI”系列课程，或探索DeepLearning.AI的“AI智能体语义缓存”课程，优化智能体效率。"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-02-26",
+  "briefings": [
+    {
+      "id": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-02-26",
+      "filePath": "2026-02-26.md",
+      "summaryTopline": "You don’t know what your agent will do until it’s in production",
+      "insightIds": [
+        "rss-2026-02-26-01-you-dont-know-what-your-agent-will-do-until-its-in-production",
+        "rss-2026-02-26-02-openai-codex-and-figma-launch-seamless-code-to-design-experience",
+        "rss-2026-02-26-03-google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
+        "rss-2026-02-26-04-anthropic-ditches-its-core-safety-promise",
+        "rss-2026-02-26-05-just-bash-bash-for-agents",
+        "rss-2026-02-26-06-how-openevidence-built-a-healthcare-ai-that-physicians-actually-trust"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-02-26-01-you-dont-know-what-your-agent-will-do-until-its-in-production",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/",
+      "title": "You don’t know what your agent will do until it’s in production",
+      "summary": "这篇文章指出，AI Agent上线后的监控与传统软件大相径庭，因为输入无限、行为非确定性且质量体现在对话交互中。它详细阐述了需要监控的关键点、如何规模化评估Agent表现，并强调了利用生产环境追踪数据进行持续改进的重要性。",
+      "take": "Dayu在构建自动化Agent工作流时，需重视生产环境的Agent监控和持续优化。这要求在设计时就考虑可观测性与评估机制，可探索LangSmith或相关开源库来收集生产轨迹并改进Agent，甚至有机会为开源Agent评估工具贡献代码。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-26-02-openai-codex-and-figma-launch-seamless-code-to-design-experience",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/figma-partnership",
+      "title": "OpenAI Codex and Figma launch seamless code-to-design experience",
+      "summary": "OpenAI Codex 与 Figma 携手推出深度集成，旨在实现代码与设计的无缝衔接。通过此集成，开发团队能更高效地在代码实现和 Figma 画布间切换，极大加速产品的迭代与交付流程。",
+      "take": "这项集成突显了AI模型（如Codex）作为核心工具，能驱动跨领域（代码到设计）Agentic Workflow的巨大潜力。Dayu可从中汲取灵感，构建一个智能体，将AI代码生成能力与生物信息学可视化库（如Matplotlib、Plotly）结合，实现需求驱动的实验数据报告或交互式应用界面的自动化生成，这将是提升效率和探索开源贡献的绝佳方向。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-26-03-google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything",
+      "title": "Google API Keys Weren't Secrets. But then Gemini Changed the Rules.",
+      "summary": "谷歌Gemini的推出改变了其API密钥的使用规则。过去，许多开发者并未将Google API密钥视为严格的秘密，可能存在一些不规范的使用方式。现在，Gemini要求对API密钥采取更严格的安全措施，开发者需要更新其安全实践以适应新规范。",
+      "take": "对于Dayu构建AI Agent和自动化工作流来说，这意味着需要特别关注API密钥的安全管理。在使用Gemini或其他Google AI服务时，务必将API密钥视为敏感信息，采用环境变量、密钥管理服务等最佳实践来确保Agent的安全性与合规性，避免因密钥泄露导致的服务中断。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-02-26-04-anthropic-ditches-its-core-safety-promise",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.cnn.com/2026/02/25/tech/anthropic-safety-policy-change",
+      "title": "Anthropic ditches its core safety promise",
+      "summary": "Anthropic似乎已放弃其最初坚持的核心AI安全承诺。这可能预示着该公司在AI产品开发和商业化策略上将采取更灵活、更积极的姿态，而非以往严格的安全优先方针。",
+      "take": "对Dayu而言，Anthropic若放松安全限制，其模型（如Claude）在Agentic工作流中可能更具灵活性和效能。Dayu应密切关注Claude在工具使用（Tool Use）和RAG方面的更新，这可能解锁过去受限的新应用场景，但也需注意Agent设计时的责任与鲁棒性。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-26-05-just-bash-bash-for-agents",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/vercel-labs/just-bash",
+      "title": "just-bash: Bash for Agents",
+      "summary": "`just-bash` 旨在让 AI 智能体能够高效地利用 Bash 脚本和命令作为工具，从而无缝地执行系统级操作和调用现有命令行程序。它为智能体提供了一种简洁、强大的方式来直接与操作系统交互，极大地扩展了智能体的自动化能力和工具集成范围。",
+      "take": "对于 Dayu 而言，`just-bash` 提供了一个极佳的途径，让 AI 智能体直接调用并编排如 `samtools`、`bedtools` 等大量生物信息学命令行工具，极大地简化了 Agentic 工作流中复杂的工具使用和自动化流程。他可以尝试用它来构建智能化的数据处理 Agent，并有机会贡献特定领域的工具封装或功能优化。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-02-26-06-how-openevidence-built-a-healthcare-ai-that-physicians-actually-trust",
+      "briefingId": "rss-2026-02-26",
+      "date": "2026-02-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust",
+      "title": "How OpenEvidence built a healthcare AI that physicians actually trust",
+      "summary": "OpenEvidence的医疗AI在TikTok上迅速走红，展现了其强大的用户吸引力。更重要的是，即使在用户量激增的情况下，其系统依然保持稳定、响应迅速且错误率极低，成功构建了医生真正信任的AI应用。",
+      "take": "Dayu在构建生物信息AI Agent时，可重点学习OpenEvidence如何通过强大的工程实践（如系统稳定性、低错误率）在敏感领域建立用户信任。这提示Dayu在设计Agentic Workflow时，不仅要关注AI模型本身，更要思考如何保障系统在高负载下的可靠性、输出的可解释性（可结合RAG），并与现有工具无缝集成，从而提升自动化流程的效率和可信度。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

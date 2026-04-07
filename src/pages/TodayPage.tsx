@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import { useOutletContext, useSearchParams } from "react-router-dom";
 import type { AppOutletContext } from "../app/outlet-context";
 import { AudioPlayer } from "../components/audio/AudioPlayer";
 import { InsightCard } from "../components/cards/InsightCard";
-import { getDailyBriefPageState } from "../lib/briefings/generatedContentLoader";
+import { getDailyBriefPageState, loadDayData } from "../lib/briefings/generatedContentLoader";
 import type { DailyAudio } from "../types/models";
 import type { TodaySectionItem } from "./todaySections";
 import { buildTodaySections } from "./todaySections";
@@ -128,6 +129,69 @@ export function TodayPage() {
   const requestedDate = searchParams.get("date") ?? undefined;
   const pageState = getDailyBriefPageState(requestedDate);
   const pageData = pageState.pageData;
+  const [dayLoadStatus, setDayLoadStatus] = useState<"idle" | "loading" | "error">("idle");
+  const [dayLoadError, setDayLoadError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!pageState.resolvedDate || pageData) {
+      setDayLoadStatus("idle");
+      setDayLoadError(null);
+      return;
+    }
+
+    let isDisposed = false;
+    setDayLoadStatus("loading");
+    setDayLoadError(null);
+
+    loadDayData(pageState.resolvedDate)
+      .then(() => {
+        if (isDisposed) {
+          return;
+        }
+
+        setDayLoadStatus("idle");
+      })
+      .catch((error) => {
+        if (isDisposed) {
+          return;
+        }
+
+        setDayLoadStatus("error");
+        setDayLoadError(error instanceof Error ? error.message : String(error));
+      });
+
+    return () => {
+      isDisposed = true;
+    };
+  }, [pageData, pageState.resolvedDate]);
+
+  if (!pageData && dayLoadStatus === "loading" && pageState.resolvedDate) {
+    return (
+      <div className="animate-enter">
+        <section className="rounded-card border border-white/60 bg-white/50 p-5 text-slate-800 shadow-soft">
+          <h2 className="mb-2 text-2xl font-black text-slate-800">Loading today&apos;s brief</h2>
+          <p className="text-sm text-slate-600">
+            Fetching the generated briefing payload for {pageState.resolvedDate}.
+          </p>
+        </section>
+      </div>
+    );
+  }
+
+  if (!pageData && dayLoadStatus === "error") {
+    return (
+      <div className="animate-enter">
+        <section className="rounded-card border border-rose-200 bg-rose-50 p-5 text-slate-800 shadow-soft">
+          <h2 className="mb-2 text-2xl font-black text-slate-800">Today&apos;s Brief Failed To Load</h2>
+          <p className="text-sm text-slate-600">
+            The generated day payload could not be fetched. Re-run <code>npm run sync:generated</code> and
+            reload the app.
+          </p>
+          {dayLoadError ? <p className="mt-3 text-xs text-rose-700">{dayLoadError}</p> : null}
+        </section>
+      </div>
+    );
+  }
 
   if (!pageData) {
     return (

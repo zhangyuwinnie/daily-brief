@@ -1,0 +1,516 @@
+{
+  "date": "2026-03-27",
+  "briefings": [
+    {
+      "id": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-27",
+      "filePath": "2026-03-27.md",
+      "summaryTopline": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "insightIds": [
+        "rss-2026-03-27-01-gemini-31-flash-live-making-audio-ai-more-natural-and-reliable",
+        "rss-2026-03-27-02-my-minute-by-minute-response-to-the-litellm-malware-attack",
+        "rss-2026-03-27-03-a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware",
+        "rss-2026-03-27-04-show-hn-i-put-an-ai-agent-on-a-7month-vps-with-irc-as-its-transport-layer",
+        "rss-2026-03-27-05-anthropic-subprocessor-changes"
+      ]
+    },
+    {
+      "id": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-27",
+      "filePath": "x_briefing_2026-03-27.md",
+      "summaryTopline": "AI Agent技术正加速落地，应用范围从UI设计（Figma）扩展到本地安全运行（NemoClaw）和专业编程（Qwen3-Coder-Next），其应用成熟度显著提升。",
+      "insightIds": [
+        "x-2026-03-27-trend-01-ai-agent",
+        "x-2026-03-27-trend-02-ai-agent2026",
+        "x-2026-03-27-trend-03-mark-cuban-claude-agentic-agent",
+        "x-2026-03-27-tools-01-last30days-skill",
+        "x-2026-03-27-tools-02-google-stitch-20-googleui-claude-code",
+        "x-2026-03-27-tools-03-telegram-nvidia-nemoclaw-nvidia-nemo-qwen35-27b",
+        "x-2026-03-27-tools-04-figma",
+        "x-2026-03-27-tools-05-claude-code-ai-website-cloner-template",
+        "x-2026-03-27-tools-06-qwen3-coder-next",
+        "x-2026-03-27-opinion-01-ai",
+        "x-2026-03-27-opinion-02-claude-code-boris-cherny-10-15claude",
+        "x-2026-03-27-opinion-03-superpower-gstack-ai",
+        "x-2026-03-27-opinion-04-7elon-muskclaude",
+        "x-2026-03-27-opinion-05-anthropic-claude-claude",
+        "x-2026-03-27-opinion-06-cli",
+        "x-2026-03-27-opinion-07-workday-ceo-ai-agent",
+        "x-2026-03-27-news-01-unipath",
+        "x-2026-03-27-news-02-yc-alt-x-ai-agent-ai-agentexcel",
+        "x-2026-03-27-news-03-google-aletheia-gemini-3-deep-think",
+        "x-2026-03-27-news-04-grok-420-beta",
+        "x-2026-03-27-news-05-sam-altmans-world-agentkit"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-27-01-gemini-31-flash-live-making-audio-ai-more-natural-and-reliable",
+      "briefingId": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "summary": "Gemini 3.1 Flash现已上线，旨在提升音频AI的自然度和可靠性。这款最新的语音模型显著提高了精度并降低了延迟，使得语音交互体验更加流畅、自然和精准。",
+      "take": "Dayu可以利用Gemini 3.1 Flash的语音能力，为他的AI助手构建更自然、低延迟的语音交互界面，从而极大提升人机协作效率。这为探索语音驱动的Agentic Workflows和集成到开源工具链（如为LangChain构建语音工具）提供了新机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-27-02-my-minute-by-minute-response-to-the-litellm-malware-attack",
+      "briefingId": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/26/response-to-the-litellm-malware-attack/#atom-everything",
+      "title": "My minute-by-minute response to the LiteLLM malware attack",
+      "summary": "本文详细回顾了LiteLLM项目应对恶意软件攻击的整个过程，记录了从发现问题到响应处理的每一步骤。它为广大AI开发者提供了宝贵的安全事件处理案例，强调了在使用和维护关键LLM工具库时，安全防护和应急响应机制的极端重要性。",
+      "take": "LiteLLM是Dayu构建AI Agent、集成多模态LLM的关键基础设施。此事件提醒Dayu在利用开源工具链自动化工作流时，必须将安全审计和风险管理纳入Agent开发流程中，不仅是使用工具，更要关注其安全性，甚至可以关注此类安全防护的最佳实践，为开源社区的工具安全贡献力量。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-27-03-a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware",
+      "briefingId": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
+      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
+      "summary": "开源软件漏洞趋势正在发生显著变化：过去一年，审核的漏洞通报数量达到四年新低，但与恶意软件相关的通报却大幅激增，同时CNA发布量也在增长。这些新趋势对企业和个人如何有效进行漏洞分类和响应提出了新的挑战和策略调整需求。",
+      "take": "Dayu可以利用这些信息构建一个AI Agent，通过集成GitHub Security Advisories API或其他漏洞数据库，自动化监测开源组件的漏洞动态，并结合RAG技术快速检索和理解CVE详情。这不仅能提高AI工具链的安全性与效率，也是一个极佳的开源贡献机会，例如开发一个智能漏洞预警与响应助手。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-03-27-04-show-hn-i-put-an-ai-agent-on-a-7month-vps-with-irc-as-its-transport-layer",
+      "briefingId": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/",
+      "title": "Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer",
+      "summary": "该项目展示了如何将一个AI智能体部署在每月仅7美元的虚拟私有服务器（VPS）上。它创新性地选择IRC（Internet Relay Chat）作为其传输层，实现了低成本、高效的代理通信。这为在资源有限的环境中运行AI代理提供了新的思路和可能性。",
+      "take": "对于Dayu而言，这个项目提供了一个极具启发性的低成本AI智能体部署方案。他可以借鉴这种利用IRC作为传输层的思路，构建轻量级、易于部署的自动化代理，例如用于生物信息学数据监控或日常任务通知，从而大幅降低实验和运营成本，甚至探索开源贡献的机会。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-03-27-05-anthropic-subprocessor-changes",
+      "briefingId": "rss-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://trust.anthropic.com",
+      "title": "Anthropic Subprocessor Changes",
+      "summary": "Anthropic 近期更新了其子处理器（Subprocessor）列表，这意味着其用于处理用户数据的第三方服务商可能有所变动。对于开发者和企业用户而言，了解这些变化对于确保数据隐私合规性（如 GDPR、CCPA 或特定行业标准）和评估服务信赖度至关重要。",
+      "take": "尽管这不是一个直接的AI能力更新，但对于Dayu构建安全且合规的AI代理至关重要。掌握Anthropic这类核心AI供应商的数据处理政策，能帮助你设计健壮的数据治理策略，尤其是在处理生物信息学等敏感数据时；未来或许能贡献于开源工具，自动化监控AI服务商的隐私政策变更或合规性检查。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-trend-01-ai-agent",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Brian Armstrong",
+      "sourceUrl": "https://x.com/brian_armstrong/status/2034701971043602687",
+      "title": "探讨AI Agent支付何时超越人类支付",
+      "summary": "探讨AI Agent支付何时超越人类支付，预示着未来经济模式的变革。",
+      "take": "探讨AI Agent支付何时超越人类支付，预示着未来经济模式的变革。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-27-trend-02-ai-agent2026",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@CyrilXBT",
+      "sourceUrl": "https://x.com/cyrilXBT/status/2035164560408158258",
+      "title": "强调构建AI Agent是2026年最具杠杆效应的技能",
+      "summary": "强调构建AI Agent是2026年最具杠杆效应的技能，呼吁大家抓住机遇学习。",
+      "take": "强调构建AI Agent是2026年最具杠杆效应的技能，呼吁大家抓住机遇学习。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-27-trend-03-mark-cuban-claude-agentic-agent",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Damian Player",
+      "sourceUrl": "https://x.com/damianplayer/status/2035038502795071975",
+      "title": "马克·库班（Mark Cuban）建议中小企业主学习 Claude 及 Agentic （Agent相关的）技能",
+      "summary": "马克·库班（Mark Cuban）建议中小企业主学习 Claude 及 Agentic （Agent相关的）技能，以应对AI Agent带来的颠覆。",
+      "take": "马克·库班（Mark Cuban）建议中小企业主学习 Claude 及 Agentic （Agent相关的）技能，以应对AI Agent带来的颠覆。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-27-tools-01-last30days-skill",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@GitTrend",
+      "sourceUrl": "https://x.com/GitTrend0x/status/2037352914227011868",
+      "title": "介绍 `last30days-skill`",
+      "summary": "介绍 `last30days-skill`，一个个人全网智能代理，能抓取Reddit、X、YouTube等平台信息并提供无水印总结。",
+      "take": "介绍 `last30days-skill`，一个个人全网智能代理，能抓取Reddit、X、YouTube等平台信息并提供无水印总结。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-tools-02-google-stitch-20-googleui-claude-code",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Prajwal Tomar",
+      "sourceUrl": "https://x.com/PrajwalTomar_/status/2037204941945921743",
+      "title": "结合 Google Stitch 2.0 (Google的UI设计工具) 和 Claude Code",
+      "summary": "结合 Google Stitch 2.0 (Google的UI设计工具) 和 Claude Code，工程师现在能以分钟级速度交付专业UI，告别枯燥界面。",
+      "take": "结合 Google Stitch 2.0 (Google的UI设计工具) 和 Claude Code，工程师现在能以分钟级速度交付专业UI，告别枯燥界面。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-tools-03-telegram-nvidia-nemoclaw-nvidia-nemo-qwen35-27b",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Niels Rogge",
+      "sourceUrl": "https://x.com/NielsRogge/status/2037161010377674785",
+      "title": "成功在本地通过 Telegram 运行 NVIDIA NemoClaw (NVIDIA NeMo的一个安全沙盒项目) 与 Qwen3.5-27B",
+      "summary": "成功在本地通过 Telegram 运行 NVIDIA NemoClaw (NVIDIA NeMo的一个安全沙盒项目) 与 Qwen3.5-27B，实现了无API成本、数据安全的AI Agent。",
+      "take": "成功在本地通过 Telegram 运行 NVIDIA NemoClaw (NVIDIA NeMo的一个安全沙盒项目) 与 Qwen3.5-27B，实现了无API成本、数据安全的AI Agent。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-tools-04-figma",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Figma",
+      "sourceUrl": "https://x.com/figma/status/2036434766661296602",
+      "title": "Figma (知名设计工具) 推出新功能",
+      "summary": "Figma (知名设计工具) 推出新功能，允许AI Agent直接在其画布上进行设计，通过 `use_figma MCP` 工具和技能实现。",
+      "take": "Figma (知名设计工具) 推出新功能，允许AI Agent直接在其画布上进行设计，通过 `use_figma MCP` 工具和技能实现。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-tools-05-claude-code-ai-website-cloner-template",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Viking",
+      "sourceUrl": "https://x.com/vikingmute/status/2037503331539538294",
+      "title": "推荐 Claude Code 的 `ai-website-cloner-template` 项目",
+      "summary": "推荐 Claude Code 的 `ai-website-cloner-template` 项目，号称能一键克隆目标网站的风格和元素。",
+      "take": "推荐 Claude Code 的 `ai-website-cloner-template` 项目，号称能一键克隆目标网站的风格和元素。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-tools-06-qwen3-coder-next",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Qwen",
+      "sourceUrl": "https://x.com/Alibaba_Qwen/status/2018718453570707465",
+      "title": "推出 Qwen3-Coder-Next",
+      "summary": "推出 Qwen3-Coder-Next，一款专为编码Agent和本地开发设计的开源语言模型，通过扩展Agent训练在SWE-Bench Pro (一个编程基准测试) 上表现出色。",
+      "take": "推出 Qwen3-Coder-Next，一款专为编码Agent和本地开发设计的开源语言模型，通过扩展Agent训练在SWE-Bench Pro (一个编程基准测试) 上表现出色。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-01-ai",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@陈成",
+      "sourceUrl": "https://x.com/chenchengpro/status/2037332209003282747",
+      "title": "AI模型即使在相同参数下",
+      "summary": "AI模型即使在相同参数下，运行结果仍可能大幅波动，这凸显了外部“驾驭系统”（rules, tools, skills, feedback loops）对性能的关键影响。",
+      "take": "AI模型即使在相同参数下，运行结果仍可能大幅波动，这凸显了外部“驾驭系统”（rules, tools, skills, feedback loops）对性能的关键影响。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-02-claude-code-boris-cherny-10-15claude",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Nainsi Dwivedi",
+      "sourceUrl": "https://x.com/NainsiDwiv50980/status/2037430855791206493",
+      "title": "Claude Code 开发者 Boris Cherny 每天并行运行10-15个Claude会话",
+      "summary": "Claude Code 开发者 Boris Cherny 每天并行运行10-15个Claude会话，这可能是其高效交付代码的“真正武器”。",
+      "take": "Claude Code 开发者 Boris Cherny 每天并行运行10-15个Claude会话，这可能是其高效交付代码的“真正武器”。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-03-superpower-gstack-ai",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Jason Zuo",
+      "sourceUrl": "https://x.com/xxx111god/status/2037285304160166138",
+      "title": "使用 Superpower 和 GStack (AI技能框架) 这类工具时",
+      "summary": "使用 Superpower 和 GStack (AI技能框架) 这类工具时，AI的“拷问”能帮助使用者发现自身思维盲点。",
+      "take": "使用 Superpower 和 GStack (AI技能框架) 这类工具时，AI的“拷问”能帮助使用者发现自身思维盲点。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-04-7elon-muskclaude",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Suryansh Tiwari",
+      "sourceUrl": "https://x.com/Suryanshti777/status/2037497372650156516",
+      "title": "分享7种Elon Musk风格的Claude提示词",
+      "summary": "分享7种Elon Musk风格的Claude提示词，旨在引导AI重构问题、重建系统，从而找到10倍解决方案。",
+      "take": "分享7种Elon Musk风格的Claude提示词，旨在引导AI重构问题、重建系统，从而找到10倍解决方案。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-05-anthropic-claude-claude",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Sukh Sroay",
+      "sourceUrl": "https://x.com/sukh_saroy/status/2037462432319455451",
+      "title": "Anthropic (Claude的开发公司) 前研究员泄露内部Claude提示词手册",
+      "summary": "Anthropic (Claude的开发公司) 前研究员泄露内部Claude提示词手册，指出常见错误可能浪费35%的推理能力。",
+      "take": "Anthropic (Claude的开发公司) 前研究员泄露内部Claude提示词手册，指出常见错误可能浪费35%的推理能力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-06-cli",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2026360908398862478",
+      "title": "CLI（命令行界面）作为“传统”技术",
+      "summary": "CLI（命令行界面）作为“传统”技术，反而是AI Agent理想的交互方式，能让它们本地且轻松地使用和组合各种终端工具。",
+      "take": "CLI（命令行界面）作为“传统”技术，反而是AI Agent理想的交互方式，能让它们本地且轻松地使用和组合各种终端工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-opinion-07-workday-ceo-ai-agent",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+      "title": "Workday CEO 将AI Agent初创公司称为“寄生虫”",
+      "summary": "Workday CEO 将AI Agent初创公司称为“寄生虫”，揭示了传统SaaS巨头与新兴Agent技术公司之间在用户数据归属权上的潜在冲突。",
+      "take": "Workday CEO 将AI Agent初创公司称为“寄生虫”，揭示了传统SaaS巨头与新兴Agent技术公司之间在用户数据归属权上的潜在冲突。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-news-01-unipath",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@XuZhenqing徐祯卿",
+      "sourceUrl": "https://x.com/XueJia24682/status/2037135564357636228",
+      "title": "中国公司 Unipath 推出家用机器人",
+      "summary": "中国公司 Unipath 推出家用机器人，具备定时唤醒、操作家电、整理收纳甚至自动烹饪等功能，已进入实际家庭使用。",
+      "take": "中国公司 Unipath 推出家用机器人，具备定时唤醒、操作家电、整理收纳甚至自动烹饪等功能，已进入实际家庭使用。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-news-02-yc-alt-x-ai-agent-ai-agentexcel",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Y Combinator",
+      "sourceUrl": "https://ycombinator.com/launches/PjC-alt-x-ai-agents-for-real-estate-underwriting-financial-modeling",
+      "title": "YC支持的 Alt-X (一家AI Agent初创公司) 利用AI Agent将房地产交易文档自动转化为带引用数据的Excel承保模型",
+      "summary": "YC支持的 Alt-X (一家AI Agent初创公司) 利用AI Agent将房地产交易文档自动转化为带引用数据的Excel承保模型。",
+      "take": "YC支持的 Alt-X (一家AI Agent初创公司) 利用AI Agent将房地产交易文档自动转化为带引用数据的Excel承保模型。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-news-03-google-aletheia-gemini-3-deep-think",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DeepLearning.AI",
+      "sourceUrl": "https://x.com/DeepLearningAI/status/2032230150704611385",
+      "title": "Google 研究人员开发了 Aletheia 系统（基于 Gemini 3 Deep Think 模型）",
+      "summary": "Google 研究人员开发了 Aletheia 系统（基于 Gemini 3 Deep Think 模型），能生成、验证并修正数学难题的解决方案，已用于研究论文。",
+      "take": "Google 研究人员开发了 Aletheia 系统（基于 Gemini 3 Deep Think 模型），能生成、验证并修正数学难题的解决方案，已用于研究论文。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-news-04-grok-420-beta",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@X Freeze",
+      "sourceUrl": "https://x.com/XFreeze/status/2034390982024982807",
+      "title": "Grok 4.20 Beta 在基准测试中表现突出",
+      "summary": "Grok 4.20 Beta 在基准测试中表现突出，实现了最低幻觉率（22%）、高指令遵循能力（83%）和强大的Agent工具使用（97%）。",
+      "take": "Grok 4.20 Beta 在基准测试中表现突出，实现了最低幻觉率（22%）、高指令遵循能力（83%）和强大的Agent工具使用（97%）。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-27-news-05-sam-altmans-world-agentkit",
+      "briefingId": "x-2026-03-27",
+      "date": "2026-03-27",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@CoinMarketCap",
+      "sourceUrl": "https://x.com/CoinMarketCap/status/2033998605309116734",
+      "title": "Sam Altman's World 推出 AgentKit",
+      "summary": "Sam Altman's World 推出 AgentKit，一套开发工具包，让AI Agent能以加密方式证明其代表真实用户行动，增强Agent可信度。",
+      "take": "Sam Altman's World 推出 AgentKit，一套开发工具包，让AI Agent能以加密方式证明其代表真实用户行动，增强Agent可信度。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "AI Agent技术正加速落地，应用范围从UI设计（Figma）扩展到本地安全运行（NemoClaw）和专业编程（Qwen3-Coder-Next），其应用成熟度显著提升。",
+    "AI模型效能提升的关键在于“驾驭系统”：高级提示工程（如Claude Playbook）、并行工作流及外部工具集（harness）比单一模型版本更能决定实际性能，能极大提升输出质量和一致性。",
+    "AI Agent的商业和经济影响日益深远，不仅可能重塑支付方式，也成为中小企业自动化的核心，并引发传统巨头与新兴Agent公司之间的战略竞争。"
+  ],
+  "xActionItems": [
+    "深入研究 Claude 的高级提示工程与 Agentic 工作流：参照泄露的 Anthropic 提示词指南及并行会话策略，探索如何最大化 Claude 等模型的推理效率和输出质量。",
+    "评估和尝试本地 AI Agent 部署方案：考虑如 NVIDIA NemoClaw 结合 Qwen3-Coder-Next 等本地运行的Agent项目，以实现数据隐私、成本控制及特定环境下的Agent应用。",
+    "识别并探索 AI Agent 在自身领域的应用潜力：借鉴 Figma 和 Alt-X 等案例，思考 AI Agent 如何赋能设计、金融分析等专业任务，或应用于家庭机器人等创新场景。"
+  ]
+}

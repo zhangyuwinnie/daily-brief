@@ -1,0 +1,253 @@
+{
+  "date": "2026-03-23",
+  "briefings": [
+    {
+      "id": "rss-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-23",
+      "filePath": "2026-03-23.md",
+      "insightIds": []
+    },
+    {
+      "id": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-23",
+      "filePath": "x_briefing_2026-03-23.md",
+      "summaryTopline": "AI Agent领域正经历快速发展，特别是多Agent协作和开源构建工具层出不穷，显著提升了自动化和团队协作能力。",
+      "insightIds": [
+        "x-2026-03-23-trend-01-chamath-ai-agents10",
+        "x-2026-03-23-trend-02-mark-cuban-claude",
+        "x-2026-03-23-tools-01-claude-peers",
+        "x-2026-03-23-tools-02-clawteam",
+        "x-2026-03-23-tools-03-deerflow",
+        "x-2026-03-23-tools-04-minimax-ai-agents",
+        "x-2026-03-23-opinion-01-ai-agents",
+        "x-2026-03-23-opinion-02-agentic",
+        "x-2026-03-23-opinion-03-7ai-agent",
+        "x-2026-03-23-news-01-google421agentic-design-patterns",
+        "x-2026-03-23-news-02-agent-memory",
+        "x-2026-03-23-news-03-document-ai"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "x-2026-03-23-trend-01-chamath-ai-agents10",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Rohan Paul",
+      "sourceUrl": "https://x.com/rohanpaul_ai/status/2034558710547370332",
+      "title": "Chamath 认为AI Agents正消除\"10倍工程师\"概念",
+      "summary": "Chamath 认为AI Agents正消除\"10倍工程师\"概念，高效代码路径对所有人显而易见。",
+      "take": "Chamath 认为AI Agents正消除\"10倍工程师\"概念，高效代码路径对所有人显而易见。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-23-trend-02-mark-cuban-claude",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@AI Edge",
+      "sourceUrl": "https://x.com/aiedge_/status/2035839014977315283",
+      "title": "Mark Cuban 建议年轻人学习Claude",
+      "summary": "Mark Cuban 建议年轻人学习Claude，为中小企业构建AI Agents，抓住巨大商机。",
+      "take": "Mark Cuban 建议年轻人学习Claude，为中小企业构建AI Agents，抓住巨大商机。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-23-tools-01-claude-peers",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Suryansh Tiwari",
+      "sourceUrl": "https://x.com/Suryanshti777/status/2035680591354470578",
+      "title": "claude-peers",
+      "summary": "claude-peers：让多个 Claude Code 会话像团队般协同，将单个 Claude 转化为高效团队。",
+      "take": "claude-peers：让多个 Claude Code 会话像团队般协同，将单个 Claude 转化为高效团队。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-23-tools-02-clawteam",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ihtesham Ali",
+      "sourceUrl": "https://x.com/ihtesham2005/status/2035793703613395010",
+      "title": "ClawTeam 框架",
+      "summary": "ClawTeam 框架：AI Agents可雇佣并管理自己的团队，自主分配、追踪、交付任务。",
+      "take": "ClawTeam 框架：AI Agents可雇佣并管理自己的团队，自主分配、追踪、交付任务。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-tools-03-deerflow",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Kanika",
+      "sourceUrl": "https://x.com/KanikaBK/status/2035967343248187764",
+      "title": "中国开源 DeerFlow",
+      "summary": "中国开源 DeerFlow，一个24小时自主工作的AI员工，能处理研究、编码、建站等任务。",
+      "take": "中国开源 DeerFlow，一个24小时自主工作的AI员工，能处理研究、编码、建站等任务。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-tools-04-minimax-ai-agents",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2035744560782225745",
+      "title": "MiniMax 开源AI Agents技能库",
+      "summary": "MiniMax 开源AI Agents技能库，Agent技能层正成为公共基础设施。",
+      "take": "MiniMax 开源AI Agents技能库，Agent技能层正成为公共基础设施。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-opinion-01-ai-agents",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2032889536066498595",
+      "title": "关键在于从零开始为AI Agents设计流程",
+      "summary": "关键在于从零开始为AI Agents设计流程，而非简单应用于现有流程。",
+      "take": "关键在于从零开始为AI Agents设计流程，而非简单应用于现有流程。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-opinion-02-agentic",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2035096653594861970",
+      "title": "Agentic系统盈利点在于编排",
+      "summary": "Agentic系统盈利点在于编排、托管等增值服务，而非原始Markdown。",
+      "take": "Agentic系统盈利点在于编排、托管等增值服务，而非原始Markdown。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-opinion-03-7ai-agent",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ksenia_TuringPost",
+      "sourceUrl": "https://x.com/TheTuringPost/status/2033142035218374889",
+      "title": "介绍了7种新兴AI Agent内存架构",
+      "summary": "介绍了7种新兴AI Agent内存架构，强调其存储、检索知识能力。",
+      "take": "介绍了7种新兴AI Agent内存架构，强调其存储、检索知识能力。",
+      "topics": [
+        "Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-news-01-google421agentic-design-patterns",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Utkarsh Sharma",
+      "sourceUrl": "https://x.com/techxutkarsh/status/2035701980849700877",
+      "title": "Google工程师发布421页“Agentic Design Patterns”文档",
+      "summary": "Google工程师发布421页“Agentic Design Patterns”文档，涵盖AI系统前沿设计模式。",
+      "take": "Google工程师发布421页“Agentic Design Patterns”文档，涵盖AI系统前沿设计模式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-news-02-agent-memory",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DeepLearning.AI",
+      "sourceUrl": "https://x.com/DeepLearningAI/status/2034291427656560954",
+      "title": "推出新课程“Agent Memory",
+      "summary": "推出新课程“Agent Memory: Building Memory-Aware Agents”，教授设计AI Agents内存系统。",
+      "take": "推出新课程“Agent Memory: Building Memory-Aware Agents”，教授设计AI Agents内存系统。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-23-news-03-document-ai",
+      "briefingId": "x-2026-03-23",
+      "date": "2026-03-23",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Andrew Ng",
+      "sourceUrl": "https://x.com/AndrewYNg/status/2011494188152733971",
+      "title": "推出新课程“Document AI",
+      "summary": "推出新课程“Document AI: From OCR to Agentic Doc Extraction”，教构建文档提取Agentic系统。",
+      "take": "推出新课程“Document AI: From OCR to Agentic Doc Extraction”，教构建文档提取Agentic系统。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "AI Agent领域正经历快速发展，特别是多Agent协作和开源构建工具层出不穷，显著提升了自动化和团队协作能力。",
+    "成功的关键在于从零开始为AI Agent设计系统，而非简单地将其应用于现有流程，这种前瞻性设计将决定未来的竞争力。",
+    "Agent的内存管理与评估系统成为构建高性能、可重复和持续改进智能体系统的核心，相关课程和设计模式正受到广泛关注。"
+  ],
+  "xActionItems": [
+    "探索并试用近期发布的开源Agent工具（如 claude-peers, DeerFlow, ClawTeam），了解多Agent协作的实际实现。",
+    "审视当前工作流程，思考如何从零开始设计AI Agent驱动的解决方案，而非简单地自动化现有步骤。",
+    "关注AI Agent的内存管理与评估机制，阅读相关资料（如“Agentic Design Patterns”），为构建更可靠的Agent系统打下基础。"
+  ]
+}

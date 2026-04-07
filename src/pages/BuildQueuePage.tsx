@@ -4,7 +4,8 @@ import type { AppOutletContext } from "../app/outlet-context";
 import { BuildItemCard } from "../components/cards/BuildItemCard";
 
 export function BuildQueuePage() {
-  const { buildQueue, onUpdateStatus } = useOutletContext<AppOutletContext>();
+  const { buildQueue, buildQueueError, buildQueueStatus, onUpdateStatus } =
+    useOutletContext<AppOutletContext>();
   const inboxItems = buildQueue.filter((item) => item.status === "Inbox");
   const interestedItems = buildQueue.filter((item) => item.status === "Interested");
   const activeItems = buildQueue.filter(
@@ -18,7 +19,21 @@ export function BuildQueuePage() {
         <p className="text-slate-500">Turn today&apos;s signals into concrete build and learning moves.</p>
       </div>
 
-      {buildQueue.length === 0 ? (
+      {buildQueueStatus === "loading" && buildQueue.length === 0 ? (
+        <div className="flex flex-1 flex-col items-center justify-center rounded-card border border-white/60 bg-white/20 px-6 py-16 text-center">
+          <h3 className="text-lg font-bold text-slate-700">Loading queued insights</h3>
+          <p className="mb-0 mt-2 text-sm text-slate-500">
+            Fetching only the saved briefing days needed to rebuild your queue.
+          </p>
+        </div>
+      ) : buildQueueStatus === "error" && buildQueue.length === 0 ? (
+        <div className="flex flex-1 flex-col items-center justify-center rounded-card border border-rose-200 bg-rose-50 px-6 py-16 text-center">
+          <h3 className="text-lg font-bold text-slate-700">Build queue failed to load</h3>
+          <p className="mb-0 mt-2 text-sm text-slate-500">
+            {buildQueueError ?? "The saved queue could not be matched to generated briefing data."}
+          </p>
+        </div>
+      ) : buildQueue.length === 0 ? (
         <div className="flex flex-1 flex-col items-center justify-center rounded-card border-2 border-dashed border-white/60 bg-white/20 px-6 py-16 text-center">
           <Target className="mb-4 h-16 w-16 text-slate-300" />
           <h3 className="text-lg font-bold text-slate-600">Your queue is empty</h3>

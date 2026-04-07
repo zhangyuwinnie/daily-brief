@@ -2,7 +2,7 @@ import { Calendar, Share2, Tag, Target } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import {
   getAvailableBriefingDates,
-  getDailyBriefPageData
+  getResolvedBriefingDate
 } from "../../lib/briefings/generatedContentLoader";
 import type { Insight } from "../../types/models";
 
@@ -25,7 +25,7 @@ export function RightRail({
 }: RightRailProps) {
   const location = useLocation();
   const requestedDate = new URLSearchParams(location.search).get("date") ?? undefined;
-  const selectedDate = getDailyBriefPageData(requestedDate)?.date ?? null;
+  const selectedDate = getResolvedBriefingDate(requestedDate);
   const recentDates = getAvailableBriefingDates().slice(0, 4);
 
   return (

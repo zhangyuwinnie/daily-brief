@@ -1,0 +1,361 @@
+{
+  "date": "2026-04-02",
+  "briefings": [
+    {
+      "id": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-02",
+      "filePath": "2026-04-02.md",
+      "summaryTopline": "Lemonade by AMD: a fast and open source local LLM server using GPU and NPU",
+      "insightIds": [
+        "rss-2026-04-02-01-lemonade-by-amd-a-fast-and-open-source-local-llm-server-using-gpu-and-npu",
+        "rss-2026-04-02-02-run-multiple-agents-at-once-with-fleet-in-copilot-cli",
+        "rss-2026-04-02-03-march-2026-langchain-newsletter",
+        "rss-2026-04-02-04-announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust",
+        "rss-2026-04-02-05-adele-predicting-and-explaining-ai-performance-across-tasks",
+        "rss-2026-04-02-06-datasette-llm-01a6",
+        "rss-2026-04-02-07-datasette-enrichments-llm-02a1",
+        "rss-2026-04-02-08-securing-the-open-source-supply-chain-across-github",
+        "rss-2026-04-02-09-mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-litellm"
+      ]
+    },
+    {
+      "id": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-04-02",
+      "filePath": "x_briefing_2026-04-02.md",
+      "summaryTopline": "**AI智能体加速落地与普及**：智能体正从概念走向实际应用，不仅整合进Figma、3D设计等创意工具，更开始深入到工业机器人和传统服务行业（如屋顶检查），实现更广泛的物理世界交互和自动化。",
+      "insightIds": [
+        "x-2026-04-02-trend-01-",
+        "x-2026-04-02-trend-02-cap-x-vibe-agents",
+        "x-2026-04-02-tools-01-dev-browser-ai-playwright-chrome",
+        "x-2026-04-02-tools-02-ai",
+        "x-2026-04-02-tools-03-use_figma-mcp",
+        "x-2026-04-02-opinion-01-mark-cuban-claude-python",
+        "x-2026-04-02-opinion-02-workday-ai",
+        "x-2026-04-02-news-01-openai-gpt-54-thinking-gpt-54-pro"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-02-01-lemonade-by-amd-a-fast-and-open-source-local-llm-server-using-gpu-and-npu",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://lemonade-server.ai",
+      "title": "Lemonade by AMD: a fast and open source local LLM server using GPU and NPU",
+      "summary": "AMD 发布了名为 \"Lemonade\" 的本地 LLM 服务器，它旨在利用 GPU 和 NPU 硬件加速，提供快速且开源的大模型推理服务。这意味着用户可以在自己的设备上高效运行大型语言模型，从而保障数据隐私、降低云服务成本并提升处理速度。",
+      "take": "对于 Dayu 来说，Lemonade 提供了一个在本地高效运行 LLM 的开源解决方案，这对于构建需要数据隐私或离线能力的 AI 代理（Agent）和自动化工作流至关重要。如果 Dayu 使用 AMD 硬件，这会是一个非常值得尝试的库，并且作为开源项目，也提供了宝贵的贡献机会，例如针对特定应用场景的优化、功能扩展或提升与其他工具的兼容性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-02-02-run-multiple-agents-at-once-with-fleet-in-copilot-cli",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/",
+      "title": "Run multiple agents at once with /fleet in Copilot CLI",
+      "summary": "GitHub Copilot CLI 推出了 `/fleet` 功能，允许用户同时调度多个 AI 智能体并行执行任务。这使得将复杂工作拆分给不同智能体处理成为可能，用户需学习如何编写合适的提示词来分配工作、声明依赖并避免常见错误，从而提高整体效率。",
+      "take": "Dayu，这个 `/fleet` 功能直接解决了多智能体并行协作的关键痛点。你可以借此在 Copilot CLI 中快速搭建复杂的 agentic workflow，让不同智能体分工合作，高效自动化你的生物信息学任务，大幅提升生产力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-02-03-march-2026-langchain-newsletter",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/march-2026-langchain-newsletter/",
+      "title": "March 2026: LangChain Newsletter",
+      "summary": "LangChain在2026年3月的更新中宣布了多项进展，包括与NVIDIA的新集成。其中，最值得关注的是其代理构建工具“Agent Builder”更名为“LangSmith Fleet”，预示着其在代理开发方面的持续深化和产品化。",
+      "take": "Dayu，作为一名AI超级个体，LangSmith Fleet的推出对构建Agent至关重要，它能帮助你更高效地设计和部署代理工作流。可以尝试利用它加速Agent开发，同时关注其作为LangChain生态核心组件的开源贡献机会。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-02-04-announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust/",
+      "title": "Announcing the LangChain + MongoDB Partnership: The AI Agent Stack That Runs On The Database You Already Trust",
+      "summary": "LangChain与MongoDB宣布深度合作，共同推出基于MongoDB Atlas的AI Agent开发栈。此方案专为生产级AI Agent设计，内置向量搜索、持久化内存、自然语言查询及端到端可观测性，让开发者能在其信任的数据库上高效构建和部署AI Agent。",
+      "take": "Dayu，这个LangChain与MongoDB的集成，为构建带RAG和持久内存的生产级AI Agent提供了强大且熟悉的后端，对你处理生物信息学数据、自动化复杂流程非常有帮助。这是一个值得尝试的新工具，你可以深入研究其应用，甚至考虑在LangChain的开源生态中贡献生物信息学Agent的用例。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-02-05-adele-predicting-and-explaining-ai-performance-across-tasks",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/",
+      "title": "ADeLe: Predicting and explaining AI performance across tasks",
+      "summary": "目前的大语言模型（LLM）基准测试仅展示性能，但缺乏对模型深层能力、失败原因及其在新任务上表现的深入洞察。为解决这一痛点，微软研究员与普林斯顿大学等机构合作推出了ADeLe项目，旨在预测并解释AI在跨任务上的性能表现。",
+      "take": "对于Dayu构建智能体（Agent）和自动化工作流而言，ADeLe提供了一种全新的、基于能力而非简单分数来评估和选择LLM的方法。这不仅能帮助他更精准地调试和优化现有智能体，还能提高智能体在新颖或复杂生物信息学任务上的泛化能力与预测成功率，若开源，更是值得关注的潜在贡献点。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-02-06-datasette-llm-01a6",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/1/datasette-llm-2/#atom-everything",
+      "title": "datasette-llm 0.1a6",
+      "summary": "`datasette-llm` 是一个将大型语言模型（LLM）功能引入Datasette数据探索与发布平台的插件。它使得用户能够通过自然语言与SQLite数据库进行交互，从而更直观地执行数据查询、生成摘要或从结构化数据中提取洞察，为数据分析和报告带来了全新的自动化方式。",
+      "take": "对于Dayu这样的AI超级个体来说，`datasette-llm`提供了一个将结构化数据源（如Datasette管理的SQLite数据库）作为强大“工具”集成到AI Agent工作流的绝佳机会。它能让你的Agent通过自然语言访问、分析和报告数据，极大地提升数据工作流的自动化和效率。作为一个早期alpha项目，它也为你在开源社区贡献代码、影响工具发展提供了宝贵平台。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-02-07-datasette-enrichments-llm-02a1",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/1/datasette-enrichments-llm-2/#atom-everything",
+      "title": "datasette-enrichments-llm 0.2a1",
+      "summary": "datasette-enrichments-llm 0.2a1 是 Datasette 的一个早期插件，它将大型语言模型（LLM）的能力集成到Datasette数据探索工具中。这个插件允许用户直接在Datasette界面内利用LLM对现有数据进行智能增强和处理，从而提升数据分析和管理的效率与深度。",
+      "take": "对于Dayu来说，这个工具展示了如何将LLM作为特定功能代理（Agent）的工具（Tool）嵌入到数据管理和探索的工作流中，实现数据自动化富集。鉴于其0.2a1的早期版本，这是一个极佳的库可以尝试构建数据预处理的Agentic Workflow，并具有很大的开源贡献机会，例如优化提示词、添加更多Enrichment功能或提升性能。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-02-08-securing-the-open-source-supply-chain-across-github",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/",
+      "title": "Securing the open source supply chain across GitHub",
+      "summary": "这篇文章聚焦于近期针对开源项目通过窃取秘密进行的攻击，并提供了开发者可以立即采取的预防措施。同时，它也展望了GitHub为增强开源供应链安全性而正在开发的新功能和安全能力。",
+      "take": "Dayu的AI代理和自动化工作流深度依赖开源，掌握GitHub的安全实践能确保其工具和代码安全。这可启发他构建自动化安全审计Agent，并探索在开源安全领域贡献的机会，提升自身Agentic系统的鲁棒性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-02-09-mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-litellm",
+      "briefingId": "rss-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+      "title": "Mercor says it was hit by cyberattack tied to compromise LiteLLM",
+      "summary": "Mercor公司遭遇网络攻击，其根源被追踪到LiteLLM平台的一次安全漏洞。这起事件警示所有依赖第三方工具集成和管理LLM服务的开发者，必须将API密钥管理和供应链安全置于优先考量，以防范潜在的数据泄露和系统风险。",
+      "take": "LiteLLM作为连接多种LLM的实用工具，其安全事件提醒Dayu在构建AI代理和自动化Workflow时，必须高度重视API密钥安全和第三方工具的供应链风险。Dayu可借此机会深入研究这类工具的安全实践，甚至考虑参与LiteLLM的安全加固贡献，或探索私有化部署方案，确保其AI赋能流程的稳健性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-02-trend-01-",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2038555792052506941",
+      "title": "智能体工程本周进展神速",
+      "summary": "智能体工程本周进展神速，日均代码量巨大，行业正以惊人速度加速发展。",
+      "take": "智能体工程本周进展神速，日均代码量巨大，行业正以惊人速度加速发展。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-02-trend-02-cap-x-vibe-agents",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DrJimFan",
+      "sourceUrl": "https://x.com/DrJimFan/status/203935811531824332",
+      "title": "开源项目 CaP-X 实现了“氛围智能体”（vibe agents）在物理世界的应用",
+      "summary": "开源项目 CaP-X 实现了“氛围智能体”（vibe agents）在物理世界的应用，以机械臂和人形机器人形式存在，开启了智能体机器人时代。",
+      "take": "开源项目 CaP-X 实现了“氛围智能体”（vibe agents）在物理世界的应用，以机械臂和人形机器人形式存在，开启了智能体机器人时代。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-02-tools-01-dev-browser-ai-playwright-chrome",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@NainsiDwiv50980",
+      "sourceUrl": "https://x.com/NainsiDwiv50980/status/2039561716800090280",
+      "title": "`dev-browser` 允许AI智能体在沙盒中通过真实 `Playwright` 代码控制 Chrome 浏览器",
+      "summary": "`dev-browser` 允许AI智能体在沙盒中通过真实 `Playwright` 代码控制 Chrome 浏览器，而非依赖截图或脆弱的选择器，实现更深度交互。",
+      "take": "`dev-browser` 允许AI智能体在沙盒中通过真实 `Playwright` 代码控制 Chrome 浏览器，而非依赖截图或脆弱的选择器，实现更深度交互。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-02-tools-02-ai",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2038258626641719740",
+      "title": "有人开源了全球最大的AI智能体集成数据库",
+      "summary": "有人开源了全球最大的AI智能体集成数据库，包含250+应用（如Slack, GitHub）的47,000个已验证动作，有助于防止智能体产生API幻觉。",
+      "take": "有人开源了全球最大的AI智能体集成数据库，包含250+应用（如Slack, GitHub）的47,000个已验证动作，有助于防止智能体产生API幻觉。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-02-tools-03-use_figma-mcp",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Figma",
+      "sourceUrl": "https://x.com/figma/status/2036434766661296602",
+      "title": "发布 `use_figma` MCP（模型控制协议）工具和技能包",
+      "summary": "发布 `use_figma` MCP（模型控制协议）工具和技能包，AI智能体现已可在Figma画布上直接进行设计，并已开放测试版。",
+      "take": "发布 `use_figma` MCP（模型控制协议）工具和技能包，AI智能体现已可在Figma画布上直接进行设计，并已开放测试版。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-02-opinion-01-mark-cuban-claude-python",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@aiedge_",
+      "sourceUrl": "https://x.com/aiedge_/status/2035839014977315283",
+      "title": "Mark Cuban 建议年轻人学习 Claude 和 Python",
+      "summary": "Mark Cuban 建议年轻人学习 Claude 和 Python，为中小企业（SMBs）构建AI智能体，因为多数企业主不懂如何实现，这是一个巨大商机。",
+      "take": "Mark Cuban 建议年轻人学习 Claude 和 Python，为中小企业（SMBs）构建AI智能体，因为多数企业主不懂如何实现，这是一个巨大商机。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-02-opinion-02-workday-ai",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+      "title": "Workday 首席执行官称AI智能体初创公司为“寄生虫”",
+      "summary": "Workday 首席执行官称AI智能体初创公司为“寄生虫”，这反映了数据所有权之争和行业竞争正日益加剧。",
+      "take": "Workday 首席执行官称AI智能体初创公司为“寄生虫”，这反映了数据所有权之争和行业竞争正日益加剧。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-02-news-01-openai-gpt-54-thinking-gpt-54-pro",
+      "briefingId": "x-2026-04-02",
+      "date": "2026-04-02",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@OpenAI",
+      "sourceUrl": "https://x.com/OpenAI/status/2029620619743219811",
+      "title": "OpenAI 正在逐步推出 GPT-5.4 Thinking 和 GPT-5.4 Pro 模型",
+      "summary": "OpenAI 正在逐步推出 GPT-5.4 Thinking 和 GPT-5.4 Pro 模型，并在 API 和 Codex 中提供，它在推理、编码和智能体工作流方面有显著进步。",
+      "take": "OpenAI 正在逐步推出 GPT-5.4 Thinking 和 GPT-5.4 Pro 模型，并在 API 和 Codex 中提供，它在推理、编码和智能体工作流方面有显著进步。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "**AI智能体加速落地与普及**：智能体正从概念走向实际应用，不仅整合进Figma、3D设计等创意工具，更开始深入到工业机器人和传统服务行业（如屋顶检查），实现更广泛的物理世界交互和自动化。",
+    "**智能体基础设施趋于完善**：关键性工具和平台不断涌现，包括让AI能真实控制浏览器的 `dev-browser`、集成了海量应用动作的数据库，以及专注于提升智能体推理、编码能力的GPT新模型，大幅降低开发门槛。",
+    "**市场机遇与挑战并存**：Mark Cuban 指出为中小企业构建定制化AI智能体是巨大商机；同时，行业巨头对智能体初创公司表现出警惕，预示着数据所有权和市场竞争将日益激烈。"
+  ],
+  "xActionItems": [
+    "研究并实践 Claude 或其他主流大模型（如GPT-5.4）的智能体（Agent）开发能力，尝试构建自动化工作流。",
+    "探索将AI智能体应用于特定垂直行业（例如屋顶检查、设计流程），挖掘中小企业（SMB）未被满足的需求。",
+    "关注并尝试新的智能体工具和集成平台（如 `dev-browser`），以扩展智能体的交互能力和应用范围。"
+  ]
+}

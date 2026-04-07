@@ -1,0 +1,201 @@
+{
+  "date": "2026-03-21",
+  "briefings": [
+    {
+      "id": "rss-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-03-21",
+      "filePath": "2026-03-21.md",
+      "summaryTopline": "OpenCode – Open source AI coding agent",
+      "insightIds": [
+        "rss-2026-03-21-01-opencode-open-source-ai-coding-agent"
+      ]
+    },
+    {
+      "id": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-03-21",
+      "filePath": "x_briefing_2026-03-21.md",
+      "summaryTopline": "AI Agent的商业模式正从原始输出转向编排、托管、分析等高价值服务。",
+      "insightIds": [
+        "x-2026-03-21-trend-01-ai-agent",
+        "x-2026-03-21-trend-02-saasworkdayai-agent",
+        "x-2026-03-21-tools-01-agentui",
+        "x-2026-03-21-tools-02-lightpanda",
+        "x-2026-03-21-opinion-01-karpathy-ai-agent",
+        "x-2026-03-21-opinion-02-anthropic-anthropic",
+        "x-2026-03-21-news-01-agentic-ai",
+        "x-2026-03-21-news-02-andrej-karpathy-agenthub"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-03-21-01-opencode-open-source-ai-coding-agent",
+      "briefingId": "rss-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://opencode.ai/",
+      "title": "OpenCode – Open source AI coding agent",
+      "summary": "OpenCode 是一个新兴的开源AI编码智能体，旨在协助开发者处理各种编程任务。它利用AI能力提升代码生成、调试和优化效率，通过开放源代码的形式鼓励社区参与和技术迭代。",
+      "take": "对Dayu而言，OpenCode提供了一个绝佳的机会去深入理解和构建编码代理，将其应用于自动化生物信息学脚本编写和工作流。你可以学习其Agentic Workflow和工具调用机制，并有机会贡献特定于生物信息学领域的工具或优化其RAG流程。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-21-trend-01-ai-agent",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2035096653594861970",
+      "title": "AI Agent的盈利点在于提供编排",
+      "summary": "AI Agent的盈利点在于提供编排、托管、更新、协作、可移植性、分析和托管执行等增值服务，而非原始Markdown等原始输出。",
+      "take": "AI Agent的盈利点在于提供编排、托管、更新、协作、可移植性、分析和托管执行等增值服务，而非原始Markdown等原始输出。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-21-trend-02-saasworkdayai-agent",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2034310924107219178",
+      "title": "现有SaaS巨头（如Workday）视AI Agent初创公司为“寄生虫”",
+      "summary": "现有SaaS巨头（如Workday）视AI Agent初创公司为“寄生虫”，用户数据归属权将是行业变革焦点，预示一场“战争”的开始。",
+      "take": "现有SaaS巨头（如Workday）视AI Agent初创公司为“寄生虫”，用户数据归属权将是行业变革焦点，预示一场“战争”的开始。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-21-tools-01-agentui",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Foundry Unbrowse",
+      "sourceUrl": "https://x.com/unbrowse/status/2029529755020935275/analytics",
+      "title": "传统浏览器Agent因模拟UI点击效率低下",
+      "summary": "传统浏览器Agent因模拟UI点击效率低下。Unbrowse通过直接索引内部API，实现毫秒级响应，跳过浏览器交互，节省时间和tokens。",
+      "take": "传统浏览器Agent因模拟UI点击效率低下。Unbrowse通过直接索引内部API，实现毫秒级响应，跳过浏览器交互，节省时间和tokens。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-03-21-tools-02-lightpanda",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Ryan Hart",
+      "sourceUrl": "https://x.com/thisdudelikesAI/status/2032020679827341603",
+      "title": "Lightpanda是一款全新的无头浏览器",
+      "summary": "Lightpanda是一款全新的无头浏览器，专为AI Agent、网络抓取和自动化设计，比Chrome快11倍，内存消耗少9倍，并非Chromium分支。",
+      "take": "Lightpanda是一款全新的无头浏览器，专为AI Agent、网络抓取和自动化设计，比Chrome快11倍，内存消耗少9倍，并非Chromium分支。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-21-opinion-01-karpathy-ai-agent",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Rohan Paul",
+      "sourceUrl": "https://x.com/rohanpaul_ai/status/2035307167096672567",
+      "title": "(Karpathy采访) AI Agent失败常源于用户技能不足（指令不佳）",
+      "summary": "(Karpathy采访) AI Agent失败常源于用户技能不足（指令不佳），而非模型能力。他建议将20分钟的宏观任务委托给并行Agent，然后进行审查。",
+      "take": "(Karpathy采访) AI Agent失败常源于用户技能不足（指令不佳），而非模型能力。他建议将20分钟的宏观任务委托给并行Agent，然后进行审查。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-21-opinion-02-anthropic-anthropic",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@Rohan Paul",
+      "sourceUrl": "https://x.com/rohanpaul_ai/status/2034018315543486807",
+      "title": "(Anthropic研究) Anthropic的研究表明",
+      "summary": "(Anthropic研究) Anthropic的研究表明，AI编码助手（如Vibe-Coding）在没有显著提升效率的情况下，反而损害了开发者的概念理解、代码阅读和调试能力。",
+      "take": "(Anthropic研究) Anthropic的研究表明，AI编码助手（如Vibe-Coding）在没有显著提升效率的情况下，反而损害了开发者的概念理解、代码阅读和调试能力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-21-news-01-agentic-ai",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@DeepLearning.AI",
+      "sourceUrl": "https://x.com/AndrewYNg/status/1975614372799283423",
+      "title": "吴恩达发布新课程“Agentic AI”",
+      "summary": "吴恩达发布新课程“Agentic AI”，教授Agent的四大设计模式，包括“Reflection”（反思），帮助构建更智能的Agent。",
+      "take": "吴恩达发布新课程“Agentic AI”，教授Agent的四大设计模式，包括“Reflection”（反思），帮助构建更智能的Agent。",
+      "topics": [
+        "Agents",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-03-21-news-02-andrej-karpathy-agenthub",
+      "briefingId": "x-2026-03-21",
+      "date": "2026-03-21",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "sourceName": "@0xMarioNawfal",
+      "sourceUrl": "https://x.com/RoundtableSpace/status/2031418555657253253",
+      "title": "Andrej Karpathy 发布了 Agenthub",
+      "summary": "Andrej Karpathy 发布了 Agenthub，一个100%开源的GitHub替代品，专为AI Agent设计和优化。",
+      "take": "Andrej Karpathy 发布了 Agenthub，一个100%开源的GitHub替代品，专为AI Agent设计和优化。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ],
+  "xToplines": [
+    "AI Agent的商业模式正从原始输出转向编排、托管、分析等高价值服务。",
+    "提升Agent效果需高质量指令和上下文管理，同时警惕对人类技能的潜在负面影响。",
+    "Agengub、Lightpanda等新Agentic工具和框架正快速发展，加速Agent在各场景落地。"
+  ],
+  "xActionItems": [
+    "探索 Karpathy 的 Autoresearch 仓库（结合 Claude Code 可显著提升效率）或其新发布的 Agenthub，了解Agentic系统的实际构建与应用。",
+    "参考 Karpathy 观点，优化Agent交互策略，提升指令质量，尝试将宏观任务分解委托给并行Agent。",
+    "思考AI Agent在您现有业务中的增值潜力（尤其在编排、托管和分析方向），并关注 Lightpanda 等新一代工具，以提升Agent效率。"
+  ]
+}
