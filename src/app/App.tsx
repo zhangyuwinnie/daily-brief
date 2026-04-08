@@ -91,7 +91,7 @@ export function App() {
   }, [insightStates]);
 
   useEffect(() => {
-    if (generatedContentStatus !== "ready") {
+    if (generatedContentStatus !== "ready" || location.pathname !== "/build") {
       setBuildQueue([]);
       setBuildQueueStatus("idle");
       setBuildQueueError(null);
@@ -147,7 +147,7 @@ export function App() {
     return () => {
       isDisposed = true;
     };
-  }, [generatedContentStatus, insightStates]);
+  }, [generatedContentStatus, insightStates, location.pathname]);
 
   const handleOpenModal = (insight: Insight) => {
     const existingState = insightStatesById.get(insight.id);
