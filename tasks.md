@@ -198,6 +198,11 @@ Execution rule:
   Depends on: `T50`
   Acceptance: `/topics` still shows real topics and signals after async loading, and existing integration/browser coverage remains green.
 
+## Batch 12: `/today` Render Performance
+
+- [x] `T53` Measure `/today` rendering cost on a production build and land the smallest justified visual simplification.
+  Acceptance: capture a production baseline, confirm whether shell/card compositing is a primary hotspot, reduce the highest-probability expensive styles only if the trace supports it, and keep automated verification green.
+
 ## Suggested Stop Points
 
 - Stop after Batch 1 to confirm the schema and file layout.
@@ -205,6 +210,7 @@ Execution rule:
 - Stop after Batch 4 to validate the first real end-to-end read flow.
 - Stop after Batch 6 to confirm the local persistence model before polishing.
 - Stop after Batch 11 to validate the performance win before starting any new UX work.
+- Stop after Batch 12 to validate the measured `/today` rendering improvement before taking on broader UI polish.
 
 ## Verification By Batch
 
@@ -219,3 +225,4 @@ Execution rule:
 - Batch 9: `npm run build` and manual regression sweep
 - Batch 10: `npm run sync:generated`, `npm test`, `npm run test:e2e`, and `npm run build`
 - Batch 11: `npm run sync:generated`, targeted loader/app tests, `npm test`, `npm run test:e2e`, and `npm run build`
+- Batch 12: `npm run build`, production `/today` trace before and after any change, `npm test`, and rerun `npm run test:e2e` if the landed visual change risks visible route regressions

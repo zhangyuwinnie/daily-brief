@@ -41,7 +41,7 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
   ].filter((section): section is NonNullable<typeof section> => Boolean(section));
 
   return (
-    <article className="group relative rounded-card border border-white/80 bg-white/70 p-5 shadow-soft backdrop-blur-md transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-6">
+    <article className="group relative rounded-card border border-white/90 bg-white/92 p-5 shadow-soft transition-shadow hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-6">
       {insight.isTopSignal ? (
         <div className="absolute -right-2 -top-2 z-10 flex items-center gap-1 rounded-full border border-white bg-gradient-to-r from-[#8bd84a] to-[#a2ea5c] px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-slate-900 shadow-md animate-pulse-slow sm:-right-3 sm:-top-3">
           <Sparkles className="h-3 w-3" />

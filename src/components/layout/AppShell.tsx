@@ -31,7 +31,7 @@ export function AppShell({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#e0f7ea] via-[#c8eed8] to-[#9adfb9] px-3 py-3 text-slate-800 sm:px-4 md:px-6">
-      <div className="mx-auto flex min-h-[calc(100vh-1.5rem)] w-full max-w-[1400px] flex-col overflow-hidden rounded-shell border border-white/60 bg-white/40 shadow-glass backdrop-blur-xl lg:min-h-[calc(100vh-3rem)] lg:flex-row">
+      <div className="mx-auto flex min-h-[calc(100vh-1.5rem)] w-full max-w-[1400px] flex-col overflow-hidden rounded-shell border border-white/70 bg-white/78 shadow-glass lg:min-h-[calc(100vh-3rem)] lg:flex-row">
         <Sidebar buildCount={buildCount} />
 
         <main className="flex min-w-0 flex-1 flex-col">

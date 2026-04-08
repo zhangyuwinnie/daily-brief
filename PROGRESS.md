@@ -60,11 +60,20 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend MVP now boots from lightweight manifests, lazy-loads per-date briefing payloads by route, and the core real-data/read-build-listen loop still passes full regression coverage locally`
+Overall status: `frontend MVP now boots from lightweight manifests, lazy-loads per-date briefing payloads by route, and `/today` no longer carries the heaviest shell/card backdrop blur cost while full regression coverage still passes locally`
 
 Current worktree snapshot:
 
-- Batch 11 is complete locally.
+- Batch 12 is complete locally.
+- `plans/task-plans/T53_plan.md` now records the measurement-first `/today` rendering task scope, expected files, verification path, and manual QA notes.
+- `src/components/layout/AppShell.tsx` no longer applies the full-shell `backdrop-blur-xl`; the shell now uses a more opaque static surface to preserve legibility without the same compositor cost.
+- `src/components/cards/InsightCard.tsx` no longer applies `backdrop-blur-md` on every visible insight card, and its hover treatment is narrowed from `transition-all` to `transition-shadow`.
+- production before/after `/today` traces were captured locally under `artifacts/perf/` and showed the expected bottleneck was render/compositor work rather than script execution.
+- the strongest measured improvements in the after trace were:
+  - `RendererRasterWorker` total dropped from about `2340ms` to about `293ms`
+  - `Display::DrawAndSwap` total dropped from about `222ms` to about `21ms`
+  - `Graphics.Pipeline` total dropped from about `349ms` to about `155ms`
+- script work stayed roughly flat across the comparison trace, which supports keeping the fix focused on visual compositing rather than reworking the data path again.
 - `plans/task-plans/T49-T52_plan.md` records the per-date lazy-loading scope, file targets, verification approach, and manual QA notes.
 - `src/lib/briefings/generatedArtifacts.ts` now writes one generated day payload per date under `public/generated/briefings/` while keeping `briefings-by-date.json` during the transition.
 - `public/generated/briefings/` now contains `54` date files, so `/today`, `/build`, and permalink routes can fetch only the days they need.
@@ -79,12 +88,22 @@ Current worktree snapshot:
 - `src/pages/InsightSharePage.tsx` now resolves a permalink by looking up its indexed date and fetching only that day payload when needed.
 - `src/components/layout/RightRail.tsx` now resolves the selected day from the generated index metadata instead of assuming the day body was already loaded.
 - automated verification now passes with:
+  - `65` Vitest tests
+  - `5` Playwright tests
+  - `npm run build`
+- prior lazy-loading verification also passed with:
   - `64` Vitest tests
   - `5` Playwright tests
   - `npm run sync:generated`
   - `npm run build`
+- focused follow-up verification also passed with:
+  - `npm test -- src/app/App.integration.test.tsx`
+  - `npm run build`
 - key lesson / risk:
+  - stacked transparency and animation still exist in places like the right rail, modal overlay, and `Top Pick` badge, so those remain the next suspects if `/today` still feels heavy after this change.
+  - the current trace comparison was captured in headless Chrome automation, which is strong enough to confirm the bottleneck category but should still be paired with a quick manual feel check in a normal interactive browser session.
   - `/topics` still intentionally fans out across all per-date JSON files when opened; that is acceptable for a non-default route, but it should be revisited before adding heavier historical/archive UX.
+  - the `save-progress` skill references `scripts/save_progress.sh`, but this repo currently does not contain that script, so progress updates are being maintained manually.
 - `plans/task-plans/runtime-data-and-lazy-routes_plan.md` records the runtime-data and route-splitting scope, file targets, verification approach, and manual QA notes.
 - generated JSON is no longer bundled into the app from `src/generated/`.
 - `scripts/sync-generated-content.ts` now writes JSON artifacts to `public/generated/`, alongside the existing `public/generated/audio/` delivery path.
