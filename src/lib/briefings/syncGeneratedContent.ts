@@ -1,4 +1,4 @@
-import { readdir, readFile } from "node:fs/promises";
+import { copyFile, mkdir, readdir, readFile, unlink } from "node:fs/promises";
 import { basename, join } from "node:path";
 import {
   buildGeneratedArtifacts,
@@ -6,6 +6,12 @@ import {
   validateGeneratedArtifacts,
   writeGeneratedArtifacts
 } from "./generatedArtifacts";
+import {
+  buildPublishedAudioFileName,
+  extractAudioDate,
+  findBestAudioFileForDate,
+  isSupportedAudioFile
+} from "./audioFileSelection";
 
 export type SyncGeneratedContentOptions = {
   inputDir: string;
@@ -22,6 +28,7 @@ export type SyncGeneratedContentResult = {
 };
 
 const MARKDOWN_FILE_PATTERN = /^(?:x_briefing_)?\d{4}-\d{2}-\d{2}\.md$/;
+const PUBLISHED_AUDIO_FILE_PATTERN = /^\d{4}-\d{2}-\d{2}\.(mp3|m4a|wav)$/i;
 
 async function readDirectoryFilePaths(directory: string) {
   try {
@@ -49,8 +56,55 @@ async function collectBriefingInputs(inputDir: string): Promise<BriefingInput[]>
   );
 }
 
-async function collectAudioFilePaths(audioDir: string) {
-  return (await readDirectoryFilePaths(audioDir)).sort((left, right) => left.localeCompare(right));
+function collectBriefingDates(briefingInputs: BriefingInput[]) {
+  return [
+    ...new Set(
+      briefingInputs
+        .map((input) => extractAudioDate(input.filePath))
+        .filter((date): date is string => date !== null)
+    )
+  ].sort((left, right) => right.localeCompare(left));
+}
+
+async function collectSourceAudioFilePaths(inputDir: string) {
+  return (await readDirectoryFilePaths(inputDir))
+    .filter((filePath) => isSupportedAudioFile(filePath))
+    .sort((left, right) => left.localeCompare(right));
+}
+
+function isManagedPublishedAudioFile(filePath: string) {
+  return PUBLISHED_AUDIO_FILE_PATTERN.test(basename(filePath));
+}
+
+async function removeStalePublishedAudioFiles(audioDir: string, publishedAudioFilePaths: string[]) {
+  const publishedSet = new Set(publishedAudioFilePaths);
+  const existingPublishedAudioPaths = (await readDirectoryFilePaths(audioDir)).filter(isManagedPublishedAudioFile);
+
+  await Promise.all(
+    existingPublishedAudioPaths
+      .filter((filePath) => !publishedSet.has(filePath))
+      .map((filePath) => unlink(filePath))
+  );
+}
+
+async function publishSourceAudioFiles(dates: string[], sourceAudioFilePaths: string[], audioDir: string) {
+  await mkdir(audioDir, { recursive: true });
+
+  const publishedAudioFilePaths: string[] = [];
+  for (const date of dates) {
+    const sourceFilePath = findBestAudioFileForDate(date, sourceAudioFilePaths);
+    if (!sourceFilePath) {
+      continue;
+    }
+
+    const publishedFilePath = join(audioDir, buildPublishedAudioFileName(date, sourceFilePath));
+    await copyFile(sourceFilePath, publishedFilePath);
+    publishedAudioFilePaths.push(publishedFilePath);
+  }
+
+  await removeStalePublishedAudioFiles(audioDir, publishedAudioFilePaths);
+
+  return publishedAudioFilePaths.sort((left, right) => left.localeCompare(right));
 }
 
 export async function syncGeneratedContent(
@@ -62,14 +116,23 @@ export async function syncGeneratedContent(
     throw new Error(`No briefing markdown files found under ${options.inputDir}.`);
   }
 
-  const audioFilePaths = await collectAudioFilePaths(options.audioDir);
+  const briefingDates = collectBriefingDates(briefingInputs);
+  const sourceAudioFilePaths = await collectSourceAudioFilePaths(options.inputDir);
+  const publishedAudioFilePaths = await publishSourceAudioFiles(
+    briefingDates,
+    sourceAudioFilePaths,
+    options.audioDir
+  );
   const artifacts = buildGeneratedArtifacts({
     briefingInputs,
-    audioFilePaths
+    audioFilePaths: publishedAudioFilePaths
   });
 
   validateGeneratedArtifacts(artifacts);
-  const writtenFiles = await writeGeneratedArtifacts(artifacts, options.outputDir);
+  const writtenFiles = [
+    ...publishedAudioFilePaths,
+    ...(await writeGeneratedArtifacts(artifacts, options.outputDir))
+  ];
 
   return {
     writtenFiles,

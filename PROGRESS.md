@@ -60,11 +60,32 @@ Listen mode:
 
 ## Current Implementation Status
 
-Overall status: `frontend MVP now boots from lightweight manifests, lazy-loads per-date briefing payloads by route, and `/today` no longer carries the heaviest shell/card backdrop blur cost while full regression coverage still passes locally`
+Overall status: `frontend MVP now boots from lightweight manifests, lazy-loads per-date briefing payloads by route, and `/today` now plays real published daily podcast files from generated web paths while full regression coverage still passes locally`
 
 Current worktree snapshot:
 
-- Batch 12 is complete locally.
+- Batch 13 is complete locally.
+- `plans/task-plans/T54_plan.md` now records the source-audio publishing scope, file targets, verification approach, and manual QA notes.
+- `src/lib/briefings/audioFileSelection.ts` now centralizes date extraction, supported-extension checks, duplicate detection, and per-date ranking so sync and artifact generation use one audio selection rule.
+- `src/lib/briefings/syncGeneratedContent.ts` now:
+  - scans the briefing input directory for source audio files
+  - selects the best file per date with non-`zh`, non-duplicate, extension-aware preference rules
+  - copies the selected file into `public/generated/audio/` with a stable `{date}{ext}` web filename
+  - removes stale date-named published audio files that are no longer selected
+  - builds `audio-index.json` from the files published in the current sync run instead of guessing from whatever already exists in `audioDir`
+- `src/lib/briefings/generatedArtifacts.ts` now matches non-normalized audio filenames by extracted date, so artifact generation remains backward-compatible with source-style podcast names.
+- `src/lib/briefings/generatedArtifacts.test.ts` and `src/lib/briefings/syncGeneratedContent.test.ts` now cover:
+  - non-normalized podcast naming patterns
+  - duplicate `(2)` copy handling
+  - `zh` versus primary-language preference
+  - published audio copy output and stale managed-file cleanup
+- `tests/e2e/today-audio.spec.ts` now derives its ready and pending dates from the current generated dataset instead of assuming one hardcoded fixture date.
+- `src/pages/TodayPage.test.tsx` now asserts audio UI against the current generated day status instead of assuming the latest day is always pending.
+- `public/generated/audio/` now publishes three real source-backed daily audio files:
+  - `2026-04-01.mp3`
+  - `2026-04-05.mp3`
+  - `2026-04-06.mp3`
+- `public/generated/audio-index.json` now marks those three dates as `ready`, and `public/generated/briefings-index.json` now reports `hasAudio: true` for the same dates.
 - `plans/task-plans/T53_plan.md` now records the measurement-first `/today` rendering task scope, expected files, verification path, and manual QA notes.
 - `src/components/layout/AppShell.tsx` no longer applies the full-shell `backdrop-blur-xl`; the shell now uses a more opaque static surface to preserve legibility without the same compositor cost.
 - `src/components/cards/InsightCard.tsx` no longer applies `backdrop-blur-md` on every visible insight card, and its hover treatment is narrowed from `transition-all` to `transition-shadow`.
@@ -88,9 +109,15 @@ Current worktree snapshot:
 - `src/pages/InsightSharePage.tsx` now resolves a permalink by looking up its indexed date and fetching only that day payload when needed.
 - `src/components/layout/RightRail.tsx` now resolves the selected day from the generated index metadata instead of assuming the day body was already loaded.
 - automated verification now passes with:
-  - `65` Vitest tests
+  - `npm run sync:generated`
+  - `67` Vitest tests
   - `5` Playwright tests
   - `npm run build`
+- manual browser verification also passed with:
+  - `/today?date=2026-04-06` loads a `ready` audio player against `/generated/audio/2026-04-06.mp3`
+- `65` Vitest tests
+- `5` Playwright tests
+- `npm run build`
 - prior lazy-loading verification also passed with:
   - `64` Vitest tests
   - `5` Playwright tests
@@ -100,6 +127,8 @@ Current worktree snapshot:
   - `npm test -- src/app/App.integration.test.tsx`
   - `npm run build`
 - key lesson / risk:
+  - the publish step is now deployment-safe for static hosting, but it still writes local files under `public/generated/audio/`; before public-domain deployment, the next evolution is to swap that publish target to object storage or a CDN without changing the UI contract.
+  - source audio availability is still only as fresh as the upstream files under `~/.openclaw/workspace/briefings/`, so missing or late podcast files will continue to surface as `pending` until the external audio job produces them.
   - stacked transparency and animation still exist in places like the right rail, modal overlay, and `Top Pick` badge, so those remain the next suspects if `/today` still feels heavy after this change.
   - the current trace comparison was captured in headless Chrome automation, which is strong enough to confirm the bottleneck category but should still be paired with a quick manual feel check in a normal interactive browser session.
   - `/topics` still intentionally fans out across all per-date JSON files when opened; that is acceptable for a non-default route, but it should be revisited before adding heavier historical/archive UX.
@@ -207,7 +236,7 @@ Current worktree snapshot:
   - `AudioPlayer` component coverage for real playback controls
   - `/today` audio notice coverage
   - Playwright coverage for one ready `/today?date=2026-03-20` path plus the default pending `/today` path
-- next recommended batch is `None. Pause for the next scope decision.`
+- next recommended batch is `optional deploy-readiness follow-up`: replace local `public/generated/audio/` publishing with a CDN or object-storage publish target before public-domain launch.
 
 Implemented:
 

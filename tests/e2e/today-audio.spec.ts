@@ -1,14 +1,31 @@
 import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
+
+const audioIndex = JSON.parse(
+  readFileSync(new URL("../../public/generated/audio-index.json", import.meta.url), "utf8")
+) as Record<
+  string,
+  {
+    status: string;
+    audioUrl?: string;
+  }
+>;
+
+const readyAudioEntry = Object.entries(audioIndex).find(([, audio]) => audio.status === "ready" && audio.audioUrl);
+const pendingAudioEntry = Object.entries(audioIndex).find(([, audio]) => audio.status !== "ready");
 
 test("plays a generated ready audio brief from /today", async ({ page }) => {
-  await page.goto("/today?date=2026-03-20");
+  test.skip(!readyAudioEntry, "requires at least one ready audio date in the generated dataset");
+
+  const [readyDate, readyAudio] = readyAudioEntry!;
+  await page.goto(`/today?date=${readyDate}`);
 
   await expect(page.getByRole("heading", { name: "Today's Brief" })).toBeVisible();
   await expect(page.getByText("Ready")).toBeVisible();
 
   const playButton = page.getByRole("button", { name: "Play audio brief" });
   await expect(playButton).toBeEnabled();
-  await expect(page.locator("audio")).toHaveAttribute("src", /2026-03-20\.wav$/);
+  await expect(page.locator("audio")).toHaveAttribute("src", readyAudio.audioUrl!);
 
   await playButton.click();
 
@@ -19,10 +36,13 @@ test("plays a generated ready audio brief from /today", async ({ page }) => {
   });
 });
 
-test("keeps pending generated audio visibly disabled on the default today page", async ({ page }) => {
-  await page.goto("/today");
+test("keeps pending generated audio visibly disabled on a pending generated day", async ({ page }) => {
+  test.skip(!pendingAudioEntry, "requires at least one pending audio date in the generated dataset");
+
+  const [pendingDate] = pendingAudioEntry!;
+  await page.goto(`/today?date=${pendingDate}`);
 
   await expect(page.getByText("Generating...")).toBeVisible();
   await expect(page.getByRole("button", { name: "Play audio brief" })).toBeDisabled();
-  await expect(page.getByText(/audio for .* is still generating/i)).toBeVisible();
+  await expect(page.getByText(`Audio for ${pendingDate} is still generating.`)).toBeVisible();
 });

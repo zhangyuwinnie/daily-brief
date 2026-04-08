@@ -203,6 +203,11 @@ Execution rule:
 - [x] `T53` Measure `/today` rendering cost on a production build and land the smallest justified visual simplification.
   Acceptance: capture a production baseline, confirm whether shell/card compositing is a primary hotspot, reduce the highest-probability expensive styles only if the trace supports it, and keep automated verification green.
 
+## Batch 13: Published Daily Audio Discovery
+
+- [x] `T54` Publish discovered source audio files into generated web-audio paths and keep `/today` audio playback working from real daily podcasts.
+  Acceptance: sync discovers source audio files from the briefing input directory, publishes the best per-date file into `public/generated/audio/`, writes `audio-index.json` with `ready` URLs for those dates, and automated tests cover duplicate/language selection plus browser playback against the current generated dataset.
+
 ## Suggested Stop Points
 
 - Stop after Batch 1 to confirm the schema and file layout.
@@ -211,6 +216,7 @@ Execution rule:
 - Stop after Batch 6 to confirm the local persistence model before polishing.
 - Stop after Batch 11 to validate the performance win before starting any new UX work.
 - Stop after Batch 12 to validate the measured `/today` rendering improvement before taking on broader UI polish.
+- Stop after Batch 13 to validate real published daily audio playback before taking on broader audio UX work.
 
 ## Verification By Batch
 
@@ -226,3 +232,4 @@ Execution rule:
 - Batch 10: `npm run sync:generated`, `npm test`, `npm run test:e2e`, and `npm run build`
 - Batch 11: `npm run sync:generated`, targeted loader/app tests, `npm test`, `npm run test:e2e`, and `npm run build`
 - Batch 12: `npm run build`, production `/today` trace before and after any change, `npm test`, and rerun `npm run test:e2e` if the landed visual change risks visible route regressions
+- Batch 13: targeted sync/artifact tests with an initial failing assertion, `npm run sync:generated`, `npm test`, `npm run test:e2e`, and `npm run build`

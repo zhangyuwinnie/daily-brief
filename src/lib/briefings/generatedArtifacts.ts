@@ -4,6 +4,7 @@ import type { AudioProvider, BriefingRecord, DailyAudio, Insight, SourceType } f
 import { normalizeParsedBriefing } from "./normalizeParsedBriefing";
 import { parseRssBriefing } from "./parseRssBriefing";
 import { parseXBriefing } from "./parseXBriefing";
+import { findBestAudioFileForDate } from "./audioFileSelection";
 import type { ParsedBriefing, ParserWarning } from "./types";
 
 export type GeneratedBriefingsIndex = {
@@ -124,24 +125,8 @@ function comparePreparedBriefings(left: PreparedBriefing, right: PreparedBriefin
   return sourceTypeOrder(left.sourceType) - sourceTypeOrder(right.sourceType);
 }
 
-function audioPreference(filePath: string) {
-  const name = basename(filePath).toLowerCase();
-  if (name.endsWith(".mp3")) {
-    return 0;
-  }
-  if (name.endsWith(".m4a")) {
-    return 1;
-  }
-  return 2;
-}
-
 function findMatchingAudioFile(date: string, audioFilePaths: string[]) {
-  const matches = audioFilePaths.filter((filePath) => basename(filePath).startsWith(`${date}.`));
-  matches.sort((left, right) => {
-    const preferenceDelta = audioPreference(left) - audioPreference(right);
-    return preferenceDelta !== 0 ? preferenceDelta : left.localeCompare(right);
-  });
-  return matches[0];
+  return findBestAudioFileForDate(date, audioFilePaths);
 }
 
 function buildAudioRecord(date: string, audioFilePaths: string[], provider: AudioProvider): DailyAudio {

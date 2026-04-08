@@ -94,7 +94,7 @@ describe("TodayPage", () => {
 
     expect(html).toContain(pageData!.insights[0].title);
     expect(html).toContain(`href="${pageData!.insights[0].sourceUrl}"`);
-    expect(html).toContain("Generating...");
+    expect(html).toContain(pageData!.audio?.status === "ready" ? "Ready" : "Generating...");
   });
 
   it("renders the requested generated date when /today receives a valid date query param", () => {
@@ -124,12 +124,16 @@ describe("TodayPage", () => {
   });
 
   it("shows an explicit pending-audio message when the selected day audio is still generating", () => {
-    const pageData = getDailyBriefPageData();
+    const pendingDate = getAvailableBriefingDates().find(
+      (date) => getDailyBriefPageData(date)?.audio?.status === "pending"
+    );
+    const pageData = pendingDate ? getDailyBriefPageData(pendingDate) : null;
 
+    expect(pendingDate).toBeTruthy();
     expect(pageData).not.toBeNull();
     expect(pageData!.audio?.status).toBe("pending");
 
-    const html = renderTodayPage();
+    const html = renderTodayPage(`/today?date=${pendingDate}`);
 
     expect(html).toContain(`Audio for ${pageData!.date} is still generating.`);
     expect(html).toContain("Check back after the upstream audio job finishes.");

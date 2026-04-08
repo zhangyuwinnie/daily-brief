@@ -80,7 +80,7 @@
         "x-2026-04-06-news-01-agentic-knowledge-graph-construction",
         "x-2026-04-06-news-02-nvidias-nemo-agent-toolkit"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss",
         "x"
@@ -106,7 +106,7 @@
         "x-2026-04-05-opinion-03-llmllm-evals",
         "x-2026-04-05-news-01-ai"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss",
         "x"
@@ -217,7 +217,7 @@
         "x-2026-04-01-news-01-promptfoo",
         "x-2026-04-01-news-02-google421agentic-design-patterns"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss",
         "x"
@@ -496,7 +496,7 @@
         "x-2026-03-20-news-02-nvidiaainemoclaw",
         "x-2026-03-20-news-03-alt-x-ai"
       ],
-      "hasAudio": true,
+      "hasAudio": false,
       "sourceTypes": [
         "rss",
         "x"

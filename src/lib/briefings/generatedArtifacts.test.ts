@@ -100,6 +100,28 @@ describe("generatedArtifacts", () => {
     });
   });
 
+  it("matches non-normalized podcast filenames and prefers primary non-duplicate audio variants", () => {
+    const artifacts = buildGeneratedArtifacts({
+      briefingInputs: [
+        {
+          filePath: "/tmp/2026-03-20.md",
+          text: rssNormal
+        }
+      ],
+      audioFilePaths: [
+        "/tmp/public/generated/audio/ai_links_podcast_zh_2026-03-20.mp3",
+        "/tmp/public/generated/audio/ai_links_2026-03-20_audio_overview (2).mp3",
+        "/tmp/public/generated/audio/ai_links_2026-03-20_audio_overview.mp3"
+      ]
+    });
+
+    expect(artifacts.audioIndex["2026-03-20"]).toMatchObject({
+      status: "ready",
+      audioUrl: "/generated/audio/ai_links_2026-03-20_audio_overview.mp3",
+      provider: "notebooklm"
+    });
+  });
+
   it("fails loudly for inconsistent generated artifact shapes", () => {
     const artifacts = buildGeneratedArtifacts({
       briefingInputs: [
