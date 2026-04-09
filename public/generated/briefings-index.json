@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-09",
     "2026-04-08",
     "2026-04-07",
     "2026-04-06",
@@ -58,6 +59,36 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-09": {
+      "briefingIds": [
+        "rss-2026-04-09",
+        "x-2026-04-09"
+      ],
+      "insightIds": [
+        "rss-2026-04-09-01-openai-full-fan-mode-contest-terms-conditions",
+        "rss-2026-04-09-02-the-next-phase-of-enterprise-ai",
+        "rss-2026-04-09-03-show-hn-css-studio-design-by-hand-code-by-agent",
+        "rss-2026-04-09-04-open-source-security-at-astral",
+        "x-2026-04-09-trend-01-ai",
+        "x-2026-04-09-trend-02-ai",
+        "x-2026-04-09-trend-03-satya-nadella",
+        "x-2026-04-09-trend-04-",
+        "x-2026-04-09-trend-05-ai-llm",
+        "x-2026-04-09-tools-01-claude-managed-agents",
+        "x-2026-04-09-tools-02-claude-code-obsidian",
+        "x-2026-04-09-tools-03-claude-code-ai-career-ops",
+        "x-2026-04-09-tools-04-project-glasswing",
+        "x-2026-04-09-tools-05-",
+        "x-2026-04-09-opinion-01-clis",
+        "x-2026-04-09-opinion-02-ai-context-tokens",
+        "x-2026-04-09-news-01-mcp-ai"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
     "2026-04-08": {
       "briefingIds": [
         "rss-2026-04-08",
@@ -68,7 +99,7 @@
         "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu",
         "x-2026-04-08-trend-01-x"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss",
         "x"

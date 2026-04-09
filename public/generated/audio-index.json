@@ -1,10 +1,18 @@
 {
+  "2026-04-09": {
+    "id": "audio-2026-04-09",
+    "briefingDate": "2026-04-09",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-09"
+  },
   "2026-04-08": {
     "id": "audio-2026-04-08",
     "briefingDate": "2026-04-08",
-    "status": "pending",
+    "status": "ready",
     "provider": "notebooklm",
-    "title": "Daily Brief for 2026-04-08"
+    "title": "Daily Brief for 2026-04-08",
+    "audioUrl": "/generated/audio/2026-04-08.mp3"
   },
   "2026-04-07": {
     "id": "audio-2026-04-07",
