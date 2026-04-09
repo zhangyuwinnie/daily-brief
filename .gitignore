@@ -6,3 +6,5 @@ dist/
 public/generated/audio/
 .env.local
 .env*.local
+artifacts/
+test-results/

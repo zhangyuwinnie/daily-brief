@@ -1,5 +1,19 @@
 {
   "availableDates": [
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
     "2026-03-22",
     "2026-03-21",
     "2026-03-20",
@@ -42,6 +56,355 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-06": {
+      "briefingIds": [
+        "rss-2026-04-06"
+      ],
+      "insightIds": [
+        "rss-2026-04-06-01-continual-learning-for-ai-agents",
+        "rss-2026-04-06-02-show-hn-i-built-a-tiny-llm-to-demystify-how-language-models-work",
+        "rss-2026-04-06-03-ask-hn-how-do-systems-or-people-detect-when-a-text-is-written-by-an-llm"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-05": {
+      "briefingIds": [
+        "rss-2026-04-05",
+        "x-2026-04-05"
+      ],
+      "insightIds": [
+        "rss-2026-04-05-01-research-llm-apis-2026-04-04",
+        "rss-2026-04-05-02-llm-wiki-example-of-an-idea-file",
+        "rss-2026-04-05-03-show-hn-i-made-open-source-zero-power-pcb-hackathon-badges",
+        "x-2026-04-05-trend-01-anthropicai",
+        "x-2026-04-05-trend-02-marc-andreessenai",
+        "x-2026-04-05-tools-01-ai",
+        "x-2026-04-05-tools-02-claude-codeui",
+        "x-2026-04-05-tools-03-agentic-knowledge-graph-construction",
+        "x-2026-04-05-tools-04-free-codeclaude-code",
+        "x-2026-04-05-opinion-01-farzapediallm",
+        "x-2026-04-05-opinion-02-ai",
+        "x-2026-04-05-opinion-03-llmllm-evals",
+        "x-2026-04-05-news-01-ai"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-04-04": {
+      "briefingIds": [
+        "rss-2026-04-04",
+        "x-2026-04-04"
+      ],
+      "insightIds": [
+        "rss-2026-04-04-01-how-my-agents-self-heal-in-production",
+        "rss-2026-04-04-02-open-models-have-crossed-a-threshold",
+        "rss-2026-04-04-03-evaluating-alignment-of-behavioral-dispositions-in-llms",
+        "rss-2026-04-04-04-the-cognitive-impact-of-coding-agents",
+        "rss-2026-04-04-05-the-axios-supply-chain-attack-used-individually-targeted-social-engineering",
+        "x-2026-04-04-trend-01-karpathyai",
+        "x-2026-04-04-trend-02-1m-tokendecision-tracesagentic-engineering",
+        "x-2026-04-04-trend-03-claude-code-48ai",
+        "x-2026-04-04-tools-01-claude-mem-claude-code-ui-ux-pro-max-uiux",
+        "x-2026-04-04-tools-02-cursor-design-mode",
+        "x-2026-04-04-tools-03-omma",
+        "x-2026-04-04-opinion-01-anthropic-apiagentic-stack",
+        "x-2026-04-04-opinion-02-ai",
+        "x-2026-04-04-opinion-03-workday-ceoai",
+        "x-2026-04-04-news-01-grok",
+        "x-2026-04-04-news-02-gemma-4",
+        "x-2026-04-04-news-03-medgemma"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-04-03": {
+      "briefingIds": [
+        "rss-2026-04-03",
+        "x-2026-04-03"
+      ],
+      "insightIds": [
+        "rss-2026-04-03-01-openai-acquires-tbpn",
+        "rss-2026-04-03-02-gemma-4-byte-for-byte-the-most-capable-open-models",
+        "rss-2026-04-03-03-highlights-from-my-conversation-about-agentic-engineering-on-lennys-podcast",
+        "rss-2026-04-03-04-llm-gemini-030",
+        "rss-2026-04-03-05-qwen36-plus-towards-real-world-agents",
+        "rss-2026-04-03-06-riskready-open-source-grc-platform-with-mcp-gateway-and-human-approved-mutations",
+        "x-2026-04-03-trend-01-pika-ai-agent",
+        "x-2026-04-03-tools-01-claude-code-agent-30-agent",
+        "x-2026-04-03-opinion-01-karpathy-ai",
+        "x-2026-04-03-news-01-deeplearningai-agentic-ai"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-04-02": {
+      "briefingIds": [
+        "rss-2026-04-02",
+        "x-2026-04-02"
+      ],
+      "insightIds": [
+        "rss-2026-04-02-01-lemonade-by-amd-a-fast-and-open-source-local-llm-server-using-gpu-and-npu",
+        "rss-2026-04-02-02-run-multiple-agents-at-once-with-fleet-in-copilot-cli",
+        "rss-2026-04-02-03-march-2026-langchain-newsletter",
+        "rss-2026-04-02-04-announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust",
+        "rss-2026-04-02-05-adele-predicting-and-explaining-ai-performance-across-tasks",
+        "rss-2026-04-02-06-datasette-llm-01a6",
+        "rss-2026-04-02-07-datasette-enrichments-llm-02a1",
+        "rss-2026-04-02-08-securing-the-open-source-supply-chain-across-github",
+        "rss-2026-04-02-09-mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-litellm",
+        "x-2026-04-02-trend-01-",
+        "x-2026-04-02-trend-02-cap-x-vibe-agents",
+        "x-2026-04-02-tools-01-dev-browser-ai-playwright-chrome",
+        "x-2026-04-02-tools-02-ai",
+        "x-2026-04-02-tools-03-use_figma-mcp",
+        "x-2026-04-02-opinion-01-mark-cuban-claude-python",
+        "x-2026-04-02-opinion-02-workday-ai",
+        "x-2026-04-02-news-01-openai-gpt-54-thinking-gpt-54-pro"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-04-01": {
+      "briefingIds": [
+        "rss-2026-04-01",
+        "x-2026-04-01"
+      ],
+      "insightIds": [
+        "rss-2026-04-01-01-llm-030",
+        "rss-2026-04-01-02-llm-all-models-async-01",
+        "rss-2026-04-01-03-show-hn-1-bit-bonsai-the-first-commercially-viable-1-bit-llms",
+        "rss-2026-04-01-04-show-hn-baton-a-desktop-app-for-developing-with-ai-agents",
+        "rss-2026-04-01-05-gradient-labs-gives-every-bank-customer-an-ai-account-manager",
+        "rss-2026-04-01-06-agent-driven-development-in-copilot-applied-science",
+        "rss-2026-04-01-07-accelerating-the-next-phase-of-ai",
+        "x-2026-04-01-trend-01-claude-code-kairos",
+        "x-2026-04-01-trend-02-",
+        "x-2026-04-01-tools-01-claude-code-26",
+        "x-2026-04-01-tools-02-paperclip-aiceo",
+        "x-2026-04-01-opinion-01-ai",
+        "x-2026-04-01-opinion-02-llmcpu",
+        "x-2026-04-01-news-01-promptfoo",
+        "x-2026-04-01-news-02-google421agentic-design-patterns"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-31": {
+      "briefingIds": [
+        "rss-2026-03-31",
+        "x-2026-03-31"
+      ],
+      "insightIds": [
+        "rss-2026-03-31-01-helping-disaster-response-teams-turn-ai-into-action-across-asia",
+        "rss-2026-03-31-02-datasette-llm-01a3",
+        "rss-2026-03-31-03-llm-mrchatterbox-01",
+        "rss-2026-03-31-04-open-source-cad-in-the-browser-solvespace",
+        "rss-2026-03-31-05-anthropic-claude-code-users-hitting-usage-limits-way-faster-than-expected",
+        "x-2026-03-31-trend-01-anthropic-npm",
+        "x-2026-03-31-trend-02-ai-agent",
+        "x-2026-03-31-tools-01-agentscope-python",
+        "x-2026-03-31-tools-02-ai-agent",
+        "x-2026-03-31-opinion-01-andrej-karpathy",
+        "x-2026-03-31-opinion-02-agent",
+        "x-2026-03-31-opinion-03-arc-agi-3",
+        "x-2026-03-31-news-01-npm-http-axios"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-29": {
+      "briefingIds": [
+        "rss-2026-03-29",
+        "x-2026-03-29"
+      ],
+      "insightIds": [
+        "x-2026-03-29-trend-01-anthropic-ceo",
+        "x-2026-03-29-trend-02-",
+        "x-2026-03-29-trend-03-ai-agent",
+        "x-2026-03-29-tools-01-figma-use_figma-mcp",
+        "x-2026-03-29-tools-02-spline-omma",
+        "x-2026-03-29-tools-03-qwen3-coder-next",
+        "x-2026-03-29-tools-04-devin",
+        "x-2026-03-29-opinion-01-google-421-agentic-design-patternsagent",
+        "x-2026-03-29-opinion-02-boris-cherny-claude-code",
+        "x-2026-03-29-opinion-03-ragnaive-ragagent-ragagentic-rag",
+        "x-2026-03-29-news-01-openai-promptfoo",
+        "x-2026-03-29-news-02-arc-agi-3",
+        "x-2026-03-29-news-03-alt-x-ai-agent"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-28": {
+      "briefingIds": [
+        "rss-2026-03-28"
+      ],
+      "insightIds": [
+        "rss-2026-03-28-01-stadler-reshapes-knowledge-work-at-a-230-year-old-company"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-03-27": {
+      "briefingIds": [
+        "rss-2026-03-27",
+        "x-2026-03-27"
+      ],
+      "insightIds": [
+        "rss-2026-03-27-01-gemini-31-flash-live-making-audio-ai-more-natural-and-reliable",
+        "rss-2026-03-27-02-my-minute-by-minute-response-to-the-litellm-malware-attack",
+        "rss-2026-03-27-03-a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware",
+        "rss-2026-03-27-04-show-hn-i-put-an-ai-agent-on-a-7month-vps-with-irc-as-its-transport-layer",
+        "rss-2026-03-27-05-anthropic-subprocessor-changes",
+        "x-2026-03-27-trend-01-ai-agent",
+        "x-2026-03-27-trend-02-ai-agent2026",
+        "x-2026-03-27-trend-03-mark-cuban-claude-agentic-agent",
+        "x-2026-03-27-tools-01-last30days-skill",
+        "x-2026-03-27-tools-02-google-stitch-20-googleui-claude-code",
+        "x-2026-03-27-tools-03-telegram-nvidia-nemoclaw-nvidia-nemo-qwen35-27b",
+        "x-2026-03-27-tools-04-figma",
+        "x-2026-03-27-tools-05-claude-code-ai-website-cloner-template",
+        "x-2026-03-27-tools-06-qwen3-coder-next",
+        "x-2026-03-27-opinion-01-ai",
+        "x-2026-03-27-opinion-02-claude-code-boris-cherny-10-15claude",
+        "x-2026-03-27-opinion-03-superpower-gstack-ai",
+        "x-2026-03-27-opinion-04-7elon-muskclaude",
+        "x-2026-03-27-opinion-05-anthropic-claude-claude",
+        "x-2026-03-27-opinion-06-cli",
+        "x-2026-03-27-opinion-07-workday-ceo-ai-agent",
+        "x-2026-03-27-news-01-unipath",
+        "x-2026-03-27-news-02-yc-alt-x-ai-agent-ai-agentexcel",
+        "x-2026-03-27-news-03-google-aletheia-gemini-3-deep-think",
+        "x-2026-03-27-news-04-grok-420-beta",
+        "x-2026-03-27-news-05-sam-altmans-world-agentkit"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-26": {
+      "briefingIds": [
+        "rss-2026-03-26",
+        "x-2026-03-26"
+      ],
+      "insightIds": [
+        "rss-2026-03-26-01-how-middleware-lets-you-customize-your-agent-harness",
+        "rss-2026-03-26-02-skills-in-langsmith-fleet",
+        "rss-2026-03-26-03-inside-our-approach-to-the-model-spec",
+        "rss-2026-03-26-04-introducing-the-openai-safety-bug-bounty-program",
+        "rss-2026-03-26-05-vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini",
+        "rss-2026-03-26-06-datasette-llm-01a1",
+        "rss-2026-03-26-07-litellm-hack-were-you-one-of-the-47000",
+        "x-2026-03-26-trend-01-x"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-25": {
+      "briefingIds": [
+        "rss-2026-03-25",
+        "x-2026-03-25"
+      ],
+      "insightIds": [
+        "rss-2026-03-25-01-how-moda-builds-production-grade-ai-design-agents-with-deep-agents",
+        "rss-2026-03-25-02-helping-developers-build-safer-ai-experiences-for-teens",
+        "rss-2026-03-25-03-update-on-the-openai-foundation",
+        "rss-2026-03-25-04-malicious-litellm_initpth-in-litellm-1828-credential-stealer",
+        "rss-2026-03-25-05-local-llm-app-by-ente",
+        "rss-2026-03-25-06-building-a-coding-agent-in-swift-from-scratch",
+        "rss-2026-03-25-07-run-cloud-agents-in-your-own-infrastructure",
+        "x-2026-03-25-trend-01-x"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-24": {
+      "briefingIds": [
+        "rss-2026-03-24",
+        "x-2026-03-24"
+      ],
+      "insightIds": [
+        "rss-2026-03-24-01-join-langchain-at-google-cloud-next-2026",
+        "rss-2026-03-24-02-two-different-types-of-agent-authorization",
+        "rss-2026-03-24-03-github-expands-application-security-coverage-with-aipowered-detections",
+        "rss-2026-03-24-04-litellm-python-package-compromised-by-supply-chain-attack",
+        "rss-2026-03-24-05-nanoclaw-adopts-onecli-agent-vault",
+        "rss-2026-03-24-06-a-new-framework-for-evaluating-voice-agents-eva",
+        "rss-2026-03-24-07-fast-regex-search-indexing-text-for-agent-tools",
+        "x-2026-03-24-trend-01-gpt-54-pro",
+        "x-2026-03-24-trend-02-use_figma-mcp",
+        "x-2026-03-24-tools-01-understand-anything",
+        "x-2026-03-24-tools-02-codebase-to-course",
+        "x-2026-03-24-opinion-01-",
+        "x-2026-03-24-opinion-02-cli",
+        "x-2026-03-24-news-01-",
+        "x-2026-03-24-news-02-anthropic-claude-ai-100"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-03-23": {
+      "briefingIds": [
+        "rss-2026-03-23",
+        "x-2026-03-23"
+      ],
+      "insightIds": [
+        "x-2026-03-23-trend-01-chamath-ai-agents10",
+        "x-2026-03-23-trend-02-mark-cuban-claude",
+        "x-2026-03-23-tools-01-claude-peers",
+        "x-2026-03-23-tools-02-clawteam",
+        "x-2026-03-23-tools-03-deerflow",
+        "x-2026-03-23-tools-04-minimax-ai-agents",
+        "x-2026-03-23-opinion-01-ai-agents",
+        "x-2026-03-23-opinion-02-agentic",
+        "x-2026-03-23-opinion-03-7ai-agent",
+        "x-2026-03-23-news-01-google421agentic-design-patterns",
+        "x-2026-03-23-news-02-agent-memory",
+        "x-2026-03-23-news-03-document-ai"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
     "2026-03-22": {
       "briefingIds": [
         "rss-2026-03-22",

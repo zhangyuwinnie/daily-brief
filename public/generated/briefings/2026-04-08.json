@@ -1,0 +1,82 @@
+{
+  "date": "2026-04-08",
+  "briefings": [
+    {
+      "id": "rss-2026-04-08",
+      "date": "2026-04-08",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-08",
+      "filePath": "2026-04-08.md",
+      "summaryTopline": "Introducing the Child Safety Blueprint",
+      "insightIds": [
+        "rss-2026-04-08-01-introducing-the-child-safety-blueprint",
+        "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu"
+      ]
+    },
+    {
+      "id": "x-2026-04-08",
+      "date": "2026-04-08",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-04-08",
+      "filePath": "x_briefing_2026-04-08.md",
+      "summaryTopline": "Introducing the Child Safety Blueprint",
+      "insightIds": [
+        "x-2026-04-08-trend-01-x"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-08-01-introducing-the-child-safety-blueprint",
+      "briefingId": "rss-2026-04-08",
+      "date": "2026-04-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-child-safety-blueprint",
+      "title": "Introducing the Child Safety Blueprint",
+      "summary": "Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online. (Automated Snippet)",
+      "take": "Matched keywords: OpenAI.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu",
+      "briefingId": "rss-2026-04-08",
+      "date": "2026-04-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://arxiv.org/abs/2604.05091",
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter LLMs on a Single GPU",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: LLM.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "x-2026-04-08-trend-01-x",
+      "briefingId": "x-2026-04-08",
+      "date": "2026-04-08",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "title": "本轮 X 抓取失败",
+      "summary": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "take": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ],
+  "xToplines": [
+    "Introducing the Child Safety Blueprint",
+    "MegaTrain: Full Precision Training of 100B+ Parameter LLMs on a Single GPU"
+  ],
+  "xActionItems": [
+    "检查 Chrome 中 X 是否仍保持登录",
+    "5-10 分钟后重试 x brief",
+    "若连续失败，改用 RSS/HN briefing 作为当天输入"
+  ]
+}

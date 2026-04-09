@@ -1,4 +1,179 @@
 {
+  "2026-04-08": {
+    "date": "2026-04-08",
+    "briefings": [
+      {
+        "id": "rss-2026-04-08",
+        "date": "2026-04-08",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-08",
+        "filePath": "2026-04-08.md",
+        "summaryTopline": "Introducing the Child Safety Blueprint",
+        "insightIds": [
+          "rss-2026-04-08-01-introducing-the-child-safety-blueprint",
+          "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu"
+        ]
+      },
+      {
+        "id": "x-2026-04-08",
+        "date": "2026-04-08",
+        "sourceType": "x",
+        "title": "X Morning Briefing - 2026-04-08",
+        "filePath": "x_briefing_2026-04-08.md",
+        "summaryTopline": "Introducing the Child Safety Blueprint",
+        "insightIds": [
+          "x-2026-04-08-trend-01-x"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-08-01-introducing-the-child-safety-blueprint",
+        "briefingId": "rss-2026-04-08",
+        "date": "2026-04-08",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-child-safety-blueprint",
+        "title": "Introducing the Child Safety Blueprint",
+        "summary": "Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online. (Automated Snippet)",
+        "take": "Matched keywords: OpenAI.",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu",
+        "briefingId": "rss-2026-04-08",
+        "date": "2026-04-08",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://arxiv.org/abs/2604.05091",
+        "title": "MegaTrain: Full Precision Training of 100B+ Parameter LLMs on a Single GPU",
+        "summary": "Comments (Automated Snippet)",
+        "take": "Matched keywords: LLM.",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "x-2026-04-08-trend-01-x",
+        "briefingId": "x-2026-04-08",
+        "date": "2026-04-08",
+        "sourceType": "x",
+        "sourceLabel": "X Briefing",
+        "title": "本轮 X 抓取失败",
+        "summary": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+        "take": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      }
+    ],
+    "xToplines": [
+      "Introducing the Child Safety Blueprint",
+      "MegaTrain: Full Precision Training of 100B+ Parameter LLMs on a Single GPU"
+    ],
+    "xActionItems": [
+      "检查 Chrome 中 X 是否仍保持登录",
+      "5-10 分钟后重试 x brief",
+      "若连续失败，改用 RSS/HN briefing 作为当天输入"
+    ]
+  },
+  "2026-04-07": {
+    "date": "2026-04-07",
+    "briefings": [
+      {
+        "id": "rss-2026-04-07",
+        "date": "2026-04-07",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-07",
+        "filePath": "2026-04-07.md",
+        "summaryTopline": "Announcing the OpenAI Safety Fellowship",
+        "insightIds": [
+          "rss-2026-04-07-01-announcing-the-openai-safety-fellowship",
+          "rss-2026-04-07-02-anthropics-project-glasswing-restricting-claude-mythos-to-security-researchers-sounds-necessary-to-me",
+          "rss-2026-04-07-03-llm-scraper-bots-are-overloading-acmecoms-https-server",
+          "rss-2026-04-07-04-google-open-sources-experimental-agent-orchestration-testbed-scion"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-07-01-announcing-the-openai-safety-fellowship",
+        "briefingId": "rss-2026-04-07",
+        "date": "2026-04-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-openai-safety-fellowship",
+        "title": "Announcing the OpenAI Safety Fellowship",
+        "summary": "OpenAI宣布启动一项“安全研究奖学金”试点计划，旨在支持独立的AI安全与对齐研究。该项目致力于培养下一代AI安全领域的人才，以确保未来AI系统的稳健发展。",
+        "take": "虽然这并非直接的Agent工具或库，但理解AI安全与对齐是Dayu构建可靠、值得信赖智能体的基石。关注这类前沿研究将帮助Dayu设计更稳健的自动化工作流，并为未来智能体在关键领域的应用奠定伦理和安全基础，甚至提供参与AI治理和安全标准制定的潜在机会。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-07-02-anthropics-project-glasswing-restricting-claude-mythos-to-security-researchers-sounds-necessary-to-me",
+        "briefingId": "rss-2026-04-07",
+        "date": "2026-04-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything",
+        "title": "Anthropic's Project Glasswing - restricting Claude Mythos to security researchers - sounds necessary to me",
+        "summary": "No summary available. (Automated Snippet)",
+        "take": "Matched keywords: Anthropic.",
+        "topics": [
+          "Retrieval",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-07-03-llm-scraper-bots-are-overloading-acmecoms-https-server",
+        "briefingId": "rss-2026-04-07",
+        "date": "2026-04-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "http://acme.com/updates/archive/229.html",
+        "title": "LLM scraper bots are overloading acme.com's HTTPS server",
+        "summary": "LLM爬虫机器人正在使acme.com的HTTPS服务器过载，这意味着由LLM驱动的爬虫代理正在产生过多的网络流量，导致服务器服务中断。这凸显了随着LLM驱动的自动化日益普及所面临的一个日益严峻的挑战。",
+        "take": "对于Dayu构建自动化Agent和流程来说，这是一个重要的警示。设计LLM驱动的爬虫或数据获取Agent时，必须优先考虑负责任的使用和速率限制，避免对目标服务器造成DDoS式的压力。这启发Dayu可以考虑开发一个开源库，用于为LLM Agent提供智能且可配置的速率限制和礼貌爬取策略。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-07-04-google-open-sources-experimental-agent-orchestration-testbed-scion",
+        "briefingId": "rss-2026-04-07",
+        "date": "2026-04-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
+        "title": "Google open-sources experimental agent orchestration testbed Scion",
+        "summary": "谷歌开源了其名为Scion的实验性智能体编排测试平台。该平台旨在为开发者提供一个管理和测试复杂多智能体系统的工作台，助力智能体应用的开发与迭代。",
+        "take": "对于Dayu而言，Scion是构建和测试复杂智能体工作流的强大工具，能有效提升多智能体系统构建效率。作为一个实验性开源项目，它提供了深入理解智能体编排原理并积极参与开源贡献的绝佳机会。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
   "2026-04-06": {
     "date": "2026-04-06",
     "briefings": [

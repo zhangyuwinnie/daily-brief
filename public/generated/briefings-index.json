@@ -1,5 +1,7 @@
 {
   "availableDates": [
+    "2026-04-08",
+    "2026-04-07",
     "2026-04-06",
     "2026-04-05",
     "2026-04-04",
@@ -56,6 +58,37 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-08": {
+      "briefingIds": [
+        "rss-2026-04-08",
+        "x-2026-04-08"
+      ],
+      "insightIds": [
+        "rss-2026-04-08-01-introducing-the-child-safety-blueprint",
+        "rss-2026-04-08-02-megatrain-full-precision-training-of-100b-parameter-llms-on-a-single-gpu",
+        "x-2026-04-08-trend-01-x"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
+    "2026-04-07": {
+      "briefingIds": [
+        "rss-2026-04-07"
+      ],
+      "insightIds": [
+        "rss-2026-04-07-01-announcing-the-openai-safety-fellowship",
+        "rss-2026-04-07-02-anthropics-project-glasswing-restricting-claude-mythos-to-security-researchers-sounds-necessary-to-me",
+        "rss-2026-04-07-03-llm-scraper-bots-are-overloading-acmecoms-https-server",
+        "rss-2026-04-07-04-google-open-sources-experimental-agent-orchestration-testbed-scion"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-06": {
       "briefingIds": [
         "rss-2026-04-06",
