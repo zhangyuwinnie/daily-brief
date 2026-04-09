@@ -110,6 +110,23 @@ describe("AudioPlayer", () => {
     expect(playButton.getAttribute("aria-label")).toBe("Play audio brief");
   });
 
+  it("disables playback and shows 'Playback unavailable' when audio element fires an error event", () => {
+    renderAudioPlayer(readyAudio);
+
+    const playButton = queryPlayButton();
+    const audioElement = container.querySelector("audio");
+
+    expect(audioElement).not.toBeNull();
+    expect(playButton.disabled).toBe(false);
+
+    act(() => {
+      audioElement!.dispatchEvent(new Event("error"));
+    });
+
+    expect(playButton.disabled).toBe(true);
+    expect(container.textContent).toContain("Playback unavailable");
+  });
+
   it("keeps playback disabled when audio is still pending or metadata is incomplete", () => {
     renderAudioPlayer({
       ...readyAudio,

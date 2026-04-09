@@ -20,6 +20,15 @@ export type DailyBriefPageState = {
   pageData: DailyBriefPageData | null;
 };
 
+function resolveAudioUrl(relativeUrl: string | undefined): string | undefined {
+  if (!relativeUrl) return undefined;
+  const base = import.meta.env.VITE_AUDIO_BASE_URL;
+  if (!base) return relativeUrl; // local dev: use relative path as-is
+  // In production: prepend R2 base URL
+  const filename = relativeUrl.split("/").pop();
+  return `${base}/${filename}`;
+}
+
 const GENERATED_BRIEFINGS_INDEX_PATH = "/generated/briefings-index.json";
 const GENERATED_AUDIO_INDEX_PATH = "/generated/audio-index.json";
 const GENERATED_BRIEFINGS_DIRECTORY_PATH = "/generated/briefings";
@@ -178,6 +187,13 @@ function createDailyBriefPageData(
     briefings: day.briefings,
     insights: day.insights,
     audio: dataSources.audioIndex[date]
+      ? {
+          ...dataSources.audioIndex[date],
+          ...(dataSources.audioIndex[date].audioUrl
+            ? { audioUrl: resolveAudioUrl(dataSources.audioIndex[date].audioUrl) }
+            : {})
+        }
+      : undefined
   };
 }
 

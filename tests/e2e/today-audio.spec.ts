@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 const audioIndex = JSON.parse(
   readFileSync(new URL("../../public/generated/audio-index.json", import.meta.url), "utf8")
@@ -14,10 +15,23 @@ const audioIndex = JSON.parse(
 const readyAudioEntry = Object.entries(audioIndex).find(([, audio]) => audio.status === "ready" && audio.audioUrl);
 const pendingAudioEntry = Object.entries(audioIndex).find(([, audio]) => audio.status !== "ready");
 
+const TEST_FIXTURE_PATH = join(import.meta.dirname, "../fixtures/audio/test-clip.mp3");
+
 test("plays a generated ready audio brief from /today", async ({ page }) => {
   test.skip(!readyAudioEntry, "requires at least one ready audio date in the generated dataset");
 
   const [readyDate, readyAudio] = readyAudioEntry!;
+
+  // If production audio files are not present (CI/fresh clone), serve the test fixture instead
+  const relativeAudioUrl = readyAudio.audioUrl!.replace(/^\//, "");
+  const productionAudioPath = join(import.meta.dirname, "../../public", relativeAudioUrl);
+  if (!existsSync(productionAudioPath)) {
+    const fixtureBody = readFileSync(TEST_FIXTURE_PATH);
+    await page.route(`**/${readyAudio.audioUrl!.split("/").pop()}`, (route) =>
+      route.fulfill({ body: fixtureBody, contentType: "audio/mpeg" })
+    );
+  }
+
   await page.goto(`/today?date=${readyDate}`);
 
   await expect(page.getByRole("heading", { name: "Today's Brief" })).toBeVisible();

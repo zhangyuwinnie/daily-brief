@@ -22,9 +22,15 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTimeSec, setCurrentTimeSec] = useState(0);
   const [loadedDurationSec, setLoadedDurationSec] = useState(data.durationSec ?? 0);
-  const isPlayable = data.status === "ready" && Boolean(data.audioUrl);
-  const statusLabel =
-    data.status === "ready" ? "Ready" : data.status === "failed" ? "Failed" : "Generating...";
+  const [loadError, setLoadError] = useState(false);
+  const isPlayable = data.status === "ready" && Boolean(data.audioUrl) && !loadError;
+  const statusLabel = loadError
+    ? "Playback unavailable"
+    : data.status === "ready"
+      ? "Ready"
+      : data.status === "failed"
+        ? "Failed"
+        : "Generating...";
   const effectiveDurationSec = loadedDurationSec > 0 ? loadedDurationSec : data.durationSec ?? 0;
   const progress = effectiveDurationSec > 0 ? Math.min((currentTimeSec / effectiveDurationSec) * 100, 100) : 0;
 
@@ -32,12 +38,15 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
     setIsPlaying(false);
     setCurrentTimeSec(0);
     setLoadedDurationSec(data.durationSec ?? 0);
+    setLoadError(false);
   }, [data.audioUrl, data.durationSec, data.id, data.status]);
+
+  const hasAudioElement = data.status === "ready" && Boolean(data.audioUrl);
 
   useEffect(() => {
     const audioElement = audioRef.current;
 
-    if (!audioElement || !isPlayable) {
+    if (!audioElement || !hasAudioElement) {
       return undefined;
     }
 
@@ -64,12 +73,18 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
       setCurrentTimeSec(audioElement.currentTime);
     };
 
+    const handleError = () => {
+      setLoadError(true);
+      setIsPlaying(false);
+    };
+
     audioElement.addEventListener("loadedmetadata", syncDuration);
     audioElement.addEventListener("durationchange", syncDuration);
     audioElement.addEventListener("timeupdate", handleTimeUpdate);
     audioElement.addEventListener("play", handlePlay);
     audioElement.addEventListener("pause", handlePause);
     audioElement.addEventListener("ended", handleEnded);
+    audioElement.addEventListener("error", handleError);
 
     return () => {
       audioElement.removeEventListener("loadedmetadata", syncDuration);
@@ -78,8 +93,9 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
       audioElement.removeEventListener("play", handlePlay);
       audioElement.removeEventListener("pause", handlePause);
       audioElement.removeEventListener("ended", handleEnded);
+      audioElement.removeEventListener("error", handleError);
     };
-  }, [isPlayable]);
+  }, [hasAudioElement]);
 
   const handleTogglePlayback = () => {
     if (!isPlayable) {
@@ -104,7 +120,9 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
 
   return (
     <div className="flex flex-col gap-4 rounded-card border border-[#bce89d] bg-gradient-to-r from-[#e3f4d7] to-[#d0efba] p-5 shadow-sm sm:flex-row sm:items-center">
-      {isPlayable ? <audio ref={audioRef} preload="metadata" src={data.audioUrl} /> : null}
+      {data.status === "ready" && data.audioUrl ? (
+        <audio ref={audioRef} preload="metadata" src={data.audioUrl} />
+      ) : null}
 
       <button
         onClick={handleTogglePlayback}
@@ -128,11 +146,13 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
             </h3>
             <span
               className={`rounded-md border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${
-                data.status === "ready"
-                  ? "border-white/60 bg-white/50 text-[#5c962c]"
-                  : data.status === "failed"
-                    ? "border-rose-200 bg-rose-100 text-rose-600"
-                    : "border-amber-200 bg-amber-100 text-amber-600"
+                loadError
+                  ? "border-rose-200 bg-rose-100 text-rose-600"
+                  : data.status === "ready"
+                    ? "border-white/60 bg-white/50 text-[#5c962c]"
+                    : data.status === "failed"
+                      ? "border-rose-200 bg-rose-100 text-rose-600"
+                      : "border-amber-200 bg-amber-100 text-amber-600"
               }`}
             >
               {statusLabel}

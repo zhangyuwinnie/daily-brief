@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   getAvailableBriefingDates,
   getAvailableTopics,
@@ -552,5 +552,61 @@ describe("generatedContentLoader", () => {
       "Tooling",
       "Learning Resource"
     ]);
+  });
+
+  describe("audio URL resolution via VITE_AUDIO_BASE_URL", () => {
+    const testDate = "2026-01-01";
+    const minimalDay = {
+      date: testDate,
+      briefings: [{ id: "b-1", date: testDate, sourceType: "rss" as const, title: "Test", filePath: "/tmp/t.md", insightIds: [] }],
+      insights: []
+    };
+    const minimalIndex = {
+      availableDates: [testDate],
+      byDate: { [testDate]: { briefingIds: ["b-1"], insightIds: [], hasAudio: true, sourceTypes: ["rss"] } }
+    };
+
+    afterEach(() => {
+      vi.unstubAllEnvs();
+    });
+
+    it("rewrites audioUrl to use the R2 base URL when VITE_AUDIO_BASE_URL is set", () => {
+      vi.stubEnv("VITE_AUDIO_BASE_URL", "https://pub-abc123.r2.dev/audio");
+
+      const pageState = resolveDailyBriefPageState(testDate, {
+        briefingsIndex: minimalIndex,
+        audioIndex: { [testDate]: { id: "a-1", briefingDate: testDate, status: "ready", provider: "notebooklm", audioUrl: "/generated/audio/2026-01-01.mp3" } },
+        briefingsByDate: { [testDate]: minimalDay }
+      });
+
+      expect(pageState.pageData?.audio?.audioUrl).toBe(
+        "https://pub-abc123.r2.dev/audio/2026-01-01.mp3"
+      );
+    });
+
+    it("preserves the relative audioUrl when VITE_AUDIO_BASE_URL is not set", () => {
+      vi.stubEnv("VITE_AUDIO_BASE_URL", "");
+
+      const pageState = resolveDailyBriefPageState(testDate, {
+        briefingsIndex: minimalIndex,
+        audioIndex: { [testDate]: { id: "a-1", briefingDate: testDate, status: "ready", provider: "notebooklm", audioUrl: "/generated/audio/2026-01-01.mp3" } },
+        briefingsByDate: { [testDate]: minimalDay }
+      });
+
+      expect(pageState.pageData?.audio?.audioUrl).toBe("/generated/audio/2026-01-01.mp3");
+    });
+
+    it("does not introduce audioUrl key when the source record has no audioUrl", () => {
+      vi.stubEnv("VITE_AUDIO_BASE_URL", "https://pub-abc123.r2.dev/audio");
+
+      const pageState = resolveDailyBriefPageState(testDate, {
+        briefingsIndex: minimalIndex,
+        audioIndex: { [testDate]: { id: "a-1", briefingDate: testDate, status: "ready", provider: "notebooklm" } },
+        briefingsByDate: { [testDate]: minimalDay }
+      });
+
+      expect(pageState.pageData?.audio).toBeDefined();
+      expect(pageState.pageData?.audio ? "audioUrl" in pageState.pageData.audio : false).toBe(false);
+    });
   });
 });
