@@ -8,3 +8,8 @@ public/generated/audio/
 .env*.local
 artifacts/
 test-results/
+skills/
+templates/
+plans/
+PROGRESS.md
+tasks.md
