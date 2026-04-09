@@ -563,7 +563,7 @@ describe("generatedContentLoader", () => {
     };
     const minimalIndex = {
       availableDates: [testDate],
-      byDate: { [testDate]: { briefingIds: ["b-1"], insightIds: [], hasAudio: true, sourceTypes: ["rss"] } }
+      byDate: { [testDate]: { briefingIds: ["b-1"], insightIds: [] as string[], hasAudio: true, sourceTypes: ["rss" as const] } }
     };
 
     afterEach(() => {
