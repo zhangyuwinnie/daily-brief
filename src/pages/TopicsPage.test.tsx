@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { Outlet, RouterProvider, createMemoryRouter } from "react-router-dom";
 import { getAllInsights, getAvailableTopics } from "../lib/briefings/generatedContentLoader";
+import { escapeStaticMarkup } from "../test/htmlEscaping";
 import { TopicsPage } from "./TopicsPage";
 
 const noop = () => {};
@@ -56,7 +57,7 @@ describe("TopicsPage", () => {
 
     const html = renderTopicsPage();
 
-    expect(html).toContain(generatedInsights[0].title);
+    expect(html).toContain(escapeStaticMarkup(generatedInsights[0].title));
     expect(html).toContain(generatedTopics[0]);
     expect(html).toContain("Track the themes showing up across recent briefs and open the signals worth acting on.");
     expect(html).toContain("Browsing signals across all tracked topics");
@@ -77,7 +78,7 @@ describe("TopicsPage", () => {
     expect(html).toContain('aria-pressed="true"');
     expect(html).toContain(`>${selectedTopic}</button>`);
     expect(html).toContain(">All</button>");
-    expect(html).toContain(matchingInsight!.title);
-    expect(html).not.toContain(nonMatchingInsight!.title);
+    expect(html).toContain(escapeStaticMarkup(matchingInsight!.title));
+    expect(html).not.toContain(escapeStaticMarkup(nonMatchingInsight!.title));
   });
 });

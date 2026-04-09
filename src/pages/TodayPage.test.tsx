@@ -5,6 +5,7 @@ import {
   getAvailableBriefingDates,
   getDailyBriefPageData
 } from "../lib/briefings/generatedContentLoader";
+import { escapeStaticMarkup } from "../test/htmlEscaping";
 import { getAudioStatusNotice, TodayPage } from "./TodayPage";
 import type { DailyAudio } from "../types/models";
 
@@ -92,8 +93,8 @@ describe("TodayPage", () => {
 
     const html = renderTodayPage();
 
-    expect(html).toContain(pageData!.insights[0].title);
-    expect(html).toContain(`href="${pageData!.insights[0].sourceUrl}"`);
+    expect(html).toContain(escapeStaticMarkup(pageData!.insights[0].title));
+    expect(html).toContain(`href="${escapeStaticMarkup(pageData!.insights[0].sourceUrl ?? "")}"`);
     expect(html).toContain(pageData!.audio?.status === "ready" ? "Ready" : "Generating...");
   });
 
@@ -107,7 +108,7 @@ describe("TodayPage", () => {
     const html = renderTodayPage(`/today?date=${selectedDate}`);
 
     expect(html).toContain(selectedDate);
-    expect(html).toContain(pageData!.insights[0].title);
+    expect(html).toContain(escapeStaticMarkup(pageData!.insights[0].title));
   });
 
   it("falls back to the latest generated date when /today receives an invalid date query param", () => {
@@ -120,7 +121,7 @@ describe("TodayPage", () => {
     expect(html).toContain("Requested date 1900-01-01 is unavailable.");
     expect(html).toContain(`Showing the latest generated brief for ${latestPageData!.date} instead.`);
     expect(html).toContain(latestPageData!.date);
-    expect(html).toContain(latestPageData!.insights[0].title);
+    expect(html).toContain(escapeStaticMarkup(latestPageData!.insights[0].title));
   });
 
   it("shows an explicit pending-audio message when the selected day audio is still generating", () => {
@@ -150,6 +151,8 @@ describe("TodayPage", () => {
     expect(html).not.toContain("Why It Matters");
     expect(html).not.toContain("Build This Today");
     expect(html).not.toContain("Learn This Next");
-    expect(html).toContain(pageData!.insights.find((insight) => insight.isTopSignal)?.title ?? "");
+    expect(html).toContain(
+      escapeStaticMarkup(pageData!.insights.find((insight) => insight.isTopSignal)?.title ?? "")
+    );
   });
 });
