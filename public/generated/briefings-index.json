@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-10",
     "2026-04-09",
     "2026-04-08",
     "2026-04-07",
@@ -59,6 +60,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-10": {
+      "briefingIds": [
+        "rss-2026-04-10",
+        "x-2026-04-10"
+      ],
+      "insightIds": [
+        "rss-2026-04-10-01-cyberagent-moves-faster-with-chatgpt-enterprise-and-codex",
+        "rss-2026-04-10-02-microsoft-suspends-dev-accounts-for-high-profile-open-source-projects",
+        "rss-2026-04-10-03-i-still-prefer-mcp-over-skills",
+        "rss-2026-04-10-04-altkevolve-onthejob-learning-for-ai-agents",
+        "x-2026-04-10-trend-01-x"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss",
+        "x"
+      ]
+    },
     "2026-04-09": {
       "briefingIds": [
         "rss-2026-04-09",

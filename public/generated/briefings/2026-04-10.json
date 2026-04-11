@@ -1,0 +1,121 @@
+{
+  "date": "2026-04-10",
+  "briefings": [
+    {
+      "id": "rss-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-10",
+      "filePath": "2026-04-10.md",
+      "summaryTopline": "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+      "insightIds": [
+        "rss-2026-04-10-01-cyberagent-moves-faster-with-chatgpt-enterprise-and-codex",
+        "rss-2026-04-10-02-microsoft-suspends-dev-accounts-for-high-profile-open-source-projects",
+        "rss-2026-04-10-03-i-still-prefer-mcp-over-skills",
+        "rss-2026-04-10-04-altkevolve-onthejob-learning-for-ai-agents"
+      ]
+    },
+    {
+      "id": "x-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "x",
+      "title": "X Morning Briefing - 2026-04-10",
+      "filePath": "x_briefing_2026-04-10.md",
+      "summaryTopline": "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+      "insightIds": [
+        "x-2026-04-10-trend-01-x"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-10-01-cyberagent-moves-faster-with-chatgpt-enterprise-and-codex",
+      "briefingId": "rss-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/cyberagent",
+      "title": "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+      "summary": "CyberAgent uses ChatGPT Enterprise and Codex to securely scale AI adoption, improve quality, and accelerate decisions across advertising, media, and gaming. (Automated Snippet)",
+      "take": "Matched keywords: Agent, RAG.",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-10-02-microsoft-suspends-dev-accounts-for-high-profile-open-source-projects",
+      "briefingId": "rss-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
+      "title": "Microsoft suspends dev accounts for high-profile open source projects",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: Open Source.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-10-03-i-still-prefer-mcp-over-skills",
+      "briefingId": "rss-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://david.coffee/i-still-prefer-mcp-over-skills/",
+      "title": "I still prefer MCP over skills",
+      "summary": "Comments (Automated Snippet)",
+      "take": "Matched keywords: MCP.",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-10-04-altkevolve-onthejob-learning-for-ai-agents",
+      "briefingId": "rss-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve",
+      "title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
+      "summary": "No summary available. (Automated Snippet)",
+      "take": "Matched keywords: Agent.",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "x-2026-04-10-trend-01-x",
+      "briefingId": "x-2026-04-10",
+      "date": "2026-04-10",
+      "sourceType": "x",
+      "sourceLabel": "X Briefing",
+      "title": "本轮 X 抓取失败",
+      "summary": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "take": "本轮 X 抓取失败，已自动降级到通用资讯源。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ],
+  "xToplines": [
+    "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+    "Microsoft suspends dev accounts for high-profile open source projects",
+    "I still prefer MCP over skills"
+  ],
+  "xActionItems": [
+    "检查 Chrome 中 X 是否仍保持登录",
+    "5-10 分钟后重试 x brief",
+    "若连续失败，改用 RSS/HN briefing 作为当天输入"
+  ]
+}
