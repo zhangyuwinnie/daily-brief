@@ -1,6 +1,6 @@
 # Daily Brief Explore - Progress
 
-Last updated: 2026-04-10
+Last updated: 2026-04-11
 
 ## Project Snapshot
 
@@ -84,27 +84,25 @@ Current worktree snapshot:
 
 ## What Changed
 
-- Archived the completed MVP task ledger into `plans/archive/tasks.completed-batches-01-13.md`.
-- Archived the long-form MVP progress history into `plans/archive/progress.history-pre-automation.md`.
-- Copied the reviewed automation plan into `plans/automation/daily-brief-automation-phase0.md`.
-- Replaced the active `tasks.md` with a shorter automation-focused ledger.
-- Replaced the active `PROGRESS.md` with a shorter current-state summary.
-- Added archive discoverability to `AGENTS.md` without changing the repo’s single active `tasks.md` / `PROGRESS.md` workflow.
+- Added repo-local `scripts/daily-briefing.js` for RSS briefing generation with repo-relative `briefings/YYYY-MM-DD.md` output and no DB dependency.
+- Kept the markdown output aligned with the existing RSS parser contract: `# Daily Briefing`, `## [Title](URL)`, `**Source:**`, `**Chinese Summary:**`, and `**R2 Take:**`.
+- Added `scripts/daily-briefing.d.ts` so the JS script can be imported from tests without breaking the repo TypeScript build.
+- Added targeted regression coverage in `src/lib/briefings/dailyBriefingScript.test.ts` for repo-local output paths, parser-compatible markdown, and the no-DB guardrail.
 
 ## What Was Verified
 
-- Confirmed the archive files exist under `plans/archive/`.
-- Confirmed the automation plan exists under `plans/automation/`.
-- Confirmed the active `tasks.md` points at the automation plan and archive files.
-- Confirmed the active `PROGRESS.md` keeps one current source of truth instead of introducing parallel active files.
+- `npm test -- src/lib/briefings/dailyBriefingScript.test.ts src/lib/briefings/parseRssBriefing.test.ts`
+- `node --input-type=module -e 'import { runDailyBriefing } from "./scripts/daily-briefing.js"; ...'` against the live `https://openai.com/news/rss.xml` feed, writing `/var/folders/bp/g0pw41dj7ybbzjvqq3vg22lw0000gn/T/tmp.v5byOtLUBi/2026-04-11.md`
+- `node --import tsx --input-type=module -e 'import { parseRssBriefing } from "./src/lib/briefings/parseRssBriefing.ts"; ...'` on that generated markdown, which parsed with `2` items and `0` warnings
+- `npm run build`
 
 ## Key Lesson / Risk
 
-- This repo already had a functioning task-driven OS. The right move was to archive completed history, not fork a second active task/progress pair.
-- The active automation ledger now depends on the reviewed plan staying current. If the implementation order changes materially, update both `tasks.md` and the automation plan together.
+- Full-network runs across every configured source are still a pipeline-risk area because heterogeneous feeds can be slow or malformed; the script now avoids DB coupling and catastrophic XML matching, but later workflow work should keep artifact uploads and source-level observability.
+- The repo can ship this script before adding automation package wiring because the runtime path is self-contained and the build-safe contract lives in the new declaration file.
 
 ## Next Recommended Batch
 
 - `Batch 14: Automation Pipeline Scripts`
 
-The first recommended task is `T56` after the plan-copy/archive cleanup in this batch is accepted.
+The first recommended task is now `T57`.

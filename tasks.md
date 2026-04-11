@@ -24,7 +24,7 @@ Archived MVP work:
 
 - [x] `T55` Copy the reviewed automation plan into the repo and lock it as the automation source plan.
   Acceptance: `plans/automation/daily-brief-automation-phase0.md` exists and matches the reviewed plan.
-- [ ] `T56` Add `scripts/daily-briefing.js` as a repo-local RSS briefing generator without SQLite.
+- [x] `T56` Add `scripts/daily-briefing.js` as a repo-local RSS briefing generator without SQLite.
   Depends on: `T55`
   Acceptance: script writes `briefings/YYYY-MM-DD.md`, uses repo-relative paths, and does not require sqlite deps.
 - [ ] `T57` Add `scripts/prepare-follow-builders.js` and `scripts/remix-follow-builders.js`.
