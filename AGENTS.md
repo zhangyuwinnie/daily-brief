@@ -4,6 +4,8 @@
 - Read `tasks.md` to understand the queued implementation work.
 - Treat `plans/mvp-architecture.md` as the source plan when product scope or data model is unclear.
 - Treat `plans/mvp-prd.md` as the execution-ready product and engineering plan when implementation order, architecture direction, or test scope is unclear.
+- Treat `plans/automation/daily-brief-automation-phase0.md` as the source plan when the task is about GitHub Actions, briefing automation, NotebookLM automation, or CI pipeline work.
+- Historical completed context may live under `plans/archive/`; use it only when the active `tasks.md` or `PROGRESS.md` needs older MVP detail.
 - If the user says `continue task` or similar, do not ask what to do next by default:
   - inspect `PROGRESS.md` for the recommended batch
   - inspect `tasks.md`
