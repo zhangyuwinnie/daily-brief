@@ -67,9 +67,9 @@ Current worktree snapshot:
   - `plans/archive/tasks.completed-batches-01-13.md`
   - `plans/archive/progress.history-pre-automation.md`
 - Unrelated worktree changes were already present and were left untouched:
-  - modified generated JSON under `public/generated/`
   - untracked `brief_generation.md`
-  - untracked `public/generated/briefings/2026-04-10.json`
+- Local automation output is now present under `briefings/`:
+  - untracked `briefings/2026-04-11.md`
 
 ## Automation Decisions Locked
 
@@ -90,6 +90,7 @@ Current worktree snapshot:
 - Added targeted regression coverage in `src/lib/briefings/dailyBriefingScript.test.ts` for repo-local output paths, parser-compatible markdown, and the no-DB guardrail.
 - Replaced the old whole-page `Cursor Blog` regex path with a linear `parseCursorBlogHtml()` parser so the default-source run no longer hangs on the HTML source.
 - Added `src/lib/briefings/cursorBlogHtml.test.ts` plus a fixture for the current Cursor blog card layouts.
+- Completed a full default-source run and produced a local `briefings/2026-04-11.md` artifact for manual inspection.
 
 ## What Was Verified
 
