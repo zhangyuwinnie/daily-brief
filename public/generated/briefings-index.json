@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-12",
     "2026-04-11",
     "2026-04-10",
     "2026-04-09",
@@ -61,26 +62,47 @@
     "2026-02-08"
   ],
   "byDate": {
-    "2026-04-11": {
+    "2026-04-12": {
       "briefingIds": [
-        "rss-2026-04-11"
+        "rss-2026-04-12"
       ],
       "insightIds": [
-        "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
-        "rss-2026-04-11-02-agentic-infrastructure",
-        "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
-        "rss-2026-04-11-04-your-harness-your-memory",
-        "rss-2026-04-11-05-sqlite-3530",
-        "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
-        "rss-2026-04-11-07-cirrus-labs-to-join-openai",
-        "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
-        "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
-        "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
-        "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually"
+        "rss-2026-04-12-01-anthropic-downgraded-cache-ttl-on-march-6th",
+        "rss-2026-04-12-02-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next"
       ],
       "hasAudio": false,
       "sourceTypes": [
         "rss"
+      ]
+    },
+    "2026-04-11": {
+      "briefingIds": [
+        "rss-2026-04-11",
+        "x-2026-04-11"
+      ],
+      "insightIds": [
+        "rss-2026-04-11-01-using-custom-gpts",
+        "rss-2026-04-11-02-applications-of-ai-at-openai",
+        "rss-2026-04-11-03-launch-hn-twillai-yc-s25-delegate-to-cloud-agents-get-back-prs",
+        "x-2026-04-11-trend-01-aiagentgithub",
+        "x-2026-04-11-trend-02-ai-agent",
+        "x-2026-04-11-trend-03-marc-andreessenai-agent",
+        "x-2026-04-11-tools-01-ycgarry-tanai-agentgbrain",
+        "x-2026-04-11-tools-02-qwen3-coder",
+        "x-2026-04-11-tools-03-claude-managed-agentsai-agent-paas",
+        "x-2026-04-11-opinion-01-",
+        "x-2026-04-11-opinion-02-satya-nadela",
+        "x-2026-04-11-opinion-03-claudeagent",
+        "x-2026-04-11-opinion-04-ai-agent",
+        "x-2026-04-11-news-01-claudeblender",
+        "x-2026-04-11-news-02-",
+        "x-2026-04-11-news-03-claude-code",
+        "x-2026-04-11-news-04-ai-agent"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss",
+        "x"
       ]
     },
     "2026-04-10": {
