@@ -88,17 +88,22 @@ Current worktree snapshot:
 - Kept the markdown output aligned with the existing RSS parser contract: `# Daily Briefing`, `## [Title](URL)`, `**Source:**`, `**Chinese Summary:**`, and `**R2 Take:**`.
 - Added `scripts/daily-briefing.d.ts` so the JS script can be imported from tests without breaking the repo TypeScript build.
 - Added targeted regression coverage in `src/lib/briefings/dailyBriefingScript.test.ts` for repo-local output paths, parser-compatible markdown, and the no-DB guardrail.
+- Replaced the old whole-page `Cursor Blog` regex path with a linear `parseCursorBlogHtml()` parser so the default-source run no longer hangs on the HTML source.
+- Added `src/lib/briefings/cursorBlogHtml.test.ts` plus a fixture for the current Cursor blog card layouts.
 
 ## What Was Verified
 
 - `npm test -- src/lib/briefings/dailyBriefingScript.test.ts src/lib/briefings/parseRssBriefing.test.ts`
+- `npm test -- src/lib/briefings/cursorBlogHtml.test.ts src/lib/briefings/dailyBriefingScript.test.ts src/lib/briefings/parseRssBriefing.test.ts`
 - `node --input-type=module -e 'import { runDailyBriefing } from "./scripts/daily-briefing.js"; ...'` against the live `https://openai.com/news/rss.xml` feed, writing `/var/folders/bp/g0pw41dj7ybbzjvqq3vg22lw0000gn/T/tmp.v5byOtLUBi/2026-04-11.md`
+- `node --input-type=module -e 'import { DEFAULT_HTML_SOURCES, defaultFetchHtmlItems } from "./scripts/daily-briefing.js"; ...'` against live `https://cursor.com/blog`, returning `8` parsed items in `314ms`
+- `node scripts/daily-briefing.js --max-items 2`, which completed a full default-source run and wrote `briefings/2026-04-11.md`
 - `node --import tsx --input-type=module -e 'import { parseRssBriefing } from "./src/lib/briefings/parseRssBriefing.ts"; ...'` on that generated markdown, which parsed with `2` items and `0` warnings
 - `npm run build`
 
 ## Key Lesson / Risk
 
-- Full-network runs across every configured source are still a pipeline-risk area because heterogeneous feeds can be slow or malformed; the script now avoids DB coupling and catastrophic XML matching, but later workflow work should keep artifact uploads and source-level observability.
+- Full-network runs across every configured source are still a pipeline-risk area because heterogeneous feeds can be slow or malformed; the main blocking HTML-path bug was the Cursor page parser, and future workflow work should keep artifact uploads and source-level observability for similar changes.
 - The repo can ship this script before adding automation package wiring because the runtime path is self-contained and the build-safe contract lives in the new declaration file.
 
 ## Next Recommended Batch

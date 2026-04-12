@@ -78,6 +78,10 @@ export function parseFeedXml(
   xml: string,
   sourceUrl: string
 ): Array<Required<Pick<BriefingCandidate, "title" | "link" | "source">> & BriefingCandidate>;
+export function parseCursorBlogHtml(
+  html: string,
+  source: HtmlSource
+): Array<Required<Pick<BriefingCandidate, "title" | "link" | "source">> & BriefingCandidate>;
 export function deduplicateByTopic(
   items: BriefingCandidate[],
   jaccardThreshold?: number,

@@ -365,6 +365,46 @@ function extractXmlBlocks(xml, tagName) {
   return blocks;
 }
 
+function extractHtmlAttribute(tag, attributeName) {
+  const pattern = new RegExp(`${attributeName}=["']([^"']+)["']`, "i");
+  return tag.match(pattern)?.[1] ?? "";
+}
+
+function extractParagraphs(htmlBlock) {
+  return [...htmlBlock.matchAll(/<p\b([^>]*)>([\s\S]*?)<\/p>/gi)].map((match) => ({
+    className: extractHtmlAttribute(match[1] ?? "", "class"),
+    text: cleanInline(match[2] ?? "")
+  }));
+}
+
+function pickCursorTitle(paragraphs) {
+  const titleCandidate = paragraphs.find(({ className }) => {
+    const normalized = className.toLowerCase();
+    return normalized.includes("text-theme-text") && !normalized.includes("text-theme-text-sec");
+  });
+
+  if (titleCandidate?.text) {
+    return titleCandidate.text;
+  }
+
+  return paragraphs.find(({ text }) => text.length > 20)?.text ?? "";
+}
+
+function pickCursorSnippet(paragraphs, title) {
+  const snippetCandidate = paragraphs.find(({ className }) =>
+    className.toLowerCase().includes("text-theme-text-sec")
+  );
+
+  if (snippetCandidate?.text) {
+    return snippetCandidate.text;
+  }
+
+  return (
+    paragraphs.find(({ text }) => text && text !== title && text.length > 40)?.text ??
+    ""
+  );
+}
+
 export function parseFeedXml(xml, sourceUrl) {
   const feedTitle =
     extractFirst(xml, [
@@ -403,6 +443,43 @@ export function parseFeedXml(xml, sourceUrl) {
       };
     })
     .filter((item) => item.title && item.link);
+}
+
+export function parseCursorBlogHtml(html, source) {
+  const articleBlocks = extractXmlBlocks(html, "article");
+  const items = [];
+  const seenLinks = new Set();
+
+  for (const articleBlock of articleBlocks) {
+    const linkMatch = articleBlock.match(/<a\b[^>]*href="(\/blog\/[^"#?]+)"[^>]*>/i);
+    const relativeLink = linkMatch?.[1];
+
+    if (!relativeLink || seenLinks.has(relativeLink)) {
+      continue;
+    }
+
+    const paragraphs = extractParagraphs(articleBlock);
+    const title = pickCursorTitle(paragraphs);
+
+    if (!title) {
+      continue;
+    }
+
+    seenLinks.add(relativeLink);
+
+    const isoDate =
+      parseFeedDate(articleBlock.match(/<time[^>]*dateTime="([^"]+)"/i)?.[1]) ?? new Date().toISOString();
+
+    items.push({
+      title,
+      link: new URL(relativeLink, source.url).toString(),
+      contentSnippet: pickCursorSnippet(paragraphs, title),
+      source: source.name,
+      isoDate
+    });
+  }
+
+  return items;
 }
 
 async function readResponseText(response) {
@@ -459,30 +536,7 @@ export async function defaultFetchFeedItems(sourceUrl, { fetchImpl = fetch, logg
 export async function defaultFetchHtmlItems(source, { fetchImpl = fetch, logger = console } = {}) {
   try {
     const html = await fetchTextWithTimeout(source.url, { fetchImpl });
-    const items = [];
-    const articleRegex =
-      /<article[\s\S]*?<a[^>]*href="(\/blog\/[^"]+)"[^>]*>[\s\S]*?<p[^>]*text-pretty">([\s\S]*?)<\/p>[\s\S]*?<p[^>]*text-theme-text-sec text-pretty">([\s\S]*?)<\/p>[\s\S]*?<time[^>]*dateTime="([^"]+)"/g;
-    let match;
-
-    while ((match = articleRegex.exec(html)) !== null) {
-      const [, relativeLink, rawTitle, rawSnippet, isoDate] = match;
-      const title = cleanInline(rawTitle);
-      const contentSnippet = cleanInline(rawSnippet);
-
-      if (!title || !relativeLink) {
-        continue;
-      }
-
-      items.push({
-        title,
-        link: new URL(relativeLink, source.url).toString(),
-        contentSnippet,
-        source: source.name,
-        isoDate: parseFeedDate(isoDate) ?? new Date().toISOString()
-      });
-    }
-
-    return items;
+    return parseCursorBlogHtml(html, source);
   } catch (error) {
     logger.warn(`Failed to fetch HTML source ${source.url}: ${error.message}`);
     return [];
