@@ -5,11 +5,22 @@ import { syncGeneratedContent } from "../src/lib/briefings/syncGeneratedContent"
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(scriptDir, "..");
 
-const inputDir = process.env.BRIEFINGS_DIR ?? "/Users/yuzhang/.openclaw/workspace/briefings";
-const outputDir = process.env.GENERATED_CONTENT_DIR ?? resolve(repoRoot, "public/generated");
-const audioDir = process.env.GENERATED_AUDIO_DIR ?? resolve(repoRoot, "public/generated/audio");
+export function resolveSyncGeneratedContentPaths({
+  repoRoot: root = repoRoot,
+  env = process.env
+}: {
+  repoRoot?: string;
+  env?: NodeJS.ProcessEnv;
+} = {}) {
+  return {
+    inputDir: env.BRIEFINGS_DIR ?? resolve(root, "briefings"),
+    outputDir: env.GENERATED_CONTENT_DIR ?? resolve(root, "public/generated"),
+    audioDir: env.GENERATED_AUDIO_DIR ?? resolve(root, "public/generated/audio")
+  };
+}
 
-try {
+export async function runSyncGeneratedContent() {
+  const { inputDir, outputDir, audioDir } = resolveSyncGeneratedContentPaths();
   const result = await syncGeneratedContent({
     inputDir,
     outputDir,
@@ -32,8 +43,17 @@ try {
       console.warn(`- ${message}`);
     });
   }
-} catch (error) {
-  const message = error instanceof Error ? error.message : String(error);
-  console.error(`[sync-generated-content] Failed: ${message}`);
-  process.exitCode = 1;
+}
+
+const isDirectRun =
+  process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isDirectRun) {
+  try {
+    await runSyncGeneratedContent();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`[sync-generated-content] Failed: ${message}`);
+    process.exitCode = 1;
+  }
 }

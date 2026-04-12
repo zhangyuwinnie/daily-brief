@@ -3,6 +3,8 @@ dist/
 .DS_Store
 *.tsbuildinfo
 *.log
+briefings/
+logs/
 public/generated/audio/
 .env.local
 .env*.local
@@ -13,14 +15,3 @@ templates/
 plans/
 PROGRESS.md
 tasks.md
-!PROGRESS.md
-!tasks.md
-!plans/
-plans/*
-!plans/archive/
-!plans/archive/*.md
-!plans/automation/
-!plans/automation/*.md
-!plans/task-plans/
-plans/task-plans/*
-!plans/task-plans/archive-automation-tracking_plan.md

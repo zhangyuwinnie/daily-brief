@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import rssEdge from "./fixtures/rss-edge.md?raw";
+import rssFollowBuildersMerged from "./fixtures/rss-follow-builders-merged.md?raw";
 import rssNormal from "./fixtures/rss-normal.md?raw";
 import { parseRssBriefing } from "./parseRssBriefing";
 
@@ -38,5 +39,19 @@ describe("parseRssBriefing", () => {
         })
       ])
     );
+  });
+
+  it("parses appended follow-builders entries from a merged same-day briefing file", () => {
+    const parsed = parseRssBriefing(rssFollowBuildersMerged);
+
+    expect(parsed.date).toBe("2026-04-11");
+    expect(parsed.items).toHaveLength(4);
+    expect(parsed.items[2]).toMatchObject({
+      sourceName: "Follow Builders",
+      sourceUrl: "https://x.com/levie/status/2042759653281456218"
+    });
+    expect(parsed.items[2].summary).toContain("API");
+    expect(parsed.items[3].take).toContain("职责分层");
+    expect(parsed.warnings).toHaveLength(0);
   });
 });

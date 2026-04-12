@@ -2,6 +2,9 @@ import { copyFile, mkdir, readdir, readFile, unlink } from "node:fs/promises";
 import { basename, join } from "node:path";
 import {
   buildGeneratedArtifacts,
+  type GeneratedArtifacts,
+  type GeneratedAudioIndex,
+  type GeneratedBriefingsByDate,
   type BriefingInput,
   validateGeneratedArtifacts,
   writeGeneratedArtifacts
@@ -87,8 +90,22 @@ async function removeStalePublishedAudioFiles(audioDir: string, publishedAudioFi
   );
 }
 
-async function publishSourceAudioFiles(dates: string[], sourceAudioFilePaths: string[], audioDir: string) {
+async function publishSourceAudioFiles(
+  dates: string[],
+  sourceAudioFilePaths: string[],
+  audioDir: string,
+  preservedHistoricalDates: string[] = []
+) {
   await mkdir(audioDir, { recursive: true });
+  const currentDateSet = new Set(dates);
+  const preservedHistoricalDateSet = new Set(preservedHistoricalDates);
+  const existingPublishedAudioPaths = (await readDirectoryFilePaths(audioDir))
+    .filter(isManagedPublishedAudioFile)
+    .sort((left, right) => left.localeCompare(right));
+  const preservedHistoricalAudioPaths = existingPublishedAudioPaths.filter((filePath) => {
+    const date = extractAudioDate(filePath);
+    return date !== null && !currentDateSet.has(date) && preservedHistoricalDateSet.has(date);
+  });
 
   const publishedAudioFilePaths: string[] = [];
   for (const date of dates) {
@@ -102,9 +119,96 @@ async function publishSourceAudioFiles(dates: string[], sourceAudioFilePaths: st
     publishedAudioFilePaths.push(publishedFilePath);
   }
 
-  await removeStalePublishedAudioFiles(audioDir, publishedAudioFilePaths);
+  const desiredPublishedAudioPaths = [...preservedHistoricalAudioPaths, ...publishedAudioFilePaths].sort((left, right) =>
+    left.localeCompare(right)
+  );
 
-  return publishedAudioFilePaths.sort((left, right) => left.localeCompare(right));
+  await removeStalePublishedAudioFiles(audioDir, desiredPublishedAudioPaths);
+
+  return desiredPublishedAudioPaths;
+}
+
+async function readJsonFile<T>(filePath: string): Promise<T | null> {
+  try {
+    return JSON.parse(await readFile(filePath, "utf8")) as T;
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return null;
+    }
+
+    throw error;
+  }
+}
+
+async function loadExistingGeneratedArtifacts(outputDir: string): Promise<GeneratedArtifacts | null> {
+  const [briefingsIndex, briefingsByDate, audioIndex] = await Promise.all([
+    readJsonFile<GeneratedArtifacts["briefingsIndex"]>(join(outputDir, "briefings-index.json")),
+    readJsonFile<GeneratedBriefingsByDate>(join(outputDir, "briefings-by-date.json")),
+    readJsonFile<GeneratedAudioIndex>(join(outputDir, "audio-index.json"))
+  ]);
+
+  if (!briefingsIndex || !briefingsByDate || !audioIndex) {
+    return null;
+  }
+
+  return {
+    briefingsIndex,
+    briefingsByDate,
+    audioIndex,
+    warnings: []
+  };
+}
+
+function compareDateDesc(left: string, right: string) {
+  return right.localeCompare(left);
+}
+
+function mergeGeneratedArtifacts(
+  existingArtifacts: GeneratedArtifacts | null,
+  currentArtifacts: GeneratedArtifacts
+): GeneratedArtifacts {
+  if (!existingArtifacts) {
+    return currentArtifacts;
+  }
+
+  const currentDates = new Set(currentArtifacts.briefingsIndex.availableDates);
+  const mergedBriefingsByDate: GeneratedBriefingsByDate = {
+    ...Object.fromEntries(
+      Object.entries(existingArtifacts.briefingsByDate).filter(([date]) => !currentDates.has(date))
+    ),
+    ...currentArtifacts.briefingsByDate
+  };
+  const mergedAudioIndex: GeneratedAudioIndex = {
+    ...Object.fromEntries(
+      Object.entries(existingArtifacts.audioIndex).filter(([date]) => !currentDates.has(date))
+    ),
+    ...currentArtifacts.audioIndex
+  };
+  const availableDates = Object.keys(mergedBriefingsByDate).sort(compareDateDesc);
+
+  return {
+    briefingsByDate: mergedBriefingsByDate,
+    audioIndex: mergedAudioIndex,
+    briefingsIndex: {
+      availableDates,
+      byDate: Object.fromEntries(
+        availableDates.map((date) => {
+          const day = mergedBriefingsByDate[date];
+
+          return [
+            date,
+            {
+              briefingIds: day.briefings.map((briefing) => briefing.id),
+              insightIds: day.insights.map((insight) => insight.id),
+              hasAudio: mergedAudioIndex[date]?.status === "ready",
+              sourceTypes: day.briefings.map((briefing) => briefing.sourceType)
+            }
+          ];
+        })
+      )
+    },
+    warnings: currentArtifacts.warnings
+  };
 }
 
 export async function syncGeneratedContent(
@@ -118,15 +222,20 @@ export async function syncGeneratedContent(
 
   const briefingDates = collectBriefingDates(briefingInputs);
   const sourceAudioFilePaths = await collectSourceAudioFilePaths(options.inputDir);
+  const existingArtifacts = await loadExistingGeneratedArtifacts(options.outputDir);
   const publishedAudioFilePaths = await publishSourceAudioFiles(
     briefingDates,
     sourceAudioFilePaths,
-    options.audioDir
+    options.audioDir,
+    existingArtifacts
+      ? existingArtifacts.briefingsIndex.availableDates.filter((date) => !briefingDates.includes(date))
+      : []
   );
-  const artifacts = buildGeneratedArtifacts({
+  const currentArtifacts = buildGeneratedArtifacts({
     briefingInputs,
     audioFilePaths: publishedAudioFilePaths
   });
+  const artifacts = mergeGeneratedArtifacts(existingArtifacts, currentArtifacts);
 
   validateGeneratedArtifacts(artifacts);
   const writtenFiles = [

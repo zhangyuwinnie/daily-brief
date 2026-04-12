@@ -2,6 +2,7 @@ import { mkdtemp, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { describe, expect, it } from "vitest";
+import rssFollowBuildersMerged from "./fixtures/rss-follow-builders-merged.md?raw";
 import rssNormal from "./fixtures/rss-normal.md?raw";
 import xNormal from "./fixtures/x-normal.md?raw";
 import { buildGeneratedArtifacts, validateGeneratedArtifacts, writeGeneratedArtifacts } from "./generatedArtifacts";
@@ -156,5 +157,31 @@ describe("generatedArtifacts", () => {
       insights: []
     };
     expect(() => validateGeneratedArtifacts(emptyDay)).toThrow(/lacks both `briefings` and `insights`/i);
+  });
+
+  it("keeps merged same-day follow-builders insights under one rss briefing with unique ids", () => {
+    const artifacts = buildGeneratedArtifacts({
+      briefingInputs: [
+        {
+          filePath: "/tmp/2026-04-11.md",
+          text: rssFollowBuildersMerged
+        }
+      ],
+      audioFilePaths: []
+    });
+
+    const day = artifacts.briefingsByDate["2026-04-11"];
+    const insightIds = day.insights.map((insight) => insight.id);
+
+    expect(day.briefings).toEqual([
+      expect.objectContaining({
+        id: "rss-2026-04-11",
+        sourceType: "rss",
+        filePath: "2026-04-11.md"
+      })
+    ]);
+    expect(day.insights).toHaveLength(4);
+    expect(new Set(insightIds).size).toBe(insightIds.length);
+    expect(day.insights.filter((insight) => insight.sourceName === "Follow Builders")).toHaveLength(2);
   });
 });

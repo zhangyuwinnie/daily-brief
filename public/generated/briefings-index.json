@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-11",
     "2026-04-10",
     "2026-04-09",
     "2026-04-08",
@@ -60,6 +61,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-11": {
+      "briefingIds": [
+        "rss-2026-04-11"
+      ],
+      "insightIds": [
+        "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-11-02-agentic-infrastructure",
+        "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
+        "rss-2026-04-11-04-your-harness-your-memory",
+        "rss-2026-04-11-05-sqlite-3530",
+        "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
+        "rss-2026-04-11-07-cirrus-labs-to-join-openai",
+        "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+        "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
+        "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-10": {
       "briefingIds": [
         "rss-2026-04-10",
