@@ -1,0 +1,201 @@
+name: Daily Brief
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_date:
+        description: "Optional Los Angeles date override in YYYY-MM-DD format"
+        required: false
+        type: string
+  schedule:
+    - cron: '0 13 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  daily-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+      WORKFLOW_RUN_DATE: ${{ github.event.inputs.run_date || '' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install workflow dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p briefings logs/workflow
+          start=$(date +%s)
+          set +e
+          {
+            npm ci &&
+            python -m pip install --upgrade pip &&
+            pip install notebooklm-py
+          } 2>&1 | tee logs/workflow/install.log
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[install] exit_code=${exit_code} duration_seconds=${duration}" | tee -a logs/workflow/install.log
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Prepare NotebookLM auth
+        shell: bash
+        env:
+          NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.notebooklm"
+          if [ -n "${NOTEBOOKLM_AUTH_JSON}" ]; then
+            printf '%s' "${NOTEBOOKLM_AUTH_JSON}" > "$HOME/.notebooklm/storage_state.json"
+            echo "[notebooklm-auth] Wrote auth state to \$HOME/.notebooklm/storage_state.json"
+          else
+            echo "[notebooklm-auth] NOTEBOOKLM_AUTH_JSON is not configured; audio step may skip."
+          fi
+
+      - name: Step 1 - RSS briefing
+        shell: bash
+        run: |
+          set -euo pipefail
+          date_args=()
+          if [ -n "${WORKFLOW_RUN_DATE}" ]; then
+            date_args+=(--date "${WORKFLOW_RUN_DATE}")
+          fi
+          start=$(date +%s)
+          set +e
+          npm run daily -- "${date_args[@]}" 2>&1 | tee logs/workflow/rss.log
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[rss] exit_code=${exit_code} duration_seconds=${duration}" | tee -a logs/workflow/rss.log
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Step 2 - Follow builders
+        shell: bash
+        run: |
+          set -euo pipefail
+          date_args=()
+          if [ -n "${WORKFLOW_RUN_DATE}" ]; then
+            date_args+=(--date "${WORKFLOW_RUN_DATE}")
+          fi
+          start=$(date +%s)
+          set +e
+          npm run daily:follow-builders -- "${date_args[@]}" 2>&1 | tee logs/workflow/follow-builders.log
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[follow-builders] exit_code=${exit_code} duration_seconds=${duration}" | tee -a logs/workflow/follow-builders.log
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Step 3 - Audio generation
+        shell: bash
+        run: |
+          set -euo pipefail
+          audio_args=()
+          if [ -n "${WORKFLOW_RUN_DATE}" ]; then
+            audio_args+=("${WORKFLOW_RUN_DATE}")
+          fi
+          start=$(date +%s)
+          set +e
+          npm run daily:audio -- "${audio_args[@]}" 2>&1 | tee logs/workflow/audio.log
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[audio] exit_code=${exit_code} duration_seconds=${duration}" | tee -a logs/workflow/audio.log
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Step 4 - Sync generated content and publish audio
+        shell: bash
+        run: |
+          set -euo pipefail
+          start=$(date +%s)
+          set +e
+          {
+            npm run sync:generated &&
+            npm run publish:audio
+          } 2>&1 | tee logs/workflow/sync-and-publish.log
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[sync-and-publish] exit_code=${exit_code} duration_seconds=${duration}" | tee -a logs/workflow/sync-and-publish.log
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Step 5 - Commit and push generated output
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          start=$(date +%s)
+          log_path="logs/workflow/commit-and-push.log"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/generated
+          if git diff --cached --quiet; then
+            echo "[commit-and-push] No generated changes to commit." | tee "${log_path}"
+            duration=$(( $(date +%s) - start ))
+            echo "[commit-and-push] exit_code=0 duration_seconds=${duration}" | tee -a "${log_path}"
+            exit 0
+          fi
+          commit_date="${WORKFLOW_RUN_DATE}"
+          if [ -z "${commit_date}" ]; then
+            commit_date=$(TZ=America/Los_Angeles date +%F)
+          fi
+          set +e
+          {
+            git commit -m "daily brief ${commit_date}" &&
+            git pull --rebase origin "${GITHUB_REF_NAME}" &&
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          } 2>&1 | tee "${log_path}"
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          duration=$(( $(date +%s) - start ))
+          echo "[commit-and-push] exit_code=${exit_code} duration_seconds=${duration}" | tee -a "${log_path}"
+          if [ "${exit_code}" -ne 0 ]; then
+            exit "${exit_code}"
+          fi
+
+      - name: Upload workflow artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-brief-${{ github.run_number }}
+          if-no-files-found: warn
+          retention-days: 7
+          path: |
+            briefings/
+            logs/
