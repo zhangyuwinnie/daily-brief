@@ -1,19 +1,4 @@
 {
-  "2026-04-12": {
-    "id": "audio-2026-04-12",
-    "briefingDate": "2026-04-12",
-    "status": "pending",
-    "provider": "notebooklm",
-    "title": "Daily Brief for 2026-04-12"
-  },
-  "2026-04-11": {
-    "id": "audio-2026-04-11",
-    "briefingDate": "2026-04-11",
-    "status": "ready",
-    "provider": "notebooklm",
-    "title": "Daily Brief for 2026-04-11",
-    "audioUrl": "/generated/audio/2026-04-11.mp3"
-  },
   "2026-04-10": {
     "id": "audio-2026-04-10",
     "briefingDate": "2026-04-10",
@@ -423,5 +408,19 @@
     "status": "pending",
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-02-08"
+  },
+  "2026-04-12": {
+    "id": "audio-2026-04-12",
+    "briefingDate": "2026-04-12",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-12"
+  },
+  "2026-04-11": {
+    "id": "audio-2026-04-11",
+    "briefingDate": "2026-04-11",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-11"
   }
 }

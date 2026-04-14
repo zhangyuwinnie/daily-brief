@@ -1,0 +1,196 @@
+{
+  "date": "2026-04-12",
+  "briefings": [
+    {
+      "id": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-12",
+      "filePath": "2026-04-12.md",
+      "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+      "insightIds": [
+        "rss-2026-04-12-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-12-02-agentic-infrastructure",
+        "rss-2026-04-12-03-your-harness-your-memory",
+        "rss-2026-04-12-04-sqlite-3530",
+        "rss-2026-04-12-05-exploiting-the-most-prominent-ai-agent-benchmarks",
+        "rss-2026-04-12-06-show-hn-claudraband-claude-code-for-the-power-user",
+        "rss-2026-04-12-07-builder-theme-the-agentic-economy-how-ai-agents-will-transform-the-financial-system-with-circle-co-founder-and-ceo-jeremy-allaire",
+        "rss-2026-04-12-08-builder-theme-thariq-on-theres-a-turbotax-connector-in-claude-code-now-so-glad-i-procrastin",
+        "rss-2026-04-12-09-builder-theme-peter-steinberger-on-two-experiments-in-the-next-openclaw-to-address-some-gpt-is-lazy-i"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-12-01-serhants-playbook-for-rapid-ai-iteration",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+      "title": "SERHANT.'s playbook for rapid AI iteration",
+      "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+      "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-12-02-agentic-infrastructure",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+      "title": "Agentic Infrastructure",
+      "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+      "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-12-03-your-harness-your-memory",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/your-harness-your-memory/",
+      "title": "Your harness, your memory",
+      "summary": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere. These harnesses are intimately tied to agent memory. If you used a closed harness - 。",
+      "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-12-04-sqlite-3530",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything",
+      "title": "SQLite 3.53.0",
+      "summary": "SQLite 3.53.0 SQLite 3.52.0 was withdrawn so this is a pretty big release with a whole lot of accumulated user-facing and internal improvements. Some that stood out to me: ALTER TA。",
+      "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-12-05-exploiting-the-most-prominent-ai-agent-benchmarks",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "title": "Exploiting the most prominent AI agent benchmarks",
+      "summary": "Comments。",
+      "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-12-06-show-hn-claudraband-claude-code-for-the-power-user",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/halfwhey/claudraband",
+      "title": "Show HN: Claudraband – Claude Code for the Power User",
+      "summary": "Comments。",
+      "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-12-07-builder-theme-the-agentic-economy-how-ai-agents-will-transform-the-financial-system-with-circle-co-founder-and-ceo-jeremy-allaire",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+      "title": "Builder Theme: The Agentic Economy: How AI Agents Will Transform the Financial System with Circle Co-Founder and CEO Jeremy Allaire",
+      "summary": "No Priors 播客 围绕「Builder Theme: The Agentic Economy: How AI Agents Will Transform the Financial System with Circle Co-Founder and CEO Jeremy Allaire」展开长谈，核心信号是 Speaker 1 | 00:05 - 00:19 Today I know Priors, have Jeremy Allaire, the co founder and CEO of Circle. We'll be talking about cryptocurrency, AI, agentic payments, AI evolving on t...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+      "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-12-08-builder-theme-thariq-on-theres-a-turbotax-connector-in-claude-code-now-so-glad-i-procrastin",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/trq212/status/2043138221836746762",
+      "title": "Builder Theme: Thariq on there's a turbotax connector in Claude Code now, so glad I procrastin...",
+      "summary": "社区讨论聚焦于 Thariq 在 X 上的讨论 的最新信号：there's a turbotax connector in Claude Code now, so glad I procrastinated on taxes 😭。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-12-09-builder-theme-peter-steinberger-on-two-experiments-in-the-next-openclaw-to-address-some-gpt-is-lazy-i",
+      "briefingId": "rss-2026-04-12",
+      "date": "2026-04-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/steipete/status/2043136615640694797",
+      "title": "Builder Theme: Peter Steinberger on Two experiments in the next @openclaw to address some \"GPT is lazy\" i...",
+      "summary": "社区讨论聚焦于 Peter Steinberger 在 X 上的讨论 的最新信号：Two experiments in the next @openclaw to address some \"GPT is lazy\" issues: 1) Strict mode: agents.defaults.embeddedPi.executionContract = \"strict-agentic\" This tells GPT-5.x to k...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

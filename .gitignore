@@ -3,7 +3,7 @@ dist/
 .DS_Store
 *.tsbuildinfo
 *.log
-briefings/
+/briefings/
 logs/
 public/generated/audio/
 .env.local

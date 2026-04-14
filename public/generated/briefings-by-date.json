@@ -1,407 +1,4 @@
 {
-  "2026-04-12": {
-    "date": "2026-04-12",
-    "briefings": [
-      {
-        "id": "rss-2026-04-12",
-        "date": "2026-04-12",
-        "sourceType": "rss",
-        "title": "Daily Briefing: 2026-04-12",
-        "filePath": "2026-04-12.md",
-        "summaryTopline": "Anthropic downgraded cache TTL on March 6th",
-        "insightIds": [
-          "rss-2026-04-12-01-anthropic-downgraded-cache-ttl-on-march-6th",
-          "rss-2026-04-12-02-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next"
-        ]
-      }
-    ],
-    "insights": [
-      {
-        "id": "rss-2026-04-12-01-anthropic-downgraded-cache-ttl-on-march-6th",
-        "briefingId": "rss-2026-04-12",
-        "date": "2026-04-12",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://github.com/anthropics/claude-code/issues/46829",
-        "title": "Anthropic downgraded cache TTL on March 6th",
-        "summary": "Anthropic于3月6日下调了其API服务的缓存TTL（Time To Live）值。这一调整意味着通过Anthropic API获取的数据将更快地失效并刷新，旨在为用户提供更即时、更新鲜的信息，但同时也可能影响API请求的响应时间和成本。",
-        "take": "对于Dayu构建依赖Anthropic模型的AI Agent而言，此变动使得Agent能够更容易获取最新数据，特别适用于需要高数据实时性的Agentic Workflows。Dayu在设计自动化流程和工具时，应关注此变化对API调用频率和成本的影响，并考虑在Agent层或其前端实现更智能、更精细的本地缓存策略，以优化性能并有效管理资源。这也能成为他探索自定义工具或潜在开源贡献的方向。",
-        "topics": [
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "rss-2026-04-12-02-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
-        "briefingId": "rss-2026-04-12",
-        "date": "2026-04-12",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
-        "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
-        "summary": "这篇文章深入探讨了团队如何通过创新方法成功突破顶尖AI代理的基准测试，大幅提升了AI代理的性能表现和能力上限，并对未来AI代理技术的发展方向和潜在应用进行了展望。",
-        "take": "这对Dayu构建和优化更高效、更强大的Agentic Workflow至关重要。他可以从中学习最新的AI代理设计范式、优化策略和技术栈，寻找可能被开源的新库或框架，将其应用于生物信息学流程自动化。同时，文章“What Comes Next”部分可能预示着新的开源贡献机会或协作项目，值得Dayu关注和参与。",
-        "topics": [
-          "Agents",
-          "Evals",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      }
-    ]
-  },
-  "2026-04-11": {
-    "date": "2026-04-11",
-    "briefings": [
-      {
-        "id": "rss-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "rss",
-        "title": "Daily Briefing: 2026-04-11",
-        "filePath": "2026-04-11.md",
-        "summaryTopline": "Using custom GPTs",
-        "insightIds": [
-          "rss-2026-04-11-01-using-custom-gpts",
-          "rss-2026-04-11-02-applications-of-ai-at-openai",
-          "rss-2026-04-11-03-launch-hn-twillai-yc-s25-delegate-to-cloud-agents-get-back-prs"
-        ]
-      },
-      {
-        "id": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "title": "X Morning Briefing - 2026-04-11",
-        "filePath": "x_briefing_2026-04-11.md",
-        "summaryTopline": "**Agentic工程提速：** 开源记忆系统GBrain和代码模型Qwen3-Coder等不断涌现，显著提升AI Agent的构建与能力。",
-        "insightIds": [
-          "x-2026-04-11-trend-01-aiagentgithub",
-          "x-2026-04-11-trend-02-ai-agent",
-          "x-2026-04-11-trend-03-marc-andreessenai-agent",
-          "x-2026-04-11-tools-01-ycgarry-tanai-agentgbrain",
-          "x-2026-04-11-tools-02-qwen3-coder",
-          "x-2026-04-11-tools-03-claude-managed-agentsai-agent-paas",
-          "x-2026-04-11-opinion-01-",
-          "x-2026-04-11-opinion-02-satya-nadela",
-          "x-2026-04-11-opinion-03-claudeagent",
-          "x-2026-04-11-opinion-04-ai-agent",
-          "x-2026-04-11-news-01-claudeblender",
-          "x-2026-04-11-news-02-",
-          "x-2026-04-11-news-03-claude-code",
-          "x-2026-04-11-news-04-ai-agent"
-        ]
-      }
-    ],
-    "insights": [
-      {
-        "id": "rss-2026-04-11-01-using-custom-gpts",
-        "briefingId": "rss-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "OpenAI News",
-        "sourceUrl": "https://openai.com/academy/custom-gpts",
-        "title": "Using custom GPTs",
-        "summary": "本文详细阐述了如何构建并有效利用自定义GPTs，旨在帮助用户自动化工作流程。通过使用这些定制化的AI助手，用户能够确保输出的一致性，并创建专用于特定目的的智能代理，从而显著提升工作效率。",
-        "take": "对于Dayu而言，自定义GPTs是快速搭建低代码AI代理和自动化生物信息学工作流的绝佳工具。Dayu可以利用它迅速实验Agentic Workflow概念，并将这些特定任务的自动化方案集成到更大的开源项目中，实现从AI助手到完整Agent生态的过渡。",
-        "topics": [
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "rss-2026-04-11-02-applications-of-ai-at-openai",
-        "briefingId": "rss-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "OpenAI News",
-        "sourceUrl": "https://openai.com/academy/applications-of-ai",
-        "title": "Applications of AI at OpenAI",
-        "summary": "这篇文章深入探讨了OpenAI旗下产品，如ChatGPT、Codex和各种API，是如何将人工智能技术落地到实际应用场景的。它展示了这些AI工具如何在工作、开发和日常生活中发挥关键作用，显著提升效率并解决实际问题。",
-        "take": "对于Dayu来说，深入了解OpenAI的API如何被实际应用，是构建AI代理和自动化生物信息学工作流的关键。这能启发他利用这些工具开发定制化Agent，将复杂任务解耦并通过API调用实现高效处理，是提升个人“超个体”效率的必经之路。",
-        "topics": [
-          "Coding Agents",
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "rss-2026-04-11-03-launch-hn-twillai-yc-s25-delegate-to-cloud-agents-get-back-prs",
-        "briefingId": "rss-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://twill.ai",
-        "title": "Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",
-        "summary": "Twill.ai (YC S25) 推出了一项创新服务，允许用户将各种开发和自动化任务委托给部署在云端的AI代理。这些智能代理能够自主执行复杂任务，并最终以代码 Pull Request (PR) 的形式返回成果。这为自动化软件开发和提高工作效率提供了一种全新的、基于AI代理的解决方案。",
-        "take": "对于Dayu这样致力于构建AI代理和自动化工作流的超级个体，Twill.ai的概念完美体现了Agentic Workflow的实际应用价值。他可以从这种“委托任务，返回PR”的模式中获得启发，思考如何为自己的生物信息学或AI工程任务设计类似的工具代理，并探索将其应用于构建更高效的自动化工作流，甚至寻找与现有开源Agent框架结合的贡献机会。",
-        "topics": [
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "x-2026-04-11-trend-01-aiagentgithub",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@GitTrend",
-        "sourceUrl": "https://x.com/GitTrend0x/status/2042795773231055163",
-        "title": "AI专家Agent军团席卷GitHub",
-        "summary": "AI专家Agent军团席卷GitHub，如`msitarzewski/agency-agents`（含144个Agent）星标激增。",
-        "take": "AI专家Agent军团席卷GitHub，如`msitarzewski/agency-agents`（含144个Agent）星标激增。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "x-2026-04-11-trend-02-ai-agent",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Ejaaz",
-        "sourceUrl": "https://x.com/cryptopunk7213/status/2040586809311371413",
-        "title": "中国员工秘密训练AI Agent替代同事",
-        "summary": "中国员工秘密训练AI Agent替代同事，引发AI对就业市场冲击的讨论。",
-        "take": "中国员工秘密训练AI Agent替代同事，引发AI对就业市场冲击的讨论。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "x-2026-04-11-trend-03-marc-andreessenai-agent",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@a16z",
-        "sourceUrl": "https://x.com/a16z/status/2040210359018295445",
-        "title": "Marc Andreessen预测AI Agent将需要资金",
-        "summary": "Marc Andreessen预测AI Agent将需要资金，预示AI与加密货币融合。",
-        "take": "Marc Andreessen预测AI Agent将需要资金，预示AI与加密货币融合。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "x-2026-04-11-tools-01-ycgarry-tanai-agentgbrain",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Garry Tan",
-        "sourceUrl": "https://x.com/garrytan/status/2042497872114090069",
-        "title": "YC总裁Garry Tan开源生产级AI Agent记忆系统GBrain",
-        "summary": "YC总裁Garry Tan开源生产级AI Agent记忆系统GBrain，助开发者构建mini-AGI。",
-        "take": "YC总裁Garry Tan开源生产级AI Agent记忆系统GBrain，助开发者构建mini-AGI。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-tools-02-qwen3-coder",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Qwen",
-        "sourceUrl": "https://x.com/Alibaba_Qwen/status/1947766835023335516",
-        "title": "阿里云发布Qwen3-Coder",
-        "summary": "阿里云发布Qwen3-Coder，强大的开放式Agentic代码模型（480B参数），提升代码生成。",
-        "take": "阿里云发布Qwen3-Coder，强大的开放式Agentic代码模型（480B参数），提升代码生成。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-tools-03-claude-managed-agentsai-agent-paas",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Corey Ganim",
-        "sourceUrl": "https://x.com/coreyganim/status/2042615329642168371",
-        "title": "清晰解读Claude Managed Agents为AI Agent的平台即服务 (PaaS)",
-        "summary": "清晰解读Claude Managed Agents为AI Agent的平台即服务 (PaaS)。",
-        "take": "清晰解读Claude Managed Agents为AI Agent的平台即服务 (PaaS)。",
-        "topics": [
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-opinion-01-",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Ashwin Gopinath",
-        "sourceUrl": "https://x.com/ashwingop/status/2042605402517573921",
-        "title": "提出“无逃逸定理”",
-        "summary": "提出“无逃逸定理”，认为文件系统是Agent长期记忆的更优路径。",
-        "take": "提出“无逃逸定理”，认为文件系统是Agent长期记忆的更优路径。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-opinion-02-satya-nadela",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Rohan Paul",
-        "sourceUrl": "https://x.com/rohanpaul_ai/status/2037657914929012981",
-        "title": "Satya Nadela观点",
-        "summary": "Satya Nadela观点：传统SaaS或终结，AI Agent将成价值核心，商业逻辑转向Agent。",
-        "take": "Satya Nadela观点：传统SaaS或终结，AI Agent将成价值核心，商业逻辑转向Agent。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-opinion-03-claudeagent",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Hanako",
-        "sourceUrl": "https://x.com/hanakoxbt/status/2042611584669720713",
-        "title": "快捷键可显著减少Claude等Agent频繁权限请求",
-        "summary": "快捷键可显著减少Claude等Agent频繁权限请求，大幅提升交互效率。",
-        "take": "快捷键可显著减少Claude等Agent频繁权限请求，大幅提升交互效率。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-opinion-04-ai-agent",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Andrew Ng",
-        "sourceUrl": "https://x.com/AndrewYNg/status/1986500817613169025",
-        "title": "AI Agent凸显数据互通需求",
-        "summary": "AI Agent凸显数据互通需求，建议选择能控制自身数据的软件。",
-        "take": "AI Agent凸显数据互通需求，建议选择能控制自身数据的软件。",
-        "topics": [
-          "Agents"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-news-01-claudeblender",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@How To AI",
-        "sourceUrl": "https://x.com/HowToAI_/status/2042575185229025530",
-        "title": "Claude直连Blender",
-        "summary": "Claude直连Blender，用户通过文本提示即可构建复杂3D模型。",
-        "take": "Claude直连Blender，用户通过文本提示即可构建复杂3D模型。",
-        "topics": [],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-news-02-",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Millie Marconi",
-        "sourceUrl": "https://x.com/MillieMarconnni/status/2042870943312416831",
-        "title": "案例",
-        "summary": "案例：Claude 40分钟完成商业计划、定价和路线图，高效助力商业规划。",
-        "take": "案例：Claude 40分钟完成商业计划、定价和路线图，高效助力商业规划。",
-        "topics": [],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-news-03-claude-code",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@DeepLearning.AI",
-        "sourceUrl": "https://x.com/DeepLearningAI/status/1953116356087562338",
-        "title": "推出新短课程《Claude Code",
-        "summary": "推出新短课程《Claude Code: A Highly Agentic Coding Assistant》，提升Claude使用技能。",
-        "take": "推出新短课程《Claude Code: A Highly Agentic Coding Assistant》，提升Claude使用技能。",
-        "topics": [
-          "Coding Agents",
-          "Agents",
-          "Learning Resource"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "x-2026-04-11-news-04-ai-agent",
-        "briefingId": "x-2026-04-11",
-        "date": "2026-04-11",
-        "sourceType": "x",
-        "sourceLabel": "X Briefing",
-        "sourceName": "@Public",
-        "sourceUrl": "https://x.com/public/status/2038979597266477092",
-        "title": "平台支持构建AI Agent",
-        "summary": "平台支持构建AI Agent，可监控市场、管理现金和执行交易。",
-        "take": "平台支持构建AI Agent，可监控市场、管理现金和执行交易。",
-        "topics": [
-          "Agents",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      }
-    ],
-    "xToplines": [
-      "**Agentic工程提速：** 开源记忆系统GBrain和代码模型Qwen3-Coder等不断涌现，显著提升AI Agent的构建与能力。",
-      "**Agent应用场景拓宽：** 从3D建模、商业规划到自动化交易，AI Agent在多行业展现效率优势。",
-      "**应对效率与伦理挑战：** 需优化Agent交互，解决数据孤岛。同时，AI Agent对就业和伦理的影响不容忽视。"
-    ],
-    "xActionItems": [
-      "立即探索Garry Tan开源的GBrain等Agent记忆系统，解决Agent长期任务记忆难题。",
-      "学习并实践Agent交互优化技巧（如快捷键），提升与Agent协作效率。",
-      "结合行业痛点，研究AI Agent在自动化、数据分析等领域的应用潜力，尝试小范围试点。"
-    ]
-  },
   "2026-04-10": {
     "date": "2026-04-10",
     "briefings": [
@@ -14028,6 +13625,435 @@
         ],
         "entities": [],
         "isTopSignal": true
+      }
+    ]
+  },
+  "2026-04-12": {
+    "date": "2026-04-12",
+    "briefings": [
+      {
+        "id": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-12",
+        "filePath": "2026-04-12.md",
+        "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+        "insightIds": [
+          "rss-2026-04-12-01-serhants-playbook-for-rapid-ai-iteration",
+          "rss-2026-04-12-02-agentic-infrastructure",
+          "rss-2026-04-12-03-your-harness-your-memory",
+          "rss-2026-04-12-04-sqlite-3530",
+          "rss-2026-04-12-05-exploiting-the-most-prominent-ai-agent-benchmarks",
+          "rss-2026-04-12-06-show-hn-claudraband-claude-code-for-the-power-user",
+          "rss-2026-04-12-07-builder-theme-the-agentic-economy-how-ai-agents-will-transform-the-financial-system-with-circle-co-founder-and-ceo-jeremy-allaire",
+          "rss-2026-04-12-08-builder-theme-thariq-on-theres-a-turbotax-connector-in-claude-code-now-so-glad-i-procrastin",
+          "rss-2026-04-12-09-builder-theme-peter-steinberger-on-two-experiments-in-the-next-openclaw-to-address-some-gpt-is-lazy-i"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-12-01-serhants-playbook-for-rapid-ai-iteration",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+        "title": "SERHANT.'s playbook for rapid AI iteration",
+        "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+        "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-12-02-agentic-infrastructure",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+        "title": "Agentic Infrastructure",
+        "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+        "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-12-03-your-harness-your-memory",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "LangChain Blog",
+        "sourceUrl": "https://blog.langchain.com/your-harness-your-memory/",
+        "title": "Your harness, your memory",
+        "summary": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere. These harnesses are intimately tied to agent memory. If you used a closed harness - 。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-12-04-sqlite-3530",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything",
+        "title": "SQLite 3.53.0",
+        "summary": "SQLite 3.53.0 SQLite 3.52.0 was withdrawn so this is a pretty big release with a whole lot of accumulated user-facing and internal improvements. Some that stood out to me: ALTER TA。",
+        "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-12-05-exploiting-the-most-prominent-ai-agent-benchmarks",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+        "title": "Exploiting the most prominent AI agent benchmarks",
+        "summary": "Comments。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-12-06-show-hn-claudraband-claude-code-for-the-power-user",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://github.com/halfwhey/claudraband",
+        "title": "Show HN: Claudraband – Claude Code for the Power User",
+        "summary": "Comments。",
+        "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-12-07-builder-theme-the-agentic-economy-how-ai-agents-will-transform-the-financial-system-with-circle-co-founder-and-ceo-jeremy-allaire",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+        "title": "Builder Theme: The Agentic Economy: How AI Agents Will Transform the Financial System with Circle Co-Founder and CEO Jeremy Allaire",
+        "summary": "No Priors 播客 围绕「Builder Theme: The Agentic Economy: How AI Agents Will Transform the Financial System with Circle Co-Founder and CEO Jeremy Allaire」展开长谈，核心信号是 Speaker 1 | 00:05 - 00:19 Today I know Priors, have Jeremy Allaire, the co founder and CEO of Circle. We'll be talking about cryptocurrency, AI, agentic payments, AI evolving on t...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+        "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-12-08-builder-theme-thariq-on-theres-a-turbotax-connector-in-claude-code-now-so-glad-i-procrastin",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/trq212/status/2043138221836746762",
+        "title": "Builder Theme: Thariq on there's a turbotax connector in Claude Code now, so glad I procrastin...",
+        "summary": "社区讨论聚焦于 Thariq 在 X 上的讨论 的最新信号：there's a turbotax connector in Claude Code now, so glad I procrastinated on taxes 😭。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-12-09-builder-theme-peter-steinberger-on-two-experiments-in-the-next-openclaw-to-address-some-gpt-is-lazy-i",
+        "briefingId": "rss-2026-04-12",
+        "date": "2026-04-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/steipete/status/2043136615640694797",
+        "title": "Builder Theme: Peter Steinberger on Two experiments in the next @openclaw to address some \"GPT is lazy\" i...",
+        "summary": "社区讨论聚焦于 Peter Steinberger 在 X 上的讨论 的最新信号：Two experiments in the next @openclaw to address some \"GPT is lazy\" issues: 1) Strict mode: agents.defaults.embeddedPi.executionContract = \"strict-agentic\" This tells GPT-5.x to k...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-04-11": {
+    "date": "2026-04-11",
+    "briefings": [
+      {
+        "id": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-11",
+        "filePath": "2026-04-11.md",
+        "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+        "insightIds": [
+          "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
+          "rss-2026-04-11-02-agentic-infrastructure",
+          "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
+          "rss-2026-04-11-04-your-harness-your-memory",
+          "rss-2026-04-11-05-sqlite-3530",
+          "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
+          "rss-2026-04-11-07-cirrus-labs-to-join-openai",
+          "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+          "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
+          "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+          "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+        "title": "SERHANT.'s playbook for rapid AI iteration",
+        "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+        "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-11-02-agentic-infrastructure",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+        "title": "Agentic Infrastructure",
+        "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+        "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+        "title": "ChatGPT voice mode is a weaker model",
+        "summary": "I think it's non-obvious to many people that the OpenAI voice mode runs on a much older, much weaker model - it feels like the AI that you can talk to should be the smartest AI but。",
+        "take": "这件事与 LLM、Reinforcement Learning、OpenAI、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-11-04-your-harness-your-memory",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "LangChain Blog",
+        "sourceUrl": "https://blog.langchain.com/your-harness-your-memory/",
+        "title": "Your harness, your memory",
+        "summary": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere. These harnesses are intimately tied to agent memory. If you used a closed harness - 。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-05-sqlite-3530",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything",
+        "title": "SQLite 3.53.0",
+        "summary": "SQLite 3.53.0 SQLite 3.52.0 was withdrawn so this is a pretty big release with a whole lot of accumulated user-facing and internal improvements. Some that stood out to me: ALTER TA。",
+        "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+        "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
+        "summary": "Comments。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-07-cirrus-labs-to-join-openai",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://cirruslabs.org/",
+        "title": "Cirrus Labs to join OpenAI",
+        "summary": "Comments。",
+        "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "title": "Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction",
+        "summary": "The MAD Podcast with Matt Turck 播客 围绕「Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:22 There is something both impressive but also slightly terrifying about seeing a model that is so much smarter than the last model we have worked with. The...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+        "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/claudeai/status/2042670341915295865",
+        "title": "Builder Theme: Claude on Claude for Word is now in beta. Draft, edit, and revise documents dir...",
+        "summary": "社区讨论聚焦于 Claude 在 X 上的讨论 的最新信号：Claude for Word is now in beta. Draft, edit, and revise documents directly from the sidebar. Claude preserves your formatting, and edits appear as tracked changes. Available on Te...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+        "summary": "Anthropic Engineering 博客 提供了一个值得追踪的工程或产品信号：By default, Claude Code asks users for approval before running commands or modifying files. This keeps users safe, but it also means a lot of clicking \"approve.\" Over time that le...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+        "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually",
+        "briefingId": "rss-2026-04-11",
+        "date": "2026-04-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/sama/status/2042738954550603884",
+        "title": "Builder Theme: Sam Altman on I wrote this early this morning and I wasn't sure if I would actually...",
+        "summary": "社区讨论聚焦于 Sam Altman 在 X 上的讨论 的最新信号：I wrote this early this morning and I wasn't sure if I would actually publish it, but here it is:。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
       }
     ]
   }

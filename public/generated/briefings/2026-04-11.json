@@ -1,0 +1,233 @@
+{
+  "date": "2026-04-11",
+  "briefings": [
+    {
+      "id": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-11",
+      "filePath": "2026-04-11.md",
+      "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+      "insightIds": [
+        "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-11-02-agentic-infrastructure",
+        "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
+        "rss-2026-04-11-04-your-harness-your-memory",
+        "rss-2026-04-11-05-sqlite-3530",
+        "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
+        "rss-2026-04-11-07-cirrus-labs-to-join-openai",
+        "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+        "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
+        "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-11-01-serhants-playbook-for-rapid-ai-iteration",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+      "title": "SERHANT.'s playbook for rapid AI iteration",
+      "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+      "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-11-02-agentic-infrastructure",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+      "title": "Agentic Infrastructure",
+      "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+      "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-11-03-chatgpt-voice-mode-is-a-weaker-model",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+      "title": "ChatGPT voice mode is a weaker model",
+      "summary": "I think it's non-obvious to many people that the OpenAI voice mode runs on a much older, much weaker model - it feels like the AI that you can talk to should be the smartest AI but。",
+      "take": "这件事与 LLM、Reinforcement Learning、OpenAI、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-11-04-your-harness-your-memory",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/your-harness-your-memory/",
+      "title": "Your harness, your memory",
+      "summary": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere. These harnesses are intimately tied to agent memory. If you used a closed harness - 。",
+      "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-05-sqlite-3530",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything",
+      "title": "SQLite 3.53.0",
+      "summary": "SQLite 3.53.0 SQLite 3.52.0 was withdrawn so this is a pretty big release with a whole lot of accumulated user-facing and internal improvements. Some that stood out to me: ALTER TA。",
+      "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-06-how-we-broke-top-ai-agent-benchmarks-and-what-comes-next",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
+      "summary": "Comments。",
+      "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-07-cirrus-labs-to-join-openai",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://cirruslabs.org/",
+      "title": "Cirrus Labs to join OpenAI",
+      "summary": "Comments。",
+      "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-08-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "title": "Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction",
+      "summary": "The MAD Podcast with Matt Turck 播客 围绕「Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:22 There is something both impressive but also slightly terrifying about seeing a model that is so much smarter than the last model we have worked with. The...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+      "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-09-builder-theme-claude-on-claude-for-word-is-now-in-beta-draft-edit-and-revise-documents-dir",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/claudeai/status/2042670341915295865",
+      "title": "Builder Theme: Claude on Claude for Word is now in beta. Draft, edit, and revise documents dir...",
+      "summary": "社区讨论聚焦于 Claude 在 X 上的讨论 的最新信号：Claude for Word is now in beta. Draft, edit, and revise documents directly from the sidebar. Claude preserves your formatting, and edits appear as tracked changes. Available on Te...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+      "summary": "Anthropic Engineering 博客 提供了一个值得追踪的工程或产品信号：By default, Claude Code asks users for approval before running commands or modifying files. This keeps users safe, but it also means a lot of clicking \"approve.\" Over time that le...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+      "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-11-11-builder-theme-sam-altman-on-i-wrote-this-early-this-morning-and-i-wasnt-sure-if-i-would-actually",
+      "briefingId": "rss-2026-04-11",
+      "date": "2026-04-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/sama/status/2042738954550603884",
+      "title": "Builder Theme: Sam Altman on I wrote this early this morning and I wasn't sure if I would actually...",
+      "summary": "社区讨论聚焦于 Sam Altman 在 X 上的讨论 的最新信号：I wrote this early this morning and I wasn't sure if I would actually publish it, but here it is:。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
