@@ -412,9 +412,10 @@
   "2026-04-12": {
     "id": "audio-2026-04-12",
     "briefingDate": "2026-04-12",
-    "status": "pending",
+    "status": "ready",
     "provider": "notebooklm",
-    "title": "Daily Brief for 2026-04-12"
+    "title": "Daily Brief for 2026-04-12",
+    "audioUrl": "/generated/audio/2026-04-12.mp3"
   },
   "2026-04-11": {
     "id": "audio-2026-04-11",
