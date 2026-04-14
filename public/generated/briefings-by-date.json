@@ -14056,5 +14056,244 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-13": {
+    "date": "2026-04-13",
+    "briefings": [
+      {
+        "id": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-13",
+        "filePath": "2026-04-13.md",
+        "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+        "insightIds": [
+          "rss-2026-04-13-01-serhants-playbook-for-rapid-ai-iteration",
+          "rss-2026-04-13-02-agentic-infrastructure",
+          "rss-2026-04-13-03-steve-yegge",
+          "rss-2026-04-13-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
+          "rss-2026-04-13-05-exploring-the-new-servo-crate",
+          "rss-2026-04-13-06-gaia-open-source-framework-for-building-ai-agents-that-run-on-local-hardware",
+          "rss-2026-04-13-07-n-day-bench-can-llms-find-real-vulnerabilities-in-real-codebases",
+          "rss-2026-04-13-08-builder-theme-marc-andreessen-introspects-on-the-death-of-the-browser-pi-openclaw-and-why-quotthis-time-is-differentquot",
+          "rss-2026-04-13-09-builder-theme-preparing-your-security-program-for-ai-accelerated-offense",
+          "rss-2026-04-13-10-builder-theme-amjad-masad-on-on-its-50th-birthday-apple-is-doing-its-best-to-become-the-most-hated",
+          "rss-2026-04-13-11-builder-theme-aaron-levie-on-another-week-on-the-road-meeting-with-a-couple-dozen-it-and-ai-leader"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-13-01-serhants-playbook-for-rapid-ai-iteration",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+        "title": "SERHANT.'s playbook for rapid AI iteration",
+        "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+        "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-13-02-agentic-infrastructure",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+        "title": "Agentic Infrastructure",
+        "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+        "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-13-03-steve-yegge",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/13/steve-yegge/#atom-everything",
+        "title": "Steve Yegge",
+        "summary": "Steve Yegge : I was chatting with my buddy at Google, who's been a tech director there for about 20 years, about their AI adoption. Craziest convo I've had all year. The TL;DR is t。",
+        "take": "这件事与 Agent、Agentic、LLM、Engineering、MCP、Gemini、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-13-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/cloudflare-openai-agent-cloud",
+        "title": "Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI",
+        "summary": "Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and security.。",
+        "take": "这件事与 Agent、Agentic、Workflow、OpenAI、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-05-exploring-the-new-servo-crate",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything",
+        "title": "Exploring the new `servo` crate",
+        "summary": "Research: Exploring the new `servo` crate In Servo is now available on crates.io the Servo team announced the initial release of the servo crate, which packages their browser engin。",
+        "take": "这件事与 RAG、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-06-gaia-open-source-framework-for-building-ai-agents-that-run-on-local-hardware",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://amd-gaia.ai/docs",
+        "title": "GAIA – Open-source framework for building AI agents that run on local hardware",
+        "summary": "Comments。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-07-n-day-bench-can-llms-find-real-vulnerabilities-in-real-codebases",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://ndaybench.winfunc.com/",
+        "title": "N-Day-Bench – Can LLMs find real vulnerabilities in real codebases?",
+        "summary": "Comments。",
+        "take": "这件事与 LLM 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-08-builder-theme-marc-andreessen-introspects-on-the-death-of-the-browser-pi-openclaw-and-why-quotthis-time-is-differentquot",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
+        "title": "Builder Theme: Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;",
+        "summary": "Latent Space 播客 围绕「Builder Theme: Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:25 Something about AI that causes the people in the field, I would say, to become both excessively utopian and excessively apocalyptic. Having said that, I...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+        "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-09-builder-theme-preparing-your-security-program-for-ai-accelerated-offense",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense",
+        "title": "Builder Theme: Preparing your security program for AI-accelerated offense",
+        "summary": "Claude Blog 博客 提供了一个值得追踪的工程或产品信号：Earlier this week, we announced Project Glasswing—our urgent attempt to put the strong cybersecurity capabilities of our newest frontier model, Claude Mythos Preview, to use for d...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+        "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-10-builder-theme-amjad-masad-on-on-its-50th-birthday-apple-is-doing-its-best-to-become-the-most-hated",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/amasad/status/2043394289326289243",
+        "title": "Builder Theme: Amjad Masad on On its 50th birthday Apple is doing its best to become the most hated...",
+        "summary": "社区讨论聚焦于 Amjad Masad 在 X 上的讨论 的最新信号：On its 50th birthday Apple is doing its best to become the most hated company in the world.。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-13-11-builder-theme-aaron-levie-on-another-week-on-the-road-meeting-with-a-couple-dozen-it-and-ai-leader",
+        "briefingId": "rss-2026-04-13",
+        "date": "2026-04-13",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/levie/status/2043426157367095397",
+        "title": "Builder Theme: Aaron Levie on Another week on the road meeting with a couple dozen IT and AI leader...",
+        "summary": "社区讨论聚焦于 Aaron Levie 在 X 上的讨论 的最新信号：Another week on the road meeting with a couple dozen IT and AI leaders from large enterprises across banking, media, retail, healthcare, consulting, tech, and sports, to discuss a...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

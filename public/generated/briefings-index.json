@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-13",
     "2026-04-12",
     "2026-04-11",
     "2026-04-10",
@@ -62,6 +63,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-13": {
+      "briefingIds": [
+        "rss-2026-04-13"
+      ],
+      "insightIds": [
+        "rss-2026-04-13-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-13-02-agentic-infrastructure",
+        "rss-2026-04-13-03-steve-yegge",
+        "rss-2026-04-13-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
+        "rss-2026-04-13-05-exploring-the-new-servo-crate",
+        "rss-2026-04-13-06-gaia-open-source-framework-for-building-ai-agents-that-run-on-local-hardware",
+        "rss-2026-04-13-07-n-day-bench-can-llms-find-real-vulnerabilities-in-real-codebases",
+        "rss-2026-04-13-08-builder-theme-marc-andreessen-introspects-on-the-death-of-the-browser-pi-openclaw-and-why-quotthis-time-is-differentquot",
+        "rss-2026-04-13-09-builder-theme-preparing-your-security-program-for-ai-accelerated-offense",
+        "rss-2026-04-13-10-builder-theme-amjad-masad-on-on-its-50th-birthday-apple-is-doing-its-best-to-become-the-most-hated",
+        "rss-2026-04-13-11-builder-theme-aaron-levie-on-another-week-on-the-road-meeting-with-a-couple-dozen-it-and-ai-leader"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-12": {
       "briefingIds": [
         "rss-2026-04-12"
