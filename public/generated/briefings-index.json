@@ -73,14 +73,17 @@
         "rss-2026-04-14-02-agentic-infrastructure",
         "rss-2026-04-14-03-steve-yegge",
         "rss-2026-04-14-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
-        "rss-2026-04-14-05-exploring-the-new-servo-crate",
-        "rss-2026-04-14-06-multi-agentic-software-development-is-a-distributed-systems-problem",
-        "rss-2026-04-14-07-the-exponential-curve-behind-open-source-backlogs",
-        "rss-2026-04-14-08-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
-        "rss-2026-04-14-09-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
-        "rss-2026-04-14-10-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
+        "rss-2026-04-14-05-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-14-06-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-14-07-gemini-robotics-er-16-powering-real-world-robotics-tasks-through-enhanced-embodied-reasoning",
+        "rss-2026-04-14-08-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-14-09-show-hn-plain-the-full-stack-python-framework-designed-for-humans-and-agents",
+        "rss-2026-04-14-10-claude-code-routines",
+        "rss-2026-04-14-11-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
+        "rss-2026-04-14-12-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
+        "rss-2026-04-14-13-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss"
       ]

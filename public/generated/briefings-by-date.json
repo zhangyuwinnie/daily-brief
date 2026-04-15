@@ -14311,12 +14311,15 @@
           "rss-2026-04-14-02-agentic-infrastructure",
           "rss-2026-04-14-03-steve-yegge",
           "rss-2026-04-14-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
-          "rss-2026-04-14-05-exploring-the-new-servo-crate",
-          "rss-2026-04-14-06-multi-agentic-software-development-is-a-distributed-systems-problem",
-          "rss-2026-04-14-07-the-exponential-curve-behind-open-source-backlogs",
-          "rss-2026-04-14-08-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
-          "rss-2026-04-14-09-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
-          "rss-2026-04-14-10-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
+          "rss-2026-04-14-05-cybersecurity-looks-like-proof-of-work-now",
+          "rss-2026-04-14-06-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+          "rss-2026-04-14-07-gemini-robotics-er-16-powering-real-world-robotics-tasks-through-enhanced-embodied-reasoning",
+          "rss-2026-04-14-08-trusted-access-for-the-next-era-of-cyber-defense",
+          "rss-2026-04-14-09-show-hn-plain-the-full-stack-python-framework-designed-for-humans-and-agents",
+          "rss-2026-04-14-10-claude-code-routines",
+          "rss-2026-04-14-11-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
+          "rss-2026-04-14-12-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
+          "rss-2026-04-14-13-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
         ]
       }
     ],
@@ -14390,8 +14393,8 @@
         "sourceName": "OpenAI News",
         "sourceUrl": "https://openai.com/index/cloudflare-openai-agent-cloud",
         "title": "Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI",
-        "summary": "Cloudflare Agent Cloud深度整合OpenAI的GPT-5.4和Codex模型，为企业提供一个安全、高效的平台，用于快速构建、部署和规模化AI智能体，以解决实际业务任务。",
-        "take": "Builders gain a robust platform (Cloudflare Agent Cloud) that abstracts away significant infrastructure complexity for deploying and scaling agents. You now have direct access to cutting-edge models like GPT-5.4 (for advanced reasoning) and Codex (crucial for tool-use, API interaction, and code generation) within an enterprise-grade secure and performant environment. This integration significantly lowers the barrier for developing and operationalizing production-ready agentic workflows, especially for tasks requiring high security, low latency, or edge deployment. Consider how Cloudflare's security and global network can enhance the reliability and reach of your agents for enterprise applications, moving beyond experimental prototypes to scalable, real-world solutions. The Codex integration specifically empowers agents with advanced automation and system interaction capabilities, expanding the scope of agent-driven tasks.",
+        "summary": "核心信号是Cloudflare的Agent Cloud平台将集成OpenAI的GPT-5.4和Codex模型，旨在赋能企业快速、安全地构建、部署和扩展AI智能体，以处理真实世界的任务。这意味着Cloudflare正在提供一个企业级的托管环境，将高级AI模型与自身的基础设施结合，简化智能体驱动工作流的开发与运行。",
+        "take": "此举为企业采纳生产级智能体工作流铺平了道路。 * **基础设施抽象：** 构建者通过Cloudflare Agent Cloud获得了一个托管且安全的智能体部署和扩展环境，大大简化了基础设施复杂度。这使得他们能将重心从运维挑战转移到智能体逻辑和任务编排上。 * **增强智能体能力：** 在此环境中直接访问高级OpenAI模型（GPT-5.4用于推理，Codex用于代码解释/生成），可创建更复杂、自主性更高的智能体，从而处理需要高级推理和编程交互的企业任务。 * **加速开发：** 强大的大型语言模型与健壮的部署基础设施相结合，将加速实际智能体的开发和迭代优化，促使智能体从原型走向可扩展的企业级解决方案。",
         "topics": [
           "Coding Agents",
           "Agents",
@@ -14402,55 +14405,93 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-05-exploring-the-new-servo-crate",
+        "id": "rss-2026-04-14-05-cybersecurity-looks-like-proof-of-work-now",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
         "sourceName": "Simon Willison's Weblog",
-        "sourceUrl": "https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything",
-        "title": "Exploring the new `servo` crate",
-        "summary": "Research: Exploring the new `servo` crate In Servo is now available on crates.io the Servo team announced the initial release of the servo crate, which packages their browser engin。",
-        "take": "这件事与 RAG、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/#atom-everything",
+        "title": "Cybersecurity Looks Like Proof of Work Now",
+        "summary": "英国AI安全研究所(AISI)对Anthropic的Claude Mythos评估显示，该模型在识别网络安全漏洞方面极其有效，且漏洞发现的成功率与投入的tokens（即成本）直接相关。这一发现表明，网络安全正演变为一种“算力证明”模式：系统防御的坚固程度取决于投入AI算力发现漏洞的成本，这必须高于攻击者利用漏洞的成本。",
+        "take": "这项发现对AI构建者意味着： - **工具与工作流变革**：安全审计流程将深度整合LLM，催生新的工具链来编排大规模token消耗的安全审查、管理成本并解析AI生成的复杂漏洞报告。 - **安全预算重构**：传统的安全预算将逐步演变为“token预算”，企业需要为AI驱动的持续性、大规模安全审计预留显著的计算资源和资金。 - **Agent能力与安全边界**：LLM在复杂高风险任务（如代码安全分析）上的能力边界被再次扩展，同时预示着未来构建的AI Agent自身也需通过此类AI驱动的分析进行持续强化与安全防护。 - **安全范式转变**：网络安全可能从被动响应已知威胁转向主动、持续且计算密集型的“AI驱动发现-AI驱动修补”循环，重新定义了系统安全策略和实施方式。",
         "topics": [
           "Agents",
           "Evals",
-          "RAG",
-          "Retrieval",
+          "Security",
           "Tooling"
         ],
         "entities": [],
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-06-multi-agentic-software-development-is-a-distributed-systems-problem",
+        "id": "rss-2026-04-14-06-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://kirancodes.me/posts/log-distributed-llms.html",
-        "title": "Multi-Agentic Software Development Is a Distributed Systems Problem",
-        "summary": "该文强调，多智能体软件开发系统本质上是一个分布式系统问题。构建这类系统时，核心挑战在于多智能体间的协调、状态同步、故障处理和通信效率，这些与传统分布式系统面临的问题高度一致。因此，设计和实现多智能体架构应从分布式系统的视角出发，采纳其成熟的设计原则和工具。",
-        "take": "对于AI构建者而言，这意味着在设计多智能体系统时： 1. **架构思维转变：** 停止将每个智能体视为独立单元，而应将其视为分布式系统中的一个节点。设计时优先考虑并发、故障容忍、状态一致性和幂等性等分布式原则。 2. **工具栈的选择：** 积极引入分布式系统工具和模式，例如利用消息队列实现智能体间的异步通信、采用分布式日志系统进行追踪、考虑使用版本控制或分布式事务模式管理共享状态和代码变更。 3. **强化鲁棒性：** 关注系统层面的弹性，确保即使部分智能体失败，整体系统仍能通过重试、补偿或最终一致性机制继续运作，而非仅仅提升单个智能体的逻辑能力。 4. **监控与可观测性：** 建立类似于传统分布式系统的端到端监控和可观测性体系，以便追踪智能体间的交互、诊断瓶颈和理解系统行为。",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/",
+        "title": "Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game",
+        "summary": "GitHub发布了其安全编程游戏的新模块，专注于AI Agent的特定漏洞。该游戏提供免费、开源的实践挑战，帮助AI开发者掌握识别和利用AI Agent（尤其是具备自主行为能力Agent）独特安全风险的技能。这表明随着AI Agent应用增多，对AI Agent安全的专门化培训需求日益增长，它涵盖了超越传统应用安全的攻击面。",
+        "take": "As AI agents become more prevalent, understanding their specific security vulnerabilities (beyond traditional software security) is crucial. This game offers AI builders a practical, free, and open-source way to develop hands-on skills in identifying and exploiting these new attack surfaces, such as prompt injection variants or tool misuse in agentic contexts. Integrating these specialized security skills early in the agent development lifecycle will be vital for building trustworthy and resilient AI systems.",
         "topics": [
           "Agents",
+          "Evals",
+          "Security",
           "Tooling"
         ],
         "entities": [],
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-07-the-exponential-curve-behind-open-source-backlogs",
+        "id": "rss-2026-04-14-07-gemini-robotics-er-16-powering-real-world-robotics-tasks-through-enhanced-embodied-reasoning",
+        "briefingId": "rss-2026-04-14",
+        "date": "2026-04-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+        "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
+        "summary": "Google DeepMind 发布了 Gemini Robotics ER 1.6，此版本重点增强了机器人系统的具身推理（embodied reasoning）、空间推理（spatial reasoning）和多视角理解能力。核心信号在于，新模型旨在提升自主机器人在真实世界复杂任务中的表现。",
+        "take": "对于 AI 构建者而言，这意味着开发机器人代理时，在复杂三维环境下的感知、场景理解和任务执行能力有望获得显著提升。新的基础能力可能简化需要精细空间理解和多角度操作的机器人应用（如复杂抓取、导航）的开发流程，减少对特定任务感知识别模块的工程投入，使构建者能更专注于高层任务规划和部署。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-14-08-trusted-access-for-the-next-era-of-cyber-defense",
+        "briefingId": "rss-2026-04-14",
+        "date": "2026-04-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+        "title": "Trusted access for the next era of cyber defense",
+        "summary": "OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity capabilities advance.。",
+        "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-14-09-show-hn-plain-the-full-stack-python-framework-designed-for-humans-and-agents",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
         "sourceName": "Hacker News",
-        "sourceUrl": "https://armanckeser.com/writing/jellyfin-flow",
-        "title": "The exponential curve behind open source backlogs",
+        "sourceUrl": "https://github.com/dropseed/plain",
+        "title": "Show HN: Plain – The full-stack Python framework designed for humans and agents",
         "summary": "Comments。",
-        "take": "这件事与 Open Source 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
         "topics": [
           "Agents",
           "Evals",
@@ -14460,7 +14501,27 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-08-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
+        "id": "rss-2026-04-14-10-claude-code-routines",
+        "briefingId": "rss-2026-04-14",
+        "date": "2026-04-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://code.claude.com/docs/en/routines",
+        "title": "Claude Code Routines",
+        "summary": "Comments。",
+        "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-14-11-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
@@ -14475,7 +14536,7 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-09-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
+        "id": "rss-2026-04-14-12-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
@@ -14494,7 +14555,7 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-14-10-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor",
+        "id": "rss-2026-04-14-13-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor",
         "briefingId": "rss-2026-04-14",
         "date": "2026-04-14",
         "sourceType": "rss",
