@@ -56,7 +56,7 @@ jobs:
           {
             npm ci &&
             python -m pip install --upgrade pip &&
-            pip install notebooklm-py
+            pip install "notebooklm-audio-overview @ git+https://github.com/zhangyuwinnie/skills.git#subdirectory=notebooklm-audio-overview"
           } 2>&1 | tee logs/workflow/install.log
           exit_code=${PIPESTATUS[0]}
           set -e

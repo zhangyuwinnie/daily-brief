@@ -30,7 +30,8 @@ describe("daily brief workflow", () => {
     expect(workflow).toContain("actions/setup-python@");
     expect(workflow).toContain("python-version: '3.10'");
     expect(workflow).toContain("npm ci");
-    expect(workflow).toContain("pip install notebooklm-py");
+    expect(workflow).toContain("pip install");
+    expect(workflow).toContain("notebooklm-audio-overview");
     expect(workflow).toContain("npm run daily");
     expect(workflow).toContain("npm run daily:follow-builders");
     expect(workflow).toContain("npm run daily:audio");
