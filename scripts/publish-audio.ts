@@ -1,4 +1,4 @@
-import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { HeadObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
@@ -50,16 +50,30 @@ if (files.length === 0) {
 }
 
 let uploaded = 0;
+let skipped = 0;
 
 for (const file of files) {
   const ext = "." + file.split(".").pop()!;
   const contentType = MIME_TYPES[ext] ?? "application/octet-stream";
   const body = readFileSync(join(AUDIO_DIR, file));
+  const key = `audio/${file}`;
+
+  // Check if file already exists in R2 with the same size
+  try {
+    const head = await s3.send(new HeadObjectCommand({ Bucket: bucket, Key: key }));
+    if (head.ContentLength === body.length) {
+      skipped++;
+      console.log(`Skipped ${file} (already uploaded, ${(body.length / 1024 / 1024).toFixed(1)} MB)`);
+      continue;
+    }
+  } catch {
+    // Object doesn't exist — proceed with upload
+  }
 
   await s3.send(
     new PutObjectCommand({
       Bucket: bucket,
-      Key: `audio/${file}`,
+      Key: key,
       Body: body,
       ContentType: contentType
     })
@@ -69,4 +83,4 @@ for (const file of files) {
   console.log(`Uploaded ${file} (${(body.length / 1024 / 1024).toFixed(1)} MB)`);
 }
 
-console.log(`Done. ${uploaded} file(s) uploaded to R2 bucket "${bucket}".`);
+console.log(`Done. ${uploaded} uploaded, ${skipped} skipped (already in R2 bucket "${bucket}").`);
