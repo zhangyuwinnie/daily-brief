@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-15",
     "2026-04-14",
     "2026-04-13",
     "2026-04-12",
@@ -64,6 +65,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-15": {
+      "briefingIds": [
+        "rss-2026-04-15"
+      ],
+      "insightIds": [
+        "rss-2026-04-15-01-mcp-as-observability-interface-connecting-ai-agents-to-kernel-tracepoints",
+        "rss-2026-04-15-02-agentic-infrastructure",
+        "rss-2026-04-15-03-making-turborepo-96-faster-with-agents-sandboxes-and-humans",
+        "rss-2026-04-15-04-steve-yegge",
+        "rss-2026-04-15-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-15-06-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-15-07-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-15-08-gemini-robotics-er-16",
+        "rss-2026-04-15-09-builder-theme-claude-on-weve-redesigned-claude-code-on-desktop-you-can-now-run-multiple-cla",
+        "rss-2026-04-15-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "rss-2026-04-15-11-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents",
+        "rss-2026-04-15-12-builder-theme-peter-steinberger-on-this-release-makes-me-unreasonably-happy-since-i-wasnt-involved-at-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-14": {
       "briefingIds": [
         "rss-2026-04-14"

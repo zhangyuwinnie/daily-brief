@@ -14573,5 +14573,260 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-15": {
+    "date": "2026-04-15",
+    "briefings": [
+      {
+        "id": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-15",
+        "filePath": "2026-04-15.md",
+        "summaryTopline": "MCP as Observability Interface: Connecting AI Agents to Kernel Tracepoints",
+        "insightIds": [
+          "rss-2026-04-15-01-mcp-as-observability-interface-connecting-ai-agents-to-kernel-tracepoints",
+          "rss-2026-04-15-02-agentic-infrastructure",
+          "rss-2026-04-15-03-making-turborepo-96-faster-with-agents-sandboxes-and-humans",
+          "rss-2026-04-15-04-steve-yegge",
+          "rss-2026-04-15-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+          "rss-2026-04-15-06-cybersecurity-looks-like-proof-of-work-now",
+          "rss-2026-04-15-07-trusted-access-for-the-next-era-of-cyber-defense",
+          "rss-2026-04-15-08-gemini-robotics-er-16",
+          "rss-2026-04-15-09-builder-theme-claude-on-weve-redesigned-claude-code-on-desktop-you-can-now-run-multiple-cla",
+          "rss-2026-04-15-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+          "rss-2026-04-15-11-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents",
+          "rss-2026-04-15-12-builder-theme-peter-steinberger-on-this-release-makes-me-unreasonably-happy-since-i-wasnt-involved-at-a"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-15-01-mcp-as-observability-interface-connecting-ai-agents-to-kernel-tracepoints",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://ingero.io/mcp-observability-interface-ai-agents-kernel-tracepoints/",
+        "title": "MCP as Observability Interface: Connecting AI Agents to Kernel Tracepoints",
+        "summary": "文章提出将MCP（Managed Control Plane）作为连接AI代理与Linux内核追踪点的核心观测接口。这使得AI代理能够实时获取操作系统内核的细粒度事件数据，从而对其底层行为有更深层次的理解，打破了AI与底层系统之间的数据壁垒。",
+        "take": "该提案为AI代理构建者带来了变革性的能力：代理将能获得前所未有的系统级洞察力，从高层指标转向实时的内核事件，从而实现更精细的性能调优、资源管理和异常检测。构建者需开发新的工具和工作流，以定义和管理MCP接口、解析内核追踪点数据并将其融入代理的训练与运行周期。这预示着一类新型高度自主、自优化的系统级AI代理的出现，要求构建者兼具AI/ML与底层系统编程专长。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-15-02-agentic-infrastructure",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+        "title": "Agentic Infrastructure",
+        "summary": "Vercel 数据显示，编码智能体正以前所未有的速度推动软件部署。在短短六个月内，智能体发起的部署增长了 1000%，目前已占总部署量的 30% 以上，其中 Claude Code 贡献巨大。这预示着软件开发和基础设施正在进入一个由智能体驱动的“智能体时代”。",
+        "take": "1. **工作流与工具重塑：** 智能体驱动的部署浪潮要求 AI 开发者重新审视现有的 CI/CD 工作流和开发工具。您需要思考如何将智能体更高效地集成到代码生成、测试、PR 审查和部署管道中，以适应其高速迭代的能力。 2. **基础设施变革：** 传统基础设施需演进以适应智能体带来的高频、自动化和程序化部署需求。未来的基础设施应提供更强的可编程性、细粒度控制、以及对智能体行为的监控与审计能力，以支持更弹性、安全的智能体驱动环境。 3. **提升智能体能力边界：** 智能体在编码和部署上的成熟度正加速提升，这意味着它们能够承担更复杂的工程任务。构建者应探索如何将更高层次的工程挑战（如架构演进、性能优化）委托给智能体，从而解放人类工程师专注于更具创造性的领域。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-15-03-making-turborepo-96-faster-with-agents-sandboxes-and-humans",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/making-turborepo-ninety-six-percent-faster-with-agents-sandboxes-and-humans",
+        "title": "Making Turborepo 96% faster with agents, sandboxes, and humans",
+        "summary": "Turborepo is now 81-91% faster to compute its task graph in our repositories, scaling with repo size. On our 1,000+ package monorepo, turbo run now feels instant. Time to First Tas。",
+        "take": "这件事与 Agent、Workflow、LLM、Tooling、Engineering、Open Source、MCP、Reinforcement Learning、Coding Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-15-04-steve-yegge",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/13/steve-yegge/#atom-everything",
+        "title": "Steve Yegge",
+        "summary": "Steve Yegge : I was chatting with my buddy at Google, who's been a tech director there for about 20 years, about their AI adoption. Craziest convo I've had all year. The TL;DR is t。",
+        "take": "这件事与 Agent、Agentic、LLM、Engineering、MCP、Gemini、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/",
+        "title": "Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game",
+        "summary": "GitHub 发布了一款免费开源的“安全代码游戏”，专为开发者设计，通过五个渐进挑战，帮助学习发现和利用真实的 AI 代理（agentic AI）漏洞。",
+        "take": "AI 代理的自主性和工具交互特性引入了传统安全范式无法覆盖的新型漏洞，对开发者提出了独特的安全挑战。该游戏提供了一个实用的、基于实践的学习路径，使AI构建者能够直接提升其在代理系统开发中识别和缓解安全风险的能力。这有助于将代理安全思维融入开发早期阶段，确保未来AI代理的鲁棒性和可靠性。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-06-cybersecurity-looks-like-proof-of-work-now",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/#atom-everything",
+        "title": "Cybersecurity Looks Like Proof of Work Now",
+        "summary": "英国AI安全研究所（AISI）报告证实，Anthropic的Claude Mythos在识别安全漏洞方面表现出色。报告发现，投入的token（即成本）越多，发现漏洞的效果越好。这使得网络安全类似一种“工作量证明”模式：要加固系统，你需要投入比攻击者利用漏洞更多的计算资源（tokens）。",
+        "take": "对于AI构建者而言，这意味着AI大模型正成为强大的安全工具，重新定义了漏洞发现的效率和成本： 1. **安全范式转变：** 未来安全防护可能从人工审计转向以大模型驱动的自动化、持续性“算力军备竞赛”。 2. **量化安全投入：** 你的安全投入（token费用）将直接决定系统的坚固程度，这要求构建者在预算中纳入AI安全扫描的成本。 3. **工具链集成：** 团队需要开始探索如何将LLM驱动的安全扫描工具集成到CI/CD流程中，实现自动化代码审计和系统加固。 4. **专业Agent崛起：** 预计会出现高度专业化的“安全Agent”，能够自主执行漏洞分析、渗透测试等复杂任务，这将是新一代AI应用的重要方向。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-07-trusted-access-for-the-next-era-of-cyber-defense",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+        "title": "Trusted access for the next era of cyber defense",
+        "summary": "OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity capabilities advance.。",
+        "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-08-gemini-robotics-er-16",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+        "title": "Gemini Robotics-ER 1.6",
+        "summary": "DeepMind 发布了 Gemini Robotics-ER 1.6，这是将多模态 Gemini 模型应用于机器人控制和学习的最新进展。核心信号在于，新版本可能通过优化“经验回放”（Experience Replay）机制或增强“具身推理”（Embodied Reasoning）能力，使机器人能更有效地从多模态数据和实际交互中学习，从而提升其对复杂环境的理解、任务规划与泛化执行能力。",
+        "take": "对于 AI 构建者而言，这意味着多模态大模型驱动的具身智能体（Embodied Agents）在处理真实世界复杂性和非结构化任务方面的能力边界正在持续扩展。未来，构建者需要更多地思考如何将这类强大的感知和推理引擎作为机器人的核心“大脑”，通过更高层次的语义理解和规划来简化传统的机器人控制开发。这可能催生新的开发范式，如通过自然语言进行高阶指令，以及更高效地从真实或模拟交互数据中进行模型训练和调优，加速部署更智能、适应性更强的机器人系统。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-09-builder-theme-claude-on-weve-redesigned-claude-code-on-desktop-you-can-now-run-multiple-cla",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/claudeai/status/2044131493966909862",
+        "title": "Builder Theme: Claude on We've redesigned Claude Code on desktop. You can now run multiple Cla...",
+        "summary": "社区讨论聚焦于 Claude 在 X 上的讨论 的最新信号：We've redesigned Claude Code on desktop. You can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+        "title": "Builder Theme: From SEO to Agent-Led Growth: Profound’s James Cadwallader",
+        "summary": "Training Data 播客 围绕「Builder Theme: From SEO to Agent-Led Growth: Profound’s James Cadwallader」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:23 We've now reached a point in marketing where if your marketing team is not using agents, and in particular, ProFound agents, to do marketing, then you ar...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+        "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-11-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://claude.com/blog/claude-code-desktop-redesign",
+        "title": "Builder Theme: Redesigning Claude Code on desktop for parallel agents",
+        "summary": "Claude Blog 博客 提供了一个值得追踪的工程或产品信号：It includes a new sidebar for managing multiple sessions, a drag-and-drop layout for arranging your workspace, an integrated terminal and file editor, plus performance and quality...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+        "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-15-12-builder-theme-peter-steinberger-on-this-release-makes-me-unreasonably-happy-since-i-wasnt-involved-at-a",
+        "briefingId": "rss-2026-04-15",
+        "date": "2026-04-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/steipete/status/2044047222481019300",
+        "title": "Builder Theme: Peter Steinberger on This release makes me unreasonably happy since I wasn't involved at a...",
+        "summary": "社区讨论聚焦于 Peter Steinberger 在 X 上的讨论 的最新信号：This release makes me unreasonably happy since I wasn't involved at all - @vincent_koc and the maintainer team did a great job. I'm back soon to work on OpenClaw, today/tomorrow I...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
