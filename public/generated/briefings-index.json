@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-16",
     "2026-04-15",
     "2026-04-14",
     "2026-04-13",
@@ -65,6 +66,32 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-16": {
+      "briefingIds": [
+        "rss-2026-04-16"
+      ],
+      "insightIds": [
+        "rss-2026-04-16-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-16-02-agentic-infrastructure",
+        "rss-2026-04-16-03-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-16-04-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-16-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-16-06-the-next-evolution-of-the-agents-sdk",
+        "rss-2026-04-16-07-inside-vakra-reasoning-tool-use-and-failure-modes-of-agents",
+        "rss-2026-04-16-08-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+        "rss-2026-04-16-09-accelerating-the-cyber-defense-ecosystem-that-protects-us-all",
+        "rss-2026-04-16-10-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+        "rss-2026-04-16-11-cloudflares-ai-platform-an-inference-layer-designed-for-agents",
+        "rss-2026-04-16-12-build-a-personal-organization-command-center-with-github-copilot-cli",
+        "rss-2026-04-16-13-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "rss-2026-04-16-14-builder-theme-josh-woodward-on-introducing-gemini-on-mac-we-heard-your-feedback-we-recruited-a-sma",
+        "rss-2026-04-16-15-builder-theme-guillermo-rauch-on-this-is-what-the-future-of-design-looks-like-not-just-this-specific"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-15": {
       "briefingIds": [
         "rss-2026-04-15"

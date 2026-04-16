@@ -1,0 +1,314 @@
+{
+  "date": "2026-04-16",
+  "briefings": [
+    {
+      "id": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-16",
+      "filePath": "2026-04-16.md",
+      "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+      "insightIds": [
+        "rss-2026-04-16-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-16-02-agentic-infrastructure",
+        "rss-2026-04-16-03-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-16-04-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-16-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-16-06-the-next-evolution-of-the-agents-sdk",
+        "rss-2026-04-16-07-inside-vakra-reasoning-tool-use-and-failure-modes-of-agents",
+        "rss-2026-04-16-08-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+        "rss-2026-04-16-09-accelerating-the-cyber-defense-ecosystem-that-protects-us-all",
+        "rss-2026-04-16-10-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+        "rss-2026-04-16-11-cloudflares-ai-platform-an-inference-layer-designed-for-agents",
+        "rss-2026-04-16-12-build-a-personal-organization-command-center-with-github-copilot-cli",
+        "rss-2026-04-16-13-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "rss-2026-04-16-14-builder-theme-josh-woodward-on-introducing-gemini-on-mac-we-heard-your-feedback-we-recruited-a-sma",
+        "rss-2026-04-16-15-builder-theme-guillermo-rauch-on-this-is-what-the-future-of-design-looks-like-not-just-this-specific"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-16-01-serhants-playbook-for-rapid-ai-iteration",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
+      "title": "SERHANT.'s playbook for rapid AI iteration",
+      "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
+      "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-16-02-agentic-infrastructure",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
+      "title": "Agentic Infrastructure",
+      "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
+      "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-16-03-trusted-access-for-the-next-era-of-cyber-defense",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/14/trusted-access-openai/#atom-everything",
+      "title": "Trusted access for the next era of cyber defense",
+      "summary": "Trusted access for the next era of cyber defense OpenAI's answer to Claude Mythos appears to be a new model called GPT-5.4-Cyber: In preparation for increasingly more capable model。",
+      "take": "这件事与 LLM、OpenAI、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-16-04-cybersecurity-looks-like-proof-of-work-now",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/#atom-everything",
+      "title": "Cybersecurity Looks Like Proof of Work Now",
+      "summary": "Cybersecurity Looks Like Proof of Work Now The UK's AI Safety Institute recently published Our evaluation of Claude Mythos Preview’s cyber capabilities , their own independent anal。",
+      "take": "这件事与 LLM、Open Source、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/",
+      "title": "Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game",
+      "summary": "Learn to find and exploit real-world agentic AI vulnerabilities through five progressive challenges in this free, open source game that over 10,000 developers have already used to 。",
+      "take": "这件事与 Agent、Agentic、Open Source 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-06-the-next-evolution-of-the-agents-sdk",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+      "title": "The next evolution of the Agents SDK",
+      "summary": "OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools.。",
+      "take": "这件事与 Agent、OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-07-inside-vakra-reasoning-tool-use-and-failure-modes-of-agents",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+      "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+      "summary": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents 带来了值得关注的新变化，需要从工作流和能力边界重新评估。",
+      "take": "这件事与 Agent、Reasoning 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-08-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "summary": "Comments。",
+      "take": "这件事与 Agent、Agentic 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-09-accelerating-the-cyber-defense-ecosystem-that-protects-us-all",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/accelerating-cyber-defense-ecosystem",
+      "title": "Accelerating the cyber defense ecosystem that protects us all",
+      "summary": "Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense.。",
+      "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-10-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.。",
+      "take": "这件事与 Gemini 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-11-cloudflares-ai-platform-an-inference-layer-designed-for-agents",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.cloudflare.com/ai-platform/",
+      "title": "Cloudflare's AI Platform: an inference layer designed for agents",
+      "summary": "Comments。",
+      "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-12-build-a-personal-organization-command-center-with-github-copilot-cli",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/",
+      "title": "Build a personal organization command center with GitHub Copilot CLI",
+      "summary": "Learn about the productivity tool one GitHub engineer built, and how AI supported the development process. The post Build a personal organization command center with GitHub Copilot。",
+      "take": "这件事与 Productivity 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-13-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "title": "Builder Theme: The AI Model Built for What LLMs Can't Do",
+      "summary": "AI & I by Every 播客 围绕「Builder Theme: The AI Model Built for What LLMs Can't Do」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:01 Can you define EBM for us? Speaker 2 | 00:01 - 00:20 EBMs are naturally non autoregressive. There are no sequences of tokens, and that's what makes it fu...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+      "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-14-builder-theme-josh-woodward-on-introducing-gemini-on-mac-we-heard-your-feedback-we-recruited-a-sma",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/joshwoodward/status/2044452201947627709",
+      "title": "Builder Theme: Josh Woodward on Introducing Gemini on Mac. We heard your feedback. We recruited a sma...",
+      "summary": "社区讨论聚焦于 Josh Woodward 在 X 上的讨论 的最新信号：Introducing Gemini on Mac. We heard your feedback. We recruited a small team. They built 100+ features in less than 100 days. 🤯 100% native Swift. Lightning fast. Let us know wha...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-16-15-builder-theme-guillermo-rauch-on-this-is-what-the-future-of-design-looks-like-not-just-this-specific",
+      "briefingId": "rss-2026-04-16",
+      "date": "2026-04-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/rauchg/status/2044445445636972578",
+      "title": "Builder Theme: Guillermo Rauch on This is what the future of design looks like. Not just this specific...",
+      "summary": "社区讨论聚焦于 Guillermo Rauch 在 X 上的讨论 的最新信号：This is what the future of design looks like. Not just this specific tool¹, but the fact that every team in the world is now is empowered to build their own 'design factory'. Shad...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+      "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
