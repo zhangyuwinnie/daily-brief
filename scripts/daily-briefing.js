@@ -302,7 +302,12 @@ function parseFeedDate(value) {
     return undefined;
   }
 
-  const date = new Date(value);
+  const normalized = String(value).trim();
+  if (!normalized || normalized.toLowerCase() === "null") {
+    return undefined;
+  }
+
+  const date = new Date(normalized);
   return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
 }
 
@@ -772,20 +777,101 @@ function filterRecentItems(items, { now = new Date(), maxAgeDays = 2 } = {}) {
 
   return items.filter((item) => {
     if (!item.isoDate) {
-      return true;
+      return false;
     }
 
     const itemDate = new Date(item.isoDate);
     if (Number.isNaN(itemDate.getTime())) {
-      return true;
+      return false;
     }
 
     return itemDate >= cutoff;
   });
 }
 
+function normalizeDedupeUrl(value = "") {
+  if (!value) {
+    return "";
+  }
+
+  try {
+    const url = new URL(value);
+    url.hash = "";
+    for (const key of [...url.searchParams.keys()]) {
+      if (
+        key.startsWith("utm_") ||
+        key === "fbclid" ||
+        key === "gclid" ||
+        key === "ref" ||
+        key === "ref_src"
+      ) {
+        url.searchParams.delete(key);
+      }
+    }
+
+    if (url.pathname !== "/") {
+      url.pathname = url.pathname.replace(/\/+$/, "");
+    }
+
+    return url.toString();
+  } catch {
+    return value.trim().replace(/#.*$/, "").replace(/\/+$/, "");
+  }
+}
+
 function dedupeByLink(items) {
-  return [...new Map(items.map((item) => [item.link, item])).values()];
+  return [...new Map(items.map((item) => [normalizeDedupeUrl(item.link), item])).values()];
+}
+
+function shiftDate(date, days) {
+  const [year, month, day] = date.split("-").map(Number);
+  const shifted = new Date(Date.UTC(year, month - 1, day));
+  shifted.setUTCDate(shifted.getUTCDate() + days);
+  return shifted.toISOString().slice(0, 10);
+}
+
+function extractMarkdownLinks(markdown = "") {
+  return [...markdown.matchAll(/^## \[.*?\]\((.+?)\)\s*$/gm)].map((match) => match[1].trim());
+}
+
+async function loadRecentBriefingUrls(briefingsDir, date, lookbackDays = 3) {
+  const seenUrls = new Set();
+
+  for (let offset = 1; offset <= lookbackDays; offset += 1) {
+    const previousDate = shiftDate(date, -offset);
+    const previousPath = path.join(briefingsDir, `${previousDate}.md`);
+
+    try {
+      const markdown = await fs.readFile(previousPath, "utf8");
+      for (const link of extractMarkdownLinks(markdown)) {
+        const normalized = normalizeDedupeUrl(link);
+        if (normalized) {
+          seenUrls.add(normalized);
+        }
+      }
+    } catch (error) {
+      if (error?.code !== "ENOENT") {
+        throw error;
+      }
+    }
+  }
+
+  return seenUrls;
+}
+
+function dedupeAcrossDays(items, seenUrls, logger = console) {
+  if (seenUrls.size === 0) {
+    return items;
+  }
+
+  const filteredItems = items.filter((item) => !seenUrls.has(normalizeDedupeUrl(item.link)));
+  const filteredCount = items.length - filteredItems.length;
+
+  if (filteredCount > 0) {
+    logger.log(`${filteredCount} items were removed by cross-day URL dedupe`);
+  }
+
+  return filteredItems;
 }
 
 function normalizeRenderedLine(text = "") {
@@ -851,7 +937,9 @@ export async function runDailyBriefing(options = {}) {
   const matchedItems = enrichKeywordMatches(recentItems, keywords);
   logger.log(`${matchedItems.length} items matched briefing keywords`);
   const uniqueByLink = dedupeByLink(matchedItems);
-  const uniqueByTopic = deduplicateByTopic(uniqueByLink);
+  const seenUrls = await loadRecentBriefingUrls(briefingsDir, date, 3);
+  const crossDayDeduped = dedupeAcrossDays(uniqueByLink, seenUrls, logger);
+  const uniqueByTopic = deduplicateByTopic(crossDayDeduped);
   const rankedItems = await rankCandidates(uniqueByTopic, { maxItems, logger });
   const selectedItems = applySourceDiversityLimit(
     rankedItems.slice(0, maxItems),
