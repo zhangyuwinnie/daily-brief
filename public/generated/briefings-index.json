@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-17",
     "2026-04-16",
     "2026-04-15",
     "2026-04-14",
@@ -66,6 +67,32 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-17": {
+      "briefingIds": [
+        "rss-2026-04-17"
+      ],
+      "insightIds": [
+        "rss-2026-04-17-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-17-02-agentic-infrastructure",
+        "rss-2026-04-17-03-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
+        "rss-2026-04-17-04-introducing-gpt-rosalind-for-life-sciences-research",
+        "rss-2026-04-17-05-llm-anthropic-025",
+        "rss-2026-04-17-06-codex-for-almost-everything",
+        "rss-2026-04-17-07-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+        "rss-2026-04-17-08-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
+        "rss-2026-04-17-09-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+        "rss-2026-04-17-10-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
+        "rss-2026-04-17-11-android-cli-build-android-apps-3x-faster-using-any-agent",
+        "rss-2026-04-17-12-how-github-uses-ebpf-to-improve-deployment-safety",
+        "rss-2026-04-17-13-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-04-17-14-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion",
+        "rss-2026-04-17-15-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-16": {
       "briefingIds": [
         "rss-2026-04-16"
