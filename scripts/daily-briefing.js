@@ -571,21 +571,33 @@ function extractJsonSnippet(text = "") {
   return arrayMatch?.[0];
 }
 
-async function callGeminiText(prompt, { apiKey, modelName, logger }) {
+async function callGeminiText(prompt, { apiKey, modelName, logger, maxRetries = 3 }) {
   if (!apiKey) {
     return null;
   }
 
-  try {
-    const { GoogleGenerativeAI } = await import("@google/generative-ai");
-    const client = new GoogleGenerativeAI(apiKey);
-    const model = client.getGenerativeModel({ model: modelName });
-    const result = await model.generateContent(prompt);
-    return result.response.text().trim();
-  } catch (error) {
-    logger.warn(`Gemini call failed: ${error.message}`);
-    return null;
+  const { GoogleGenerativeAI } = await import("@google/generative-ai");
+  const client = new GoogleGenerativeAI(apiKey);
+  const model = client.getGenerativeModel({ model: modelName });
+
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const result = await model.generateContent(prompt);
+      return result.response.text().trim();
+    } catch (error) {
+      const isRetryable = /503|429|overloaded|high demand/i.test(error.message);
+      if (isRetryable && attempt < maxRetries - 1) {
+        const delay = 2000 * 2 ** attempt; // 2s, 4s, 8s
+        logger.warn(`Gemini call failed (attempt ${attempt + 1}/${maxRetries}), retrying in ${delay / 1000}s: ${error.message}`);
+        await new Promise((resolve) => setTimeout(resolve, delay));
+      } else {
+        logger.warn(`Gemini call failed (attempt ${attempt + 1}/${maxRetries}): ${error.message}`);
+        return null;
+      }
+    }
   }
+
+  return null;
 }
 
 function buildRankingPrompt(candidates, maxItems) {
