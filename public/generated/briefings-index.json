@@ -1,5 +1,8 @@
 {
   "availableDates": [
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
     "2026-04-14",
     "2026-04-13",
     "2026-04-12",
@@ -64,6 +67,81 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-17": {
+      "briefingIds": [
+        "rss-2026-04-17"
+      ],
+      "insightIds": [
+        "rss-2026-04-17-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-17-02-agentic-infrastructure",
+        "rss-2026-04-17-03-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
+        "rss-2026-04-17-04-introducing-gpt-rosalind-for-life-sciences-research",
+        "rss-2026-04-17-05-llm-anthropic-025",
+        "rss-2026-04-17-06-codex-for-almost-everything",
+        "rss-2026-04-17-07-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+        "rss-2026-04-17-08-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
+        "rss-2026-04-17-09-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+        "rss-2026-04-17-10-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
+        "rss-2026-04-17-11-android-cli-build-android-apps-3x-faster-using-any-agent",
+        "rss-2026-04-17-12-how-github-uses-ebpf-to-improve-deployment-safety",
+        "rss-2026-04-17-13-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-04-17-14-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion",
+        "rss-2026-04-17-15-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-16": {
+      "briefingIds": [
+        "rss-2026-04-16"
+      ],
+      "insightIds": [
+        "rss-2026-04-16-01-serhants-playbook-for-rapid-ai-iteration",
+        "rss-2026-04-16-02-agentic-infrastructure",
+        "rss-2026-04-16-03-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-16-04-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-16-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-16-06-the-next-evolution-of-the-agents-sdk",
+        "rss-2026-04-16-07-inside-vakra-reasoning-tool-use-and-failure-modes-of-agents",
+        "rss-2026-04-16-08-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
+        "rss-2026-04-16-09-accelerating-the-cyber-defense-ecosystem-that-protects-us-all",
+        "rss-2026-04-16-10-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
+        "rss-2026-04-16-11-cloudflares-ai-platform-an-inference-layer-designed-for-agents",
+        "rss-2026-04-16-12-build-a-personal-organization-command-center-with-github-copilot-cli",
+        "rss-2026-04-16-13-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "rss-2026-04-16-14-builder-theme-josh-woodward-on-introducing-gemini-on-mac-we-heard-your-feedback-we-recruited-a-sma",
+        "rss-2026-04-16-15-builder-theme-guillermo-rauch-on-this-is-what-the-future-of-design-looks-like-not-just-this-specific"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-15": {
+      "briefingIds": [
+        "rss-2026-04-15"
+      ],
+      "insightIds": [
+        "rss-2026-04-15-01-mcp-as-observability-interface-connecting-ai-agents-to-kernel-tracepoints",
+        "rss-2026-04-15-02-agentic-infrastructure",
+        "rss-2026-04-15-03-making-turborepo-96-faster-with-agents-sandboxes-and-humans",
+        "rss-2026-04-15-04-steve-yegge",
+        "rss-2026-04-15-05-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-15-06-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-15-07-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-15-08-gemini-robotics-er-16",
+        "rss-2026-04-15-09-builder-theme-claude-on-weve-redesigned-claude-code-on-desktop-you-can-now-run-multiple-cla",
+        "rss-2026-04-15-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "rss-2026-04-15-11-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents",
+        "rss-2026-04-15-12-builder-theme-peter-steinberger-on-this-release-makes-me-unreasonably-happy-since-i-wasnt-involved-at-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-14": {
       "briefingIds": [
         "rss-2026-04-14"
@@ -73,14 +151,17 @@
         "rss-2026-04-14-02-agentic-infrastructure",
         "rss-2026-04-14-03-steve-yegge",
         "rss-2026-04-14-04-enterprises-power-agentic-workflows-in-cloudflare-agent-cloud-with-openai",
-        "rss-2026-04-14-05-exploring-the-new-servo-crate",
-        "rss-2026-04-14-06-multi-agentic-software-development-is-a-distributed-systems-problem",
-        "rss-2026-04-14-07-the-exponential-curve-behind-open-source-backlogs",
-        "rss-2026-04-14-08-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
-        "rss-2026-04-14-09-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
-        "rss-2026-04-14-10-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
+        "rss-2026-04-14-05-cybersecurity-looks-like-proof-of-work-now",
+        "rss-2026-04-14-06-hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game",
+        "rss-2026-04-14-07-gemini-robotics-er-16-powering-real-world-robotics-tasks-through-enhanced-embodied-reasoning",
+        "rss-2026-04-14-08-trusted-access-for-the-next-era-of-cyber-defense",
+        "rss-2026-04-14-09-show-hn-plain-the-full-stack-python-framework-designed-for-humans-and-agents",
+        "rss-2026-04-14-10-claude-code-routines",
+        "rss-2026-04-14-11-builder-theme-ai-for-atoms-how-periodic-labs-is-revolutionizing-materials-engineering-with-co-founder-liam-fedus",
+        "rss-2026-04-14-12-builder-theme-guillermo-rauch-on-today-were-open-sourcing-a-reference-platform-for-cloud-coding-agent",
+        "rss-2026-04-14-13-builder-theme-aaron-levie-on-the-more-enterprises-i-talk-to-about-ai-agent-transformation-the-mor"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss"
       ]
