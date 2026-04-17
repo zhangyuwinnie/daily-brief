@@ -647,7 +647,7 @@ export async function defaultRankCandidates(
   const prompt = buildRankingPrompt(candidates, maxItems);
   const responseText = await callGeminiText(prompt, {
     apiKey,
-    modelName: "gemini-2.5-flash",
+    modelName: "gemini-3-flash",
     logger
   });
   const indices = responseText
@@ -745,7 +745,7 @@ export async function defaultSummarizeCandidate(
   const prompt = buildSummaryPrompt(candidate);
   const responseText = await callGeminiText(prompt, {
     apiKey,
-    modelName: "gemini-2.5-flash",
+    modelName: "gemini-3-flash",
     logger
   });
   const parsed = responseText ? parseSummaryResponse(responseText) : null;
@@ -830,21 +830,24 @@ function shiftDate(date, days) {
   return shifted.toISOString().slice(0, 10);
 }
 
-function extractMarkdownLinks(markdown = "") {
-  return [...markdown.matchAll(/^## \[.*?\]\((.+?)\)\s*$/gm)].map((match) => match[1].trim());
+function getGeneratedBriefingsDir(repoRoot) {
+  return path.join(repoRoot, "public", "generated", "briefings");
 }
 
-async function loadRecentBriefingUrls(briefingsDir, date, lookbackDays = 3) {
+async function loadRecentBriefingUrls(repoRoot, date, lookbackDays = 1) {
   const seenUrls = new Set();
+  const generatedBriefingsDir = getGeneratedBriefingsDir(repoRoot);
 
   for (let offset = 1; offset <= lookbackDays; offset += 1) {
     const previousDate = shiftDate(date, -offset);
-    const previousPath = path.join(briefingsDir, `${previousDate}.md`);
+    const previousPath = path.join(generatedBriefingsDir, `${previousDate}.json`);
 
     try {
-      const markdown = await fs.readFile(previousPath, "utf8");
-      for (const link of extractMarkdownLinks(markdown)) {
-        const normalized = normalizeDedupeUrl(link);
+      const previousDay = JSON.parse(await fs.readFile(previousPath, "utf8"));
+      const insights = Array.isArray(previousDay?.insights) ? previousDay.insights : [];
+
+      for (const insight of insights) {
+        const normalized = normalizeDedupeUrl(insight?.sourceUrl);
         if (normalized) {
           seenUrls.add(normalized);
         }
@@ -937,7 +940,7 @@ export async function runDailyBriefing(options = {}) {
   const matchedItems = enrichKeywordMatches(recentItems, keywords);
   logger.log(`${matchedItems.length} items matched briefing keywords`);
   const uniqueByLink = dedupeByLink(matchedItems);
-  const seenUrls = await loadRecentBriefingUrls(briefingsDir, date, 3);
+  const seenUrls = await loadRecentBriefingUrls(repoRoot, date, 1);
   const crossDayDeduped = dedupeAcrossDays(uniqueByLink, seenUrls, logger);
   const uniqueByTopic = deduplicateByTopic(crossDayDeduped);
   const rankedItems = await rankCandidates(uniqueByTopic, { maxItems, logger });

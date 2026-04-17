@@ -109,26 +109,27 @@ describe("daily-briefing script", () => {
     expect(result.markdown).toContain("No new updates found matching keywords today.");
   });
 
-  it("suppresses recently published links from repo-local briefing history", async () => {
+  it("suppresses recently published links from generated briefing history", async () => {
     const repoRoot = await mkdtemp(path.join(os.tmpdir(), "daily-briefing-"));
     tempDirs.push(repoRoot);
-    const briefingsDir = path.join(repoRoot, "briefings");
+    const generatedBriefingsDir = path.join(repoRoot, "public", "generated", "briefings");
 
-    await mkdir(briefingsDir, { recursive: true });
+    await mkdir(generatedBriefingsDir, { recursive: true });
     await writeFile(
-      path.join(briefingsDir, "2026-04-14.md"),
-      [
-        "# Daily Briefing: 2026-04-14",
-        "",
-        "## [Agentic Infrastructure](https://vercel.com/blog/agentic-infrastructure/)",
-        "**Source:** Vercel News",
-        "",
-        "> **Chinese Summary:** 已经收录。",
-        "> **R2 Take:** 不应该跨天重复。",
-        "",
-        "---",
-        ""
-      ].join("\n"),
+      path.join(generatedBriefingsDir, "2026-04-14.json"),
+      JSON.stringify(
+        {
+          date: "2026-04-14",
+          insights: [
+            {
+              id: "rss-2026-04-14-01-agentic-infrastructure",
+              sourceUrl: "https://vercel.com/blog/agentic-infrastructure/"
+            }
+          ]
+        },
+        null,
+        2
+      ),
       "utf8"
     );
 
@@ -163,6 +164,55 @@ describe("daily-briefing script", () => {
     expect(result.items).toHaveLength(1);
     expect(result.items[0]?.link).toBe("https://vercel.com/blog/ai-gateway-routing-controls");
     expect(result.markdown).not.toContain("agentic-infrastructure");
+  });
+
+  it("only checks generated history from the previous one day", async () => {
+    const repoRoot = await mkdtemp(path.join(os.tmpdir(), "daily-briefing-"));
+    tempDirs.push(repoRoot);
+    const generatedBriefingsDir = path.join(repoRoot, "public", "generated", "briefings");
+
+    await mkdir(generatedBriefingsDir, { recursive: true });
+    await writeFile(
+      path.join(generatedBriefingsDir, "2026-04-13.json"),
+      JSON.stringify(
+        {
+          date: "2026-04-13",
+          insights: [
+            {
+              id: "rss-2026-04-13-01-agentic-infrastructure",
+              sourceUrl: "https://vercel.com/blog/agentic-infrastructure"
+            }
+          ]
+        },
+        null,
+        2
+      ),
+      "utf8"
+    );
+
+    const result = await runDailyBriefing({
+      now: new Date("2026-04-15T18:30:00Z"),
+      repoRoot,
+      sources: ["https://example.com/feed.xml"],
+      htmlSources: [],
+      fetchFeedItems: async () => [
+        {
+          title: "Agentic Infrastructure",
+          link: "https://vercel.com/blog/agentic-infrastructure",
+          contentSnippet: "Two-day-old history should not suppress this item anymore.",
+          source: "Vercel News",
+          isoDate: "2026-04-15T08:00:00.000Z"
+        }
+      ],
+      rankCandidates: async (candidates: BriefingCandidate[]) => candidates,
+      summarizeCandidate: async (candidate: BriefingCandidate) => ({
+        summary: `${candidate.title} 的中文摘要。`,
+        take: `${candidate.title} 的影响。`
+      })
+    });
+
+    expect(result.items).toHaveLength(1);
+    expect(result.items[0]?.link).toBe("https://vercel.com/blog/agentic-infrastructure");
   });
 
   it("does not reintroduce sqlite references into the repo-local script", async () => {

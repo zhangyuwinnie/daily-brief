@@ -56,7 +56,8 @@ jobs:
           {
             npm ci &&
             python -m pip install --upgrade pip &&
-            pip install "notebooklm-audio-overview @ git+https://github.com/zhangyuwinnie/skills.git#subdirectory=notebooklm-audio-overview"
+            pip install "notebooklm-audio-overview @ git+https://github.com/zhangyuwinnie/skills.git#subdirectory=notebooklm-audio-overview" &&
+            python -m playwright install --with-deps chromium
           } 2>&1 | tee logs/workflow/install.log
           exit_code=${PIPESTATUS[0]}
           set -e
