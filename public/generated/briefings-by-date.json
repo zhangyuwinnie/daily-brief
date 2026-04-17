@@ -15152,69 +15152,25 @@
         "sourceType": "rss",
         "title": "Daily Briefing: 2026-04-17",
         "filePath": "2026-04-17.md",
-        "summaryTopline": "SERHANT.'s playbook for rapid AI iteration",
+        "summaryTopline": "Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7",
         "insightIds": [
-          "rss-2026-04-17-01-serhants-playbook-for-rapid-ai-iteration",
-          "rss-2026-04-17-02-agentic-infrastructure",
-          "rss-2026-04-17-03-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
-          "rss-2026-04-17-04-introducing-gpt-rosalind-for-life-sciences-research",
-          "rss-2026-04-17-05-llm-anthropic-025",
-          "rss-2026-04-17-06-codex-for-almost-everything",
-          "rss-2026-04-17-07-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
-          "rss-2026-04-17-08-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
-          "rss-2026-04-17-09-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
-          "rss-2026-04-17-10-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
-          "rss-2026-04-17-11-android-cli-build-android-apps-3x-faster-using-any-agent",
-          "rss-2026-04-17-12-how-github-uses-ebpf-to-improve-deployment-safety",
-          "rss-2026-04-17-13-scaling-managed-agents-decoupling-the-brain-from-the-hands",
-          "rss-2026-04-17-14-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion",
-          "rss-2026-04-17-15-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo"
+          "rss-2026-04-17-01-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
+          "rss-2026-04-17-02-introducing-gpt-rosalind-for-life-sciences-research",
+          "rss-2026-04-17-03-llm-anthropic-025",
+          "rss-2026-04-17-04-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
+          "rss-2026-04-17-05-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
+          "rss-2026-04-17-06-is-your-site-agent-ready-by-cloudflare",
+          "rss-2026-04-17-07-android-cli-build-android-apps-3x-faster-using-any-agent",
+          "rss-2026-04-17-08-how-github-uses-ebpf-to-improve-deployment-safety",
+          "rss-2026-04-17-09-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+          "rss-2026-04-17-10-builder-theme-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo",
+          "rss-2026-04-17-11-builder-theme-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion"
         ]
       }
     ],
     "insights": [
       {
-        "id": "rss-2026-04-17-01-serhants-playbook-for-rapid-ai-iteration",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Vercel News",
-        "sourceUrl": "https://vercel.com/blog/serhants-playbook-for-rapid-ai-iteration",
-        "title": "SERHANT.'s playbook for rapid AI iteration",
-        "summary": "Impact at a glance Started with Next.js on Vercel, which made it easier to expand to a React Native iOS app without rebuilding their backend Engineers focus on AI design and iterat。",
-        "take": "这件事与 Agent、Agentic、Workflow、Automation、RAG、Engineering、Reasoning、OpenAI、Gemini、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-        "topics": [
-          "Agents",
-          "Evals",
-          "RAG",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "rss-2026-04-17-02-agentic-infrastructure",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Vercel News",
-        "sourceUrl": "https://vercel.com/blog/agentic-infrastructure",
-        "title": "Agentic Infrastructure",
-        "summary": "Every generation of software eventually demands a new generation of infrastructure. First, we configured servers by hand. Next, the cloud turned infrastructure into APIs. Then, a m。",
-        "take": "这件事与 Agent、Agentic、Workflow、LLM、Engineering、MCP、Coding Agent、Claude、Cursor 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-        "topics": [
-          "Coding Agents",
-          "Agents",
-          "Evals",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": true
-      },
-      {
-        "id": "rss-2026-04-17-03-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
+        "id": "rss-2026-04-17-01-qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-claude-opus-47",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15233,7 +15189,7 @@
         "isTopSignal": true
       },
       {
-        "id": "rss-2026-04-17-04-introducing-gpt-rosalind-for-life-sciences-research",
+        "id": "rss-2026-04-17-02-introducing-gpt-rosalind-for-life-sciences-research",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15250,10 +15206,10 @@
           "Tooling"
         ],
         "entities": [],
-        "isTopSignal": false
+        "isTopSignal": true
       },
       {
-        "id": "rss-2026-04-17-05-llm-anthropic-025",
+        "id": "rss-2026-04-17-03-llm-anthropic-025",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15269,49 +15225,10 @@
           "Tooling"
         ],
         "entities": [],
-        "isTopSignal": false
+        "isTopSignal": true
       },
       {
-        "id": "rss-2026-04-17-06-codex-for-almost-everything",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "OpenAI News",
-        "sourceUrl": "https://openai.com/index/codex-for-almost-everything",
-        "title": "Codex for (almost) everything",
-        "summary": "The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.。",
-        "take": "这件事与 Workflow、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-        "topics": [
-          "Coding Agents",
-          "Agents",
-          "Evals",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "rss-2026-04-17-07-qwen36-35b-a3b-agentic-coding-power-now-open-to-all",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
-        "title": "Qwen3.6-35B-A3B: Agentic coding power, now open to all",
-        "summary": "Comments。",
-        "take": "这件事与 Agent、Agentic 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-        "topics": [
-          "Agents",
-          "Evals",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "rss-2026-04-17-08-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
+        "id": "rss-2026-04-17-04-ecom-rlve-adaptive-verifiable-environments-for-e-commerce-conversational-agents",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15330,26 +15247,7 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-17-09-gemini-31-flash-tts-the-next-generation-of-expressive-ai-speech",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Google DeepMind News",
-        "sourceUrl": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
-        "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
-        "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.。",
-        "take": "这件事与 Gemini 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-        "topics": [
-          "Agents",
-          "Evals",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "rss-2026-04-17-10-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
+        "id": "rss-2026-04-17-05-designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15368,7 +15266,26 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-17-11-android-cli-build-android-apps-3x-faster-using-any-agent",
+        "id": "rss-2026-04-17-06-is-your-site-agent-ready-by-cloudflare",
+        "briefingId": "rss-2026-04-17",
+        "date": "2026-04-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://isitagentready.com/",
+        "title": "Is Your Site Agent-Ready? (By Cloudflare)",
+        "summary": "Comments。",
+        "take": "这件事与 Agent 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-17-07-android-cli-build-android-apps-3x-faster-using-any-agent",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15387,7 +15304,7 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-17-12-how-github-uses-ebpf-to-improve-deployment-safety",
+        "id": "rss-2026-04-17-08-how-github-uses-ebpf-to-improve-deployment-safety",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
@@ -15406,16 +15323,16 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-17-13-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "id": "rss-2026-04-17-09-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
         "sourceName": "Follow Builders",
         "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
-        "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-        "summary": "Anthropic 推出了 Claude Managed Agents，一个用于构建和部署云托管智能体的 API 套件。其核心思想是将智能体的“大脑”（模型）与“手”（执行环境/Harness）解耦。随着模型能力的进化，原先为弥补模型短板而设计的复杂执行逻辑（如上下文重置）可能变得多余。该服务通过提供沙盒执行、状态管理、权限控制等基础设施，让开发者能专注于用户体验，而非底层运维，从而将原型到生产的周期从数月缩短至数天。",
-        "take": "这标志着智能体开发正从“手工作坊”模式转向“平台即服务”。对于构建者来说，这意味着可以将精力从复杂的底层基础设施（如安全沙盒、状态管理）中解放出来，更专注于智能体的核心逻辑和应用场景。这预示着一个新层次的 AI 技术栈正在形成，即“智能体基础设施即服务”，它将大幅降低构建生产级智能体的门槛和成本。",
+        "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+        "summary": "Anthropic 推出了 Claude Managed Agents，这是一套用于构建和部署云托管智能体的 API。该服务的核心思想是将智能体的“大脑”（模型）与“手”（执行环境/Harness）解耦。随着模型能力的提升，Harness 的设计也需要不断演进。Managed Agents 将沙盒代码执行、状态管理、权限控制等基础设施层面的复杂工作抽象出来，让开发者可以专注于用户体验和业务逻辑，从而将原型到生产的周期从数月缩短到数天。",
+        "take": "对于构建者来说，这意味着智能体开发正在从“自己动手造轮子”转向使用平台即服务（PaaS）。将执行环境与模型本身分离，不仅解决了安全和扩展性等棘手的工程问题，还使得智能体应用能够更平滑地适应未来更强大的模型，而无需重构整个执行逻辑。这是一个重要的行业趋势，标志着智能体开发正在走向成熟和标准化。",
         "topics": [
           "Agents",
           "Security",
@@ -15425,37 +15342,36 @@
         "isTopSignal": false
       },
       {
-        "id": "rss-2026-04-17-14-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion",
-        "briefingId": "rss-2026-04-17",
-        "date": "2026-04-17",
-        "sourceType": "rss",
-        "sourceLabel": "RSS Briefing",
-        "sourceName": "Follow Builders",
-        "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
-        "title": "Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future — Simon Last &amp; Sarah Sachs of Notion",
-        "summary": "Notion 团队讨论了在产品中集成智能体时，对 MCP（模型-控制器-执行者，即工具调用）模式的青睐。他们认为，对于需要轻量级、任务明确的智能体场景，MCP 是一个“简单有效”的选择。其优势在于权限模型天生严格——智能体只能调用预定义的工具，这保证了安全性和可控性。相比于拥有完整计算环境的通用编码智能体，MCP 更适合在企业级应用中进行紧密集成。",
-        "take": "在追求通用能力的浪潮中，这是一个重要的提醒：针对特定任务，受限但可靠的智能体架构（如工具调用）依然具有巨大价值。对于构建者而言，这意味着在设计智能体时，需要根据应用场景权衡能力与安全性。并非所有问题都需要一个能完全控制计算机的“超级智能体”，一个权限明确、行为可预测的“工具使用者”在许多企业工作流中可能是更优解。",
-        "topics": [
-          "Agents",
-          "Security",
-          "Tooling"
-        ],
-        "entities": [],
-        "isTopSignal": false
-      },
-      {
-        "id": "rss-2026-04-17-15-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo",
+        "id": "rss-2026-04-17-10-builder-theme-sam-altman-on-lots-of-major-improvements-to-codex-computer-use-is-a-real-update-fo",
         "briefingId": "rss-2026-04-17",
         "date": "2026-04-17",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
         "sourceName": "Follow Builders",
         "sourceUrl": "https://x.com/sama/status/2044858862042591378",
-        "title": "Sam Altman on Lots of major improvements to Codex! Computer use is a real update fo...",
-        "summary": "OpenAI 的 Sam Altman 宣布了 Codex 的一项重大更新：计算机使用（Computer use）能力。这项功能允许模型直接操作用户 Mac 上的所有应用程序，并且可以并行执行任务，不干扰用户的直接操作。这标志着 AI 智能体从调用 API 或执行代码，向着直接与操作系统和图形界面应用交互迈出了重要一步。",
-        "take": "这是智能体能力的一个范式转变，从“API 调用者”进化为“操作系统用户”。对于构建者来说，这意味着可以设想和开发更强大的自动化工作流，这些工作流能跨越多个没有 API 的桌面应用。这也对智能体的规划、观察和执行能力提出了更高的要求，并带来了新的安全和用户交互设计的挑战。未来的工具和框架需要更好地支持这种与 GUI 的深度交互。",
+        "title": "Builder Theme: Sam Altman on Lots of major improvements to Codex! Computer use is a real update fo...",
+        "summary": "OpenAI 的 Codex 迎来了重大更新，特别是新增的“计算机使用”功能。该功能允许模型直接操作用户 Mac 上的所有应用程序，并且可以并行执行任务，不干扰用户的直接操作。这标志着智能体能力从调用 API 扩展到了直接控制操作系统和图形用户界面（GUI）。",
+        "take": "这一进展对智能体开发者意义重大，它开辟了一条与云端 API 智能体不同的发展路径：本地化、深度集成的 OS 级智能体。开发者需要开始考虑如何利用这种能力来自动化复杂的工作流，这些工作流涉及多个本地应用，是传统 API 工具调用难以实现的。这也对工具和框架提出了新的要求，例如需要更强大的计算机视觉模型和更可靠的 UI 交互原语。",
         "topics": [
           "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-17-11-builder-theme-notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the-software-factory-future-simon-last-amp-sarah-sachs-of-notion",
+        "briefingId": "rss-2026-04-17",
+        "date": "2026-04-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
+        "title": "Builder Theme: Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future — Simon Last &amp; Sarah Sachs of Notion",
+        "summary": "Notion 的团队在构建其 AI 功能时，讨论了两种主流的智能体架构：MCP（模型-控制器-执行器，即工具调用）和 CLI（命令行接口，即代码生成与执行）。他们认为，尽管 CLI 功能更强大，但 MCP 因其简单、可靠且具有严格的权限模型而具有明显优势。对于许多企业级应用场景，限制智能体只能调用预定义的工具是一种更安全、更可控的选择。",
+        "take": "这为构建者提供了一个务实的视角：并非所有任务都需要一个能完全控制代码执行环境的超级智能体。在设计智能体时，应根据具体需求权衡其能力和安全性。选择像 MCP 这样更受限但更安全的架构，可以降低风险，简化开发，尤其适用于那些需要与现有企业系统稳定、安全地集成的场景。这是在追求智能体能力上限和保证生产环境稳定性之间的重要平衡。",
+        "topics": [
           "Agents",
           "Security",
           "Tooling"
