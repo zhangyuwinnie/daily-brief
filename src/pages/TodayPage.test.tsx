@@ -15,15 +15,10 @@ function TestLayout() {
   return (
     <Outlet
       context={{
-        buildQueue: [],
-        buildQueueError: null,
-        buildQueueStatus: "ready",
         selectedInsight: null,
         topicFilter: null,
-        onAddToBuild: noop,
         onInsightShare: noop,
-        onTopicFilterChange: noop,
-        onUpdateStatus: noop
+        onTopicFilterChange: noop
       }}
     />
   );

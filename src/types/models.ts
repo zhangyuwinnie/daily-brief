@@ -1,4 +1,3 @@
-export type SkillFocus = "agents" | "evals" | "rag" | "tooling" | "security";
 export type EffortEstimate = "30m" | "2h" | "weekend";
 export type SourceType = "rss" | "x";
 export type AudioStatus = "pending" | "ready" | "failed";
@@ -49,31 +48,10 @@ export type DailyAudio = {
   updatedAt?: string;
 };
 
-export type InsightState = {
-  insightId: string;
-  status: "Inbox" | "Interested" | "Building" | "Learned" | "Archived";
-  skillFocus?: SkillFocus;
-  note?: string;
-  personalTakeaway?: string;
-  createdAt: string;
-  lastTouchedAt: string;
-};
-
 export type DailyBriefPageData = {
   date: string;
   availableDates: string[];
   briefings: BriefingRecord[];
   insights: Insight[];
   audio?: DailyAudio;
-};
-
-export type BuildStatus = InsightState["status"];
-
-export type BuildItem = {
-  id: string;
-  insight: Insight;
-  skillFocus: SkillFocus;
-  note: string;
-  status: BuildStatus;
-  addedAt: string;
 };

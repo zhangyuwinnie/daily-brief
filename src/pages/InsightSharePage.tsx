@@ -66,20 +66,12 @@ export function InsightSharePage() {
           The generated day payload for this permalink could not be fetched.
         </p>
         {insightLoadError ? <p className="mb-6 text-xs text-rose-700">{insightLoadError}</p> : null}
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            to="/today"
-            className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
-          >
-            Back to Today
-          </Link>
-          <Link
-            to="/topics"
-            className="inline-flex rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-800"
-          >
-            Browse Topics
-          </Link>
-        </div>
+        <Link
+          to="/today"
+          className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
+        >
+          Back to Today
+        </Link>
       </div>
     );
   }
@@ -89,20 +81,12 @@ export function InsightSharePage() {
       <div className="animate-enter mt-8 rounded-card border border-white/60 bg-white/40 p-8 text-center">
         <h2 className="mb-2 text-2xl font-black text-slate-800">Insight not found</h2>
         <p className="mb-6 text-slate-500">The permalink is missing or no longer exists.</p>
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            to="/today"
-            className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
-          >
-            Back to Today
-          </Link>
-          <Link
-            to="/topics"
-            className="inline-flex rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-800"
-          >
-            Browse Topics
-          </Link>
-        </div>
+        <Link
+          to="/today"
+          className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white"
+        >
+          Back to Today
+        </Link>
       </div>
     );
   }

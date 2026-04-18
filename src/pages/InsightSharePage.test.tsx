@@ -11,15 +11,10 @@ function TestLayout() {
   return (
     <Outlet
       context={{
-        buildQueue: [],
-        buildQueueError: null,
-        buildQueueStatus: "ready",
         selectedInsight: null,
         topicFilter: null,
-        onAddToBuild: noop,
         onInsightShare: noop,
-        onTopicFilterChange: noop,
-        onUpdateStatus: noop
+        onTopicFilterChange: noop
       }}
     />
   );
@@ -72,6 +67,6 @@ describe("InsightSharePage", () => {
 
     expect(html).toContain("Insight not found");
     expect(html).toContain("Back to Today");
-    expect(html).toContain("Browse Topics");
+    expect(html).toContain("Back to Today");
   });
 });

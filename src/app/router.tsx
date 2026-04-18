@@ -2,14 +2,10 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
 const App = lazy(() => import("./App").then((module) => ({ default: module.App })));
-const BuildQueuePage = lazy(() =>
-  import("../pages/BuildQueuePage").then((module) => ({ default: module.BuildQueuePage }))
-);
 const InsightSharePage = lazy(() =>
   import("../pages/InsightSharePage").then((module) => ({ default: module.InsightSharePage }))
 );
 const TodayPage = lazy(() => import("../pages/TodayPage").then((module) => ({ default: module.TodayPage })));
-const TopicsPage = lazy(() => import("../pages/TopicsPage").then((module) => ({ default: module.TopicsPage })));
 
 function RouteLoadingFallback() {
   return (
@@ -40,14 +36,6 @@ export const router = createBrowserRouter([
       {
         path: "today",
         element: withRouteFallback(<TodayPage />)
-      },
-      {
-        path: "build",
-        element: withRouteFallback(<BuildQueuePage />)
-      },
-      {
-        path: "topics",
-        element: withRouteFallback(<TopicsPage />)
       },
       {
         path: "insights/:insightId",

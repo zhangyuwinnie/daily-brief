@@ -125,7 +125,7 @@ function TodaySignalSection({
 
 export function TodayPage() {
   const [searchParams] = useSearchParams();
-  const { topicFilter, onAddToBuild, onInsightShare } = useOutletContext<AppOutletContext>();
+  const { topicFilter, onInsightShare } = useOutletContext<AppOutletContext>();
   const requestedDate = searchParams.get("date") ?? undefined;
   const pageState = getDailyBriefPageState(requestedDate);
   const pageData = pageState.pageData;
@@ -316,7 +316,6 @@ export function TodayPage() {
                 <InsightCard
                   key={insight.id}
                   insight={insight}
-                  onAdd={() => onAddToBuild(insight)}
                   onShare={() => onInsightShare(insight)}
                 />
               ))}
@@ -350,7 +349,6 @@ export function TodayPage() {
                   <InsightCard
                     key={insight.id}
                     insight={insight}
-                    onAdd={() => onAddToBuild(insight)}
                     onShare={() => onInsightShare(insight)}
                   />
                 ))}

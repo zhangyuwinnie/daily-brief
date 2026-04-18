@@ -6,7 +6,7 @@ import type { Insight } from "../../types/models";
 const noop = () => {};
 
 function renderInsightCard(insight: Insight) {
-  return renderToStaticMarkup(<InsightCard insight={insight} onAdd={noop} onShare={noop} />);
+  return renderToStaticMarkup(<InsightCard insight={insight} onShare={noop} />);
 }
 
 describe("InsightCard", () => {

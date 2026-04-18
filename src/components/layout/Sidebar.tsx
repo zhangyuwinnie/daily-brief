@@ -1,20 +1,14 @@
-import { BookOpen, Home, Layers, Sparkles, Zap } from "lucide-react";
+import { Home, Sparkles, Zap } from "lucide-react";
 import { NavLink } from "react-router-dom";
-
-type SidebarProps = {
-  buildCount: number;
-};
 
 function NavItem({
   to,
   label,
-  icon,
-  badge
+  icon
 }: {
   to: string;
   label: string;
   icon: React.ReactNode;
-  badge?: number;
 }) {
   return (
     <NavLink
@@ -31,16 +25,11 @@ function NavItem({
         <span className="text-slate-400">{icon}</span>
         <span>{label}</span>
       </span>
-      {badge !== undefined && badge > 0 ? (
-        <span className="rounded-full bg-brand-500 px-2 py-0.5 text-[10px] font-black text-slate-900">
-          {badge}
-        </span>
-      ) : null}
     </NavLink>
   );
 }
 
-export function Sidebar({ buildCount }: SidebarProps) {
+export function Sidebar() {
   return (
     <nav className="hidden w-64 flex-shrink-0 border-r border-white/50 bg-white/20 p-6 lg:flex lg:flex-col">
       <div className="flex items-center gap-3 px-2">
@@ -55,8 +44,6 @@ export function Sidebar({ buildCount }: SidebarProps) {
       <div className="mt-8 flex flex-col gap-2">
         <p className="mb-2 px-2 text-xs font-bold uppercase tracking-wider text-slate-400">Menu</p>
         <NavItem to="/today" label="Today" icon={<Home className="h-5 w-5" />} />
-        <NavItem to="/build" label="Build Queue" icon={<Layers className="h-5 w-5" />} badge={buildCount} />
-        <NavItem to="/topics" label="Topics" icon={<BookOpen className="h-5 w-5" />} />
       </div>
 
       <div className="mt-auto rounded-2xl border border-white/60 bg-white/50 p-4 text-sm">

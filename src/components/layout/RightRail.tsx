@@ -1,4 +1,4 @@
-import { Calendar, Share2, Tag, Target } from "lucide-react";
+import { Calendar, Share2, Tag } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import {
   getAvailableBriefingDates,
@@ -10,7 +10,6 @@ type RightRailProps = {
   selectedInsight: Insight | null;
   topicFilter: string | null;
   topics: string[];
-  onAddToBuild: (insight: Insight) => void;
   onInsightShare: (insight: Insight) => void;
   onTopicFilterChange: (topic: string | null) => void;
 };
@@ -19,7 +18,6 @@ export function RightRail({
   selectedInsight,
   topicFilter,
   topics,
-  onAddToBuild,
   onInsightShare,
   onTopicFilterChange
 }: RightRailProps) {
@@ -97,13 +95,6 @@ export function RightRail({
               {selectedInsight.summary}
             </p>
             <div className="flex gap-2">
-              <button
-                onClick={() => onAddToBuild(selectedInsight)}
-                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-bold text-white transition hover:bg-slate-800"
-              >
-                <Target className="h-4 w-4" />
-                Build It
-              </button>
               <button
                 onClick={() => onInsightShare(selectedInsight)}
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"

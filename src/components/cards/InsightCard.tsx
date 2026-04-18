@@ -1,13 +1,12 @@
-import { BookOpen, Clock, Plus, Share2, Sparkles, Target } from "lucide-react";
+import { BookOpen, Clock, Share2, Sparkles, Target } from "lucide-react";
 import type { Insight } from "../../types/models";
 
 type InsightCardProps = {
   insight: Insight;
-  onAdd: () => void;
   onShare: () => void;
 };
 
-export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
+export function InsightCard({ insight, onShare }: InsightCardProps) {
   const titleClassName =
     "mb-2 text-xl font-black leading-tight text-slate-800 transition-colors group-hover:text-[#5c962c] sm:text-2xl";
   const cueSections = [
@@ -138,13 +137,6 @@ export function InsightCard({ insight, onAdd, onShare }: InsightCardProps) {
             title="Share Insight"
           >
             <Share2 className="h-4 w-4" />
-          </button>
-          <button
-            onClick={onAdd}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all group-hover:bg-brand-500 group-hover:text-slate-900 group-hover:shadow-[0_4px_14px_rgba(148,227,84,0.4)] hover:bg-slate-800 sm:flex-none"
-          >
-            <Plus className="h-4 w-4" />
-            Add to Build
           </button>
         </div>
       </div>

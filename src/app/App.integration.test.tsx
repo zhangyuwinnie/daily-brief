@@ -4,17 +4,13 @@ import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { Navigate, RouterProvider, createMemoryRouter } from "react-router-dom";
-import { BuildQueuePage } from "../pages/BuildQueuePage";
 import { InsightSharePage } from "../pages/InsightSharePage";
 import { TodayPage } from "../pages/TodayPage";
-import { TopicsPage } from "../pages/TopicsPage";
 import {
   getAllInsights,
-  getAvailableTopics,
   getDailyBriefPageData
 } from "../lib/briefings/generatedContentLoader";
 import { resetGeneratedContentSources } from "../lib/briefings/generatedContentLoader";
-import { INSIGHT_STATE_STORAGE_KEY } from "../lib/insightStateStore";
 import { generatedContentFixture } from "../test/generatedContentFixture";
 import { App } from "./App";
 
@@ -45,12 +41,6 @@ async function clickElement(element: Element | null) {
   });
 }
 
-function findButtonByText(container: ParentNode, label: string) {
-  return Array.from(container.querySelectorAll("button")).find(
-    (button) => button.textContent?.trim() === label
-  );
-}
-
 function createTestRouter(initialEntry: string) {
   return createMemoryRouter(
     [
@@ -65,14 +55,6 @@ function createTestRouter(initialEntry: string) {
           {
             path: "today",
             element: <TodayPage />
-          },
-          {
-            path: "build",
-            element: <BuildQueuePage />
-          },
-          {
-            path: "topics",
-            element: <TopicsPage />
           },
           {
             path: "insights/:insightId",
@@ -190,47 +172,6 @@ describe("App integration", () => {
     expect(getTextContent(container)).toContain("Original Source");
   });
 
-  it("does not preload saved build-queue day payloads while the user is on /today", async () => {
-    const selectedDate = generatedContentFixture.briefingsIndex.availableDates[0];
-    const queuedDate = generatedContentFixture.briefingsIndex.availableDates.find(
-      (candidate) => candidate !== selectedDate
-    );
-
-    expect(queuedDate).toBeTruthy();
-
-    const queuedInsight = generatedContentFixture.briefingsByDate[queuedDate!].insights[0];
-    window.localStorage.setItem(
-      INSIGHT_STATE_STORAGE_KEY,
-      JSON.stringify({
-        version: 1,
-        items: [
-          {
-            insightId: queuedInsight.id,
-            status: "Inbox",
-            skillFocus: "agents",
-            createdAt: "2026-04-07T00:00:00.000Z",
-            lastTouchedAt: "2026-04-07T00:00:00.000Z"
-          }
-        ]
-      })
-    );
-
-    const fetchMock = installGeneratedContentFetchMock();
-    const router = createTestRouter(`/today?date=${selectedDate}`);
-
-    await act(async () => {
-      root.render(<RouterProvider router={router} />);
-    });
-    await flushUpdates();
-
-    expect(fetchMock.mock.calls.map(([url]) => String(url))).toContain(
-      `/generated/briefings/${selectedDate}.json`
-    );
-    expect(fetchMock.mock.calls.map(([url]) => String(url))).not.toContain(
-      `/generated/briefings/${queuedDate}.json`
-    );
-  });
-
   it("does not render disconnected search or start-learning shell controls", async () => {
     const router = createTestRouter("/today");
 
@@ -241,34 +182,6 @@ describe("App integration", () => {
 
     expect(container.querySelector('input[placeholder="Search insights or topics..."]')).toBeNull();
     expect(getTextContent(container)).not.toContain("Start Learning");
-  });
-
-  it("loads /topics and updates the visible insights when a topic chip is clicked", async () => {
-    const selectedTopic = getAvailableTopics(generatedContentFixture)[0];
-    const matchingInsight = getAllInsights(generatedContentFixture).find((insight) =>
-      insight.topics.includes(selectedTopic)
-    );
-    const nonMatchingInsight = getAllInsights(generatedContentFixture).find(
-      (insight) => !insight.topics.includes(selectedTopic)
-    );
-
-    expect(selectedTopic).toBeTruthy();
-    expect(matchingInsight).toBeTruthy();
-    expect(nonMatchingInsight).toBeTruthy();
-
-    const router = createTestRouter("/topics");
-
-    await act(async () => {
-      root.render(<RouterProvider router={router} />);
-    });
-    await flushUpdates();
-
-    await clickElement(findButtonByText(container, selectedTopic) ?? null);
-    await flushUpdates();
-
-    expect(getTextContent(container)).toContain(`Showing signals tagged ${selectedTopic}`);
-    expect(getTextContent(container)).toContain(matchingInsight!.title);
-    expect(getTextContent(container)).not.toContain(nonMatchingInsight!.title);
   });
 
   it("loads a real insight permalink directly from the route entry", async () => {

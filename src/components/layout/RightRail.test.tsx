@@ -16,7 +16,6 @@ describe("RightRail", () => {
           selectedInsight={null}
           topicFilter={null}
           topics={[]}
-          onAddToBuild={noop}
           onInsightShare={noop}
           onTopicFilterChange={noop}
         />

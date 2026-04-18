@@ -1,25 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import { AppShell } from "../components/layout/AppShell";
-import { AddToBuildModal } from "../components/modals/AddToBuildModal";
 import {
-  getAllInsights,
   getAvailableTopics,
-  getInsightDateById,
   getInsightById,
-  loadDayData,
   loadGeneratedContentSources,
   subscribeGeneratedContentUpdates
 } from "../lib/briefings/generatedContentLoader";
-import {
-  deriveBuildQueueFromInsightStates,
-  inferSkillFocusFromInsight,
-  readInsightStates,
-  saveInsightForBuild,
-  updateInsightStateStatus,
-  writeInsightStates
-} from "../lib/insightStateStore";
-import type { BuildItem, BuildStatus, Insight, InsightState, SkillFocus } from "../types/models";
+import type { Insight } from "../types/models";
 import type { AppOutletContext } from "./outlet-context";
 
 export function App() {
@@ -32,25 +20,11 @@ export function App() {
   );
   const [generatedContentError, setGeneratedContentError] = useState<string | null>(null);
   const [generatedContentRevision, setGeneratedContentRevision] = useState(0);
-  const [insightStates, setInsightStates] = useState<InsightState[]>(() => readInsightStates());
-  const [buildQueue, setBuildQueue] = useState<BuildItem[]>([]);
-  const [buildQueueStatus, setBuildQueueStatus] = useState<"idle" | "loading" | "ready" | "error">(
-    "idle"
-  );
-  const [buildQueueError, setBuildQueueError] = useState<string | null>(null);
-  const [activeInsight, setActiveInsight] = useState<Insight | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalSkill, setModalSkill] = useState<SkillFocus>("agents");
-  const [modalNote, setModalNote] = useState("");
   const [topicFilter, setTopicFilter] = useState<string | null>(null);
 
   const availableTopics = useMemo(
     () => (generatedContentStatus === "ready" ? getAvailableTopics() : []),
     [generatedContentRevision, generatedContentStatus]
-  );
-  const insightStatesById = useMemo(
-    () => new Map(insightStates.map((state) => [state.insightId, state] as const)),
-    [insightStates]
   );
   const selectedInsight = useMemo(
     () =>
@@ -85,109 +59,6 @@ export function App() {
       isDisposed = true;
     };
   }, []);
-
-  useEffect(() => {
-    writeInsightStates(insightStates);
-  }, [insightStates]);
-
-  useEffect(() => {
-    if (generatedContentStatus !== "ready" || location.pathname !== "/build") {
-      setBuildQueue([]);
-      setBuildQueueStatus("idle");
-      setBuildQueueError(null);
-      return;
-    }
-
-    if (insightStates.length === 0) {
-      setBuildQueue([]);
-      setBuildQueueStatus("ready");
-      setBuildQueueError(null);
-      return;
-    }
-
-    const requiredDates = Array.from(
-      new Set(
-        insightStates.flatMap((state) => {
-          const insightDate = getInsightDateById(state.insightId);
-          return insightDate ? [insightDate] : [];
-        })
-      )
-    );
-
-    if (requiredDates.length === 0) {
-      setBuildQueue([]);
-      setBuildQueueStatus("ready");
-      setBuildQueueError(null);
-      return;
-    }
-
-    let isDisposed = false;
-    setBuildQueueStatus("loading");
-    setBuildQueueError(null);
-
-    Promise.all(requiredDates.map((date) => loadDayData(date)))
-      .then(() => {
-        if (isDisposed) {
-          return;
-        }
-
-        setBuildQueue(deriveBuildQueueFromInsightStates(insightStates, getAllInsights()));
-        setBuildQueueStatus("ready");
-      })
-      .catch((error) => {
-        if (isDisposed) {
-          return;
-        }
-
-        setBuildQueue([]);
-        setBuildQueueStatus("error");
-        setBuildQueueError(error instanceof Error ? error.message : String(error));
-      });
-
-    return () => {
-      isDisposed = true;
-    };
-  }, [generatedContentStatus, insightStates, location.pathname]);
-
-  const handleOpenModal = (insight: Insight) => {
-    const existingState = insightStatesById.get(insight.id);
-
-    setActiveInsight(insight);
-    setModalSkill(existingState?.skillFocus ?? inferSkillFocusFromInsight(insight));
-    setModalNote(existingState?.note ?? "");
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setActiveInsight(null);
-  };
-
-  const handleSaveToBuild = () => {
-    if (!activeInsight) {
-      return;
-    }
-
-    setInsightStates((current) =>
-      saveInsightForBuild(
-        current,
-        {
-          insightId: activeInsight.id,
-          note: modalNote,
-          skillFocus: modalSkill
-        },
-        new Date().toISOString()
-      )
-    );
-    handleCloseModal();
-    navigate("/build");
-  };
-
-  const handleUpdateStatus = (itemId: string, status: BuildStatus) => {
-    setInsightStates((current) =>
-      updateInsightStateStatus(current, itemId, status, new Date().toISOString())
-    );
-  };
 
   if (generatedContentStatus === "loading") {
     return (
@@ -224,42 +95,22 @@ export function App() {
   }
 
   return (
-    <>
-      <AppShell
-        buildCount={insightStates.length}
-        currentPath={location.pathname}
-        topics={availableTopics}
-        selectedInsight={selectedInsight}
-        topicFilter={topicFilter}
-        onAddToBuild={handleOpenModal}
-        onInsightShare={(insight) => navigate(`/insights/${insight.id}`)}
-        onTopicFilterChange={setTopicFilter}
-      >
-        <Outlet
-          context={{
-            buildQueue,
-            buildQueueError,
-            buildQueueStatus,
-            selectedInsight,
-            topicFilter,
-            onAddToBuild: handleOpenModal,
-            onInsightShare: (insight: Insight) => navigate(`/insights/${insight.id}`),
-            onTopicFilterChange: setTopicFilter,
-            onUpdateStatus: handleUpdateStatus
-          } satisfies AppOutletContext}
-        />
-      </AppShell>
-
-      <AddToBuildModal
-        activeInsight={activeInsight}
-        isOpen={isModalOpen}
-        modalNote={modalNote}
-        modalSkill={modalSkill}
-        onClose={handleCloseModal}
-        onNoteChange={setModalNote}
-        onSave={handleSaveToBuild}
-        onSkillChange={setModalSkill}
+    <AppShell
+      currentPath={location.pathname}
+      topics={availableTopics}
+      selectedInsight={selectedInsight}
+      topicFilter={topicFilter}
+      onInsightShare={(insight) => navigate(`/insights/${insight.id}`)}
+      onTopicFilterChange={setTopicFilter}
+    >
+      <Outlet
+        context={{
+          selectedInsight,
+          topicFilter,
+          onInsightShare: (insight: Insight) => navigate(`/insights/${insight.id}`),
+          onTopicFilterChange: setTopicFilter
+        } satisfies AppOutletContext}
       />
-    </>
+    </AppShell>
   );
 }
