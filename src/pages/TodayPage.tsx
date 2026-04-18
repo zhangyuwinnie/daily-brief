@@ -62,63 +62,93 @@ type TodaySignalSectionProps = {
   title: string;
   description: string;
   items: TodaySectionItem[];
-  accentClassName: string;
-  borderClassName: string;
-  backgroundClassName: string;
+  accentColor: string;
+  panelTone: string;
 };
 
-function TodaySignalSection({
-  title,
-  description,
-  items,
-  accentClassName,
-  borderClassName,
-  backgroundClassName
-}: TodaySignalSectionProps) {
+function TodaySignalSection({ title, description, items, accentColor, panelTone }: TodaySignalSectionProps) {
   return (
-    <section className={`rounded-card border p-5 shadow-soft ${borderClassName} ${backgroundClassName}`}>
+    <section className="editorial-panel p-5">
       <div className="mb-4">
-        <h3 className="text-lg font-black text-slate-800">{title}</h3>
-        <p className="mt-1 text-sm text-slate-600">{description}</p>
+        <p className="eyebrow mb-2">{title}</p>
+        <h3 className="display-title text-3xl font-semibold">{title}</h3>
+        <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">{description}</p>
       </div>
 
       <div className="space-y-3">
         {items.map((item) => (
           <article
             key={`${title}-${item.id}`}
-            className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/70 p-4"
+            className="rounded-[1.35rem] border p-4"
+            style={{
+              borderColor: "var(--border-soft)",
+              background: panelTone
+            }}
           >
-            <div className={`absolute inset-y-0 left-0 w-1 rounded-l-2xl ${accentClassName}`} />
-            <div className="mb-2 flex flex-wrap items-center gap-2 pl-2">
-              <span className="text-[10px] font-bold uppercase tracking-wide text-slate-400">
-                {item.sourceLabel}
-              </span>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span className="eyebrow !tracking-[0.18em]">{item.sourceLabel}</span>
               {item.sourceName ? (
-                <span className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[color:var(--text-muted)]">
                   {item.sourceName}
                 </span>
               ) : null}
             </div>
-            <div className="pl-2">
-              <h4 className="text-sm font-bold leading-snug text-slate-800">
-                {item.sourceUrl ? (
-                  <a
-                    href={item.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-transparent underline-offset-4 transition-colors transition-[text-decoration-color] hover:decoration-current"
-                  >
-                    {item.title}
-                  </a>
-                ) : (
-                  item.title
-                )}
-              </h4>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.content}</p>
+            <div className="flex gap-3">
+              <div className="mt-1 h-12 w-px rounded-full" style={{ background: accentColor }} />
+              <div>
+                <h4 className="text-base font-semibold leading-snug text-[color:var(--text-strong)]">
+                  {item.sourceUrl ? (
+                    <a
+                      href={item.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-transparent underline-offset-4 transition-[text-decoration-color] hover:decoration-current"
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    item.title
+                  )}
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">{item.content}</p>
+              </div>
             </div>
           </article>
         ))}
       </div>
+    </section>
+  );
+}
+
+function StatePanel({
+  eyebrow,
+  title,
+  body,
+  tone = "default",
+  extra
+}: {
+  eyebrow: string;
+  title: string;
+  body: React.ReactNode;
+  tone?: "default" | "warning" | "error";
+  extra?: React.ReactNode;
+}) {
+  const toneStyles =
+    tone === "error"
+      ? { borderColor: "rgba(171, 62, 62, 0.22)", background: "rgba(252, 242, 240, 0.9)" }
+      : tone === "warning"
+        ? { borderColor: "rgba(156, 113, 48, 0.22)", background: "rgba(253, 247, 238, 0.9)" }
+        : { borderColor: "var(--border-soft)", background: "var(--surface-strong)" };
+
+  return (
+    <section
+      className="animate-enter rounded-[1.7rem] border p-6 shadow-[0_18px_50px_rgba(53,37,20,0.06)]"
+      style={toneStyles}
+    >
+      <p className="eyebrow mb-2">{eyebrow}</p>
+      <h2 className="display-title text-4xl font-semibold">{title}</h2>
+      <div className="mt-3 text-sm leading-6 text-[color:var(--text-muted)]">{body}</div>
+      {extra ? <div className="mt-4 text-xs">{extra}</div> : null}
     </section>
   );
 }
@@ -145,19 +175,15 @@ export function TodayPage() {
 
     loadDayData(pageState.resolvedDate)
       .then(() => {
-        if (isDisposed) {
-          return;
+        if (!isDisposed) {
+          setDayLoadStatus("idle");
         }
-
-        setDayLoadStatus("idle");
       })
       .catch((error) => {
-        if (isDisposed) {
-          return;
+        if (!isDisposed) {
+          setDayLoadStatus("error");
+          setDayLoadError(error instanceof Error ? error.message : String(error));
         }
-
-        setDayLoadStatus("error");
-        setDayLoadError(error instanceof Error ? error.message : String(error));
       });
 
     return () => {
@@ -167,46 +193,47 @@ export function TodayPage() {
 
   if (!pageData && dayLoadStatus === "loading" && pageState.resolvedDate) {
     return (
-      <div className="animate-enter">
-        <section className="rounded-card border border-white/60 bg-white/50 p-5 text-slate-800 shadow-soft">
-          <h2 className="mb-2 text-2xl font-black text-slate-800">Loading today&apos;s brief</h2>
-          <p className="text-sm text-slate-600">
-            Fetching the generated briefing payload for {pageState.resolvedDate}.
-          </p>
-        </section>
-      </div>
+      <StatePanel
+        eyebrow="Loading"
+        title="Loading today&apos;s brief"
+        body={<p>Fetching the generated briefing payload for {pageState.resolvedDate}.</p>}
+      />
     );
   }
 
   if (!pageData && dayLoadStatus === "error") {
     return (
-      <div className="animate-enter">
-        <section className="rounded-card border border-rose-200 bg-rose-50 p-5 text-slate-800 shadow-soft">
-          <h2 className="mb-2 text-2xl font-black text-slate-800">Today&apos;s Brief Failed To Load</h2>
-          <p className="text-sm text-slate-600">
-            The generated day payload could not be fetched. Re-run <code>npm run sync:generated</code> and
-            reload the app.
+      <StatePanel
+        eyebrow="Load error"
+        title="Today&apos;s brief failed to load"
+        tone="error"
+        body={
+          <p>
+            The generated day payload could not be fetched. Re-run <code>npm run sync:generated</code>{" "}
+            and reload the app.
           </p>
-          {dayLoadError ? <p className="mt-3 text-xs text-rose-700">{dayLoadError}</p> : null}
-        </section>
-      </div>
+        }
+        extra={dayLoadError ? <p className="text-rose-700">{dayLoadError}</p> : null}
+      />
     );
   }
 
   if (!pageData) {
     return (
-      <div className="animate-enter">
-        <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-slate-800 shadow-soft">
-          <h2 className="mb-2 text-2xl font-black text-slate-800">Today&apos;s Brief Unavailable</h2>
-          <p className="text-sm text-slate-600">
+      <StatePanel
+        eyebrow="Unavailable"
+        title="Today&apos;s brief unavailable"
+        tone="warning"
+        body={
+          <p>
             {pageState.requestedDateWasUnavailable && requestedDate
               ? `No generated brief is available for ${requestedDate}. `
               : ""}
-            Generated daily content is unavailable. Run <code>npm run sync:generated</code> and reload
-            the app.
+            Generated daily content is unavailable. Run <code>npm run sync:generated</code> and reload the
+            app.
           </p>
-        </section>
-      </div>
+        }
+      />
     );
   }
 
@@ -220,33 +247,30 @@ export function TodayPage() {
       <TodaySignalSection
         key="why"
         title="Why It Matters"
-        description="Keep the day grounded in the practical significance of each signal."
+        description="Keep the day grounded in what actually changed and why it matters to builders."
         items={todaySections.whyItMatters}
-        accentClassName="bg-slate-300"
-        borderClassName="border-slate-200"
-        backgroundClassName="bg-slate-50/70"
+        accentColor="rgba(64, 53, 44, 0.38)"
+        panelTone="rgba(250, 247, 241, 0.88)"
       />
     ) : null,
     todaySections.buildThisToday.length > 0 ? (
       <TodaySignalSection
         key="build"
         title="Build This Today"
-        description="Pick one concrete build move from today&apos;s signals."
+        description="Turn one useful signal into a concrete build move while the context is still fresh."
         items={todaySections.buildThisToday}
-        accentClassName="bg-brand-500"
-        borderClassName="border-[#cbebb2]"
-        backgroundClassName="bg-[#f2faed]"
+        accentColor="rgba(111, 123, 93, 0.9)"
+        panelTone="rgba(239, 245, 233, 0.92)"
       />
     ) : null,
     todaySections.learnThisNext.length > 0 ? (
       <TodaySignalSection
         key="learn"
         title="Learn This Next"
-        description="Keep one concrete learning thread alive while the signal is still fresh."
+        description="Pick the next concept or tool worth carrying into the next work session."
         items={todaySections.learnThisNext}
-        accentClassName="bg-sky-400"
-        borderClassName="border-sky-200"
-        backgroundClassName="bg-sky-50/80"
+        accentColor="rgba(116, 134, 146, 0.85)"
+        panelTone="rgba(240, 244, 246, 0.92)"
       />
     ) : null
   ].filter(Boolean);
@@ -254,34 +278,60 @@ export function TodayPage() {
   return (
     <div className="animate-enter">
       {pageState.requestedDateWasUnavailable && requestedDate ? (
-        <section className="mb-5 rounded-card border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 shadow-soft">
+        <section
+          className="mb-5 rounded-[1.35rem] border px-4 py-4 text-sm shadow-[0_12px_32px_rgba(53,37,20,0.05)]"
+          style={{
+            borderColor: "rgba(156, 113, 48, 0.2)",
+            background: "rgba(253, 247, 238, 0.88)",
+            color: "#8b5f28"
+          }}
+        >
           <p className="font-semibold">Requested date {requestedDate} is unavailable.</p>
-          <p className="mt-1 text-amber-800">
-            Showing the latest generated brief for {pageData.date} instead.
-          </p>
+          <p className="mt-1">Showing the latest generated brief for {pageData.date} instead.</p>
         </section>
       ) : null}
 
-      <div className="mb-6 mt-2 flex items-end justify-between gap-4">
-        <div>
-          <h2 className="mb-2 text-3xl font-black text-slate-800">Today&apos;s Brief</h2>
-          <p className="text-slate-500">
-            Listen to the brief or scan the signals worth acting on today.
-          </p>
-        </div>
-        <div className="rounded-full border border-white/60 bg-white/60 px-4 py-2 text-sm font-semibold text-slate-700">
-          {pageData.date}
-        </div>
-      </div>
+      <section className="editorial-panel mb-8 overflow-hidden p-6 sm:p-7">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <p className="eyebrow mb-3">Daily dossier</p>
+            <h2 className="display-title text-[2.8rem] font-semibold leading-[0.94] sm:text-[3.6rem]">
+              Today&apos;s Brief
+            </h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--text-muted)] sm:text-[15px]">
+              Scan the signal, listen once, and leave with a build direction.
+            </p>
+          </div>
 
-      <div className="mb-8">
+          <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-end">
+            <div className="editorial-panel-muted px-4 py-3">
+              <p className="eyebrow mb-1">Selected date</p>
+              <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
+            </div>
+            {topicFilter ? (
+              <div
+                className="rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]"
+                style={{
+                  borderColor: "rgba(111,123,93,0.18)",
+                  background: "rgba(111,123,93,0.12)",
+                  color: "var(--accent-strong)"
+                }}
+              >
+                {topicFilter}
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </section>
+
+      <div className="mb-10">
         {pageData.audio ? (
           <div>
             <AudioPlayer data={pageData.audio} />
             {audioStatusNotice ? (
               <p
                 className={`mt-3 text-sm ${
-                  audioStatusNotice.tone === "error" ? "text-rose-700" : "text-amber-700"
+                  audioStatusNotice.tone === "error" ? "text-rose-700" : "text-[#8b5f28]"
                 }`}
               >
                 {audioStatusNotice.message}
@@ -289,35 +339,33 @@ export function TodayPage() {
             ) : null}
           </div>
         ) : (
-          <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
-            <h3 className="mb-1 font-bold text-slate-800">Audio brief unavailable</h3>
-            <p>{audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}</p>
+          <section
+            className="rounded-[1.6rem] border p-5 text-sm shadow-[0_14px_34px_rgba(53,37,20,0.05)]"
+            style={{
+              borderColor: "rgba(156, 113, 48, 0.2)",
+              background: "rgba(253, 247, 238, 0.88)",
+              color: "var(--text-base)"
+            }}
+          >
+            <h3 className="font-semibold text-[color:var(--text-strong)]">Audio brief unavailable</h3>
+            <p className="mt-1">{audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}</p>
           </section>
         )}
       </div>
-
-      {topicFilter ? (
-        <div className="mb-5 inline-flex rounded-full border border-white/60 bg-white/50 px-4 py-2 text-sm font-semibold text-slate-700">
-          Filter: {topicFilter}
-        </div>
-      ) : null}
 
       {insights.length > 0 ? (
         <div className="space-y-10">
           <section>
             <div className="mb-5">
-              <h3 className="text-2xl font-black text-slate-800">Top Signals</h3>
-              <p className="mt-1 text-sm text-slate-600">
-                The highest-signal ideas worth scanning first from the selected day.
+              <p className="eyebrow mb-2">Priority read</p>
+              <h3 className="display-title text-4xl font-semibold">Top Signals</h3>
+              <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                The few items worth reading first before the day fragments into tabs and meetings.
               </p>
             </div>
             <div className="flex flex-col gap-6">
               {todaySections.topSignals.map((insight) => (
-                <InsightCard
-                  key={insight.id}
-                  insight={insight}
-                  onShare={() => onInsightShare(insight)}
-                />
+                <InsightCard key={insight.id} insight={insight} onShare={() => onInsightShare(insight)} />
               ))}
             </div>
           </section>
@@ -339,30 +387,26 @@ export function TodayPage() {
           {todaySections.moreSignals.length > 0 ? (
             <section>
               <div className="mb-5">
-                <h3 className="text-2xl font-black text-slate-800">More Signals</h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  The rest of today&apos;s signals, kept in view after the top picks.
+                <p className="eyebrow mb-2">Remaining queue</p>
+                <h3 className="display-title text-4xl font-semibold">More Signals</h3>
+                <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                  The rest of the day&apos;s material, kept visible without pretending each item deserves equal
+                  weight.
                 </p>
               </div>
               <div className="flex flex-col gap-6">
                 {todaySections.moreSignals.map((insight) => (
-                  <InsightCard
-                    key={insight.id}
-                    insight={insight}
-                    onShare={() => onInsightShare(insight)}
-                  />
+                  <InsightCard key={insight.id} insight={insight} onShare={() => onInsightShare(insight)} />
                 ))}
               </div>
             </section>
           ) : null}
         </div>
       ) : (
-        <div className="flex flex-col gap-6">
-          <section className="rounded-card border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 shadow-soft">
-            No signals are available for {pageData.date}
-            {topicFilter ? ` under the ${topicFilter} topic filter.` : "."}
-          </section>
-        </div>
+        <section className="editorial-panel p-5 text-sm text-[color:var(--text-base)]">
+          No signals are available for {pageData.date}
+          {topicFilter ? ` under the ${topicFilter} topic filter.` : "."}
+        </section>
       )}
     </div>
   );

@@ -27,11 +27,17 @@ export function RightRail({
   const recentDates = getAvailableBriefingDates().slice(0, 4);
 
   return (
-    <aside className="border-t border-white/40 bg-white/10 p-4 lg:w-72 lg:flex-shrink-0 lg:border-l lg:border-t-0 lg:p-6">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
-        <section>
-          <h3 className="mb-4 flex items-center gap-2 text-sm font-bold text-slate-800">
-            <Calendar className="h-4 w-4 text-slate-400" />
+    <aside
+      className="border-t px-4 py-5 lg:w-[318px] lg:flex-shrink-0 lg:border-l lg:border-t-0 lg:px-6 lg:py-6"
+      style={{
+        borderColor: "var(--border-soft)",
+        background: "linear-gradient(180deg, rgba(247,241,232,0.6), rgba(242,234,222,0.74))"
+      }}
+    >
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+        <section className="editorial-panel p-5">
+          <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-[color:var(--text-strong)]">
+            <Calendar className="h-4 w-4" style={{ color: "var(--text-faint)" }} />
             Recent Briefs
           </h3>
           <div className="flex flex-col gap-2">
@@ -39,11 +45,17 @@ export function RightRail({
               <Link
                 key={date}
                 to={`/today?date=${date}`}
-                className={`rounded-xl px-4 py-2.5 text-left text-sm font-medium transition-all ${
+                className={`rounded-2xl border px-4 py-3 text-left text-sm transition-colors ${
                   selectedDate === date && location.pathname === "/today"
-                    ? "border border-white/60 bg-white text-slate-800 shadow-sm"
-                    : "text-slate-500 hover:bg-white/40"
+                    ? "bg-[rgba(111,123,93,0.12)] font-semibold text-[color:var(--text-strong)]"
+                    : "bg-[rgba(255,255,255,0.52)] text-[color:var(--text-muted)] hover:text-[color:var(--text-strong)]"
                 }`}
+                style={{
+                  borderColor:
+                    selectedDate === date && location.pathname === "/today"
+                      ? "rgba(111,123,93,0.18)"
+                      : "var(--border-soft)"
+                }}
               >
                 {date}
               </Link>
@@ -51,19 +63,20 @@ export function RightRail({
           </div>
         </section>
 
-        <section>
-          <h3 className="mb-4 flex items-center gap-2 text-sm font-bold text-slate-800">
-            <Tag className="h-4 w-4 text-slate-400" />
+        <section className="editorial-panel p-5">
+          <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-[color:var(--text-strong)]">
+            <Tag className="h-4 w-4" style={{ color: "var(--text-faint)" }} />
             Focus Topics
           </h3>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => onTopicFilterChange(null)}
-              className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-all ${
-                topicFilter === null
-                  ? "border-brand-500 bg-white text-slate-800"
-                  : "border-white/60 bg-white/40 text-slate-600 hover:bg-white"
-              }`}
+              className="rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors"
+              style={{
+                borderColor: topicFilter === null ? "rgba(111,123,93,0.22)" : "var(--border-soft)",
+                background: topicFilter === null ? "rgba(111,123,93,0.12)" : "rgba(255,255,255,0.52)",
+                color: topicFilter === null ? "var(--text-strong)" : "var(--text-muted)"
+              }}
             >
               All
             </button>
@@ -71,11 +84,13 @@ export function RightRail({
               <button
                 key={topic}
                 onClick={() => onTopicFilterChange(topic)}
-                className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-all ${
-                  topicFilter === topic
-                    ? "border-brand-500 bg-white text-slate-800"
-                    : "border-white/60 bg-white/40 text-slate-600 hover:bg-white"
-                }`}
+                className="rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors"
+                style={{
+                  borderColor: topicFilter === topic ? "rgba(111,123,93,0.22)" : "var(--border-soft)",
+                  background:
+                    topicFilter === topic ? "rgba(111,123,93,0.12)" : "rgba(255,255,255,0.52)",
+                  color: topicFilter === topic ? "var(--text-strong)" : "var(--text-muted)"
+                }}
               >
                 {topic}
               </button>
@@ -84,20 +99,20 @@ export function RightRail({
         </section>
 
         {selectedInsight ? (
-          <section className="rounded-card border border-white/60 bg-white/40 p-5 shadow-soft sm:col-span-2 lg:col-span-1">
-            <p className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-              Insight Preview
-            </p>
-            <h4 className="mb-2 text-base font-bold leading-tight text-slate-800">
-              {selectedInsight.title}
-            </h4>
-            <p className="mb-4 text-sm leading-relaxed text-slate-500">
+          <section className="editorial-panel p-5 sm:col-span-2 lg:col-span-1">
+            <p className="eyebrow mb-3">Insight Preview</p>
+            <h4 className="display-title text-2xl font-semibold leading-tight">{selectedInsight.title}</h4>
+            <p className="mt-3 text-sm leading-6 text-[color:var(--text-muted)]">
               {selectedInsight.summary}
             </p>
-            <div className="flex gap-2">
+            <div className="mt-5 flex gap-2">
               <button
                 onClick={() => onInsightShare(selectedInsight)}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors hover:bg-[rgba(84,66,42,0.04)]"
+                style={{
+                  borderColor: "var(--border-soft)",
+                  color: "var(--text-strong)"
+                }}
               >
                 <Share2 className="h-4 w-4" />
                 Share
@@ -105,7 +120,7 @@ export function RightRail({
             </div>
             <Link
               to={`/insights/${selectedInsight.id}`}
-              className="mt-3 inline-flex text-xs font-semibold text-slate-500 underline-offset-2 hover:text-slate-800 hover:underline"
+              className="mt-4 inline-flex text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--accent-strong)]"
             >
               Open permalink
             </Link>

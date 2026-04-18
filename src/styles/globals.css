@@ -1,23 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color: #1e293b;
-  background: linear-gradient(135deg, #e0f7ea, #c8eed8, #9adfb9);
+  --page-bg: #f6f1e8;
+  --page-bg-accent: rgba(121, 106, 76, 0.1);
+  --surface-base: rgba(255, 251, 245, 0.78);
+  --surface-strong: rgba(255, 252, 247, 0.92);
+  --surface-muted: rgba(245, 238, 227, 0.72);
+  --surface-inset: rgba(237, 228, 214, 0.72);
+  --border-soft: rgba(85, 67, 43, 0.12);
+  --border-strong: rgba(85, 67, 43, 0.18);
+  --text-strong: #1f1a16;
+  --text-base: #40352c;
+  --text-muted: #756657;
+  --text-faint: #958471;
+  --accent: #6f7b5d;
+  --accent-strong: #525c44;
+  --accent-soft: #dce3d1;
+  color: var(--text-base);
+  background:
+    radial-gradient(circle at top left, rgba(140, 126, 102, 0.18), transparent 32%),
+    radial-gradient(circle at 85% 10%, rgba(111, 123, 93, 0.16), transparent 28%),
+    linear-gradient(180deg, #f8f4ec 0%, #f6f1e8 44%, #efe6d7 100%);
   font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
+    "Manrope",
+    "Avenir Next",
     "Segoe UI",
     sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  color: var(--text-base);
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(rgba(90, 72, 50, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90, 72, 50, 0.035) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(circle at center, black, transparent 85%);
 }
 
 button,
@@ -27,18 +63,27 @@ select {
   font: inherit;
 }
 
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(111, 123, 93, 0.22);
+  color: var(--text-strong);
+}
+
 #root {
   min-height: 100vh;
 }
 
 .animate-enter {
-  animation: enter 0.45s ease-out;
+  animation: enter 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @keyframes enter {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(18px);
   }
 
   to {
@@ -49,15 +94,15 @@ select {
 
 @keyframes wave {
   0% {
-    height: 4px;
+    height: 5px;
   }
 
   50% {
-    height: 16px;
+    height: 18px;
   }
 
   100% {
-    height: 4px;
+    height: 5px;
   }
 }
 
@@ -76,4 +121,58 @@ select {
 
 .audio-bar.is-playing:nth-child(4) {
   animation-delay: 0.6s;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-strong);
+  }
+}
+
+@layer components {
+  .app-page {
+    @apply min-h-screen px-3 py-3 sm:px-4 md:px-6;
+  }
+
+  .app-shell {
+    @apply mx-auto flex min-h-[calc(100vh-1.5rem)] w-full max-w-[1460px] flex-col overflow-hidden lg:min-h-[calc(100vh-3rem)] lg:flex-row;
+    background: linear-gradient(180deg, rgba(255, 251, 245, 0.84), rgba(250, 245, 236, 0.78));
+    border: 1px solid var(--border-soft);
+    border-radius: 2rem;
+    box-shadow:
+      0 24px 70px rgba(53, 37, 20, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(18px);
+  }
+
+  .editorial-panel {
+    background: var(--surface-strong);
+    border: 1px solid var(--border-soft);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 50px rgba(53, 37, 20, 0.06);
+  }
+
+  .editorial-panel-muted {
+    background: var(--surface-muted);
+    border: 1px solid var(--border-soft);
+    border-radius: 1.25rem;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.26em];
+    color: var(--text-faint);
+  }
+
+  .display-title {
+    font-family: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", serif;
+    letter-spacing: -0.03em;
+    color: var(--text-strong);
+  }
+
+  .soft-rule {
+    border-color: var(--border-soft);
+  }
 }

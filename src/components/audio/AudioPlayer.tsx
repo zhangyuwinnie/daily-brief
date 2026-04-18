@@ -103,7 +103,6 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
     }
 
     const audioElement = audioRef.current;
-
     if (!audioElement) {
       return;
     }
@@ -119,94 +118,125 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
   };
 
   return (
-    <div className="flex flex-col gap-4 rounded-card border border-[#bce89d] bg-gradient-to-r from-[#e3f4d7] to-[#d0efba] p-5 shadow-sm sm:flex-row sm:items-center">
+    <section
+      className="rounded-[1.8rem] border p-5 shadow-[0_24px_54px_rgba(53,37,20,0.06)] sm:p-6"
+      style={{
+        borderColor: "var(--border-soft)",
+        background:
+          "linear-gradient(135deg, rgba(255,252,247,0.92) 0%, rgba(244,238,229,0.95) 58%, rgba(232,238,226,0.96) 100%)"
+      }}
+    >
       {data.status === "ready" && data.audioUrl ? (
         <audio ref={audioRef} preload="metadata" src={data.audioUrl} />
       ) : null}
 
-      <button
-        onClick={handleTogglePlayback}
-        disabled={!isPlayable}
-        aria-label={isPlaying ? "Pause audio brief" : "Play audio brief"}
-        className="flex h-14 w-14 flex-shrink-0 items-center justify-center self-start rounded-full bg-slate-900 text-brand-500 shadow-lg transition-transform hover:scale-105 hover:bg-slate-800 active:scale-95 disabled:cursor-not-allowed disabled:bg-slate-500 disabled:text-slate-200 disabled:hover:scale-100"
-      >
-        {isPlaying ? (
-          <Pause className="h-6 w-6 fill-current" />
-        ) : (
-          <Play className="ml-1 h-6 w-6 fill-current" />
-        )}
-      </button>
-
-      <div className="min-w-0 flex-1">
-        <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2">
-            <h3 className="flex items-center gap-1.5 text-sm font-bold text-slate-800">
-              <Headphones className="h-4 w-4 text-[#5c962c]" />
-              Today's Audio Brief
-            </h3>
-            <span
-              className={`rounded-md border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${
-                loadError
-                  ? "border-rose-200 bg-rose-100 text-rose-600"
-                  : data.status === "ready"
-                    ? "border-white/60 bg-white/50 text-[#5c962c]"
-                    : data.status === "failed"
-                      ? "border-rose-200 bg-rose-100 text-rose-600"
-                      : "border-amber-200 bg-amber-100 text-amber-600"
-              }`}
-            >
-              {statusLabel}
-            </span>
-          </div>
-          <span className="font-mono text-xs font-bold text-slate-500">{`${formatDuration(
-            currentTimeSec
-          )} / ${formatDuration(effectiveDurationSec)}`}</span>
-        </div>
-
-        <div
-          className={`relative h-2 overflow-hidden rounded-full bg-white/40 ${
-            isPlayable ? "cursor-pointer" : "cursor-not-allowed"
-          }`}
-          onClick={(event) => {
-            if (!isPlayable) {
-              return;
-            }
-
-            const audioElement = audioRef.current;
-            const seekDurationSec =
-              audioElement && Number.isFinite(audioElement.duration) && audioElement.duration > 0
-                ? audioElement.duration
-                : effectiveDurationSec;
-
-            if (!audioElement || !seekDurationSec || seekDurationSec <= 0) {
-              return;
-            }
-
-            const rect = event.currentTarget.getBoundingClientRect();
-            const nextProgress = Math.min(Math.max((event.clientX - rect.left) / rect.width, 0), 1);
-            const nextTime = nextProgress * seekDurationSec;
-
-            audioElement.currentTime = nextTime;
-            setCurrentTimeSec(nextTime);
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+        <button
+          onClick={handleTogglePlayback}
+          disabled={!isPlayable}
+          aria-label={isPlaying ? "Pause audio brief" : "Play audio brief"}
+          className="flex h-14 w-14 flex-shrink-0 items-center justify-center self-start rounded-full border transition-all duration-300 hover:scale-[1.03] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
+          style={{
+            borderColor: "rgba(111,123,93,0.18)",
+            background: "rgba(47, 41, 35, 0.96)",
+            color: "#f6f1e8"
           }}
         >
+          {isPlaying ? <Pause className="h-5 w-5 fill-current" /> : <Play className="ml-0.5 h-5 w-5 fill-current" />}
+        </button>
+
+        <div className="min-w-0 flex-1">
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <div className="min-w-0">
+              <p className="eyebrow mb-1">Audio brief</p>
+              <h3 className="flex items-center gap-2 text-sm font-semibold text-[color:var(--text-strong)]">
+                <Headphones className="h-4 w-4" style={{ color: "var(--accent-strong)" }} />
+                Today&apos;s Audio Brief
+              </h3>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <span
+                className="rounded-full border px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em]"
+                style={{
+                  borderColor:
+                    loadError || data.status === "failed"
+                      ? "rgba(171,62,62,0.18)"
+                      : data.status === "ready"
+                        ? "rgba(111,123,93,0.18)"
+                        : "rgba(156,113,48,0.18)",
+                  background:
+                    loadError || data.status === "failed"
+                      ? "rgba(252,242,240,0.9)"
+                      : data.status === "ready"
+                        ? "rgba(111,123,93,0.12)"
+                        : "rgba(253,247,238,0.9)",
+                  color:
+                    loadError || data.status === "failed"
+                      ? "#a93f3f"
+                      : data.status === "ready"
+                        ? "var(--accent-strong)"
+                        : "#8b5f28"
+                }}
+              >
+                {statusLabel}
+              </span>
+              <span className="text-xs font-semibold tabular-nums text-[color:var(--text-muted)]">
+                {`${formatDuration(currentTimeSec)} / ${formatDuration(effectiveDurationSec)}`}
+              </span>
+            </div>
+          </div>
+
           <div
-            className="absolute inset-y-0 left-0 rounded-full bg-[#5c962c] transition-all duration-300 ease-linear"
-            style={{ width: `${progress}%` }}
-          />
+            className={`relative h-2.5 overflow-hidden rounded-full ${
+              isPlayable ? "cursor-pointer" : "cursor-not-allowed"
+            }`}
+            style={{ background: "rgba(90,72,50,0.12)" }}
+            onClick={(event) => {
+              if (!isPlayable) {
+                return;
+              }
+
+              const audioElement = audioRef.current;
+              const seekDurationSec =
+                audioElement && Number.isFinite(audioElement.duration) && audioElement.duration > 0
+                  ? audioElement.duration
+                  : effectiveDurationSec;
+
+              if (!audioElement || !seekDurationSec || seekDurationSec <= 0) {
+                return;
+              }
+
+              const rect = event.currentTarget.getBoundingClientRect();
+              const nextProgress = Math.min(Math.max((event.clientX - rect.left) / rect.width, 0), 1);
+              const nextTime = nextProgress * seekDurationSec;
+
+              audioElement.currentTime = nextTime;
+              setCurrentTimeSec(nextTime);
+            }}
+          >
+            <div
+              className="absolute inset-y-0 left-0 rounded-full transition-all duration-300 ease-linear"
+              style={{
+                width: `${progress}%`,
+                background: "linear-gradient(90deg, rgba(82,92,68,0.95), rgba(126,139,108,0.95))"
+              }}
+            />
+          </div>
+        </div>
+
+        <div className="hidden items-end gap-1.5 px-1 sm:flex">
+          {[1, 2, 3, 4].map((bar) => (
+            <div
+              key={bar}
+              className={`audio-bar w-1.5 rounded-full ${
+                isPlaying && isPlayable ? "is-playing" : "h-1.5"
+              }`}
+              style={{ background: "rgba(82,92,68,0.62)" }}
+            />
+          ))}
         </div>
       </div>
-
-      <div className="hidden items-end gap-1 px-2 sm:flex">
-        {[1, 2, 3, 4].map((bar) => (
-          <div
-            key={bar}
-            className={`audio-bar w-1.5 rounded-full bg-[#5c962c]/60 ${
-              isPlaying && isPlayable ? "is-playing" : "h-1"
-            }`}
-          />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }

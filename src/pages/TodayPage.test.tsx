@@ -91,6 +91,7 @@ describe("TodayPage", () => {
     expect(html).toContain(escapeStaticMarkup(pageData!.insights[0].title));
     expect(html).toContain(`href="${escapeStaticMarkup(pageData!.insights[0].sourceUrl ?? "")}"`);
     expect(html).toContain(pageData!.audio?.status === "ready" ? "Ready" : "Generating...");
+    expect(html).toContain("Scan the signal, listen once, and leave with a build direction.");
   });
 
   it("renders the requested generated date when /today receives a valid date query param", () => {
