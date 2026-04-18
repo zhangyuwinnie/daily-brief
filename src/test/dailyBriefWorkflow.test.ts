@@ -14,6 +14,10 @@ describe("daily brief workflow", () => {
     expect(workflow).toContain("name: Daily Brief");
     expect(workflow).toContain("workflow_dispatch:");
     expect(workflow).toContain("- cron: '0 13 * * *'");
+    expect(workflow).toContain("generate_audio:");
+    expect(workflow).toContain('description: "Whether to run NotebookLM audio generation and publish audio outputs"');
+    expect(workflow).toContain("type: boolean");
+    expect(workflow).toContain("default: true");
     expect(workflow).toContain("permissions:");
     expect(workflow).toContain("contents: write");
     expect(workflow).toContain("actions/upload-artifact@");
@@ -32,11 +36,15 @@ describe("daily brief workflow", () => {
     expect(workflow).toContain("npm ci");
     expect(workflow).toContain("pip install");
     expect(workflow).toContain("notebooklm-audio-overview");
+    expect(workflow).toContain("WORKFLOW_GENERATE_AUDIO:");
+    expect(workflow).toContain("${{ github.event_name != 'workflow_dispatch' || github.event.inputs.generate_audio != 'false' }}");
     expect(workflow).toContain("npm run daily");
     expect(workflow).toContain("npm run daily:follow-builders");
     expect(workflow).toContain("npm run daily:audio");
+    expect(workflow).toContain("if: env.WORKFLOW_GENERATE_AUDIO == 'true'");
     expect(workflow).toContain("npm run sync:generated");
     expect(workflow).toContain("npm run publish:audio");
+    expect(workflow).toContain("if [ \"${WORKFLOW_GENERATE_AUDIO}\" = \"true\" ]; then");
     expect(workflow).toContain("git diff --cached --quiet");
     expect(workflow).toContain("git commit -m");
     expect(workflow).toContain("git pull --rebase origin");

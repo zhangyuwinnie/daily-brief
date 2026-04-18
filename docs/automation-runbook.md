@@ -65,10 +65,22 @@ Trigger the workflow from the GitHub UI with `Run workflow`, or from the CLI:
 gh workflow run daily-brief.yml
 ```
 
+Skip audio generation for a manual replay:
+
+```bash
+gh workflow run daily-brief.yml -f generate_audio=false
+```
+
 Override the date for a manual replay:
 
 ```bash
 gh workflow run daily-brief.yml -f run_date=2026-04-13
+```
+
+Combine both options:
+
+```bash
+gh workflow run daily-brief.yml -f run_date=2026-04-13 -f generate_audio=false
 ```
 
 Watch the run:
@@ -100,15 +112,19 @@ After a manual or scheduled workflow run:
 1. Open the Actions run and confirm all five pipeline steps completed:
    - RSS briefing
    - Follow builders
-   - Audio generation
+   - Audio generation when enabled
    - Sync + publish
    - Commit + push
-2. Download the uploaded artifact bundle and inspect:
+2. For a manual run with `generate_audio=false`, confirm:
+   - `Prepare NotebookLM auth` is skipped
+   - `Step 3 - Audio generation` is skipped
+   - `Step 4 - Sync generated content and publish audio` still runs, but logs that audio publish was skipped
+3. Download the uploaded artifact bundle and inspect:
    - `briefings/`
    - `logs/workflow/*.log`
-3. Confirm the generated date appears in `public/generated/briefings-index.json`.
-4. Confirm the site loads the new day under `/today`.
-5. If audio was expected, confirm `public/generated/audio-index.json` marks the date as `ready`.
+4. Confirm the generated date appears in `public/generated/briefings-index.json`.
+5. Confirm the site loads the new day under `/today`.
+6. If audio was expected, confirm `public/generated/audio-index.json` marks the date as `ready`.
 
 ## Known Risks
 

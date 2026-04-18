@@ -7,6 +7,11 @@ on:
         description: "Optional Los Angeles date override in YYYY-MM-DD format"
         required: false
         type: string
+      generate_audio:
+        description: "Whether to run NotebookLM audio generation and publish audio outputs"
+        required: false
+        type: boolean
+        default: true
   schedule:
     - cron: '0 13 * * *'
 
@@ -28,6 +33,7 @@ jobs:
       R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
       WORKFLOW_RUN_DATE: ${{ github.event.inputs.run_date || '' }}
+      WORKFLOW_GENERATE_AUDIO: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.generate_audio != 'false' }}
 
     steps:
       - name: Checkout repository
@@ -68,6 +74,7 @@ jobs:
           fi
 
       - name: Prepare NotebookLM auth
+        if: env.WORKFLOW_GENERATE_AUDIO == 'true'
         shell: bash
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
@@ -120,6 +127,7 @@ jobs:
           fi
 
       - name: Step 3 - Audio generation
+        if: env.WORKFLOW_GENERATE_AUDIO == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -146,7 +154,11 @@ jobs:
           set +e
           {
             npm run sync:generated &&
-            npm run publish:audio
+            if [ "${WORKFLOW_GENERATE_AUDIO}" = "true" ]; then
+              npm run publish:audio
+            else
+              echo "[sync-and-publish] Skipping audio publish because WORKFLOW_GENERATE_AUDIO=false"
+            fi
           } 2>&1 | tee logs/workflow/sync-and-publish.log
           exit_code=${PIPESTATUS[0]}
           set -e
