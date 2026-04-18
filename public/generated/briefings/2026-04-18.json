@@ -1,0 +1,197 @@
+{
+  "date": "2026-04-18",
+  "briefings": [
+    {
+      "id": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-18",
+      "filePath": "2026-04-18.md",
+      "summaryTopline": "Adding a new content type to my blog-to-newsletter tool",
+      "insightIds": [
+        "rss-2026-04-18-01-adding-a-new-content-type-to-my-blog-to-newsletter-tool",
+        "rss-2026-04-18-02-join-us-at-pycon-us-2026-in-long-beach-we-have-new-ai-and-security-tracks-this-year",
+        "rss-2026-04-18-03-claude-design",
+        "rss-2026-04-18-04-measuring-claude-47s-tokenizer-costs",
+        "rss-2026-04-18-05-how-zo-computer-improved-ai-reliability-20x-on-vercel",
+        "rss-2026-04-18-06-my-workflow-for-understanding-llm-architectures",
+        "rss-2026-04-18-07-ai",
+        "rss-2026-04-18-08-openai",
+        "rss-2026-04-18-09-ai"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-18-01-adding-a-new-content-type-to-my-blog-to-newsletter-tool",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/adding-a-new-content-type/#atom-everything",
+      "title": "Adding a new content type to my blog-to-newsletter tool",
+      "summary": "Agentic Engineering Patterns > Here's an example of a deceptively short prompt that got a quite a lot of work done in a single shot. First, some background. I send out a free Subst。",
+      "take": "这件事与 Agent、Agentic、Automation、LLM、Engineering、Open Source、Coding Agent、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-18-02-join-us-at-pycon-us-2026-in-long-beach-we-have-new-ai-and-security-tracks-this-year",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/17/pycon-us-2026/#atom-everything",
+      "title": "Join us at PyCon US 2026 in Long Beach - we have new AI and security tracks this year",
+      "summary": "This year's PyCon US is coming up next month from May 13th to May 19th, with the core conference talks from Friday 15th to Sunday 17th and tutorial and sprint days either side. It'。",
+      "take": "这件事与 Agent、Agentic、Engineering、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-18-03-claude-design",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "title": "Claude Design",
+      "summary": "Comments。",
+      "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-18-04-measuring-claude-47s-tokenizer-costs",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "title": "Measuring Claude 4.7's tokenizer costs",
+      "summary": "Comments。",
+      "take": "这件事与 Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-18-05-how-zo-computer-improved-ai-reliability-20x-on-vercel",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel",
+      "title": "How Zo Computer improved AI reliability 20x on Vercel",
+      "summary": "Zo Computer on Vercel 20x reduction in retry rate (7.5% → 0.34%) 99.93% chat success rate (up from 98%) P99 latency cut 38% (131s → 81s) New models added in less than 1 minute Ever。",
+      "take": "这件事与 Agent、RAG、OpenAI、Anthropic 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-18-06-my-workflow-for-understanding-llm-architectures",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Ahead of AI",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+      "title": "My Workflow for Understanding LLM Architectures",
+      "summary": "A learning-oriented workflow for understanding new open-weight model releases。",
+      "take": "这件事与 Workflow、LLM 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-18-07-ai",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+      "title": "企业级AI的成本与可靠性挑战",
+      "summary": "ServiceNow CEO Bill McDermott 强调，在企业环境中，用大型语言模型（LLM）从头构建应用，其成本可能是现有成熟平台的十倍。他指出，企业可以容忍人的错误，但对软件的错误是零容忍的，这凸显了企业级AI解决方案对可靠性和成本效益的严格要求。",
+      "take": "对于构建者而言，这意味着在企业级应用中，纯粹依赖LLM的“智能体”方法可能面临成本和可靠性的双重挑战。将LLM作为增强功能集成到现有成熟、结构化的工作流平台中，而非完全替代，是更务实和经济的路径。这强调了混合架构和领域特定平台在企业AI落地中的重要性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-18-08-openai",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/kevinweil/status/2045230426210648348",
+      "title": "OpenAI调整科研团队，暗示基础模型能力整合",
+      "summary": "OpenAI 正在进行组织调整，解散了专门的“OpenAI for Science”团队，并将其职能分散到其他核心研究团队中。该团队负责人 Kevin Weil 也因此离职。",
+      "take": "这一组织架构变化暗示了 OpenAI 的战略转变：不再将科学发现视为一个独立的AI应用领域，而是将其视为基础模型需要内生的核心能力。对于构建者来说，这意味着未来模型可能在推理、假设生成和数据分析等科学任务上具备更强的原生支持，为开发更复杂的科学研究智能体和工具提供了更坚实的基础。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-18-09-ai",
+      "briefingId": "rss-2026-04-18",
+      "date": "2026-04-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Follow Builders",
+      "sourceUrl": "https://x.com/claudeai/status/2045222254699511855",
+      "title": "AI模型加速嵌入主流生产力工具",
+      "summary": "Anthropic 宣布其 Claude 模型现已集成到 Microsoft Word 中，Pro 和 Max 订阅用户可以使用。这标志着大型模型正加速嵌入到用户日常使用的生产力工具中，成为工作流的一部分。",
+      "take": "这一趋势对构建者意味着，用户交互的重心正从独立的聊天界面转向嵌入式、上下文感知的“副驾驶”（Copilot）模式。未来的AI应用开发需要更多地考虑如何无缝集成到用户现有的工作流和工具中，而不是创造一个全新的、孤立的交互环境。API和插件生态的重要性将进一步凸显。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

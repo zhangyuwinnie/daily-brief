@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-18",
     "2026-04-17",
     "2026-04-16",
     "2026-04-15",
@@ -67,6 +68,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-18": {
+      "briefingIds": [
+        "rss-2026-04-18"
+      ],
+      "insightIds": [
+        "rss-2026-04-18-01-adding-a-new-content-type-to-my-blog-to-newsletter-tool",
+        "rss-2026-04-18-02-join-us-at-pycon-us-2026-in-long-beach-we-have-new-ai-and-security-tracks-this-year",
+        "rss-2026-04-18-03-claude-design",
+        "rss-2026-04-18-04-measuring-claude-47s-tokenizer-costs",
+        "rss-2026-04-18-05-how-zo-computer-improved-ai-reliability-20x-on-vercel",
+        "rss-2026-04-18-06-my-workflow-for-understanding-llm-architectures",
+        "rss-2026-04-18-07-ai",
+        "rss-2026-04-18-08-openai",
+        "rss-2026-04-18-09-ai"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-17": {
       "briefingIds": [
         "rss-2026-04-17"
