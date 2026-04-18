@@ -659,7 +659,7 @@ export async function defaultRankCandidates(
   const prompt = buildRankingPrompt(candidates, maxItems);
   const responseText = await callGeminiText(prompt, {
     apiKey,
-    modelName: "gemini-3-flash",
+    modelName: "gemini-3-pro-preview",
     logger
   });
   const indices = responseText
@@ -757,7 +757,7 @@ export async function defaultSummarizeCandidate(
   const prompt = buildSummaryPrompt(candidate);
   const responseText = await callGeminiText(prompt, {
     apiKey,
-    modelName: "gemini-3-flash",
+    modelName: "gemini-3-pro-preview",
     logger
   });
   const parsed = responseText ? parseSummaryResponse(responseText) : null;
