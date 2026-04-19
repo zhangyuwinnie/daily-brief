@@ -728,23 +728,29 @@ function buildSummaryPrompt(candidate) {
   const snippet = cleanInline(candidate.contentSnippet).slice(0, 800);
   const keywords = candidate.matchedKeywords.join(", ");
 
-  return `You are writing a daily briefing item for AI builders.
+  return `You are a Senior Technical Architect and an expert Information Extraction Engine curating a high-density daily briefing for AI builders. Your objective is to filter out noise and extract the raw, actionable engineering signal.
 
-Principles:
-- explain the core signal in Chinese
-- reason from first principles
-- focus on what changes for builders, tools, workflows, or agent capability
-- avoid hype, marketing filler, and personal references
-- keep it concise and specific
+# Core Principles
+- First Principles Thinking: Strip away surface-level narrative. Identify the underlying technical mechanism, architectural pattern, or paradigm shift.
+- Builder-Centric: Focus strictly on what changes for developers, toolchains, AI workflows, or agentic capabilities.
+- Anti-Hype (Strict): ZERO marketing filler, buzzwords, generic advice, or exaggerated claims. 
+- Extreme Brevity: Be concise, specific, and direct.
 
-Return valid JSON with this exact shape:
-{"summary":"...","take":"..."}
+# Output Requirements
+Generate a JSON object with exactly two keys. All values MUST be written in professional Chinese.
 
+1. "summary": A single, high-density sentence explaining the core event or mechanism (e.g., "Who achieved what, using what specific method or architecture").
+2. "take": 1 to 3 sentences defining the core engineering takeaway. Focus purely on actionable insights, new paradigms in workflows, or shifts in agent capabilities.
+
+# Source Material
 Title: ${candidate.title}
 Source: ${candidate.source}
 URL: ${candidate.link}
-Matched keywords: ${keywords}
-Snippet: ${snippet}`;
+Keywords Context: ${keywords}
+Content Snippet: ${snippet}
+
+Return ONLY valid JSON with this exact shape, without markdown formatting or code blocks:
+{"summary":"...","take":"..."}`;
 }
 
 export async function defaultSummarizeCandidate(
