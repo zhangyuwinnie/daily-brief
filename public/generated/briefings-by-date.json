@@ -15570,5 +15570,134 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-19": {
+    "date": "2026-04-19",
+    "briefings": [
+      {
+        "id": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-19",
+        "filePath": "2026-04-19.md",
+        "summaryTopline": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+        "insightIds": [
+          "rss-2026-04-19-01-changes-in-the-system-prompt-between-claude-opus-46-and-47",
+          "rss-2026-04-19-02-claude-system-prompts-as-a-git-timeline",
+          "rss-2026-04-19-03-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+          "rss-2026-04-19-04-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+          "rss-2026-04-19-05-builder-theme-quantifying-infrastructure-noise-in-agentic-coding-evals",
+          "rss-2026-04-19-06-builder-theme-guillermo-rauch-on-whether-design-belongs-in-figma-or-claude-design-is-a-distraction-fro"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-19-01-changes-in-the-system-prompt-between-claude-opus-46-and-47",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+        "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+        "summary": "Claude Opus 4.7 的系统提示词相较于 4.6 版本，可能引入了更明确或强化内部思考（例如，逐步推理）和结构化输出的指令。从第一性原理来看，系统提示词是模型行为和能力的基石，更精细的内部指令能促使模型在生成最终结果前进行更深度的信息处理，从而提升复杂任务的准确性和一致性。这反映了 Anthropic 持续优化模型推理链 (Chain-of-Thought) 能力的策略。",
+        "take": "For builders, this update implies a potential shift towards leveraging the model's inherent reasoning capabilities more directly. Agent developers might find it easier to design robust agents, as the model could intrinsically manage more complex internal states, reducing the need for elaborate external prompt engineering (e.g., explicit chain-of-thought prompts). Workflows requiring high precision and explainability may benefit from more stable and reliable outputs for multi-step problems and logical inference. Builders should re-evaluate existing prompt strategies to identify and remove redundant instructions that the model now handles internally, optimizing token usage and performance.",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-19-02-claude-system-prompts-as-a-git-timeline",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything",
+        "title": "Claude system prompts as a git timeline",
+        "summary": "Anthropic 发布了 Claude 模型的官方系统提示词，Simon Willison 将这些提示词转换为 Git 时间线。这使得开发者能够追踪和浏览不同 Claude 模型（如 Opus 4.6 到 4.7）之间系统提示词的详细变更历史。",
+        "take": "这一研究为 AI 开发者提供了关键信号： 1. **提示工程优化：** 通过对比系统提示词的演变，开发者能洞察 Anthropic 对模型能力和预期行为的调整，从而更精准地优化自己的提示词策略，提高应用稳定性。 2. **模型行为洞察：** 系统提示词的变化是模型底层能力或其厂商指导思想调整的直接体现。开发者可以借此预测模型在新版本中的行为变化，避免因不兼容而导致的问题。 3. **调试与迭代：** 当模型行为出现预期外变化时，检查系统提示词的变更历史，能提供宝贵的调试线索，加速问题定位和解决方案的迭代。 4. **透明度与信任：** 这种可视化方法提升了模型提供商在提示词策略上的透明度，帮助开发者更好地理解和信任模型的演进方向。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-19-03-builder-theme-anthropics-felix-rieseberg-claude-cowork-mythos-and-the-saas-extinction",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.youtube.com/watch?v=9MEJ4syOVrQ",
+        "title": "Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction",
+        "summary": "The MAD Podcast with Matt Turck 播客 围绕「Builder Theme: Anthropic’s Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction」展开长谈，核心信号是 Speaker 1 | 00:00 - 00:22 There is something both impressive but also slightly terrifying about seeing a model that is so much smarter than the last model we have worked with. The...。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。",
+        "take": "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-19-04-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+        "summary": "Anthropic Engineering 博客 提供了一个值得追踪的工程或产品信号：By default, Claude Code asks users for approval before running commands or modifying files. This keeps users safe, but it also means a lot of clicking \"approve.\" Over time that le...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+        "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-19-05-builder-theme-quantifying-infrastructure-noise-in-agentic-coding-evals",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://www.anthropic.com/engineering/infrastructure-noise",
+        "title": "Builder Theme: Quantifying infrastructure noise in agentic coding evals",
+        "summary": "Anthropic Engineering 博客 提供了一个值得追踪的工程或产品信号：Agentic coding benchmarks like SWE-bench and Terminal-Bench are commonly used to compare the software engineering capabilities of frontier models—with top spots on leaderboards of...。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。",
+        "take": "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-19-06-builder-theme-guillermo-rauch-on-whether-design-belongs-in-figma-or-claude-design-is-a-distraction-fro",
+        "briefingId": "rss-2026-04-19",
+        "date": "2026-04-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Follow Builders",
+        "sourceUrl": "https://x.com/rauchg/status/2045553025188835806",
+        "title": "Builder Theme: Guillermo Rauch on Whether design belongs in Figma or Claude Design is a distraction fro...",
+        "summary": "社区讨论聚焦于 Guillermo Rauch 在 X 上的讨论 的最新信号：Whether design belongs in Figma or Claude Design is a distraction from a bigger shift. 1️⃣ Design will become autonomous. More helpful to think of it as 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍, used by...。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。",
+        "take": "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
