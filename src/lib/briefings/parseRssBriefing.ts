@@ -82,6 +82,8 @@ export function parseRssBriefing(text: string): ParsedRssBriefing {
   for (const entry of splitEntries(text)) {
     const sourceMatch = entry.block.match(/^\*\*Source:\*\*\s+(.+)$/m);
     const sourceName = sourceMatch?.[1]?.trim();
+    const sourceLabelMatch = entry.block.match(/^\*\*Source Label:\*\*\s+(.+)$/m);
+    const sourceLabel = sourceLabelMatch?.[1]?.trim();
     const summary = extractLabeledBlock(entry.block, "Chinese Summary");
     const take = extractLabeledBlock(entry.block, "R2 Take");
 
@@ -134,6 +136,7 @@ export function parseRssBriefing(text: string): ParsedRssBriefing {
       entryIndex: entry.entryIndex,
       title: entry.title,
       sourceName,
+      sourceLabel,
       sourceUrl: entry.sourceUrl,
       summary,
       take,

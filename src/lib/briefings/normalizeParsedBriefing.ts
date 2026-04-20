@@ -41,7 +41,7 @@ export function normalizeParsedBriefing(parsed: ParsedBriefing): NormalizeParsed
         briefingId: `rss-${item.date}`,
         date: item.date,
         sourceType: "rss",
-        sourceLabel: "RSS Briefing",
+        sourceLabel: item.sourceLabel ?? "RSS Briefing",
         sourceName: item.sourceName,
         sourceUrl: item.sourceUrl,
         title: item.title,

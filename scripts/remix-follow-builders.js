@@ -142,7 +142,8 @@ function renderFollowBuildersMarkdown(items) {
 
       return [
         `## [${title}](${item.url})`,
-        "**Source:** Follow Builders",
+        `**Source:** ${item.sourceName || "Follow Builders"}`,
+        "**Source Label:** Follow Builders",
         "",
         `> **Chinese Summary:** ${summary}`,
         `> **R2 Take:** ${take}`,
@@ -246,7 +247,8 @@ Goals:
 
 Return ONLY markdown entries in this exact repeated format:
 ## [Title](URL)
-**Source:** Follow Builders
+**Source:** {sourceName from the source material}
+**Source Label:** Follow Builders
 
 > **Chinese Summary:** ...
 > **R2 Take:** ...
@@ -325,6 +327,7 @@ function buildFallbackItems(payload, maxItems) {
   return collectCandidates(payload, maxItems).map((candidate) => ({
     title: candidate.title,
     url: candidate.url,
+    sourceName: candidate.sourceName,
     summary: buildFallbackSummary(candidate),
     take: buildFallbackTake(candidate)
   }));
@@ -373,18 +376,29 @@ export async function remixFollowBuilders(options = {}) {
         .split(/\n(?=##\s+\[)/)
         .map((block) => {
           const titleMatch = block.match(/^##\s+\[(.+?)\]\((.+?)\)/m);
+          const sourceMatch = block.match(/^\*\*Source:\*\*\s*(.+)$/m);
           const summaryMatch = block.match(/\*\*Chinese Summary:\*\*\s*(.+)$/m);
           const takeMatch = block.match(/\*\*R2 Take:\*\*\s*(.+)$/m);
           return titleMatch && summaryMatch && takeMatch
             ? {
                 title: titleMatch[1],
                 url: titleMatch[2],
+                sourceName: sourceMatch?.[1]?.trim() || undefined,
                 summary: summaryMatch[1],
                 take: takeMatch[1]
               }
             : null;
         })
         .filter(Boolean)
+        .map((item) => {
+          if (!item.sourceName) {
+            const match = remixCandidates.find((c) => c.url === item.url);
+            if (match) {
+              item.sourceName = match.sourceName;
+            }
+          }
+          return item;
+        })
     : buildFallbackItems(payload, maxItems);
   const dedupedItems = dedupeAgainstExistingMarkdown(parsedItems, existingMarkdown);
 
