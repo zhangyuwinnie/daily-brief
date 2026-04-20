@@ -92,6 +92,10 @@ describe("TodayPage", () => {
     expect(html).toContain(`href="${escapeStaticMarkup(pageData!.insights[0].sourceUrl ?? "")}"`);
     expect(html).toContain(pageData!.audio?.status === "ready" ? "Ready" : "Generating...");
     expect(html).toContain("Scan the signal, listen once, and leave with a build direction.");
+    expect(html).toContain('data-testid="today-brief-card"');
+    expect(html).toContain('data-testid="today-brief-audio"');
+    expect(html.indexOf('data-testid="today-brief-audio"')).toBeGreaterThan(html.indexOf("Today&#x27;s Brief"));
+    expect(html.indexOf('data-testid="today-brief-audio"')).toBeLessThan(html.indexOf("Top Signals"));
   });
 
   it("renders the requested generated date when /today receives a valid date query param", () => {

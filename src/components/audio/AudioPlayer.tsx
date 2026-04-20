@@ -4,6 +4,7 @@ import type { DailyAudio } from "../../types/models";
 
 type AudioPlayerProps = {
   data: DailyAudio;
+  variant?: "standalone" | "compact";
 };
 
 function formatDuration(durationSec?: number) {
@@ -17,7 +18,7 @@ function formatDuration(durationSec?: number) {
   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
-export function AudioPlayer({ data }: AudioPlayerProps) {
+export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTimeSec, setCurrentTimeSec] = useState(0);
@@ -33,6 +34,7 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
         : "Generating...";
   const effectiveDurationSec = loadedDurationSec > 0 ? loadedDurationSec : data.durationSec ?? 0;
   const progress = effectiveDurationSec > 0 ? Math.min((currentTimeSec / effectiveDurationSec) * 100, 100) : 0;
+  const isCompact = variant === "compact";
 
   useEffect(() => {
     setIsPlaying(false);
@@ -119,23 +121,30 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
 
   return (
     <section
-      className="rounded-[1.8rem] border p-5 shadow-[0_24px_54px_rgba(53,37,20,0.06)] sm:p-6"
+      className={
+        isCompact
+          ? "rounded-[1.25rem] border p-4"
+          : "rounded-[1.8rem] border p-5 shadow-[0_24px_54px_rgba(53,37,20,0.06)] sm:p-6"
+      }
       style={{
         borderColor: "var(--border-soft)",
-        background:
-          "linear-gradient(135deg, rgba(255,252,247,0.92) 0%, rgba(244,238,229,0.95) 58%, rgba(232,238,226,0.96) 100%)"
+        background: isCompact
+          ? "rgba(250,245,236,0.72)"
+          : "linear-gradient(135deg, rgba(255,252,247,0.92) 0%, rgba(244,238,229,0.95) 58%, rgba(232,238,226,0.96) 100%)"
       }}
     >
       {data.status === "ready" && data.audioUrl ? (
         <audio ref={audioRef} preload="metadata" src={data.audioUrl} />
       ) : null}
 
-      <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+      <div className={`flex flex-col ${isCompact ? "gap-4" : "gap-5"} sm:flex-row sm:items-center`}>
         <button
           onClick={handleTogglePlayback}
           disabled={!isPlayable}
           aria-label={isPlaying ? "Pause audio brief" : "Play audio brief"}
-          className="flex h-14 w-14 flex-shrink-0 items-center justify-center self-start rounded-full border transition-all duration-300 hover:scale-[1.03] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
+          className={`flex flex-shrink-0 items-center justify-center self-start rounded-full border transition-all duration-300 hover:scale-[1.03] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100 ${
+            isCompact ? "h-12 w-12" : "h-14 w-14"
+          }`}
           style={{
             borderColor: "rgba(111,123,93,0.18)",
             background: "rgba(47, 41, 35, 0.96)",
@@ -146,9 +155,9 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
         </button>
 
         <div className="min-w-0 flex-1">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+          <div className={`${isCompact ? "mb-2" : "mb-3"} flex flex-wrap items-center justify-between gap-3`}>
             <div className="min-w-0">
-              <p className="eyebrow mb-1">Audio brief</p>
+              {isCompact ? null : <p className="eyebrow mb-1">Audio brief</p>}
               <h3 className="flex items-center gap-2 text-sm font-semibold text-[color:var(--text-strong)]">
                 <Headphones className="h-4 w-4" style={{ color: "var(--accent-strong)" }} />
                 Today&apos;s Audio Brief
@@ -225,7 +234,7 @@ export function AudioPlayer({ data }: AudioPlayerProps) {
           </div>
         </div>
 
-        <div className="hidden items-end gap-1.5 px-1 sm:flex">
+        <div className={`${isCompact ? "hidden xl:flex" : "hidden sm:flex"} items-end gap-1.5 px-1`}>
           {[1, 2, 3, 4].map((bar) => (
             <div
               key={bar}

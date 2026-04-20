@@ -291,8 +291,8 @@ export function TodayPage() {
         </section>
       ) : null}
 
-      <section className="editorial-panel mb-8 overflow-hidden p-6 sm:p-7">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+      <section data-testid="today-brief-card" className="editorial-panel mb-8 overflow-hidden p-6 sm:p-7">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(21rem,0.76fr)] lg:items-end">
           <div className="max-w-3xl">
             <p className="eyebrow mb-3">Daily dossier</p>
             <h2 className="display-title text-[2.8rem] font-semibold leading-[0.94] sm:text-[3.6rem]">
@@ -303,55 +303,59 @@ export function TodayPage() {
             </p>
           </div>
 
-          <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-end">
-            <div className="editorial-panel-muted px-4 py-3">
-              <p className="eyebrow mb-1">Selected date</p>
-              <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
-            </div>
-            {topicFilter ? (
-              <div
-                className="rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]"
-                style={{
-                  borderColor: "rgba(111,123,93,0.18)",
-                  background: "rgba(111,123,93,0.12)",
-                  color: "var(--accent-strong)"
-                }}
-              >
-                {topicFilter}
+          <div className="space-y-3">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div className="editorial-panel-muted px-4 py-3">
+                <p className="eyebrow mb-1">Selected date</p>
+                <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
               </div>
-            ) : null}
+              {topicFilter ? (
+                <div
+                  className="rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]"
+                  style={{
+                    borderColor: "rgba(111,123,93,0.18)",
+                    background: "rgba(111,123,93,0.12)",
+                    color: "var(--accent-strong)"
+                  }}
+                >
+                  {topicFilter}
+                </div>
+              ) : null}
+            </div>
+
+            <div data-testid="today-brief-audio">
+              {pageData.audio ? (
+                <div>
+                  <AudioPlayer data={pageData.audio} variant="compact" />
+                  {audioStatusNotice ? (
+                    <p
+                      className={`mt-3 text-sm ${
+                        audioStatusNotice.tone === "error" ? "text-rose-700" : "text-[#8b5f28]"
+                      }`}
+                    >
+                      {audioStatusNotice.message}
+                    </p>
+                  ) : null}
+                </div>
+              ) : (
+                <section
+                  className="rounded-[1.25rem] border p-4 text-sm"
+                  style={{
+                    borderColor: "rgba(156, 113, 48, 0.2)",
+                    background: "rgba(253, 247, 238, 0.72)",
+                    color: "var(--text-base)"
+                  }}
+                >
+                  <h3 className="font-semibold text-[color:var(--text-strong)]">Audio brief unavailable</h3>
+                  <p className="mt-1">
+                    {audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}
+                  </p>
+                </section>
+              )}
+            </div>
           </div>
         </div>
       </section>
-
-      <div className="mb-10">
-        {pageData.audio ? (
-          <div>
-            <AudioPlayer data={pageData.audio} />
-            {audioStatusNotice ? (
-              <p
-                className={`mt-3 text-sm ${
-                  audioStatusNotice.tone === "error" ? "text-rose-700" : "text-[#8b5f28]"
-                }`}
-              >
-                {audioStatusNotice.message}
-              </p>
-            ) : null}
-          </div>
-        ) : (
-          <section
-            className="rounded-[1.6rem] border p-5 text-sm shadow-[0_14px_34px_rgba(53,37,20,0.05)]"
-            style={{
-              borderColor: "rgba(156, 113, 48, 0.2)",
-              background: "rgba(253, 247, 238, 0.88)",
-              color: "var(--text-base)"
-            }}
-          >
-            <h3 className="font-semibold text-[color:var(--text-strong)]">Audio brief unavailable</h3>
-            <p className="mt-1">{audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}</p>
-          </section>
-        )}
-      </div>
 
       {insights.length > 0 ? (
         <div className="space-y-10">
