@@ -65,8 +65,7 @@ export function Sidebar() {
         <div className="editorial-panel-muted px-4 py-4">
           <p className="eyebrow mb-2">Product thesis</p>
           <p className="text-sm leading-6 text-[color:var(--text-base)]">
-            A personal AI learning system that helps builder-operators stay current without turning
-            every day into another feed.
+            A daily briefing room for AI builders turning signal into shipped work.
           </p>
         </div>
 
