@@ -3,9 +3,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getBriefingPaths, getLADate } from "./daily-briefing.js";
-
-const DEFAULT_MODEL = "gemini-2.5-pro";
+import { getBriefingPaths, getLADate, defaultSummarizeCandidate } from "./daily-briefing.js";
 const DEFAULT_MAX_ITEMS = 4;
 const MAX_SOURCE_EXCERPT_LENGTH = 900;
 
@@ -91,46 +89,6 @@ async function readJsonInput(inputPath) {
   }
 
   return inputText;
-}
-
-function buildSourceLabel(candidate) {
-  switch (candidate.kind) {
-    case "blog":
-      return `${candidate.sourceName} 博客`;
-    case "podcast":
-      return `${candidate.sourceName} 播客`;
-    case "x":
-      return `${candidate.sourceName} 在 X 上的讨论`;
-    default:
-      return "Follow Builders";
-  }
-}
-
-function buildFallbackSummary(candidate) {
-  const sourceLabel = buildSourceLabel(candidate);
-  const excerpt = clipText(stripUrls(candidate.excerpt), 180);
-
-  if (candidate.kind === "x") {
-    return `社区讨论聚焦于 ${sourceLabel} 的最新信号：${excerpt || candidate.title}。这类一线表达更适合拿来判断 builder 叙事是否正在从概念走向可执行工作流。`;
-  }
-
-  if (candidate.kind === "podcast") {
-    return `${sourceLabel} 围绕「${candidate.title}」展开长谈，核心信号是 ${excerpt || "产品能力、工作流和分发逻辑正在一起变化"}。对 builder 来说，重要的不是逐段复述，而是识别哪些能力已经足以重写现有协作流程。`;
-  }
-
-  return `${sourceLabel} 提供了一个值得追踪的工程或产品信号：${excerpt || candidate.title}。相比表层新闻，更应该关注它是否改变了 agent、工具链或团队协作的默认做法。`;
-}
-
-function buildFallbackTake(candidate) {
-  if (candidate.kind === "x") {
-    return "把高信号推文当作需求和分发雷达，而不是结论本身。真正要落地的是：这背后暴露了哪些 API、工作流、部署和商业模式会率先被重写。";
-  }
-
-  if (candidate.kind === "podcast") {
-    return "长对话最适合提炼成产品判断和执行清单。优先记录其中反复出现的约束、能力边界和组织变化，再决定哪些值得在本周实验。";
-  }
-
-  return "优先把这类工程信号转成可验证动作，例如补一个评测、做一次工作流重构，或检查你现有产品里最脆弱的环节是否已经被新范式替代。";
 }
 
 function renderFollowBuildersMarkdown(items) {
@@ -231,106 +189,33 @@ function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS) {
   return selected;
 }
 
-async function callGeminiMarkdown(candidates, { apiKey, model = DEFAULT_MODEL, logger = console }) {
-  if (!apiKey || candidates.length === 0) {
-    return null;
-  }
+async function summarizeCandidates(candidates, { apiKey, logger }) {
+  const results = await Promise.all(
+    candidates.map(async (candidate) => {
+      const summaryCandidate = {
+        title: candidate.title,
+        source: candidate.sourceName,
+        link: candidate.url,
+        contentSnippet: candidate.excerpt || "",
+        matchedKeywords: ["AI builders", candidate.kind]
+      };
 
-  const prompt = `You are remixing follow-builders source material into a same-day Daily Briefing appendix for AI builders.
+      const { summary, take } = await defaultSummarizeCandidate(summaryCandidate, {
+        apiKey,
+        logger
+      });
 
-Goals:
-- extract the highest-signal themes only
-- merge related sources when possible instead of listing everything
-- explain why the theme matters for builders, workflows, tooling, or agent capability
-- write in concise Chinese
-- avoid hype, marketing filler, and bullet lists
+      return {
+        title: candidate.title,
+        url: candidate.url,
+        sourceName: candidate.sourceName,
+        summary,
+        take
+      };
+    })
+  );
 
-Return ONLY markdown entries in this exact repeated format:
-## [Title](URL)
-**Source:** {sourceName from the source material}
-**Source Label:** Follow Builders
-
-> **Chinese Summary:** ...
-> **R2 Take:** ...
-
----
-
-Rules:
-- produce at most ${candidates.length} entries
-- every URL must come from the provided source data
-- use one URL per entry
-- do not include a top-level date heading
-- do not wrap the response in code fences
-
-Source material:
-${JSON.stringify(
-  candidates.map((candidate) => ({
-    kind: candidate.kind,
-    title: candidate.title,
-    url: candidate.url,
-    sourceName: candidate.sourceName,
-    excerpt: clipText(candidate.excerpt)
-  })),
-  null,
-  2
-)}`;
-
-  try {
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              role: "user",
-              parts: [{ text: prompt }]
-            }
-          ],
-          generationConfig: {
-            temperature: 0.2
-          }
-        })
-      }
-    );
-
-    if (!response.ok) {
-      logger.warn(`Gemini remix call failed with HTTP ${response.status}. Falling back.`);
-      return null;
-    }
-
-    const payload = await response.json();
-    const text = payload?.candidates?.[0]?.content?.parts
-      ?.map((part) => part.text || "")
-      .join("")
-      .trim();
-
-    if (
-      typeof text === "string" &&
-      text.includes("## [") &&
-      text.includes("**Chinese Summary:**") &&
-      text.includes("**R2 Take:**")
-    ) {
-      return text;
-    }
-  } catch (error) {
-    logger.warn(`Gemini remix call failed: ${error.message}`);
-  }
-
-  return null;
-}
-
-function buildFallbackItems(payload, maxItems) {
-  return collectCandidates(payload, maxItems).map((candidate) => ({
-    title: candidate.title,
-    url: candidate.url,
-    sourceName: candidate.sourceName,
-    summary: buildFallbackSummary(candidate),
-    take: buildFallbackTake(candidate)
-  }));
+  return results;
 }
 
 function dedupeAgainstExistingMarkdown(items, existingMarkdown) {
@@ -367,39 +252,8 @@ export async function remixFollowBuilders(options = {}) {
 
   const maxItems = Number.isFinite(options.maxItems) ? options.maxItems : DEFAULT_MAX_ITEMS;
   const remixCandidates = collectCandidates(payload, maxItems);
-  const geminiMarkdown = await callGeminiMarkdown(remixCandidates, {
-    apiKey: options.apiKey ?? process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY,
-    logger
-  });
-  const parsedItems = geminiMarkdown
-    ? geminiMarkdown
-        .split(/\n(?=##\s+\[)/)
-        .map((block) => {
-          const titleMatch = block.match(/^##\s+\[(.+?)\]\((.+?)\)/m);
-          const sourceMatch = block.match(/^\*\*Source:\*\*\s*(.+)$/m);
-          const summaryMatch = block.match(/\*\*Chinese Summary:\*\*\s*(.+)$/m);
-          const takeMatch = block.match(/\*\*R2 Take:\*\*\s*(.+)$/m);
-          return titleMatch && summaryMatch && takeMatch
-            ? {
-                title: titleMatch[1],
-                url: titleMatch[2],
-                sourceName: sourceMatch?.[1]?.trim() || undefined,
-                summary: summaryMatch[1],
-                take: takeMatch[1]
-              }
-            : null;
-        })
-        .filter(Boolean)
-        .map((item) => {
-          if (!item.sourceName) {
-            const match = remixCandidates.find((c) => c.url === item.url);
-            if (match) {
-              item.sourceName = match.sourceName;
-            }
-          }
-          return item;
-        })
-    : buildFallbackItems(payload, maxItems);
+  const apiKey = options.apiKey ?? process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY;
+  const parsedItems = await summarizeCandidates(remixCandidates, { apiKey, logger });
   const dedupedItems = dedupeAgainstExistingMarkdown(parsedItems, existingMarkdown);
 
   if (dedupedItems.length === 0) {
