@@ -44,6 +44,20 @@ test("switches dates from the recent briefs rail and updates the selected day co
   await expect(page.getByText(switchedInsightTitle)).toBeVisible();
 });
 
+test("switches dates from the selected date button in the hero", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/today");
+
+  await page.getByTestId("selected-date-trigger").click();
+  await expect(page.getByRole("listbox", { name: "Available brief dates" })).toBeVisible();
+  await page.getByRole("option", { name: switchedDate }).click();
+
+  await expect(page).toHaveURL(new RegExp(`/today\\?date=${switchedDate}$`));
+  await expect(page.getByTestId("selected-date-trigger")).toContainText(switchedDate);
+  await expect(page.getByText(switchedInsightTitle)).toBeVisible();
+  await expect(page.getByRole("listbox", { name: "Available brief dates" })).toBeHidden();
+});
+
 test("reloads a real permalink route without losing the selected insight", async ({ page }) => {
   await page.goto(`/insights/${permalinkInsight.id}`);
 

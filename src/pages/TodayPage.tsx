@@ -3,7 +3,11 @@ import { useOutletContext, useSearchParams } from "react-router-dom";
 import type { AppOutletContext } from "../app/outlet-context";
 import { AudioPlayer } from "../components/audio/AudioPlayer";
 import { InsightCard } from "../components/cards/InsightCard";
-import { getDailyBriefPageState, loadDayData } from "../lib/briefings/generatedContentLoader";
+import {
+  getAvailableBriefingDates,
+  getDailyBriefPageState,
+  loadDayData
+} from "../lib/briefings/generatedContentLoader";
 import type { DailyAudio } from "../types/models";
 import type { TodaySectionItem } from "./todaySections";
 import { buildTodaySections } from "./todaySections";
@@ -154,13 +158,15 @@ function StatePanel({
 }
 
 export function TodayPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { topicFilter, onInsightShare } = useOutletContext<AppOutletContext>();
   const requestedDate = searchParams.get("date") ?? undefined;
   const pageState = getDailyBriefPageState(requestedDate);
   const pageData = pageState.pageData;
+  const availableDates = getAvailableBriefingDates();
   const [dayLoadStatus, setDayLoadStatus] = useState<"idle" | "loading" | "error">("idle");
   const [dayLoadError, setDayLoadError] = useState<string | null>(null);
+  const [isDateMenuOpen, setIsDateMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!pageState.resolvedDate || pageData) {
@@ -242,6 +248,12 @@ export function TodayPage() {
     : pageData.insights;
   const todaySections = buildTodaySections(insights);
   const audioStatusNotice = getAudioStatusNotice(pageData.date, pageData.audio, pageState.missingAudio);
+  const handleDateSelect = (date: string) => {
+    const nextSearchParams = new URLSearchParams(searchParams);
+    nextSearchParams.set("date", date);
+    setSearchParams(nextSearchParams);
+    setIsDateMenuOpen(false);
+  };
   const visibleSignalSections = [
     todaySections.whyItMatters.length > 0 ? (
       <TodaySignalSection
@@ -308,9 +320,50 @@ export function TodayPage() {
               data-testid="today-brief-meta"
               className="flex flex-wrap items-end gap-3 sm:flex-col sm:items-end"
             >
-              <div className="editorial-panel-muted px-4 py-3">
-                <p className="eyebrow mb-1">Selected date</p>
-                <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
+              <div className="w-full sm:w-auto">
+                <button
+                  type="button"
+                  data-testid="selected-date-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded={isDateMenuOpen}
+                  aria-controls="available-brief-dates"
+                  aria-label={`Selected date ${pageData.date}. Choose another generated brief date.`}
+                  onClick={() => setIsDateMenuOpen((isOpen) => !isOpen)}
+                  className="editorial-panel-muted w-full px-4 py-3 text-left transition-colors hover:bg-[rgba(245,238,227,0.92)] focus:outline-none focus:ring-2 focus:ring-[rgba(111,123,93,0.35)] sm:w-auto"
+                >
+                  <span className="eyebrow mb-1 block">Selected date</span>
+                  <span className="block text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</span>
+                </button>
+                {isDateMenuOpen ? (
+                  <div
+                    id="available-brief-dates"
+                    role="listbox"
+                    aria-label="Available brief dates"
+                    className="mt-2 max-h-72 w-full overflow-y-auto rounded-[1.25rem] border p-2 shadow-[0_18px_45px_rgba(53,37,20,0.12)] sm:w-48"
+                    style={{
+                      borderColor: "var(--border-soft)",
+                      background: "rgba(255,252,247,0.98)"
+                    }}
+                  >
+                    {availableDates.map((date) => (
+                      <button
+                        key={date}
+                        type="button"
+                        role="option"
+                        aria-selected={date === pageData.date}
+                        onClick={() => handleDateSelect(date)}
+                        className="flex w-full items-center justify-between rounded-[0.9rem] px-3 py-2 text-left text-sm font-semibold transition-colors hover:bg-[rgba(111,123,93,0.1)] focus:outline-none focus:ring-2 focus:ring-[rgba(111,123,93,0.28)]"
+                        style={{
+                          color: date === pageData.date ? "var(--accent-strong)" : "var(--text-base)",
+                          background: date === pageData.date ? "rgba(111,123,93,0.12)" : "transparent"
+                        }}
+                      >
+                        <span>{date}</span>
+                        {date === pageData.date ? <span className="text-xs uppercase tracking-[0.16em]">Now</span> : null}
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
               </div>
               {topicFilter ? (
                 <div
