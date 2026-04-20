@@ -15741,5 +15741,120 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-20": {
+    "date": "2026-04-20",
+    "briefings": [
+      {
+        "id": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-20",
+        "filePath": "2026-04-20.md",
+        "summaryTopline": "OpenAI helps Hyatt advance AI among colleagues",
+        "insightIds": [
+          "rss-2026-04-20-01-openai-helps-hyatt-advance-ai-among-colleagues",
+          "rss-2026-04-20-02-nsa-is-using-anthropics-mythos-despite-blacklist",
+          "rss-2026-04-20-03-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
+          "rss-2026-04-20-04-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
+          "rss-2026-04-20-05-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-20-01-openai-helps-hyatt-advance-ai-among-colleagues",
+        "briefingId": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+        "title": "OpenAI helps Hyatt advance AI among colleagues",
+        "summary": "Hyatt deploys ChatGPT Enterprise across its global workforce, using GPT-5.4 and Codex to improve productivity, operations, and guest experiences.。",
+        "take": "这件事与 Productivity、OpenAI、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-20-02-nsa-is-using-anthropics-mythos-despite-blacklist",
+        "briefingId": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon",
+        "title": "NSA is using Anthropic's Mythos despite blacklist",
+        "summary": "美国国家安全局在敏感任务中部署了Anthropic的Mythos模型。",
+        "take": "此事件验证了商用前沿AI模型在极高安全性和机密性需求环境下的工程可行性与能力。它提示AI系统架构师需重新评估商用模型在满足严苛安全、可靠性及对齐标准方面的潜力，尤其在涉密或高风险应用场景中。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-20-03-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
+        "briefingId": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Unsupervised Learning",
+        "sourceUrl": "https://www.youtube.com/watch?v=vK1qEF3a3WM",
+        "title": "Builder Theme: Ep 84: OpenAI’s Chief Scientist on Continual Learning Hype, RL Beyond Code, &amp; Future Alignment Directions",
+        "summary": "OpenAI首席科学家强调持续学习是核心发展方向，并将长期AI对齐定义为模型价值泛化挑战。",
+        "take": "AI开发者需关注支持持续适应和价值泛化能力系统的构建。工程上，这意味着设计动态模型更新机制，并研究如何为代理编码鲁棒、上下文无关的价值观，以保证其在未知环境下的行为可预测性。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-20-04-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
+        "briefingId": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2045995362499076169",
+        "title": "Builder Theme: Guillermo Rauch on Here's my update to the broader community about the ongoing incident...",
+        "summary": "Here's my update to the broader community about the ongoing incident investigation. I want to give you the rundown of the situation directly. A Vercel employee got compromised via 。",
+        "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-20-05-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open",
+        "briefingId": "rss-2026-04-20",
+        "date": "2026-04-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Yang",
+        "sourceUrl": "https://x.com/petergyang/status/2045909612315172936",
+        "title": "Builder Theme: Peter Yang on Went from having multiple terminals open to just two apps open :)",
+        "summary": "Went from having multiple terminals open to just two apps open :) https://t.co/Wv8LXhRbnP。",
+        "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

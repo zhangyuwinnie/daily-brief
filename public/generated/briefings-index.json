@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-20",
     "2026-04-19",
     "2026-04-18",
     "2026-04-17",
@@ -69,6 +70,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-20": {
+      "briefingIds": [
+        "rss-2026-04-20"
+      ],
+      "insightIds": [
+        "rss-2026-04-20-01-openai-helps-hyatt-advance-ai-among-colleagues",
+        "rss-2026-04-20-02-nsa-is-using-anthropics-mythos-despite-blacklist",
+        "rss-2026-04-20-03-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
+        "rss-2026-04-20-04-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
+        "rss-2026-04-20-05-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-19": {
       "briefingIds": [
         "rss-2026-04-19"
