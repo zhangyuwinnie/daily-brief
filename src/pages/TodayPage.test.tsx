@@ -95,6 +95,8 @@ describe("TodayPage", () => {
     expect(html).toContain('data-testid="today-brief-card"');
     expect(html).toContain('data-testid="today-brief-audio"');
     expect(html).toContain('data-testid="today-brief-meta"');
+    expect(html).toContain('data-testid="today-date-tile"');
+    expect(html).toContain("h-36 w-36");
     expect(html.indexOf('data-testid="today-brief-audio"')).toBeGreaterThan(
       html.indexOf("Scan the signal, listen once, and leave with a build direction.")
     );

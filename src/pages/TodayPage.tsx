@@ -308,9 +308,14 @@ export function TodayPage() {
               data-testid="today-brief-meta"
               className="flex flex-wrap items-end gap-3 sm:flex-col sm:items-end"
             >
-              <div className="editorial-panel-muted px-4 py-3">
-                <p className="eyebrow mb-1">Selected date</p>
-                <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
+              <div
+                data-testid="today-date-tile"
+                className="editorial-panel-muted flex h-36 w-36 flex-col justify-center px-5 py-5"
+              >
+                <p className="eyebrow mb-3">Selected date</p>
+                <p className="whitespace-nowrap text-lg font-semibold tabular-nums text-[color:var(--text-strong)]">
+                  {pageData.date}
+                </p>
               </div>
               {topicFilter ? (
                 <div
