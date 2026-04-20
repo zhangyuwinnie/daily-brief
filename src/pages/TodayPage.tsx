@@ -293,14 +293,38 @@ export function TodayPage() {
 
       <section data-testid="today-brief-card" className="editorial-panel mb-8 overflow-hidden p-6 sm:p-7">
         <div className="space-y-5">
-          <div className="max-w-3xl">
-            <p className="eyebrow mb-3">Daily dossier</p>
-            <h2 className="display-title text-[2.8rem] font-semibold leading-[0.94] sm:text-[3.6rem]">
-              Today&apos;s Brief
-            </h2>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--text-muted)] sm:text-[15px]">
-              Scan the signal, listen once, and leave with a build direction.
-            </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div className="max-w-3xl">
+              <p className="eyebrow mb-3">Daily dossier</p>
+              <h2 className="display-title text-[2.8rem] font-semibold leading-[0.94] sm:text-[3.6rem]">
+                Today&apos;s Brief
+              </h2>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--text-muted)] sm:text-[15px]">
+                Scan the signal, listen once, and leave with a build direction.
+              </p>
+            </div>
+
+            <div
+              data-testid="today-brief-meta"
+              className="flex flex-wrap items-end gap-3 sm:flex-col sm:items-end"
+            >
+              <div className="editorial-panel-muted px-4 py-3">
+                <p className="eyebrow mb-1">Selected date</p>
+                <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
+              </div>
+              {topicFilter ? (
+                <div
+                  className="rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]"
+                  style={{
+                    borderColor: "rgba(111,123,93,0.18)",
+                    background: "rgba(111,123,93,0.12)",
+                    color: "var(--accent-strong)"
+                  }}
+                >
+                  {topicFilter}
+                </div>
+              ) : null}
+            </div>
           </div>
 
           <div data-testid="today-brief-audio" className="w-full">
@@ -332,25 +356,6 @@ export function TodayPage() {
                 </p>
               </section>
             )}
-          </div>
-
-          <div data-testid="today-brief-meta" className="flex flex-wrap items-end justify-between gap-3">
-            <div className="editorial-panel-muted px-4 py-3">
-              <p className="eyebrow mb-1">Selected date</p>
-              <p className="text-sm font-semibold text-[color:var(--text-strong)]">{pageData.date}</p>
-            </div>
-            {topicFilter ? (
-              <div
-                className="rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]"
-                style={{
-                  borderColor: "rgba(111,123,93,0.18)",
-                  background: "rgba(111,123,93,0.12)",
-                  color: "var(--accent-strong)"
-                }}
-              >
-                {topicFilter}
-              </div>
-            ) : null}
           </div>
         </div>
       </section>

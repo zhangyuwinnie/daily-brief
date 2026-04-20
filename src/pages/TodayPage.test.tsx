@@ -98,8 +98,9 @@ describe("TodayPage", () => {
     expect(html.indexOf('data-testid="today-brief-audio"')).toBeGreaterThan(
       html.indexOf("Scan the signal, listen once, and leave with a build direction.")
     );
-    expect(html.indexOf('data-testid="today-brief-audio"')).toBeLessThan(
-      html.indexOf('data-testid="today-brief-meta"')
+    expect(html.indexOf('data-testid="today-brief-meta"')).toBeGreaterThan(html.indexOf("Today&#x27;s Brief"));
+    expect(html.indexOf('data-testid="today-brief-meta"')).toBeLessThan(
+      html.indexOf('data-testid="today-brief-audio"')
     );
     expect(html.indexOf('data-testid="today-brief-audio"')).toBeLessThan(html.indexOf("Top Signals"));
   });
