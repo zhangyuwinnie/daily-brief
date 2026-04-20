@@ -15598,16 +15598,13 @@
         "date": "2026-04-19",
         "sourceType": "rss",
         "sourceLabel": "RSS Briefing",
-        "sourceName": "Hacker News",
-        "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything",
         "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
-        "summary": "Claude Opus 4.7 的系统提示词相较于 4.6 版本，可能引入了更明确或强化内部思考（例如，逐步推理）和结构化输出的指令。从第一性原理来看，系统提示词是模型行为和能力的基石，更精细的内部指令能促使模型在生成最终结果前进行更深度的信息处理，从而提升复杂任务的准确性和一致性。这反映了 Anthropic 持续优化模型推理链 (Chain-of-Thought) 能力的策略。",
-        "take": "For builders, this update implies a potential shift towards leveraging the model's inherent reasoning capabilities more directly. Agent developers might find it easier to design robust agents, as the model could intrinsically manage more complex internal states, reducing the need for elaborate external prompt engineering (e.g., explicit chain-of-thought prompts). Workflows requiring high precision and explainability may benefit from more stable and reliable outputs for multi-step problems and logical inference. Builders should re-evaluate existing prompt strategies to identify and remove redundant instructions that the model now handles internally, optimizing token usage and performance.",
+        "summary": "Anthropic 通过更新其旗舰模型 Claude Opus 4.7 的系统提示词，调整了模型的核心指令集与交互范式，以优化其行为表现。",
+        "take": "此举表明，即使是前沿LLM，系统提示工程仍是调控模型行为、优化交互范式的高效且核心机制。AI开发者需密切关注头部厂商的提示词迭代，以理解模型行为漂移，并将其作为自身Agent设计与调优的重要参考依据。",
         "topics": [
-          "Agents",
-          "Evals",
-          "RAG",
-          "Tooling"
+          "Agents"
         ],
         "entities": [],
         "isTopSignal": true
@@ -15621,9 +15618,11 @@
         "sourceName": "Simon Willison's Weblog",
         "sourceUrl": "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything",
         "title": "Claude system prompts as a git timeline",
-        "summary": "Anthropic 发布了 Claude 模型的官方系统提示词，Simon Willison 将这些提示词转换为 Git 时间线。这使得开发者能够追踪和浏览不同 Claude 模型（如 Opus 4.6 到 4.7）之间系统提示词的详细变更历史。",
-        "take": "这一研究为 AI 开发者提供了关键信号： 1. **提示工程优化：** 通过对比系统提示词的演变，开发者能洞察 Anthropic 对模型能力和预期行为的调整，从而更精准地优化自己的提示词策略，提高应用稳定性。 2. **模型行为洞察：** 系统提示词的变化是模型底层能力或其厂商指导思想调整的直接体现。开发者可以借此预测模型在新版本中的行为变化，避免因不兼容而导致的问题。 3. **调试与迭代：** 当模型行为出现预期外变化时，检查系统提示词的变更历史，能提供宝贵的调试线索，加速问题定位和解决方案的迭代。 4. **透明度与信任：** 这种可视化方法提升了模型提供商在提示词策略上的透明度，帮助开发者更好地理解和信任模型的演进方向。",
-        "topics": [],
+        "summary": "Anthropic 发布 Claude 系统提示的 Markdown 版本，开发者可将其自动化转换为 Git 仓库，以追踪和比较不同模型版本的系统提示演变。",
+        "take": "开发者应将系统提示视为关键工程资产，采用 Git 等版本控制工具进行管理与迭代追踪，以透明地理解和控制 LLM 行为的演变。此实践亦突显 AI 工具可自动化工程数据处理，无缝融入现有开发工作流，提升提示工程效率。",
+        "topics": [
+          "Tooling"
+        ],
         "entities": [],
         "isTopSignal": true
       },
