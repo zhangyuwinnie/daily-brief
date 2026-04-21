@@ -571,27 +571,29 @@ function extractJsonSnippet(text = "") {
   return arrayMatch?.[0];
 }
 
-async function callGeminiText(prompt, { apiKey, modelName, logger, maxRetries = 3 }) {
+async function callLLMText(prompt, { apiKey, modelName, logger, maxRetries = 3 }) {
   if (!apiKey) {
     return null;
   }
 
-  const { GoogleGenerativeAI } = await import("@google/generative-ai");
-  const client = new GoogleGenerativeAI(apiKey);
-  const model = client.getGenerativeModel({ model: modelName });
+  const { default: OpenAI } = await import("openai");
+  const client = new OpenAI({ apiKey, baseURL: "https://api.deepseek.com" });
 
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     try {
-      const result = await model.generateContent(prompt);
-      return result.response.text().trim();
+      const result = await client.chat.completions.create({
+        model: modelName,
+        messages: [{ role: "user", content: prompt }]
+      });
+      return result.choices[0].message.content.trim();
     } catch (error) {
-      const isRetryable = /503|429|overloaded|high demand/i.test(error.message);
+      const isRetryable = /503|429|overloaded|rate/i.test(error.message);
       if (isRetryable && attempt < maxRetries - 1) {
         const delay = 2000 * 2 ** attempt; // 2s, 4s, 8s
-        logger.warn(`Gemini call failed (attempt ${attempt + 1}/${maxRetries}), retrying in ${delay / 1000}s: ${error.message}`);
+        logger.warn(`LLM call failed (attempt ${attempt + 1}/${maxRetries}), retrying in ${delay / 1000}s: ${error.message}`);
         await new Promise((resolve) => setTimeout(resolve, delay));
       } else {
-        logger.warn(`Gemini call failed (attempt ${attempt + 1}/${maxRetries}): ${error.message}`);
+        logger.warn(`LLM call failed (attempt ${attempt + 1}/${maxRetries}): ${error.message}`);
         return null;
       }
     }
@@ -648,7 +650,7 @@ export async function defaultRankCandidates(
   candidates,
   {
     maxItems = MAX_BRIEFING_ITEMS,
-    apiKey = process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY,
+    apiKey = process.env.DEEPSEEK_API_KEY,
     logger = console
   } = {}
 ) {
@@ -657,9 +659,9 @@ export async function defaultRankCandidates(
   }
 
   const prompt = buildRankingPrompt(candidates, maxItems);
-  const responseText = await callGeminiText(prompt, {
+  const responseText = await callLLMText(prompt, {
     apiKey,
-    modelName: "gemini-2.5-flash",
+    modelName: "deepseek-chat",
     logger
   });
   const indices = responseText
@@ -756,14 +758,14 @@ Return ONLY valid JSON with this exact shape, without markdown formatting or cod
 export async function defaultSummarizeCandidate(
   candidate,
   {
-    apiKey = process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY,
+    apiKey = process.env.DEEPSEEK_API_KEY,
     logger = console
   } = {}
 ) {
   const prompt = buildSummaryPrompt(candidate);
-  const responseText = await callGeminiText(prompt, {
+  const responseText = await callLLMText(prompt, {
     apiKey,
-    modelName: "gemini-2.5-flash",
+    modelName: "deepseek-chat",
     logger
   });
   const parsed = responseText ? parseSummaryResponse(responseText) : null;

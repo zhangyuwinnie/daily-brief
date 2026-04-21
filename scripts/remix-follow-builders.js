@@ -252,7 +252,7 @@ export async function remixFollowBuilders(options = {}) {
 
   const maxItems = Number.isFinite(options.maxItems) ? options.maxItems : DEFAULT_MAX_ITEMS;
   const remixCandidates = collectCandidates(payload, maxItems);
-  const apiKey = options.apiKey ?? process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY;
+  const apiKey = options.apiKey ?? process.env.DEEPSEEK_API_KEY;
   const parsedItems = await summarizeCandidates(remixCandidates, { apiKey, logger });
   const dedupedItems = dedupeAgainstExistingMarkdown(parsedItems, existingMarkdown);
 
