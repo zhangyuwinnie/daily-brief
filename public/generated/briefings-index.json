@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-21",
     "2026-04-20",
     "2026-04-19",
     "2026-04-18",
@@ -70,6 +71,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-21": {
+      "briefingIds": [
+        "rss-2026-04-21"
+      ],
+      "insightIds": [
+        "rss-2026-04-21-01-scaling-codex-to-enterprises-worldwide",
+        "rss-2026-04-21-02-claude-token-counter-now-with-model-comparisons",
+        "rss-2026-04-21-03-headless-everything-for-personal-ai",
+        "rss-2026-04-21-04-laws-of-software-engineering",
+        "rss-2026-04-21-05-anthropic-says-openclaw-style-claude-cli-usage-is-allowed-again",
+        "rss-2026-04-21-06-qimma-a-quality-first-arabic-llm-leaderboard",
+        "rss-2026-04-21-07-builder-theme-the-agentic-economy-how-ai-agents-will-transform-the-financial-system-with-circle-co-founder-and-ceo-jeremy-allaire",
+        "rss-2026-04-21-08-builder-theme-sam-altman-on-tim-cook-is-a-legend-i-am-very-thankful-for-everything-he-has-done-a",
+        "rss-2026-04-21-09-builder-theme-preparing-your-security-program-for-ai-accelerated-offense",
+        "rss-2026-04-21-10-builder-theme-claude-on-in-cowork-claude-can-now-build-live-artifacts-dashboards-and-tracke"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-20": {
       "briefingIds": [
         "rss-2026-04-20"
