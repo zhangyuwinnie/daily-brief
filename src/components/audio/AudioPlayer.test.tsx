@@ -3,8 +3,13 @@
 import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { trackEvent } from "../../lib/analytics";
 import { AudioPlayer } from "./AudioPlayer";
 import type { DailyAudio } from "../../types/models";
+
+vi.mock("../../lib/analytics", () => ({
+  trackEvent: vi.fn()
+}));
 
 const readyAudio: DailyAudio = {
   id: "audio-2026-03-21",
@@ -41,6 +46,7 @@ beforeEach(() => {
   container = document.createElement("div");
   document.body.appendChild(container);
   root = createRoot(container);
+  vi.mocked(trackEvent).mockClear();
 
   vi.spyOn(HTMLMediaElement.prototype, "play").mockImplementation(function play(this: HTMLMediaElement) {
     this.dispatchEvent(new Event("play"));
@@ -88,6 +94,11 @@ describe("AudioPlayer", () => {
     });
 
     expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(1);
+    expect(trackEvent).toHaveBeenCalledWith({
+      event: "audio_play",
+      category: "audio",
+      label: "audio-2026-03-21"
+    });
     expect(playButton.getAttribute("aria-label")).toBe("Pause audio brief");
 
     Object.defineProperty(audioElement, "currentTime", {

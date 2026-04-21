@@ -1,13 +1,58 @@
+// @vitest-environment jsdom
+
+import { act } from "react";
+import { createRoot, type Root } from "react-dom/client";
 import { renderToStaticMarkup } from "react-dom/server";
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { trackEvent } from "../../lib/analytics";
 import { InsightCard } from "./InsightCard";
 import type { Insight } from "../../types/models";
+
+vi.mock("../../lib/analytics", () => ({
+  trackEvent: vi.fn()
+}));
 
 const noop = () => {};
 
 function renderInsightCard(insight: Insight) {
   return renderToStaticMarkup(<InsightCard insight={insight} onShare={noop} />);
 }
+
+const interactiveInsight: Insight = {
+  id: "insight-interactive",
+  briefingId: "briefing-interactive",
+  date: "2026-03-22",
+  sourceType: "rss",
+  sourceLabel: "RSS Briefing",
+  sourceName: "Agent Weekly",
+  sourceUrl: "https://example.com/insight-interactive",
+  title: "Interactive insight",
+  summary: "Summary copy",
+  take: "Take copy",
+  topics: ["Agents"],
+  entities: [],
+  isTopSignal: false
+};
+
+let container: HTMLDivElement;
+let root: Root;
+
+(globalThis as typeof globalThis & { IS_REACT_ACT_ENVIRONMENT?: boolean }).IS_REACT_ACT_ENVIRONMENT = true;
+
+beforeEach(() => {
+  container = document.createElement("div");
+  document.body.appendChild(container);
+  root = createRoot(container);
+  vi.mocked(trackEvent).mockClear();
+});
+
+afterEach(() => {
+  act(() => {
+    root.unmount();
+  });
+  container.remove();
+  vi.restoreAllMocks();
+});
 
 describe("InsightCard", () => {
   it("renders richer v1 fields when they are present", () => {
@@ -63,5 +108,45 @@ describe("InsightCard", () => {
     expect(html).not.toContain("Explore this signal and turn it into a concrete build.");
     expect(html).toContain("Take copy");
     expect(html).toContain("Agents");
+  });
+
+  it("tracks source-link clicks with the insight id", () => {
+    act(() => {
+      root.render(<InsightCard insight={interactiveInsight} onShare={noop} />);
+    });
+
+    const sourceLink = container.querySelector('[data-testid="insight-card-source-link"]');
+    expect(sourceLink).not.toBeNull();
+
+    act(() => {
+      sourceLink!.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    });
+
+    expect(trackEvent).toHaveBeenCalledWith({
+      event: "card_click",
+      category: "insight_card",
+      label: "insight-interactive"
+    });
+  });
+
+  it("tracks share clicks before invoking the share callback", () => {
+    const onShare = vi.fn();
+    act(() => {
+      root.render(<InsightCard insight={interactiveInsight} onShare={onShare} />);
+    });
+
+    const shareButton = container.querySelector('[data-testid="insight-card-share"]');
+    expect(shareButton).not.toBeNull();
+
+    act(() => {
+      (shareButton as HTMLButtonElement).click();
+    });
+
+    expect(trackEvent).toHaveBeenCalledWith({
+      event: "card_share",
+      category: "insight_card",
+      label: "insight-interactive"
+    });
+    expect(onShare).toHaveBeenCalledTimes(1);
   });
 });

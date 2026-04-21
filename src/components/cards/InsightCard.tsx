@@ -1,4 +1,5 @@
 import { BookOpen, Clock3, Share2, Sparkles, Target } from "lucide-react";
+import { trackEvent } from "../../lib/analytics";
 import type { Insight } from "../../types/models";
 
 type InsightCardProps = {
@@ -7,6 +8,13 @@ type InsightCardProps = {
 };
 
 export function InsightCard({ insight, onShare }: InsightCardProps) {
+  const handleSourceClick = () => {
+    trackEvent({ event: "card_click", category: "insight_card", label: insight.id });
+  };
+  const handleShareClick = () => {
+    trackEvent({ event: "card_share", category: "insight_card", label: insight.id });
+    onShare();
+  };
   const cueSections = [
     insight.whyItMatters
       ? {
@@ -36,6 +44,7 @@ export function InsightCard({ insight, onShare }: InsightCardProps) {
 
   return (
     <article
+      data-testid="insight-card"
       className="group rounded-[1.8rem] border p-6 transition-transform duration-300 hover:-translate-y-[2px] sm:p-7"
       style={{
         borderColor: "var(--border-soft)",
@@ -98,6 +107,8 @@ export function InsightCard({ insight, onShare }: InsightCardProps) {
             href={insight.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="insight-card-source-link"
+            onClick={handleSourceClick}
             className="underline decoration-transparent underline-offset-4 transition-[text-decoration-color,color] hover:text-[color:var(--accent-strong)] hover:decoration-current"
           >
             {insight.title}
@@ -162,7 +173,8 @@ export function InsightCard({ insight, onShare }: InsightCardProps) {
         </div>
 
         <button
-          onClick={onShare}
+          onClick={handleShareClick}
+          data-testid="insight-card-share"
           className="inline-flex items-center gap-2 self-start rounded-full border px-4 py-2 text-sm font-semibold transition-colors hover:bg-[rgba(84,66,42,0.04)] sm:self-auto"
           style={{
             borderColor: "var(--border-soft)",

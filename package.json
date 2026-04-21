@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1027.0",
+    "@cloudflare/workers-types": "^4.20260421.1",
     "@google/generative-ai": "^0.24.1",
     "@playwright/test": "^1.54.2",
     "@types/node": "^25.5.0",

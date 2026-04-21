@@ -24,6 +24,10 @@ Data flow: `briefings/` (raw) → `sync:generated` → `public/generated/` (JSON
 
 The repo-local automation workflow and its verification flow are documented in [docs/automation-runbook.md](docs/automation-runbook.md).
 
+## Cloudflare Analytics
+
+Cloudflare Web Analytics and Analytics Engine setup is documented in [docs/cloudflare-analytics-setup.md](docs/cloudflare-analytics-setup.md).
+
 ## Daily Content Update (Manual)
 
 ```bash
@@ -53,6 +57,7 @@ npm run publish:audio
 | File | Committed | Purpose |
 |------|-----------|---------|
 | `.env.production` | Yes | `VITE_AUDIO_BASE_URL` — R2 public URL prefix used in production builds |
+| Cloudflare Pages build variable | No | `VITE_CF_ANALYTICS_TOKEN` — Cloudflare Web Analytics token injected at production build time |
 | `.env.local` | No | Local automation secrets such as `GOOGLE_API_KEY`, `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, and `R2_BUCKET_NAME` |
 
 ## Development

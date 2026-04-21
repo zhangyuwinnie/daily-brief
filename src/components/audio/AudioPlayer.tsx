@@ -1,5 +1,6 @@
 import { Headphones, Pause, Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { trackEvent } from "../../lib/analytics";
 import type { DailyAudio } from "../../types/models";
 
 type AudioPlayerProps = {
@@ -114,6 +115,7 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
       return;
     }
 
+    trackEvent({ event: "audio_play", category: "audio", label: data.id });
     void audioElement.play().catch(() => {
       setIsPlaying(false);
     });

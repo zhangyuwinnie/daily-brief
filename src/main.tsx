@@ -9,3 +9,12 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+const cfAnalyticsToken = import.meta.env.VITE_CF_ANALYTICS_TOKEN;
+if (cfAnalyticsToken) {
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  script.dataset.cfBeacon = JSON.stringify({ token: cfAnalyticsToken, spa: true });
+  document.body.appendChild(script);
+}
