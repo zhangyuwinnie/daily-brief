@@ -10,10 +10,14 @@
       "summaryTopline": "OpenAI helps Hyatt advance AI among colleagues",
       "insightIds": [
         "rss-2026-04-20-01-openai-helps-hyatt-advance-ai-among-colleagues",
-        "rss-2026-04-20-02-nsa-is-using-anthropics-mythos-despite-blacklist",
-        "rss-2026-04-20-03-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
-        "rss-2026-04-20-04-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
-        "rss-2026-04-20-05-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open"
+        "rss-2026-04-20-02-highlights-from-git-254",
+        "rss-2026-04-20-03-openai-ad-partner-now-selling-chatgpt-ad-placements-based-on-prompt-relevance",
+        "rss-2026-04-20-04-how-to-ground-a-korean-ai-agent-in-real-demographics-with-synthetic-personas",
+        "rss-2026-04-20-05-kimi-k26-on-ai-gateway",
+        "rss-2026-04-20-06-gradient-based-planning-for-world-models-at-longer-horizons",
+        "rss-2026-04-20-07-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
+        "rss-2026-04-20-08-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
+        "rss-2026-04-20-09-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open"
       ]
     }
   ],
@@ -27,37 +31,104 @@
       "sourceName": "OpenAI News",
       "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
       "title": "OpenAI helps Hyatt advance AI among colleagues",
-      "summary": "Hyatt deploys ChatGPT Enterprise across its global workforce, using GPT-5.4 and Codex to improve productivity, operations, and guest experiences.。",
-      "take": "这件事与 Productivity、OpenAI、Codex 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "summary": "凯悦酒店集团在全球员工中部署ChatGPT企业版，利用GPT-5.4和Codex模型提升运营效率与宾客体验。",
+      "take": "这标志着大型企业正将多模态AI与代码生成模型深度集成至核心业务流程，而不仅是作为对话工具。工程团队需关注企业级AI代理在复杂、非结构化工作流（如酒店运营）中的编排与定制化部署模式。",
       "topics": [
         "Coding Agents",
         "Agents",
-        "Evals",
         "Tooling"
       ],
       "entities": [],
       "isTopSignal": true
     },
     {
-      "id": "rss-2026-04-20-02-nsa-is-using-anthropics-mythos-despite-blacklist",
+      "id": "rss-2026-04-20-02-highlights-from-git-254",
       "briefingId": "rss-2026-04-20",
       "date": "2026-04-20",
       "sourceType": "rss",
       "sourceLabel": "RSS Briefing",
-      "sourceName": "Hacker News",
-      "sourceUrl": "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon",
-      "title": "NSA is using Anthropic's Mythos despite blacklist",
-      "summary": "美国国家安全局在敏感任务中部署了Anthropic的Mythos模型。",
-      "take": "此事件验证了商用前沿AI模型在极高安全性和机密性需求环境下的工程可行性与能力。它提示AI系统架构师需重新评估商用模型在满足严苛安全、可靠性及对齐标准方面的潜力，尤其在涉密或高风险应用场景中。",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/open-source/git/highlights-from-git-2-54/",
+      "title": "Highlights from Git 2.54",
+      "summary": "Git 2.54 版本发布，引入了 `git maintenance` 子命令以实现自动化仓库维护，并增强了 `git rebase` 的 `--update-refs` 选项以自动更新相关分支引用。",
+      "take": "开发者现在可以通过 `git maintenance start` 命令在后台自动化执行仓库优化任务（如打包和增量重打包），从而降低手动维护开销。`git rebase --update-refs` 现在能自动更新所有相关分支的引用，简化了涉及多个功能分支的复杂变基工作流，提升了开发效率。",
       "topics": [
-        "Evals",
-        "Security"
+        "Tooling"
       ],
       "entities": [],
       "isTopSignal": true
     },
     {
-      "id": "rss-2026-04-20-03-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
+      "id": "rss-2026-04-20-03-openai-ad-partner-now-selling-chatgpt-ad-placements-based-on-prompt-relevance",
+      "briefingId": "rss-2026-04-20",
+      "date": "2026-04-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.adweek.com/media/exclusive-leaked-deck-reveals-stackadapts-playbook-for-chatgpt-ads/",
+      "title": "OpenAI ad partner now selling ChatGPT ad placements based on “prompt relevance”",
+      "summary": "OpenAI的广告合作伙伴StackAdapt开始根据用户提示词的相关性，在ChatGPT中销售广告位，实现了基于对话意图的广告匹配。",
+      "take": "这标志着AI原生广告系统的工程化落地，开发者需考虑在对话式应用中集成意图识别与上下文广告API。该模式将用户查询（Prompt）转化为新的广告库存，为AI产品商业化提供了直接的技术路径。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-20-04-how-to-ground-a-korean-ai-agent-in-real-demographics-with-synthetic-personas",
+      "briefingId": "rss-2026-04-20",
+      "date": "2026-04-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
+      "summary": "NVIDIA 与 Upstage 合作，通过 Nemotron 模型生成合成人物角色，为韩国 AI 智能体提供了基于真实人口统计数据的、可扩展的上下文背景，以解决特定文化背景下的数据稀缺问题。",
+      "take": "该方法通过可控的合成数据生成，绕过了对大量真实用户数据的依赖，为构建具有特定人口统计学和文化背景知识的智能体提供了新范式。工程上，这要求开发者掌握利用基础模型生成高质量、结构化合成数据以进行智能体背景设定的工作流程。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-20-05-kimi-k26-on-ai-gateway",
+      "briefingId": "rss-2026-04-20",
+      "date": "2026-04-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/kimi-k2.6-on-ai-gateway",
+      "title": "Kimi K2.6 on AI Gateway",
+      "summary": "Moonshot AI 的 Kimi K2.6 模型现已通过 Vercel AI Gateway 提供，该模型专注于跨编程语言和开发领域的长期编码任务，并能将简单提示转化为完整的前端界面。",
+      "take": "开发者可通过统一的 AI Gateway API 调用该模型，用于构建能够跨应用持续运行、具备更强 API 解析与长期任务稳定性的自主智能体。这标志着面向复杂、多步骤工作流的智能体开发工具链正趋于成熟，工程重点转向对长时任务可靠性与安全性的基础设施支持。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-20-06-gradient-based-planning-for-world-models-at-longer-horizons",
+      "briefingId": "rss-2026-04-20",
+      "date": "2026-04-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+      "sourceUrl": "http://bair.berkeley.edu/blog/2026/04/20/grasp/",
+      "title": "Gradient-based Planning for World Models at Longer Horizons",
+      "summary": "BAIR 的研究人员提出了 GRASP，一种针对学习型世界模型的梯度规划器，通过将轨迹提升至虚拟状态以实现时间并行优化，并直接向状态迭代注入随机性，从而实现了更高效的长时程规划。",
+      "take": "该方法将规划问题转化为可并行计算的优化问题，显著提升了长序列推理的效率。工程上，这为基于世界模型的智能体提供了一种可扩展的规划架构，使得在复杂环境中进行长视距决策变得可行。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-20-07-builder-theme-ep-84-openais-chief-scientist-on-continual-learning-hype-rl-beyond-code-amp-future-alignment-directions",
       "briefingId": "rss-2026-04-20",
       "date": "2026-04-20",
       "sourceType": "rss",
@@ -65,27 +136,9 @@
       "sourceName": "Unsupervised Learning",
       "sourceUrl": "https://www.youtube.com/watch?v=vK1qEF3a3WM",
       "title": "Builder Theme: Ep 84: OpenAI’s Chief Scientist on Continual Learning Hype, RL Beyond Code, &amp; Future Alignment Directions",
-      "summary": "OpenAI首席科学家强调持续学习是核心发展方向，并将长期AI对齐定义为模型价值泛化挑战。",
-      "take": "AI开发者需关注支持持续适应和价值泛化能力系统的构建。工程上，这意味着设计动态模型更新机制，并研究如何为代理编码鲁棒、上下文无关的价值观，以保证其在未知环境下的行为可预测性。",
+      "summary": "OpenAI 首席科学家 Ilya Sutskever 指出，持续学习是当前研发的核心方向，而长期对齐挑战的关键在于模型在未知领域中的价值泛化能力。",
+      "take": "工程重点应从静态训练转向构建支持持续学习和在线适应的架构。对齐研究的核心已从指令跟随转向确保模型在泛化时，其底层价值体系保持稳健与一致，这要求新的评估框架和训练范式。",
       "topics": [
-        "Agents"
-      ],
-      "entities": [],
-      "isTopSignal": true
-    },
-    {
-      "id": "rss-2026-04-20-04-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
-      "briefingId": "rss-2026-04-20",
-      "date": "2026-04-20",
-      "sourceType": "rss",
-      "sourceLabel": "Follow Builders",
-      "sourceName": "Guillermo Rauch",
-      "sourceUrl": "https://x.com/rauchg/status/2045995362499076169",
-      "title": "Builder Theme: Guillermo Rauch on Here's my update to the broader community about the ongoing incident...",
-      "summary": "Here's my update to the broader community about the ongoing incident investigation. I want to give you the rundown of the situation directly. A Vercel employee got compromised via 。",
-      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
-      "topics": [
-        "Agents",
         "Evals",
         "Tooling"
       ],
@@ -93,7 +146,26 @@
       "isTopSignal": false
     },
     {
-      "id": "rss-2026-04-20-05-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open",
+      "id": "rss-2026-04-20-08-builder-theme-guillermo-rauch-on-heres-my-update-to-the-broader-community-about-the-ongoing-incident",
+      "briefingId": "rss-2026-04-20",
+      "date": "2026-04-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2045995362499076169",
+      "title": "Builder Theme: Guillermo Rauch on Here's my update to the broader community about the ongoing incident...",
+      "summary": "Vercel 员工因使用客户 AI 平台 https://t.co/7PY6gGtzgI 遭入侵而账户被攻陷，攻击者借此通过一系列操作横向移动，最终枚举并访问了被标记为“非敏感”的环境变量。",
+      "take": "AI 工具链已成为新的关键攻击面，其安全漏洞可直接威胁到集成方的核心系统。工程团队必须重新评估将任何外部 AI 服务或客户系统纳入内部工作流的风险，并严格审查“非敏感”环境变量的分类策略，因其在横向移动中可能成为薄弱环节。",
+      "topics": [
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-20-09-builder-theme-peter-yang-on-went-from-having-multiple-terminals-open-to-just-two-apps-open",
       "briefingId": "rss-2026-04-20",
       "date": "2026-04-20",
       "sourceType": "rss",
@@ -101,10 +173,10 @@
       "sourceName": "Peter Yang",
       "sourceUrl": "https://x.com/petergyang/status/2045909612315172936",
       "title": "Builder Theme: Peter Yang on Went from having multiple terminals open to just two apps open :)",
-      "summary": "Went from having multiple terminals open to just two apps open :) https://t.co/Wv8LXhRbnP。",
-      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "summary": "AI 构建者 Peter Yang 通过采用 Cursor 和 Warp 两款集成化开发工具，将原本分散在多终端中的工作流整合至两个核心应用中。",
+      "take": "这标志着开发环境正从离散的工具链向集成的、AI 原生工作空间演进。构建者应评估将代码编辑、终端操作、版本控制及 AI 辅助功能深度整合的 IDE 或编辑器，以降低上下文切换成本，提升开发流顺畅度。",
       "topics": [
-        "Agents",
+        "Coding Agents",
         "Evals",
         "Tooling"
       ],
