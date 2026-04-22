@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-22",
     "2026-04-21",
     "2026-04-20",
     "2026-04-19",
@@ -71,6 +72,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-22": {
+      "briefingIds": [
+        "rss-2026-04-22"
+      ],
+      "insightIds": [
+        "rss-2026-04-22-01-changes-to-github-copilot-individual-plans",
+        "rss-2026-04-22-02-how-to-ground-a-korean-ai-agent-in-real-demographics-with-synthetic-personas",
+        "rss-2026-04-22-03-our-eighth-generation-tpus-two-chips-for-the-agentic-era",
+        "rss-2026-04-22-04-kernel-code-removals-driven-by-llm-created-security-reports",
+        "rss-2026-04-22-05-reasoningbank-enabling-agents-to-learn-from-experience",
+        "rss-2026-04-22-06-gpt-image-2-on-ai-gateway",
+        "rss-2026-04-22-07-is-claude-code-going-to-cost-100month-probably-not-its-all-very-confusing",
+        "rss-2026-04-22-08-highlights-from-git-254",
+        "rss-2026-04-22-09-builder-theme-we-gave-every-employee-an-ai-agent-heres-what-happened",
+        "rss-2026-04-22-10-builder-theme-sam-altman-on-we-want-you-to-have-a-lot-of-ai",
+        "rss-2026-04-22-11-builder-theme-amjad-masad-on-update-on-my-lawsuit-against-congressman-randy-fine-he-tried-to-weas"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-21": {
       "briefingIds": [
         "rss-2026-04-21"
