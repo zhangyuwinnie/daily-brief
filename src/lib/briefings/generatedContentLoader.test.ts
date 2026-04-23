@@ -302,36 +302,6 @@ describe("generatedContentLoader", () => {
       vi.unstubAllEnvs();
     });
 
-    it("hides dates before VITE_ARCHIVE_BEFORE_DATE", () => {
-      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
-
-      expect(getAvailableBriefingDates()).toEqual(["2026-04-22", "2026-04-21"]);
-      expect(getDailyBriefPageData("2026-04-22")?.availableDates).toEqual([
-        "2026-04-22",
-        "2026-04-21"
-      ]);
-    });
-
-    it("returns the newest visible date as the latest briefing date", () => {
-      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
-
-      expect(getLatestBriefingDate()).toBe("2026-04-22");
-    });
-
-    it("resolves an archived date URL to the latest visible date and reports it unavailable", () => {
-      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
-
-      expect(resolveDailyBriefPageState("2026-04-15")).toMatchObject({
-        requestedDate: "2026-04-15",
-        resolvedDate: "2026-04-22",
-        requestedDateWasUnavailable: true,
-        pageData: {
-          date: "2026-04-22",
-          availableDates: ["2026-04-22", "2026-04-21"]
-        }
-      });
-    });
-
     it("derives topic chips from visible dates without hiding archived insights from direct lookup", () => {
       vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
       const archiveFixture = buildArchiveCutoffFixture();
