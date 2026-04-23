@@ -13,7 +13,7 @@ describe("daily brief workflow", () => {
 
     expect(workflow).toContain("name: Daily Brief");
     expect(workflow).toContain("workflow_dispatch:");
-    expect(workflow).toContain("- cron: '0 13 * * *'");
+    expect(workflow).toContain("- cron: '17 12 * * *'");
     expect(workflow).toContain("generate_audio:");
     expect(workflow).toContain('description: "Whether to run NotebookLM audio generation and publish audio outputs"');
     expect(workflow).toContain("type: boolean");
