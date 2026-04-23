@@ -483,5 +483,21 @@
     "status": "pending",
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-04-20"
+  },
+  "2026-04-21": {
+    "id": "audio-2026-04-21",
+    "briefingDate": "2026-04-21",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-21",
+    "audioUrl": "/generated/audio/2026-04-21.mp3"
+  },
+  "2026-04-22": {
+    "id": "audio-2026-04-22",
+    "briefingDate": "2026-04-22",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-04-22",
+    "audioUrl": "/generated/audio/2026-04-22.mp3"
   }
 }
