@@ -161,13 +161,13 @@ export function InsightSharePage() {
         >
           <h4 className="mb-2 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[color:var(--accent-strong)]">
             <Zap className="h-3.5 w-3.5" />
-            Core Insight
+            Summary
           </h4>
           <p className="text-base leading-8 text-[color:var(--text-base)]">{selectedInsight.summary}</p>
         </section>
 
         <section className="mt-8">
-          <p className="eyebrow mb-2">My Takeaway</p>
+          <p className="eyebrow mb-2">Core insight</p>
           <div className="flex gap-4">
             <div className="w-px rounded-full bg-[rgba(111,123,93,0.7)]" />
             <p className="display-title text-[2rem] italic font-medium leading-tight text-[color:var(--text-base)]">

@@ -80,7 +80,7 @@ test("navigation still works when tracking requests are intercepted", async ({ p
   await firstShareButton.click();
 
   await expect(page).toHaveURL(/\/insights\/.+/);
-  await expect(page.getByRole("heading", { name: "Build Idea" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Summary" })).toBeVisible();
   await expect.poll(() => trackRequests).toContainEqual(
     expect.objectContaining({ event: "card_share", category: "insight_card" })
   );

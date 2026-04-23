@@ -54,6 +54,10 @@ describe("InsightSharePage", () => {
     expect(html).toContain(escapeStaticMarkup(insight!.summary));
     expect(html).toContain(`href="${escapeStaticMarkup(insight!.sourceUrl ?? "")}"`);
     expect(html).toContain("Back to Today");
+    expect(html).toContain("Summary");
+    expect(html).toContain("Core insight");
+    expect(html).not.toContain("Core Insight");
+    expect(html).not.toContain("My Takeaway");
     expect(html).not.toContain("Why It Matters");
     expect(html).not.toContain("Build Idea");
     expect(html).not.toContain("No why-it-matters cue was extracted for this insight yet.");
