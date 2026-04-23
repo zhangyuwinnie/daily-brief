@@ -32,6 +32,7 @@ function resolveAudioUrl(relativeUrl: string | undefined): string | undefined {
 const GENERATED_BRIEFINGS_INDEX_PATH = "/generated/briefings-index.json";
 const GENERATED_AUDIO_INDEX_PATH = "/generated/audio-index.json";
 const GENERATED_BRIEFINGS_DIRECTORY_PATH = "/generated/briefings";
+const ARCHIVE_CUTOFF_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 const approvedTopicOrder = [
   "Agents",
   "Coding Agents",
@@ -51,6 +52,36 @@ let cachedDayRecords = new Map<string, GeneratedDayRecord>();
 let cachedDayRecordPromises = new Map<string, Promise<GeneratedDayRecord>>();
 let cachedFetchImplementation: typeof fetch | null = null;
 const generatedContentListeners = new Set<() => void>();
+
+function readArchiveCutoff() {
+  const raw = import.meta.env.VITE_ARCHIVE_BEFORE_DATE;
+
+  if (!raw) {
+    return null;
+  }
+
+  if (!ARCHIVE_CUTOFF_PATTERN.test(raw)) {
+    if (import.meta.env.DEV) {
+      console.warn(
+        `[generatedContentLoader] VITE_ARCHIVE_BEFORE_DATE="${raw}" is not YYYY-MM-DD; ignoring.`
+      );
+    }
+
+    return null;
+  }
+
+  return raw;
+}
+
+function filterVisibleDates(dates: readonly string[]) {
+  const cutoff = readArchiveCutoff();
+
+  if (!cutoff) {
+    return [...dates];
+  }
+
+  return dates.filter((date) => date >= cutoff);
+}
 
 function notifyGeneratedContentListeners() {
   generatedContentListeners.forEach((listener) => {
@@ -158,17 +189,25 @@ function getAllInsightsForSources(dataSources: GeneratedContentSources) {
   );
 }
 
+function getVisibleInsightsForSources(dataSources: GeneratedContentSources) {
+  return filterVisibleDates(dataSources.briefingsIndex.availableDates).flatMap(
+    (date) => getCachedDayRecord(date, dataSources)?.insights ?? []
+  );
+}
+
 function getAvailableTopicsForSources(dataSources: GeneratedContentSources) {
-  const derivedTopics = new Set(getAllInsightsForSources(dataSources).flatMap((insight) => insight.topics));
+  const derivedTopics = new Set(getVisibleInsightsForSources(dataSources).flatMap((insight) => insight.topics));
   return approvedTopicOrder.filter((topic) => derivedTopics.has(topic));
 }
 
 function resolveBriefingDate(requestedDate: string | undefined, dataSources: GeneratedContentSources) {
-  if (requestedDate && dataSources.briefingsIndex.byDate[requestedDate]) {
+  const visibleDates = filterVisibleDates(dataSources.briefingsIndex.availableDates);
+
+  if (requestedDate && dataSources.briefingsIndex.byDate[requestedDate] && visibleDates.includes(requestedDate)) {
     return requestedDate;
   }
 
-  return dataSources.briefingsIndex.availableDates[0] ?? null;
+  return visibleDates[0] ?? null;
 }
 
 function createDailyBriefPageData(
@@ -183,7 +222,7 @@ function createDailyBriefPageData(
 
   return {
     date,
-    availableDates: dataSources.briefingsIndex.availableDates,
+    availableDates: filterVisibleDates(dataSources.briefingsIndex.availableDates),
     briefings: day.briefings,
     insights: day.insights,
     audio: dataSources.audioIndex[date]
@@ -330,11 +369,11 @@ export function resetGeneratedContentSources() {
 }
 
 export function getAvailableBriefingDates(dataSources?: GeneratedContentSources) {
-  return requireGeneratedContentSources(dataSources).briefingsIndex.availableDates;
+  return filterVisibleDates(requireGeneratedContentSources(dataSources).briefingsIndex.availableDates);
 }
 
 export function getLatestBriefingDate(dataSources?: GeneratedContentSources) {
-  return requireGeneratedContentSources(dataSources).briefingsIndex.availableDates[0] ?? null;
+  return filterVisibleDates(requireGeneratedContentSources(dataSources).briefingsIndex.availableDates)[0] ?? null;
 }
 
 export function getResolvedBriefingDate(
@@ -362,9 +401,7 @@ export function resolveDailyBriefPageState(
 ): DailyBriefPageState {
   const resolvedSources = requireGeneratedContentSources(dataSources);
   const resolvedDate = resolveBriefingDate(requestedDate, resolvedSources);
-  const requestedDateWasUnavailable = Boolean(
-    requestedDate && !resolvedSources.briefingsIndex.byDate[requestedDate]
-  );
+  const requestedDateWasUnavailable = Boolean(requestedDate && requestedDate !== resolvedDate);
 
   if (!resolvedDate) {
     return {

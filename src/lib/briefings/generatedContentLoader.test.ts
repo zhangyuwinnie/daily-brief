@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
+  type GeneratedContentSources,
   getAvailableBriefingDates,
   getAvailableTopics,
   getAllInsights,
@@ -18,6 +19,102 @@ import {
 import { generatedContentFixture } from "../../test/generatedContentFixture";
 
 const { briefingsIndex, briefingsByDate, audioIndex } = generatedContentFixture;
+
+function buildArchiveCutoffFixture(): GeneratedContentSources {
+  return {
+    briefingsIndex: {
+      availableDates: ["2026-04-22", "2026-04-15"],
+      byDate: {
+        "2026-04-22": {
+          briefingIds: ["briefing-visible"],
+          insightIds: ["insight-visible"],
+          hasAudio: true,
+          sourceTypes: ["rss"]
+        },
+        "2026-04-15": {
+          briefingIds: ["briefing-archived"],
+          insightIds: ["insight-archived"],
+          hasAudio: true,
+          sourceTypes: ["rss"]
+        }
+      }
+    },
+    briefingsByDate: {
+      "2026-04-22": {
+        date: "2026-04-22",
+        briefings: [
+          {
+            id: "briefing-visible",
+            date: "2026-04-22",
+            sourceType: "rss",
+            title: "Visible Briefing",
+            filePath: "2026-04-22.md",
+            insightIds: ["insight-visible"]
+          }
+        ],
+        insights: [
+          {
+            id: "insight-visible",
+            briefingId: "briefing-visible",
+            date: "2026-04-22",
+            sourceType: "rss",
+            sourceLabel: "RSS",
+            title: "Visible Insight",
+            summary: "Visible summary",
+            take: "Visible take",
+            topics: ["Agents"],
+            entities: [],
+            isTopSignal: true
+          }
+        ]
+      },
+      "2026-04-15": {
+        date: "2026-04-15",
+        briefings: [
+          {
+            id: "briefing-archived",
+            date: "2026-04-15",
+            sourceType: "rss",
+            title: "Archived Briefing",
+            filePath: "2026-04-15.md",
+            insightIds: ["insight-archived"]
+          }
+        ],
+        insights: [
+          {
+            id: "insight-archived",
+            briefingId: "briefing-archived",
+            date: "2026-04-15",
+            sourceType: "rss",
+            sourceLabel: "RSS",
+            title: "Archived Insight",
+            summary: "Archived summary",
+            take: "Archived take",
+            topics: ["Tooling"],
+            entities: [],
+            isTopSignal: true
+          }
+        ]
+      }
+    },
+    audioIndex: {
+      "2026-04-22": {
+        id: "audio-visible",
+        briefingDate: "2026-04-22",
+        status: "ready",
+        provider: "notebooklm",
+        audioUrl: "/generated/audio/2026-04-22.mp3"
+      },
+      "2026-04-15": {
+        id: "audio-archived",
+        briefingDate: "2026-04-15",
+        status: "ready",
+        provider: "notebooklm",
+        audioUrl: "/generated/audio/2026-04-15.mp3"
+      }
+    }
+  };
+}
 
 describe("generatedContentLoader", () => {
   it("loads generated content from runtime public JSON endpoints and reuses the cached result", async () => {
@@ -198,6 +295,63 @@ describe("generatedContentLoader", () => {
 
   it("returns the latest available date from the generated index", () => {
     expect(getLatestBriefingDate()).toBe(briefingsIndex.availableDates[0]);
+  });
+
+  describe("archive cutoff", () => {
+    afterEach(() => {
+      vi.unstubAllEnvs();
+    });
+
+    it("hides dates before VITE_ARCHIVE_BEFORE_DATE", () => {
+      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
+
+      expect(getAvailableBriefingDates()).toEqual(["2026-04-22", "2026-04-21"]);
+      expect(getDailyBriefPageData("2026-04-22")?.availableDates).toEqual([
+        "2026-04-22",
+        "2026-04-21"
+      ]);
+    });
+
+    it("returns the newest visible date as the latest briefing date", () => {
+      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
+
+      expect(getLatestBriefingDate()).toBe("2026-04-22");
+    });
+
+    it("resolves an archived date URL to the latest visible date and reports it unavailable", () => {
+      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
+
+      expect(resolveDailyBriefPageState("2026-04-15")).toMatchObject({
+        requestedDate: "2026-04-15",
+        resolvedDate: "2026-04-22",
+        requestedDateWasUnavailable: true,
+        pageData: {
+          date: "2026-04-22",
+          availableDates: ["2026-04-22", "2026-04-21"]
+        }
+      });
+    });
+
+    it("derives topic chips from visible dates without hiding archived insights from direct lookup", () => {
+      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-04-21");
+      const archiveFixture = buildArchiveCutoffFixture();
+
+      expect(getAvailableTopics(archiveFixture)).toEqual(["Agents"]);
+      expect(getAllInsights(archiveFixture).map((insight) => insight.id)).toEqual([
+        "insight-visible",
+        "insight-archived"
+      ]);
+    });
+
+    it("ignores invalid cutoff strings instead of misfiltering dates", () => {
+      vi.stubEnv("VITE_ARCHIVE_BEFORE_DATE", "2026-4-21");
+      const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
+
+      expect(getAvailableBriefingDates()).toEqual(briefingsIndex.availableDates);
+      expect(warnSpy).toHaveBeenCalledWith(
+        '[generatedContentLoader] VITE_ARCHIVE_BEFORE_DATE="2026-4-21" is not YYYY-MM-DD; ignoring.'
+      );
+    });
   });
 
   it("returns explicit day payloads with typed audio when the selected date exists", () => {
