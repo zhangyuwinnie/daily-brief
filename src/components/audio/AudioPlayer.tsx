@@ -144,7 +144,7 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
         <button
           onClick={handleTogglePlayback}
           disabled={!isPlayable}
-          aria-label={isPlaying ? "Pause audio brief" : "Play audio brief"}
+          aria-label={isPlaying ? "Pause deep dive podcast" : "Play deep dive podcast"}
           className={`flex flex-shrink-0 items-center justify-center self-start rounded-full border transition-all duration-300 hover:scale-[1.03] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100 ${
             isCompact ? "h-12 w-12" : "h-14 w-14"
           }`}
@@ -160,10 +160,10 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
         <div className="min-w-0 flex-1">
           <div className={`${isCompact ? "mb-2" : "mb-3"} flex flex-wrap items-center justify-between gap-3`}>
             <div className="min-w-0">
-              {isCompact ? null : <p className="eyebrow mb-1">Audio brief</p>}
+              {isCompact ? null : <p className="eyebrow mb-1">THE DEEP DIVE PODCAST</p>}
               <h3 className="flex items-center gap-2 text-sm font-semibold text-[color:var(--text-strong)]">
                 <Headphones className="h-4 w-4" style={{ color: "var(--accent-strong)" }} />
-                Today&apos;s Audio Brief
+                Decode Today&apos;s AI Trends
               </h3>
             </div>
 

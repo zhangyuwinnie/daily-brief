@@ -309,10 +309,10 @@ export function TodayPage() {
             <div className="max-w-3xl">
               <p className="eyebrow mb-3">Daily dossier</p>
               <h2 className="display-title text-[2.8rem] font-semibold leading-[0.94] sm:text-[3.6rem]">
-                Today&apos;s Brief
+                Signal Distilled
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--text-muted)] sm:text-[15px]">
-                Scan the signal, listen once, and leave with a build direction.
+                Cut through the noise. Listen to the essence. Find your next build direction.
               </p>
             </div>
 
@@ -403,7 +403,7 @@ export function TodayPage() {
                   color: "var(--text-base)"
                 }}
               >
-                <h3 className="font-semibold text-[color:var(--text-strong)]">Audio brief unavailable</h3>
+                <h3 className="font-semibold text-[color:var(--text-strong)]">Deep dive podcast unavailable</h3>
                 <p className="mt-1">
                   {audioStatusNotice?.message ?? `Audio metadata is unavailable for ${pageData.date}.`}
                 </p>

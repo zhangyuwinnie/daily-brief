@@ -75,7 +75,7 @@ describe("AudioPlayer", () => {
     expect(audioElement).not.toBeNull();
     expect(audioElement?.getAttribute("src")).toBe("/generated/audio/2026-03-21.mp3");
     expect(playButton.disabled).toBe(false);
-    expect(playButton.getAttribute("aria-label")).toBe("Play audio brief");
+    expect(playButton.getAttribute("aria-label")).toBe("Play deep dive podcast");
     expect(container.textContent).toContain("00:00 / 02:00");
   });
 
@@ -99,7 +99,7 @@ describe("AudioPlayer", () => {
       category: "audio",
       label: "audio-2026-03-21"
     });
-    expect(playButton.getAttribute("aria-label")).toBe("Pause audio brief");
+    expect(playButton.getAttribute("aria-label")).toBe("Pause deep dive podcast");
 
     Object.defineProperty(audioElement, "currentTime", {
       configurable: true,
@@ -118,7 +118,7 @@ describe("AudioPlayer", () => {
     });
 
     expect(HTMLMediaElement.prototype.pause).toHaveBeenCalledTimes(1);
-    expect(playButton.getAttribute("aria-label")).toBe("Play audio brief");
+    expect(playButton.getAttribute("aria-label")).toBe("Play deep dive podcast");
   });
 
   it("disables playback and shows 'Playback unavailable' when audio element fires an error event", () => {

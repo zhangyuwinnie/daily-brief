@@ -17,7 +17,7 @@ const pendingAudioEntry = Object.entries(audioIndex).find(([, audio]) => audio.s
 
 const TEST_FIXTURE_PATH = join(import.meta.dirname, "../fixtures/audio/test-clip.mp3");
 
-test("plays a generated ready audio brief from /today", async ({ page }) => {
+test("plays a generated ready deep dive podcast from /today", async ({ page }) => {
   test.skip(!readyAudioEntry, "requires at least one ready audio date in the generated dataset");
 
   const [readyDate, readyAudio] = readyAudioEntry!;
@@ -34,16 +34,16 @@ test("plays a generated ready audio brief from /today", async ({ page }) => {
 
   await page.goto(`/today?date=${readyDate}`);
 
-  await expect(page.getByRole("heading", { name: "Today's Brief" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Signal Distilled" })).toBeVisible();
   await expect(page.getByText("Ready")).toBeVisible();
 
-  const playButton = page.getByRole("button", { name: "Play audio brief" });
+  const playButton = page.getByRole("button", { name: "Play deep dive podcast" });
   await expect(playButton).toBeEnabled();
   await expect(page.locator("audio")).toHaveAttribute("src", readyAudio.audioUrl!);
 
   await playButton.click();
 
-  await expect(page.getByRole("button", { name: "Pause audio brief" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Pause deep dive podcast" })).toBeVisible();
   await page.waitForFunction(() => {
     const audioElement = document.querySelector("audio");
     return Boolean(audioElement instanceof HTMLAudioElement && audioElement.currentTime > 0);
@@ -57,6 +57,6 @@ test("keeps pending generated audio visibly disabled on a pending generated day"
   await page.goto(`/today?date=${pendingDate}`);
 
   await expect(page.getByText("Generating...")).toBeVisible();
-  await expect(page.getByRole("button", { name: "Play audio brief" })).toBeDisabled();
+  await expect(page.getByRole("button", { name: "Play deep dive podcast" })).toBeDisabled();
   await expect(page.getByText(`Audio for ${pendingDate} is still generating.`)).toBeVisible();
 });

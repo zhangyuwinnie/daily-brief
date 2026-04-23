@@ -62,7 +62,7 @@ test("audio play fires a tracking request", async ({ page }) => {
 
   await page.goto(`/today?date=${readyDate}`);
 
-  const playButton = page.getByRole("button", { name: "Play audio brief" });
+  const playButton = page.getByRole("button", { name: "Play deep dive podcast" });
   await expect(playButton).toBeEnabled();
   await playButton.click();
 

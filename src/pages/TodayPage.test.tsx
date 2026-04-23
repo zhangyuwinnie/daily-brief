@@ -91,7 +91,7 @@ describe("TodayPage", () => {
     expect(html).toContain(escapeStaticMarkup(pageData!.insights[0].title));
     expect(html).toContain(`href="${escapeStaticMarkup(pageData!.insights[0].sourceUrl ?? "")}"`);
     expect(html).toContain(pageData!.audio?.status === "ready" ? "Ready" : "Generating...");
-    expect(html).toContain("Scan the signal, listen once, and leave with a build direction.");
+    expect(html).toContain("Cut through the noise. Listen to the essence. Find your next build direction.");
     expect(html).toContain('data-testid="today-brief-card"');
     expect(html).toContain('data-testid="today-brief-audio"');
     expect(html).toContain('data-testid="today-brief-meta"');
@@ -99,9 +99,9 @@ describe("TodayPage", () => {
     expect(html).toContain('aria-haspopup="listbox"');
     expect(html).toContain('aria-expanded="false"');
     expect(html.indexOf('data-testid="today-brief-audio"')).toBeGreaterThan(
-      html.indexOf("Scan the signal, listen once, and leave with a build direction.")
+      html.indexOf("Cut through the noise. Listen to the essence. Find your next build direction.")
     );
-    expect(html.indexOf('data-testid="today-brief-meta"')).toBeGreaterThan(html.indexOf("Today&#x27;s Brief"));
+    expect(html.indexOf('data-testid="today-brief-meta"')).toBeGreaterThan(html.indexOf("Signal Distilled"));
     expect(html.indexOf('data-testid="today-brief-meta"')).toBeLessThan(
       html.indexOf('data-testid="today-brief-audio"')
     );

@@ -31,7 +31,7 @@ test("switches dates from the recent briefs rail and updates the selected day co
 }) => {
   await page.goto("/today");
 
-  await expect(page.getByRole("heading", { name: "Today's Brief" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Signal Distilled" })).toBeVisible();
   await expect(page.getByText("A private briefing room for agent builders.")).toBeHidden();
   await expect(page.getByText("Operating mode")).toBeHidden();
   await expect(page.getByTestId("today-brief-audio")).toBeVisible();
