@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-23",
     "2026-04-22",
     "2026-04-21",
     "2026-04-20",
@@ -72,6 +73,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-23": {
+      "briefingIds": [
+        "rss-2026-04-23"
+      ],
+      "insightIds": [
+        "rss-2026-04-23-01-speeding-up-agentic-workflows-with-websockets-in-the-responses-api",
+        "rss-2026-04-23-02-introducing-workspace-agents-in-chatgpt",
+        "rss-2026-04-23-03-qwen36-27b-flagship-level-coding-in-a-27b-dense-model",
+        "rss-2026-04-23-04-i-checked-506-citations-from-chatgptclaude-gemini-deep-research-36-are-wrong",
+        "rss-2026-04-23-05-autoadapt-automated-domain-adaptation-for-large-language-models",
+        "rss-2026-04-23-06-quoting-bobby-holley",
+        "rss-2026-04-23-07-national-australia-bank-accelerates-legacy-migrations-with-cursor",
+        "rss-2026-04-23-08-work-with-the-garage-door-up",
+        "rss-2026-04-23-09-builder-theme-the-ai-sandwich-where-humans-excel-in-an-ai-world",
+        "rss-2026-04-23-10-builder-theme-claude-on-interactive-charts-and-diagrams-are-now-in-claude-cowork-available-i",
+        "rss-2026-04-23-11-builder-theme-sam-altman-on-these-are-cool-i-think-most-companies-will-want-to-use-them",
+        "rss-2026-04-23-12-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-22": {
       "briefingIds": [
         "rss-2026-04-22"

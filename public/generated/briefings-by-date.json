@@ -16354,5 +16354,255 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-23": {
+    "date": "2026-04-23",
+    "briefings": [
+      {
+        "id": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-23",
+        "filePath": "2026-04-23.md",
+        "summaryTopline": "Speeding up agentic workflows with WebSockets in the Responses API",
+        "insightIds": [
+          "rss-2026-04-23-01-speeding-up-agentic-workflows-with-websockets-in-the-responses-api",
+          "rss-2026-04-23-02-introducing-workspace-agents-in-chatgpt",
+          "rss-2026-04-23-03-qwen36-27b-flagship-level-coding-in-a-27b-dense-model",
+          "rss-2026-04-23-04-i-checked-506-citations-from-chatgptclaude-gemini-deep-research-36-are-wrong",
+          "rss-2026-04-23-05-autoadapt-automated-domain-adaptation-for-large-language-models",
+          "rss-2026-04-23-06-quoting-bobby-holley",
+          "rss-2026-04-23-07-national-australia-bank-accelerates-legacy-migrations-with-cursor",
+          "rss-2026-04-23-08-work-with-the-garage-door-up",
+          "rss-2026-04-23-09-builder-theme-the-ai-sandwich-where-humans-excel-in-an-ai-world",
+          "rss-2026-04-23-10-builder-theme-claude-on-interactive-charts-and-diagrams-are-now-in-claude-cowork-available-i",
+          "rss-2026-04-23-11-builder-theme-sam-altman-on-these-are-cool-i-think-most-companies-will-want-to-use-them",
+          "rss-2026-04-23-12-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-23-01-speeding-up-agentic-workflows-with-websockets-in-the-responses-api",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+        "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+        "summary": "OpenAI 在其 Responses API 中引入 WebSocket 和连接级缓存，以优化 Codex 智能体循环的 API 开销和模型延迟。",
+        "take": "开发者应评估其智能体工作流中 HTTP 轮询的延迟成本，并优先采用 WebSocket 长连接进行状态同步。连接级缓存策略可减少重复数据加载，这对提升循环交互型智能体的实时性至关重要。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-23-02-introducing-workspace-agents-in-chatgpt",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "title": "Introducing workspace agents in ChatGPT",
+        "summary": "OpenAI发布基于Codex的ChatGPT工作区代理，可在云端自动化复杂工作流并跨工具安全协作。",
+        "take": "这标志着AI代理从单任务聊天转向持久化、可扩展的多工具工作流执行，开发者应关注其API集成方式及安全边界控制，以构建团队级自动化流程。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-23-03-qwen36-27b-flagship-level-coding-in-a-27b-dense-model",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything",
+        "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+        "summary": "Qwen团队发布Qwen3.6-27B密集模型，以55.6GB大小在编码基准上超越前代旗舰MoE模型Qwen3.5-397B-A17B（807GB），通过纯密集架构实现旗舰级编码与智能体性能。",
+        "take": "这一进展证明密集模型通过优化训练与量化，可以在更小参数规模下达到甚至超越MoE模型的编码与智能体能力，开发者应优先评估密集模型作为本地部署或微调基线，尤其是在硬件受限但需高性能代理场景下。",
+        "topics": [
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-23-04-i-checked-506-citations-from-chatgptclaude-gemini-deep-research-36-are-wrong",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://spineframe.xyz/blog",
+        "title": "I checked 506 citations from ChatGPT,Claude, Gemini Deep Research- 36% are wrong",
+        "summary": "一项针对ChatGPT、Claude和Gemini Deep Research共506条引用的审查发现，36%的引用存在错误，包括虚构来源、错误归因和过时信息。",
+        "take": "当前AI模型生成引用时存在高比例的事实错误，开发者不应直接信任模型生成的引用，必须建立独立的验证流程。在设计AI工作流或代理系统时，应将引用验证作为强制步骤，例如通过API调用外部数据库或使用检索增强生成（RAG）来交叉核对事实。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-05-autoadapt-automated-domain-adaptation-for-large-language-models",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/autoadapt-automated-domain-adaptation-for-large-language-models/",
+        "title": "AutoAdapt: Automated domain adaptation for large language models",
+        "summary": "微軟研究團隊推出AutoAdapt框架，透過自動化領域適應機制，解決LLM在法務、醫療等專業領域中手動調整耗時且難以重現的核心問題。",
+        "take": "開發者應關注AutoAdapt如何將領域適應從人工特徵工程轉向自動化流程，這可能改變LLM在垂直領域部署的標準作業程序，特別是在需頻繁迭代知識的場景中，可大幅降低維護成本。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-06-quoting-bobby-holley",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything",
+        "title": "Quoting Bobby Holley",
+        "summary": "Mozilla与Anthropic合作，将早期版Claude Mythos Preview应用到Firefox，一次性修复了271个漏洞，展现了AI辅助代码审计的实际工程效果。",
+        "take": "大规模AI辅助漏洞挖掘不再是理论，而是已被验证的工程实践。开发者应重新评估安全审计流水线，将AI引入日常代码审查流程，优先落地于代码规模大、历史遗留问题多的关键组件，以快速获得可见回报。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-07-national-australia-bank-accelerates-legacy-migrations-with-cursor",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/nab",
+        "title": "National Australia Bank accelerates legacy migrations with Cursor",
+        "summary": "National Australia Bank（NAB）使用 Cursor 的 AI 辅助编码工具，基于大型代码库的上下文理解与自动化重构能力，加速了遗留系统的迁移过程。",
+        "take": "此案例验证了 AI 编码助手在企业级遗留系统迁移中的工程价值：关键在于工具对项目全局的语义理解与代码生成能力，而非孤立的重写。对建设者启示是，应选择能深度整合代码库并支持增量重构的 AI 工具，以降低大规模迁移的风险与成本。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-08-work-with-the-garage-door-up",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://notes.andymatuschak.org/Work_with_the_garage_door_up",
+        "title": "Work with the garage door up",
+        "summary": "Andy Matuschak 提出‘工作時把車庫門打開’的隱喻，倡導在開發過程中公開分享未完成、粗糙或失敗的工作，以促進協作與反饋。",
+        "take": "此做法能有效打破資訊孤島，減少重複勞動；對於AI建構者，可將此原則應用於開放模型訓練日誌、實驗失敗記錄或RAG管線的迭代過程，加速集體學習與除錯。",
+        "topics": [
+          "RAG"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-09-builder-theme-the-ai-sandwich-where-humans-excel-in-an-ai-world",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=G0LTv8hQ5Cs",
+        "title": "Builder Theme: The AI Sandwich: Where Humans Excel in an AI World",
+        "summary": "Kieran 和 Trevin 提出“AI 三明治”架构：人类负责创意与质量把控（面包），AI 自动化中间执行步骤（馅料），强调不能完全自动化以保留个人化核心。",
+        "take": "对于构建者，这是明确的混合工作流设计模式：将高价值、需个人判断的起始与收尾阶段保留给人类，将可重复、低风险的中间流程交给 AI。这意味着代理系统应设计为可插拔的自动化中间层，而非端到端的黑箱，从而在保持效率的同时确保输出唯一性和质量。”",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-10-builder-theme-claude-on-interactive-charts-and-diagrams-are-now-in-claude-cowork-available-i",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2047047633416397076",
+        "title": "Builder Theme: Claude on Interactive charts and diagrams are now in Claude Cowork. Available i...",
+        "summary": "Claude在Claude Cowork中推出了交互式图表和图表功能，目前对所有付费计划用户开放Beta测试。",
+        "take": "开发者现在可以在Claude工作流中直接生成并操作交互式图表，这可能改变数据分析与可视化任务的交互范式，使AI能迭代式地调整图表参数，提升数据探索效率。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-11-builder-theme-sam-altman-on-these-are-cool-i-think-most-companies-will-want-to-use-them",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2047017964105597009",
+        "title": "Builder Theme: Sam Altman on These are cool! I think most companies will want to use them.",
+        "summary": "Sam Altman公开支持某AI工具（链接未指明具体技术），暗示该工具将成为企业级广泛采用的标准组件。",
+        "take": "若该工具涉及Agent或工作流自动化，建议立即测试其与现有CI/CD管道的集成能力，评估是否可替换当前手动编排环节。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-23-12-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents",
+        "briefingId": "rss-2026-04-23",
+        "date": "2026-04-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude Blog",
+        "sourceUrl": "https://claude.com/blog/claude-code-desktop-redesign",
+        "title": "Builder Theme: Redesigning Claude Code on desktop for parallel agents",
+        "summary": "Anthropic 重新设计了 Claude Code 桌面应用，通过侧边栏管理多会话、拖拽布局、集成终端和文件编辑器，支持开发者在多个仓库间并行运行代理会话并切换。",
+        "take": "核心架构变化是引入了会话级隔离和并行化，允许开发者在同一桌面环境中同时运行多个独立的代理工作流。这意味着 AI 编码工具从单线程对话模型转向多任务编排模式，开发者需重新设计提示策略以适配异步、多 repo 的代理协作场景。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
