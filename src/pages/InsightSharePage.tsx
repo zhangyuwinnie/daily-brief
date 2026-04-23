@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowLeft, ExternalLink, Sparkles, Target, Zap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Sparkles, Zap } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import {
   getInsightById,
@@ -175,40 +175,6 @@ export function InsightSharePage() {
             </p>
           </div>
         </section>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
-          <section
-            className="rounded-[1.45rem] border p-5"
-            style={{
-              borderColor: "var(--border-soft)",
-              background: "rgba(250,247,241,0.92)"
-            }}
-          >
-            <h4 className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[color:var(--text-faint)]">
-              Why It Matters
-            </h4>
-            <p className="text-sm leading-7 text-[color:var(--text-muted)]">
-              {selectedInsight.whyItMatters ??
-                "No why-it-matters cue was extracted for this insight yet."}
-            </p>
-          </section>
-
-          <section
-            className="rounded-[1.45rem] border p-5"
-            style={{
-              borderColor: "rgba(111,123,93,0.18)",
-              background: "rgba(237,244,231,0.92)"
-            }}
-          >
-            <h4 className="mb-2 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[color:var(--accent-strong)]">
-              <Target className="h-3.5 w-3.5" />
-              Build Idea
-            </h4>
-            <p className="text-sm leading-7 text-[color:var(--text-base)]">
-              {selectedInsight.buildIdea ?? "No build idea was extracted for this insight yet."}
-            </p>
-          </section>
-        </div>
 
         <section
           className="mt-8 rounded-[1.45rem] border p-5"

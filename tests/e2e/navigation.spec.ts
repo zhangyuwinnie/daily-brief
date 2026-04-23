@@ -67,5 +67,6 @@ test("reloads a real permalink route without losing the selected insight", async
   await page.reload();
 
   await expect(page.getByText(permalinkInsight.title)).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Build Idea" })).toBeVisible();
+  await expect(page.getByText("Original Source")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Build Idea" })).toBeHidden();
 });

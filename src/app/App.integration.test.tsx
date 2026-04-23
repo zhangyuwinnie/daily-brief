@@ -198,6 +198,7 @@ describe("App integration", () => {
     expect(router.state.location.pathname).toBe(`/insights/${permalinkInsight.id}`);
     expect(getTextContent(container)).toContain(permalinkInsight.title);
     expect(getTextContent(container)).toContain(permalinkInsight.summary);
-    expect(getTextContent(container)).toContain("Build Idea");
+    expect(getTextContent(container)).toContain("Original Source");
+    expect(getTextContent(container)).not.toContain("Build Idea");
   });
 });

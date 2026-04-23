@@ -53,11 +53,11 @@ describe("InsightSharePage", () => {
     expect(html).toContain(escapeStaticMarkup(insight!.title));
     expect(html).toContain(escapeStaticMarkup(insight!.summary));
     expect(html).toContain(`href="${escapeStaticMarkup(insight!.sourceUrl ?? "")}"`);
-    expect(html).toContain("Why It Matters");
-    expect(html).toContain("Build Idea");
     expect(html).toContain("Back to Today");
-    expect(html).toContain("No why-it-matters cue was extracted for this insight yet.");
-    expect(html).toContain("No build idea was extracted for this insight yet.");
+    expect(html).not.toContain("Why It Matters");
+    expect(html).not.toContain("Build Idea");
+    expect(html).not.toContain("No why-it-matters cue was extracted for this insight yet.");
+    expect(html).not.toContain("No build idea was extracted for this insight yet.");
     expect(html).not.toContain("Download Poster");
     expect(html).not.toContain("Copy Link");
   });
