@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-24",
     "2026-04-23",
     "2026-04-22",
     "2026-04-21",
@@ -73,6 +74,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-24": {
+      "briefingIds": [
+        "rss-2026-04-24"
+      ],
+      "insightIds": [
+        "rss-2026-04-24-01-deepseek-v4-a-million-token-context-that-agents-can-actually-use",
+        "rss-2026-04-24-02-deepseek-v4-almost-on-the-frontier-a-fraction-of-the-price",
+        "rss-2026-04-24-03-a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-api",
+        "rss-2026-04-24-04-show-hn-agent-vault-open-source-credential-proxy-and-vault-for-agents",
+        "rss-2026-04-24-05-automations",
+        "rss-2026-04-24-06-deepseek-v4-on-ai-gateway",
+        "rss-2026-04-24-07-top-10-uses-for-codex-at-work",
+        "rss-2026-04-24-08-hear-your-agent-suffer-through-your-code",
+        "rss-2026-04-24-09-builder-theme-ep-85-has-ai-infra-stabilized-fm-vibe-shift-amp-whataposs-next-for-coding-agents",
+        "rss-2026-04-24-10-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-04-24-11-builder-theme-sam-altman-on-we-tried-a-new-thing-with-nvidia-to-roll-out-codex-across-a-whole-com",
+        "rss-2026-04-24-12-builder-theme-claude-on-memory-on-claude-managed-agents-is-now-in-public-beta-your-agents-ca"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-23": {
       "briefingIds": [
         "rss-2026-04-23"

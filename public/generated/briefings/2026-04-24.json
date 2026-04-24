@@ -1,0 +1,249 @@
+{
+  "date": "2026-04-24",
+  "briefings": [
+    {
+      "id": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-24",
+      "filePath": "2026-04-24.md",
+      "summaryTopline": "DeepSeek-V4: a million-token context that agents can actually use",
+      "insightIds": [
+        "rss-2026-04-24-01-deepseek-v4-a-million-token-context-that-agents-can-actually-use",
+        "rss-2026-04-24-02-deepseek-v4-almost-on-the-frontier-a-fraction-of-the-price",
+        "rss-2026-04-24-03-a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-api",
+        "rss-2026-04-24-04-show-hn-agent-vault-open-source-credential-proxy-and-vault-for-agents",
+        "rss-2026-04-24-05-automations",
+        "rss-2026-04-24-06-deepseek-v4-on-ai-gateway",
+        "rss-2026-04-24-07-top-10-uses-for-codex-at-work",
+        "rss-2026-04-24-08-hear-your-agent-suffer-through-your-code",
+        "rss-2026-04-24-09-builder-theme-ep-85-has-ai-infra-stabilized-fm-vibe-shift-amp-whataposs-next-for-coding-agents",
+        "rss-2026-04-24-10-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-04-24-11-builder-theme-sam-altman-on-we-tried-a-new-thing-with-nvidia-to-roll-out-codex-across-a-whole-com",
+        "rss-2026-04-24-12-builder-theme-claude-on-memory-on-claude-managed-agents-is-now-in-public-beta-your-agents-ca"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-24-01-deepseek-v4-a-million-token-context-that-agents-can-actually-use",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/deepseekv4",
+      "title": "DeepSeek-V4: a million-token context that agents can actually use",
+      "summary": "DeepSeek-V4 发布，支持百万级 token 上下文窗口，并针对智能体（Agent）场景优化了长文本推理与记忆检索机制。",
+      "take": "工程上需关注其稀疏注意力架构与显式记忆索引的实现，这直接影响了 Agent 在处理超长对话或文档时的长期依赖与状态管理能力，可借鉴以构建更可靠的自主工作流。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-24-02-deepseek-v4-almost-on-the-frontier-a-fraction-of-the-price",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything",
+      "title": "DeepSeek V4 - almost on the frontier, a fraction of the price",
+      "summary": "DeepSeek发布V4系列预览模型Pro与Flash，采用专家混合架构，Pro总参数1.6T（激活49B），Flash总参数284B（激活13B），上下文窗口1M tokens，采用MIT开源协议。",
+      "take": "Pro模型成为当前最大开源权重模型（1.6T），超过Kimi K2.6和GLM-5.1；Flash模型仅160GB，理论上可在128GB M5 MacBook Pro上运行，为本地部署高性能MoE模型提供新可能。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-24-03-a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-api",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/23/gpt-5-5/#atom-everything",
+      "title": "A pelican for GPT-5.5 via the semi-official Codex backdoor API",
+      "summary": "OpenAI通过半官方的Codex后门接口发布了GPT-5.5，未同步开放API，且在ChatGPT中测试受隐藏系统提示影响，Simon Willison利用Pelican基准测试揭露了这一点。",
+      "take": "GPT-5.5的发布揭示了模型评估中的噪声来源：ChatGPT等代理框架中的隐藏系统提示会扭曲基准测试结果。开发者应优先通过API而非GUI代理进行模型评测，并警惕OpenClaw等后门接口带来的安全与准确性风险。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-24-04-show-hn-agent-vault-open-source-credential-proxy-and-vault-for-agents",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/Infisical/agent-vault",
+      "title": "Show HN: Agent Vault – Open-source credential proxy and vault for agents",
+      "summary": "Infisical 开源了 Agent Vault，一个为 AI 代理设计的凭证代理与存储系统，通过安全代理中间件管理 API 密钥和敏感凭据，防止直接暴露给代理。",
+      "take": "对于构建需要外部 API 访问的代理流程，Agent Vault 提供了一种标准化的凭据管理范式，替代了硬编码或环境变量方式，从而提升安全性与可审计性。开发者应评估将其整合到代理工具链中，以集中控制凭据生命周期并降低泄露风险。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-05-automations",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "OpenAI Codex 推出了基于计划与触发器的自动化功能，允许开发者无需手动干预即可创建报告、摘要和定期工作流。",
+      "take": "这标志着 AI 编程助手从被动响应转向主动编排，开发者应重点掌握事件驱动的工作流设计模式，将 Codex 作为任务调度核心来构建日常运维流水线。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-06-deepseek-v4-on-ai-gateway",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/deepseek-v4-on-ai-gateway",
+      "title": "Deepseek V4 on AI Gateway",
+      "summary": "Vercel AI Gateway 新增 DeepSeek V4 Pro 和 V4 Flash 两款模型，均支持 1M token 上下文窗口，其中 Pro 聚焦智能体编码与长周期工作流，Flash 以更小参数规模在推理上接近 Pro 并降低成本。",
+      "take": "DeepSeek V4 Pro 的 1M 上下文与工具调用能力使其可原生支持 MCP 工作流，适合构建需跨栈维护长上下文状态的智能体；V4 Flash 则适用于高吞吐、低延迟的推理任务，开发者可根据任务复杂度在成本与性能间弹性切换。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-07-top-10-uses-for-codex-at-work",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "OpenAI发布了Codex的10个企业级工作流用例，聚焦于通过自然语言指令自动操作工具、文件和跨系统流程。",
+      "take": "Codex将AI从代码生成扩展到多工具编排层，开发者应重点利用其将非结构化输入（如会议记录、邮件）直接转化为结构化输出（如表格、报告）的能力。这种模式本质上是将Agent的‘感知-规划-执行’闭环封装为可复用的工作流模板，而非简单API调用。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-08-hear-your-agent-suffer-through-your-code",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/AndrewVos/endless-toil",
+      "title": "Hear your agent suffer through your code",
+      "summary": "开发者AndrewVos发布了一个名为endless-toil的工具，利用AI智能体在循环中执行用户代码并实时输出痛苦或错误消息，模拟代码失败过程。",
+      "take": "该工具通过让AI智能体不断重试并生成错误日志，暴露出当前代码执行反馈机制的局限性，提示开发者可构建基于失败迭代的智能体调试管道，用于自动化压力测试或错误模式识别。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-09-builder-theme-ep-85-has-ai-infra-stabilized-fm-vibe-shift-amp-whataposs-next-for-coding-agents",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/@RedpointAI",
+      "title": "Builder Theme: Ep 85: Has AI Infra Stabilized, FM Vibe Shift, &amp; What&apos;s Next for Coding Agents",
+      "summary": "Redpoint的播客指出，2025年是AI编程代理元年，2026年将进入编程代理突破界限、接管非编码任务的阶段，并警告中型初创公司可能被基础模型厂商侵蚀。",
+      "take": "开发者在2026年应关注如何将现有编程代理架构（如代码补全、调试）扩展至跨领域任务（如测试自动化、基础设施编排），并评估基础模型供应商直接整合这些能力的风险，优先构建不可替代的垂直整合或数据网络效应。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-10-builder-theme-an-update-on-recent-claude-code-quality-reports",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "title": "Builder Theme: An update on recent Claude Code quality reports",
+      "summary": "Anthropic 确认过去一个月用户报告的 Claude 质量下降源于三个独立的产品层变更（包括将 Claude Code 默认推理努力从高调至中），而非 API 或推理层问题，已于 4 月 20 日修复。",
+      "take": "前端产品设置（如推理努力级别）会显著影响用户感知的模型质量，而非模型本身退化。AI 构建者应将推理参数（如 effort/temperature）暴露为可配置项，并在默认值改变时添加监控和回滚机制，避免因默认值调整导致用户体验下降。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-11-builder-theme-sam-altman-on-we-tried-a-new-thing-with-nvidia-to-roll-out-codex-across-a-whole-com",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2047395562501411058",
+      "title": "Builder Theme: Sam Altman on We tried a new thing with NVIDIA to roll out Codex across a whole com...",
+      "summary": "Sam Altman 与 NVIDIA 合作，将 Codex 部署到整个公司，验证了企业级 AI 编码助手的大规模 rollout 模式。",
+      "take": "这暗示了企业级 AI 工具部署的新范式：通过与硬件供应商（NVIDIA）联合优化，实现全公司范围的模型集成。AI 构建者应关注基础设施级合作，而非仅依赖 API 调用，以提升规模化后的稳定性与性能。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-24-12-builder-theme-claude-on-memory-on-claude-managed-agents-is-now-in-public-beta-your-agents-ca",
+      "briefingId": "rss-2026-04-24",
+      "date": "2026-04-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2047421844311949513",
+      "title": "Builder Theme: Claude on Memory on Claude Managed Agents is now in public beta. Your agents ca...",
+      "summary": "Claude Managed Agents 公开测试版推出智能优化记忆层，使代理能跨会话持续学习，平衡性能与灵活性。",
+      "take": "开发者现可在托管代理中启用持久记忆，避免每次交互从零开始；关键在于利用该记忆层存储用户偏好或上下文，提升多轮任务连贯性，但需注意记忆存储与检索的工程权衡。",
+      "topics": [
+        "Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
