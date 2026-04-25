@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-25",
     "2026-04-24",
     "2026-04-23",
     "2026-04-22",
@@ -74,6 +75,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-25": {
+      "briefingIds": [
+        "rss-2026-04-25"
+      ],
+      "insightIds": [
+        "rss-2026-04-25-01-quoting-romain-huet",
+        "rss-2026-04-25-02-gpt-55-prompting-guide",
+        "rss-2026-04-25-03-google-plans-to-invest-up-to-40b-in-anthropic",
+        "rss-2026-04-25-04-open-source-memory-layer-so-any-ai-agent-can-do-what-claudeai-and-chatgpt-do",
+        "rss-2026-04-25-05-gpt-55-on-ai-gateway",
+        "rss-2026-04-25-06-builder-theme-sap-bringing-the-operating-system-of-a-company-into-the-ai-era-with-cto-philipp-herzig",
+        "rss-2026-04-25-07-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-04-25-08-builder-theme-sam-altman-on-gpt-55-and-gpt-55-pro-are-now-available-in-the-api",
+        "rss-2026-04-25-09-builder-theme-aaron-levie-on-if-ai-can-make-employees-more-productive-which-is-widely-accepted-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-24": {
       "briefingIds": [
         "rss-2026-04-24"
