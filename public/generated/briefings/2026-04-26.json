@@ -1,0 +1,111 @@
+{
+  "date": "2026-04-26",
+  "briefings": [
+    {
+      "id": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-26",
+      "filePath": "2026-04-26.md",
+      "summaryTopline": "llm 0.31",
+      "insightIds": [
+        "rss-2026-04-26-01-llm-031",
+        "rss-2026-04-26-02-the-people-do-not-yearn-for-automation",
+        "rss-2026-04-26-03-builder-theme-scaling-global-organizations-in-the-age-of-ai-with-servicenow-ceo-bill-mcdermott",
+        "rss-2026-04-26-04-builder-theme-sam-altman-on-we-still-get-looksmaxxed-on-frontend-a-little-but-we-iqmog-hard-now",
+        "rss-2026-04-26-05-builder-theme-aaron-levie-on-great-read-ai-lets-you-get-tremendous-leverage-that-wasnt-available"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-26-01-llm-031",
+      "briefingId": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/llm/#atom-everything",
+      "title": "llm 0.31",
+      "summary": "Simon Willison 发布 llm 0.31 版本，新增对 OpenAI GPT-5.5 模型的支持，并引入文本冗长级别（verbosity low/medium/high）和图像细节级别（image_detail low/high/auto/original）两个可调节参数，同时将外部模型配置文件中的模型注册为异步调用。",
+      "take": "开发者可通过 -o verbosity 和 -o image_detail 参数精细控制 GPT-5+ 模型的输出详细程度和图像处理精度，适用于多模态 Agent 场景中按需平衡成本与信息密度；外部模型异步注册机制简化了非官方模型的集成，建议在自定义工具链中利用 async 调用提升并发处理效率。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-26-02-the-people-do-not-yearn-for-automation",
+      "briefingId": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything",
+      "title": "The people do not yearn for automation",
+      "summary": "Nilay Patel的论文指出，AI在大众中不受欢迎的原因是‘软件大脑’思维（将世界视为可自动化的信息流）与普通用户需求脱节，尽管ChatGPT使用量激增。",
+      "take": "构建者需警惕将自动化强加于用户流程，而应聚焦于AI作为‘增强工具’而非‘替代方案’的设计范式；核心工程挑战是识别用户真正需要保留的‘手动控制感’并保留交互中的透明度与自主权。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-26-03-builder-theme-scaling-global-organizations-in-the-age-of-ai-with-servicenow-ceo-bill-mcdermott",
+      "briefingId": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=tNNFJa5pUEg",
+      "title": "Builder Theme: Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott",
+      "summary": "ServiceNow CEO Bill McDermott 在播客中主张，企业不应尝试用大语言模型直接替代现有SaaS平台，因为在一个简单应用上使用LLM重构的成本是保留该平台的10倍以上，且企业对软件错误的容忍度远低于对人错误的容忍度。",
+      "take": "核心工程信号：对于存量企业应用，直接用LLM重写不经济且风险高；更优策略是构建代理层，让LLM编排现有API和流程，而非替换底层平台。开发AI工作流时应优先考虑与现有SaaS的集成，而非从头构建。计算总成本时，需纳入平台替换成本、人力机会成本和算力消耗，三者叠加远超维系原系统的代价。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-26-04-builder-theme-sam-altman-on-we-still-get-looksmaxxed-on-frontend-a-little-but-we-iqmog-hard-now",
+      "briefingId": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2048160404376105179",
+      "title": "Builder Theme: Sam Altman on we still get looksmaxxed on frontend a little but we IQmog hard now",
+      "summary": "Sam Altman表示，AI当前在前端交互设计上仍存在不足（被“颜值碾压”），但在核心智能能力（IQ）上已实现显著超越。",
+      "take": "对AI构建者而言，核心信号是：当前瓶颈在于前端交互体验与用户界面设计，而非底层模型智能。开发重点应转向优化UI/UX以匹配模型能力，或探索通过Agentic工作流绕过前端限制直接提升用户价值。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-26-05-builder-theme-aaron-levie-on-great-read-ai-lets-you-get-tremendous-leverage-that-wasnt-available",
+      "briefingId": "rss-2026-04-26",
+      "date": "2026-04-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2048223146063609965",
+      "title": "Builder Theme: Aaron Levie on Great read. AI lets you get tremendous leverage that wasn’t available...",
+      "summary": "Aaron Levie指出AI赋予任何领域的从业者前所未有的杠杆效应，使具备核心技能和野心的个体（无论资深或初级）能跨越传统经验壁垒，实现远超以往的工作成果。",
+      "take": "企业应主动识别并重用这类能借助AI放大自身能力的“异类”人才，将其置于关键岗位以获取竞争优势。对AI构建者而言，核心杠杆在于利用AI工具压缩技能-经验鸿沟，将精力聚焦于高层次决策与创意执行而非流程性知识积累。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

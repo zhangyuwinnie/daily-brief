@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-26",
     "2026-04-25",
     "2026-04-24",
     "2026-04-23",
@@ -75,6 +76,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-26": {
+      "briefingIds": [
+        "rss-2026-04-26"
+      ],
+      "insightIds": [
+        "rss-2026-04-26-01-llm-031",
+        "rss-2026-04-26-02-the-people-do-not-yearn-for-automation",
+        "rss-2026-04-26-03-builder-theme-scaling-global-organizations-in-the-age-of-ai-with-servicenow-ceo-bill-mcdermott",
+        "rss-2026-04-26-04-builder-theme-sam-altman-on-we-still-get-looksmaxxed-on-frontend-a-little-but-we-iqmog-hard-now",
+        "rss-2026-04-26-05-builder-theme-aaron-levie-on-great-read-ai-lets-you-get-tremendous-leverage-that-wasnt-available"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-25": {
       "briefingIds": [
         "rss-2026-04-25"
