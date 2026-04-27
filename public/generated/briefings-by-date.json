@@ -17152,5 +17152,157 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-04-27": {
+    "date": "2026-04-27",
+    "briefings": [
+      {
+        "id": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-04-27",
+        "filePath": "2026-04-27.md",
+        "summaryTopline": "The next phase of the Microsoft OpenAI partnership – OpenAI",
+        "insightIds": [
+          "rss-2026-04-27-01-the-next-phase-of-the-microsoft-openai-partnership-openai",
+          "rss-2026-04-27-02-show-hn-oss-agent-i-built-topped-the-terminalbench-on-gemini-3-flash-preview",
+          "rss-2026-04-27-03-how-to-build-scalable-web-apps-with-openais-privacy-filter",
+          "rss-2026-04-27-04-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+          "rss-2026-04-27-05-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+          "rss-2026-04-27-06-builder-theme-sam-altman-on-feels-like-a-good-time-to-seriously-rethink-how-operating-systems-and",
+          "rss-2026-04-27-07-builder-theme-swyx-on"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-04-27-01-the-next-phase-of-the-microsoft-openai-partnership-openai",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://openai.com/index/next-phase-of-microsoft-partnership/",
+        "title": "The next phase of the Microsoft OpenAI partnership – OpenAI",
+        "summary": "微软与OpenAI宣布合作协议进入下一阶段，核心变更包括微软获得OpenAI新模型API的独家云服务权，并调整独家供应商条款以允许OpenAI在特定条件下使用其他平台。",
+        "take": "工程上需关注：1) 微软Azure成为OpenAI模型推理的唯一云底座，任何依赖多云API路由的Agent或工具链需重新评估延迟与成本模型；2) 协议允许OpenAI自建或第三方算力集群用于研究，可能催生非微软生态的推理优化方案，开发者应监控新API端点出现时的兼容性变更。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-27-02-show-hn-oss-agent-i-built-topped-the-terminalbench-on-gemini-3-flash-preview",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://github.com/dirac-run/dirac",
+        "title": "Show HN: OSS Agent I built topped the TerminalBench on Gemini-3-flash-preview",
+        "summary": "开源AI代理项目dirac在Gemini-3-flash-preview模型的TerminalBench基准测试中取得最高分，通过自然语言接口实现终端命令执行与工作流自动化。",
+        "take": "该代理架构证明了结合Gemini-3-flash-preview的推理能力与终端交互模式的有效性，为开发者在构建命令行级AI代理时提供了可复用的参考实现。建议关注其如何管理上下文窗口和错误恢复机制，以提升代理在复杂终端任务中的鲁棒性。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-27-03-how-to-build-scalable-web-apps-with-openais-privacy-filter",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+        "title": "How to build scalable web apps with OpenAI's Privacy Filter",
+        "summary": "OpenAI 发布了 Privacy Filter，一种基于端侧分类器的机制，允许开发者在使用 OpenAI API 构建 Web 应用时，在发送数据前本地过滤敏感信息，从而满足隐私合规要求。",
+        "take": "该机制通过预加载的轻量级模型在客户端执行分类与脱敏，将隐私决策从云端前移到设备端，是构建合规 AI 产品时替换数据最小化策略的工程范式。开发者应将其集成到数据管道的预处理层，而非依赖后处理或承诺。”",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-04-27-04-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=Q-i8ZSUCtIc",
+        "title": "Builder Theme: The AI Model Built for What LLMs Can't Do",
+        "summary": "Yann LeCun 团队提出基于能量模型（EBM）的非自回归架构，其核心机制是在推理时对整个输出空间进行全局能量评估，而非逐 token 生成，从而避免自回归模型因局部决策导致的错误累积与幻觉。",
+        "take": "EBM 的关键工程优势在于其非自回归性：模型可以在生成前「俯瞰」所有可能的输出路径并选择全局能量最低的解，这对需要高可靠性（如推理、规划）的 Agent 工作流是根本范式转变。开发者应关注如何将 EBMs 与现有扩散或评分匹配训练流程结合，以实现可控的、非顺序的决策输出。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-27-05-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+        "summary": "Anthropic 为 Claude Code 引入 auto mode，通过沙箱隔离危险操作而非跳过权限，在安全与开发者效率间提供中间路径。",
+        "take": "沙箱模式比--dangerously-skip-permissions更安全，但需为每项新能力手动配置隔离策略；对需要网络或宿主机访问的场景，沙箱会失效，此时开发者应评估风险而非盲目绕过权限提示。",
+        "topics": [
+          "Coding Agents",
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-27-06-builder-theme-sam-altman-on-feels-like-a-good-time-to-seriously-rethink-how-operating-systems-and",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2048428561481265539",
+        "title": "Builder Theme: Sam Altman on feels like a good time to seriously rethink how operating systems and...",
+        "summary": "Sam Altman认为当前是重新设计操作系统、用户界面及互联网协议的关键时机，提出需构建一个人类与AI智能体可平等使用的协议。",
+        "take": "这表明AI原生操作系统和双向协议（人类↔智能体）将成为下一代基础架构的核心。开发者应关注无UI交互、统一身份与权限的协议层设计，而非仅优化现有UI。这实质上是要求将AI智能体视为一等公民嵌入系统底层，而非作为应用层的附加功能。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-04-27-07-builder-theme-swyx-on",
+        "briefingId": "rss-2026-04-27",
+        "date": "2026-04-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Swyx",
+        "sourceUrl": "https://x.com/swyx/status/2048466589847273697",
+        "title": "Builder Theme: Swyx on",
+        "summary": "Swyx 提出AI构建者主题，强调从第一性原理出发，聚焦技术机制而非表层叙事，以推动开发者工具链与智能体能力的实用演进。",
+        "take": "核心工程启示是：在AI开发中，优先提取底层架构模式，避免被市场噪音干扰。具体实践上，应关注模型推理效率、工具链集成度及智能体工作流的可重复性，以此驱动实际产出。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

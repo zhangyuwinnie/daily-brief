@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-27",
     "2026-04-26",
     "2026-04-25",
     "2026-04-24",
@@ -76,6 +77,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-27": {
+      "briefingIds": [
+        "rss-2026-04-27"
+      ],
+      "insightIds": [
+        "rss-2026-04-27-01-the-next-phase-of-the-microsoft-openai-partnership-openai",
+        "rss-2026-04-27-02-show-hn-oss-agent-i-built-topped-the-terminalbench-on-gemini-3-flash-preview",
+        "rss-2026-04-27-03-how-to-build-scalable-web-apps-with-openais-privacy-filter",
+        "rss-2026-04-27-04-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "rss-2026-04-27-05-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-04-27-06-builder-theme-sam-altman-on-feels-like-a-good-time-to-seriously-rethink-how-operating-systems-and",
+        "rss-2026-04-27-07-builder-theme-swyx-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-26": {
       "briefingIds": [
         "rss-2026-04-26"
