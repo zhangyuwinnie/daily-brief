@@ -239,4 +239,64 @@ describe("AudioPlayer", () => {
 
     expect(currentTimeValue).toBe(30);
   });
+
+  it("commits pointer scrubbing on release for the seek slider", () => {
+    renderAudioPlayer(readyAudio);
+
+    const audioElement = container.querySelector("audio");
+    const slider = container.querySelector('input[type="range"]');
+
+    if (!(audioElement instanceof HTMLAudioElement)) {
+      throw new Error("Expected audio element to exist for ready audio.");
+    }
+
+    if (!(slider instanceof HTMLInputElement)) {
+      throw new Error("Expected range input to exist for ready audio.");
+    }
+
+    let currentTimeValue = 0;
+    Object.defineProperty(audioElement, "currentTime", {
+      configurable: true,
+      get() {
+        return currentTimeValue;
+      },
+      set(value: number) {
+        currentTimeValue = value;
+      }
+    });
+    Object.defineProperty(audioElement, "duration", {
+      configurable: true,
+      value: readyAudio.durationSec
+    });
+
+    slider.setPointerCapture = vi.fn();
+    slider.releasePointerCapture = vi.fn();
+    slider.hasPointerCapture = vi.fn().mockReturnValue(true);
+
+    const pointerDownEvent = new Event("pointerdown", { bubbles: true });
+    Object.defineProperty(pointerDownEvent, "pointerId", {
+      configurable: true,
+      value: 1
+    });
+
+    const pointerUpEvent = new Event("pointerup", { bubbles: true });
+    Object.defineProperty(pointerUpEvent, "pointerId", {
+      configurable: true,
+      value: 1
+    });
+
+    act(() => {
+      slider.value = "15";
+      slider.dispatchEvent(pointerDownEvent);
+      slider.dispatchEvent(new Event("input", { bubbles: true }));
+    });
+
+    expect(currentTimeValue).toBe(0);
+
+    act(() => {
+      slider.dispatchEvent(pointerUpEvent);
+    });
+
+    expect(currentTimeValue).toBe(18);
+  });
 });

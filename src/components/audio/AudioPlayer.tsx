@@ -1,5 +1,5 @@
 import { Headphones, Pause, Play } from "lucide-react";
-import { type FormEvent, useEffect, useRef, useState } from "react";
+import { type FormEvent, type PointerEvent as ReactPointerEvent, useEffect, useRef, useState } from "react";
 import { trackEvent } from "../../lib/analytics";
 import type { DailyAudio } from "../../types/models";
 import { clearAudioProgress, readAudioProgress, writeAudioProgress } from "./audioProgressStorage";
@@ -34,6 +34,7 @@ function getSeekDuration(audioElement: HTMLAudioElement | null, fallbackDuration
 
 export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const sliderRef = useRef<HTMLInputElement | null>(null);
   const isPointerScrubbingRef = useRef(false);
   const restoredAudioIdRef = useRef<string | null>(null);
   const lastPersistedTimeSecRef = useRef(0);
@@ -279,25 +280,85 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
     handleSliderValueChange(Number(event.currentTarget.value));
   };
 
-  const handleSliderPointerDown = () => {
+  const handleSliderPointerDown = (event: ReactPointerEvent<HTMLInputElement>) => {
     isPointerScrubbingRef.current = true;
-    setScrubProgress(progress);
+    setScrubProgress(Number(event.currentTarget.value) || progress);
+
+    if (event.currentTarget.setPointerCapture) {
+      event.currentTarget.setPointerCapture(event.pointerId);
+    }
   };
 
-  const handleSliderPointerUp = () => {
+  const handleSliderPointerUp = (event?: ReactPointerEvent<HTMLInputElement>) => {
     if (!isPointerScrubbingRef.current) {
       return;
     }
 
+    if (event?.currentTarget.releasePointerCapture && event.currentTarget.hasPointerCapture?.(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+
     isPointerScrubbingRef.current = false;
 
-    if (scrubProgress !== null) {
-      commitSeekProgress(scrubProgress);
+    const sliderValue =
+      event?.currentTarget?.value !== undefined
+        ? Number(event.currentTarget.value)
+        : sliderRef.current
+          ? Number(sliderRef.current.value)
+          : scrubProgress;
+
+    if (sliderValue !== null && Number.isFinite(sliderValue)) {
+      commitSeekProgress(sliderValue);
       return;
     }
 
     setScrubProgress(null);
   };
+
+  const handleSliderPointerCancel = (event: ReactPointerEvent<HTMLInputElement>) => {
+    handleSliderPointerUp(event);
+  };
+
+  const handleSliderChange = (event: FormEvent<HTMLInputElement>) => {
+    const nextProgress = Number(event.currentTarget.value);
+
+    if (!Number.isFinite(nextProgress)) {
+      return;
+    }
+
+    if (isPointerScrubbingRef.current) {
+      handleSliderPointerUp();
+      return;
+    }
+
+    commitSeekProgress(nextProgress);
+  };
+
+  useEffect(() => {
+    const flushPointerScrub = () => {
+      if (!isPointerScrubbingRef.current) {
+        return;
+      }
+
+      const sliderElement = sliderRef.current;
+      const nextProgress = sliderElement ? Number(sliderElement.value) : scrubProgress;
+
+      isPointerScrubbingRef.current = false;
+
+      if (Number.isFinite(nextProgress)) {
+        commitSeekProgress(nextProgress ?? 0);
+        return;
+      }
+
+      setScrubProgress(null);
+    };
+
+    window.addEventListener("pointerup", flushPointerScrub);
+
+    return () => {
+      window.removeEventListener("pointerup", flushPointerScrub);
+    };
+  }, [scrubProgress, effectiveDurationSec]);
 
   return (
     <section
@@ -376,12 +437,11 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
             </div>
           </div>
 
-          <div
-            className={`relative h-2.5 overflow-hidden rounded-full ${
-              isPlayable ? "cursor-pointer" : "cursor-not-allowed"
-            }`}
-            style={{ background: "rgba(90,72,50,0.12)" }}
-          >
+          <div className={`relative ${isPlayable ? "cursor-pointer" : "cursor-not-allowed"} h-10`}>
+            <div
+              className="absolute inset-x-0 top-1/2 h-2.5 -translate-y-1/2 overflow-hidden rounded-full"
+              style={{ background: "rgba(90,72,50,0.12)" }}
+            >
             <div
               className="absolute inset-y-0 left-0 rounded-full transition-all duration-300 ease-linear"
               style={{
@@ -389,19 +449,23 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
                 background: "linear-gradient(90deg, rgba(82,92,68,0.95), rgba(126,139,108,0.95))"
               }}
             />
+            </div>
             <input
+              ref={sliderRef}
               type="range"
               min={0}
               max={100}
               step={0.1}
               value={visibleProgress}
               onInput={handleSliderInput}
+              onChange={handleSliderChange}
               onPointerDown={handleSliderPointerDown}
               onPointerUp={handleSliderPointerUp}
-              onPointerCancel={handleSliderPointerUp}
+              onPointerCancel={handleSliderPointerCancel}
               disabled={!isPlayable}
               aria-label="Seek deep dive podcast"
               className="absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0 disabled:cursor-not-allowed"
+              style={{ touchAction: "none" }}
             />
           </div>
         </div>

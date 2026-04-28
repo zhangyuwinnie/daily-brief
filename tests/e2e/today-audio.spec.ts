@@ -132,3 +132,42 @@ test("keeps pending generated audio visibly disabled on a pending generated day"
   await expect(page.getByRole("button", { name: "Play deep dive podcast" })).toBeDisabled();
   await expect(page.getByText(`Audio for ${pendingDate} is still generating.`)).toBeVisible();
 });
+
+test.describe("mobile audio controls", () => {
+  test.use({
+    viewport: { width: 390, height: 844 },
+    hasTouch: true,
+    isMobile: true
+  });
+
+  test("seeks the podcast from a touch tap on mobile", async ({ page }) => {
+    test.skip(!readyAudioEntry, "requires at least one ready audio date in the generated dataset");
+
+    const [readyDate, readyAudio] = readyAudioEntry!;
+
+    await routeAudioFixtureIfNeeded(page, readyAudio.audioUrl!);
+    await page.goto(`/today?date=${readyDate}`);
+
+    const slider = page.getByRole("slider", { name: "Seek deep dive podcast" });
+    await expect(slider).toBeVisible();
+
+    const box = await slider.boundingBox();
+    if (!box) {
+      throw new Error("Expected mobile seek slider to have a bounding box.");
+    }
+
+    await page.touchscreen.tap(box.x + box.width * 0.72, box.y + box.height / 2);
+
+    await page.waitForFunction(() => {
+      const audioElement = document.querySelector("audio");
+      return Boolean(audioElement instanceof HTMLAudioElement && audioElement.currentTime > 0);
+    });
+
+    const currentTime = await page.evaluate(() => {
+      const audioElement = document.querySelector("audio");
+      return audioElement instanceof HTMLAudioElement ? audioElement.currentTime : 0;
+    });
+
+    expect(currentTime).toBeGreaterThan(30);
+  });
+});
