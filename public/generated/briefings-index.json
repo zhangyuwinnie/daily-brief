@@ -1,5 +1,9 @@
 {
   "availableDates": [
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
     "2026-04-23",
     "2026-04-22",
     "2026-04-21",
@@ -73,6 +77,83 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-27": {
+      "briefingIds": [
+        "rss-2026-04-27"
+      ],
+      "insightIds": [
+        "rss-2026-04-27-01-the-next-phase-of-the-microsoft-openai-partnership-openai",
+        "rss-2026-04-27-02-show-hn-oss-agent-i-built-topped-the-terminalbench-on-gemini-3-flash-preview",
+        "rss-2026-04-27-03-how-to-build-scalable-web-apps-with-openais-privacy-filter",
+        "rss-2026-04-27-04-builder-theme-the-ai-model-built-for-what-llms-cant-do",
+        "rss-2026-04-27-05-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-04-27-06-builder-theme-sam-altman-on-feels-like-a-good-time-to-seriously-rethink-how-operating-systems-and",
+        "rss-2026-04-27-07-builder-theme-swyx-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-26": {
+      "briefingIds": [
+        "rss-2026-04-26"
+      ],
+      "insightIds": [
+        "rss-2026-04-26-01-llm-031",
+        "rss-2026-04-26-02-the-people-do-not-yearn-for-automation",
+        "rss-2026-04-26-03-builder-theme-scaling-global-organizations-in-the-age-of-ai-with-servicenow-ceo-bill-mcdermott",
+        "rss-2026-04-26-04-builder-theme-sam-altman-on-we-still-get-looksmaxxed-on-frontend-a-little-but-we-iqmog-hard-now",
+        "rss-2026-04-26-05-builder-theme-aaron-levie-on-great-read-ai-lets-you-get-tremendous-leverage-that-wasnt-available"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-25": {
+      "briefingIds": [
+        "rss-2026-04-25"
+      ],
+      "insightIds": [
+        "rss-2026-04-25-01-quoting-romain-huet",
+        "rss-2026-04-25-02-gpt-55-prompting-guide",
+        "rss-2026-04-25-03-google-plans-to-invest-up-to-40b-in-anthropic",
+        "rss-2026-04-25-04-open-source-memory-layer-so-any-ai-agent-can-do-what-claudeai-and-chatgpt-do",
+        "rss-2026-04-25-05-gpt-55-on-ai-gateway",
+        "rss-2026-04-25-06-builder-theme-sap-bringing-the-operating-system-of-a-company-into-the-ai-era-with-cto-philipp-herzig",
+        "rss-2026-04-25-07-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-04-25-08-builder-theme-sam-altman-on-gpt-55-and-gpt-55-pro-are-now-available-in-the-api",
+        "rss-2026-04-25-09-builder-theme-aaron-levie-on-if-ai-can-make-employees-more-productive-which-is-widely-accepted-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-24": {
+      "briefingIds": [
+        "rss-2026-04-24"
+      ],
+      "insightIds": [
+        "rss-2026-04-24-01-deepseek-v4-a-million-token-context-that-agents-can-actually-use",
+        "rss-2026-04-24-02-deepseek-v4-almost-on-the-frontier-a-fraction-of-the-price",
+        "rss-2026-04-24-03-a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-api",
+        "rss-2026-04-24-04-show-hn-agent-vault-open-source-credential-proxy-and-vault-for-agents",
+        "rss-2026-04-24-05-automations",
+        "rss-2026-04-24-06-deepseek-v4-on-ai-gateway",
+        "rss-2026-04-24-07-top-10-uses-for-codex-at-work",
+        "rss-2026-04-24-08-hear-your-agent-suffer-through-your-code",
+        "rss-2026-04-24-09-builder-theme-ep-85-has-ai-infra-stabilized-fm-vibe-shift-amp-whataposs-next-for-coding-agents",
+        "rss-2026-04-24-10-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-04-24-11-builder-theme-sam-altman-on-we-tried-a-new-thing-with-nvidia-to-roll-out-codex-across-a-whole-com",
+        "rss-2026-04-24-12-builder-theme-claude-on-memory-on-claude-managed-agents-is-now-in-public-beta-your-agents-ca"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-23": {
       "briefingIds": [
         "rss-2026-04-23"
