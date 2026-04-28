@@ -1,12 +1,16 @@
 import { Headphones, Pause, Play } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { type FormEvent, useEffect, useRef, useState } from "react";
 import { trackEvent } from "../../lib/analytics";
 import type { DailyAudio } from "../../types/models";
+import { clearAudioProgress, readAudioProgress, writeAudioProgress } from "./audioProgressStorage";
 
 type AudioPlayerProps = {
   data: DailyAudio;
   variant?: "standalone" | "compact";
 };
+
+const PERSIST_INTERVAL_SEC = 5;
+const RESUME_END_THRESHOLD_SEC = 3;
 
 function formatDuration(durationSec?: number) {
   if (durationSec === undefined || durationSec < 0) {
@@ -20,12 +24,24 @@ function formatDuration(durationSec?: number) {
   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
+function getSeekDuration(audioElement: HTMLAudioElement | null, fallbackDurationSec: number) {
+  if (audioElement && Number.isFinite(audioElement.duration) && audioElement.duration > 0) {
+    return audioElement.duration;
+  }
+
+  return fallbackDurationSec;
+}
+
 export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const isPointerScrubbingRef = useRef(false);
+  const restoredAudioIdRef = useRef<string | null>(null);
+  const lastPersistedTimeSecRef = useRef(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTimeSec, setCurrentTimeSec] = useState(0);
   const [loadedDurationSec, setLoadedDurationSec] = useState(data.durationSec ?? 0);
   const [loadError, setLoadError] = useState(false);
+  const [scrubProgress, setScrubProgress] = useState<number | null>(null);
   const isPlayable = data.status === "ready" && Boolean(data.audioUrl) && !loadError;
   const statusLabel = loadError
     ? "Playback unavailable"
@@ -36,16 +52,67 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
         : "Generating...";
   const effectiveDurationSec = loadedDurationSec > 0 ? loadedDurationSec : data.durationSec ?? 0;
   const progress = effectiveDurationSec > 0 ? Math.min((currentTimeSec / effectiveDurationSec) * 100, 100) : 0;
+  const visibleProgress = scrubProgress ?? progress;
   const isCompact = variant === "compact";
 
   useEffect(() => {
     setIsPlaying(false);
     setCurrentTimeSec(0);
+    setScrubProgress(null);
+    restoredAudioIdRef.current = null;
+    lastPersistedTimeSecRef.current = 0;
+  }, [data.id]);
+
+  useEffect(() => {
+    setIsPlaying(false);
     setLoadedDurationSec(data.durationSec ?? 0);
     setLoadError(false);
-  }, [data.audioUrl, data.durationSec, data.id, data.status]);
+  }, [data.audioUrl, data.durationSec, data.status]);
 
   const hasAudioElement = data.status === "ready" && Boolean(data.audioUrl);
+
+  const persistCurrentProgress = (force = false) => {
+    const audioElement = audioRef.current;
+
+    if (!audioElement || !isPlayable) {
+      return;
+    }
+
+    const nextTimeSec = audioElement.currentTime;
+    if (!Number.isFinite(nextTimeSec) || nextTimeSec <= 0) {
+      return;
+    }
+
+    if (!force && nextTimeSec - lastPersistedTimeSecRef.current < PERSIST_INTERVAL_SEC) {
+      return;
+    }
+
+    writeAudioProgress({
+      audioId: data.id,
+      briefingDate: data.briefingDate,
+      audioUrl: data.audioUrl,
+      currentTimeSec: nextTimeSec,
+      durationSec: getSeekDuration(audioElement, effectiveDurationSec)
+    });
+    lastPersistedTimeSecRef.current = nextTimeSec;
+  };
+
+  const commitSeekProgress = (nextProgress: number) => {
+    const audioElement = audioRef.current;
+    const seekDurationSec = getSeekDuration(audioElement, effectiveDurationSec);
+
+    if (!audioElement || !seekDurationSec || seekDurationSec <= 0) {
+      setScrubProgress(null);
+      return;
+    }
+
+    const boundedProgress = Math.min(Math.max(nextProgress, 0), 100);
+    const nextTimeSec = (boundedProgress / 100) * seekDurationSec;
+
+    audioElement.currentTime = nextTimeSec;
+    setCurrentTimeSec(nextTimeSec);
+    setScrubProgress(null);
+  };
 
   useEffect(() => {
     const audioElement = audioRef.current;
@@ -54,14 +121,52 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
       return undefined;
     }
 
+    const syncCurrentTime = () => {
+      setCurrentTimeSec(audioElement.currentTime);
+    };
+
+    const maybeRestoreProgress = () => {
+      if (restoredAudioIdRef.current === data.id || !isPlayable) {
+        return;
+      }
+
+      if (!Number.isFinite(audioElement.duration) || audioElement.duration <= 0) {
+        return;
+      }
+
+      const storedProgress = readAudioProgress(data.id);
+      if (!storedProgress) {
+        restoredAudioIdRef.current = data.id;
+        return;
+      }
+
+      if (
+        !Number.isFinite(storedProgress.currentTimeSec) ||
+        storedProgress.currentTimeSec <= 0 ||
+        audioElement.duration - storedProgress.currentTimeSec <= RESUME_END_THRESHOLD_SEC
+      ) {
+        clearAudioProgress(data.id);
+        restoredAudioIdRef.current = data.id;
+        return;
+      }
+
+      audioElement.currentTime = storedProgress.currentTimeSec;
+      setCurrentTimeSec(storedProgress.currentTimeSec);
+      lastPersistedTimeSecRef.current = storedProgress.currentTimeSec;
+      restoredAudioIdRef.current = data.id;
+    };
+
     const syncDuration = () => {
       if (Number.isFinite(audioElement.duration) && audioElement.duration > 0) {
         setLoadedDurationSec(Math.floor(audioElement.duration));
       }
+
+      maybeRestoreProgress();
     };
 
     const handleTimeUpdate = () => {
-      setCurrentTimeSec(audioElement.currentTime);
+      syncCurrentTime();
+      persistCurrentProgress(false);
     };
 
     const handlePlay = () => {
@@ -70,16 +175,39 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
 
     const handlePause = () => {
       setIsPlaying(false);
+      syncCurrentTime();
+      persistCurrentProgress(true);
     };
 
     const handleEnded = () => {
       setIsPlaying(false);
-      setCurrentTimeSec(audioElement.currentTime);
+      syncCurrentTime();
+      lastPersistedTimeSecRef.current = 0;
+      clearAudioProgress(data.id);
     };
 
     const handleError = () => {
       setLoadError(true);
       setIsPlaying(false);
+    };
+
+    const handleSeeking = () => {
+      syncCurrentTime();
+    };
+
+    const handleSeeked = () => {
+      syncCurrentTime();
+      persistCurrentProgress(true);
+    };
+
+    const handlePageHide = () => {
+      persistCurrentProgress(true);
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        persistCurrentProgress(true);
+      }
     };
 
     audioElement.addEventListener("loadedmetadata", syncDuration);
@@ -89,6 +217,13 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
     audioElement.addEventListener("pause", handlePause);
     audioElement.addEventListener("ended", handleEnded);
     audioElement.addEventListener("error", handleError);
+    audioElement.addEventListener("seeking", handleSeeking);
+    audioElement.addEventListener("seeked", handleSeeked);
+    window.addEventListener("pagehide", handlePageHide);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    syncDuration();
+    maybeRestoreProgress();
 
     return () => {
       audioElement.removeEventListener("loadedmetadata", syncDuration);
@@ -98,8 +233,12 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
       audioElement.removeEventListener("pause", handlePause);
       audioElement.removeEventListener("ended", handleEnded);
       audioElement.removeEventListener("error", handleError);
+      audioElement.removeEventListener("seeking", handleSeeking);
+      audioElement.removeEventListener("seeked", handleSeeked);
+      window.removeEventListener("pagehide", handlePageHide);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [hasAudioElement]);
+  }, [data.audioUrl, data.briefingDate, data.id, effectiveDurationSec, hasAudioElement, isPlayable]);
 
   const handleTogglePlayback = () => {
     if (!isPlayable) {
@@ -120,6 +259,44 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
     void audioElement.play().catch(() => {
       setIsPlaying(false);
     });
+  };
+
+  const handleSliderValueChange = (nextProgress: number) => {
+
+    if (!Number.isFinite(nextProgress)) {
+      return;
+    }
+
+    if (isPointerScrubbingRef.current) {
+      setScrubProgress(nextProgress);
+      return;
+    }
+
+    commitSeekProgress(nextProgress);
+  };
+
+  const handleSliderInput = (event: FormEvent<HTMLInputElement>) => {
+    handleSliderValueChange(Number(event.currentTarget.value));
+  };
+
+  const handleSliderPointerDown = () => {
+    isPointerScrubbingRef.current = true;
+    setScrubProgress(progress);
+  };
+
+  const handleSliderPointerUp = () => {
+    if (!isPointerScrubbingRef.current) {
+      return;
+    }
+
+    isPointerScrubbingRef.current = false;
+
+    if (scrubProgress !== null) {
+      commitSeekProgress(scrubProgress);
+      return;
+    }
+
+    setScrubProgress(null);
   };
 
   return (
@@ -204,35 +381,27 @@ export function AudioPlayer({ data, variant = "standalone" }: AudioPlayerProps) 
               isPlayable ? "cursor-pointer" : "cursor-not-allowed"
             }`}
             style={{ background: "rgba(90,72,50,0.12)" }}
-            onClick={(event) => {
-              if (!isPlayable) {
-                return;
-              }
-
-              const audioElement = audioRef.current;
-              const seekDurationSec =
-                audioElement && Number.isFinite(audioElement.duration) && audioElement.duration > 0
-                  ? audioElement.duration
-                  : effectiveDurationSec;
-
-              if (!audioElement || !seekDurationSec || seekDurationSec <= 0) {
-                return;
-              }
-
-              const rect = event.currentTarget.getBoundingClientRect();
-              const nextProgress = Math.min(Math.max((event.clientX - rect.left) / rect.width, 0), 1);
-              const nextTime = nextProgress * seekDurationSec;
-
-              audioElement.currentTime = nextTime;
-              setCurrentTimeSec(nextTime);
-            }}
           >
             <div
               className="absolute inset-y-0 left-0 rounded-full transition-all duration-300 ease-linear"
               style={{
-                width: `${progress}%`,
+                width: `${visibleProgress}%`,
                 background: "linear-gradient(90deg, rgba(82,92,68,0.95), rgba(126,139,108,0.95))"
               }}
+            />
+            <input
+              type="range"
+              min={0}
+              max={100}
+              step={0.1}
+              value={visibleProgress}
+              onInput={handleSliderInput}
+              onPointerDown={handleSliderPointerDown}
+              onPointerUp={handleSliderPointerUp}
+              onPointerCancel={handleSliderPointerUp}
+              disabled={!isPlayable}
+              aria-label="Seek deep dive podcast"
+              className="absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0 disabled:cursor-not-allowed"
             />
           </div>
         </div>

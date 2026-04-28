@@ -4,6 +4,7 @@ import { act } from "react";
 import { createRoot, type Root } from "react-dom/client";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { trackEvent } from "../../lib/analytics";
+import { writeAudioProgress } from "./audioProgressStorage";
 import { AudioPlayer } from "./AudioPlayer";
 import type { DailyAudio } from "../../types/models";
 
@@ -46,6 +47,7 @@ beforeEach(() => {
   container = document.createElement("div");
   document.body.appendChild(container);
   root = createRoot(container);
+  window.localStorage.clear();
   vi.mocked(trackEvent).mockClear();
 
   vi.spyOn(HTMLMediaElement.prototype, "play").mockImplementation(function play(this: HTMLMediaElement) {
@@ -158,5 +160,83 @@ describe("AudioPlayer", () => {
     expect(queryPlayButton().disabled).toBe(true);
     expect(container.querySelector("audio")).toBeNull();
     expect(container.textContent).toContain("Ready");
+  });
+
+  it("restores saved progress after metadata loads for the same audio item", () => {
+    writeAudioProgress({
+      audioId: readyAudio.id,
+      briefingDate: readyAudio.briefingDate,
+      audioUrl: readyAudio.audioUrl,
+      currentTimeSec: 37,
+      durationSec: readyAudio.durationSec,
+      updatedAt: Date.now()
+    });
+
+    renderAudioPlayer(readyAudio);
+
+    const audioElement = container.querySelector("audio");
+
+    if (!(audioElement instanceof HTMLAudioElement)) {
+      throw new Error("Expected audio element to exist for ready audio.");
+    }
+
+    let currentTimeValue = 0;
+    Object.defineProperty(audioElement, "currentTime", {
+      configurable: true,
+      get() {
+        return currentTimeValue;
+      },
+      set(value: number) {
+        currentTimeValue = value;
+      }
+    });
+    Object.defineProperty(audioElement, "duration", {
+      configurable: true,
+      value: readyAudio.durationSec
+    });
+
+    act(() => {
+      audioElement.dispatchEvent(new Event("loadedmetadata"));
+    });
+
+    expect(currentTimeValue).toBe(37);
+    expect(container.textContent).toContain("00:37 / 02:00");
+  });
+
+  it("renders a slider seek control and updates currentTime on keyboard-driven change", () => {
+    renderAudioPlayer(readyAudio);
+
+    const audioElement = container.querySelector("audio");
+    const slider = container.querySelector('input[type="range"]');
+
+    if (!(audioElement instanceof HTMLAudioElement)) {
+      throw new Error("Expected audio element to exist for ready audio.");
+    }
+
+    if (!(slider instanceof HTMLInputElement)) {
+      throw new Error("Expected range input to exist for ready audio.");
+    }
+
+    let currentTimeValue = 0;
+    Object.defineProperty(audioElement, "currentTime", {
+      configurable: true,
+      get() {
+        return currentTimeValue;
+      },
+      set(value: number) {
+        currentTimeValue = value;
+      }
+    });
+    Object.defineProperty(audioElement, "duration", {
+      configurable: true,
+      value: readyAudio.durationSec
+    });
+
+    act(() => {
+      slider.value = "25";
+      slider.dispatchEvent(new Event("input", { bubbles: true }));
+    });
+
+    expect(currentTimeValue).toBe(30);
   });
 });
