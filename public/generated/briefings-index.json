@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-29",
     "2026-04-28",
     "2026-04-27",
     "2026-04-26",
@@ -78,6 +79,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-29": {
+      "briefingIds": [
+        "rss-2026-04-29"
+      ],
+      "insightIds": [
+        "rss-2026-04-29-01-cybersecurity-in-the-intelligence-age",
+        "rss-2026-04-29-02-quoting-matthew-yglesias",
+        "rss-2026-04-29-03-whats-new-in-pip-261-lockfiles-and-dependency-cooldowns",
+        "rss-2026-04-29-04-letting-ai-play-my-game-building-an-agentic-test-harness-to-help-play-testing",
+        "rss-2026-04-29-05-openai-models-coming-to-amazon-bedrock-interview-with-openai-and-aws-ceos",
+        "rss-2026-04-29-06-builder-theme-claude-on-claude-now-connects-to-the-tools-creative-professionals-already-use",
+        "rss-2026-04-29-07-builder-theme-sam-altman-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-28": {
       "briefingIds": [
         "rss-2026-04-28"
