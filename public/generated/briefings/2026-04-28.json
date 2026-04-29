@@ -1,0 +1,247 @@
+{
+  "date": "2026-04-28",
+  "briefings": [
+    {
+      "id": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-28",
+      "filePath": "2026-04-28.md",
+      "summaryTopline": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "insightIds": [
+        "rss-2026-04-28-01-openai-models-codex-and-managed-agents-come-to-aws",
+        "rss-2026-04-28-02-quoting-openai-codex-base_instructions",
+        "rss-2026-04-28-03-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+        "rss-2026-04-28-04-show-hn-drive-any-macos-app-in-the-background-without-stealing-the-cursor",
+        "rss-2026-04-28-05-we-decreased-our-llm-costs-with-opus",
+        "rss-2026-04-28-06-microsoftvibevoice",
+        "rss-2026-04-28-07-native-deployment-checks-are-now-available",
+        "rss-2026-04-28-08-2026-vercel-ai-accelerator-recap",
+        "rss-2026-04-28-09-our-commitment-to-community-safety",
+        "rss-2026-04-28-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "rss-2026-04-28-11-builder-theme-sam-altman-on-we-have-updated-our-partnership-with-microsoft-microsoft-will-remain",
+        "rss-2026-04-28-12-builder-theme-aaron-levie-on"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-28-01-openai-models-codex-and-managed-agents-come-to-aws",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "summary": "OpenAI宣布其GPT模型、Codex以及Managed Agents服务正式集成至AWS平台，允许企业在自身AWS环境中构建和部署安全的AI应用。",
+      "take": "此举将AI能力直接嵌入企业已有的AWS基础设施与安全合规体系，简化了从模型调用到工具链集成的路径，尤其适合需要私有化部署的Agent工作流。开发者可关注如何利用AWS的IAM和VPC网络来控制模型访问权限，优化延迟与成本。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-28-02-quoting-openai-codex-base_instructions",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/28/openai-codex/#atom-everything",
+      "title": "Quoting OpenAI Codex base_instructions",
+      "summary": "OpenAI 公开了 Codex CLI 的系统基础指令，其中针对 GPT-5.5 模型明确禁止在无关情境下提及特定幻想生物（如哥布林、浣熊等），以约束模型输出的相关性和安全性。",
+      "take": "这揭示了 AI 工程中一种新的提示工程范式：通过负向实体列表（Negative Entity List）直接抑制模型在无关上下文中的幻觉倾向与角色扮演风险。对于构建可靠 Agent 或 CLI 工具，开发者可借鉴此机制，在系统提示中显式声明“禁止提及”的域外实体，从而在不依赖复杂 RAG 或微调的情况下，精确控制模型输出边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-28-03-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "summary": "NVIDIA 发布 Nemotron 3 Nano Omni 模型，采用统一的多模态编码器和长上下文注意力机制，支持文档、音频和视频的端到端理解与生成。",
+      "take": "该模型为构建多模态 Agent 提供了单一模型架构，无需拼接多个专用模型。开发者可直接利用其长上下文能力处理音视频流，简化了复杂多模态任务的工程实现。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-28-04-show-hn-drive-any-macos-app-in-the-background-without-stealing-the-cursor",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/trycua/cua",
+      "title": "Show HN: Drive any macOS app in the background without stealing the cursor",
+      "summary": "trycua/cua 提供了一个 macOS 库，能够以编程方式在后台驱动任意 macOS 应用（如浏览器、IDE），无需窃取系统光标焦点，通过模拟事件或直接与 UI 元素通信实现自动化。",
+      "take": "此方案通过绕过传统光标劫持的 UI 自动化瓶颈，为开发者提供了一种不干扰用户主工作区的 Agent 工具链集成方式。它暗示了一种新的 AI 工作流范式：AI 代理可以在副屏或后台独立操作应用，实现测试、数据抓取或多应用编排，而无需与用户抢占输入控制权。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-05-we-decreased-our-llm-costs-with-opus",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.mendral.com/blog/frontier-model-lower-costs",
+      "title": "We decreased our LLM costs with Opus",
+      "summary": "一家公司通过在特定任务中使用Anthropic的Claude 3 Opus模型替代更昂贵的模型，同时结合提示工程和输出控制优化，成功降低了LLM推理成本。",
+      "take": "关键在于利用更强模型（如Opus）的精确性和可靠性来减少错误分支和重试次数，从而在总成本上击败更便宜但更不可靠的模型。这验证了模型选择应基于任务复杂度与输出质量的边际成本权衡，而非单纯依赖模型价格标签。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-06-microsoftvibevoice",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything",
+      "title": "microsoft/VibeVoice",
+      "summary": "微軟於2026年1月21日發布MIT授權的Whisper風格語音轉文字模型VibeVoice，內建說話者分離功能，透過mlx-audio與4位元量化版本可在Mac上以50.7 tokens/sec處理速度運行。",
+      "take": "此模型將說話者分離直接整合進模型架構，無需外部後處理，且MIT授權允許商業使用。對於建構多人對話記錄代理或會議摘要工具，這顯著簡化流程並降低延遲，應優先評估其對多說話者場景的準確度與記憶體佔用。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-07-native-deployment-checks-are-now-available",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/native-deployment-checks",
+      "title": "Native Deployment Checks are now available",
+      "summary": "Vercel 推出原生部署检查功能，可在构建同时并行运行 lint 和类型检查，并与 Agent 集成，失败时自动调查并建议修复。",
+      "take": "开发者可将 lint/typecheck 脚本作为生产部署的强制门禁，利用 Vercel Agent 自动化故障排查与修复建议，减少手动介入。此机制为 CI/CD 管线增加了原生、并行的质量检查层，适用于强调代码稳健性的自动化部署工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-08-2026-vercel-ai-accelerator-recap",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/2026-vercel-ai-accelerator-recap",
+      "title": "2026 Vercel AI Accelerator recap",
+      "summary": "Vercel 于2026年4月16日举办AI加速器Demo Day，39支团队在六周内通过技术工作坊与行业领袖交流，聚焦构建代理、开发者工具及垂直AI应用。",
+      "take": "关键信号是Vercel将开发者工具链与AI代理工作流深度绑定，强调从模型到部署的全栈工程实践。对于AI构建者，这意味着关注Vercel在边缘部署、代理编排和可观测性方面的平台能力，以加速从原型到可扩展生产的转化。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-09-our-commitment-to-community-safety",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+      "title": "Our commitment to community safety",
+      "summary": "OpenAI 更新社区安全承诺，展示通过模型护栏、滥用检测、策略执行及安全专家协作来保护 ChatGPT 用户。",
+      "take": "工程上需关注其多层次防御架构：模型级安全对齐、实时行为监控、以及人类策略反馈循环。这对构建可安全部署的生成式 AI 应用是必要的参考模式。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=RyTwRCKeDo4",
+      "title": "Builder Theme: From SEO to Agent-Led Growth: Profound’s James Cadwallader",
+      "summary": "ProFound的James Cadwallader提出，AI代理已使营销从自动化旧流程转向实现此前不可能的新型营销，企业若未采用代理进行营销即视为失败。",
+      "take": "工程核心在于利用LLM代理执行过去无法实现的营销策略，而非简单自动化。AI构建者应重新设计工作流，聚焦代理带来的全新能力维度，而非优化旧有任务。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-11-builder-theme-sam-altman-on-we-have-updated-our-partnership-with-microsoft-microsoft-will-remain",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2048755148361707946",
+      "title": "Builder Theme: Sam Altman on we have updated our partnership with microsoft. microsoft will remain...",
+      "summary": "Sam Altman宣布与微软更新合作，微软仍为主要云伙伴，但OpenAI产品可跨所有云部署，并保留模型供应至2032年和收入分账至2030年。",
+      "take": "此合作变更打破单一云锁定，使AI服务可多云部署，显著提升开发者与企业的架构灵活性；但2032年前的模型供应绑定表明微软仍将控制关键基础设施与收益流，选择云平台时需评估长期依赖风险。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-28-12-builder-theme-aaron-levie-on",
+      "briefingId": "rss-2026-04-28",
+      "date": "2026-04-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2048950940661932319",
+      "title": "Builder Theme: Aaron Levie on",
+      "summary": "Aaron Levie 分享了针对AI构建者的核心主题，强调从基础架构角度理解AI能力变化。",
+      "take": "关注底层机制而非表面叙事；评估AI工具对现有工作流的实际影响，优先采用能直接提升开发者效率或代理能力的架构变化。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

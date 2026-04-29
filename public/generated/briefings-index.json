@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-04-28",
     "2026-04-27",
     "2026-04-26",
     "2026-04-25",
@@ -77,6 +78,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-04-28": {
+      "briefingIds": [
+        "rss-2026-04-28"
+      ],
+      "insightIds": [
+        "rss-2026-04-28-01-openai-models-codex-and-managed-agents-come-to-aws",
+        "rss-2026-04-28-02-quoting-openai-codex-base_instructions",
+        "rss-2026-04-28-03-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+        "rss-2026-04-28-04-show-hn-drive-any-macos-app-in-the-background-without-stealing-the-cursor",
+        "rss-2026-04-28-05-we-decreased-our-llm-costs-with-opus",
+        "rss-2026-04-28-06-microsoftvibevoice",
+        "rss-2026-04-28-07-native-deployment-checks-are-now-available",
+        "rss-2026-04-28-08-2026-vercel-ai-accelerator-recap",
+        "rss-2026-04-28-09-our-commitment-to-community-safety",
+        "rss-2026-04-28-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "rss-2026-04-28-11-builder-theme-sam-altman-on-we-have-updated-our-partnership-with-microsoft-microsoft-will-remain",
+        "rss-2026-04-28-12-builder-theme-aaron-levie-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-27": {
       "briefingIds": [
         "rss-2026-04-27"
