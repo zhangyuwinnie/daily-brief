@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-02",
     "2026-05-01",
     "2026-04-30",
     "2026-04-29",
@@ -81,6 +82,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-02": {
+      "briefingIds": [
+        "rss-2026-05-02"
+      ],
+      "insightIds": [
+        "rss-2026-05-02-01-inaturalist-sightings",
+        "rss-2026-05-02-02-our-evaluation-of-openais-gpt-55-cyber-capabilities",
+        "rss-2026-05-02-03-open-design-use-your-coding-agent-as-a-design-engine",
+        "rss-2026-05-02-04-a-report-on-burnout-in-open-source-software-communities-2025-pdf",
+        "rss-2026-05-02-05-builder-theme-baseten-ceo-tuhin-srivastava-on-the-ai-inference-crunch-custom-models-and-building-the-inference-cloud",
+        "rss-2026-05-02-06-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-05-02-07-builder-theme-claude-on-code-with-claude-our-developer-conference-returns-next-week-whethe",
+        "rss-2026-05-02-08-builder-theme-sam-altman-on-man-its-good-to-be-back-on-twitter-there-is-comfort-in-the-skills-of"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-01": {
       "briefingIds": [
         "rss-2026-05-01"
