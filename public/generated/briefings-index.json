@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-03",
     "2026-05-02",
     "2026-05-01",
     "2026-04-30",
@@ -82,6 +83,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-03": {
+      "briefingIds": [
+        "rss-2026-05-03"
+      ],
+      "insightIds": [
+        "rss-2026-05-03-01-sightings",
+        "rss-2026-05-03-02-a-couple-million-lines-of-haskell-production-engineering-at-mercury",
+        "rss-2026-05-03-03-the-agent-harness-belongs-outside-the-sandbox",
+        "rss-2026-05-03-04-builder-theme-openais-greg-brockman-why-human-attention-is-the-new-bottleneck",
+        "rss-2026-05-03-05-builder-theme-sam-altman-on-i-keep-thinking-i-want-the-models-to-be-cheaperfaster-more-than-i-wa",
+        "rss-2026-05-03-06-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-03-07-builder-theme-peter-steinberger-on-crabbox-030-is-out-remote-linux-runs-for-dirty-worktrees-git"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-02": {
       "briefingIds": [
         "rss-2026-05-02"
