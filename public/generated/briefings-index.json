@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-04",
     "2026-05-03",
     "2026-05-02",
     "2026-05-01",
@@ -83,6 +84,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-04": {
+      "briefingIds": [
+        "rss-2026-05-04"
+      ],
+      "insightIds": [
+        "rss-2026-05-04-01-quoting-anthropic",
+        "rss-2026-05-04-02-deepclaude-claude-code-agent-loop-with-deepseek-v4-pro",
+        "rss-2026-05-04-03-openais-o1-correctly-diagnosed-67-of-er-patients-vs-50-55-by-triage-doctors",
+        "rss-2026-05-04-04-builder-theme-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+        "rss-2026-05-04-05-builder-theme-sam-altman-on-it-has-been-a-real-pleasure-to-work-with-greg-over-the-past-decade-i",
+        "rss-2026-05-04-06-builder-theme-peter-steinberger-on-brb-calling-sama"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-03": {
       "briefingIds": [
         "rss-2026-05-03"
