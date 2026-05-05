@@ -1,0 +1,231 @@
+{
+  "date": "2026-05-05",
+  "briefings": [
+    {
+      "id": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-05",
+      "filePath": "2026-05-05.md",
+      "summaryTopline": "How General Intelligence used agents to build an agent platform on Vercel",
+      "insightIds": [
+        "rss-2026-05-05-01-how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+        "rss-2026-05-05-02-lessons-for-agentic-coding-what-should-we-do-when-code-is-cheap",
+        "rss-2026-05-05-03-agent-skills",
+        "rss-2026-05-05-04-redis-array-playground",
+        "rss-2026-05-05-05-query-observability-metrics-using-the-vercel-cli",
+        "rss-2026-05-05-06-openai-and-pwc-collaborate-to-reimagine-the-office-of-the-cfo",
+        "rss-2026-05-05-07-tre-python-binding-redos-robustness-demo",
+        "rss-2026-05-05-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-05-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-05-05-10-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+        "rss-2026-05-05-11-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-05-01-how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+      "title": "How General Intelligence used agents to build an agent platform on Vercel",
+      "summary": "General Intelligence利用一個8人團隊（其中5名工程師），透過Vercel平台實現每位工程師每日提交10個PR與70多次提交，並以4000多個預覽分支和約100個並行應用版本運行，自動化90%網站可靠性工程工作，構建出以AI代理驅動全公司部門的Cofounder平台。",
+      "take": "核心工程信號是：透過極高密度的持續部署流程（每日70+提交/人）與大規模平行預覽分支（4000+），可驗證純代理驅動的開發模式。對於AI Builder，重點在於將SRE自動化與代理框架深度整合，並利用平台（如Vercel）的基礎設施抽象層來壓縮團隊規模，而非依賴傳統人力擴展。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-05-02-lessons-for-agentic-coding-what-should-we-do-when-code-is-cheap",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html",
+      "title": "Lessons for Agentic Coding: What should we do when code is cheap?",
+      "summary": "Drew Breunig 基于代码成本趋近于零的前提，总结了十条代理式编程的经验教训，核心论点在于代理的瓶颈从生成代码转向了需求定义、验证与上下文管理。",
+      "take": "当代码生成成为商品，AI Builder 的核心工程挑战将转移到如何精确表述需求、设计可验证的测试闭环，以及通过结构化上下文（如工作流图谱或状态机）来约束和引导代理行为，而非优化模型本身的代码生成能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-05-03-agent-skills",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://addyosmani.com/blog/agent-skills/",
+      "title": "Agent Skills",
+      "summary": "Addy Osmani 提出将代理技能（Agent Skills）作为模块化、可组合的原子能力单元，通过标准化接口集成到LLM代理系统中，以替代单一、僵化的全功能代理架构。",
+      "take": "核心工程方向是将复杂代理行为分解为可独立开发、测试和编排的细粒度技能（如代码执行、搜索、文件操作），通过技能注册与动态调度机制提升代理的可扩展性与维护性。开发者应关注技能间的上下文传递与错误隔离，而非追求全能型代理。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-05-04-redis-array-playground",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/4/redis-array/#atom-everything",
+      "title": "Redis Array Playground",
+      "summary": "Salvatore Sanfilippo 提交了向 Redis 新增数组数据类型的 PR，包含 ARGREP 等命令，支持服务器端正则匹配；Simon Willison 利用 Claude Code 构建了基于 WASM 编译子集的可交互浏览器端游乐场。",
+      "take": "该功能引入数组原语为 Redis 添加了有序集合的细粒度操作能力，尤其是 ARGREP 开启服务端正则扫描，适合构建需要内存级高效过滤的 agent 工具链。开发者应立即测试该分支以评估其对实时数据处理和 agent 上下文管理架构的潜在替代价值。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-05-query-observability-metrics-using-the-vercel-cli",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-metrics-in-cli",
+      "title": "Query observability metrics using the Vercel CLI",
+      "summary": "Vercel 发布了 vercel metrics 命令，允许用户及编码代理通过 CLI 查询任意团队或项目的可观测性指标（性能、可靠性、安全性）。",
+      "take": "编码代理可直接利用此命令实时获取应用的可观测性数据，用于自动化调试与性能分析，为 Agent 在 CI/CD 或运行时自省提供了标准化的数据接入接口。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-06-openai-and-pwc-collaborate-to-reimagine-the-office-of-the-cfo",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+      "summary": "OpenAI与PwC合作，利用AI代理自动化企业财务工作流，优化预测、控制与CFO职能现代化。",
+      "take": "工程核心在于将大型语言模型嵌入企业级财务流程，实现自动化决策与合规控制。开发者应关注代理的实时数据处理、异常检测与预测建模能力，这标志着AI从单点工具向端到端工作流引擎的范式转移。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-07-tre-python-binding-redos-robustness-demo",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+      "title": "TRE Python binding — ReDoS robustness demo",
+      "summary": "Ville Laurikari 的 TRE 正则表达式引擎基于非回溯算法，在抵御 ReDoS 攻击方面显著优于 Python 标准库 re 模块，Simon Willison 通过 Claude Code 生成了 Python 绑定验证了其鲁棒性。",
+      "take": "你应将 TRE 作为用户输入正则表达式场景的默认引擎，特别是处理不可信模式时；其 Python 绑定可通过 ctypes 快速集成，无需修改现有代码基础架构即可消除因回溯导致的拒绝服务风险。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy",
+      "summary": "Waymo 联合首席执行官 Dmitri Dolgov 在播客中分享，其自动驾驶出租车服务已完成超过 2000 万次行程，并强调通过持续迭代的端到端感知与规划系统，逐步迈向完全无人驾驶的商业化运营。",
+      "take": "对于 AI 构建者而言，其核心工程启示在于：自动驾驶等复杂系统的可靠性提升依赖于长期、大规模的真实世界数据闭环，而非单一技术突破。这要求开发者围绕数据收集、模型训练与安全验证构建紧密的反馈循环，并注重系统级冗余而非孤立优化算法性能。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+      "summary": "Anthropic 为 Claude Code 引入自动模式，通过预定义的安全边界在沙箱内自动批准操作，替代手动审批以解决审批疲劳问题。",
+      "take": "该机制提供了一种中间方案：通过声明式沙箱配置替代全有或全无的权限模型，既避免手动审批的摩擦，又保留安全性。工程上需将工具权限细粒度化、可配置化，以在灵活性与安全间取得平衡。",
+      "topics": [
+        "Coding Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-10-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2051318922805436896",
+      "title": "Builder Theme: Sam Altman on we are gonna do something nice for everyone who applied for the GPT-5...",
+      "summary": "we are gonna do something nice for everyone who applied for the GPT-5.5 party and that we didn't have space for. hope you enjoy!。",
+      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-05-11-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr",
+      "briefingId": "rss-2026-05-05",
+      "date": "2026-05-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2051386798899888539",
+      "title": "Builder Theme: Guillermo Rauch on 𝚗𝚙𝚡 𝚍𝚎𝚎𝚙𝚜𝚎𝚌 We're introducing an open-source agent orchestr...",
+      "summary": "Guillermo Rauch 发布了开源的代理编排器 𝚗𝚙𝚡 𝚍𝚎𝚎𝚙𝚜𝚎𝚌，利用 Vercel Sandbox 并行运行数千个编码代理，旨在将耗时数月的代码安全审查缩短至分钟级。",
+      "take": "该工具将分布式沙盒环境与代理协作结合，实现了大规模并行安全审计的范式转变。开发者在 CI/CD 流程中可将其作为自动化安全门禁，直接替换传统人工审计环节，显著提升发现关键漏洞的速度与覆盖范围。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

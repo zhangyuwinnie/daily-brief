@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-05",
     "2026-05-04",
     "2026-05-03",
     "2026-05-02",
@@ -84,6 +85,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-05": {
+      "briefingIds": [
+        "rss-2026-05-05"
+      ],
+      "insightIds": [
+        "rss-2026-05-05-01-how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+        "rss-2026-05-05-02-lessons-for-agentic-coding-what-should-we-do-when-code-is-cheap",
+        "rss-2026-05-05-03-agent-skills",
+        "rss-2026-05-05-04-redis-array-playground",
+        "rss-2026-05-05-05-query-observability-metrics-using-the-vercel-cli",
+        "rss-2026-05-05-06-openai-and-pwc-collaborate-to-reimagine-the-office-of-the-cfo",
+        "rss-2026-05-05-07-tre-python-binding-redos-robustness-demo",
+        "rss-2026-05-05-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-05-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-05-05-10-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+        "rss-2026-05-05-11-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-04": {
       "briefingIds": [
         "rss-2026-05-04"
