@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-06",
     "2026-05-05",
     "2026-05-04",
     "2026-05-03",
@@ -85,6 +86,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-06": {
+      "briefingIds": [
+        "rss-2026-05-06"
+      ],
+      "insightIds": [
+        "rss-2026-05-06-01-agents-can-now-create-cloudflare-accounts-buy-domains-and-deploy",
+        "rss-2026-05-06-02-show-hn-adam-an-embeddable-cross-platform-ai-agent-library",
+        "rss-2026-05-06-03-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
+        "rss-2026-05-06-04-how-frontier-enterprises-are-building-an-ai-advantage",
+        "rss-2026-05-06-05-datasette-referrer-policy-01",
+        "rss-2026-05-06-06-unlocking-large-scale-ai-training-networks-with-mrc-multipath-reliable-connection",
+        "rss-2026-05-06-07-welcome-to-maintainer-month-celebrating-the-people-behind-the-code",
+        "rss-2026-05-06-08-how-kiko-milano-scales-for-black-friday",
+        "rss-2026-05-06-09-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-06-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-05-06-11-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+        "rss-2026-05-06-12-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-05": {
       "briefingIds": [
         "rss-2026-05-05"
