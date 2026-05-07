@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-07",
     "2026-05-06",
     "2026-05-05",
     "2026-05-04",
@@ -86,6 +87,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-07": {
+      "briefingIds": [
+        "rss-2026-05-07"
+      ],
+      "insightIds": [
+        "rss-2026-05-07-01-parloa-builds-service-agents-customers-want-to-talk-to",
+        "rss-2026-05-07-02-uber-uses-openai-to-help-people-earn-smarter-and-book-faster",
+        "rss-2026-05-07-03-alphaevolve-gemini-powered-coding-agent-scaling-impact-across-fields",
+        "rss-2026-05-07-04-live-blog-code-w-claude-2026",
+        "rss-2026-05-07-05-our-ai-started-a-cafe-in-stockholm",
+        "rss-2026-05-07-06-validating-agentic-behavior-when-correct-isnt-deterministic",
+        "rss-2026-05-07-07-sqlite-is-a-library-of-congress-recommended-storage-format",
+        "rss-2026-05-07-08-vllm-v0-to-v1-correctness-before-corrections-in-rl",
+        "rss-2026-05-07-09-builder-theme-anthropics-boris-cherny-codings-printing-press-moment",
+        "rss-2026-05-07-10-builder-theme-thariq-on-everyday-were-trying-to-obtain-more-compute-to-pass-on-to-you-wer",
+        "rss-2026-05-07-11-builder-theme-claude-on-dreaming-reviews-your-agents-past-sessions-extracts-patterns-and-c"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-06": {
       "briefingIds": [
         "rss-2026-05-06"
