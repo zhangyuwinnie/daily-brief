@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-08",
     "2026-05-07",
     "2026-05-06",
     "2026-05-05",
@@ -87,6 +88,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-08": {
+      "briefingIds": [
+        "rss-2026-05-08"
+      ],
+      "insightIds": [
+        "rss-2026-05-08-01-agents-need-control-flow-not-more-prompts",
+        "rss-2026-05-08-02-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
+        "rss-2026-05-08-03-simplex-rethinks-software-development-with-codex",
+        "rss-2026-05-08-04-advancing-voice-intelligence-with-new-models-in-the-api",
+        "rss-2026-05-08-05-llm-gemini-031",
+        "rss-2026-05-08-06-improving-token-efficiency-in-github-agentic-workflows",
+        "rss-2026-05-08-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+        "rss-2026-05-08-08-dirtyfrag-universal-linux-lpe",
+        "rss-2026-05-08-09-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+        "rss-2026-05-08-10-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+        "rss-2026-05-08-11-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-07": {
       "briefingIds": [
         "rss-2026-05-07"
