@@ -41,46 +41,7 @@ if ! notebooklm auth check --test >/dev/null 2>&1; then
   exit 0
 fi
 
-python3 - <<'PY' "$BRIEFING_FILE" "$LINKS_FILE"
-import re
-import sys
-from urllib.parse import urlparse
-from pathlib import Path
-
-briefing_file = Path(sys.argv[1])
-links_file = Path(sys.argv[2])
-heading_link_re = re.compile(r'\]\((https?://[^)\s]+)\)')
-
-seen = set()
-urls = []
-
-def keep_url(url: str) -> bool:
-    parsed = urlparse(url)
-    host = (parsed.netloc or "").lower()
-
-    if host in {"t.co", "x.com", "twitter.com", "www.twitter.com"}:
-        return False
-
-    if host in {"youtube.com", "www.youtube.com"} and "watch" not in parsed.path and "watch" not in parsed.query:
-        return False
-
-    if not host:
-        return False
-
-    return True
-
-for raw_url in heading_link_re.findall(briefing_file.read_text(encoding='utf-8', errors='ignore')):
-    url = raw_url.rstrip('.,;:')
-    if not keep_url(url):
-        continue
-    if url not in seen:
-        seen.add(url)
-        urls.append(url)
-
-links_file.parent.mkdir(parents=True, exist_ok=True)
-links_file.write_text("\n".join(urls) + ("\n" if urls else ""), encoding="utf-8")
-print(f"Collected {len(urls)} unique links -> {links_file}")
-PY
+python3 "$SCRIPT_DIR/extract_audio_links.py" "$BRIEFING_FILE" "$LINKS_FILE"
 
 if [[ ! -s "$LINKS_FILE" ]]; then
   log "Skipping ${DATE_STR}: no links found in ${BRIEFING_FILE}"
