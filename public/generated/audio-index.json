@@ -620,8 +620,9 @@
   "2026-05-08": {
     "id": "audio-2026-05-08",
     "briefingDate": "2026-05-08",
-    "status": "pending",
+    "status": "ready",
     "provider": "notebooklm",
-    "title": "Daily Brief for 2026-05-08"
+    "title": "Daily Brief for 2026-05-08",
+    "audioUrl": "/generated/audio/2026-05-08.mp3"
   }
 }
