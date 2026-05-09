@@ -610,13 +610,6 @@
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-05-06"
   },
-  "2026-05-07": {
-    "id": "audio-2026-05-07",
-    "briefingDate": "2026-05-07",
-    "status": "pending",
-    "provider": "notebooklm",
-    "title": "Daily Brief for 2026-05-07"
-  },
   "2026-05-08": {
     "id": "audio-2026-05-08",
     "briefingDate": "2026-05-08",
@@ -624,5 +617,13 @@
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-05-08",
     "audioUrl": "/generated/audio/2026-05-08.mp3"
+  },
+  "2026-05-07": {
+    "id": "audio-2026-05-07",
+    "briefingDate": "2026-05-07",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-05-07",
+    "audioUrl": "/generated/audio/2026-05-07.mp3"
   }
 }
