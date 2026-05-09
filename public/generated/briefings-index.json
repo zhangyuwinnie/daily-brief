@@ -93,19 +93,21 @@
         "rss-2026-05-08"
       ],
       "insightIds": [
-        "rss-2026-05-08-01-agents-need-control-flow-not-more-prompts",
-        "rss-2026-05-08-02-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
-        "rss-2026-05-08-03-simplex-rethinks-software-development-with-codex",
-        "rss-2026-05-08-04-advancing-voice-intelligence-with-new-models-in-the-api",
-        "rss-2026-05-08-05-llm-gemini-031",
-        "rss-2026-05-08-06-improving-token-efficiency-in-github-agentic-workflows",
-        "rss-2026-05-08-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
-        "rss-2026-05-08-08-dirtyfrag-universal-linux-lpe",
-        "rss-2026-05-08-09-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
-        "rss-2026-05-08-10-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
-        "rss-2026-05-08-11-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
+        "rss-2026-05-08-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-08-02-running-codex-safely-at-openai",
+        "rss-2026-05-08-03-can-llms-model-real-world-systems-in-tla",
+        "rss-2026-05-08-04-improving-token-efficiency-in-github-agentic-workflows",
+        "rss-2026-05-08-05-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+        "rss-2026-05-08-06-advancing-voice-intelligence-with-new-models-in-the-api",
+        "rss-2026-05-08-07-teaching-claude-why",
+        "rss-2026-05-08-08-llm-gemini-031",
+        "rss-2026-05-08-09-chat-sdk-adds-messenger-adapter-support",
+        "rss-2026-05-08-10-adaptive-parallel-reasoning-the-next-paradigm-in-efficient-inference-scaling",
+        "rss-2026-05-08-11-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+        "rss-2026-05-08-12-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+        "rss-2026-05-08-13-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss"
       ]
@@ -115,19 +117,21 @@
         "rss-2026-05-07"
       ],
       "insightIds": [
-        "rss-2026-05-07-01-parloa-builds-service-agents-customers-want-to-talk-to",
-        "rss-2026-05-07-02-uber-uses-openai-to-help-people-earn-smarter-and-book-faster",
-        "rss-2026-05-07-03-alphaevolve-gemini-powered-coding-agent-scaling-impact-across-fields",
-        "rss-2026-05-07-04-live-blog-code-w-claude-2026",
-        "rss-2026-05-07-05-our-ai-started-a-cafe-in-stockholm",
-        "rss-2026-05-07-06-validating-agentic-behavior-when-correct-isnt-deterministic",
-        "rss-2026-05-07-07-sqlite-is-a-library-of-congress-recommended-storage-format",
-        "rss-2026-05-07-08-vllm-v0-to-v1-correctness-before-corrections-in-rl",
-        "rss-2026-05-07-09-builder-theme-anthropics-boris-cherny-codings-printing-press-moment",
-        "rss-2026-05-07-10-builder-theme-thariq-on-everyday-were-trying-to-obtain-more-compute-to-pass-on-to-you-wer",
-        "rss-2026-05-07-11-builder-theme-claude-on-dreaming-reviews-your-agents-past-sessions-extracts-patterns-and-c"
+        "rss-2026-05-07-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-07-02-running-codex-safely-at-openai",
+        "rss-2026-05-07-03-improving-token-efficiency-in-github-agentic-workflows",
+        "rss-2026-05-07-04-can-llms-model-real-world-systems-in-tla",
+        "rss-2026-05-07-05-behind-the-scenes-hardening-firefox-with-claude-mythos-preview",
+        "rss-2026-05-07-06-scaling-trusted-access-for-cyber-with-gpt-55-and-gpt-55-cyber",
+        "rss-2026-05-07-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+        "rss-2026-05-07-08-teaching-claude-why",
+        "rss-2026-05-07-09-chat-sdk-adds-messenger-adapter-support",
+        "rss-2026-05-07-10-adaptive-parallel-reasoning-the-next-paradigm-in-efficient-inference-scaling",
+        "rss-2026-05-07-11-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+        "rss-2026-05-07-12-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+        "rss-2026-05-07-13-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
       ],
-      "hasAudio": false,
+      "hasAudio": true,
       "sourceTypes": [
         "rss"
       ]

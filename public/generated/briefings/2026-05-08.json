@@ -7,70 +7,36 @@
       "sourceType": "rss",
       "title": "Daily Briefing: 2026-05-08",
       "filePath": "2026-05-08.md",
-      "summaryTopline": "Agents need control flow, not more prompts",
+      "summaryTopline": "Using Claude Code: The Unreasonable Effectiveness of HTML",
       "insightIds": [
-        "rss-2026-05-08-01-agents-need-control-flow-not-more-prompts",
-        "rss-2026-05-08-02-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
-        "rss-2026-05-08-03-simplex-rethinks-software-development-with-codex",
-        "rss-2026-05-08-04-advancing-voice-intelligence-with-new-models-in-the-api",
-        "rss-2026-05-08-05-llm-gemini-031",
-        "rss-2026-05-08-06-improving-token-efficiency-in-github-agentic-workflows",
-        "rss-2026-05-08-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
-        "rss-2026-05-08-08-dirtyfrag-universal-linux-lpe",
-        "rss-2026-05-08-09-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
-        "rss-2026-05-08-10-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
-        "rss-2026-05-08-11-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
+        "rss-2026-05-08-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-08-02-running-codex-safely-at-openai",
+        "rss-2026-05-08-03-can-llms-model-real-world-systems-in-tla",
+        "rss-2026-05-08-04-improving-token-efficiency-in-github-agentic-workflows",
+        "rss-2026-05-08-05-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+        "rss-2026-05-08-06-advancing-voice-intelligence-with-new-models-in-the-api",
+        "rss-2026-05-08-07-teaching-claude-why",
+        "rss-2026-05-08-08-llm-gemini-031",
+        "rss-2026-05-08-09-chat-sdk-adds-messenger-adapter-support",
+        "rss-2026-05-08-10-adaptive-parallel-reasoning-the-next-paradigm-in-efficient-inference-scaling",
+        "rss-2026-05-08-11-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+        "rss-2026-05-08-12-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+        "rss-2026-05-08-13-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
       ]
     }
   ],
   "insights": [
     {
-      "id": "rss-2026-05-08-01-agents-need-control-flow-not-more-prompts",
-      "briefingId": "rss-2026-05-08",
-      "date": "2026-05-08",
-      "sourceType": "rss",
-      "sourceLabel": "RSS Briefing",
-      "sourceName": "Hacker News",
-      "sourceUrl": "https://bsuh.bearblog.dev/agents-need-control-flow/",
-      "title": "Agents need control flow, not more prompts",
-      "summary": "論點指出當前AI代理系統過度依賴提示詞工程，真正的瓶頸在於缺乏完善的程式控制流程（control flow）機制來管理複雜任務的執行邏輯。",
-      "take": "開發者應優先設計基於程式邏輯（如條件分支、循環、狀態機）的代理控制層，而非僅依靠堆疊提示詞。這意味著代理架構需從「被動回應提示」轉向「主動執行結構化工作流」，才能實現可靠且可調試的多步驟任務。",
-      "topics": [
-        "Agents",
-        "Tooling"
-      ],
-      "entities": [],
-      "isTopSignal": true
-    },
-    {
-      "id": "rss-2026-05-08-02-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
+      "id": "rss-2026-05-08-01-using-claude-code-the-unreasonable-effectiveness-of-html",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
       "sourceLabel": "RSS Briefing",
       "sourceName": "Simon Willison's Weblog",
-      "sourceUrl": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything",
-      "title": "Vibe coding and agentic engineering are getting closer than I'd like",
-      "summary": "Simon Willison指出，在自身实践中，原本被区分的‘氛围编程’（vibe coding）与‘智能体工程’（agentic engineering）正在趋同，两者的边界在AI编码工具应用中逐渐模糊。",
-      "take": "开发者需警惕这种趋同：若将无审查的‘氛围编程’模式引入需要严格控制的智能体工作流，可能引入不可控的代码质量风险。核心工程方法是必须为智能体生成代码设立明确的审查、测试与降级机制，而非放任其与氛围编程模式混用。",
-      "topics": [
-        "Agents",
-        "Tooling"
-      ],
-      "entities": [],
-      "isTopSignal": true
-    },
-    {
-      "id": "rss-2026-05-08-03-simplex-rethinks-software-development-with-codex",
-      "briefingId": "rss-2026-05-08",
-      "date": "2026-05-08",
-      "sourceType": "rss",
-      "sourceLabel": "RSS Briefing",
-      "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/index/simplex",
-      "title": "Simplex rethinks software development with Codex",
-      "summary": "Simplex 利用 ChatGPT Enterprise 与 Codex 集成，通过 AI 驱动的自动化工作流将软件设计、构建与测试全流程提速。",
-      "take": "核心工程信号在于 Codex 作为可编程接口，将自然语言需求直接转化为可执行的 CI/CD 流水线，开发者无需手动编写业务逻辑与测试用例。这要求 AI Builder 重构现有工具链，将代码生成、测试覆盖与部署编排解耦为独立可调用的微服务，而非单体 Prompt 脚本。",
+      "sourceUrl": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
+      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "summary": "Anthropic Claude Code团队成员Thariq Shihipar主张在LLM输出格式中以HTML替代Markdown，利用HTML的结构化标签和可视化渲染能力提升代码审查等复杂任务的上下文理解与交互精度。",
+      "take": "对于AI builder，将LLM输出默认从Markdown切换为HTML可以显著增强结构化数据的表达力，尤其适用于PR审查、架构文档等需要内联注解、颜色编码和分层展示的场景。此举虽增加token消耗，但换来的是模型对空间关系和层级关系的更高保真度输出，值得在工具链中优先实验。",
       "topics": [
         "Coding Agents",
         "Tooling"
@@ -79,40 +45,45 @@
       "isTopSignal": true
     },
     {
-      "id": "rss-2026-05-08-04-advancing-voice-intelligence-with-new-models-in-the-api",
+      "id": "rss-2026-05-08-02-running-codex-safely-at-openai",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
       "sourceLabel": "RSS Briefing",
       "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
-      "title": "Advancing voice intelligence with new models in the API",
-      "summary": "OpenAI 在 API 中发布了新的实时语音模型，能够进行推理、翻译和转录，旨在提升语音交互的自然度和智能性。",
-      "take": "核心工程信号是 OpenAI 将语音模型的能力从简单的转录扩展到了实时推理和多语言翻译。开发者应评估这些新模型在延迟和准确度上的改进，以决定是否替换现有的语音管道，特别是在需要端到端语音理解的对话式 AI 代理场景中。",
+      "sourceUrl": "https://openai.com/index/running-codex-safely",
+      "title": "Running Codex safely at OpenAI",
+      "summary": "OpenAI 发布了 Codex 安全运行方案，通过沙箱隔离、操作审批、网络策略和代理原生遥测技术，确保编码代理在生产环境中的安全与合规性。",
+      "take": "工程上必须为 AI 编码代理实现多层沙箱隔离（如进程、文件系统、网络层），并结合运行时操作审批流与全链路遥测，才能可靠地将代码生成能力部署到企业级工作流中。",
       "topics": [
+        "Coding Agents",
         "Agents",
-        "Evals"
+        "Security",
+        "Tooling"
       ],
       "entities": [],
-      "isTopSignal": false
+      "isTopSignal": true
     },
     {
-      "id": "rss-2026-05-08-05-llm-gemini-031",
+      "id": "rss-2026-05-08-03-can-llms-model-real-world-systems-in-tla",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
       "sourceLabel": "RSS Briefing",
-      "sourceName": "Simon Willison's Weblog",
-      "sourceUrl": "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything",
-      "title": "llm-gemini 0.31",
-      "summary": "llm-gemini 0.31 发布，将 gemini-3.1-flash-lite 模型从预览状态转为正式版本。",
-      "take": "此版本移除了预览标签，意味着模型API进入生产稳定期，开发者可放心用于生产环境部署，无需担心预览阶段可能的接口变更或服务中断风险。",
-      "topics": [],
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/",
+      "title": "Can LLMs model real-world systems in TLA+?",
+      "summary": "研究者评估了GPT-4、Claude等LLM将自然语言系统描述转化为TLA+形式化规约的能力，发现LLM能生成基础逻辑结构，但在处理复杂并发模型、不变式推导和状态空间验证时存在显著错误。",
+      "take": "当前LLM不足以替代人工编写TLA+规格，但可作为辅助工具快速生成模型骨架，开发者需结合模型检查器手动修正关键不变式和状态转换逻辑，以提升自动化验证工作流效率。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
       "entities": [],
-      "isTopSignal": false
+      "isTopSignal": true
     },
     {
-      "id": "rss-2026-05-08-06-improving-token-efficiency-in-github-agentic-workflows",
+      "id": "rss-2026-05-08-04-improving-token-efficiency-in-github-agentic-workflows",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
@@ -120,8 +91,8 @@
       "sourceName": "The GitHub Blog",
       "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/",
       "title": "Improving token efficiency in GitHub Agentic Workflows",
-      "summary": "GitHub 通过自建的生产级仪表盘追踪和优化其代理工作流中的 token 消耗，定位到无效循环和冗余上下文等低效点，并开发出专门代理来自动修复这些瓶颈。",
-      "take": "核心工程实践在于：将 token 消耗视为可观测的指标，通过代理监控代理来发现并修复低效模式。可复用的关键策略包括限制代理决策树深度、动态剪枝上下文窗口以及设置早期退出条件，以从根本上减少不必要的 API 调用和延迟。",
+      "summary": "GitHub 团队通过在生产级代理工作流中植入自监控仪表盘，定位并修复了因重复上下文调用和冗余链式推理导致的 Token 浪费问题。",
+      "take": "核心工程启示在于：Agent 工作流必须内置 Token 用量追踪与审计机制，通过识别并消除无意义的状态保留和多余推理步骤，才能将 API 成本降低到可规模化运行的水平。",
       "topics": [
         "Agents",
         "Tooling"
@@ -130,7 +101,7 @@
       "isTopSignal": false
     },
     {
-      "id": "rss-2026-05-08-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+      "id": "rss-2026-05-08-05-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
@@ -138,65 +109,41 @@
       "sourceName": "The GitHub Blog",
       "sourceUrl": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
       "title": "Agent pull requests are everywhere. Here&#8217;s how to review them.",
-      "summary": "GitHub 发布了针对 AI 代理生成的拉取请求的审查实践指南，重点在于识别隐藏问题和技术债务的检查方法。",
-      "take": "开发者在审查代理生成的代码时，应关注逻辑正确性、潜在的技术债务以及非功能性属性（如可维护性和安全性），而非仅依赖自动化工具。建议建立专门的审查清单，以应对代理代码中常见的模式化错误和上下文缺失问题。",
+      "summary": "GitHub 发布了针对 AI 代理生成的拉取请求的审查指南，聚焦于检测隐藏的技术债务和工程陷阱。",
+      "take": "审查代理 PR 时需关注代码结构、测试覆盖率和合规性，而非仅表面功能。建议开发者将审查重点从逻辑正确性转向长期可维护性和部署风险，以应对代理代码增量引入的复合技术债。",
       "topics": [
         "Agents",
-        "Security",
-        "Tooling",
         "Learning Resource"
       ],
       "entities": [],
       "isTopSignal": false
     },
     {
-      "id": "rss-2026-05-08-08-dirtyfrag-universal-linux-lpe",
+      "id": "rss-2026-05-08-06-advancing-voice-intelligence-with-new-models-in-the-api",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "title": "Advancing voice intelligence with new models in the API",
+      "summary": "OpenAI 在 API 中推出新的实时语音模型，能够进行推理、翻译和转录，旨在提升语音交互的自然度与智能性。",
+      "take": "开发人员可集成这些新模型以构建支持实时语音推理和多语言处理的智能语音助手，从而减少对传统语音识别与自然语言理解管线的依赖，直接实现端到端语音对话能力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-07-teaching-claude-why",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
       "sourceLabel": "RSS Briefing",
       "sourceName": "Hacker News",
-      "sourceUrl": "https://www.openwall.com/lists/oss-security/2026/05/07/8",
-      "title": "Dirtyfrag: Universal Linux LPE",
-      "summary": "安全研究人员披露了一种名为Dirtyfrag的通用Linux本地提权漏洞，利用内存碎片化与竞争条件破坏内核数据结构。",
-      "take": "该漏洞不依赖特定内核版本或配置，影响范围广；AI构建者需立即评估CI/CD与模型训练环境的内核更新策略，避免攻击者通过已获取的普通用户权限升级至root以篡改模型或数据。",
-      "topics": [
-        "Evals",
-        "RAG",
-        "Security"
-      ],
-      "entities": [],
-      "isTopSignal": false
-    },
-    {
-      "id": "rss-2026-05-08-09-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
-      "briefingId": "rss-2026-05-08",
-      "date": "2026-05-08",
-      "sourceType": "rss",
-      "sourceLabel": "Follow Builders",
-      "sourceName": "The MAD Podcast with Matt Turck",
-      "sourceUrl": "https://www.youtube.com/watch?v=DvyZcCfepeI",
-      "title": "Builder Theme: OpenAI Board Member Zico Kolter on the Real Risks of Frontier AI",
-      "summary": "OpenAI董事会成员兼安全委员会主席Zico Kolter指出，AI模型的安全性不会随规模扩大而自动提升，核心风险在于模型鲁棒性不足，而整个系统的复杂性源于训练数据而非代码架构。",
-      "take": "AI构建者应警惕‘规模即安全’的谬误，将模型鲁棒性作为独立于性能的评估维度，并设计延迟发布机制以应对未充分理解的风险，而非依赖下一代模型的自我修正。",
-      "topics": [
-        "Evals",
-        "Security"
-      ],
-      "entities": [],
-      "isTopSignal": false
-    },
-    {
-      "id": "rss-2026-05-08-10-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
-      "briefingId": "rss-2026-05-08",
-      "date": "2026-05-08",
-      "sourceType": "rss",
-      "sourceLabel": "Follow Builders",
-      "sourceName": "Claude",
-      "sourceUrl": "https://x.com/claudeai/status/2052445786651168849",
-      "title": "Builder Theme: Claude on Claude for Excel, PowerPoint, and Word are now generally available, a...",
-      "summary": "Claude的Microsoft Office集成（Excel、PowerPoint、Word）正式全面上线，Outlook插件进入公测阶段，支持跨应用携带完整对话上下文执行任务。",
-      "take": "核心工程信号是跨应用上下文持久化机制已产品化，意味着AI代理能突破单文档边界，在Office套件内保持状态连续执行多步操作。对AI builders而言，这验证了基于‘会话状态穿梭’的代理架构具备实用价值，可参考此模式设计跨工具工作流编排方案。",
+      "sourceUrl": "https://www.anthropic.com/research/teaching-claude-why",
+      "title": "Teaching Claude Why",
+      "summary": "Anthropic 发布研究，通过向 Claude 注入因果推理链（解释决策原因而非仅输出结果），在数学和逻辑任务上提升了模型准确性与可解释性，采用了一种新型训练方法。",
+      "take": "核心工程信号：将显式因果推理作为训练信号纳入 LLM 微调，可显著减少幻觉并增强任务泛化能力。开发者应关注在 Agent 工作流中集成“为什么回答”的中间推理步骤，以构建更鲁棒的可调试系统。",
       "topics": [
         "Agents",
         "Tooling"
@@ -205,7 +152,98 @@
       "isTopSignal": false
     },
     {
-      "id": "rss-2026-05-08-11-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s",
+      "id": "rss-2026-05-08-08-llm-gemini-031",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything",
+      "title": "llm-gemini 0.31",
+      "summary": "Google 通过 LLM 插件 llm-gemini 0.31 版本，将 gemini-3.1-flash-lite 模型从预览状态转为正式可用。",
+      "take": "开发者可直接在 LLM 工具链中调用非预览版的 Gemini 3.1 Flash-Lite 模型，此举消除预览限制，适用于低延迟、低成本的生产环境推理任务。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-09-chat-sdk-adds-messenger-adapter-support",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/chat-sdk-adds-messenger-adapter",
+      "title": "Chat SDK adds Messenger adapter support",
+      "summary": "Vercel Chat SDK 新增 Messenger 适配器，支持消息、反应、多媒体下载、回传按钮及直接对话，并自动获取用户显示名称。",
+      "take": "开发者现可基于统一 SDK 将代理接入 Messenger，复用现有消息处理逻辑，无需单独对接 Messenger API。此适配器由社区贡献，建议关注其 PR #461 实现细节，以理解适配器扩展模式，便于自定义其他聊天平台。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-10-adaptive-parallel-reasoning-the-next-paradigm-in-efficient-inference-scaling",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+      "sourceUrl": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+      "title": "Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling",
+      "summary": "Berkeley AI Research 提出自适应并行推理（APR），一种动态调整并行推理路径数量与长度的机制，以在推理时根据问题复杂度扩展计算资源。",
+      "take": "APR 的核心在于将推理扩展从固定预算（如 n 次采样）转为基于问题难度的动态分配，这要求开发者重构 Agent 工作流中的规划与执行阶段，并需设计轻量级的难度评估模块来触发并行分支，直接替代现有链式或树状推理的静态策略。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-11-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "The MAD Podcast with Matt Turck",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvyZcCfepeI",
+      "title": "Builder Theme: OpenAI Board Member Zico Kolter on the Real Risks of Frontier AI",
+      "summary": "OpenAI董事会成员兼安全委员会主席Zico Kolter指出，AI系统的核心代码仅约200-300行Python，其全部复杂性源于训练数据，且模型规模增大并不会自动提升鲁棒性，因此发布决策需基于安全评估而非单纯等待下一代模型。",
+      "take": "安全评估应聚焦于模型鲁棒性的实证测试，而非依赖规模扩展。开发者需将模型发布流程与安全检查深度绑定，利用延迟发布机制确保关键能力达标，避免默认信任‘更大=更安全’的假设。",
+      "topics": [
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-12-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+      "briefingId": "rss-2026-05-08",
+      "date": "2026-05-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2052445786651168849",
+      "title": "Builder Theme: Claude on Claude for Excel, PowerPoint, and Word are now generally available, a...",
+      "summary": "Claude正式将多步Agentic工作流扩展到Microsoft Office套件（Excel、PowerPoint、Word通用可用，Outlook公测），并能在应用间传递完整的对话上下文。",
+      "take": "关键工程信号是Claude实现了跨应用的长上下文状态持久化，这为构建办公自动化的Agentic工作流提供了基础设施——开发者可利用此能力设计跨文档的复杂编排任务，例如从Outlook邮件提取需求后在Excel中分析并自动生成PowerPoint报告。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-08-13-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s",
       "briefingId": "rss-2026-05-08",
       "date": "2026-05-08",
       "sourceType": "rss",
@@ -213,8 +251,8 @@
       "sourceName": "Alex Albert",
       "sourceUrl": "https://x.com/alexalbert__/status/2052468573516513762",
       "title": "Builder Theme: Alex Albert on With the help of Claude Mythos Preview, the Firefox team fixed more s...",
-      "summary": "Firefox团队借助Claude Mythos Preview模型，在2025年4月一个月内修复的安全漏洞数量超过了此前15个月的总和。",
-      "take": "AI辅助漏洞修复的效率已出现质变，能在单月内实现超过15个月的产出。开发者应将高级AI模型深度集成至安全开发生命周期，优先用于自动化大规模代码审计与补丁生成，以突破传统人工修复的吞吐瓶颈。",
+      "summary": "Mozilla Firefox团队借助Claude Mythos Preview模型，在2025年4月一个月内修复的安全漏洞数量超过了此前15个月的总和。",
+      "take": "表明特定前沿AI模型在代码安全审计与漏洞修复场景中，可能带来数量级的效率跃升。AI Builder应关注模型在特定工程任务（如静态分析、补丁生成）上的极端性能拐点，而非泛化能力。",
       "topics": [
         "Security"
       ],
