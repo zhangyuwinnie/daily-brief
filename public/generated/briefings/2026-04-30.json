@@ -1,0 +1,243 @@
+{
+  "date": "2026-04-30",
+  "briefings": [
+    {
+      "id": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-30",
+      "filePath": "2026-04-30.md",
+      "summaryTopline": "Building the compute infrastructure for the Intelligence Age",
+      "insightIds": [
+        "rss-2026-04-30-01-building-the-compute-infrastructure-for-the-intelligence-age",
+        "rss-2026-04-30-02-the-zig-projects-rationale-for-their-firm-anti-ai-contribution-policy",
+        "rss-2026-04-30-03-llm-032a1",
+        "rss-2026-04-30-04-cursor-camp",
+        "rss-2026-04-30-05-alignment-whack-a-mole-finetuning-activates-recall-of-copyrighted-books-in-llms",
+        "rss-2026-04-30-06-granite-41-llms-how-theyre-built",
+        "rss-2026-04-30-07-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+        "rss-2026-04-30-08-vercel-now-supports-pro-plan-in-stripe-projects",
+        "rss-2026-04-30-09-native-deployment-checks-are-now-available",
+        "rss-2026-04-30-10-builder-theme-how-stripe-is-building-for-an-agent-native-world",
+        "rss-2026-04-30-11-builder-theme-sam-altman-on-were-starting-rollout-of-gpt-55-cyber-a-frontier-cybersecurity-mod",
+        "rss-2026-04-30-12-builder-theme-josh-woodward-on-new-in-gemini-generate-files-and-export-them-tell-gemini-what-you-wa"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-30-01-building-the-compute-infrastructure-for-the-intelligence-age",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "summary": "OpenAI正式啟動Stargate計畫，透過大規模擴建資料中心來建構支援通用人工智慧（AGI）所需的運算基礎設施，以因應日益增長的AI模型訓練與推理需求。",
+      "take": "這項工程轉移標誌著AI訓練基礎設施從實驗性集群轉向超大規模工業化部署，開發者應預期模型供應鏈將更集中且成本結構可能因規模經濟而轉變，同時需重新評估自主代理與推論應用的延遲與頻寬瓶頸。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-30-02-the-zig-projects-rationale-for-their-firm-anti-ai-contribution-policy",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything",
+      "title": "The Zig project's rationale for their firm anti-AI contribution policy",
+      "summary": "Zig 项目实施了最严格的反AI贡献政策，禁止LLM参与任何问题、拉取请求及评论翻译，而其核心项目Bun被Anthropic收购后则采用AI辅助并在Zig分支中通过并行语义分析和多代码生成单元实现4倍性能提升。",
+      "take": "1. 对于构建AI工作流的开发者，Zig的政策表明在开源协作中需明确区分人工与AI贡献的边界，这对设计RAG系统或LLM辅助代码审查的合规性有直接参考价值。2. Bun的4倍性能优化展示了利用LLM加速编译器后端开发的可行性——建议关注对现有Zig或LLVM代码库注入并行语义分析的具体实现模式。3. 这一对立案例提醒，采用AI贡献策略时需权衡社区信任与工程效率，避免因政策冲突导致分支维护成本激增。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-30-03-llm-032a1",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/29/llm-3/#atom-everything",
+      "title": "llm 0.32a1",
+      "summary": "Simon Willison 发布 llm 0.32a1，修复了 0.32a0 中工具调用对话无法从 SQLite 正确恢复的 bug (issue #1426)。",
+      "take": "此修复直接关系到工具型 AI Agent 的持久化状态管理可靠性，开发者需确保在基于 LLM 的会话系统中，工具调用历史记录的序列化与反序列化逻辑经过严格测试，避免状态丢失导致任务中断。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-30-04-cursor-camp",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://neal.fun/cursor-camp/",
+      "title": "Cursor Camp",
+      "summary": "Neal.fun 发布 Cursor Camp，一个通过模拟光标移动与点击的交互式游戏，用于训练用户对 AI 编码助手（如 Cursor）的精确控制能力。",
+      "take": "该工具本质是一个针对 AI 辅助开发场景的微交互训练环境，通过刻意练习光标操作精度，可提升开发者与 AI 编码工具（如 Cursor、Copilot）的协作效率，减少因指令模糊导致的上下文错误。建议将其作为新人入职 AI 编码工作流的标准化训练组件。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-05-alignment-whack-a-mole-finetuning-activates-recall-of-copyrighted-books-in-llms",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
+      "title": "Alignment whack-a-mole: Finetuning activates recall of copyrighted books in LLMs",
+      "summary": "MIT研究团队发布代码，验证了对齐微调（如RLHF）会重新激活大型语言模型在预训练阶段习得的受版权保护书籍的记忆，导致原本被安全训练抑制的敏感内容（如书籍片段）在特定提示下被召回。",
+      "take": "此发现揭示当前对齐技术（如RLHF）仅是对模型记忆的浅层抑制而非根本性移除，构建者需在微调流程中引入记忆去重或遗忘机制，避免在合规场景下因微调导致版权内容泄露，同时推动更底层的记忆管理架构开发。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-06-granite-41-llms-how-theyre-built",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "summary": "IBM发布Granite 4.1系列LLM，采用混合专家架构（MoE）与注意力机制优化，通过分层知识蒸馏和动态路由训练实现参数高效扩展。",
+      "take": "MoE架构结合知识蒸馏是当前降低推理成本同时保持模型性能的可行路径。开发者应关注动态路由训练策略对专家利用效率的影响，以及注意力机制优化在长上下文场景中的实际收益。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-07-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "summary": "NVIDIA 发布 Nemotron 3 Nano Omni 模型，基于统一架构实现文档、音频和视频的超长上下文多模态理解与 Agent 交互。",
+      "take": "该模型的关键工程突破在于将多模态输入（文本、图像、音频、视频）统一为一个高密度表示，支持超过 128K token 的长上下文处理，可直接用于构建无需外部分割或转录的端到端文档解析 Agent、音频提取 Agent 与视频理解 Agent。开发者应关注其原生多模态编码器设计对现有 RAG 与多 Agent 工作流的简化潜力。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-08-vercel-now-supports-pro-plan-in-stripe-projects",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-now-supports-pro-plan-in-stripe-projects",
+      "title": "Vercel now supports Pro plan in Stripe Projects",
+      "summary": "Vercel 现已支持通过 Stripe CLI 使用共享支付令牌 (SPT) 在 Stripe Projects 中直接为 Pro 计划进行签约、升级和降级管理，实现终端的端到端计费与基础设施编排。",
+      "take": "开发者与 AI 代理现在可以直接在 Stripe CLI 工作流中程序化地管理 Vercel 订阅变更，无需切换仪表盘。这为构建自动化的基础设施生命周期管理（如按需扩缩计划）提供了新的编排切入点，尤其适合需要动态调整预算或资源的 Agent 工作流程。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-09-native-deployment-checks-are-now-available",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/native-deployment-checks",
+      "title": "Native Deployment Checks are now available",
+      "summary": "Vercel 推出原生部署检查功能，可在构建时并行运行 lint 和 typecheck，失败时由 Vercel Agent 自动调查并建议修复。",
+      "take": "该功能将代码质量门禁直接嵌入部署流水线，无需第三方集成，并利用 Agent 实现自动化故障排查与修复建议，显著降低开发者手动干预成本。对于 AI 驱动的 CI/CD 工作流，这标志着从被动检测到主动修复的范式迁移。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-10-builder-theme-how-stripe-is-building-for-an-agent-native-world",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "title": "Builder Theme: How Stripe Is Building for an Agent-native World",
+      "summary": "Stripe 观察到 LLM 对其开发者文档的流量同比增长了 10 倍，这标志着机器正成为新型互联网用户，推动其构建面向 Agent 原生的支付与开发者基础设施。",
+      "take": "AI 代理正成为新的 API 消费者，开发者基础设施（如支付和文档）必须原生支持非人类流量模式（如高频、低延迟的自动调用），并重新设计 SDK 和认证机制以应对机器身份管理。这是构建 Agent 经济中可编程货币层的工程起点。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-11-builder-theme-sam-altman-on-were-starting-rollout-of-gpt-55-cyber-a-frontier-cybersecurity-mod",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2049712078836170843",
+      "title": "Builder Theme: Sam Altman on we're starting rollout of GPT-5.5-Cyber, a frontier cybersecurity mod...",
+      "summary": "Sam Altman 宣布开始向关键网络防御者推出前沿网络安全模型 GPT-5.5-Cyber，并与生态和政府合作建立可信访问机制。",
+      "take": "此模型专为网络安全防御场景优化，开发者应关注其可能带来的自动化威胁检测与响应工作流变革。未来针对特定领域（如安全）的专用模型将成为 Agent 能力扩展的关键方向，需提前规划模型访问权限与集成架构。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-30-12-builder-theme-josh-woodward-on-new-in-gemini-generate-files-and-export-them-tell-gemini-what-you-wa",
+      "briefingId": "rss-2026-04-30",
+      "date": "2026-04-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Josh Woodward",
+      "sourceUrl": "https://x.com/joshwoodward/status/2049524400131838436",
+      "title": "Builder Theme: Josh Woodward on New in Gemini: Generate files and export them Tell Gemini what you wa...",
+      "summary": "Google Gemini新增直接根据用户自然语言指令生成并导出多种格式文件的功能，支持Google Docs、Word、PDF、Sheets、Excel、CSV、Slides、Markdown、LaTeX、TXT及RTF格式，现已全球全平台可用。",
+      "take": "开发者可将Gemini视为无代码文件生成引擎，直接在Agent工作流中调用API实现从自然语言到结构化文档的自动产出，显著简化报告生成、数据导出及多格式分发环节。这开启了LLM从对话交互向生产力工具管道的范式转变，建议在工具链中优先集成以替代手动模板脚本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

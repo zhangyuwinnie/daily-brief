@@ -1,0 +1,150 @@
+{
+  "date": "2026-04-29",
+  "briefings": [
+    {
+      "id": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-04-29",
+      "filePath": "2026-04-29.md",
+      "summaryTopline": "Cybersecurity in the Intelligence Age",
+      "insightIds": [
+        "rss-2026-04-29-01-cybersecurity-in-the-intelligence-age",
+        "rss-2026-04-29-02-quoting-matthew-yglesias",
+        "rss-2026-04-29-03-whats-new-in-pip-261-lockfiles-and-dependency-cooldowns",
+        "rss-2026-04-29-04-letting-ai-play-my-game-building-an-agentic-test-harness-to-help-play-testing",
+        "rss-2026-04-29-05-openai-models-coming-to-amazon-bedrock-interview-with-openai-and-aws-ceos",
+        "rss-2026-04-29-06-builder-theme-claude-on-claude-now-connects-to-the-tools-creative-professionals-already-use",
+        "rss-2026-04-29-07-builder-theme-sam-altman-on"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-04-29-01-cybersecurity-in-the-intelligence-age",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "title": "Cybersecurity in the Intelligence Age",
+      "summary": "OpenAI 发布了五部分行动计划，旨在通过民主化 AI 驱动的网络防御能力，增强智能时代网络安全，保护关键系统。",
+      "take": "该计划强调构建 AI 优先的安全工具链，开发者应关注将防御性 AI 模型嵌入 CI/CD 管道和运行时监控中，以自动化威胁检测与响应。未来安全架构需支持 AI 代理间的协同防御，而非仅依赖传统签名或规则。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-29-02-quoting-matthew-yglesias",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/28/matthew-yglesias/#atom-everything",
+      "title": "Quoting Matthew Yglesias",
+      "summary": "Matthew Yglesias在五个月实践后明确反对‘vibecode’方法，主张由专业软件公司利用AI编码辅助工具来生产更优质、更廉价的商业软件产品。",
+      "take": "核心工程启示：AI辅助编程不应替代专业软件工程的纪律和流程，而应作为提升开发效率和产品质量的工具。开发者应聚焦于将AI集成到结构化的工作流中，而非依赖直觉式的‘vibecode’方式。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-29-03-whats-new-in-pip-261-lockfiles-and-dependency-cooldowns",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything",
+      "title": "What's new in pip 26.1 - lockfiles and dependency cooldowns!",
+      "summary": "Python 套件管理工具 pip 26.1 版本正式引入 lockfile 功能，透過 `pip lock` 指令將套件及其依賴解析結果寫入 `pylock.toml` 檔案，同時新增依賴冷卻機制，並終止對已終止維護的 Python 3.9 支援。",
+      "take": "本次更新為 AI 工具鏈帶來實際的環境一致性改善：工程師可透過標準化 lockfile 鎖定資料科學或 LLM 相關套件（如 datasette、llm）的完整依賴版本，消除反覆構建環境時的版本漂移問題。此舉使 pip 與 uv、poetry 等新工具在依賴管理層級看齊，建議團隊將 `pip lock` 整合進 CI/CD 流程以強化可重複性。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-04-29-04-letting-ai-play-my-game-building-an-agentic-test-harness-to-help-play-testing",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+      "title": "Letting AI play my game – building an agentic test harness to help play-testing",
+      "summary": "游戏开发者构建了一个基于LLM的代理测试框架，通过模拟玩家行为自动化进行游戏测试，利用AI代理执行探索、交互和反馈生成任务。",
+      "take": "该框架展示了将LLM代理用于非对话式、离散动作场景的工程模式：通过定义API接口将游戏状态暴露给代理，并设计奖励函数引导行为，可替代传统脚本测试实现更动态的覆盖。核心启发是构建自定义agentic harness时需优先解决动作空间映射和一致性输出问题。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-29-05-openai-models-coming-to-amazon-bedrock-interview-with-openai-and-aws-ceos",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+      "title": "OpenAI models coming to Amazon Bedrock: Interview with OpenAI and AWS CEOs",
+      "summary": "OpenAI模型将通过Amazon Bedrock平台提供，由OpenAI CEO Sam Altman和AWS CEO Matt Garman确认，旨在将OpenAI的先进模型集成到AWS的托管代理生态中。",
+      "take": "这将改变AI工作流部署方式：开发者可直接在AWS的托管代理（Bedrock Agents）中使用OpenAI模型，无需自建基础设施。核心工程信号是，多云策略和模型互操作性成为主流，需调整现有工具链以支持跨平台模型编排。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-29-06-builder-theme-claude-on-claude-now-connects-to-the-tools-creative-professionals-already-use",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2049143438281445811",
+      "title": "Builder Theme: Claude on Claude now connects to the tools creative professionals already use....",
+      "summary": "Claude 发布 Blender 连接器，使其能够直接与创意专业人士使用的工具进行交互，支持场景调试、工具构建和批量对象修改。",
+      "take": "此机制将 LLM 的能力从文本生成扩展至对 3D 软件的直接程序化控制，为 AI 驱动的创意工作流开辟了新的自动化与调试路径。开发者可基于此模式，构建针对 Blender 等专业工具的 AI 代理，实现复杂场景的批量操作与脚本生成。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-04-29-07-builder-theme-sam-altman-on",
+      "briefingId": "rss-2026-04-29",
+      "date": "2026-04-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2049241518540808440",
+      "title": "Builder Theme: Sam Altman on",
+      "summary": "Sam Altman在社交媒体片段中向AI构建者分享了一个构建者主题，核心内容与AI开发流程或智能体能力相关，但具体机制未披露。",
+      "take": "由于原文片段仅提供URL链接，未包含具体技术细节，无法提取可操作的架构变化或工作流范式。建议直接访问链接以获取Sam Altman针对AI构建者的具体观点或方法论，以评估其对工具链或智能体能力的潜在影响。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

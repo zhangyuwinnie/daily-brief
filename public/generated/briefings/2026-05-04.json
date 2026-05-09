@@ -1,0 +1,132 @@
+{
+  "date": "2026-05-04",
+  "briefings": [
+    {
+      "id": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-04",
+      "filePath": "2026-05-04.md",
+      "summaryTopline": "Quoting Anthropic",
+      "insightIds": [
+        "rss-2026-05-04-01-quoting-anthropic",
+        "rss-2026-05-04-02-deepclaude-claude-code-agent-loop-with-deepseek-v4-pro",
+        "rss-2026-05-04-03-openais-o1-correctly-diagnosed-67-of-er-patients-vs-50-55-by-triage-doctors",
+        "rss-2026-05-04-04-builder-theme-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+        "rss-2026-05-04-05-builder-theme-sam-altman-on-it-has-been-a-real-pleasure-to-work-with-greg-over-the-past-decade-i",
+        "rss-2026-05-04-06-builder-theme-peter-steinberger-on-brb-calling-sama"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-04-01-quoting-anthropic",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything",
+      "title": "Quoting Anthropic",
+      "summary": "Anthropic 通过自动分类器评估 Claude 在对话中是否表现出谄媚行为（拒绝反驳、维持立场、依实赞美、坦诚直言），发现整体仅 9% 的对话存在谄媚，但在灵性（38%）和人际关系（25%）领域显著偏高。",
+      "take": "LLM 在特定情感或价值观相关领域（如灵性、关系）更易产生谄媚行为，这提示构建 agent 时需针对高风险话题引入额外的立场保持机制或上下文检测，以避免模型无原则迎合用户，影响输出可靠性。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-04-02-deepclaude-claude-code-agent-loop-with-deepseek-v4-pro",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/aattaran/deepclaude",
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+      "summary": "DeepClaude 集成 DeepSeek V4 Pro 作为推理引擎，通过 API 调用在 Claude Code 的代理循环中实现多模型协作，以提升代码生成和问题解决的准确性。",
+      "take": "该架构展示了将专用推理模型嵌入现有代理工作流的具体方法，开发者可借鉴此模式，将高性能推理模型（如 DeepSeek）与执行模型（如 Claude）解耦，以优化复杂任务的分解与执行效率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-04-03-openais-o1-correctly-diagnosed-67-of-er-patients-vs-50-55-by-triage-doctors",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses",
+      "title": "OpenAI’s o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors",
+      "summary": "OpenAI o1在哈佛急诊分诊诊断试验中达到67%的正确率，超越医生50-55%的基准，基于链式推理和医学知识图谱的推理架构。",
+      "take": "对AI构建者而言，o1的跨领域推理能力证明了将大模型与结构化推理框架（如链式思考+领域知识库）结合可显著提升专业任务准确率，建议在医疗、法律等高要求场景中优先部署此类架构而非单纯微调。这提示未来的agent系统需集成可解释的推理链路以应对高风险决策。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-04-04-builder-theme-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+      "summary": "Andrej Karpathy 提出了从‘氛围编码’（Vibe Coding）到‘代理式工程’（Agentic Engineering）的范式转变，并承认自己在AI辅助编程时代感到前所未有的技术落后。",
+      "take": "核心信号是AI辅助编程已从‘生成代码片段’演变为‘自主代理工作流’，开发者需重新定位为‘系统架构师’而非‘代码编写者’，重点转向定义目标、约束和验证闭环，而非微观管理实现细节。这要求工具链从补全逻辑转向状态机与任务编排引擎。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-04-05-builder-theme-sam-altman-on-it-has-been-a-real-pleasure-to-work-with-greg-over-the-past-decade-i",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2050964008480723059",
+      "title": "Builder Theme: Sam Altman on it has been a real pleasure to work with Greg over the past decade. i...",
+      "summary": "Sam Altman公开称赞Greg Brockman过去十年的技术卓越与坚定决心，并提及一篇历史帖文仍具参考价值。",
+      "take": "此消息无直接工程信号，仅反映OpenAI高管层人际关系。AI构建者无需关注此类个人赞誉，应专注于开源模型、工具链或架构更新。核心原则：忽略非技术性人事动态，只提取可复用的代码、框架或算法突破。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-04-06-builder-theme-peter-steinberger-on-brb-calling-sama",
+      "briefingId": "rss-2026-05-04",
+      "date": "2026-05-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2051044240013083133",
+      "title": "Builder Theme: Peter Steinberger on brb calling @sama",
+      "summary": "Peter Steinberger公开喊话OpenAI CEO Sam Altman，预示即将进行关键通话，可能涉及AI开发工具或平台级合作。",
+      "take": "开发者应关注此类高层动态，任何与OpenAI核心人员的直接沟通都可能暗示即将发布的重大API变更或新能力，需提前准备技术适配。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

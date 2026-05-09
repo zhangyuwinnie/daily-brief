@@ -1,5 +1,16 @@
 {
   "availableDates": [
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03",
+    "2026-05-02",
+    "2026-05-01",
+    "2026-04-30",
+    "2026-04-29",
+    "2026-04-28",
     "2026-04-27",
     "2026-04-26",
     "2026-04-25",
@@ -77,6 +88,235 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-08": {
+      "briefingIds": [
+        "rss-2026-05-08"
+      ],
+      "insightIds": [
+        "rss-2026-05-08-01-agents-need-control-flow-not-more-prompts",
+        "rss-2026-05-08-02-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
+        "rss-2026-05-08-03-simplex-rethinks-software-development-with-codex",
+        "rss-2026-05-08-04-advancing-voice-intelligence-with-new-models-in-the-api",
+        "rss-2026-05-08-05-llm-gemini-031",
+        "rss-2026-05-08-06-improving-token-efficiency-in-github-agentic-workflows",
+        "rss-2026-05-08-07-agent-pull-requests-are-everywhere-here8217s-how-to-review-them",
+        "rss-2026-05-08-08-dirtyfrag-universal-linux-lpe",
+        "rss-2026-05-08-09-builder-theme-openai-board-member-zico-kolter-on-the-real-risks-of-frontier-ai",
+        "rss-2026-05-08-10-builder-theme-claude-on-claude-for-excel-powerpoint-and-word-are-now-generally-available-a",
+        "rss-2026-05-08-11-builder-theme-alex-albert-on-with-the-help-of-claude-mythos-preview-the-firefox-team-fixed-more-s"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-07": {
+      "briefingIds": [
+        "rss-2026-05-07"
+      ],
+      "insightIds": [
+        "rss-2026-05-07-01-parloa-builds-service-agents-customers-want-to-talk-to",
+        "rss-2026-05-07-02-uber-uses-openai-to-help-people-earn-smarter-and-book-faster",
+        "rss-2026-05-07-03-alphaevolve-gemini-powered-coding-agent-scaling-impact-across-fields",
+        "rss-2026-05-07-04-live-blog-code-w-claude-2026",
+        "rss-2026-05-07-05-our-ai-started-a-cafe-in-stockholm",
+        "rss-2026-05-07-06-validating-agentic-behavior-when-correct-isnt-deterministic",
+        "rss-2026-05-07-07-sqlite-is-a-library-of-congress-recommended-storage-format",
+        "rss-2026-05-07-08-vllm-v0-to-v1-correctness-before-corrections-in-rl",
+        "rss-2026-05-07-09-builder-theme-anthropics-boris-cherny-codings-printing-press-moment",
+        "rss-2026-05-07-10-builder-theme-thariq-on-everyday-were-trying-to-obtain-more-compute-to-pass-on-to-you-wer",
+        "rss-2026-05-07-11-builder-theme-claude-on-dreaming-reviews-your-agents-past-sessions-extracts-patterns-and-c"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-06": {
+      "briefingIds": [
+        "rss-2026-05-06"
+      ],
+      "insightIds": [
+        "rss-2026-05-06-01-agents-can-now-create-cloudflare-accounts-buy-domains-and-deploy",
+        "rss-2026-05-06-02-show-hn-adam-an-embeddable-cross-platform-ai-agent-library",
+        "rss-2026-05-06-03-vibe-coding-and-agentic-engineering-are-getting-closer-than-id-like",
+        "rss-2026-05-06-04-how-frontier-enterprises-are-building-an-ai-advantage",
+        "rss-2026-05-06-05-datasette-referrer-policy-01",
+        "rss-2026-05-06-06-unlocking-large-scale-ai-training-networks-with-mrc-multipath-reliable-connection",
+        "rss-2026-05-06-07-welcome-to-maintainer-month-celebrating-the-people-behind-the-code",
+        "rss-2026-05-06-08-how-kiko-milano-scales-for-black-friday",
+        "rss-2026-05-06-09-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-06-10-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-05-06-11-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+        "rss-2026-05-06-12-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-05": {
+      "briefingIds": [
+        "rss-2026-05-05"
+      ],
+      "insightIds": [
+        "rss-2026-05-05-01-how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+        "rss-2026-05-05-02-lessons-for-agentic-coding-what-should-we-do-when-code-is-cheap",
+        "rss-2026-05-05-03-agent-skills",
+        "rss-2026-05-05-04-redis-array-playground",
+        "rss-2026-05-05-05-query-observability-metrics-using-the-vercel-cli",
+        "rss-2026-05-05-06-openai-and-pwc-collaborate-to-reimagine-the-office-of-the-cfo",
+        "rss-2026-05-05-07-tre-python-binding-redos-robustness-demo",
+        "rss-2026-05-05-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-05-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+        "rss-2026-05-05-10-builder-theme-sam-altman-on-we-are-gonna-do-something-nice-for-everyone-who-applied-for-the-gpt-5",
+        "rss-2026-05-05-11-builder-theme-guillermo-rauch-on-npx-deepsec-were-introducing-an-open-source-agent-orchestr"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-04": {
+      "briefingIds": [
+        "rss-2026-05-04"
+      ],
+      "insightIds": [
+        "rss-2026-05-04-01-quoting-anthropic",
+        "rss-2026-05-04-02-deepclaude-claude-code-agent-loop-with-deepseek-v4-pro",
+        "rss-2026-05-04-03-openais-o1-correctly-diagnosed-67-of-er-patients-vs-50-55-by-triage-doctors",
+        "rss-2026-05-04-04-builder-theme-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+        "rss-2026-05-04-05-builder-theme-sam-altman-on-it-has-been-a-real-pleasure-to-work-with-greg-over-the-past-decade-i",
+        "rss-2026-05-04-06-builder-theme-peter-steinberger-on-brb-calling-sama"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-03": {
+      "briefingIds": [
+        "rss-2026-05-03"
+      ],
+      "insightIds": [
+        "rss-2026-05-03-01-sightings",
+        "rss-2026-05-03-02-a-couple-million-lines-of-haskell-production-engineering-at-mercury",
+        "rss-2026-05-03-03-the-agent-harness-belongs-outside-the-sandbox",
+        "rss-2026-05-03-04-builder-theme-openais-greg-brockman-why-human-attention-is-the-new-bottleneck",
+        "rss-2026-05-03-05-builder-theme-sam-altman-on-i-keep-thinking-i-want-the-models-to-be-cheaperfaster-more-than-i-wa",
+        "rss-2026-05-03-06-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-03-07-builder-theme-peter-steinberger-on-crabbox-030-is-out-remote-linux-runs-for-dirty-worktrees-git"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-02": {
+      "briefingIds": [
+        "rss-2026-05-02"
+      ],
+      "insightIds": [
+        "rss-2026-05-02-01-inaturalist-sightings",
+        "rss-2026-05-02-02-our-evaluation-of-openais-gpt-55-cyber-capabilities",
+        "rss-2026-05-02-03-open-design-use-your-coding-agent-as-a-design-engine",
+        "rss-2026-05-02-04-a-report-on-burnout-in-open-source-software-communities-2025-pdf",
+        "rss-2026-05-02-05-builder-theme-baseten-ceo-tuhin-srivastava-on-the-ai-inference-crunch-custom-models-and-building-the-inference-cloud",
+        "rss-2026-05-02-06-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-05-02-07-builder-theme-claude-on-code-with-claude-our-developer-conference-returns-next-week-whethe",
+        "rss-2026-05-02-08-builder-theme-sam-altman-on-man-its-good-to-be-back-on-twitter-there-is-comfort-in-the-skills-of"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-01": {
+      "briefingIds": [
+        "rss-2026-05-01"
+      ],
+      "insightIds": [
+        "rss-2026-05-01-01-codex-cli-01280-adds-goal",
+        "rss-2026-05-01-02-our-agent-found-a-bug-with-wireguard-in-google-kubernetes-engine",
+        "rss-2026-05-01-03-llm-032a0-is-a-major-backwards-compatible-refactor",
+        "rss-2026-05-01-04-custom-tags-available-in-beta-on-vercel-sandbox",
+        "rss-2026-05-01-05-advanced-quantization-algorithm-for-llms",
+        "rss-2026-05-01-06-red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale",
+        "rss-2026-05-01-07-how-gitbook-serves-30000-sites-with-sub-second-content-updates",
+        "rss-2026-05-01-08-builder-theme-andrej-karpathy-on-this-is-the-the-quote-ive-been-citing-a-lot-recently",
+        "rss-2026-05-01-09-builder-theme-demis-hassabis-on-building-deepmind-alphafold-and-the-final-stretch-to-agi",
+        "rss-2026-05-01-10-builder-theme-sam-altman-on-big-upgrade-for-codex-today-try-it-for-non-coding-computer-work",
+        "rss-2026-05-01-11-builder-theme-redesigning-claude-code-on-desktop-for-parallel-agents"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-30": {
+      "briefingIds": [
+        "rss-2026-04-30"
+      ],
+      "insightIds": [
+        "rss-2026-04-30-01-building-the-compute-infrastructure-for-the-intelligence-age",
+        "rss-2026-04-30-02-the-zig-projects-rationale-for-their-firm-anti-ai-contribution-policy",
+        "rss-2026-04-30-03-llm-032a1",
+        "rss-2026-04-30-04-cursor-camp",
+        "rss-2026-04-30-05-alignment-whack-a-mole-finetuning-activates-recall-of-copyrighted-books-in-llms",
+        "rss-2026-04-30-06-granite-41-llms-how-theyre-built",
+        "rss-2026-04-30-07-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+        "rss-2026-04-30-08-vercel-now-supports-pro-plan-in-stripe-projects",
+        "rss-2026-04-30-09-native-deployment-checks-are-now-available",
+        "rss-2026-04-30-10-builder-theme-how-stripe-is-building-for-an-agent-native-world",
+        "rss-2026-04-30-11-builder-theme-sam-altman-on-were-starting-rollout-of-gpt-55-cyber-a-frontier-cybersecurity-mod",
+        "rss-2026-04-30-12-builder-theme-josh-woodward-on-new-in-gemini-generate-files-and-export-them-tell-gemini-what-you-wa"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-29": {
+      "briefingIds": [
+        "rss-2026-04-29"
+      ],
+      "insightIds": [
+        "rss-2026-04-29-01-cybersecurity-in-the-intelligence-age",
+        "rss-2026-04-29-02-quoting-matthew-yglesias",
+        "rss-2026-04-29-03-whats-new-in-pip-261-lockfiles-and-dependency-cooldowns",
+        "rss-2026-04-29-04-letting-ai-play-my-game-building-an-agentic-test-harness-to-help-play-testing",
+        "rss-2026-04-29-05-openai-models-coming-to-amazon-bedrock-interview-with-openai-and-aws-ceos",
+        "rss-2026-04-29-06-builder-theme-claude-on-claude-now-connects-to-the-tools-creative-professionals-already-use",
+        "rss-2026-04-29-07-builder-theme-sam-altman-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-04-28": {
+      "briefingIds": [
+        "rss-2026-04-28"
+      ],
+      "insightIds": [
+        "rss-2026-04-28-01-openai-models-codex-and-managed-agents-come-to-aws",
+        "rss-2026-04-28-02-quoting-openai-codex-base_instructions",
+        "rss-2026-04-28-03-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for-documents-audio-and-video-agents",
+        "rss-2026-04-28-04-show-hn-drive-any-macos-app-in-the-background-without-stealing-the-cursor",
+        "rss-2026-04-28-05-we-decreased-our-llm-costs-with-opus",
+        "rss-2026-04-28-06-microsoftvibevoice",
+        "rss-2026-04-28-07-native-deployment-checks-are-now-available",
+        "rss-2026-04-28-08-2026-vercel-ai-accelerator-recap",
+        "rss-2026-04-28-09-our-commitment-to-community-safety",
+        "rss-2026-04-28-10-builder-theme-from-seo-to-agent-led-growth-profounds-james-cadwallader",
+        "rss-2026-04-28-11-builder-theme-sam-altman-on-we-have-updated-our-partnership-with-microsoft-microsoft-will-remain",
+        "rss-2026-04-28-12-builder-theme-aaron-levie-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-04-27": {
       "briefingIds": [
         "rss-2026-04-27"
