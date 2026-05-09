@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-09",
     "2026-05-08",
     "2026-05-07",
     "2026-05-06",
@@ -88,6 +89,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-09": {
+      "briefingIds": [
+        "rss-2026-05-09"
+      ],
+      "insightIds": [
+        "rss-2026-05-09-01-quoting-luke-curley",
+        "rss-2026-05-09-02-behind-the-scenes-hardening-firefox-with-claude-mythos-preview",
+        "rss-2026-05-09-03-why-age-assurance-laws-matter-for-developers",
+        "rss-2026-05-09-04-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-09-05-openais-webrtc-problem",
+        "rss-2026-05-09-06-chat-sdk-adds-web-adapter-support",
+        "rss-2026-05-09-07-builder-theme-the-secrets-of-claudes-platform-from-the-team-who-built-it",
+        "rss-2026-05-09-08-builder-theme-thariq-on-html-is-the-new-markdown-ive-stopped-writing-markdown-files-for-alm",
+        "rss-2026-05-09-09-builder-theme-sam-altman-on-call-me-maybe"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-08": {
       "briefingIds": [
         "rss-2026-05-08"
