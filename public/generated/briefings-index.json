@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-10",
     "2026-05-09",
     "2026-05-08",
     "2026-05-07",
@@ -89,6 +90,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-10": {
+      "briefingIds": [
+        "rss-2026-05-10"
+      ],
+      "insightIds": [
+        "rss-2026-05-10-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-10-02-gemini-api-file-search-is-now-multimodal",
+        "rss-2026-05-10-03-llms-corrupt-your-documents-when-you-delegate",
+        "rss-2026-05-10-04-oncoagent-a-dual-tier-multi-agent-framework-for-privacy-preserving-oncology-clinical-decision-support",
+        "rss-2026-05-10-05-builder-theme-elevenlabs-mati-staniszewski-how-voice-becomes-the-interface-for-everything",
+        "rss-2026-05-10-06-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-05-10-07-builder-theme-sam-altman-on-55-is-an-autistic-genius-with-very-strange-taste-in-naming-shocking",
+        "rss-2026-05-10-08-builder-theme-new-connectors-in-claude-for-everyday-life"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-09": {
       "briefingIds": [
         "rss-2026-05-09"

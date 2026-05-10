@@ -1,0 +1,169 @@
+{
+  "date": "2026-05-10",
+  "briefings": [
+    {
+      "id": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-10",
+      "filePath": "2026-05-10.md",
+      "summaryTopline": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "insightIds": [
+        "rss-2026-05-10-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+        "rss-2026-05-10-02-gemini-api-file-search-is-now-multimodal",
+        "rss-2026-05-10-03-llms-corrupt-your-documents-when-you-delegate",
+        "rss-2026-05-10-04-oncoagent-a-dual-tier-multi-agent-framework-for-privacy-preserving-oncology-clinical-decision-support",
+        "rss-2026-05-10-05-builder-theme-elevenlabs-mati-staniszewski-how-voice-becomes-the-interface-for-everything",
+        "rss-2026-05-10-06-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-05-10-07-builder-theme-sam-altman-on-55-is-an-autistic-genius-with-very-strange-taste-in-naming-shocking",
+        "rss-2026-05-10-08-builder-theme-new-connectors-in-claude-for-everyday-life"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-10-01-using-claude-code-the-unreasonable-effectiveness-of-html",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
+      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "summary": "Thariq Shihipar（Anthropic Claude Code团队成员）论证了在Claude Code中，要求以HTML而非Markdown作为输出格式能显著提升LLM生成内容的视觉表现力、信息密度和交互性，尤其适用于PR审查、代码解释等复杂工程场景。",
+      "take": "优先采用HTML作为Claude Code的输出格式，可利用其丰富的排版和内联注释能力，使AI生成的代码审查、架构说明等结果直接包含颜色编码的严重性标注和行内边距注释，大幅提升信息传递效率。建议在Prompt中明确要求生成包含实际差异和交互式注释的HTML Artifact，而非节省token的Markdown。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-10-02-gemini-api-file-search-is-now-multimodal",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/",
+      "title": "Gemini API File Search is now multimodal",
+      "summary": "Google 在 Gemini API 中扩展了 File Search 功能，使其支持多模态 RAG，即能同时检索和推理文本、图像、音频和视频文件中的信息。",
+      "take": "开发者现在无需为不同模态数据分别构建检索管道，可以通过单一 API 调用实现跨模态的信息检索与生成，显著简化了多模态 RAG 应用的构建流程。此更新对需要处理混合数据格式（如文档、截图、会议录音）的 Agent 工作流是直接利好，降低了集成复杂度和开发成本。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-10-03-llms-corrupt-your-documents-when-you-delegate",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://arxiv.org/abs/2604.15597",
+      "title": "LLMs corrupt your documents when you delegate",
+      "summary": "Comments。",
+      "take": "这件事与 LLM 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-10-04-oncoagent-a-dual-tier-multi-agent-framework-for-privacy-preserving-oncology-clinical-decision-support",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+      "title": "\"OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
+      "summary": "OncoAgent 提出双层级多智能体框架，通过本地推理与加密通信分离患者数据与临床决策逻辑，实现隐私保护的肿瘤学临床决策支持。",
+      "take": "该架构将敏感数据处理与推理解耦，为医疗AI代理提供可落地的隐私合规范式。开发者可直接复用其双层级设计：本地层处理患者数据，云端层执行模型推理，通过加密中间结果避免数据泄露。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-10-05-builder-theme-elevenlabs-mati-staniszewski-how-voice-becomes-the-interface-for-everything",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for Everything",
+      "summary": "ElevenLabs 创始人 Mati Staniszewski 在与童年好友联合创办公司之前，基于多年合作关系，于 2022 年正式启动语音 AI 平台，核心机制是将语音作为通用交互界面。",
+      "take": "开发者应关注语音作为多模态 AI 系统输入/输出层的原生集成，而非仅视作独立工具；早期工程上需优先解决低延迟、高表现力的语音生成与识别，以实现界面级用户体验。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-10-06-builder-theme-an-update-on-recent-claude-code-quality-reports",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "title": "Builder Theme: An update on recent Claude Code quality reports",
+      "summary": "Anthropic 查明并修复了影响 Claude Code、Agent SDK 和 Cowork 的三个独立质量问题，根源在于推理努力度默认值调整、SDK 消息截断及前端缓存逻辑，API 未受影响，修复版本为 v2.1.116。",
+      "take": "核心工程教训：产品层（CLI/SDK）的行为变更可能与模型质量感知混淆，必须隔离 API 与客户端层的监控。开发者应主动验证默认参数（如 reasoning_effort）对下游任务的影响，并留意 SDK 的消息长度限制可能隐式降低回复完整性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-10-07-builder-theme-sam-altman-on-55-is-an-autistic-genius-with-very-strange-taste-in-naming-shocking",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2053192407664259251",
+      "title": "Builder Theme: Sam Altman on 5.5 is an autistic genius with very strange taste in naming shocking...",
+      "summary": "Sam Altman 公开评论某模型版本“5.5”为自闭症天才，且命名品味怪异，暗示该版本在技术上有显著但非传统的突破。",
+      "take": "AI 模型迭代中，非典型思维或架构（如“自闭症天才”式的聚焦与偏离常规）可能产生突破性能力，开发者应关注此类非常规模型的技术实现原理，而非其命名或营销包装。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-10-08-builder-theme-new-connectors-in-claude-for-everyday-life",
+      "briefingId": "rss-2026-05-10",
+      "date": "2026-05-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/connectors-for-everyday-life",
+      "title": "Builder Theme: New connectors in Claude for everyday life",
+      "summary": "Anthropic将Claude的连接器生态从企业工具扩展至日常应用（如AllTrails、Instacart、Audible、Tripadvisor、Intuit TurboTax），覆盖超200个连接器，支持用户在单一对话中串联多个应用以完成跨域任务。",
+      "take": "Claude的连接器生态正在从单一工具集成转向跨域工作流编排，开发者应关注如何利用这些连接器构建复合型Agent，将个人生活与工作效率无缝衔接，例如通过多连接器组合实现自动化决策链条。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
