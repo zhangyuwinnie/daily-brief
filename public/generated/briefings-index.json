@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-11",
     "2026-05-10",
     "2026-05-09",
     "2026-05-08",
@@ -90,6 +91,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-11": {
+      "briefingIds": [
+        "rss-2026-05-11"
+      ],
+      "insightIds": [
+        "rss-2026-05-11-01-how-enterprises-are-scaling-ai",
+        "rss-2026-05-11-02-openai-campus-network-student-club-interest-form",
+        "rss-2026-05-11-03-the-openai-deployment-company",
+        "rss-2026-05-11-04-quoting-new-york-times-editors-note",
+        "rss-2026-05-11-05-training-an-llm-in-swift-part-1-taking-matrix-mult-from-gflopx2fs-to-tflopx2fs",
+        "rss-2026-05-11-06-how-superset-built-the-ide-for-ai-agents-on-vercel",
+        "rss-2026-05-11-07-paypal-increases-roadmap-throughput-by-40-with-cursor",
+        "rss-2026-05-11-08-builder-theme-baseten-ceo-tuhin-srivastava-on-the-ai-inference-crunch-custom-models-and-building-the-inference-cloud",
+        "rss-2026-05-11-09-builder-theme-sam-altman-on-what-if-we-name-the-next-model-goblin-almost-worth-it-to-make-you-a",
+        "rss-2026-05-11-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-11-11-builder-theme-thariq-on-jarred-tried-rewriting-bun-in-rust-and-it-passes-998-of-the-existin"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-10": {
       "briefingIds": [
         "rss-2026-05-10"

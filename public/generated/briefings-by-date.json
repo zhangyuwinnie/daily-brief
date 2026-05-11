@@ -19975,5 +19975,220 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-11": {
+    "date": "2026-05-11",
+    "briefings": [
+      {
+        "id": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-11",
+        "filePath": "2026-05-11.md",
+        "summaryTopline": "How enterprises are scaling AI",
+        "insightIds": [
+          "rss-2026-05-11-01-how-enterprises-are-scaling-ai",
+          "rss-2026-05-11-02-openai-campus-network-student-club-interest-form",
+          "rss-2026-05-11-03-the-openai-deployment-company",
+          "rss-2026-05-11-04-quoting-new-york-times-editors-note",
+          "rss-2026-05-11-05-training-an-llm-in-swift-part-1-taking-matrix-mult-from-gflopx2fs-to-tflopx2fs",
+          "rss-2026-05-11-06-how-superset-built-the-ide-for-ai-agents-on-vercel",
+          "rss-2026-05-11-07-paypal-increases-roadmap-throughput-by-40-with-cursor",
+          "rss-2026-05-11-08-builder-theme-baseten-ceo-tuhin-srivastava-on-the-ai-inference-crunch-custom-models-and-building-the-inference-cloud",
+          "rss-2026-05-11-09-builder-theme-sam-altman-on-what-if-we-name-the-next-model-goblin-almost-worth-it-to-make-you-a",
+          "rss-2026-05-11-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+          "rss-2026-05-11-11-builder-theme-thariq-on-jarred-tried-rewriting-bun-in-rust-and-it-passes-998-of-the-existin"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-11-01-how-enterprises-are-scaling-ai",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+        "title": "How enterprises are scaling AI",
+        "summary": "OpenAI发布企业级AI扩展指南，强调从实验到规模化需构建信任、治理、工作流设计与质量控制的复合体系。",
+        "take": "工作流设计是AI规模化的关键瓶颈，开发者需将模型调用嵌入结构化业务流程，并通过治理框架确保输出质量与合规性，而非仅关注模型性能提升。",
+        "topics": [
+          "Security",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-11-02-openai-campus-network-student-club-interest-form",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+        "title": "OpenAI Campus Network: Student club interest form",
+        "summary": "OpenAI启动校园网络计划，通过兴趣表单招募全球学生社团，提供AI工具访问权限与活动支持，旨在构建以AI为核心的校园社群生态。",
+        "take": "此计划为AI开发者提供了早期社区渗透与工具普及的渠道，工程团队可关注学生社团的反馈以优化AI工具链的易用性，同时该网络可能成为新兴AI应用场景的试验场。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-11-03-the-openai-deployment-company",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://openai.com/index/openai-launches-the-deployment-company/",
+        "title": "The OpenAI Deployment Company",
+        "summary": "OpenAI 推出“部署公司”服务，旨在通过专业团队协助企业完成AI模型从开发到生产环境的完整部署流程，涵盖安全性、合规性与性能优化。",
+        "take": "开发者需关注OpenAI提供的托管部署架构，这可能会改变企业自建AI基础设施的策略，转向更依赖API层的服务化部署；核心工程信号是降低运维复杂度的同时，需评估对模型控制权与数据隐私的潜在影响。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-11-04-quoting-new-york-times-editors-note",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
+        "title": "Quoting New York Times Editors’ Note",
+        "summary": "《纽约时报》因编辑流程中误将LLM生成的加拿大政客观点摘要作为直接引语使用，发布官方编辑说明纠正错误，揭示LLM在新闻生产中的事实核查机制失效。",
+        "take": "LLM生成的摘要文本在事实性上不可直接等同于原始引语，工程上必须建立明确的数据血缘追踪机制，将模型输出与原始资料片段进行锚定比对。开发者应在所有面向生产环境的LLM管道中强制加入引文验证节点，对涉及事实陈述的输出执行归因复核，否则会引入系统性幻觉风险。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-05-training-an-llm-in-swift-part-1-taking-matrix-mult-from-gflopx2fs-to-tflopx2fs",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+        "title": "Training an LLM in Swift, Part 1: Taking matrix mult from Gflop&#x2F;s to Tflop&#x2F;s",
+        "summary": "在Swift中通过逐层优化矩阵乘法（利用缓存分块、SIMD向量化和多线程），实现了从Gflop/s到Tflop/s算力的跃迁，展示了在不依赖GPU的情况下如何突破CPU计算瓶颈。",
+        "take": "此方法揭示了训练/推理LLM时，即使没有高端GPU，依然可以通过极致的内存层级管理和指令集利用，显著提升CPU端矩阵运算吞吐量。开发者可将其作为自定义算子优化的参考，尤其适用于边缘设备或资源受限环境下的AI推理加速。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-06-how-superset-built-the-ide-for-ai-agents-on-vercel",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-superset-built-the-ide-for-ai-agents-on-vercel",
+        "title": "How Superset built the IDE for AI agents on Vercel",
+        "summary": "Superset在Vercel上构建了面向AI多智能体开发的IDE，支持并行运行最多10个编码智能体，每个拥有独立隔离工作区，实现跨多分支同时生成代码，周均部署1000-1400次，平均构建时间约30秒，周活跃用户周环比增长57-64%。",
+        "take": "传统IDE和审查系统针对单开发者单任务设计，在多智能体云开发范式下成为瓶颈。Superset通过隔离工作区并行调度编码智能体，将开发流程从单体聊天转向舰队指挥，这要求工具链原生支持分支级并行操作和快速预览部署，是构建新一代Agent工作台的关键架构模式。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-07-paypal-increases-roadmap-throughput-by-40-with-cursor",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/paypal",
+        "title": "PayPal increases roadmap throughput by 40% with Cursor",
+        "summary": "PayPal 通过采用 Cursor AI 编程工具，在保持代码质量的同时，将开发路线图交付吞吐量提升了 40%。",
+        "take": "这是 AI 辅助编程在大型企业复杂代码库中规模化应用的实证案例。工程师应关注 Cursor 如何通过上下文感知的补全和代理式代码生成，减少了 PayPal 在安全审查和跨模块集成上的手动开销，从而直接提升交付节奏。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-08-builder-theme-baseten-ceo-tuhin-srivastava-on-the-ai-inference-crunch-custom-models-and-building-the-inference-cloud",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "No Priors",
+        "sourceUrl": "https://www.youtube.com/watch?v=XAbKflCncDo",
+        "title": "Builder Theme: Baseten CEO Tuhin Srivastava on the AI Inference Crunch, Custom Models, and Building the Inference Cloud",
+        "summary": "Baseten CEO Tuhin Srivastava 阐述了 AI 推理市场的剧烈扩张，其公司年营收预计超十亿美元、规模同比增长30倍，核心驱动力来自自定义模型部署与推理云基础设施需求激增。",
+        "take": "推理云正成为独立于训练的爆发市场，关键工程变化在于工作负载从标准大模型转向高定制化模型，要求架构支持灵活的多芯片后端与自动扩缩容。Builder 应关注推理时内存带宽优化与冷启动延迟降低，而非仅盯着训练算力瓶颈。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-09-builder-theme-sam-altman-on-what-if-we-name-the-next-model-goblin-almost-worth-it-to-make-you-a",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2053572868936761350",
+        "title": "Builder Theme: Sam Altman on what if we name the next model \"goblin\" almost worth it to make you a...",
+        "summary": "Sam Altman 在社交媒体上玩笑式地提议将下一个 AI 模型命名为“goblin”，以取悦开发者社区。",
+        "take": "此提议虽为玩笑，但反映出模型命名对社区情绪和品牌认同的潜在影响。对 AI 构建者而言，关注模型命名背后的用户心理与社区互动策略，可能比技术细节更重要。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+        "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+        "summary": "Anthropic提出受管代理（Managed Agents）架构，将智能体的大脑（模型推理）与双手（工具执行）解耦，并通过显式指令和上下文重置机制解决模型‘上下文焦虑’问题，同时证明不同模型版本（如Sonnet 4.5 vs Opus 4.5）对同一编排框架的需求差异会导致部分设计失效。",
+        "take": "核心工程要点是：构建长期运行的代理系统时，编排层（harness）必须模型感知化，即内建对模型版本迭代后行为变化的检测与自动调整机制，避免将针对特定模型版本的临时修补（如上下文重置）固化为永久架构。开发者应采用可替换的模型适配器模式，将大脑与双手的通信协议（如指令格式、上下文管理策略）设计为独立配置层，以支持模型升级时零成本迁移。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-11-11-builder-theme-thariq-on-jarred-tried-rewriting-bun-in-rust-and-it-passes-998-of-the-existin",
+        "briefingId": "rss-2026-05-11",
+        "date": "2026-05-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2053559397654348159",
+        "title": "Builder Theme: Thariq on Jarred tried rewriting Bun in Rust and it passes 99.8% of the existin...",
+        "summary": "Jarred 尝试用 Rust 重写 Bun，并通过了 99.8% 的现有测试套件，挑战了项目语言选型的默认假设。",
+        "take": "这一实验表明，对于性能关键型基础设施，迁移到如 Rust 等系统语言不仅是可行的，而且兼容性极高。开发者应重新评估在不牺牲现有功能的前提下，通过语言重写来获得底层性能提升的可能性。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
