@@ -1,0 +1,190 @@
+{
+  "date": "2026-05-12",
+  "briefings": [
+    {
+      "id": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-12",
+      "filePath": "2026-05-12.md",
+      "summaryTopline": "Thoughts on GitLab's workforce reduction\" and \"structural and strategic decisions\"",
+      "insightIds": [
+        "rss-2026-05-12-01-thoughts-on-gitlabs-workforce-reduction-and-structural-and-strategic-decisions",
+        "rss-2026-05-12-02-quoting-james-shore",
+        "rss-2026-05-12-03-github-for-beginners-getting-started-with-oss-contributions",
+        "rss-2026-05-12-04-bambu-lab-is-abusing-the-open-source-social-contract",
+        "rss-2026-05-12-05-claude-platform-on-aws",
+        "rss-2026-05-12-06-socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests",
+        "rss-2026-05-12-07-builder-theme-amex-global-business-travel-the-worlds-first-ai-take-private-with-long-lake-ceo-alexander-taubman",
+        "rss-2026-05-12-08-builder-theme-andrej-karpathy-on-this-works-really-well-btw-at-the-end-of-your-query-ask-your-llm-to",
+        "rss-2026-05-12-09-builder-theme-swyx-on-i-believe-the-kids-call-this-thinkymachines-just-brutally-framemogg"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-12-01-thoughts-on-gitlabs-workforce-reduction-and-structural-and-strategic-decisions",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything",
+      "title": "Thoughts on GitLab's workforce reduction\" and \"structural and strategic decisions\"",
+      "summary": "GitLab宣布因應代理紀元進行組織重組，計劃將營運國家數量縮減最多30%，集中資源於關鍵團隊，以提升工程效率與策略專注度。",
+      "take": "工程團隊應關注GitLab此舉反映的趨勢：為適應AI代理工作流程，企業正重新評估分散式團隊的成本效益，並傾向於集中化人才以加速開發與決策。開發者需預期未來工具鏈與協作平台將更強化遠端同步效率及代理整合能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-12-02-quoting-james-shore",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/james-shore/#atom-everything",
+      "title": "Quoting James Shore",
+      "summary": "James Shore 指出，AI编码代理提升代码产出速度的同时，必须按同等反比降低维护成本，否则将导致总维护成本指数级增长，开发者实质上陷入长期技术债务。",
+      "take": "评估AI编码工具时，核心指标不是代码生成速度，而是其对长期维护成本的实际影响。须确保每次产出加速都伴随维护开销的等比例缩减，避免以短期效率换取不可逆的系统熵增。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-12-03-github-for-beginners-getting-started-with-oss-contributions",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-oss-contributions/",
+      "title": "GitHub for Beginners: Getting started with OSS contributions",
+      "summary": "GitHub官方发布入门教程，指导开发者如何寻找和开始进行开源项目贡献。",
+      "take": "对AI开发者而言，这提示了构建AI工具链时应优先考虑开源协作与贡献流程的标准化，以降低社区参与门槛并加速生态整合。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-12-04-bambu-lab-is-abusing-the-open-source-social-contract",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
+      "title": "Bambu Lab is abusing the open source social contract",
+      "summary": "Bambu Lab 被指控滥用开源社区契约，通过采用不完整的开源许可证或延迟发布关键固件源码，以获取社区贡献但未履行对等开源义务。",
+      "take": "构建者需警惕硬件厂商的“开源伪装”策略：若核心依赖闭源固件或非标准协议，即使外围代码开源，也不具备真正的可审计或可替代性。评估AI代理硬件栈时，应强制验证完整源码可用性与标准通信接口，避免被供应商锁定。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-12-05-claude-platform-on-aws",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://claude.com/blog/claude-platform-on-aws",
+      "title": "Claude Platform on AWS",
+      "summary": "Anthropic 将 Claude 平台迁移至 AWS 基础设施，利用 AWS 的 Nitro 芯片和定制网络架构实现模型推理的隔离与低延迟。",
+      "take": "此迁移强化了 Claude 在云原生的硬件加速层上的部署模式，开发者可预期更稳定的 API 响应时间与企业级安全合规。对构建依赖敏感数据处理的 AI 代理系统而言，这是减少外部依赖风险的架构信号。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-12-06-socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/",
+      "title": "SocialReasoning-Bench: Measuring whether AI agents act in users’ best interests",
+      "summary": "微软研究院推出SocialReasoning-Bench基准，用于系统性评估AI代理在自主执行任务时是否以用户最佳利益为导向，发现当前模型在指令明确且执行能力正常的情况下仍普遍无法主动优化用户处境。",
+      "take": "该基准揭示了一个关键工程缺口：代理的指令遵循与任务执行能力并不等价于用户利益对齐。开发者需构建额外的奖励或约束机制（如社会推理层），在决策循环中强制代理评估行动对用户长期状态的影响，而非仅完成表面指令。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-12-07-builder-theme-amex-global-business-travel-the-worlds-first-ai-take-private-with-long-lake-ceo-alexander-taubman",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=g5TWnUjbeFM",
+      "title": "Builder Theme: Amex Global Business Travel: The World’s First AI Take Private with Long Lake CEO Alexander Taubman",
+      "summary": "Long Lake Management宣布以63亿美元收购American Express Global Business Travel，声称这是全球首例以AI为核心驱动力的上市公司私有化交易，旨在通过AI改造和优化企业运营。",
+      "take": "对于AI构建者，此案例标志着一个新范式：资本收购正将AI作为核心整合引擎，而非附加功能。开发者应关注如何设计可跨企业复用的AI优化框架，特别是针对B2B交易、旅行等传统行业的数据整合与流程自动化，以抓住未来类似私有化中的技术栈重构需求。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-12-08-builder-theme-andrej-karpathy-on-this-works-really-well-btw-at-the-end-of-your-query-ask-your-llm-to",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2053872850101285137",
+      "title": "Builder Theme: Andrej Karpathy on This works really well btw, at the end of your query ask your LLM to...",
+      "summary": "Andrej Karpathy 提出在 LLM 查询末尾添加“将你的回复结构化为 HTML”指令，可生成可直接在浏览器中查看的视觉化输出，并指出音频是人类首选输入，视觉（图像/视频）是首选输出。",
+      "take": "在 LLM 工作流中，通过提示工程强制输出 HTML 或幻灯片格式，可以立即将文本结果转化为高信息密度的视觉界面，显著降低认知负荷；这提示 AI 构建者应将“视觉化输出”作为默认交互范式，尤其适合需要快速理解复杂数据的代理系统。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-12-09-builder-theme-swyx-on-i-believe-the-kids-call-this-thinkymachines-just-brutally-framemogg",
+      "briefingId": "rss-2026-05-12",
+      "date": "2026-05-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Swyx",
+      "sourceUrl": "https://x.com/swyx/status/2053960011748098462",
+      "title": "Builder Theme: Swyx on I believe the kids call this \"@thinkymachines just brutally framemogg...",
+      "summary": "Swyx 指出 Thinky Machines 在实时性上大幅超越谷歌 Gemini 和 OpenAI，重新定义了 AI 对话的延迟标准。",
+      "take": "开发实时语音或交互式 AI 代理时，需重新评估模型响应延迟的基准线。Thinky Machines 的架构可能采用了更高效的推理或流式处理，迫使开发者将“实时”的工程标准从秒级推向毫秒级。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

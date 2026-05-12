@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-12",
     "2026-05-11",
     "2026-05-10",
     "2026-05-09",
@@ -91,6 +92,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-12": {
+      "briefingIds": [
+        "rss-2026-05-12"
+      ],
+      "insightIds": [
+        "rss-2026-05-12-01-thoughts-on-gitlabs-workforce-reduction-and-structural-and-strategic-decisions",
+        "rss-2026-05-12-02-quoting-james-shore",
+        "rss-2026-05-12-03-github-for-beginners-getting-started-with-oss-contributions",
+        "rss-2026-05-12-04-bambu-lab-is-abusing-the-open-source-social-contract",
+        "rss-2026-05-12-05-claude-platform-on-aws",
+        "rss-2026-05-12-06-socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests",
+        "rss-2026-05-12-07-builder-theme-amex-global-business-travel-the-worlds-first-ai-take-private-with-long-lake-ceo-alexander-taubman",
+        "rss-2026-05-12-08-builder-theme-andrej-karpathy-on-this-works-really-well-btw-at-the-end-of-your-query-ask-your-llm-to",
+        "rss-2026-05-12-09-builder-theme-swyx-on-i-believe-the-kids-call-this-thinkymachines-just-brutally-framemogg"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-11": {
       "briefingIds": [
         "rss-2026-05-11"
