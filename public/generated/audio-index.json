@@ -657,5 +657,13 @@
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-05-12",
     "audioUrl": "/generated/audio/2026-05-12.mp3"
+  },
+  "2026-05-13": {
+    "id": "audio-2026-05-13",
+    "briefingDate": "2026-05-13",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-05-13",
+    "audioUrl": "/generated/audio/2026-05-13.mp3"
   }
 }

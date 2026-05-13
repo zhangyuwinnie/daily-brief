@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-13",
     "2026-05-12",
     "2026-05-11",
     "2026-05-10",
@@ -92,6 +93,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-13": {
+      "briefingIds": [
+        "rss-2026-05-13"
+      ],
+      "insightIds": [
+        "rss-2026-05-13-01-create-vercel-firewall-rules-with-natural-language",
+        "rss-2026-05-13-02-show-hn-needle-we-distilled-gemini-tool-calling-into-a-26m-model",
+        "rss-2026-05-13-03-using-llm-in-the-shebang-line-of-a-script",
+        "rss-2026-05-13-04-what-parameter-golf-taught-us-about-ai-assisted-research",
+        "rss-2026-05-13-05-learning-on-the-shop-floor",
+        "rss-2026-05-13-06-how-nvidia-engineers-and-researchers-build-with-codex",
+        "rss-2026-05-13-07-fast-mode-for-opus-47-available-on-ai-gateway",
+        "rss-2026-05-13-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-13-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-12": {
       "briefingIds": [
         "rss-2026-05-12"

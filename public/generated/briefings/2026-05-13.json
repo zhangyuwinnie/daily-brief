@@ -1,0 +1,192 @@
+{
+  "date": "2026-05-13",
+  "briefings": [
+    {
+      "id": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-13",
+      "filePath": "2026-05-13.md",
+      "summaryTopline": "Create Vercel Firewall rules with natural language",
+      "insightIds": [
+        "rss-2026-05-13-01-create-vercel-firewall-rules-with-natural-language",
+        "rss-2026-05-13-02-show-hn-needle-we-distilled-gemini-tool-calling-into-a-26m-model",
+        "rss-2026-05-13-03-using-llm-in-the-shebang-line-of-a-script",
+        "rss-2026-05-13-04-what-parameter-golf-taught-us-about-ai-assisted-research",
+        "rss-2026-05-13-05-learning-on-the-shop-floor",
+        "rss-2026-05-13-06-how-nvidia-engineers-and-researchers-build-with-codex",
+        "rss-2026-05-13-07-fast-mode-for-opus-47-available-on-ai-gateway",
+        "rss-2026-05-13-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+        "rss-2026-05-13-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-13-01-create-vercel-firewall-rules-with-natural-language",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/create-vercel-waf-custom-rules-using-natural-language",
+      "title": "Create Vercel Firewall rules with natural language",
+      "summary": "Vercel在其防火墙自定义规则界面中集成了自然语言接口，用户描述所需流量控制行为后，系统自动生成对应的WAF规则（如限流、拦截、挑战等），底层将自然语言解析为基于IP、路径、国家、User-Agent等条件的规则逻辑。",
+      "take": "此功能将WAF规则配置从手动编写结构化条件转变为自然语言描述，降低了防火墙策略的门槛。对AI Builder而言，这代表了一种模式：将自然语言理解直接嵌入运维界面，使非专家用户也能定义复杂的安全与流量控制逻辑，减少了开发者在规则调试上的认知负荷。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-13-02-show-hn-needle-we-distilled-gemini-tool-calling-into-a-26m-model",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/cactus-compute/needle",
+      "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "summary": "Cactus Compute 将 Gemini 的工具调用能力蒸馏至一个 26M 参数的模型 Needle，实现了轻量级本地化工具调用推理。",
+      "take": "此项目验证了通过知识蒸馏可将大型模型的高阶工具调用能力压缩至微型模型，为边缘设备或低延迟场景下的 Agent 工具调用提供了可行的替代方案。开发者可直接集成该模型以替代云端 API，降低推理成本和延迟。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-13-03-using-llm-in-the-shebang-line-of-a-script",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything",
+      "title": "Using LLM in the shebang line of a script",
+      "summary": "Simon Willison 展示了一种利用 LLM 工具的 shebang 行，将自然语言脚本或 YAML 模板直接作为可执行文件运行的新范式，支持通过 -f 参数进行文本生成、通过 -T 参数调用工具函数、以及通过 -t 参数定义内嵌 Python 函数的多步推理工作流。",
+      "take": "这一模式将 LLM 从交互式 REPL 或 API 调用提升为操作系统级别的脚本解释器，允许开发者用纯文本或 YAML 描述复杂任务（如包含工具调用、条件逻辑的代理流程），并直接通过 shebang 执行。对于 AI builder 而言，这大幅降低了构建单文件代理脚本的门槛，无需额外的编排层即可实现函数调用、多模态生成等能力，适合快速原型设计与 DevOps 自动化场景。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-13-04-what-parameter-golf-taught-us-about-ai-assisted-research",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/what-parameter-golf-taught-us",
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "summary": "OpenAI通过Parameter Golf竞赛，汇集1000多名参与者提交2000多份方案，在严格约束下探索AI辅助的机器学习研究、编码代理、量化及新型模型设计。",
+      "take": "工程核心启示：在资源受限条件下，编码代理需优先优化量化策略与模型架构的协同设计；开发者应关注如何通过AI代理自动化超参数搜索与模型压缩流程，以提升研究迭代效率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-13-05-learning-on-the-shop-floor",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/#atom-everything",
+      "title": "Learning on the Shop floor",
+      "summary": "Shopify 内部编码代理工具 River 完全在 Slack 公开频道中运行，其所有对话可搜索，供全员观摩、参与和审核，形成名为“Lehrwerkstatt”（教学工坊）的集体学习环境。",
+      "take": "公开代理交互日志本身构成一种新型知识库和培训机制：开发者通过观察他人与代理的协作过程（包括纠错和审查）来学习，这比依赖文档或个人实验结果更高效。工程团队可借鉴此模式，将代理工作流设计为默认透明、可回放，从而加速团队整体技能提升并隐式记录最佳实践。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-13-06-how-nvidia-engineers-and-researchers-build-with-codex",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/nvidia",
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "summary": "NVIDIA工程团队与研究人员利用基于GPT-5.5的Codex，将研究设想快速转化为可执行实验，并交付生产级系统。",
+      "take": "核心工程信号：Codex与GPT-5.5的结合，显著缩短了从研究概念到生产部署的迭代周期。开发者应评估该模型在代码生成和实验自动化中的具体瓶颈（如上下文窗口限制、推理成本），以优化其在现有Agent工作流中的集成策略。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-13-07-fast-mode-for-opus-47-available-on-ai-gateway",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/fast-mode-for-opus-4-7-available-on-ai-gateway",
+      "title": "Fast mode for Opus 4.7 available on AI Gateway",
+      "summary": "Vercel AI Gateway 在研究预览中推出 Claude Opus 4.7 快速模式，通过传递 `speed: 'fast'` 参数实现约 2.5 倍输出 token 生成加速，同时保持完整智能能力，但价格高达标准 Opus 费率的 6 倍。",
+      "take": "开发者可通过一行参数（`speed:'fast'`）在 AI Gateway 上实现 Claude Opus 4.7 的推理加速，适用于对延迟敏感的生产场景；但需注意 6 倍成本溢价，建议仅在输出吞吐量成瓶颈时启用。同时，Claude Code 用户可通过环境变量绕过组织检查直接启用该模式，加速本地 agent 工作流。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-13-08-builder-theme-waymos-dmitri-dolgov-20-million-rides-and-the-road-to-full-autonomy",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy",
+      "summary": "Waymo聯合CEO Dmitri Dolgov在20年創業歷程中，將自動駕駛技術從研究原型推進至2000萬次商業出行服務，實現了全無人駕駛的規模化運營。",
+      "take": "自動駕駛系統的工程信號在於：透過極端長尾場景的數據閉環與感測器冗餘架構，逐步將邊際案例轉化為可預測的駕駛策略。對於AI builders，關鍵是建立從真實世界回饋到模型微調的迭代管道，而非追求單一感知精度突破。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-13-09-builder-theme-claude-code-auto-mode-a-safer-way-to-skip-permissions",
+      "briefingId": "rss-2026-05-13",
+      "date": "2026-05-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "title": "Builder Theme: Claude Code auto mode: a safer way to skip permissions",
+      "summary": "Anthropic 为 Claude Code 推出了自动模式，通过内置沙箱隔离工具操作以防止危险行为，取代了原有的 `--dangerously-skip-permissions` 不安全标志，平衡了安全性与用户审批疲劳问题。",
+      "take": "对于 AI 辅助编码工具链，引入沙箱化工具执行环境而非简单跳过权限提示，是一种更安全的架构模式，允许开发者免于频繁手动批准的同时保持关键操作的安全边界；但需注意沙箱配置成本高，且网络和主机访问会破坏隔离性，因此更适合自动化脚本和有限操作场景。",
+      "topics": [
+        "Coding Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
