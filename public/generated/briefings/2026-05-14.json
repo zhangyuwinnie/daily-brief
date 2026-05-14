@@ -1,0 +1,244 @@
+{
+  "date": "2026-05-14",
+  "briefings": [
+    {
+      "id": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-14",
+      "filePath": "2026-05-14.md",
+      "summaryTopline": "Building a safe, effective sandbox to enable Codex on Windows",
+      "insightIds": [
+        "rss-2026-05-14-01-building-a-safe-effective-sandbox-to-enable-codex-on-windows",
+        "rss-2026-05-14-02-a-claude-code-and-codex-skill-for-deliberate-skill-development",
+        "rss-2026-05-14-03-how-finance-teams-use-codex",
+        "rss-2026-05-14-04-welcome-to-the-datasette-blog",
+        "rss-2026-05-14-05-csp-allow-list-experiment",
+        "rss-2026-05-14-06-trusted-sources-for-deployment-protection",
+        "rss-2026-05-14-07-claude-for-small-business",
+        "rss-2026-05-14-08-mimalloc-a-new-high-performance-scalable-memory-allocator-for-the-modern-era",
+        "rss-2026-05-14-09-builder-theme-sunos-mikey-shulman-everyone-can-make-music-now",
+        "rss-2026-05-14-10-builder-theme-new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration",
+        "rss-2026-05-14-11-builder-theme-nikunj-kothari-on-if-you-needed-a-signal-that-vc-has-truly-become-consensus-capital-th",
+        "rss-2026-05-14-12-builder-theme-peter-yang-on-tell-me-if-youve-seen-this-before-today-is-a-hard-day-weve-made"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-14-01-building-a-safe-effective-sandbox-to-enable-codex-on-windows",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/building-codex-windows-sandbox",
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "summary": "OpenAI 构建了针对 Windows 平台的 Codex 安全沙箱，通过受限文件访问和网络隔离机制，实现了编码代理在受控环境中的安全运行。",
+      "take": "这一沙箱架构为 AI 编码代理在 Windows 上的安全部署提供了可复用的隔离模式。开发者应将文件系统与网络访问的精确控制作为代理沙箱的核心设计原则，以确保代理执行的副作用可控。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-14-02-a-claude-code-and-codex-skill-for-deliberate-skill-development",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://github.com/DrCatHicks/learning-opportunities",
+      "title": "A Claude Code and Codex Skill for Deliberate Skill Development",
+      "summary": "DrCatHicks 发布的工具利用 Claude Code 和 Codex 技能，通过捕捉开发过程中的代码变更与 AI 交互记录，提供结构化反馈来促进刻意技能练习。",
+      "take": "该工具将 AI 辅助编码从任务完成导向转变为技能发展导向，通过记录和分析开发者与 AI 的交互模式，可以系统化地识别知识盲区并优化学习路径。对于构建 AI 工作流的开发者，这提供了一个可借鉴的元认知层设计模式，即通过外部化交互数据来提升人类与 AI 协作的学习效率。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-14-03-how-finance-teams-use-codex",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/academy/how-finance-teams-use-codex",
+      "title": "How finance teams use Codex",
+      "summary": "OpenAI 展示金融团队利用 Codex 从实际工作输入中构建 MBR、报告包、差异桥接、模型检查和规划场景的自动化工程流程。",
+      "take": "Codex 将自然语言指令转换为可执行的财务建模代码，使开发者能构建基于规则的自动化报告生成流水线。关键工程模式是：以结构化模板定义财务逻辑，再用 Codex 将非结构化输入（如邮件、表格）解析为可计算模型，直接嵌入现有 CI/CD 或数据库工作流。这标志着从手动 Excel 宏向 LLM 驱动的动态规划引擎的范式迁移，对金融 SaaS 和 Agentic 财务自动化工具链有直接参考价值。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-14-04-welcome-to-the-datasette-blog",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/13/welcome-to-the-datasette-blog/#atom-everything",
+      "title": "Welcome to the Datasette blog",
+      "summary": "Simon Willison 使用 OpenAI Codex 桌面版创建了 Datasette 项目的官方博客，并利用其 Markdown 会话记录导出功能完成了构建。",
+      "take": "OpenAI Codex 桌面版的 Markdown 导出功能为 AI 辅助编程提供了可追溯、可复用的工作流记录，使得 AI 生成的代码与决策过程能被直接纳入项目文档，这是提升代理工具透明度和协作效率的关键范式。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-05-csp-allow-list-experiment",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything",
+      "title": "CSP Allow-list Experiment",
+      "summary": "Simon Willison 发布了一项 CSP 允许列表实验，通过在沙箱化 iframe 中运行应用，利用自定义 fetch() 拦截 CSP 错误并传递至父窗口，提示用户手动添加域名至允许列表后刷新页面。",
+      "take": "该机制展示了在严格 CSP 限制下实现动态域名授权的可行路径，为构建安全可控的第三方内容加载器或代理工具提供了工程参考。开发者可复用此模式设计用户交互式的 CSP 策略管理，提升沙箱环境的灵活性而不牺牲安全性。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-06-trusted-sources-for-deployment-protection",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/trusted-sources-for-deployment-protection",
+      "title": "Trusted Sources for Deployment Protection",
+      "summary": "Vercel 推出了 Trusted Sources 机制，允许受保护部署通过验证短效 OIDC 令牌（来自 Vercel 项目或授权外部服务）替代长期有效的 Protection Bypass for Automation 密钥，实现自动化访问。",
+      "take": "此机制通过 OIDC 令牌（x-vercel-trusted-oidc-idp-token 头部）替代长期密钥，降低了密钥泄露风险，并支持跨项目及环境级别的精细访问控制。对 AI 流水线或 CI/CD 工具链而言，建议立即迁移至 Trusted Sources 以提升安全性，并利用其环境配对规则实现自动化部署的零信任访问模型。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-07-claude-for-small-business",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Claude for Small Business",
+      "summary": "Anthropic推出Claude for Small Business，一个面向小型企业的Claude Pro计划变体，提供更高使用上限和团队管理功能，但未改变底层模型架构。",
+      "take": "对于AI构建者而言，此发布无直接工程信号；核心模型能力未更新，仅调整了定价与配额策略。应关注Claude API的速率限制变化或新模型版本，而非这种面向终端的订阅计划调整。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-08-mimalloc-a-new-high-performance-scalable-memory-allocator-for-the-modern-era",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/",
+      "title": "mimalloc: A new, high-performance, scalable memory allocator for the modern era",
+      "summary": "微软研究院开源mimalloc内存分配器，作为malloc/free即插即用替代方案，通过纯原子操作实现低竞争、有界最坏分配时间与低内部碎片化。",
+      "take": "在RAG或AI推理工作流中，若瓶颈在大量短生命周期小对象分配与释放上，直接替换为mimalloc可显著降低尾部延迟与吞吐损失，无需改动上层代码。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-09-builder-theme-sunos-mikey-shulman-everyone-can-make-music-now",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=Jq3BIGz4vXQ",
+      "title": "Builder Theme: Suno's Mikey Shulman: Everyone Can Make Music Now",
+      "summary": "Suno CEO Mikey Shulman 指出，其AI音乐生成平台的核心转变在于让创作过程本身成为娱乐体验，而非仅产出作品；每日90%用户进行创作，且主要目的并非导出内容，而是享受创作乐趣。",
+      "take": "AI生成工具的价值不再局限于产出成品，而是可以设计为即兴创作流程本身即是用户体验。这对构建面向消费者的AI代理或生成式应用有直接启示：应优先优化交互过程的即时满足感和创造性表达，而非仅关注最终结果的保真度。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-10-builder-theme-new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/new-in-claude-managed-agents",
+      "title": "Builder Theme: New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration",
+      "summary": "Claude 推出 Managed Agents 的 dreaming 功能，通过定时回顾对话历史与记忆库自动提取模式并优化记忆，支持自动或人工审核更新，同时开放 outcomes、多智能体编排与 webhooks 能力。",
+      "take": "开发者可直接启用 dreaming 机制使代理实现自我改进，无需手动干预即可利用历史会话模式提升任务处理能力；配合多智能体编排与 webhooks，可构建更自主、低干预的复杂工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-11-builder-theme-nikunj-kothari-on-if-you-needed-a-signal-that-vc-has-truly-become-consensus-capital-th",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Nikunj Kothari",
+      "sourceUrl": "https://x.com/nikunj/status/2054599845214650442",
+      "title": "Builder Theme: Nikunj Kothari on If you needed a signal that VC has truly become consensus capital, th...",
+      "summary": "Nikunj Kothari指出风险投资已沦为共识资本，创始人的真正信号在于无视外界评判、将拒绝视为学习而非否定。",
+      "take": "AI构建者应摒弃依赖外部资本验证的路径，转而专注于技术痴迷与独立迭代；拒绝是数据反馈而非终局判决，核心工程韧性来自对问题本身的执着而非市场认可。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-14-12-builder-theme-peter-yang-on-tell-me-if-youve-seen-this-before-today-is-a-hard-day-weve-made",
+      "briefingId": "rss-2026-05-14",
+      "date": "2026-05-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Yang",
+      "sourceUrl": "https://x.com/petergyang/status/2054569893060809151",
+      "title": "Builder Theme: Peter Yang on Tell me if you've seen this before: \"Today is a hard day. We've made...",
+      "summary": "Peter Yang 指出，近期科技公司以 AI 为由裁员（2025 年 Q1 超 8 万人），实际是低息时期过度招聘后的成本削减，AI 被用作公开借口。",
+      "take": "对于 AI 构建者而言，核心信号是：企业正利用 AI 叙事来合理化组织精简和资源重配。这意味着开发者应专注于构建能直接降低企业人力成本或提升人效的自动化 Agent，而非泛化工具；同时需警惕自身岗位在“AI 替代”借口下的风险，主动向高价值基建或决策链环节迁移。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

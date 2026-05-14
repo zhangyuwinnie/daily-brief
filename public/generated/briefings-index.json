@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-14",
     "2026-05-13",
     "2026-05-12",
     "2026-05-11",
@@ -93,6 +94,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-14": {
+      "briefingIds": [
+        "rss-2026-05-14"
+      ],
+      "insightIds": [
+        "rss-2026-05-14-01-building-a-safe-effective-sandbox-to-enable-codex-on-windows",
+        "rss-2026-05-14-02-a-claude-code-and-codex-skill-for-deliberate-skill-development",
+        "rss-2026-05-14-03-how-finance-teams-use-codex",
+        "rss-2026-05-14-04-welcome-to-the-datasette-blog",
+        "rss-2026-05-14-05-csp-allow-list-experiment",
+        "rss-2026-05-14-06-trusted-sources-for-deployment-protection",
+        "rss-2026-05-14-07-claude-for-small-business",
+        "rss-2026-05-14-08-mimalloc-a-new-high-performance-scalable-memory-allocator-for-the-modern-era",
+        "rss-2026-05-14-09-builder-theme-sunos-mikey-shulman-everyone-can-make-music-now",
+        "rss-2026-05-14-10-builder-theme-new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration",
+        "rss-2026-05-14-11-builder-theme-nikunj-kothari-on-if-you-needed-a-signal-that-vc-has-truly-become-consensus-capital-th",
+        "rss-2026-05-14-12-builder-theme-peter-yang-on-tell-me-if-youve-seen-this-before-today-is-a-hard-day-weve-made"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-13": {
       "briefingIds": [
         "rss-2026-05-13"
