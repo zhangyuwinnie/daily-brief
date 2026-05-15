@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-15",
     "2026-05-14",
     "2026-05-13",
     "2026-05-12",
@@ -94,6 +95,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-15": {
+      "briefingIds": [
+        "rss-2026-05-15"
+      ],
+      "insightIds": [
+        "rss-2026-05-15-01-seas-view-on-the-future-of-agentic-software-development-with-codex",
+        "rss-2026-05-15-02-codex-is-now-in-the-chatgpt-mobile-app",
+        "rss-2026-05-15-03-not-so-locked-in-any-more",
+        "rss-2026-05-15-04-quoting-mitchell-hashimoto",
+        "rss-2026-05-15-05-show-hn-find-the-best-local-llm-for-your-hardware-ranked-by-benchmarks",
+        "rss-2026-05-15-06-builder-theme-why-every-ai-agent-needs-its-own-computer-ivan-burazin-daytona",
+        "rss-2026-05-15-07-builder-theme-sam-altman-on-codex-in-the-chatgpt-mobile-app",
+        "rss-2026-05-15-08-builder-theme-aditya-agarwal-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-14": {
       "briefingIds": [
         "rss-2026-05-14"
