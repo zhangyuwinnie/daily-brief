@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-16",
     "2026-05-15",
     "2026-05-14",
     "2026-05-13",
@@ -95,6 +96,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-16": {
+      "briefingIds": [
+        "rss-2026-05-16"
+      ],
+      "insightIds": [
+        "rss-2026-05-16-01-openai-and-malta-partner-to-bring-chatgpt-plus-to-all-citizens",
+        "rss-2026-05-16-02-how-business-operations-teams-use-codex",
+        "rss-2026-05-16-03-qr-code-generator",
+        "rss-2026-05-16-04-datasette-llm-limits-01a0",
+        "rss-2026-05-16-05-building-a-general-purpose-accessibility-agentand-what-we-learned-in-the-process",
+        "rss-2026-05-16-06-openclaw-creator-spent-13m-on-openai-tokens-in-30-days",
+        "rss-2026-05-16-07-further-notes-on-our-recent-research-on-ai-delegation-and-long-horizon-reliability",
+        "rss-2026-05-16-08-recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention",
+        "rss-2026-05-16-09-builder-theme-ep-86-yann-lecun-on-leaving-meta-breaking-the-llm-paradigm-amp-why-hinton-is-wrong",
+        "rss-2026-05-16-10-builder-theme-peter-steinberger-on-people-freaking-out-over-my-ai-spend-what-nobody-sees-part-of-what",
+        "rss-2026-05-16-11-builder-theme-sam-altman-on-i-appreciate-how-seriously-the-team-always-takes-these-reports-even"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-15": {
       "briefingIds": [
         "rss-2026-05-15"
