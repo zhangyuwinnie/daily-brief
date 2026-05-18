@@ -21335,5 +21335,136 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-18": {
+    "date": "2026-05-18",
+    "briefings": [
+      {
+        "id": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-18",
+        "filePath": "2026-05-18.md",
+        "summaryTopline": "GDS weighs in on the NHS's decision to retreat from Open Source",
+        "insightIds": [
+          "rss-2026-05-18-01-gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source",
+          "rss-2026-05-18-02-show-hn-semble-code-search-for-agents-that-uses-98-fewer-tokens-than-grep",
+          "rss-2026-05-18-03-the-open-agent-leaderboard",
+          "rss-2026-05-18-04-builder-theme-claude-code-can-be-your-second-brain",
+          "rss-2026-05-18-05-builder-theme-sam-altman-on-chatgpt-images-20-india-already-more-than-1-billion-images-creat",
+          "rss-2026-05-18-06-builder-theme-garry-tan-on-ken-griffin-doesnt-understand-the-ceiling-just-got-raised-some-20-s"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-18-01-gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+        "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+        "summary": "英国政府数字服务局（GDS）在NHS因安全漏洞转向关闭开源仓库后，发布报告建议公共部门默认开放代码，认为默认封闭会增加交付和政策成本并降低复用与审查能力。",
+        "take": "开源仓库默认关闭会增加交付与政策成本，并减少代码复用和漏洞审查的机会；RAG与LLM工作流中，开放代码库是降低模型偏差和提升安全审计能力的基础，建议保持默认开放策略以支持AI工具链的透明迭代。",
+        "topics": [
+          "RAG",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-18-02-show-hn-semble-code-search-for-agents-that-uses-98-fewer-tokens-than-grep",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://github.com/MinishLab/semble",
+        "title": "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep",
+        "summary": "MinishLab 发布 Semble，一种为 AI Agent 设计的代码搜索工具，通过预建并存储代码库的语义索引，将每次搜索的 token 消耗降低 98%，替代传统 grep 的逐行模式匹配。",
+        "take": "Semble 通过离线语义索引替代实时解析，为 Agent 工作流提供了极低成本的代码理解方案。开发者可将其集成到 Agent 的工具链中，以大幅减少搜索步骤的 token 开销，从而让 Agent 能处理更大规模的代码库或执行更密集的上下文检索任务。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-18-03-the-open-agent-leaderboard",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+        "title": "The Open Agent Leaderboard",
+        "summary": "Hugging Face 與 IBM Research 發布開放式代理排行榜，基於多樣化任務的標準化評估流程，量化各模型與框架在工具使用、規劃與執行上的代理能力。",
+        "take": "此排行榜提供可重現的代理性能基準，開發者可藉此比較不同模型與提示策略的實際效能。重點關注任務完成率與工具調用正確性，而非單純的語言生成分數，這將重新定義代理系統的選型與優化方向。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-18-04-builder-theme-claude-code-can-be-your-second-brain",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=in7i-EVDDlk",
+        "title": "Builder Theme: Claude Code Can Be Your Second Brain",
+        "summary": "Noah Breyer 配置了一套 Claude Code 系统，结合本地 Obsidian 仓库的自托管服务器，实现了通过手机进行思考、研究、写作和代码部署，将 Claude Code 作为真正的第二大脑使用。",
+        "take": "核心在于将 Claude Code 与本地文件系统（如 Obsidian 仓库）深度绑定，通过自托管服务器实现移动端访问，从而将 AI 转变为主动的思考伙伴和知识管理中枢。工程上需要关注如何设计提示词和工作流，让 Claude Code 不仅被动应答，还能主动提问、跨笔记检索、记录学习日志和创意，形成闭环的认知增强系统。",
+        "topics": [
+          "Coding Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-18-05-builder-theme-sam-altman-on-chatgpt-images-20-india-already-more-than-1-billion-images-creat",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2056165722804654196",
+        "title": "Builder Theme: Sam Altman on ChatGPT Images 2.0 💚 India. Already more than 1 billion images creat...",
+        "summary": "Sam Altman宣布ChatGPT图像生成功能2.0版本推出，印度市场已创造超过10亿张图像。",
+        "take": "图像生成能力的规模化部署已进入十亿级验证阶段，AI builders应关注多模态生成在特定区域的爆发式增长，并思考如何利用此类规模数据优化模型性能与内容安全策略。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-18-06-builder-theme-garry-tan-on-ken-griffin-doesnt-understand-the-ceiling-just-got-raised-some-20-s",
+        "briefingId": "rss-2026-05-18",
+        "date": "2026-05-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Garry Tan",
+        "sourceUrl": "https://x.com/garrytan/status/2056123737544757733",
+        "title": "Builder Theme: Garry Tan on Ken Griffin doesn’t understand the ceiling just got raised. Some 20-s...",
+        "summary": "Garry Tan指出，Ken Griffin未能意识到AI与人类计算协同的新范式已提升行业天花板，年轻开发者可通过构建超越传统巨头认知的复合型团队来颠覆现有格局。",
+        "take": "开发者应聚焦于构建AI-人机协同的复合型能力，而非仅关注降本增效——提升系统认知上限的架构设计才是颠覆性创新的核心杠杆。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

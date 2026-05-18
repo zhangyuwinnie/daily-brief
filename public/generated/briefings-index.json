@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-18",
     "2026-05-17",
     "2026-05-16",
     "2026-05-15",
@@ -97,6 +98,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-18": {
+      "briefingIds": [
+        "rss-2026-05-18"
+      ],
+      "insightIds": [
+        "rss-2026-05-18-01-gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source",
+        "rss-2026-05-18-02-show-hn-semble-code-search-for-agents-that-uses-98-fewer-tokens-than-grep",
+        "rss-2026-05-18-03-the-open-agent-leaderboard",
+        "rss-2026-05-18-04-builder-theme-claude-code-can-be-your-second-brain",
+        "rss-2026-05-18-05-builder-theme-sam-altman-on-chatgpt-images-20-india-already-more-than-1-billion-images-creat",
+        "rss-2026-05-18-06-builder-theme-garry-tan-on-ken-griffin-doesnt-understand-the-ceiling-just-got-raised-some-20-s"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-17": {
       "briefingIds": [
         "rss-2026-05-17"
