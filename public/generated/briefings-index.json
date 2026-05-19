@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-19",
     "2026-05-18",
     "2026-05-17",
     "2026-05-16",
@@ -98,6 +99,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-19": {
+      "briefingIds": [
+        "rss-2026-05-19"
+      ],
+      "insightIds": [
+        "rss-2026-05-19-01-openai-and-dell-partner-to-bring-codex-to-hybrid-and-on-premise-enterprise-environments",
+        "rss-2026-05-19-02-the-last-six-months-in-llms-in-five-minutes",
+        "rss-2026-05-19-03-ive-joined-anthropic",
+        "rss-2026-05-19-04-introducing-composer-25",
+        "rss-2026-05-19-05-run-claude-managed-agents-with-vercel-sandbox",
+        "rss-2026-05-19-06-builder-theme-the-secrets-of-claudes-platform-from-the-team-who-built-it",
+        "rss-2026-05-19-07-builder-theme-sam-altman-on-chatgpt-has-gotten-soooo-much-better-with-the-latest-update-really-p",
+        "rss-2026-05-19-08-builder-theme-claude-on-you-can-now-create-more-with-claude-design-weve-doubled-token-limit",
+        "rss-2026-05-19-09-builder-theme-an-update-on-recent-claude-code-quality-reports"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-18": {
       "briefingIds": [
         "rss-2026-05-18"
