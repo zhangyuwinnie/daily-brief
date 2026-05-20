@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-20",
     "2026-05-19",
     "2026-05-18",
     "2026-05-17",
@@ -99,6 +100,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-20": {
+      "briefingIds": [
+        "rss-2026-05-20"
+      ],
+      "insightIds": [
+        "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+        "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+        "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+        "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+        "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+        "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+        "rss-2026-05-20-07-introducing-openai-for-singapore",
+        "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+        "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+        "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-19": {
       "briefingIds": [
         "rss-2026-05-19"
