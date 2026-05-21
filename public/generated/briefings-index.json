@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-21",
     "2026-05-20",
     "2026-05-19",
     "2026-05-18",
@@ -100,6 +101,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-21": {
+      "briefingIds": [
+        "rss-2026-05-21"
+      ],
+      "insightIds": [
+        "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+        "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+        "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+        "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+        "rss-2026-05-21-05-llm-gemini-032a0",
+        "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+        "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+        "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+        "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-20": {
       "briefingIds": [
         "rss-2026-05-20"
