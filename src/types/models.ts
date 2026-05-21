@@ -21,6 +21,7 @@ export type Insight = {
   sourceLabel: string;
   sourceName?: string;
   sourceUrl?: string;
+  publishedDate?: string;
   title: string;
   summary: string;
   take: string;

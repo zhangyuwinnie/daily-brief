@@ -114,3 +114,9 @@ export function renderBriefingMarkdown(args: {
   items: SummarizedBriefingItem[];
 }): string;
 export function runDailyBriefing(options?: RunDailyBriefingOptions): Promise<RunDailyBriefingResult>;
+export function normalizeDedupeUrl(value?: string): string;
+export function loadRecentBriefingUrls(
+  repoRoot: string,
+  date: string,
+  lookbackDays?: number
+): Promise<Set<string>>;

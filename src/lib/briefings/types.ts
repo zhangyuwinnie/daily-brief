@@ -27,6 +27,7 @@ export type ParsedRssItem = {
   title: string;
   sourceName?: string;
   sourceLabel?: string;
+  publishedDate?: string;
   sourceUrl?: string;
   summary: string;
   take: string;

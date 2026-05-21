@@ -29,6 +29,28 @@ describe("normalizeParsedBriefing", () => {
     expect(x.insights[0].id).toBe("x-2026-03-14-trend-01-benchmark");
   });
 
+  it("carries the article publish date onto the normalized insight when present", () => {
+    const text = [
+      "# Daily Briefing: 2026-05-19",
+      "",
+      "## [Builder Theme: April postmortem](https://www.anthropic.com/engineering/april-23-postmortem)",
+      "**Source:** Anthropic Engineering",
+      "**Source Label:** Follow Builders",
+      "**Published:** 2026-04-23",
+      "",
+      "> **Chinese Summary:** 摘要。",
+      "> **R2 Take:** 观点。",
+      "",
+      "---",
+      ""
+    ].join("\n");
+
+    const normalized = normalizeParsedBriefing(parseRssBriefing(text));
+
+    expect(normalized.insights[0].date).toBe("2026-05-19");
+    expect(normalized.insights[0].publishedDate).toBe("2026-04-23");
+  });
+
   it("preserves parser warnings so malformed sections fail loudly without crashing the whole run", () => {
     const rss = normalizeParsedBriefing(parseRssBriefing(rssEdge));
     const x = normalizeParsedBriefing(parseXBriefing(xEdge));

@@ -67,7 +67,7 @@ export function InsightCard({ insight, onShare }: InsightCardProps) {
           {insight.sourceName ? (
             <span className="text-xs font-semibold text-[color:var(--text-muted)]">{insight.sourceName}</span>
           ) : null}
-          <span className="text-xs text-[color:var(--text-faint)]">{insight.date}</span>
+          <span className="text-xs text-[color:var(--text-faint)]">{insight.publishedDate ?? insight.date}</span>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">

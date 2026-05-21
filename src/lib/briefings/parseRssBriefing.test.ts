@@ -54,4 +54,36 @@ describe("parseRssBriefing", () => {
     expect(parsed.items[3].take).toContain("职责分层");
     expect(parsed.warnings).toHaveLength(0);
   });
+
+  it("captures an optional Published date and leaves it undefined when absent", () => {
+    const text = [
+      "# Daily Briefing: 2026-05-19",
+      "",
+      "## [Builder Theme: An update on recent Claude Code quality reports](https://www.anthropic.com/engineering/april-23-postmortem)",
+      "**Source:** Anthropic Engineering",
+      "**Source Label:** Follow Builders",
+      "**Published:** 2026-04-23",
+      "",
+      "> **Chinese Summary:** 修复了响应质量回退问题。",
+      "> **R2 Take:** 默认参数会直接影响体验。",
+      "",
+      "---",
+      "",
+      "## [No Date Item](https://example.com/no-date)",
+      "**Source:** Example Engineering Blog",
+      "",
+      "> **Chinese Summary:** 没有发布日期的条目。",
+      "> **R2 Take:** 解析器应保持向后兼容。",
+      "",
+      "---",
+      ""
+    ].join("\n");
+
+    const parsed = parseRssBriefing(text);
+
+    expect(parsed.items).toHaveLength(2);
+    expect(parsed.items[0].publishedDate).toBe("2026-04-23");
+    expect(parsed.items[1].publishedDate).toBeUndefined();
+    expect(parsed.warnings).toHaveLength(0);
+  });
 });
