@@ -3,9 +3,59 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getBriefingPaths, getLADate, defaultSummarizeCandidate } from "./daily-briefing.js";
+import {
+  getBriefingPaths,
+  getLADate,
+  defaultSummarizeCandidate,
+  normalizeDedupeUrl,
+  loadRecentBriefingUrls
+} from "./daily-briefing.js";
 const DEFAULT_MAX_ITEMS = 4;
 const MAX_SOURCE_EXCERPT_LENGTH = 900;
+const DEFAULT_MAX_AGE_DAYS = 14;
+const DEFAULT_LOOKBACK_DAYS = 30;
+
+export function parsePublishedDate(value) {
+  if (value === undefined || value === null) {
+    return undefined;
+  }
+
+  const text = String(value).trim();
+  if (!text || text.toLowerCase() === "null") {
+    return undefined;
+  }
+
+  const isoMatch = text.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (isoMatch) {
+    return `${isoMatch[1]}-${isoMatch[2]}-${isoMatch[3]}`;
+  }
+
+  const parsed = new Date(text);
+  if (Number.isNaN(parsed.getTime())) {
+    return undefined;
+  }
+
+  const year = parsed.getFullYear();
+  const month = String(parsed.getMonth() + 1).padStart(2, "0");
+  const day = String(parsed.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function isOlderThanWindow(publishedDate, now, maxAgeDays) {
+  if (!publishedDate) {
+    return false;
+  }
+
+  const publishedMs = Date.parse(`${publishedDate}T00:00:00Z`);
+  if (Number.isNaN(publishedMs)) {
+    return false;
+  }
+
+  const cutoff = new Date(now);
+  cutoff.setUTCDate(cutoff.getUTCDate() - maxAgeDays);
+  cutoff.setUTCHours(0, 0, 0, 0);
+  return publishedMs < cutoff.getTime();
+}
 
 function getRepoRoot() {
   return path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -102,6 +152,7 @@ function renderFollowBuildersMarkdown(items) {
         `## [${title}](${item.url})`,
         `**Source:** ${item.sourceName || "Follow Builders"}`,
         "**Source Label:** Follow Builders",
+        ...(item.publishedDate ? [`**Published:** ${item.publishedDate}`] : []),
         "",
         `> **Chinese Summary:** ${summary}`,
         `> **R2 Take:** ${take}`,
@@ -121,7 +172,13 @@ function topTweetByBuilder(author) {
   })[0];
 }
 
-function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS) {
+function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS, options = {}) {
+  const {
+    seenUrls = new Set(),
+    now = new Date(),
+    maxAgeDays = DEFAULT_MAX_AGE_DAYS,
+    logger = console
+  } = options;
   const candidates = [];
 
   for (const blog of payload.blogs || []) {
@@ -131,6 +188,7 @@ function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS) {
       url: blog.url,
       sourceName: blog.name || "Builder Blog",
       excerpt: blog.content || blog.description || blog.title,
+      publishedDate: parsePublishedDate(blog.publishedAt),
       score: 400 + (blog.content?.length || 0)
     });
   }
@@ -162,13 +220,40 @@ function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS) {
     });
   }
 
-  candidates.sort((left, right) => right.score - left.score);
+  let staleByDate = 0;
+  let staleByHistory = 0;
+  const fresh = candidates.filter((candidate) => {
+    if (candidate.url && seenUrls.has(normalizeDedupeUrl(candidate.url))) {
+      staleByHistory += 1;
+      return false;
+    }
+
+    if (isOlderThanWindow(candidate.publishedDate, now, maxAgeDays)) {
+      staleByDate += 1;
+      return false;
+    }
+
+    return true;
+  });
+
+  if (staleByHistory > 0) {
+    logger.log(
+      `[remix-follow-builders] ${staleByHistory} candidates removed by cross-day URL dedupe.`
+    );
+  }
+  if (staleByDate > 0) {
+    logger.log(
+      `[remix-follow-builders] ${staleByDate} candidates removed by the ${maxAgeDays}-day recency window.`
+    );
+  }
+
+  fresh.sort((left, right) => right.score - left.score);
 
   const selected = [];
   const usedUrls = new Set();
   const kindCounts = new Map();
 
-  for (const candidate of candidates) {
+  for (const candidate of fresh) {
     if (!candidate.url || usedUrls.has(candidate.url)) {
       continue;
     }
@@ -189,7 +274,7 @@ function collectCandidates(payload, maxItems = DEFAULT_MAX_ITEMS) {
   return selected;
 }
 
-async function summarizeCandidates(candidates, { apiKey, logger }) {
+async function summarizeCandidates(candidates, { apiKey, logger, summarize = defaultSummarizeCandidate }) {
   const results = await Promise.all(
     candidates.map(async (candidate) => {
       const summaryCandidate = {
@@ -200,7 +285,7 @@ async function summarizeCandidates(candidates, { apiKey, logger }) {
         matchedKeywords: ["AI builders", candidate.kind]
       };
 
-      const { summary, take } = await defaultSummarizeCandidate(summaryCandidate, {
+      const { summary, take } = await summarize(summaryCandidate, {
         apiKey,
         logger
       });
@@ -209,6 +294,7 @@ async function summarizeCandidates(candidates, { apiKey, logger }) {
         title: candidate.title,
         url: candidate.url,
         sourceName: candidate.sourceName,
+        publishedDate: candidate.publishedDate,
         summary,
         take
       };
@@ -251,9 +337,24 @@ export async function remixFollowBuilders(options = {}) {
   }
 
   const maxItems = Number.isFinite(options.maxItems) ? options.maxItems : DEFAULT_MAX_ITEMS;
-  const remixCandidates = collectCandidates(payload, maxItems);
+  const now = options.now ?? new Date();
+  const maxAgeDays = Number.isFinite(options.maxAgeDays) ? options.maxAgeDays : DEFAULT_MAX_AGE_DAYS;
+  const lookbackDays = Number.isFinite(options.lookbackDays)
+    ? options.lookbackDays
+    : DEFAULT_LOOKBACK_DAYS;
+  const seenUrls = await loadRecentBriefingUrls(repoRoot, date, lookbackDays);
+  const remixCandidates = collectCandidates(payload, maxItems, {
+    seenUrls,
+    now,
+    maxAgeDays,
+    logger
+  });
   const apiKey = options.apiKey ?? process.env.DEEPSEEK_API_KEY;
-  const parsedItems = await summarizeCandidates(remixCandidates, { apiKey, logger });
+  const parsedItems = await summarizeCandidates(remixCandidates, {
+    apiKey,
+    logger,
+    summarize: options.summarizeCandidate
+  });
   const dedupedItems = dedupeAgainstExistingMarkdown(parsedItems, existingMarkdown);
 
   if (dedupedItems.length === 0) {

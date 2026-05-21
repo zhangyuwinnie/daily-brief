@@ -809,7 +809,7 @@ function filterRecentItems(items, { now = new Date(), maxAgeDays = 2 } = {}) {
   });
 }
 
-function normalizeDedupeUrl(value = "") {
+export function normalizeDedupeUrl(value = "") {
   if (!value) {
     return "";
   }
@@ -854,7 +854,7 @@ function getGeneratedBriefingsDir(repoRoot) {
   return path.join(repoRoot, "public", "generated", "briefings");
 }
 
-async function loadRecentBriefingUrls(repoRoot, date, lookbackDays = 1) {
+export async function loadRecentBriefingUrls(repoRoot, date, lookbackDays = 1) {
   const seenUrls = new Set();
   const generatedBriefingsDir = getGeneratedBriefingsDir(repoRoot);
 

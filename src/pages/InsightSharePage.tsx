@@ -145,7 +145,7 @@ export function InsightSharePage() {
           >
             <Sparkles className="h-4 w-4" style={{ color: "var(--accent-strong)" }} />
           </div>
-          <span className="eyebrow">Daily Signal • {selectedInsight.date}</span>
+          <span className="eyebrow">Daily Signal • {selectedInsight.publishedDate ?? selectedInsight.date}</span>
         </div>
 
         <h2 className="display-title text-5xl font-semibold leading-[0.95] text-[color:var(--text-strong)]">
