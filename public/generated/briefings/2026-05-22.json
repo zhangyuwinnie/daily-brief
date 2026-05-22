@@ -1,0 +1,206 @@
+{
+  "date": "2026-05-22",
+  "briefings": [
+    {
+      "id": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-22",
+      "filePath": "2026-05-22.md",
+      "summaryTopline": "AdventHealth advances whole-person care with OpenAI",
+      "insightIds": [
+        "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+        "rss-2026-05-22-02-datasette-agent",
+        "rss-2026-05-22-03-quoting-spacex-s-1",
+        "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+        "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+        "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+        "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+        "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+        "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+        "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/adventhealth",
+      "title": "AdventHealth advances whole-person care with OpenAI",
+      "summary": "AdventHealth部署了OpenAI的ChatGPT for Healthcare，通过自然语言处理自动化行政流程，以减轻医护人员的文书负担并优化患者护理时间。",
+      "take": "工程要点在于将大语言模型集成至医疗工作流中，核心是处理非结构化数据（如病历、转诊记录）以自动生成摘要或配置任务。开发者应关注API与现有电子健康记录系统的接口设计，以及合规性下的模型微调策略。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-22-02-datasette-agent",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
+      "title": "Datasette Agent",
+      "summary": "Simon Willison 发布 Datasette Agent，一个针对 Datasette 的可扩展 AI 助手，通过 LLM 插件架构（支持 OpenAI、Gemini、Claude、Codex）实现自然语言查询和可选的图表生成功能。",
+      "take": "核心信号是 LLM 与结构化数据库（Datasette）的深度集成模式：通过插件架构使 AI 能直接对话式查询并可视化数据，这为构建低代码数据分析和 Agent 工作流提供了可复用的范例。开发者应关注其插件扩展机制（如 datasette-agent-charts），这暗示了未来 Agent 将作为数据基础设施的交互层。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-22-03-quoting-spacex-s-1",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
+      "title": "Quoting SpaceX S-1",
+      "summary": "SpaceX在S-1文件中披露，已与Anthropic签署云服务协议，以每月12.5亿美元的价格提供COLOSSUS及COLOSSUS II的算力访问，合同期至2029年5月。",
+      "take": "此举标志着大型AI实验室（Anthropic）彻底转向租用外部专用算力集群（非传统云厂商），而非自行建设。对于AI Builder而言，这意味着算力供应链正从通用云向超大专用训练集群租赁模式迁移，长期锁定成本将成为模型竞争的新壁垒。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/open-source/gaming/beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made/",
+      "title": "Beyond the engine: 10 open source projects shaping how games actually get made",
+      "summary": "GitHub Blog列舉10個開源專案，涵蓋藝術創作、動畫、關卡設計、音效、對話系統、除錯UI及資產管線，旨在填補遊戲開發中引擎之外的工具鏈缺口。",
+      "take": "這些專案代表遊戲開發工作流的模塊化趨勢，開發者可將其整合至AI驅動的內容生成或自動化測試管線。對於AI builders，重點是評估這些工具能否作為代理系統的數據生成或環境模擬的前端介面，從而加速遊戲原型的迭代閉環。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+      "summary": "ModelRift 提出的 Antigravity 2.0 模型在 OpenSCAD 架构 3D 建模基准测试中，以基于隐式几何推理的代码生成方法取得第一名，超越此前基于显式网格生成的方案。",
+      "take": "该基准测试首次系统评估 LLM 对程序化几何（OpenSCAD）的生成能力，核心关注点是模型能否将自然语言需求转化为精确的 3D 建模代码。这为 AI 辅助 CAD 工具链指明新方向：未来的 Builder 应优先测试 LLM 对参数化几何推理的准确性，而非单纯输出网格文件。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://annas-archive.gl/blog/llms-txt.html",
+      "title": "If you’re an LLM, please read this",
+      "summary": "Anna’s Archive 发布了一个 llms.txt 文件，旨在通过结构化文本内容（如 URL 列表与简要描述）优化 LLM 在特定数据源上的上下文理解与检索效率。",
+      "take": "开发者应在其项目根目录实现 llms.txt 文件，以标准化方式向 LLM 提供关键链接与摘要，从而提升 RAG 和 agent 工具的检索准确性与上下文质量。这是一种低成本的元数据优化策略，可显著改善 LLM 在特定领域内的信息处理能力。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/",
+      "title": "MagenticLite, MagenticBrain, Fara1.5: An agentic experience optimized for small models",
+      "summary": "微软研究发布MagenticLite，一种针对小尺寸模型优化的代理系统，通过结合专用模型与编排机制，在浏览器和本地文件系统中实现统一工作流的代理性能提升。",
+      "take": "核心工程启示在于：小模型可通过专用模型组合与轻量级编排架构，在浏览器与文件系统间实现类代理的连续任务执行，无需依赖大型基础模型；这为资源受限环境下的本地化AI工具链设计提供了新范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "The MAD Podcast with Matt Turck",
+      "sourceUrl": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
+      "title": "Builder Theme: OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real",
+      "summary": "OpenAI的Yann Dubois指出，AI模型在2024年12月左右跨越了可靠性临界点，使得从技术竞赛转向实际可用性成为现实，但垂直领域的最后一英里工程仍是关键。",
+      "take": "AI工具现在已达到可信任执行工作流的可靠性阈值，构建者应聚焦于特定垂直领域的工程化适配和最后一英里优化，而非通用能力堆叠。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2057614780727480741",
+      "title": "Builder Theme: Sam Altman on what problem do you most hope AI will solve in the future? maybe we c...",
+      "summary": "what problem do you most hope AI will solve in the future? maybe we can help!。",
+      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative",
+      "briefingId": "rss-2026-05-22",
+      "date": "2026-05-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2057663408376516703",
+      "title": "Builder Theme: Aaron Levie on What’s happened is that we went from AI chat tools that were relative...",
+      "summary": "Aaron Levie指出AI技术演进路径：从低成本、小上下文窗口的聊天工具，转向拥有巨量上下文窗口、支持长时任务追踪、推理成本高出数量级但能力显著更强的AI智能体，这一转变速度远超多数人预期，并已吸引真实资金流入。",
+      "take": "工程上需关注三个关键转变：一是智能体架构须主动适配长上下文窗口（如128K+ token），以支持持久化工作流状态跟踪；二是推理成本暴增要求开发者明确区分前沿用例（如编程、科研）与可剥离至低成本模型的任务，并设计分层路由策略；三是资金信号表明可优先构建面向高价值、长周期任务的闭环Agent系统，而非通用对话工具。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

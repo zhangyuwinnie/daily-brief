@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-22",
     "2026-05-21",
     "2026-05-20",
     "2026-05-19",
@@ -101,6 +102,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-22": {
+      "briefingIds": [
+        "rss-2026-05-22"
+      ],
+      "insightIds": [
+        "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+        "rss-2026-05-22-02-datasette-agent",
+        "rss-2026-05-22-03-quoting-spacex-s-1",
+        "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+        "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+        "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+        "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+        "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+        "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+        "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-21": {
       "briefingIds": [
         "rss-2026-05-21"
