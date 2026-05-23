@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-23",
     "2026-05-22",
     "2026-05-21",
     "2026-05-20",
@@ -102,6 +103,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-23": {
+      "briefingIds": [
+        "rss-2026-05-23"
+      ],
+      "insightIds": [
+        "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+        "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+        "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+        "rss-2026-05-23-04-datasette-agent-charts-01a2",
+        "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+        "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+        "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+        "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+        "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-22": {
       "briefingIds": [
         "rss-2026-05-22"
