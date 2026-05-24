@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-24",
     "2026-05-23",
     "2026-05-22",
     "2026-05-21",
@@ -103,6 +104,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-24": {
+      "briefingIds": [
+        "rss-2026-05-24"
+      ],
+      "insightIds": [
+        "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+        "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+        "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+        "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-23": {
       "briefingIds": [
         "rss-2026-05-23"

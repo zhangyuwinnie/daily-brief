@@ -1,0 +1,89 @@
+{
+  "date": "2026-05-24",
+  "briefings": [
+    {
+      "id": "rss-2026-05-24",
+      "date": "2026-05-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-24",
+      "filePath": "2026-05-24.md",
+      "summaryTopline": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+      "insightIds": [
+        "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+        "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+        "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+        "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+      "briefingId": "rss-2026-05-24",
+      "date": "2026-05-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
+      "title": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+      "summary": "Greg Brockman在播客中详细回顾了OpenAI内部72小时危机，涉及董事会突然罢免Sam Altman、员工集体辞职威胁、以及微软介入谈判最终促成Altman回归的技术决策过程。",
+      "take": "这次事件暴露了AI治理结构对模型训练与部署连续性的关键影响；开发者应关注OpenAI治理风险，并评估依赖单一闭源模型API的业务连续性方案，或考虑构建多模型冗余架构。",
+      "topics": [
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+      "briefingId": "rss-2026-05-24",
+      "date": "2026-05-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+      "title": "Builder Theme: The Story Behind Cerebras’ $63 Billion IPO with Founder and CEO Andrew Feldman",
+      "summary": "Cerebras 创始人兼 CEO Andrew Feldman 在播客中阐述其公司专注于通过晶圆级芯片（Wafer-Scale Engine）加速 AI 训练与推理，类比 Netflix 从 DVD 转型流媒体，指出“速度”将催生全新的商业模式与生产力跃升。",
+      "take": "Cerebras 的核心工程信号是其晶圆级架构（Wafer-Scale Engine）作为 AI 硬件的根本性范式，而非渐进式改进。开发者应关注该架构在减少分布式训练通信开销、支持超大规模模型原生计算方面的实际性能优势，以及其对现有 GPU 集群调度和推理延迟模型的潜在颠覆。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+      "briefingId": "rss-2026-05-24",
+      "date": "2026-05-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2058245330836271263",
+      "title": "Builder Theme: Guillermo Rauch on Show me the thing you’ve built with AI you’re most proud of. Reply wi...",
+      "summary": "Guillermo Rauch 号召AI开发者展示最引以为豪的AI项目，要求提交可工作的产品链接及主要使用的模型或代理。",
+      "take": "这是对AI落地能力的直接检验，重点在于从原型到可交付产品的转化效率。开发者应优先记录所选模型/代理的决策依据、边界约束和实际效果，形成可复用的工程案例库。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned",
+      "briefingId": "rss-2026-05-24",
+      "date": "2026-05-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2058378310254793013",
+      "title": "Builder Theme: Garry Tan on Thinking Machines is impressive. In a couple hours I just fine tuned...",
+      "summary": "Garry Tan 在数小时内微调了 Qwen3.5-397B 模型，利用 Thinking Machines 平台实现快速可用的多模态能力。",
+      "take": "本地微调超大规模模型的时间成本已降至数小时级别，极大降低了个人AI的定制门槛。快速多模态支持将加速个性化AI代理在视觉理解与交互场景中的落地。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
