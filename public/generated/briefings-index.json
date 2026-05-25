@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-25",
     "2026-05-24",
     "2026-05-23",
     "2026-05-22",
@@ -104,6 +105,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-25": {
+      "briefingIds": [
+        "rss-2026-05-25"
+      ],
+      "insightIds": [
+        "rss-2026-05-25-01-datasette-agent-01a4",
+        "rss-2026-05-25-02-quoting-armin-ronacher",
+        "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+        "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+        "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+        "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+        "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-24": {
       "briefingIds": [
         "rss-2026-05-24"

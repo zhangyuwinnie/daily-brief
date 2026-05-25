@@ -22554,5 +22554,154 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-25": {
+    "date": "2026-05-25",
+    "briefings": [
+      {
+        "id": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-25",
+        "filePath": "2026-05-25.md",
+        "summaryTopline": "datasette-agent 0.1a4",
+        "insightIds": [
+          "rss-2026-05-25-01-datasette-agent-01a4",
+          "rss-2026-05-25-02-quoting-armin-ronacher",
+          "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+          "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+          "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+          "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+          "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-25-01-datasette-agent-01a4",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+        "title": "datasette-agent 0.1a4",
+        "summary": "Simon Willison 发布了 datasette-agent 0.1a4，利用 Datasette 1.0a30 新增的 makeJumpSections() JavaScript 插件钩子，将代理聊天界面集成到 Jump 菜单中，并支持通过 GitHub 账号登录 agent.datasette.io 体验。",
+        "take": "此版本展示了如何通过插件钩子将 AI 代理功能无缝嵌入现有 Web 应用框架，为开发者提供了一种低侵入性、模块化的方式来增强数据库查询界面的交互性。核心工程价值在于，无需重构后端即可在数据浏览流程中插入可对话的智能代理，这为构建基于检索的代理工作流提供了一个清晰的集成样板。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-02-quoting-armin-ronacher",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+        "title": "Quoting Armin Ronacher",
+        "summary": "Armin Ronacher 指出当前LLM生成的问题报告常因重述而丢失关键观察，建议回归人工核心表述：准确记录命令、预期与实际结果。",
+        "take": "开发者应推动LLM对话流程中“原始观察”的严格隔离层，规定报告模板强制包含精确命令与预期-实际对比，避免模型自动填充推断或修复建议。这能提升调试信号密度并减少噪声。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://esengine.github.io/DeepSeek-Reasonix/",
+        "title": "DeepSeek reasonix, DeepSeek native coding agent with high caching and low cost",
+        "summary": "DeepSeek 推出 Reasonix 原生编码代理，通过高缓存机制和低成本推理显著降低代码生成与迭代的延迟与费用。",
+        "take": "对于构建 AI 编码代理的开发者，此方案证明了将缓存策略深度集成到推理管线中可大幅优化成本与响应速度，应评估是否在自身代理循环中引入类似的键值缓存或提示缓存机制，以在保持代码质量的同时降低 token 消耗。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/",
+        "title": "A fundamental principle of aeronautical engineering has been overturned",
+        "summary": "NASA团队通过改变机翼表面气流层流态与涡旋结构的主动控制技术，在风洞实验中实现了超过传统升力理论极限的飞行性能，推翻了一个多世纪以来被视为航空工程基石的升力原理。",
+        "take": "这一突破表明，基于固定几何与稳态流假设的传统升力模型在主动流体控制下不再适用；AI驱动的实时气动优化算法（如强化学习调节表面微作动器）可能成为下一代飞行器设计的核心工具链，并有望迁移至水下航行器或风力发电叶片等流体动力学领域。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/agent-glossary",
+        "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+        "summary": "Hugging Face 通过定义“Harness”（使能层，包含工具、记忆、规划）与“Scaffold”（框架层，包含控制流、代理循环）等术语，为AI Agent构建了一套标准化概念体系，以澄清社区中混乱的术语使用。",
+        "take": "开发者在构建Agent时应明确区分使能层与框架层：Harness提供基础能力（如工具调用、记忆管理），Scaffold定义执行逻辑（如动态规划、循环控制）。这种分层架构便于模块化开发与调试，未来工具链可能围绕此标准形成更统一的Agent SDK接口。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2058582370253701432",
+        "title": "Builder Theme: Aaron Levie on CEOs are uniquely prone to AI psychosis because they’re sufficiently...",
+        "summary": "Aaron Levie指出，CEO容易因远离生成AI价值所需的最后一英里工作而产生“AI精神病”，只看到AI在理想路径上的成功结果，而忽略了将代理人结果投入生产所必需的后续复杂整合与验证步骤。",
+        "take": "核心工程启示：部署AI代理时，必须从完整的“最后一英里”生产闭环（代码审查、生产集成、合同验证、历史数据对接）来评估真实价值，而非仅依据原型演示。构建者应设计自动化的验证与接续工作流，强制暴露代理输出中的边缘案例与集成成本，否则CEO的乐观误判将导致架构决策脱离实际约束。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2058576195000660319",
+        "title": "Builder Theme: Thariq on my main takeaway from the Bun rewrite is that legacy codebases will b...",
+        "summary": "Thariq指出，Bun重写的核心启示在于，老旧代码库可作为蒸馏训练数据，将遗留软件转化为跨平台Web可执行形式。",
+        "take": "对于AI构建者，老旧代码库是未被充分利用的高质量训练语料，可用于生成跨平台或WebAssembly版本，取代COBOL等传统系统。这提示了一种新的工作流：系统性地解析、蒸馏并自动转换遗留代码，以扩展AI代理的兼容性边界。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
