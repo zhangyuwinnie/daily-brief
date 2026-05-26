@@ -1,0 +1,183 @@
+{
+  "date": "2026-05-21",
+  "briefings": [
+    {
+      "id": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-21",
+      "filePath": "2026-05-21.md",
+      "summaryTopline": "How Ramp engineers accelerate code review with Codex",
+      "insightIds": [
+        "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+        "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+        "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+        "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+        "rss-2026-05-21-05-llm-gemini-032a0",
+        "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+        "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+        "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+        "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/ramp",
+      "title": "How Ramp engineers accelerate code review with Codex",
+      "summary": "Ramp 工程团队利用基于 GPT-5.5 的 Codex 工具，将代码审查周期从数小时缩短至数分钟，实现自动化、实质性的代码改进反馈。",
+      "take": "工程团队应关注 Codex 可独立审查 PR 并给出结构化改进建议的能力，将其集成至 CI/CD 流程以自动拦截常见问题。此举改变了传统人工逐行审查的工作流，将工程师精力解放至更高层次的架构决策上。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/qwen-3-7-max-now-available-on-vercel-ai-gateway",
+      "title": "Qwen 3.7 Max now available on Vercel AI Gateway",
+      "summary": "阿里巴巴的Qwen 3.7 Max作为面向智能体基础的模型，现已在Vercel AI Gateway上架，通过统一API支持编码、多文件工程、办公多智能体编排及长时间自主工具调用会话。",
+      "take": "开发者可直接使用AI SDK设置模型为alibaba/qwen-3.7-max，获得统一API以降低集成成本、内置重试与故障转移提升可用性，以及自带密钥支持用于成本追踪。该模型在长周期自主执行与多智能体协作上的改进，为构建复杂自动化工作流和长期推理型代理提供了更稳固的基础底座。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "summary": "OpenAI透過一個自監督學習的語言模型，在離散幾何領域中反駁了一個長期存在的中心猜想，展示了AI在非直覺數學證明中的新能力。",
+      "take": "開發者應關注此案例中模型如何透過模式識別與符號推理的結合來探索數學空間，這可能預示著未來AI輔助程式碼生成與驗證工具能處理更高層級的邏輯驗證任務，而非僅限於語法匹配。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://twitter.com/nottombrown/status/2057194829986300375",
+      "title": "Anthropic is expanding to Colossus2. Will use GB200",
+      "summary": "Anthropic计划将其AI训练集群扩展至Colossus2，并采用NVIDIA GB200架构，以提升大规模模型训练的计算效率。",
+      "take": "GB200的引入意味着Anthropic将利用更高集成度的GPU互连技术，可能显著缩短训练周期并降低能耗。开发者在设计训练流水线时需考虑GB200的硬件特性，如内存带宽和拓扑结构，以最大化利用率。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-21-05-llm-gemini-032a0",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything",
+      "title": "llm-gemini 0.32a0",
+      "summary": "Simon Willison 發布 llm-gemini 0.32a0 版本，為 LLM 命令列工具新增串流推理 tokens 的能力，需搭配 llm>=0.32a0 alpha 使用。",
+      "take": "此更新讓開發者能即時取得 Gemini 模型的推理過程（reasoning tokens），而非僅等待最終輸出。對建構需要逐步推理展示或即時反饋的 AI 代理與工作流程而言，這是關鍵的架構性改進，可提升互動效率與除錯能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
+      "title": "How fast is 10 tokens per second really?",
+      "summary": "Mike Veerman 发布了一个 HTML 应用，通过模拟每秒 5 至 800 个 token 的 LLM 输出速度，帮助开发者直观感受不同速率下的实际体验。",
+      "take": "此工具可用于校准对模型吞吐量的感知，避免仅凭数字忽略用户体验。建议在评估 LLM 服务或设计交互流程时，实际模拟目标 token 速率，以判断是否能满足实时性或流式输出的预期。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/pull-anomaly-alert-details-using-the-vercel-cli",
+      "title": "Pull anomaly alert details using the Vercel CLI",
+      "summary": "Vercel 在 CLI 中新增 `vercel alerts` 命令，支持列出团队或项目的异常告警，并通过 `--ai` 参数直接获取 AI 调查结果，无需离开终端即可操作。",
+      "take": "工程团队可基于此机制构建自动化运维代理，通过解析 CLI 返回的告警类型与时间戳，结合 AI 调查结果实现无人工介入的异常修复流程。此能力将事件响应链从可视化仪表盘下放至终端，为 agent 化运维提供了新的触发节点。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2057218997503086888",
+      "title": "Builder Theme: Sam Altman on three of the things we are most excited about: 1. AGI accelerating re...",
+      "summary": "Sam Altman 宣布 OpenAI 的三大兴奋方向：AGI 加速研究、加速公司以及个人 AGI 加速所有人实现目标，并同步推出每 YC 公司 200 万美元 OpenAI 积分投资与单位距离研究成果。",
+      "take": "聚焦 AGI 作为工程加速器而非通用工具：直接注入资金与算力到创业生态（200 万积分/公司）是推动 AGI 嵌入公司级工作流的明确信号；个人 AGI 方向暗示下一步将构建可编程的、用户专属的推理代理，而非仅对话模型。AI 构建者应优先设计以 AGI 为核心的研究/公司加速管线，而非泛化助手。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere",
+      "briefingId": "rss-2026-05-21",
+      "date": "2026-05-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2057040636449116222",
+      "title": "Builder Theme: Peter Steinberger on Can't recommend @cotypist enough. Autocomplete everywhere.",
+      "summary": "Peter Steinberger 推荐 CoTypist 工具，该工具在操作系统任何地方提供 AI 驱动的自动补全功能。",
+      "take": "对 AI 构建者而言，此模式表明将 AI 补全能力嵌入全局输入层（而非特定编辑器或应用）是提升开发者生产力的关键范式；考虑在自定义工具链中集成类似的无侵入式上下文补全接口。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

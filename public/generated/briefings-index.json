@@ -1,5 +1,12 @@
 {
   "availableDates": [
+    "2026-05-26",
+    "2026-05-25",
+    "2026-05-24",
+    "2026-05-23",
+    "2026-05-22",
+    "2026-05-21",
+    "2026-05-20",
     "2026-05-19",
     "2026-05-18",
     "2026-05-17",
@@ -99,6 +106,142 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-26": {
+      "briefingIds": [
+        "rss-2026-05-26"
+      ],
+      "insightIds": [
+        "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+        "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+        "rss-2026-05-26-03-quoting-paul-graham",
+        "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+        "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+        "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+        "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+        "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+        "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-25": {
+      "briefingIds": [
+        "rss-2026-05-25"
+      ],
+      "insightIds": [
+        "rss-2026-05-25-01-datasette-agent-01a4",
+        "rss-2026-05-25-02-quoting-armin-ronacher",
+        "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+        "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+        "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+        "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+        "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-24": {
+      "briefingIds": [
+        "rss-2026-05-24"
+      ],
+      "insightIds": [
+        "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+        "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+        "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+        "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-23": {
+      "briefingIds": [
+        "rss-2026-05-23"
+      ],
+      "insightIds": [
+        "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+        "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+        "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+        "rss-2026-05-23-04-datasette-agent-charts-01a2",
+        "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+        "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+        "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+        "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+        "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-22": {
+      "briefingIds": [
+        "rss-2026-05-22"
+      ],
+      "insightIds": [
+        "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+        "rss-2026-05-22-02-datasette-agent",
+        "rss-2026-05-22-03-quoting-spacex-s-1",
+        "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+        "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+        "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+        "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+        "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+        "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+        "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-21": {
+      "briefingIds": [
+        "rss-2026-05-21"
+      ],
+      "insightIds": [
+        "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+        "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+        "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+        "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+        "rss-2026-05-21-05-llm-gemini-032a0",
+        "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+        "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+        "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+        "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
+    "2026-05-20": {
+      "briefingIds": [
+        "rss-2026-05-20"
+      ],
+      "insightIds": [
+        "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+        "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+        "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+        "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+        "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+        "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+        "rss-2026-05-20-07-introducing-openai-for-singapore",
+        "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+        "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+        "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-19": {
       "briefingIds": [
         "rss-2026-05-19"

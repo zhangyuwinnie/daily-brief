@@ -1,0 +1,189 @@
+{
+  "date": "2026-05-23",
+  "briefings": [
+    {
+      "id": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-23",
+      "filePath": "2026-05-23.md",
+      "summaryTopline": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "insightIds": [
+        "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+        "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+        "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+        "rss-2026-05-23-04-datasette-agent-charts-01a2",
+        "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+        "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+        "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+        "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+        "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "summary": "OpenAI因其智能体编程产品Codex在2026年Gartner企业AI编程智能体魔力象限中被列为领导者，强调其在企业级部署与创新方面的领先地位。",
+      "take": "Codex已被第三方认可为可落地于企业级生产环境的编程智能体，这意味着开发者应优先关注其对复杂代码库的理解、生成与调试能力，而非仅视其为通用代码补全工具。该认证可能推动CI/CD流程中智能体协作模式成为新标准，建议立即评估Codex集成到现有开发工具链中的工程成本与收益。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/virgin-atlantic",
+      "title": "How Virgin Atlantic ships faster with Codex",
+      "summary": "Virgin Atlantic 使用 OpenAI Codex 在固定假期截止日期前重构并交付移动应用，实现了接近完全的单元测试覆盖率和零 P1 级缺陷。",
+      "take": "Codex 能够将自然语言需求直接转化为生产级代码并自动生成高覆盖率的单元测试，显著缩短了从需求到交付的周期。对于 AI 构建者，这意味着可以将 Codex 集成到 CI/CD 管道中，以自动生成测试用例并验证代码质量，从而在关键期限前实现零严重缺陷的交付。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
+      "title": "datasette-agent-sprites 0.1a0",
+      "summary": "Simon Willison 发布了 datasette-agent-sprites 0.1a0，这是一个 Datasette Agent 插件，用于在 Fly Sprites 沙盒中执行命令。",
+      "take": "该插件将 Datasette Agent 的自动化能力与 Fly Sprites 的沙盒隔离机制结合，为执行不可信代码或运行代理工作流提供了安全的运行时环境。开发者可借此构建具备安全执行上下文的 Agent 任务，无需自行搭建沙盒基础设施。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-23-04-datasette-agent-charts-01a2",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything",
+      "title": "datasette-agent-charts 0.1a2",
+      "summary": "Simon Willison 發布 datasette-agent-charts 0.1a2，在圖表下方新增「查看 SQL 查詢」按鈕，讓用戶能直接檢視生成圖表的底層 SQL 語句。",
+      "take": "此功能將 AI 生成的視覺化結果與可審計的查詢邏輯直接掛鉤，對 agent 工作流而言，標誌著從黑箱輸出轉向可解釋、可調試的關鍵設計模式。開發者應在 agent 產出中強制暴露決策軌跡（如 SQL、提示詞），以確保結果可複現與可驗證。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/",
+      "title": "GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row",
+      "summary": "GitHub连续第三年被Gartner企业AI编程代理魔力象限评为领导者，基于其GitHub Copilot平台在开发者工具链中的深度集成与持续迭代。",
+      "take": "这一认可验证了将AI编码代理嵌入现有开发工作流（如IDE、CI/CD）而非独立工具的架构策略。对于构建者而言，核心信号是：企业级AI编码工具的差异化优势正在从模型能力转向平台整合度与安全合规性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "title": "Microsoft starts canceling Claude Code licenses",
+      "summary": "微軟因授權合約條款變更，開始大規模取消內部開發團隊使用的Claude Code許可證，轉而推廣其自有的GitHub Copilot與Azure AI服務。",
+      "take": "此事件凸顯大型雲端廠商對第三方AI編碼工具的依賴策略正在轉向鎖定自有生態，開發者若使用Claude Code等外部代理工具，需預期跨平台合規風險與服務中斷可能性，並應將工具鏈設計為可替換模組以降低供應商綁定影響。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/watch?v=NQczevdpxq0",
+      "title": "Builder Theme: Ep 87: Gemini Co-Lead on World Models, RL&apos;s Next Domains &amp; Continual Learning",
+      "summary": "Oriol Vinyals（Gemini 联合负责人）在访谈中讨论了多模态世界模型的实际可用性、记忆与推理能力的提升路径，以及持续学习作为下一代AI系统的关键架构方向。",
+      "take": "世界模型的核心瓶颈在于如何将多模态输入与符号推理结合，工程上需关注长上下文记忆与在线学习的集成。RL的应用将超越游戏，进入持续学习场景，开发者应优先设计能动态扩展记忆和推理能力的训练循环，而非依赖静态数据集微调。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2057854403558653983",
+      "title": "Builder Theme: Claude on Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI...",
+      "summary": "Genspark.ai 的联合创始人兼 CTO Kay Zhu 在快速发展的 AI 市场中，强调团队差异是核心竞争力，其产品是基于 Claude 构建的全功能 AI 工作空间。",
+      "take": "工程信号在于：当 AI 构建工具和模型迅速商品化时，团队的组织效率、协作深度和领域知识整合能力，而非单一的技术特性，将成为决定 AI 应用能否落地的关键瓶颈。开发者应优先投资于团队建设与工作流程优化。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a",
+      "briefingId": "rss-2026-05-23",
+      "date": "2026-05-23",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Google Labs",
+      "sourceUrl": "https://x.com/GoogleLabs/status/2057884277384360416",
+      "title": "Builder Theme: Google Labs on Take a quick break from scrolling and check out 👀 We had a bit of a...",
+      "summary": "Google Labs 更新了其官网首页，旨在集中展示最新创新成果及I/O大会发布内容，供开发者和用户探索、测试实验项目。",
+      "take": "这暗示AI开发者的项目发现与实验入口正在聚合，但当前更新仅为信息展示层面的优化，未引入新的技术架构或开发者工作流变革。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

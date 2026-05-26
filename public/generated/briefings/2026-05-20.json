@@ -1,0 +1,225 @@
+{
+  "date": "2026-05-20",
+  "briefings": [
+    {
+      "id": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-20",
+      "filePath": "2026-05-20.md",
+      "summaryTopline": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+      "insightIds": [
+        "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+        "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+        "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+        "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+        "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+        "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+        "rss-2026-05-20-07-introducing-openai-for-singapore",
+        "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+        "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+        "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://openai.com/index/advancing-content-provenance/",
+      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+      "summary": "OpenAI集成Google SynthID技术，在ChatGPT及DALL-E 3生成的图片中嵌入不可见水印，并推出配套验证工具以追溯内容来源。",
+      "take": "开发者需将SynthID水印的嵌入与检测逻辑集成到图像生成管线中，这改变了AI内容溯源的标准实践：水印并非不可破解的防伪手段，但可作为自动化内容追踪的必要基础设施，尤其是在代理系统自主生成并分发视觉资产时。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.7",
+      "title": "Qwen3.7-Max: The Agent Frontier",
+      "summary": "阿里通义千问发布Qwen3.7-Max模型，基于MoE架构并针对Agent任务进行优化，通过增强函数调用与多步推理能力提升自主执行效率。",
+      "take": "该模型首次将MoE稀疏激活架构与Agent工作流原生结合，在代码生成与工具调用场景中降低推理延迟。开发者应重点测试其多步任务分解与错误自愈能力，作为现有密集模型的高效替代方案。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
+      "title": "Google I/O, Gemini Spark, Antigravity",
+      "summary": "Google 在 I/O 大会上宣布了 Gemini Spark，一款对标 OpenClaw 的个人 AI 代理，可原生连接 Gmail、Calendar、Drive 等 Google 应用，但尚未正式发布。",
+      "take": "Gemini Spark 代表了代理架构从通用对话模型向深度绑定特定平台 API（如 Google 生态）的演进，开发者应关注其开放程度与工具链集成方式，以评估在自有工作流中复用的可行性。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything",
+      "title": "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything",
+      "summary": "Google 发布 Gemini 3.5 Flash 正式版，模型 ID 为 gemini，取消预览标签并广泛部署于 Gemini 应用、AI 搜索、Antigravity 代理平台及企业平台，但未包含计算机操作能力。",
+      "take": "该模型从预览直接跳至正式可用，且被 Google 内部全产品线强制集成，暗示其推理成本与延迟已优化至可大规模服务化水平。开发者需注意其缺少计算机操作（computer use）能力，构建代理时需依赖 API 原生工具调用而非模拟键盘鼠标。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/flat-rate-cdn-in-limited-beta",
+      "title": "Flat Rate CDN in Limited Beta",
+      "summary": "Vercel 为 Pro 团队推出固定费率 CDN Beta 版，以按月固定费用替代按使用量计费，覆盖所有 CDN 流量（包括边缘请求和快速数据传输），消除突发流量导致的超额账单。",
+      "take": "对于依赖 Vercel 的 AI 应用或 RAG 架构，固定费率 CDN 可消除因爬虫、异常查询或缓存未命中造成的不可预测 CDN 成本，让预算更可控。建议流量波动大的团队立即申请 Beta，以隔离计费风险并简化运营成本模型。",
+      "topics": [
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "summary": "OpenAI 宣布扩展其针对国家的教育计划，通过与各国政府合作、提供教师培训及部署定制化工具，推动 AI 在 K-12 教育中的规模化采用。",
+      "take": "核心工程信号是 OpenAI 从 API 提供商转向教育基础设施构建者，开发者需关注其如何通过合作封装本地化课程模型与合规接口，这可能重塑教育 SaaS 的集成层。部署 AI 到课堂的关键瓶颈在于教师工作流适配，而非模型能力本身。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-07-introducing-openai-for-singapore",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-openai-for-singapore",
+      "title": "Introducing OpenAI for Singapore",
+      "summary": "OpenAI宣布与新加坡政府及企业建立多年期AI合作伙伴关系，旨在扩大其AI模型在本地部署、人才培养及公共服务中的应用。",
+      "take": "该合作标志着OpenAI开始通过国家层面的战略合作加速AI模型在特定区域的生产级落地，为开发者提供更多本地化API接入和合规支持。对于AI builder而言，需关注由此产生的区域化模型微调数据集和监管框架变化，可能影响多区域部署架构设计。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2056753169888334312",
+      "title": "Builder Theme: Andrej Karpathy on Personal update: I've joined Anthropic. I think the next few years at...",
+      "summary": "Andrej Karpathy 加入 Anthropic，专注于前沿大语言模型的研发工作，并计划在未来恢复其 AI 教育相关项目。",
+      "take": "Karpathy 的加入标志着 Anthropic 在基础模型研究与安全对齐方向上的持续投入。对于 AI 构建者，这意味着 Anthropic 的模型能力与工具链（如 API、agent 框架）可能获得更强的研发驱动；同时需关注其在教育领域后续可能开放的开源资源或课程。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
+      "title": "Builder Theme: Rebuilding IT From the Ground Up for the AI Age: Serval's Jake Stauch",
+      "summary": "Jake Stauch, CEO of Serval，阐述其正在构建一套从底层重构的AI原生IT工具，旨在弥合开发者对工作的理想化认知与日常繁琐运维现实之间的鸿沟。",
+      "take": "核心信号是IT基础设施正从‘辅助人类工具’转向‘自主运作的代理化平台’。开发者应关注如何将大量标准运维流程（如部署、监控、排错）抽象为可被AI代理直接调用的API或协议，而非仅停留在提示词层面。这预示着未来AI builders的核心竞争力，将部分从‘编写业务逻辑’转移到‘设计并治理自主化的IT执行层’。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+      "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+      "summary": "Anthropic 通过将模型能力与运行框架解耦，发现为早期模型（如 Sonnet 4.5）设计的上下文重置机制在新模型（Opus 4.5）中成为冗余，揭示了管理型代理框架需随模型演进持续优化。",
+      "take": "构建管理型代理时，应假设框架编码的模型限制会随模型升级过时，需定期审计并移除过时的补偿逻辑。核心工程模式是将模型行为封装为可替换模块，避免框架固化对特定模型缺陷的依赖，从而实现脑与手的独立演进。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo",
+      "briefingId": "rss-2026-05-20",
+      "date": "2026-05-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2056827105401614656",
+      "title": "Builder Theme: Sam Altman on customers are increasingly asking us for certainty on capacity. as mo...",
+      "summary": "Sam Altman 指出，随着模型能力提升，全球将进入长期算力容量受限阶段，OpenAI 正通过提供 1-3 年承诺折扣 Token 来换取客户对容量的确定性，同时帮助自身规划产能。",
+      "take": "核心工程信号是：AI 基础设施的算力瓶颈已从短期波动转为长期结构性约束，Builder 应尽早将长期算力承诺纳入成本与架构规划，以锁定资源并优化推理成本。此举也暗示未来模型调用可能更依赖预留容量而非按需弹性，需调整部署策略为长期预留与混合调度模型。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

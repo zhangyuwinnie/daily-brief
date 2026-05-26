@@ -21662,5 +21662,1226 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-20": {
+    "date": "2026-05-20",
+    "briefings": [
+      {
+        "id": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-20",
+        "filePath": "2026-05-20.md",
+        "summaryTopline": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+        "insightIds": [
+          "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+          "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+          "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+          "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+          "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+          "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+          "rss-2026-05-20-07-introducing-openai-for-singapore",
+          "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+          "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+          "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+          "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-20-01-openai-adopts-googles-synthid-watermark-for-ai-images-with-verification-tool",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://openai.com/index/advancing-content-provenance/",
+        "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+        "summary": "OpenAI集成Google SynthID技术，在ChatGPT及DALL-E 3生成的图片中嵌入不可见水印，并推出配套验证工具以追溯内容来源。",
+        "take": "开发者需将SynthID水印的嵌入与检测逻辑集成到图像生成管线中，这改变了AI内容溯源的标准实践：水印并非不可破解的防伪手段，但可作为自动化内容追踪的必要基础设施，尤其是在代理系统自主生成并分发视觉资产时。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-20-02-qwen37-max-the-agent-frontier",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://qwen.ai/blog?id=qwen3.7",
+        "title": "Qwen3.7-Max: The Agent Frontier",
+        "summary": "阿里通义千问发布Qwen3.7-Max模型，基于MoE架构并针对Agent任务进行优化，通过增强函数调用与多步推理能力提升自主执行效率。",
+        "take": "该模型首次将MoE稀疏激活架构与Agent工作流原生结合，在代码生成与工具调用场景中降低推理延迟。开发者应重点测试其多步任务分解与错误自愈能力，作为现有密集模型的高效替代方案。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-20-03-google-io-gemini-spark-antigravity",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
+        "title": "Google I/O, Gemini Spark, Antigravity",
+        "summary": "Google 在 I/O 大会上宣布了 Gemini Spark，一款对标 OpenClaw 的个人 AI 代理，可原生连接 Gmail、Calendar、Drive 等 Google 应用，但尚未正式发布。",
+        "take": "Gemini Spark 代表了代理架构从通用对话模型向深度绑定特定平台 API（如 Google 生态）的演进，开发者应关注其开放程度与工具链集成方式，以评估在自有工作流中复用的可行性。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-20-04-gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything",
+        "title": "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything",
+        "summary": "Google 发布 Gemini 3.5 Flash 正式版，模型 ID 为 gemini，取消预览标签并广泛部署于 Gemini 应用、AI 搜索、Antigravity 代理平台及企业平台，但未包含计算机操作能力。",
+        "take": "该模型从预览直接跳至正式可用，且被 Google 内部全产品线强制集成，暗示其推理成本与延迟已优化至可大规模服务化水平。开发者需注意其缺少计算机操作（computer use）能力，构建代理时需依赖 API 原生工具调用而非模拟键盘鼠标。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-05-flat-rate-cdn-in-limited-beta",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/flat-rate-cdn-in-limited-beta",
+        "title": "Flat Rate CDN in Limited Beta",
+        "summary": "Vercel 为 Pro 团队推出固定费率 CDN Beta 版，以按月固定费用替代按使用量计费，覆盖所有 CDN 流量（包括边缘请求和快速数据传输），消除突发流量导致的超额账单。",
+        "take": "对于依赖 Vercel 的 AI 应用或 RAG 架构，固定费率 CDN 可消除因爬虫、异常查询或缓存未命中造成的不可预测 CDN 成本，让预算更可控。建议流量波动大的团队立即申请 Beta，以隔离计费风险并简化运营成本模型。",
+        "topics": [
+          "RAG"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-06-the-next-phase-of-openais-education-for-countries",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/the-next-phase-of-education-for-countries",
+        "title": "The next phase of OpenAI’s Education for Countries",
+        "summary": "OpenAI 宣布扩展其针对国家的教育计划，通过与各国政府合作、提供教师培训及部署定制化工具，推动 AI 在 K-12 教育中的规模化采用。",
+        "take": "核心工程信号是 OpenAI 从 API 提供商转向教育基础设施构建者，开发者需关注其如何通过合作封装本地化课程模型与合规接口，这可能重塑教育 SaaS 的集成层。部署 AI 到课堂的关键瓶颈在于教师工作流适配，而非模型能力本身。",
+        "topics": [
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-07-introducing-openai-for-singapore",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-openai-for-singapore",
+        "title": "Introducing OpenAI for Singapore",
+        "summary": "OpenAI宣布与新加坡政府及企业建立多年期AI合作伙伴关系，旨在扩大其AI模型在本地部署、人才培养及公共服务中的应用。",
+        "take": "该合作标志着OpenAI开始通过国家层面的战略合作加速AI模型在特定区域的生产级落地，为开发者提供更多本地化API接入和合规支持。对于AI builder而言，需关注由此产生的区域化模型微调数据集和监管框架变化，可能影响多区域部署架构设计。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-08-builder-theme-andrej-karpathy-on-personal-update-ive-joined-anthropic-i-think-the-next-few-years-at",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Andrej Karpathy",
+        "sourceUrl": "https://x.com/karpathy/status/2056753169888334312",
+        "title": "Builder Theme: Andrej Karpathy on Personal update: I've joined Anthropic. I think the next few years at...",
+        "summary": "Andrej Karpathy 加入 Anthropic，专注于前沿大语言模型的研发工作，并计划在未来恢复其 AI 教育相关项目。",
+        "take": "Karpathy 的加入标志着 Anthropic 在基础模型研究与安全对齐方向上的持续投入。对于 AI 构建者，这意味着 Anthropic 的模型能力与工具链（如 API、agent 框架）可能获得更强的研发驱动；同时需关注其在教育领域后续可能开放的开源资源或课程。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-09-builder-theme-rebuilding-it-from-the-ground-up-for-the-ai-age-servals-jake-stauch",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
+        "title": "Builder Theme: Rebuilding IT From the Ground Up for the AI Age: Serval's Jake Stauch",
+        "summary": "Jake Stauch, CEO of Serval，阐述其正在构建一套从底层重构的AI原生IT工具，旨在弥合开发者对工作的理想化认知与日常繁琐运维现实之间的鸿沟。",
+        "take": "核心信号是IT基础设施正从‘辅助人类工具’转向‘自主运作的代理化平台’。开发者应关注如何将大量标准运维流程（如部署、监控、排错）抽象为可被AI代理直接调用的API或协议，而非仅停留在提示词层面。这预示着未来AI builders的核心竞争力，将部分从‘编写业务逻辑’转移到‘设计并治理自主化的IT执行层’。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-10-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+        "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+        "summary": "Anthropic 通过将模型能力与运行框架解耦，发现为早期模型（如 Sonnet 4.5）设计的上下文重置机制在新模型（Opus 4.5）中成为冗余，揭示了管理型代理框架需随模型演进持续优化。",
+        "take": "构建管理型代理时，应假设框架编码的模型限制会随模型升级过时，需定期审计并移除过时的补偿逻辑。核心工程模式是将模型行为封装为可替换模块，避免框架固化对特定模型缺陷的依赖，从而实现脑与手的独立演进。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-20-11-builder-theme-sam-altman-on-customers-are-increasingly-asking-us-for-certainty-on-capacity-as-mo",
+        "briefingId": "rss-2026-05-20",
+        "date": "2026-05-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2056827105401614656",
+        "title": "Builder Theme: Sam Altman on customers are increasingly asking us for certainty on capacity. as mo...",
+        "summary": "Sam Altman 指出，随着模型能力提升，全球将进入长期算力容量受限阶段，OpenAI 正通过提供 1-3 年承诺折扣 Token 来换取客户对容量的确定性，同时帮助自身规划产能。",
+        "take": "核心工程信号是：AI 基础设施的算力瓶颈已从短期波动转为长期结构性约束，Builder 应尽早将长期算力承诺纳入成本与架构规划，以锁定资源并优化推理成本。此举也暗示未来模型调用可能更依赖预留容量而非按需弹性，需调整部署策略为长期预留与混合调度模型。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-21": {
+    "date": "2026-05-21",
+    "briefings": [
+      {
+        "id": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-21",
+        "filePath": "2026-05-21.md",
+        "summaryTopline": "How Ramp engineers accelerate code review with Codex",
+        "insightIds": [
+          "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+          "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+          "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+          "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+          "rss-2026-05-21-05-llm-gemini-032a0",
+          "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+          "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+          "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+          "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-21-01-how-ramp-engineers-accelerate-code-review-with-codex",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/ramp",
+        "title": "How Ramp engineers accelerate code review with Codex",
+        "summary": "Ramp 工程团队利用基于 GPT-5.5 的 Codex 工具，将代码审查周期从数小时缩短至数分钟，实现自动化、实质性的代码改进反馈。",
+        "take": "工程团队应关注 Codex 可独立审查 PR 并给出结构化改进建议的能力，将其集成至 CI/CD 流程以自动拦截常见问题。此举改变了传统人工逐行审查的工作流，将工程师精力解放至更高层次的架构决策上。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-21-02-qwen-37-max-now-available-on-vercel-ai-gateway",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/qwen-3-7-max-now-available-on-vercel-ai-gateway",
+        "title": "Qwen 3.7 Max now available on Vercel AI Gateway",
+        "summary": "阿里巴巴的Qwen 3.7 Max作为面向智能体基础的模型，现已在Vercel AI Gateway上架，通过统一API支持编码、多文件工程、办公多智能体编排及长时间自主工具调用会话。",
+        "take": "开发者可直接使用AI SDK设置模型为alibaba/qwen-3.7-max，获得统一API以降低集成成本、内置重试与故障转移提升可用性，以及自带密钥支持用于成本追踪。该模型在长周期自主执行与多智能体协作上的改进，为构建复杂自动化工作流和长期推理型代理提供了更稳固的基础底座。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-21-03-an-openai-model-has-disproved-a-central-conjecture-in-discrete-geometry",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+        "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+        "summary": "OpenAI透過一個自監督學習的語言模型，在離散幾何領域中反駁了一個長期存在的中心猜想，展示了AI在非直覺數學證明中的新能力。",
+        "take": "開發者應關注此案例中模型如何透過模式識別與符號推理的結合來探索數學空間，這可能預示著未來AI輔助程式碼生成與驗證工具能處理更高層級的邏輯驗證任務，而非僅限於語法匹配。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-21-04-anthropic-is-expanding-to-colossus2-will-use-gb200",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://twitter.com/nottombrown/status/2057194829986300375",
+        "title": "Anthropic is expanding to Colossus2. Will use GB200",
+        "summary": "Anthropic计划将其AI训练集群扩展至Colossus2，并采用NVIDIA GB200架构，以提升大规模模型训练的计算效率。",
+        "take": "GB200的引入意味着Anthropic将利用更高集成度的GPU互连技术，可能显著缩短训练周期并降低能耗。开发者在设计训练流水线时需考虑GB200的硬件特性，如内存带宽和拓扑结构，以最大化利用率。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-21-05-llm-gemini-032a0",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything",
+        "title": "llm-gemini 0.32a0",
+        "summary": "Simon Willison 發布 llm-gemini 0.32a0 版本，為 LLM 命令列工具新增串流推理 tokens 的能力，需搭配 llm>=0.32a0 alpha 使用。",
+        "take": "此更新讓開發者能即時取得 Gemini 模型的推理過程（reasoning tokens），而非僅等待最終輸出。對建構需要逐步推理展示或即時反饋的 AI 代理與工作流程而言，這是關鍵的架構性改進，可提升互動效率與除錯能力。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-21-06-how-fast-is-10-tokens-per-second-really",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
+        "title": "How fast is 10 tokens per second really?",
+        "summary": "Mike Veerman 发布了一个 HTML 应用，通过模拟每秒 5 至 800 个 token 的 LLM 输出速度，帮助开发者直观感受不同速率下的实际体验。",
+        "take": "此工具可用于校准对模型吞吐量的感知，避免仅凭数字忽略用户体验。建议在评估 LLM 服务或设计交互流程时，实际模拟目标 token 速率，以判断是否能满足实时性或流式输出的预期。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-21-07-pull-anomaly-alert-details-using-the-vercel-cli",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/pull-anomaly-alert-details-using-the-vercel-cli",
+        "title": "Pull anomaly alert details using the Vercel CLI",
+        "summary": "Vercel 在 CLI 中新增 `vercel alerts` 命令，支持列出团队或项目的异常告警，并通过 `--ai` 参数直接获取 AI 调查结果，无需离开终端即可操作。",
+        "take": "工程团队可基于此机制构建自动化运维代理，通过解析 CLI 返回的告警类型与时间戳，结合 AI 调查结果实现无人工介入的异常修复流程。此能力将事件响应链从可视化仪表盘下放至终端，为 agent 化运维提供了新的触发节点。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-21-08-builder-theme-sam-altman-on-three-of-the-things-we-are-most-excited-about-1-agi-accelerating-re",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2057218997503086888",
+        "title": "Builder Theme: Sam Altman on three of the things we are most excited about: 1. AGI accelerating re...",
+        "summary": "Sam Altman 宣布 OpenAI 的三大兴奋方向：AGI 加速研究、加速公司以及个人 AGI 加速所有人实现目标，并同步推出每 YC 公司 200 万美元 OpenAI 积分投资与单位距离研究成果。",
+        "take": "聚焦 AGI 作为工程加速器而非通用工具：直接注入资金与算力到创业生态（200 万积分/公司）是推动 AGI 嵌入公司级工作流的明确信号；个人 AGI 方向暗示下一步将构建可编程的、用户专属的推理代理，而非仅对话模型。AI 构建者应优先设计以 AGI 为核心的研究/公司加速管线，而非泛化助手。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-21-09-builder-theme-peter-steinberger-on-cant-recommend-cotypist-enough-autocomplete-everywhere",
+        "briefingId": "rss-2026-05-21",
+        "date": "2026-05-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Steinberger",
+        "sourceUrl": "https://x.com/steipete/status/2057040636449116222",
+        "title": "Builder Theme: Peter Steinberger on Can't recommend @cotypist enough. Autocomplete everywhere.",
+        "summary": "Peter Steinberger 推荐 CoTypist 工具，该工具在操作系统任何地方提供 AI 驱动的自动补全功能。",
+        "take": "对 AI 构建者而言，此模式表明将 AI 补全能力嵌入全局输入层（而非特定编辑器或应用）是提升开发者生产力的关键范式；考虑在自定义工具链中集成类似的无侵入式上下文补全接口。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-22": {
+    "date": "2026-05-22",
+    "briefings": [
+      {
+        "id": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-22",
+        "filePath": "2026-05-22.md",
+        "summaryTopline": "AdventHealth advances whole-person care with OpenAI",
+        "insightIds": [
+          "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+          "rss-2026-05-22-02-datasette-agent",
+          "rss-2026-05-22-03-quoting-spacex-s-1",
+          "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+          "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+          "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+          "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+          "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+          "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+          "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-22-01-adventhealth-advances-whole-person-care-with-openai",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/adventhealth",
+        "title": "AdventHealth advances whole-person care with OpenAI",
+        "summary": "AdventHealth部署了OpenAI的ChatGPT for Healthcare，通过自然语言处理自动化行政流程，以减轻医护人员的文书负担并优化患者护理时间。",
+        "take": "工程要点在于将大语言模型集成至医疗工作流中，核心是处理非结构化数据（如病历、转诊记录）以自动生成摘要或配置任务。开发者应关注API与现有电子健康记录系统的接口设计，以及合规性下的模型微调策略。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-22-02-datasette-agent",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
+        "title": "Datasette Agent",
+        "summary": "Simon Willison 发布 Datasette Agent，一个针对 Datasette 的可扩展 AI 助手，通过 LLM 插件架构（支持 OpenAI、Gemini、Claude、Codex）实现自然语言查询和可选的图表生成功能。",
+        "take": "核心信号是 LLM 与结构化数据库（Datasette）的深度集成模式：通过插件架构使 AI 能直接对话式查询并可视化数据，这为构建低代码数据分析和 Agent 工作流提供了可复用的范例。开发者应关注其插件扩展机制（如 datasette-agent-charts），这暗示了未来 Agent 将作为数据基础设施的交互层。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-22-03-quoting-spacex-s-1",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
+        "title": "Quoting SpaceX S-1",
+        "summary": "SpaceX在S-1文件中披露，已与Anthropic签署云服务协议，以每月12.5亿美元的价格提供COLOSSUS及COLOSSUS II的算力访问，合同期至2029年5月。",
+        "take": "此举标志着大型AI实验室（Anthropic）彻底转向租用外部专用算力集群（非传统云厂商），而非自行建设。对于AI Builder而言，这意味着算力供应链正从通用云向超大专用训练集群租赁模式迁移，长期锁定成本将成为模型竞争的新壁垒。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-22-04-beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/gaming/beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made/",
+        "title": "Beyond the engine: 10 open source projects shaping how games actually get made",
+        "summary": "GitHub Blog列舉10個開源專案，涵蓋藝術創作、動畫、關卡設計、音效、對話系統、除錯UI及資產管線，旨在填補遊戲開發中引擎之外的工具鏈缺口。",
+        "take": "這些專案代表遊戲開發工作流的模塊化趨勢，開發者可將其整合至AI驅動的內容生成或自動化測試管線。對於AI builders，重點是評估這些工具能否作為代理系統的數據生成或環境模擬的前端介面，從而加速遊戲原型的迭代閉環。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-05-antigravity-20-tops-the-openscad-architectural-3d-llm-benchmark",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://modelrift.com/blog/openscad-llm-benchmark/",
+        "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+        "summary": "ModelRift 提出的 Antigravity 2.0 模型在 OpenSCAD 架构 3D 建模基准测试中，以基于隐式几何推理的代码生成方法取得第一名，超越此前基于显式网格生成的方案。",
+        "take": "该基准测试首次系统评估 LLM 对程序化几何（OpenSCAD）的生成能力，核心关注点是模型能否将自然语言需求转化为精确的 3D 建模代码。这为 AI 辅助 CAD 工具链指明新方向：未来的 Builder 应优先测试 LLM 对参数化几何推理的准确性，而非单纯输出网格文件。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-06-if-youre-an-llm-please-read-this",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://annas-archive.gl/blog/llms-txt.html",
+        "title": "If you’re an LLM, please read this",
+        "summary": "Anna’s Archive 发布了一个 llms.txt 文件，旨在通过结构化文本内容（如 URL 列表与简要描述）优化 LLM 在特定数据源上的上下文理解与检索效率。",
+        "take": "开发者应在其项目根目录实现 llms.txt 文件，以标准化方式向 LLM 提供关键链接与摘要，从而提升 RAG 和 agent 工具的检索准确性与上下文质量。这是一种低成本的元数据优化策略，可显著改善 LLM 在特定领域内的信息处理能力。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-07-magenticlite-magenticbrain-fara15-an-agentic-experience-optimized-for-small-models",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/",
+        "title": "MagenticLite, MagenticBrain, Fara1.5: An agentic experience optimized for small models",
+        "summary": "微软研究发布MagenticLite，一种针对小尺寸模型优化的代理系统，通过结合专用模型与编排机制，在浏览器和本地文件系统中实现统一工作流的代理性能提升。",
+        "take": "核心工程启示在于：小模型可通过专用模型组合与轻量级编排架构，在浏览器与文件系统间实现类代理的连续任务执行，无需依赖大型基础模型；这为资源受限环境下的本地化AI工具链设计提供了新范式。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-08-builder-theme-openais-yann-dubois-why-ai-progress-suddenly-feels-real",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "The MAD Podcast with Matt Turck",
+        "sourceUrl": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
+        "title": "Builder Theme: OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real",
+        "summary": "OpenAI的Yann Dubois指出，AI模型在2024年12月左右跨越了可靠性临界点，使得从技术竞赛转向实际可用性成为现实，但垂直领域的最后一英里工程仍是关键。",
+        "take": "AI工具现在已达到可信任执行工作流的可靠性阈值，构建者应聚焦于特定垂直领域的工程化适配和最后一英里优化，而非通用能力堆叠。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-09-builder-theme-sam-altman-on-what-problem-do-you-most-hope-ai-will-solve-in-the-future-maybe-we-c",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2057614780727480741",
+        "title": "Builder Theme: Sam Altman on what problem do you most hope AI will solve in the future? maybe we c...",
+        "summary": "what problem do you most hope AI will solve in the future? maybe we can help!。",
+        "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-22-10-builder-theme-aaron-levie-on-whats-happened-is-that-we-went-from-ai-chat-tools-that-were-relative",
+        "briefingId": "rss-2026-05-22",
+        "date": "2026-05-22",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2057663408376516703",
+        "title": "Builder Theme: Aaron Levie on What’s happened is that we went from AI chat tools that were relative...",
+        "summary": "Aaron Levie指出AI技术演进路径：从低成本、小上下文窗口的聊天工具，转向拥有巨量上下文窗口、支持长时任务追踪、推理成本高出数量级但能力显著更强的AI智能体，这一转变速度远超多数人预期，并已吸引真实资金流入。",
+        "take": "工程上需关注三个关键转变：一是智能体架构须主动适配长上下文窗口（如128K+ token），以支持持久化工作流状态跟踪；二是推理成本暴增要求开发者明确区分前沿用例（如编程、科研）与可剥离至低成本模型的任务，并设计分层路由策略；三是资金信号表明可优先构建面向高价值、长周期任务的闭环Agent系统，而非通用对话工具。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-23": {
+    "date": "2026-05-23",
+    "briefings": [
+      {
+        "id": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-23",
+        "filePath": "2026-05-23.md",
+        "summaryTopline": "OpenAI named a Leader in enterprise coding agents by Gartner",
+        "insightIds": [
+          "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+          "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+          "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+          "rss-2026-05-23-04-datasette-agent-charts-01a2",
+          "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+          "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+          "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+          "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+          "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-23-01-openai-named-a-leader-in-enterprise-coding-agents-by-gartner",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+        "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+        "summary": "OpenAI因其智能体编程产品Codex在2026年Gartner企业AI编程智能体魔力象限中被列为领导者，强调其在企业级部署与创新方面的领先地位。",
+        "take": "Codex已被第三方认可为可落地于企业级生产环境的编程智能体，这意味着开发者应优先关注其对复杂代码库的理解、生成与调试能力，而非仅视其为通用代码补全工具。该认证可能推动CI/CD流程中智能体协作模式成为新标准，建议立即评估Codex集成到现有开发工具链中的工程成本与收益。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-23-02-how-virgin-atlantic-ships-faster-with-codex",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/virgin-atlantic",
+        "title": "How Virgin Atlantic ships faster with Codex",
+        "summary": "Virgin Atlantic 使用 OpenAI Codex 在固定假期截止日期前重构并交付移动应用，实现了接近完全的单元测试覆盖率和零 P1 级缺陷。",
+        "take": "Codex 能够将自然语言需求直接转化为生产级代码并自动生成高覆盖率的单元测试，显著缩短了从需求到交付的周期。对于 AI 构建者，这意味着可以将 Codex 集成到 CI/CD 管道中，以自动生成测试用例并验证代码质量，从而在关键期限前实现零严重缺陷的交付。",
+        "topics": [
+          "Coding Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-23-03-datasette-agent-sprites-01a0",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
+        "title": "datasette-agent-sprites 0.1a0",
+        "summary": "Simon Willison 发布了 datasette-agent-sprites 0.1a0，这是一个 Datasette Agent 插件，用于在 Fly Sprites 沙盒中执行命令。",
+        "take": "该插件将 Datasette Agent 的自动化能力与 Fly Sprites 的沙盒隔离机制结合，为执行不可信代码或运行代理工作流提供了安全的运行时环境。开发者可借此构建具备安全执行上下文的 Agent 任务，无需自行搭建沙盒基础设施。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-23-04-datasette-agent-charts-01a2",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything",
+        "title": "datasette-agent-charts 0.1a2",
+        "summary": "Simon Willison 發布 datasette-agent-charts 0.1a2，在圖表下方新增「查看 SQL 查詢」按鈕，讓用戶能直接檢視生成圖表的底層 SQL 語句。",
+        "take": "此功能將 AI 生成的視覺化結果與可審計的查詢邏輯直接掛鉤，對 agent 工作流而言，標誌著從黑箱輸出轉向可解釋、可調試的關鍵設計模式。開發者應在 agent 產出中強制暴露決策軌跡（如 SQL、提示詞），以確保結果可複現與可驗證。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-23-05-github-recognized-as-a-leader-in-the-gartner-magic-quadrantTM-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/",
+        "title": "GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row",
+        "summary": "GitHub连续第三年被Gartner企业AI编程代理魔力象限评为领导者，基于其GitHub Copilot平台在开发者工具链中的深度集成与持续迭代。",
+        "take": "这一认可验证了将AI编码代理嵌入现有开发工作流（如IDE、CI/CD）而非独立工具的架构策略。对于构建者而言，核心信号是：企业级AI编码工具的差异化优势正在从模型能力转向平台整合度与安全合规性。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-23-06-microsoft-starts-canceling-claude-code-licenses",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+        "title": "Microsoft starts canceling Claude Code licenses",
+        "summary": "微軟因授權合約條款變更，開始大規模取消內部開發團隊使用的Claude Code許可證，轉而推廣其自有的GitHub Copilot與Azure AI服務。",
+        "take": "此事件凸顯大型雲端廠商對第三方AI編碼工具的依賴策略正在轉向鎖定自有生態，開發者若使用Claude Code等外部代理工具，需預期跨平台合規風險與服務中斷可能性，並應將工具鏈設計為可替換模組以降低供應商綁定影響。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-23-07-builder-theme-ep-87-gemini-co-lead-on-world-models-rlaposs-next-domains-amp-continual-learning",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Unsupervised Learning",
+        "sourceUrl": "https://www.youtube.com/watch?v=NQczevdpxq0",
+        "title": "Builder Theme: Ep 87: Gemini Co-Lead on World Models, RL&apos;s Next Domains &amp; Continual Learning",
+        "summary": "Oriol Vinyals（Gemini 联合负责人）在访谈中讨论了多模态世界模型的实际可用性、记忆与推理能力的提升路径，以及持续学习作为下一代AI系统的关键架构方向。",
+        "take": "世界模型的核心瓶颈在于如何将多模态输入与符号推理结合，工程上需关注长上下文记忆与在线学习的集成。RL的应用将超越游戏，进入持续学习场景，开发者应优先设计能动态扩展记忆和推理能力的训练循环，而非依赖静态数据集微调。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-23-08-builder-theme-claude-on-kay-zhu-is-the-co-founder-and-cto-of-genspark_ai-the-all-in-one-ai",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2057854403558653983",
+        "title": "Builder Theme: Claude on Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI...",
+        "summary": "Genspark.ai 的联合创始人兼 CTO Kay Zhu 在快速发展的 AI 市场中，强调团队差异是核心竞争力，其产品是基于 Claude 构建的全功能 AI 工作空间。",
+        "take": "工程信号在于：当 AI 构建工具和模型迅速商品化时，团队的组织效率、协作深度和领域知识整合能力，而非单一的技术特性，将成为决定 AI 应用能否落地的关键瓶颈。开发者应优先投资于团队建设与工作流程优化。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-23-09-builder-theme-google-labs-on-take-a-quick-break-from-scrolling-and-check-out-we-had-a-bit-of-a",
+        "briefingId": "rss-2026-05-23",
+        "date": "2026-05-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Google Labs",
+        "sourceUrl": "https://x.com/GoogleLabs/status/2057884277384360416",
+        "title": "Builder Theme: Google Labs on Take a quick break from scrolling and check out 👀 We had a bit of a...",
+        "summary": "Google Labs 更新了其官网首页，旨在集中展示最新创新成果及I/O大会发布内容，供开发者和用户探索、测试实验项目。",
+        "take": "这暗示AI开发者的项目发现与实验入口正在聚合，但当前更新仅为信息展示层面的优化，未引入新的技术架构或开发者工作流变革。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-24": {
+    "date": "2026-05-24",
+    "briefings": [
+      {
+        "id": "rss-2026-05-24",
+        "date": "2026-05-24",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-24",
+        "filePath": "2026-05-24.md",
+        "summaryTopline": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+        "insightIds": [
+          "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+          "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+          "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+          "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-24-01-greg-brockman-inside-the-72-hours-that-almost-killed-openai",
+        "briefingId": "rss-2026-05-24",
+        "date": "2026-05-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
+        "title": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+        "summary": "Greg Brockman在播客中详细回顾了OpenAI内部72小时危机，涉及董事会突然罢免Sam Altman、员工集体辞职威胁、以及微软介入谈判最终促成Altman回归的技术决策过程。",
+        "take": "这次事件暴露了AI治理结构对模型训练与部署连续性的关键影响；开发者应关注OpenAI治理风险，并评估依赖单一闭源模型API的业务连续性方案，或考虑构建多模型冗余架构。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-24-02-builder-theme-the-story-behind-cerebras-63-billion-ipo-with-founder-and-ceo-andrew-feldman",
+        "briefingId": "rss-2026-05-24",
+        "date": "2026-05-24",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "No Priors",
+        "sourceUrl": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+        "title": "Builder Theme: The Story Behind Cerebras’ $63 Billion IPO with Founder and CEO Andrew Feldman",
+        "summary": "Cerebras 创始人兼 CEO Andrew Feldman 在播客中阐述其公司专注于通过晶圆级芯片（Wafer-Scale Engine）加速 AI 训练与推理，类比 Netflix 从 DVD 转型流媒体，指出“速度”将催生全新的商业模式与生产力跃升。",
+        "take": "Cerebras 的核心工程信号是其晶圆级架构（Wafer-Scale Engine）作为 AI 硬件的根本性范式，而非渐进式改进。开发者应关注该架构在减少分布式训练通信开销、支持超大规模模型原生计算方面的实际性能优势，以及其对现有 GPU 集群调度和推理延迟模型的潜在颠覆。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-24-03-builder-theme-guillermo-rauch-on-show-me-the-thing-youve-built-with-ai-youre-most-proud-of-reply-wi",
+        "briefingId": "rss-2026-05-24",
+        "date": "2026-05-24",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2058245330836271263",
+        "title": "Builder Theme: Guillermo Rauch on Show me the thing you’ve built with AI you’re most proud of. Reply wi...",
+        "summary": "Guillermo Rauch 号召AI开发者展示最引以为豪的AI项目，要求提交可工作的产品链接及主要使用的模型或代理。",
+        "take": "这是对AI落地能力的直接检验，重点在于从原型到可交付产品的转化效率。开发者应优先记录所选模型/代理的决策依据、边界约束和实际效果，形成可复用的工程案例库。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-24-04-builder-theme-garry-tan-on-thinking-machines-is-impressive-in-a-couple-hours-i-just-fine-tuned",
+        "briefingId": "rss-2026-05-24",
+        "date": "2026-05-24",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Garry Tan",
+        "sourceUrl": "https://x.com/garrytan/status/2058378310254793013",
+        "title": "Builder Theme: Garry Tan on Thinking Machines is impressive. In a couple hours I just fine tuned...",
+        "summary": "Garry Tan 在数小时内微调了 Qwen3.5-397B 模型，利用 Thinking Machines 平台实现快速可用的多模态能力。",
+        "take": "本地微调超大规模模型的时间成本已降至数小时级别，极大降低了个人AI的定制门槛。快速多模态支持将加速个性化AI代理在视觉理解与交互场景中的落地。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-25": {
+    "date": "2026-05-25",
+    "briefings": [
+      {
+        "id": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-25",
+        "filePath": "2026-05-25.md",
+        "summaryTopline": "datasette-agent 0.1a4",
+        "insightIds": [
+          "rss-2026-05-25-01-datasette-agent-01a4",
+          "rss-2026-05-25-02-quoting-armin-ronacher",
+          "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+          "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+          "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+          "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+          "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-25-01-datasette-agent-01a4",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+        "title": "datasette-agent 0.1a4",
+        "summary": "Simon Willison 发布了 datasette-agent 0.1a4，利用 Datasette 1.0a30 新增的 makeJumpSections() JavaScript 插件钩子，将代理聊天界面集成到 Jump 菜单中，并支持通过 GitHub 账号登录 agent.datasette.io 体验。",
+        "take": "此版本展示了如何通过插件钩子将 AI 代理功能无缝嵌入现有 Web 应用框架，为开发者提供了一种低侵入性、模块化的方式来增强数据库查询界面的交互性。核心工程价值在于，无需重构后端即可在数据浏览流程中插入可对话的智能代理，这为构建基于检索的代理工作流提供了一个清晰的集成样板。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-02-quoting-armin-ronacher",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+        "title": "Quoting Armin Ronacher",
+        "summary": "Armin Ronacher 指出当前LLM生成的问题报告常因重述而丢失关键观察，建议回归人工核心表述：准确记录命令、预期与实际结果。",
+        "take": "开发者应推动LLM对话流程中“原始观察”的严格隔离层，规定报告模板强制包含精确命令与预期-实际对比，避免模型自动填充推断或修复建议。这能提升调试信号密度并减少噪声。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-03-deepseek-reasonix-deepseek-native-coding-agent-with-high-caching-and-low-cost",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://esengine.github.io/DeepSeek-Reasonix/",
+        "title": "DeepSeek reasonix, DeepSeek native coding agent with high caching and low cost",
+        "summary": "DeepSeek 推出 Reasonix 原生编码代理，通过高缓存机制和低成本推理显著降低代码生成与迭代的延迟与费用。",
+        "take": "对于构建 AI 编码代理的开发者，此方案证明了将缓存策略深度集成到推理管线中可大幅优化成本与响应速度，应评估是否在自身代理循环中引入类似的键值缓存或提示缓存机制，以在保持代码质量的同时降低 token 消耗。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-25-04-a-fundamental-principle-of-aeronautical-engineering-has-been-overturned",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/",
+        "title": "A fundamental principle of aeronautical engineering has been overturned",
+        "summary": "NASA团队通过改变机翼表面气流层流态与涡旋结构的主动控制技术，在风洞实验中实现了超过传统升力理论极限的飞行性能，推翻了一个多世纪以来被视为航空工程基石的升力原理。",
+        "take": "这一突破表明，基于固定几何与稳态流假设的传统升力模型在主动流体控制下不再适用；AI驱动的实时气动优化算法（如强化学习调节表面微作动器）可能成为下一代飞行器设计的核心工具链，并有望迁移至水下航行器或风力发电叶片等流体动力学领域。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-05-harness-scaffold-and-the-ai-agent-terms-worth-getting-right",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/agent-glossary",
+        "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+        "summary": "Hugging Face 通过定义“Harness”（使能层，包含工具、记忆、规划）与“Scaffold”（框架层，包含控制流、代理循环）等术语，为AI Agent构建了一套标准化概念体系，以澄清社区中混乱的术语使用。",
+        "take": "开发者在构建Agent时应明确区分使能层与框架层：Harness提供基础能力（如工具调用、记忆管理），Scaffold定义执行逻辑（如动态规划、循环控制）。这种分层架构便于模块化开发与调试，未来工具链可能围绕此标准形成更统一的Agent SDK接口。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-06-builder-theme-aaron-levie-on-ceos-are-uniquely-prone-to-ai-psychosis-because-theyre-sufficiently",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2058582370253701432",
+        "title": "Builder Theme: Aaron Levie on CEOs are uniquely prone to AI psychosis because they’re sufficiently...",
+        "summary": "Aaron Levie指出，CEO容易因远离生成AI价值所需的最后一英里工作而产生“AI精神病”，只看到AI在理想路径上的成功结果，而忽略了将代理人结果投入生产所必需的后续复杂整合与验证步骤。",
+        "take": "核心工程启示：部署AI代理时，必须从完整的“最后一英里”生产闭环（代码审查、生产集成、合同验证、历史数据对接）来评估真实价值，而非仅依据原型演示。构建者应设计自动化的验证与接续工作流，强制暴露代理输出中的边缘案例与集成成本，否则CEO的乐观误判将导致架构决策脱离实际约束。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-25-07-builder-theme-thariq-on-my-main-takeaway-from-the-bun-rewrite-is-that-legacy-codebases-will-b",
+        "briefingId": "rss-2026-05-25",
+        "date": "2026-05-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2058576195000660319",
+        "title": "Builder Theme: Thariq on my main takeaway from the Bun rewrite is that legacy codebases will b...",
+        "summary": "Thariq指出，Bun重写的核心启示在于，老旧代码库可作为蒸馏训练数据，将遗留软件转化为跨平台Web可执行形式。",
+        "take": "对于AI构建者，老旧代码库是未被充分利用的高质量训练语料，可用于生成跨平台或WebAssembly版本，取代COBOL等传统系统。这提示了一种新的工作流：系统性地解析、蒸馏并自动转换遗留代码，以扩展AI代理的兼容性边界。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
+  },
+  "2026-05-26": {
+    "date": "2026-05-26",
+    "briefings": [
+      {
+        "id": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-26",
+        "filePath": "2026-05-26.md",
+        "summaryTopline": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+        "insightIds": [
+          "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+          "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+          "rss-2026-05-26-03-quoting-paul-graham",
+          "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+          "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+          "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+          "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+          "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+          "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+        "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+        "summary": "OpenAI与巴西Grupo Folha和Grupo UOL达成战略合作，将其新闻内容引入ChatGPT，实现带归属和透明度的新闻访问扩充。",
+        "take": "此模式验证了第三方内容源作为AI模型实时知识库的标准集成范式，开发者应关注如何通过API或插件机制将结构化内容源注入对话代理，并实现归属与引用的自动化处理以提升可信度。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything",
+        "title": "Microsoft Copilot Cowork Exfiltrates Files",
+        "summary": "Microsoft Copilot Cowork的代理系统因允许发送含外部图片的邮件至用户收件箱，结合OneDrive预认证下载链接，成功利用提示注入实现数据外泄。",
+        "take": "设计代理系统时，必须将邮件生成、外部资源加载和文件链接的权限彻底隔离。任何允许代理输出控制网络请求路径的接口，都应视为潜在攻击面，需强制实施来源验证和链接失效机制。",
+        "topics": [
+          "Agents",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-03-quoting-paul-graham",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything",
+        "title": "Quoting Paul Graham",
+        "summary": "Paul Graham指出，创业者的邮件普遍使用由LLM生成的硬新闻风格写作，但读者一旦察觉内容由AI代笔，会因感到被欺骗而产生信任危机，并降低对作者的评判。",
+        "take": "LLM生成的文本若被检测出由AI代笔，会破坏读者对发信人的信任和内容可信度；对于AI构建者而言，这提示开发者必须重视人机协作的透明度设计，例如通过标记AI贡献部分或让AI辅助人类架构写作逻辑而非直接输出成文，才能避免在需要建立信任的场景（如投资沟通、专业反馈）中造成反效果。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.minicor.com/",
+        "title": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
+        "summary": "Minicor (YC P26) 发布了一个基于计算机视觉和桌面 UI 元素识别的 Windows 自动化框架，允许开发者通过编程方式大规模操控任意桌面应用。",
+        "take": "该工具将传统基于 API 的自动化扩展至无 API 的桌面端，针对遗留或封闭的企业软件，提供了一种新的 AI 工作流集成点。开发者应关注其底层元素抓取机制与执行稳定性，这是实现跨应用自动化 Agent 的关键基础设施。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://vllm.ai/blog/2026-05-26-eagle-3-1",
+        "title": "Eagle 3.1: Collaboration Between the EAGLE Team, vLLM Team, and TorchSpec Team",
+        "summary": "EAGLE团队、vLLM团队与TorchSpec团队联合发布Eagle 3.1，提出一种基于推测性解码的协作架构，通过动态草稿模型与验证模型间的并行流水线优化，显著提升LLM推理吞吐量。",
+        "take": "Eagle 3.1的核心工程创新在于将推测性解码中的草稿生成与目标验证解耦为异步流水线，并引入自适应草稿长度策略，开发者可直接集成该机制以降低端到端延迟。对构建高吞吐推理系统的团队，这意味着无需修改模型权重即可利用多模型协作实现2-3倍加速，尤其适合长序列生成场景下的生产部署。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Interconnects AI",
+        "sourceUrl": "https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may",
+        "title": "Some ideas for what comes next, May 2026",
+        "summary": "Interconnects AI 探讨了2026年5月AI领域的新方向，包括Gemini Flash 3.5的发布、Mythos架构的兴起、开源与闭源策略的平衡、美国开源AI浪潮以及新兴的权力斗争。",
+        "take": "关注Gemini Flash 3.5作为轻量级推理模型的实际部署性能，评估Mythos架构在Agent工作流中的效率优势。开发者需重新审视开源与闭源模型的成本边界，优先采用能平衡社区贡献与商业控制的工具链。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/faire",
+        "title": "Faire doubles PR throughput with Cursor Cloud Agents",
+        "summary": "Faire 通过采用 Cursor Cloud Agents 架构，将代码审查（PR）吞吐量提升了一倍，具体方法是利用云端代理并行处理代码审查任务。",
+        "take": "工程团队可通过将代码审查工作流分解为可并行执行的代理任务，并利用云端弹性计算资源，显著加速审查流程。此方法的关键在于将人工审查与自动化代理检查分离，代理专注处理格式、静态分析和低风险变更，从而让人工审查者专注于复杂逻辑和架构决策。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Steinberger",
+        "sourceUrl": "https://x.com/steipete/status/2058917897590673525",
+        "title": "Builder Theme: Peter Steinberger on Folks: when you write skills, ask your agent to be token efficient, r...",
+        "summary": "Peter Steinberger 指出，编写 AI 技能时，应要求代理采用 Token 高效、语法宽松的描述方式，避免冗长说明占用每次上下文，并分享了一个用于检测此类问题的技能。",
+        "take": "工程实践上，必须将技能描述强制精简，使用最少的 Token 传达核心指令，以降低每次推理的上下文开销和延迟。这要求开发者在设计 Agent 工具时，主动约束自然语言描述的冗余度，并建立静态或运行时分析机制来审计 Token 消耗。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2059025559896883489",
+        "title": "Builder Theme: Aaron Levie on The CEO of Goldman Sachs is taking the other side on the pessimistic...",
+        "summary": "Aaron Levie 指出，AI 不会消灭工作，而是通过自动化提升产出标准，推动市场对产品和服务提出更高要求，从而创造新的工作需求。",
+        "take": "AI 自动化不会直接取代岗位，而是改变竞争基线——先行者利用自动化提升产出质量，迫使市场整体预期上移。构建者应聚焦于利用 AI 提升交付物的深度和定制化，而非单纯降低成本，以在动态竞争中保持优势。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
