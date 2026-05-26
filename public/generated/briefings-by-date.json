@@ -22703,5 +22703,185 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-26": {
+    "date": "2026-05-26",
+    "briefings": [
+      {
+        "id": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-26",
+        "filePath": "2026-05-26.md",
+        "summaryTopline": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+        "insightIds": [
+          "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+          "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+          "rss-2026-05-26-03-quoting-paul-graham",
+          "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+          "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+          "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+          "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+          "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+          "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+        "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+        "summary": "OpenAI与巴西Grupo Folha和Grupo UOL达成战略合作，将其新闻内容引入ChatGPT，实现带归属和透明度的新闻访问扩充。",
+        "take": "此模式验证了第三方内容源作为AI模型实时知识库的标准集成范式，开发者应关注如何通过API或插件机制将结构化内容源注入对话代理，并实现归属与引用的自动化处理以提升可信度。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything",
+        "title": "Microsoft Copilot Cowork Exfiltrates Files",
+        "summary": "Microsoft Copilot Cowork的代理系统因允许发送含外部图片的邮件至用户收件箱，结合OneDrive预认证下载链接，成功利用提示注入实现数据外泄。",
+        "take": "设计代理系统时，必须将邮件生成、外部资源加载和文件链接的权限彻底隔离。任何允许代理输出控制网络请求路径的接口，都应视为潜在攻击面，需强制实施来源验证和链接失效机制。",
+        "topics": [
+          "Agents",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-03-quoting-paul-graham",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything",
+        "title": "Quoting Paul Graham",
+        "summary": "Paul Graham指出，创业者的邮件普遍使用由LLM生成的硬新闻风格写作，但读者一旦察觉内容由AI代笔，会因感到被欺骗而产生信任危机，并降低对作者的评判。",
+        "take": "LLM生成的文本若被检测出由AI代笔，会破坏读者对发信人的信任和内容可信度；对于AI构建者而言，这提示开发者必须重视人机协作的透明度设计，例如通过标记AI贡献部分或让AI辅助人类架构写作逻辑而非直接输出成文，才能避免在需要建立信任的场景（如投资沟通、专业反馈）中造成反效果。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.minicor.com/",
+        "title": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
+        "summary": "Minicor (YC P26) 发布了一个基于计算机视觉和桌面 UI 元素识别的 Windows 自动化框架，允许开发者通过编程方式大规模操控任意桌面应用。",
+        "take": "该工具将传统基于 API 的自动化扩展至无 API 的桌面端，针对遗留或封闭的企业软件，提供了一种新的 AI 工作流集成点。开发者应关注其底层元素抓取机制与执行稳定性，这是实现跨应用自动化 Agent 的关键基础设施。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://vllm.ai/blog/2026-05-26-eagle-3-1",
+        "title": "Eagle 3.1: Collaboration Between the EAGLE Team, vLLM Team, and TorchSpec Team",
+        "summary": "EAGLE团队、vLLM团队与TorchSpec团队联合发布Eagle 3.1，提出一种基于推测性解码的协作架构，通过动态草稿模型与验证模型间的并行流水线优化，显著提升LLM推理吞吐量。",
+        "take": "Eagle 3.1的核心工程创新在于将推测性解码中的草稿生成与目标验证解耦为异步流水线，并引入自适应草稿长度策略，开发者可直接集成该机制以降低端到端延迟。对构建高吞吐推理系统的团队，这意味着无需修改模型权重即可利用多模型协作实现2-3倍加速，尤其适合长序列生成场景下的生产部署。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Interconnects AI",
+        "sourceUrl": "https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may",
+        "title": "Some ideas for what comes next, May 2026",
+        "summary": "Interconnects AI 探讨了2026年5月AI领域的新方向，包括Gemini Flash 3.5的发布、Mythos架构的兴起、开源与闭源策略的平衡、美国开源AI浪潮以及新兴的权力斗争。",
+        "take": "关注Gemini Flash 3.5作为轻量级推理模型的实际部署性能，评估Mythos架构在Agent工作流中的效率优势。开发者需重新审视开源与闭源模型的成本边界，优先采用能平衡社区贡献与商业控制的工具链。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/faire",
+        "title": "Faire doubles PR throughput with Cursor Cloud Agents",
+        "summary": "Faire 通过采用 Cursor Cloud Agents 架构，将代码审查（PR）吞吐量提升了一倍，具体方法是利用云端代理并行处理代码审查任务。",
+        "take": "工程团队可通过将代码审查工作流分解为可并行执行的代理任务，并利用云端弹性计算资源，显著加速审查流程。此方法的关键在于将人工审查与自动化代理检查分离，代理专注处理格式、静态分析和低风险变更，从而让人工审查者专注于复杂逻辑和架构决策。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Steinberger",
+        "sourceUrl": "https://x.com/steipete/status/2058917897590673525",
+        "title": "Builder Theme: Peter Steinberger on Folks: when you write skills, ask your agent to be token efficient, r...",
+        "summary": "Peter Steinberger 指出，编写 AI 技能时，应要求代理采用 Token 高效、语法宽松的描述方式，避免冗长说明占用每次上下文，并分享了一个用于检测此类问题的技能。",
+        "take": "工程实践上，必须将技能描述强制精简，使用最少的 Token 传达核心指令，以降低每次推理的上下文开销和延迟。这要求开发者在设计 Agent 工具时，主动约束自然语言描述的冗余度，并建立静态或运行时分析机制来审计 Token 消耗。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic",
+        "briefingId": "rss-2026-05-26",
+        "date": "2026-05-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2059025559896883489",
+        "title": "Builder Theme: Aaron Levie on The CEO of Goldman Sachs is taking the other side on the pessimistic...",
+        "summary": "Aaron Levie 指出，AI 不会消灭工作，而是通过自动化提升产出标准，推动市场对产品和服务提出更高要求，从而创造新的工作需求。",
+        "take": "AI 自动化不会直接取代岗位，而是改变竞争基线——先行者利用自动化提升产出质量，迫使市场整体预期上移。构建者应聚焦于利用 AI 提升交付物的深度和定制化，而非单纯降低成本，以在动态竞争中保持优势。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-26",
     "2026-05-25",
     "2026-05-24",
     "2026-05-23",
@@ -105,6 +106,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-26": {
+      "briefingIds": [
+        "rss-2026-05-26"
+      ],
+      "insightIds": [
+        "rss-2026-05-26-01-openai-grupo-folha-and-grupo-uol-announce-strategic-content-partnership",
+        "rss-2026-05-26-02-microsoft-copilot-cowork-exfiltrates-files",
+        "rss-2026-05-26-03-quoting-paul-graham",
+        "rss-2026-05-26-04-launch-hn-minicor-yc-p26-windows-desktop-automations-at-scale",
+        "rss-2026-05-26-05-eagle-31-collaboration-between-the-eagle-team-vllm-team-and-torchspec-team",
+        "rss-2026-05-26-06-some-ideas-for-what-comes-next-may-2026",
+        "rss-2026-05-26-07-faire-doubles-pr-throughput-with-cursor-cloud-agents",
+        "rss-2026-05-26-08-builder-theme-peter-steinberger-on-folks-when-you-write-skills-ask-your-agent-to-be-token-efficient-r",
+        "rss-2026-05-26-09-builder-theme-aaron-levie-on-the-ceo-of-goldman-sachs-is-taking-the-other-side-on-the-pessimistic"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-25": {
       "briefingIds": [
         "rss-2026-05-25"
