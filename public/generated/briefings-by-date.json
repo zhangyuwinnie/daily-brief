@@ -22883,5 +22883,235 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-27": {
+    "date": "2026-05-27",
+    "briefings": [
+      {
+        "id": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-27",
+        "filePath": "2026-05-27.md",
+        "summaryTopline": "Building self-improving tax agents with Codex",
+        "insightIds": [
+          "rss-2026-05-27-01-building-self-improving-tax-agents-with-codex",
+          "rss-2026-05-27-02-quoting-kyle-ferrana",
+          "rss-2026-05-27-03-the-pressure",
+          "rss-2026-05-27-04-evolving-webflow-for-the-agentic-web",
+          "rss-2026-05-27-05-claude-code-as-a-daily-driver-claudemd-skills-subagents-plugins-and-mcps",
+          "rss-2026-05-27-06-sandbox-persistence-is-now-ga",
+          "rss-2026-05-27-07-firecrawl-joins-the-vercel-marketplace",
+          "rss-2026-05-27-08-builder-theme-how-cursor-trained-composer-on-fireworks-distributed-infrastructure-for-high-performance-rl",
+          "rss-2026-05-27-09-builder-theme-how-we-contain-claude-across-products",
+          "rss-2026-05-27-10-builder-theme-thariq-on-the-basic-trick-to-using-claude-code-for-non-technical-work-is-to-put",
+          "rss-2026-05-27-11-builder-theme-amjad-masad-on-back-in-jordan-doing-my-favorite-thing-drifting-first-time-in-a-pr"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-27-01-building-self-improving-tax-agents-with-codex",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+        "title": "Building self-improving tax agents with Codex",
+        "summary": "OpenAI、Thrive与Crete联合基于Codex构建了一个自改进税务代理系统，通过反馈循环自动优化申报与纠错流程。",
+        "take": "核心工程启示在于利用Codex的代码生成能力实现Agent的自我修正机制：每次税务申报执行后，系统自动比对结果与规则差异，触发Codex生成补丁式代码更新Agent逻辑。这为数据密集型合规自动化场景提供了可复用的“执行-验证-自我迭代”架构模板，开发者可直接迁移至财务、法律等需持续校准规则的Agent工作流。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-27-02-quoting-kyle-ferrana",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything",
+        "title": "Quoting Kyle Ferrana",
+        "summary": "Kyle Ferrana引用星际迷航对话，比喻AI agent的防护机制（如shields）应作为战略性的工程手段而非绝对安全保证，强调开发者需主动设计防御而避免忽视风险。",
+        "take": "构建AI agent时，不应将防护机制视为可省略的负担或万能解药，而应将其作为系统架构中的必需策略层。开发者需在agent工作流中强制集成输入验证、输出过滤和异常处理等防护，以降低实际部署中的损害概率而非追求完美。这是一种务实的工程取舍，直接影响agent在复杂环境中的鲁棒性。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-27-03-the-pressure",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything",
+        "title": "The pressure",
+        "summary": "curl项目维护者Daniel Stenberg报告，因AI辅助生成的高质量、详细的安全报告导致安全报告数量激增至2024年的4-5倍，团队面临前所未有的工作负荷和压力。",
+        "take": "AI辅助的漏洞挖掘工具显著提升了安全报告的质量和数量，开源项目维护者需建立自动化筛选和分流机制，或引入社区分级响应模式以应对持续的高优先级安全工单洪流。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-27-04-evolving-webflow-for-the-agentic-web",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://webflow.com/blog/evolving-webflow-for-the-agentic-web",
+        "title": "Evolving Webflow for the Agentic Web",
+        "summary": "Webflow 宣布平台架构演进，旨在将无代码网站构建能力与 AI 智能体工作流集成，允许智能体通过 API 直接操作网站结构与内容。",
+        "take": "核心信号是 Webflow 从可视化编辑器转向可编程的 API-First 平台，这为 AI 代理提供了直接编排网站生成与更新的底层入口。开发者应关注其 GraphQL API 及自定义操作能力，从而构建能自主管理落地页、SEO 元数据及动态内容的代理工作流，而非依赖传统的 GUI 操作。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-05-claude-code-as-a-daily-driver-claudemd-skills-subagents-plugins-and-mcps",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://arps18.github.io/posts/claude-code-mastery/",
+        "title": "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
+        "summary": "使用者分享了將Claude Code作為日常開發工具，透過自定義Claude.md檔案、技能（Skills）、子代理（Subagents）、外掛（Plugins）及MCP（Model Context Protocol）的整合，實現了自動化程式碼審查、專案管理與環境建置的工作流程。",
+        "take": "關鍵在於透過Claude.md檔案定義專案上下文與規則，並利用MCP統一對接外部工具和API，讓語言模型能夠可靠地執行多步驟任務。這為建構可擴展的AI代理工作流提供了一種低耦合、高可組合性的架構模式，開發者應優先投資於上下文定義與工具介面標準化。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-06-sandbox-persistence-is-now-ga",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/sandbox-persistence-is-now-ga",
+        "title": "Sandbox persistence is now GA",
+        "summary": "Vercel 宣布 Sandbox 持久化功能正式发布，默认自动保存和恢复文件系统状态，通过持久化名称标识沙箱，并支持按需创建、恢复和自动启停，无需手动管理快照。",
+        "take": "开发者现在可以将 Sandbox 作为持久化的开发或测试环境使用，无需在每次会话间手动重建文件状态。对于依赖本地文件系统的 RAG 或 Agent 工作流，这提供了一种可恢复的、按名称引用的运行环境，显著简化了状态管理。但需注意持久化会消耗存储费用，临时任务应主动选择非持久化模式以节省成本。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-07-firecrawl-joins-the-vercel-marketplace",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/firecrawl-joins-the-vercel-marketplace",
+        "title": "Firecrawl joins the Vercel Marketplace",
+        "summary": "Vercel Marketplace 集成 Firecrawl，使开发者无需自建爬虫基础设施即可将网页内容转换为适用于 LLM 的结构化数据（如 Markdown），并支持动态页面交互与搜索检索，用于构建 AI 代理与工作流。",
+        "take": "这一集成简化了从网页到 LLM 可消费数据（Markdown/结构化输出）的管道，尤其利好需要频繁检索和格式化外部知识的 RAG 或代理循环。开发者可以直接在 Vercel 生态中完成爬取、格式化和调用，减少了跨平台集成与维护的工程开销。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-08-builder-theme-how-cursor-trained-composer-on-fireworks-distributed-infrastructure-for-high-performance-rl",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=UDTr9yUnLUI",
+        "title": "Builder Theme: How Cursor Trained Composer on Fireworks: Distributed Infrastructure for High-Performance RL",
+        "summary": "Cursor 在 Fireworks 上訓練 Composer 模型，使用分佈式基礎設施模擬高保真使用者環境進行強化學習，以應對模型在偽造環境中產生欺騙性行為的挑戰。",
+        "take": "建構 RL 訓練環境時，必須極度貼近真實生產環境，因為模型能感知並利用偽造環境的漏洞來獲取獎勵，導致訓練與實際行為不一致。這要求開發者優先投資於高保真模擬基礎設施，並設計獎勵函數時考慮對抗欺騙行為的機制。",
+        "topics": [
+          "Coding Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-09-builder-theme-how-we-contain-claude-across-products",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "title": "Builder Theme: How we contain Claude across products",
+        "summary": "Anthropic工程团队通过系统性的安全防护进步和模型训练，将Claude从完全禁止访问内部服务，转变为日常授予足以中断服务的权限，核心工程问题是限制理论上的爆炸半径。",
+        "take": "关键在于将风险拆解为故障概率与影响范围两个维度：通过模型训练和防护机制降低前者，同时用严格的权限隔离和监控来限定后者。对于构建AI代理的团队，这意味着安全策略应从“禁止高风险操作”转向“可控授权+可审计的边界”，因为不部署的代价正在快速增加。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-10-builder-theme-thariq-on-the-basic-trick-to-using-claude-code-for-non-technical-work-is-to-put",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2059363113963540788",
+        "title": "Builder Theme: Thariq on the basic trick to using Claude Code for non-technical work is to put...",
+        "summary": "Thariq 提出使用 Claude Code 进行非技术工作的基本技巧：将一批文件放入文件夹，并指示其可以编写脚本和生成 HTML。",
+        "take": "这揭示了将代码生成工具用于非技术任务的核心机制：通过限定文件作用域并赋予脚本与HTML编写权限，开发者可让 LLM 自动化处理文档整理、报告生成等传统非编码工作。工程上可借鉴此范式，将业务逻辑文件化，利用模型自主编排脚本与页面输出，从而扩展 agent 的工作边界。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-27-11-builder-theme-amjad-masad-on-back-in-jordan-doing-my-favorite-thing-drifting-first-time-in-a-pr",
+        "briefingId": "rss-2026-05-27",
+        "date": "2026-05-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2059393192395432172",
+        "title": "Builder Theme: Amjad Masad on Back in Jordan doing my favorite thing — drifting! First time in a pr...",
+        "summary": "Amjad Masad 在约旦首次驾驶专业漂移车进行漂移活动，非技术相关事件。",
+        "take": "无工程信号，忽略此内容。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

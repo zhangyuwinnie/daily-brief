@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-27",
     "2026-05-26",
     "2026-05-25",
     "2026-05-24",
@@ -106,6 +107,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-27": {
+      "briefingIds": [
+        "rss-2026-05-27"
+      ],
+      "insightIds": [
+        "rss-2026-05-27-01-building-self-improving-tax-agents-with-codex",
+        "rss-2026-05-27-02-quoting-kyle-ferrana",
+        "rss-2026-05-27-03-the-pressure",
+        "rss-2026-05-27-04-evolving-webflow-for-the-agentic-web",
+        "rss-2026-05-27-05-claude-code-as-a-daily-driver-claudemd-skills-subagents-plugins-and-mcps",
+        "rss-2026-05-27-06-sandbox-persistence-is-now-ga",
+        "rss-2026-05-27-07-firecrawl-joins-the-vercel-marketplace",
+        "rss-2026-05-27-08-builder-theme-how-cursor-trained-composer-on-fireworks-distributed-infrastructure-for-high-performance-rl",
+        "rss-2026-05-27-09-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-05-27-10-builder-theme-thariq-on-the-basic-trick-to-using-claude-code-for-non-technical-work-is-to-put",
+        "rss-2026-05-27-11-builder-theme-amjad-masad-on-back-in-jordan-doing-my-favorite-thing-drifting-first-time-in-a-pr"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-26": {
       "briefingIds": [
         "rss-2026-05-26"
