@@ -23113,5 +23113,198 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-28": {
+    "date": "2026-05-28",
+    "briefings": [
+      {
+        "id": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-28",
+        "filePath": "2026-05-28.md",
+        "summaryTopline": "OpenAI’s Frontier Governance Framework",
+        "insightIds": [
+          "rss-2026-05-28-01-openais-frontier-governance-framework",
+          "rss-2026-05-28-02-cisco-and-openai-redefine-enterprise-engineering-with-codex",
+          "rss-2026-05-28-03-sqlite-agentsmd",
+          "rss-2026-05-28-04-i-think-anthropic-and-openai-have-found-product-market-fit",
+          "rss-2026-05-28-05-show-hn-continue-yx2fn-a-60-second-game-about-ai-agent-permission-fatigue",
+          "rss-2026-05-28-06-itbench-aa-frontier-models-score-below-50-on-the-first-benchmark-for-agentic-enterprise-it-tasks-by-artificial-analysis-and-ibm",
+          "rss-2026-05-28-07-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+          "rss-2026-05-28-08-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+          "rss-2026-05-28-09-builder-theme-new-in-claude-managed-agents-self-hosted-sandboxes-and-mcp-tunnels"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-28-01-openais-frontier-governance-framework",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/openai-frontier-governance-framework",
+        "title": "OpenAI’s Frontier Governance Framework",
+        "summary": "OpenAI发布了前沿治理框架，将AI安全、安保与风险管理实践对齐欧盟和加州新兴法规，核心是建立一套可操作的合规与自监督体系。",
+        "take": "该框架为开发者提供了与法规对齐的工程参考基线，重点在于将安全机制嵌入模型开发与部署流程。对构建AI agent的团队而言，需关注框架中定义的边界条件与监控要求，以提前适配监管审查。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-28-02-cisco-and-openai-redefine-enterprise-engineering-with-codex",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/cisco",
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "summary": "Cisco与OpenAI合作，利用Codex模型在Cisco内部规模化AI原生开发，加速AI防御工作，并自动化缺陷修复流程。",
+        "take": "工程团队可直接集成Codex到CI/CD流水线，实现代码缺陷的自动化检测与修复，并通过AI原生开发模式提升工程效率。此合作验证了大型语言模型在企业级安全与运维场景中的落地可行性。",
+        "topics": [
+          "Coding Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-28-03-sqlite-agentsmd",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+        "title": "sqlite AGENTS.md",
+        "summary": "SQLite 在其代码仓库中新增 AGENTS.md 文件，明确禁止接受任何由 AI 代理自动生成的代码，但欢迎代理提交包含可复现测试用例的 bug 报告及作为概念验证的补丁。",
+        "take": "对于构建 AI 代理工具的开发者而言，SQLite 的立场树立了一个关键边界：代理可参与问题发现与协作式原型验证，但核心代码贡献必须由人类重写。这要求代理工作流在设计时需区分“探索性建议”与“生产级提交”两种模式，并内置法律合规校验（如公共领域声明）。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-28-04-i-think-anthropic-and-openai-have-found-product-market-fit",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://simonwillison.net/2026/May/27/product-market-fit/",
+        "title": "I think Anthropic and OpenAI have found product-market fit",
+        "summary": "Simon Willison基于Hacker News评论分析认为，Anthropic和OpenAI通过将大语言模型封装为稳定、可预测的API产品（而非通用聊天界面），找到了与开发者需求的精准产品市场契合。",
+        "take": "对AI构建者而言，核心启示是模型能力的商业化关键在于提供可靠的API契约和可观测性工具，而非追求最先进的前沿模型。应优先投资于护栏、版本控制和成本透明机制，以降低集成风险并实现可复用的工作流。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-28-05-show-hn-continue-yx2fn-a-60-second-game-about-ai-agent-permission-fatigue",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://llmgame.scalex.dev/",
+        "title": "Show HN: Continue? Y&#x2F;N: A 60-second game about AI agent permission fatigue",
+        "summary": "在Hacker News上发布了一款60秒的交互式游戏，模拟AI代理在连续请求用户许可时的疲劳感，旨在探讨代理权限管理的用户体验问题。",
+        "take": "该游戏揭示了AI代理在频繁请求确认时可能引发用户认知负担和操作中断，提示开发者在设计代理工作流时应优先采用细粒度的权限预设或一次性授权机制，而非逐步骤确认，以降低摩擦并提升自动化流畅度。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-28-06-itbench-aa-frontier-models-score-below-50-on-the-first-benchmark-for-agentic-enterprise-it-tasks-by-artificial-analysis-and-ibm",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
+        "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+        "summary": "IBM與Artificial Analysis共同發布ITBench-AA基準測試，用以評估前端模型在企業IT自動化任務中的自主代理能力，結果顯示所有模型得分低於50%。",
+        "take": "此基準揭示了當前前沿模型在執行多步驟、需操作真實系統的企業IT任務時，自主性與可靠性仍存在根本性瓶頸。開發者應優先強化代理的錯誤恢復、工具調用及長期規劃能力，而非僅追求模型在靜態問答上的精度提升。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-28-07-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/data-formulator-0-7-ai-powered-data-analytics-for-enterprise-data/",
+        "title": "Data Formulator 0.7: AI-powered data analytics for enterprise data",
+        "summary": "微软研究院发布Data Formulator 0.7，引入AI代理驱动的企业数据分析工作流，允许数据团队将企业数据导入AI就绪工作空间，通过自然语言交互进行探索、分析和可视化。",
+        "take": "核心工程信号是AI代理从单纯的代码补全进化为端到端的数据分析管道编排者。开发者应关注其如何定义'AI就绪工作空间'的数据接入规范（如Schema、权限），以及代理在可视化生成中的状态管理机制，这直接复用于构建企业级Agentic RAG系统。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-28-08-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=dCmOTURRf1Y",
+        "title": "Builder Theme: We Automated Everything With AI and Tripled Our Headcount",
+        "summary": "AI代理在缺乏人类持续介入时迅速降级价值，核心机制是模型自主决策能力仍依赖人类实时反馈而非独立执行。",
+        "take": "工程信号：代理工作流的瓶颈在于『断点续传』能力缺失——模型无法自主处理非确定性分支。开发者需优先构建『人机循环』（Human-in-the-Loop）架构，而非追求全自动化；代理的实用边界由其回退到人类判断的频率决定。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-28-09-builder-theme-new-in-claude-managed-agents-self-hosted-sandboxes-and-mcp-tunnels",
+        "briefingId": "rss-2026-05-28",
+        "date": "2026-05-28",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude Blog",
+        "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+        "publishedDate": "2026-05-19",
+        "title": "Builder Theme: New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
+        "summary": "Anthropic 发布 Claude 托管代理更新，支持用户自有基础设施或托管提供商（Cloudflare、Daytona、Modal、Vercel）上的自主沙箱运行代理工具执行，并通过 MCP 隧道连接私有 MCP 服务器，将代理的运行时和访问服务完全限制在企业安全边界内。",
+        "take": "核心工程变化是代理工具执行环境从云端托管转向用户可控的沙箱，这允许开发者将敏感文件、包和服务保留在自己的基础设施中，同时通过 MCP 隧道安全连接私有数据源。建议立即评估现有代理工作流中需要私有数据访问或合规要求的环节，迁移到自托管沙箱模式以消除数据外泄风险，并利用 MCP 隧道将内部 API 或数据库暴露给代理而不需开放公网端口。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-28",
     "2026-05-27",
     "2026-05-26",
     "2026-05-25",
@@ -107,6 +108,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-28": {
+      "briefingIds": [
+        "rss-2026-05-28"
+      ],
+      "insightIds": [
+        "rss-2026-05-28-01-openais-frontier-governance-framework",
+        "rss-2026-05-28-02-cisco-and-openai-redefine-enterprise-engineering-with-codex",
+        "rss-2026-05-28-03-sqlite-agentsmd",
+        "rss-2026-05-28-04-i-think-anthropic-and-openai-have-found-product-market-fit",
+        "rss-2026-05-28-05-show-hn-continue-yx2fn-a-60-second-game-about-ai-agent-permission-fatigue",
+        "rss-2026-05-28-06-itbench-aa-frontier-models-score-below-50-on-the-first-benchmark-for-agentic-enterprise-it-tasks-by-artificial-analysis-and-ibm",
+        "rss-2026-05-28-07-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+        "rss-2026-05-28-08-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+        "rss-2026-05-28-09-builder-theme-new-in-claude-managed-agents-self-hosted-sandboxes-and-mcp-tunnels"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-27": {
       "briefingIds": [
         "rss-2026-05-27"
