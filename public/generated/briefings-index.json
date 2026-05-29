@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-29",
     "2026-05-28",
     "2026-05-27",
     "2026-05-26",
@@ -108,6 +109,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-29": {
+      "briefingIds": [
+        "rss-2026-05-29"
+      ],
+      "insightIds": [
+        "rss-2026-05-29-01-real-time-llm-inference-on-standard-gpus-3k-tokensx2fs-per-request",
+        "rss-2026-05-29-02-how-endava-builds-an-agentic-organization-with-codex",
+        "rss-2026-05-29-03-opus-48-on-ai-gateway",
+        "rss-2026-05-29-04-team-wide-provider-allowlist-on-ai-gateway",
+        "rss-2026-05-29-05-claude-opus-48-a-modest-but-tangible-improvement",
+        "rss-2026-05-29-06-claude-code-everything-you-can-configure-that-the-docs-dont-tell-you",
+        "rss-2026-05-29-07-mufg-aims-to-become-ai-native-with-openai",
+        "rss-2026-05-29-08-llm-anthropic-0251",
+        "rss-2026-05-29-09-builder-theme-state-of-enterprise-ai-2026-aaron-levie-on-tokenmaxxing-rise-of-headless-and-ai-proofing-your-job"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-28": {
       "briefingIds": [
         "rss-2026-05-28"

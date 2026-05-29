@@ -23306,5 +23306,185 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-29": {
+    "date": "2026-05-29",
+    "briefings": [
+      {
+        "id": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-29",
+        "filePath": "2026-05-29.md",
+        "summaryTopline": "Real-time LLM Inference on Standard GPUs: 3k tokens&#x2F;s per request",
+        "insightIds": [
+          "rss-2026-05-29-01-real-time-llm-inference-on-standard-gpus-3k-tokensx2fs-per-request",
+          "rss-2026-05-29-02-how-endava-builds-an-agentic-organization-with-codex",
+          "rss-2026-05-29-03-opus-48-on-ai-gateway",
+          "rss-2026-05-29-04-team-wide-provider-allowlist-on-ai-gateway",
+          "rss-2026-05-29-05-claude-opus-48-a-modest-but-tangible-improvement",
+          "rss-2026-05-29-06-claude-code-everything-you-can-configure-that-the-docs-dont-tell-you",
+          "rss-2026-05-29-07-mufg-aims-to-become-ai-native-with-openai",
+          "rss-2026-05-29-08-llm-anthropic-0251",
+          "rss-2026-05-29-09-builder-theme-state-of-enterprise-ai-2026-aaron-levie-on-tokenmaxxing-rise-of-headless-and-ai-proofing-your-job"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-29-01-real-time-llm-inference-on-standard-gpus-3k-tokensx2fs-per-request",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/",
+        "title": "Real-time LLM Inference on Standard GPUs: 3k tokens&#x2F;s per request",
+        "summary": "Kog AI 在标准GPU上实现了单请求每秒3000 tokens的实时LLM推理，方法是通过优化批处理策略、内核融合和内存访问模式，而非依赖专用硬件或稀疏化技术。",
+        "take": "对于AI构建者，这表明通过精细化系统级优化（如动态批处理和算子融合），标准GPU可以显著提升推理吞吐量，降低了实时LLM应用的硬件门槛。关键在于重新审视推理栈中的内存瓶颈，而非单纯依赖模型压缩或硬件升级。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-29-02-how-endava-builds-an-agentic-organization-with-codex",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/endava",
+        "title": "How Endava builds an agentic organization with Codex",
+        "summary": "Endava利用OpenAI Codex构建代理型组织，将需求分析周期从数周缩短至数小时，以提升软件交付效率。",
+        "take": "核心工程实践是使用Codex作为代码生成与理解的核心引擎，嵌入开发流水线以自动化需求解析和代码生成，开发者需关注如何将领域规则与Agent协作流程抽象为可执行的提示链与验证回路。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-29-03-opus-48-on-ai-gateway",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/opus-4-8-on-ai-gateway",
+        "title": "Opus 4.8 on AI Gateway",
+        "summary": "Vercel AI Gateway 新增对 Anthropic Claude Opus 4.8 的支持，该模型专为长时间跨度自主执行与复杂多步重构任务设计，并通过统一 API 提供无加价访问、动态延迟/成本排序及零数据留存等工程特性。",
+        "take": "对于构建自主代理的团队，Opus 4.8 减少了人类在长链编码任务中的中断修正需求，可直接集成至现有 AI SDK 工作流；利用 AI Gateway 的故障转移与性能优化层，可显著提升代理任务在高并发下的可靠性，并基于动态路由策略优化推理成本。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-29-04-team-wide-provider-allowlist-on-ai-gateway",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/team-wide-provider-allowlist-on-ai-gateway",
+        "title": "Team-wide provider allowlist on AI Gateway",
+        "summary": "Vercel AI Gateway 推出团队级提供商白名单功能，允许组织在网关层面强制限制AI请求仅路由至已审批的提供商，涵盖BYOK流量，且对编码代理同样生效。",
+        "take": "这是将安全策略从代码层上移至基础设施层的典型模式，开发者或代理无法绕过网关级别的提供商过滤。AI builder需在设计多提供商路由系统时，考虑将此类组织级约束内置于API网关，而非依赖客户端逻辑，以规避代理篡改或配置遗漏风险。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-29-05-claude-opus-48-a-modest-but-tangible-improvement",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything",
+        "title": "Claude Opus 4.8: \"a modest but tangible improvement\"",
+        "summary": "Anthropic 发布了 Claude Opus 4.8，官方自评为‘适度但切实的改进’，重点提升模型在无法支持主张时的诚实度，避免过早下结论。",
+        "take": "此次发布的核心工程信号是：模型对齐从能力最大化转向诚实度优先，即通过训练让模型在不确定性条件下主动放弃推测性回答。这对构建可靠 Agent 意味着，需要将模型的‘拒绝回答’视为正向信号，并调整以置信度为门控的决策逻辑，而非一味追求高模糊性下的响应率。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-29-06-claude-code-everything-you-can-configure-that-the-docs-dont-tell-you",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+        "title": "Claude Code – Everything You Can Configure That the Docs Don't Tell You",
+        "summary": "Claude Code 的未公开配置项（如自定义提示词注入、工具调用频率限制、重试策略）被逆向分析并整理，揭示了 Anthropic 未在官方文档中暴露的底层架构决策。",
+        "take": "开发者可直接利用这些隐藏配置（如 `max_tool_rounds`、`custom_system_prompt`）以编程方式精细控制 Agent 的行为边界，从而绕过文档限制优化长链推理的稳定性与成本。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-29-07-mufg-aims-to-become-ai-native-with-openai",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/mufg",
+        "title": "MUFG aims to become AI-native with OpenAI",
+        "summary": "MUFG 宣布采用 ChatGPT Enterprise 作为核心基础设施，推动从传统银行向 AI 原生组织转型，旨在大规模重构金融工作流并推出 AI 驱动的金融服务。",
+        "take": "对于金融行业的 AI 构建者，这意味着企业级 LLM 集成不再是实验性项目，而是成为核心业务系统的关键组件。工程团队需要优先解决工作流编排与模型输出的可靠性问题，并建立符合监管要求的数据治理架构，以支撑规模化部署。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-29-08-llm-anthropic-0251",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/28/llm-anthropic/#atom-everything",
+        "title": "llm-anthropic 0.25.1",
+        "summary": "llm-anthropic 0.25.1 发布，新增 Claude Opus 4.8 模型支持与 -o fast 1 快速模式选项，并将各模型的默认 max_tokens 从 8,192 改为该模型的最大输出上限。",
+        "take": "默认 max_tokens 提升至模型上限，消除了手动调整的瓶颈，直接提升长文本生成场景的工作效率。对于已启用快速模式的组织，可通过 -o fast 1 参数在推理时获得更低延迟，适合高吞吐量 API 调用链。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-05-29-09-builder-theme-state-of-enterprise-ai-2026-aaron-levie-on-tokenmaxxing-rise-of-headless-and-ai-proofing-your-job",
+        "briefingId": "rss-2026-05-29",
+        "date": "2026-05-29",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "The MAD Podcast with Matt Turck",
+        "sourceUrl": "https://www.youtube.com/watch?v=Gs2styCcwro",
+        "title": "Builder Theme: State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job",
+        "summary": "Aaron Levie指出，企业AI应用面临的核心矛盾是模型性能（如GPT-5.5或Opus）的突破速度远快于客户实施与变更管理的速度，导致每代新模型都使前一代的架构和集成工作迅速过时。",
+        "take": "构建企业AI架构时，必须采用解耦的、可替换的层（即“无头”架构），将前端应用、编排层与底层模型完全分离。这样，当基础模型每2-3年发生一次代际跃迁时，开发者只需切换后端的模型API，而无需重写整个业务逻辑或用户界面，从而降低因模型迭代导致的资产废弃风险。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
