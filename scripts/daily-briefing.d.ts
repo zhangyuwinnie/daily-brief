@@ -4,6 +4,7 @@ export type BriefingCandidate = {
   contentSnippet?: string;
   source: string;
   isoDate?: string;
+  publishedDate?: string;
   matchedKeywords?: string[];
 };
 
@@ -51,6 +52,11 @@ export type RunDailyBriefingOptions = {
     candidate: BriefingCandidate,
     context?: { logger?: Console }
   ) => Promise<{ summary: string; take: string }> | { summary: string; take: string };
+  aggregatorSourceNames?: string[];
+  resolveArticlePublishedDate?: (
+    url: string,
+    context?: { fetchImpl?: typeof fetch; logger?: Console }
+  ) => Promise<string | undefined> | string | undefined;
 };
 
 export type RunDailyBriefingResult = {
@@ -66,6 +72,7 @@ export const MAX_BRIEFING_ITEMS: number;
 export const DEFAULT_KEYWORDS: string[];
 export const DEFAULT_SOURCES: string[];
 export const DEFAULT_HTML_SOURCES: HtmlSource[];
+export const DEFAULT_AGGREGATOR_SOURCE_NAMES: string[];
 
 export function getRepoRoot(): string;
 export function getLADate(now?: Date): string;
@@ -109,6 +116,11 @@ export function defaultSummarizeCandidate(
   candidate: BriefingCandidate,
   context?: { apiKey?: string; logger?: Console }
 ): Promise<{ summary: string; take: string }>;
+export function extractPublishedDateFromHtml(html: string): string | undefined;
+export function defaultResolveArticlePublishedDate(
+  url: string,
+  context?: { fetchImpl?: typeof fetch; logger?: Console }
+): Promise<string | undefined>;
 export function renderBriefingMarkdown(args: {
   date: string;
   items: SummarizedBriefingItem[];
