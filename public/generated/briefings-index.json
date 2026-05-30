@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-30",
     "2026-05-29",
     "2026-05-28",
     "2026-05-27",
@@ -109,6 +110,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-30": {
+      "briefingIds": [
+        "rss-2026-05-30"
+      ],
+      "insightIds": [
+        "rss-2026-05-30-01-boston-childrens-uses-ai-to-unlock-new-diagnoses",
+        "rss-2026-05-30-02-how-braintrust-turns-customer-requests-into-code-with-codex",
+        "rss-2026-05-30-03-anthropics-run-rate-revenue-hits-47-billion",
+        "rss-2026-05-30-04-markdown-svg-renderer",
+        "rss-2026-05-30-05-anthropic-surpasses-openai-to-become-most-valuable-ai-startup",
+        "rss-2026-05-30-06-protecting-against-inference-theft",
+        "rss-2026-05-30-07-run-docker-containers-inside-vercel-sandbox",
+        "rss-2026-05-30-08-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+        "rss-2026-05-30-09-builder-theme-building-an-ai-guardian-for-enterprise-with-onyx-security-ceo-maxim-bar-kogan",
+        "rss-2026-05-30-10-builder-theme-peter-steinberger-on-i-smell-a-takedown-in-321",
+        "rss-2026-05-30-11-builder-theme-boris-cherny-on-salesforce-published-a-detailed-writeup-on-going-agentic-with-claude"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-29": {
       "briefingIds": [
         "rss-2026-05-29"

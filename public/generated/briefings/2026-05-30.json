@@ -1,0 +1,230 @@
+{
+  "date": "2026-05-30",
+  "briefings": [
+    {
+      "id": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-05-30",
+      "filePath": "2026-05-30.md",
+      "summaryTopline": "Boston Children’s uses AI to unlock new diagnoses",
+      "insightIds": [
+        "rss-2026-05-30-01-boston-childrens-uses-ai-to-unlock-new-diagnoses",
+        "rss-2026-05-30-02-how-braintrust-turns-customer-requests-into-code-with-codex",
+        "rss-2026-05-30-03-anthropics-run-rate-revenue-hits-47-billion",
+        "rss-2026-05-30-04-markdown-svg-renderer",
+        "rss-2026-05-30-05-anthropic-surpasses-openai-to-become-most-valuable-ai-startup",
+        "rss-2026-05-30-06-protecting-against-inference-theft",
+        "rss-2026-05-30-07-run-docker-containers-inside-vercel-sandbox",
+        "rss-2026-05-30-08-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+        "rss-2026-05-30-09-builder-theme-building-an-ai-guardian-for-enterprise-with-onyx-security-ceo-maxim-bar-kogan",
+        "rss-2026-05-30-10-builder-theme-peter-steinberger-on-i-smell-a-takedown-in-321",
+        "rss-2026-05-30-11-builder-theme-boris-cherny-on-salesforce-published-a-detailed-writeup-on-going-agentic-with-claude"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-05-30-01-boston-childrens-uses-ai-to-unlock-new-diagnoses",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/boston-childrens-hospital",
+      "publishedDate": "2026-05-29",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "summary": "波士顿儿童医院利用OpenAI技术（具体为GPT-4模型）在临床环境中分析大量非结构化医疗文本，成功辅助诊断了40余种罕见疾病案例。",
+      "take": "这验证了大型语言模型在医疗领域中的实际落地路径：通过将非结构化病历数据转化为可推理的结构化知识，能够显著提升罕见病诊断效率。开发者应关注如何构建专门的问答与检索增强生成（RAG）流水线，以使模型在保障医疗合规性的前提下实现精准的零样本或少样本推理。",
+      "topics": [
+        "RAG",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-30-02-how-braintrust-turns-customer-requests-into-code-with-codex",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/braintrust",
+      "publishedDate": "2026-05-29",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "summary": "Braintrust 工程團隊整合 Codex 與 GPT-5.5，將客戶請求直接轉化為可執行的實驗程式碼，以自動化迭代開發流程。",
+      "take": "此模式展示了 LLM 代碼生成從輔助補全升級為端到端需求編譯：輸入自然語言需求，輸出可直接運行的實驗性程式碼。對 AI 建構者而言，關鍵在於設計結構化的需求-程式碼映射管道，而非依賴單次生成，並將 Codex 嵌入持續整合的實驗迴圈中。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-30-03-anthropics-run-rate-revenue-hits-47-billion",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+      "publishedDate": "2026-05-29",
+      "title": "Anthropic's run-rate revenue hits $47 billion",
+      "summary": "Anthropic 在 2026 年 5 月宣布其年化运行率收入（run-rate revenue）已突破 470 亿美元，该数据基于最近一个月收入乘以 12 的简单线性外推计算。",
+      "take": "年化运行率收入并非实际确认收入，而是基于单月数据放大 12 倍的预测指标，容易因季节性波动或一次性大单产生误导。工程团队在评估 API 供应商财务健康度时，应要求对方同步提供季度确认收入（GAAP revenue）和现金流数据，以交叉验证其业务可持续性。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-05-30-04-markdown-svg-renderer",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/28/markdown-svg-renderer/#atom-everything",
+      "publishedDate": "2026-05-28",
+      "title": "markdown-svg-renderer",
+      "summary": "Simon Willison 发布了 markdown-svg-renderer 工具，该工具通过特殊处理 Markdown 内 fenced code 块中的 SVG 代码，同时渲染图像并支持切换到代码视图。",
+      "take": "此工具展示了 LLM 输出中 SVG 代码块的可视化实时渲染范式，对于构建支持 AI 生成图表或图形的 Agent 流程，可直接集成此机制以提升用户交互体验。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-05-anthropic-surpasses-openai-to-become-most-valuable-ai-startup",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup",
+      "publishedDate": "2026-05-30",
+      "title": "Anthropic surpasses OpenAI to become most valuable AI startup",
+      "summary": "Anthropic凭借更高效的模型架构和对齐技术，在估值上超过OpenAI，成为全球最有价值的AI初创公司。",
+      "take": "这一变化表明，AI市场竞争焦点正从单纯扩大模型规模转向工程效率与安全对齐的平衡。开发者应关注如何利用更优的架构（如稀疏注意力）和强化学习优化来降低成本与提升可靠性，而非盲目追求参数数量。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-06-protecting-against-inference-theft",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/protecting-against-inference-theft",
+      "publishedDate": "2026-05-29",
+      "title": "Protecting against inference theft",
+      "summary": "Vercel 揭示了针对 AI 推理端点的窃取攻击，每次调用成本高达 2 美元，而 HTTP 请求仅需亚美分，攻击者通过高频调用可导致数万美元账单，并提出了基于每次请求的 BotID 深度分析防护方案。",
+      "take": "保护 AI 端点必须对每次推理请求进行验证，而非会话或登录检查，因为频率限制和认证墙会被攻击者分摊成本。工程上可参考 Vercel 的 BotID 方案，将成本审查与请求级令牌绑定，阻断批量窃取行为。",
+      "topics": [
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-07-run-docker-containers-inside-vercel-sandbox",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/run-docker-containers-inside-vercel-sandbox",
+      "publishedDate": "2026-05-29",
+      "title": "Run Docker containers inside Vercel Sandbox",
+      "summary": "Vercel Sandbox 新增对 Docker 运行的支持，允许代理在沙箱内安装 Docker、启动守护进程、运行容器化服务（如 Redis、Postgres），并支持 FUSE 文件系统和 VPN，结合持久化沙箱可实现跨会话状态保留。",
+      "take": "此功能使开发者能直接在 Vercel 的沙盒环境中运行测试依赖（如数据库）、验证容器镜像或预览容器化应用，无需离开云开发环境。对 AI 代理而言，这意味着可在部署前动态构建和测试容器化服务，提升 CI/CD 管道中的自动化测试能力。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-08-data-formulator-07-ai-powered-data-analytics-for-enterprise-data",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/data-formulator-0-7-ai-powered-data-analytics-for-enterprise-data/",
+      "publishedDate": "2026-05-28",
+      "title": "Data Formulator 0.7: AI-powered data analytics for enterprise data",
+      "summary": "微软研究院发布Data Formulator 0.7，通过AI代理将企业原始数据纳入AI就绪工作空间，支持用户自然语言驱动地探索、分析与可视化数据。",
+      "take": "该工具将企业数据管道的预处理与AI分析代理集成，核心工程信号是：未来数据工作流将从手动ETL转向AI代理主导的自动上下文构建。开发者为企业构建AI应用时，需优先设计数据输入层的标准化和语义化接口，而非仅关注模型能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-09-builder-theme-building-an-ai-guardian-for-enterprise-with-onyx-security-ceo-maxim-bar-kogan",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=QDsbFLEt9ro",
+      "title": "Builder Theme: Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan",
+      "summary": "Onyx Security CEO 提出构建企业级AI守护者，通过分析代理历史行为数据（而非依赖Anthropic或OpenAI）来降低代理执行非法或错误操作的风险，解决企业因数据训练风险而无法采用API供应商的安全方案。",
+      "take": "企业需建立独立于AI模型供应商的行为审计层，利用代理历史行为数据构建异常检测规则，而非依赖外部API训练数据；这对AI builders意味着要在代理架构中嵌入可审计的日志系统，并设计基于策略的运行时干预机制来阻止高危操作如代码或令牌泄露。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-10-builder-theme-peter-steinberger-on-i-smell-a-takedown-in-321",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2060294413377519808",
+      "title": "Builder Theme: Peter Steinberger on I smell a takedown in 3...2...1",
+      "summary": "Peter Steinberger 预测某个AI产品即将遭遇下架或封杀，暗示市场或监管层面的快速反应。",
+      "take": "关注AI产品潜在的合规与平台风险，开发者需提前评估运营风险并准备应急方案。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-05-30-11-builder-theme-boris-cherny-on-salesforce-published-a-detailed-writeup-on-going-agentic-with-claude",
+      "briefingId": "rss-2026-05-30",
+      "date": "2026-05-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2060390852619272526",
+      "title": "Builder Theme: Boris Cherny on Salesforce published a detailed writeup on going agentic with Claude...",
+      "summary": "Salesforce 的 Boris Cherny 发表文章，阐述使用 Claude Code 实现代理化架构，将原本预估 231 天的迁移任务在 13 天内完成，一个 PR 交付了 21 个端点且测试覆盖率达到 100%。",
+      "take": "Claude Code 的代理能力显著提升了开发者生产力和交付速度，关键工程信号是：将大型代码迁移分解为可并行的代理任务，并内置测试生成以确保质量。这对 AI 工作流的启示是，未来应构建能自动执行基础设施变更并验证其正确性的智能代理，从而将数月的工程周期压缩至数周。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
