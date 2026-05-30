@@ -62,6 +62,8 @@ export const DEFAULT_HTML_SOURCES = [
   }
 ];
 
+export const DEFAULT_AGGREGATOR_SOURCE_NAMES = ["Hacker News"];
+
 const SOURCE_PRIORITY = {
   openai: 1,
   anthropic: 1,
@@ -309,6 +311,63 @@ function parseFeedDate(value) {
 
   const date = new Date(normalized);
   return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
+}
+
+const ARTICLE_DATE_META_PATTERNS = [
+  /<meta\s[^>]*property=["']article:published_time["'][^>]*content=["']([^"']+)["']/i,
+  /<meta\s[^>]*content=["']([^"']+)["'][^>]*property=["']article:published_time["']/i,
+  /<meta\s[^>]*name=["']article:published_time["'][^>]*content=["']([^"']+)["']/i,
+  /<meta\s[^>]*name=["']parsely-pub-date["'][^>]*content=["']([^"']+)["']/i,
+  /<meta\s[^>]*name=["']pubdate["'][^>]*content=["']([^"']+)["']/i,
+  /<meta\s[^>]*name=["']date["'][^>]*content=["']([^"']+)["']/i,
+  /<meta\s[^>]*itemprop=["']datePublished["'][^>]*content=["']([^"']+)["']/i
+];
+
+export function extractPublishedDateFromHtml(html) {
+  if (!html || typeof html !== "string") {
+    return undefined;
+  }
+
+  for (const pattern of ARTICLE_DATE_META_PATTERNS) {
+    const match = html.match(pattern);
+    const iso = parseFeedDate(match?.[1]);
+    if (iso) {
+      return iso;
+    }
+  }
+
+  const ldScripts = html.matchAll(
+    /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
+  );
+  for (const ld of ldScripts) {
+    const body = ld[1] ?? "";
+    const dateMatch = body.match(/"datePublished"\s*:\s*"([^"]+)"/);
+    const iso = parseFeedDate(dateMatch?.[1]);
+    if (iso) {
+      return iso;
+    }
+  }
+
+  return undefined;
+}
+
+export async function defaultResolveArticlePublishedDate(
+  url,
+  { fetchImpl = fetch, logger = console } = {}
+) {
+  if (!url) {
+    return undefined;
+  }
+
+  try {
+    const html = await fetchTextWithTimeout(url, { fetchImpl });
+    return extractPublishedDateFromHtml(html);
+  } catch (error) {
+    logger.warn(
+      `Could not resolve article published date for ${url}: ${error?.message ?? error}`
+    );
+    return undefined;
+  }
 }
 
 function extractFirst(xmlBlock, regexes) {
@@ -904,6 +963,14 @@ function normalizeRenderedLine(text = "") {
     .trim();
 }
 
+function toPublishedDateString(value) {
+  if (!value) {
+    return undefined;
+  }
+  const slice = String(value).slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(slice) ? slice : undefined;
+}
+
 export function renderBriefingMarkdown({ date, items }) {
   let content = `# Daily Briefing: ${date}\n\n`;
 
@@ -914,9 +981,14 @@ export function renderBriefingMarkdown({ date, items }) {
   for (const item of items) {
     const summary = normalizeRenderedLine(item.summary);
     const take = normalizeRenderedLine(item.take);
+    const published = item.publishedDate ?? toPublishedDateString(item.isoDate);
 
     content += `## [${item.title}](${item.link})\n`;
-    content += `**Source:** ${item.source}\n\n`;
+    content += `**Source:** ${item.source}\n`;
+    if (published) {
+      content += `**Published:** ${published}\n`;
+    }
+    content += `\n`;
     content += `> **Chinese Summary:** ${summary}\n`;
     content += `> **R2 Take:** ${take}\n\n`;
     content += `---\n\n`;
@@ -936,6 +1008,11 @@ export async function runDailyBriefing(options = {}) {
   const fetchHtmlItems = options.fetchHtmlItems ?? defaultFetchHtmlItems;
   const rankCandidates = options.rankCandidates ?? defaultRankCandidates;
   const summarizeCandidate = options.summarizeCandidate ?? defaultSummarizeCandidate;
+  const resolveArticlePublishedDate =
+    options.resolveArticlePublishedDate ?? defaultResolveArticlePublishedDate;
+  const aggregatorSourceNames = new Set(
+    options.aggregatorSourceNames ?? DEFAULT_AGGREGATOR_SOURCE_NAMES
+  );
   const keywords = options.keywords ?? DEFAULT_KEYWORDS;
   const maxAgeDays = options.maxAgeDays ?? 2;
   const maxItems = options.maxItems ?? MAX_BRIEFING_ITEMS;
@@ -955,7 +1032,35 @@ export async function runDailyBriefing(options = {}) {
   );
   const allItems = [...rssResults.flat(), ...htmlResults.flat()];
   logger.log(`Fetched ${allItems.length} raw items`);
-  const recentItems = filterRecentItems(allItems, { now, maxAgeDays });
+  const resolvedItems = await Promise.all(
+    allItems.map(async (item) => {
+      if (!aggregatorSourceNames.has(item.source)) {
+        return {
+          ...item,
+          publishedDate: toPublishedDateString(item.isoDate)
+        };
+      }
+
+      const resolved = await resolveArticlePublishedDate(item.link, {
+        fetchImpl: options.fetchImpl,
+        logger
+      });
+
+      if (!resolved) {
+        logger.warn(
+          `Dropping aggregator item with unresolved publish date: ${item.link}`
+        );
+        return { ...item, isoDate: undefined, publishedDate: undefined };
+      }
+
+      return {
+        ...item,
+        isoDate: resolved,
+        publishedDate: toPublishedDateString(resolved)
+      };
+    })
+  );
+  const recentItems = filterRecentItems(resolvedItems, { now, maxAgeDays });
   logger.log(`${recentItems.length} items survived the recency filter`);
   const matchedItems = enrichKeywordMatches(recentItems, keywords);
   logger.log(`${matchedItems.length} items matched briefing keywords`);
