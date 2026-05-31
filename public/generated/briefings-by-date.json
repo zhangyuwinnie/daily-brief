@@ -23716,5 +23716,94 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-05-31": {
+    "date": "2026-05-31",
+    "briefings": [
+      {
+        "id": "rss-2026-05-31",
+        "date": "2026-05-31",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-05-31",
+        "filePath": "2026-05-31.md",
+        "summaryTopline": "Quoting Karen Kwok for Reuters Breakingviews",
+        "insightIds": [
+          "rss-2026-05-31-01-quoting-karen-kwok-for-reuters-breakingviews",
+          "rss-2026-05-31-02-how-we-contain-claude-across-products",
+          "rss-2026-05-31-03-builder-theme-thibault-sottiaux-on-when-we-go-from-gpt-50-gt-gpt-51-gt-gt-gpt-55-the-nu",
+          "rss-2026-05-31-04-builder-theme-guillermo-rauch-on-ship-the-best-product-use-lots-of-ai-some-ai-maybe-no-ai-just-be"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-05-31-01-quoting-karen-kwok-for-reuters-breakingviews",
+        "briefingId": "rss-2026-05-31",
+        "date": "2026-05-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
+        "publishedDate": "2026-05-31",
+        "title": "Quoting Karen Kwok for Reuters Breakingviews",
+        "summary": "Anthropic 使用过去28天消费型收入乘以13，加上月度订阅收入乘以12，以此计算其年化营收（run-rate revenue）。",
+        "take": "这种混合计算方式反映了AI公司对消费型（按使用量计费）和订阅型收入的区分策略，暗示其商业模式依赖API调用而非纯订阅。构建AI服务时需注意收入模型的设计，尤其对消耗型API需建立准确的成本与营收预测机制。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-31-02-how-we-contain-claude-across-products",
+        "briefingId": "rss-2026-05-31",
+        "date": "2026-05-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+        "publishedDate": "2026-05-30",
+        "title": "How we contain Claude across products",
+        "summary": "Anthropic 公开了跨 Claude.ai、Claude Code 和 Cowork 产品中使用的沙箱技术架构，包括 gVisor、Seatbelt 和 Bubblewrap，核心机制是将凭证等敏感资源排除在沙箱之外以设定代理的硬边界。",
+        "take": "核心工程范式是‘资源不可达即不可泄露’：通过进程沙箱、虚拟机、文件系统边界和出口控制构建硬边界，而非依赖模型行为限制。开发者应优先设计沙箱边界（如凭证永不进入沙箱），而非事后审计或检测异常行为——这从根本上改变了本地和云端代理的安全信任模型。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-31-03-builder-theme-thibault-sottiaux-on-when-we-go-from-gpt-50-gt-gpt-51-gt-gt-gpt-55-the-nu",
+        "briefingId": "rss-2026-05-31",
+        "date": "2026-05-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2060627747760984429",
+        "title": "Builder Theme: Thibault Sottiaux on When we go from GPT-5.0 -&gt; GPT-5.1 -&gt; ... -&gt; GPT-5.5, the nu...",
+        "summary": "OpenAI 暗示将通过 GPT-5 系列的点版本迭代（如 5.0 到 5.5）逐步提升模型能力与 token 效率，从而带来速度增益，而非一次性发布巨大跳升模型。",
+        "take": "这标志着 AI 模型交付范式从大版本跳跃转向持续小步快跑，开发者应调整预期，规划针对每个点版本的渐进式适配与性能调优策略，而非依赖单次重大升级。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-05-31-04-builder-theme-guillermo-rauch-on-ship-the-best-product-use-lots-of-ai-some-ai-maybe-no-ai-just-be",
+        "briefingId": "rss-2026-05-31",
+        "date": "2026-05-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2060803480823193840",
+        "title": "Builder Theme: Guillermo Rauch on Ship the best product. Use lots of AI, some AI, maybe no AI. Just be...",
+        "summary": "Guillermo Rauch主张以终极产品品质为唯一目标，灵活选择AI使用比例——从全面AI到完全不用AI，核心是结果导向。",
+        "take": "AI只是工具，不应成为技术债或架构锚点。开发者在设计系统时应先定义最优用户体验，再决定AI介入的粒度与必要性，避免为用AI而用AI导致的过度工程。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

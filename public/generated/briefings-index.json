@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-05-31",
     "2026-05-30",
     "2026-05-29",
     "2026-05-28",
@@ -110,6 +111,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-05-31": {
+      "briefingIds": [
+        "rss-2026-05-31"
+      ],
+      "insightIds": [
+        "rss-2026-05-31-01-quoting-karen-kwok-for-reuters-breakingviews",
+        "rss-2026-05-31-02-how-we-contain-claude-across-products",
+        "rss-2026-05-31-03-builder-theme-thibault-sottiaux-on-when-we-go-from-gpt-50-gt-gpt-51-gt-gt-gpt-55-the-nu",
+        "rss-2026-05-31-04-builder-theme-guillermo-rauch-on-ship-the-best-product-use-lots-of-ai-some-ai-maybe-no-ai-just-be"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-30": {
       "briefingIds": [
         "rss-2026-05-30"
