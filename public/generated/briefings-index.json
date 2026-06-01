@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-01",
     "2026-05-31",
     "2026-05-30",
     "2026-05-29",
@@ -111,6 +112,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-01": {
+      "briefingIds": [
+        "rss-2026-06-01"
+      ],
+      "insightIds": [
+        "rss-2026-06-01-01-may-2026-newsletter",
+        "rss-2026-06-01-02-the-solution-might-be-cancelling-my-ai-subscription",
+        "rss-2026-06-01-03-beyond-llms-why-scalable-enterprise-ai-adoption-depends-on-agent-logic",
+        "rss-2026-06-01-04-welcome-nvidia-cosmos-3-the-first-open-omni-model-for-physical-ai-reasoning-and-action",
+        "rss-2026-06-01-05-minimax-m3-on-ai-gateway",
+        "rss-2026-06-01-06-builder-theme-sam-altman-on-openai-robotics-is-hiring-looking-for-exceptional-full-stack-hardwar",
+        "rss-2026-06-01-07-builder-theme-thibault-sottiaux-on-the-codex-usage-limits-have-been-reset-for-all-paid-chatgpt-subscript"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-05-31": {
       "briefingIds": [
         "rss-2026-05-31"

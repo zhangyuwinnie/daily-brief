@@ -809,5 +809,13 @@
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-05-31",
     "audioUrl": "/generated/audio/2026-05-31.mp3"
+  },
+  "2026-06-01": {
+    "id": "audio-2026-06-01",
+    "briefingDate": "2026-06-01",
+    "status": "ready",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-06-01",
+    "audioUrl": "/generated/audio/2026-06-01.mp3"
   }
 }
