@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-02",
     "2026-06-01",
     "2026-05-31",
     "2026-05-30",
@@ -112,6 +113,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-02": {
+      "briefingIds": [
+        "rss-2026-06-02"
+      ],
+      "insightIds": [
+        "rss-2026-06-02-01-travelers-deploys-ai-powered-claims-countrywide-with-openai",
+        "rss-2026-06-02-02-codex-for-every-role-tool-and-workflow",
+        "rss-2026-06-02-03-pasted-file-editor",
+        "rss-2026-06-02-04-hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked",
+        "rss-2026-06-02-05-holo31-fast-local-computer-use-agents",
+        "rss-2026-06-02-06-qwen-37-plus-now-available-on-ai-gateway",
+        "rss-2026-06-02-07-vercel-blob-now-supports-oidc-authentication",
+        "rss-2026-06-02-08-builder-theme-thariq-on-been-asking-others-at-anthropic-how-they-stay-in-the-loop-with-claude",
+        "rss-2026-06-02-09-builder-theme-thibault-sottiaux-on-should-we-rename-codex-to-chadgpt"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-01": {
       "briefingIds": [
         "rss-2026-06-01"

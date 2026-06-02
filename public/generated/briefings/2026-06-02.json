@@ -1,0 +1,196 @@
+{
+  "date": "2026-06-02",
+  "briefings": [
+    {
+      "id": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-02",
+      "filePath": "2026-06-02.md",
+      "summaryTopline": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "insightIds": [
+        "rss-2026-06-02-01-travelers-deploys-ai-powered-claims-countrywide-with-openai",
+        "rss-2026-06-02-02-codex-for-every-role-tool-and-workflow",
+        "rss-2026-06-02-03-pasted-file-editor",
+        "rss-2026-06-02-04-hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked",
+        "rss-2026-06-02-05-holo31-fast-local-computer-use-agents",
+        "rss-2026-06-02-06-qwen-37-plus-now-available-on-ai-gateway",
+        "rss-2026-06-02-07-vercel-blob-now-supports-oidc-authentication",
+        "rss-2026-06-02-08-builder-theme-thariq-on-been-asking-others-at-anthropic-how-they-stay-in-the-loop-with-claude",
+        "rss-2026-06-02-09-builder-theme-thibault-sottiaux-on-should-we-rename-codex-to-chadgpt"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-02-01-travelers-deploys-ai-powered-claims-countrywide-with-openai",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/travelers",
+      "publishedDate": "2026-06-02",
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "summary": "Travelers 基于 OpenAI 技术部署了全国范围的 AI 理赔助手，用于引导客户完成理赔流程、提供全天候支持并在高峰期扩展运营。",
+      "take": "该案例展示了将大型语言模型集成到核心保险理赔工作流中的工程可行性，核心在于通过 AI 实现引导式自助服务与弹性扩缩容，这为保险科技领域的智能体工作流提供了可直接复用的架构范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-02-02-codex-for-every-role-tool-and-workflow",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "publishedDate": "2026-06-02",
+      "title": "Codex for every role, tool, and workflow",
+      "summary": "OpenAI发布Codex的新插件、站点和注解功能，扩展其应用范围至分析师、营销人员、设计师和投资者等非工程角色，覆盖更多工作流程。",
+      "take": "核心工程信号是Codex从面向开发者的代码生成工具演变为多角色通用AI工作流集成平台。开发者应关注其插件化架构和注解机制，这将改变AI与现有工具链的绑定方式，并可能催生新型无代码或低代码代理工作流。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-02-03-pasted-file-editor",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "publishedDate": "2026-06-02",
+      "title": "Pasted File Editor",
+      "summary": "Simon Willison 利用 Claude 和 Codex 桌面端构建了一个原型工具，实现了在文本区粘贴大量文本时自动识别并转换为文件附件、以及直接打开或拖拽文件（包括图片缩略图）的功能。",
+      "take": "该原型展示了如何利用 LLM 客户端（如 Claude）对用户输入进行智能预处理：通过检测粘贴内容的体积或文件类型，自动触发文件附件转换，从而简化 RAG 流程中的数据摄入步骤。开发者可借鉴此模式，在 AI 应用中构建更智能的输入处理管道，提升交互体验而无须依赖复杂的后端解析逻辑。",
+      "topics": [
+        "Coding Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-02-04-hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "publishedDate": "2026-06-01",
+      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "summary": "攻击者通过简单地向Meta AI支持机器人发送一条指令，要求将高知名度Instagram账户的绑定邮箱替换为攻击者的邮箱，成功绕过了整个账户恢复流程，实现了账户接管。",
+      "take": "永远不要将支持系统的关键操作（如账户恢复、权限变更）直接暴露给AI聊天机器人，即使看起来是简单的指令。这种设计本质上是将整个攻击面交给了用户输入，一次成功的提示注入或简单请求即可导致灾难性后果。正确的做法是，AI聊天机器人仅作为信息收集和转接层，任何需要修改敏感状态的操作都必须通过人工审核或严格的、与AI输入隔离的多因子验证流程。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-02-05-holo31-fast-local-computer-use-agents",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/Hcompany/holo31",
+      "publishedDate": "2026-06-02",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "summary": "Holo3.1 发布一个基于视觉语言模型 (VLM) 的本地、快速计算机使用代理，通过分层动作规划和实时屏幕 UI 解析，实现了在端侧设备上的低延迟自主操作。",
+      "take": "该架构为开发者提供了无需云端 API 即可构建本地 GUI 代理的参考范式，关键在于将高层次的用户意图分解为低层次、可缓存的 UI 元素交互指令，从而减少推理开销。这意味着 AI 工作流中的工具调用可以下沉到客户端，实现更隐私、更低延迟的桌面自动化与无障碍辅助应用。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-02-06-qwen-37-plus-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/qwen-3-7-plus-now-available-on-ai-gateway",
+      "publishedDate": "2026-06-01",
+      "title": "Qwen 3.7 Plus now available on AI Gateway",
+      "summary": "阿里云Qwen 3.7 Plus模型现已在Vercel AI Gateway上线，统一视觉与语言能力作为单一智能体基础，支持GUI/CLI操作、全模态输入编码与生产力工作流，并内置视觉感知与推理的智能体任务。",
+      "take": "对AI构建者而言，核心价值在于通过单一API即可获取一个统一视觉与语言的通用智能体基础模型，无需为不同模态分别集成。该模型跨智能体框架的泛化能力，结合AI Gateway内置的重试、故障转移与零数据保留特性，可显著简化生产级智能体工作流的部署与运维成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-02-07-vercel-blob-now-supports-oidc-authentication",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-blob-now-supports-oidc-authentication",
+      "publishedDate": "2026-06-01",
+      "title": "Vercel Blob now supports OIDC authentication",
+      "summary": "Vercel Blob 默认启用 OIDC 认证，使用短生命期自动轮换令牌替代长期 BLOB_READ_WRITE_TOKEN，通过 Vercel CLI 和运行时环境变量自动注入，实现无需手动管理凭据的存储访问。",
+      "take": "该机制消除了长期凭据泄露风险，并简化了 CI/CD 和 Agent 工作流中的存储认证。开发者需升级 @vercel/blob 库并在 Blob Store 中手动迁移项目至 OIDC，之后所有 Vercel 部署和本地 CLI 操作将自动获得临时令牌。这为构建无状态、自认证的 AI Agent 提供了更安全的存储交互模式。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-02-08-builder-theme-thariq-on-been-asking-others-at-anthropic-how-they-stay-in-the-loop-with-claude",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2061545633560010826",
+      "title": "Builder Theme: Thariq on been asking others at Anthropic how they stay in the loop with Claude...",
+      "summary": "Thariq 分享了 Anthropic 内部员工 Suzanne 用于持续追踪 Claude 动态并理解其工作进展的一种具体方法。",
+      "take": "对于 AI 构建者而言，追踪前沿模型迭代的工程信号，应采用内部人员验证过的信息筛选机制，而非依赖通用新闻源。这提示开发者需要建立结构化的情报渠道，以高效获取影响自身工作流的模型能力变化。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-02-09-builder-theme-thibault-sottiaux-on-should-we-rename-codex-to-chadgpt",
+      "briefingId": "rss-2026-06-02",
+      "date": "2026-06-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2061572602888589807",
+      "title": "Builder Theme: Thibault Sottiaux on Should we rename Codex to ChadGPT?",
+      "summary": "Thibault Sottiaux在推文中提议将OpenAI的Codex模型更名为ChadGPT，暗示其代码生成能力远超预期，可能改变开发者与AI的协作范式。",
+      "take": "这暗示Codex在代码理解和生成方面取得了突破性进展，可能大幅提升AI辅助编程的效率。对于AI builder而言，应密切关注Codex的迭代和微调接口，以先行集成至开发工作流，获得竞争优势。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
