@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-03",
     "2026-06-02",
     "2026-06-01",
     "2026-05-31",
@@ -113,6 +114,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-03": {
+      "briefingIds": [
+        "rss-2026-06-03"
+      ],
+      "insightIds": [
+        "rss-2026-06-03-01-openai-public-policy-agenda",
+        "rss-2026-06-03-02-a-blueprint-for-democratic-governance-of-frontier-ai",
+        "rss-2026-06-03-03-uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs",
+        "rss-2026-06-03-04-microsofts-new-mai-models",
+        "rss-2026-06-03-05-github-copilot-app-the-agent-native-desktop-experience",
+        "rss-2026-06-03-06-adding-mcp-tools-to-reachy-mini",
+        "rss-2026-06-03-07-signed-urls-are-now-available-for-vercel-blob",
+        "rss-2026-06-03-08-builder-theme-knowing-what-your-customers-want-all-the-time-listen-labs-alfred-wahlforss",
+        "rss-2026-06-03-09-builder-theme-sam-altman-on-one-of-the-quotes-i-find-most-inspiring-on-a-hard-day-whatever-your",
+        "rss-2026-06-03-10-builder-theme-thariq-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-02": {
       "briefingIds": [
         "rss-2026-06-02"

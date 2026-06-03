@@ -24156,5 +24156,222 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-03": {
+    "date": "2026-06-03",
+    "briefings": [
+      {
+        "id": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-03",
+        "filePath": "2026-06-03.md",
+        "summaryTopline": "OpenAI public policy agenda",
+        "insightIds": [
+          "rss-2026-06-03-01-openai-public-policy-agenda",
+          "rss-2026-06-03-02-a-blueprint-for-democratic-governance-of-frontier-ai",
+          "rss-2026-06-03-03-uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs",
+          "rss-2026-06-03-04-microsofts-new-mai-models",
+          "rss-2026-06-03-05-github-copilot-app-the-agent-native-desktop-experience",
+          "rss-2026-06-03-06-adding-mcp-tools-to-reachy-mini",
+          "rss-2026-06-03-07-signed-urls-are-now-available-for-vercel-blob",
+          "rss-2026-06-03-08-builder-theme-knowing-what-your-customers-want-all-the-time-listen-labs-alfred-wahlforss",
+          "rss-2026-06-03-09-builder-theme-sam-altman-on-one-of-the-quotes-i-find-most-inspiring-on-a-hard-day-whatever-your",
+          "rss-2026-06-03-10-builder-theme-thariq-on"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-03-01-openai-public-policy-agenda",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/public-policy-agenda",
+        "publishedDate": "2026-06-03",
+        "title": "OpenAI public policy agenda",
+        "summary": "OpenAI发布了其公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准制定，旨在通过政策引导确保AI技术的社会效益。",
+        "take": "该议程为AI开发者提供了政策合规方向的参考，特别是安全标准与劳动力转型策略，可能影响未来AI应用的产品化路径与监管集成。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-03-02-a-blueprint-for-democratic-governance-of-frontier-ai",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/frontier-safety-blueprint",
+        "publishedDate": "2026-06-03",
+        "title": "A blueprint for democratic governance of frontier AI",
+        "summary": "OpenAI 发布前沿AI治理蓝图，提议美国建立联邦框架以规范前沿模型的安全性、弹性和国家安全。",
+        "take": "该蓝图可能推动未来AI开发者的合规标准，例如强制安全测试和部署前审批。工程团队需提前对齐联邦框架中的安全要求，否则可能面临监管风险。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-03-03-uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+        "publishedDate": "2026-06-03",
+        "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+        "summary": "Uber为管理AI编码工具（如Cursor、Claude Code）的暴涨成本，对每位员工实施每工具每月1500美元代币消费上限，以控制2026年AI预算超支。",
+        "take": "这标志着企业级AI工程管理从无限制消耗转向硬性预算约束，开发者需优化token使用效率（如精简上下文、选择更小模型）以在限额内最大化代码生成产出。未来类似成本控制策略可能成为大型组织的标配，迫使编码代理工具链必须内置更细粒度的消费监控和配额报警功能。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-03-04-microsofts-new-mai-models",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
+        "publishedDate": "2026-06-02",
+        "title": "Microsoft's new MAI models",
+        "summary": "微软发布两款新文本LLM：MAI-Thinking-1（推理模型，1T总参数，35B活跃参数，仅限早期合作伙伴）和MAI-Code-1-Flash（137B总参数，5B活跃参数，专为GitHub Copilot和VS Code优化，以降低推理成本），并在盲测中声称MAI-Thinking-1优于Sonnet 4.6。",
+        "take": "低活跃参数（35B、5B）高总参数的MoE架构已成为降低推理成本的关键路径，开发者应关注此类模型在本地部署和Agent工作流中的性价比优势。MAI-Code-1-Flash证明了针对特定工具链（如Copilot）精调的小型专用模型，可在保持性能的同时大幅降低API调用开销，建议在构建AI编码助手时优先评估此类模型。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-05-github-copilot-app-the-agent-native-desktop-experience",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+        "publishedDate": "2026-06-02",
+        "title": "GitHub Copilot app: The agent-native desktop experience",
+        "summary": "GitHub 在 Microsoft Build 2026 发布了基于代理原生架构的桌面版 Copilot 应用，将代码补全工具升级为独立桌面 Agent 交互界面。",
+        "take": "该应用标志着 Copilot 从 IDE 插件向独立 Agent 工作台的范式转变，开发者可直接在桌面环境中与 AI Agent 进行多轮、跨文件的复杂编程任务交互。建议评估其对于本地文件系统访问和异步任务编排的能力，以确定是否可取代现有 IDE 插件成为新的默认开发入口。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-06-adding-mcp-tools-to-reachy-mini",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+        "publishedDate": "2026-06-03",
+        "title": "Adding MCP Tools to Reachy Mini",
+        "summary": "Pollen Robotics 将 MCP（Model Context Protocol）集成到 Reachy Mini 机器人，实现通过标准化接口将大模型作为工具调用机器人动作与传感器能力。",
+        "take": "MCP 为物理机器人提供统一的工具抽象层，使得任何支持 MCP 的 AI Agent 无需定制适配即可直接控制机器人执行抓取、移动等操作，大幅降低机器人技能与 LLM 集成的工程成本。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-07-signed-urls-are-now-available-for-vercel-blob",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/signed-urls-are-now-available-for-vercel-blob",
+        "publishedDate": "2026-06-02",
+        "title": "Signed URLs are now available for Vercel Blob",
+        "summary": "Vercel Blob 新增支持生成限时、单操作（上传、下载、查看、删除）签名的 URL，并支持浏览器直传大文件和条件删除，提升对象存储安全性和无服务器工作流效率。",
+        "take": "此更新简化了基于 Blob 存储的 RAG 管道中文件访问控制，开发者可直接在客户端生成带过期时间的 PUT URL 实现安全直传，减少服务器中转；利用 DELETE 的 ifMatch 选项可避免并发场景下的数据覆盖冲突，建议在代理文件操作时集成签名 URL 以替代全局密钥管理。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-08-builder-theme-knowing-what-your-customers-want-all-the-time-listen-labs-alfred-wahlforss",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=Rumft-rsEu4",
+        "title": "Builder Theme: Knowing What Your Customers Want, All the Time: Listen Labs' Alfred Wahlforss",
+        "summary": "Listen Labs 推出 AI 优先的客户研究平台，通过自动化数千次语音访谈并构建用户画像，实现对亿级受众的精准分层与专家识别。",
+        "take": "核心工程信号是：将大规模语音访谈数据转化为可搜索的用户画像数据库，替代传统定性调研的抽样局限。AI builders 可借鉴此模式，构建基于对话的持续用户洞察引擎，而非一次性调查，从而动态追踪客户需求变化。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-09-builder-theme-sam-altman-on-one-of-the-quotes-i-find-most-inspiring-on-a-hard-day-whatever-your",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2061828631089844709",
+        "title": "Builder Theme: Sam Altman on one of the quotes i find most inspiring on a hard day: \"Whatever your...",
+        "summary": "Sam Altman 引用《传道书》9:10 激励AI建设者全力以赴，强调在有限的生命中最大化行动与创造。",
+        "take": "开发AI系统时，应优先执行高价值工程决策，避免过度规划或理论空转；代理工作流中需设计明确的完成点，以在资源有限下输出可部署成果。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-03-10-builder-theme-thariq-on",
+        "briefingId": "rss-2026-06-03",
+        "date": "2026-06-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2061907337154367865",
+        "title": "Builder Theme: Thariq on",
+        "summary": "一名AI构建者在推文中分享了一种新的工作流架构，旨在通过模块化设计提升代理系统的可扩展性与调试效率。",
+        "take": "核心工程信号是采用基于事件的解耦模式，取代传统的链式调用，这能显著降低状态管理复杂度。建议立即在代理框架中实验事件驱动架构，以应对多步骤任务的协调挑战。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
