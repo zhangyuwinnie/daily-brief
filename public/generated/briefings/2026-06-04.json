@@ -1,0 +1,175 @@
+{
+  "date": "2026-06-04",
+  "briefings": [
+    {
+      "id": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-04",
+      "filePath": "2026-06-04.md",
+      "summaryTopline": "How Endava is redesigning software delivery around AI agents",
+      "insightIds": [
+        "rss-2026-06-04-01-how-endava-is-redesigning-software-delivery-around-ai-agents",
+        "rss-2026-06-04-02-introducing-new-capabilities-to-gpt-rosalind",
+        "rss-2026-06-04-03-datasette-agent-micropython-01a0",
+        "rss-2026-06-04-04-micropython-wasm-01a1",
+        "rss-2026-06-04-05-designing-the-hf-cli-as-an-agent-optimized-way-to-work-with-the-hub",
+        "rss-2026-06-04-06-builder-theme-the-rise-of-the-full-stack-builder-and-hyper-leveraged-generalist-with-microsoft-ceo-satya-nadella",
+        "rss-2026-06-04-07-builder-theme-thibault-sottiaux-on-hi-over-the-last-24-hours-we-had-three-separate-small-incidents-that",
+        "rss-2026-06-04-08-builder-theme-garry-tan-on-san-francisco-is-healing-we-dont-fall-for-this-type-of-ridiculous-g"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-04-01-how-endava-is-redesigning-software-delivery-around-ai-agents",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/endava-frontiers",
+      "publishedDate": "2026-06-04",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "summary": "Endava 正利用 OpenAI 的 Codex 和 ChatGPT Enterprise，将 AI 智能体嵌入软件交付全流程，以此重构传统开发工作流并建立企业级 AI 原生文化。",
+      "take": "核心工程信号是：以 Codex 为代表的代碼生成模型正从辅助工具升级为工作流中的主动代理节点，能够直接参与需求分析、代码审查和自动化部署。开发者应重点研究如何将 AI 智能体接入现有 CI/CD 流水线，而非仅将其视为编码助手，从而构建真正自主的交付循环。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-04-02-introducing-new-capabilities-to-gpt-rosalind",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "publishedDate": "2026-06-03",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "summary": "OpenAI 发布 GPT-Rosalind 新能力，增强其生物学推理、药物化学、基因组分析及实验工作流处理能力，作为领域专用模型。",
+      "take": "这一更新验证了将通用大模型微调为特定科学领域工作流代理的可行性，开发者可效仿此模式构建垂直领域的推理与自动化 Agent。重点关注其生物实验工作流整合的端到端设计，这为 AI 在科研自动化中的落地提供了直接参考。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-04-03-datasette-agent-micropython-01a0",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
+      "publishedDate": "2026-06-02",
+      "title": "datasette-agent-micropython 0.1a0",
+      "summary": "Simon Willison 发布 datasette-agent-micropython 0.1a0，通过将 Python 代码执行限制在 WebAssembly 沙箱中，实现 Datasette Agent 安全生成并运行代码，且 GPT-5.5 尚未突破该沙箱。",
+      "take": "该发布验证了使用 WebAssembly 作为 AI 代理代码执行沙箱的可行性，为构建安全的自主代码生成 Agent 提供了关键架构参考；开发者应关注其沙箱隔离机制的鲁棒性及模型逃逸测试结果。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-04-04-micropython-wasm-01a1",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
+      "publishedDate": "2026-06-02",
+      "title": "micropython-wasm 0.1a1",
+      "summary": "Simon Willison 釋出 micropython-wasm 0.1a1，修復了在構建 datasette-agent-micropython 時暴露的限制，實現以 WebAssembly 沙盒執行 MicroPython 作為代理的執行環境。",
+      "take": "此版本讓 AI 代理可直接在瀏覽器或伺服器端 Wasm 隔離環境中安全執行 Python 程式碼，無需傳統容器或子程序。對開發者而言，這意味著可以將使用者定義的代理邏輯以 MicroPython 形式沙盒化執行，顯著降低代理工具的部署複雜度與安全風險。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-04-05-designing-the-hf-cli-as-an-agent-optimized-way-to-work-with-the-hub",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/hf-cli-for-agents",
+      "publishedDate": "2026-06-04",
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "summary": "Hugging Face 发布了 hf CLI 的 agent 优化版本，通过结构化命令和 JSON 输出，使 AI 代理能直接与 Hub 交互进行模型、数据集和空间的查找、下载与上传。",
+      "take": "核心工程信号是 CLI 被设计为 MCP（Model Context Protocol）式的工具接口，开发者应将其集成到 agent 的工具链中，以替代传统 REST API 调用，实现自然语言驱动的 Hub 资产编排。这预示着 AI 代理将直接操控机器学习平台基础设施，而非仅通过聊天界面交互。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-04-06-builder-theme-the-rise-of-the-full-stack-builder-and-hyper-leveraged-generalist-with-microsoft-ceo-satya-nadella",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+      "title": "Builder Theme: The Rise of the Full-Stack Builder and Hyper-Leveraged Generalist with Microsoft CEO Satya Nadella",
+      "summary": "Satya Nadella 阐述了微软的战略从手动构建 Azure 网络基础设施转向构建自动化代理系统，该代理系统能够自主管理网络，并指出过去15个月建设的 Azure 容量超过了前15年的总和。",
+      "take": "核心工程信号是：基础设施管理的范式正从手动运维向完全自主的代理系统转变，构建者应专注于设计能自我管理和优化网络资源的代理架构。这意味着未来 AI 工作流的瓶颈不再是物理硬件部署，而是代理的可靠性与可扩展性。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-04-07-builder-theme-thibault-sottiaux-on-hi-over-the-last-24-hours-we-had-three-separate-small-incidents-that",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2062329981548802523",
+      "title": "Builder Theme: Thibault Sottiaux on Hi. Over the last 24 hours we had three separate small incidents that...",
+      "summary": "Thibault Sottiaux报告Codex在过去24小时内发生三次小型可靠性事故，已重置所有付费计划的使用限制以恢复服务。",
+      "take": "修复可靠性事故后重置使用限制是标准运维操作，但频繁事故表明需强化Codex的容错与监控机制，AI依赖此API的流水线应内置重试与降级逻辑。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-04-08-builder-theme-garry-tan-on-san-francisco-is-healing-we-dont-fall-for-this-type-of-ridiculous-g",
+      "briefingId": "rss-2026-06-04",
+      "date": "2026-06-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2062285811366904091",
+      "title": "Builder Theme: Garry Tan on San Francisco is healing. We don't fall for this type of ridiculous g...",
+      "summary": "Garry Tan 宣称旧金山正在恢复，并拒绝接受外界对其负面描述，但未涉及任何具体技术、架构或工程机制。",
+      "take": "该内容无工程信号。AI 构建者应忽略此类城市叙事，专注于可验证的技术栈变化、模型能力突破或工具链革新。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

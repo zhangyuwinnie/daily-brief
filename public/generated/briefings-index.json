@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-04",
     "2026-06-03",
     "2026-06-02",
     "2026-06-01",
@@ -114,6 +115,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-04": {
+      "briefingIds": [
+        "rss-2026-06-04"
+      ],
+      "insightIds": [
+        "rss-2026-06-04-01-how-endava-is-redesigning-software-delivery-around-ai-agents",
+        "rss-2026-06-04-02-introducing-new-capabilities-to-gpt-rosalind",
+        "rss-2026-06-04-03-datasette-agent-micropython-01a0",
+        "rss-2026-06-04-04-micropython-wasm-01a1",
+        "rss-2026-06-04-05-designing-the-hf-cli-as-an-agent-optimized-way-to-work-with-the-hub",
+        "rss-2026-06-04-06-builder-theme-the-rise-of-the-full-stack-builder-and-hyper-leveraged-generalist-with-microsoft-ceo-satya-nadella",
+        "rss-2026-06-04-07-builder-theme-thibault-sottiaux-on-hi-over-the-last-24-hours-we-had-three-separate-small-incidents-that",
+        "rss-2026-06-04-08-builder-theme-garry-tan-on-san-francisco-is-healing-we-dont-fall-for-this-type-of-ridiculous-g"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-03": {
       "briefingIds": [
         "rss-2026-06-03"
