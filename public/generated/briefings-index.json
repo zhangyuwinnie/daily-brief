@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-05",
     "2026-06-04",
     "2026-06-03",
     "2026-06-02",
@@ -115,6 +116,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-05": {
+      "briefingIds": [
+        "rss-2026-06-05"
+      ],
+      "insightIds": [
+        "rss-2026-06-05-01-quoting-andreas-kling",
+        "rss-2026-06-05-02-ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy",
+        "rss-2026-06-05-03-github-universe-is-back-all-together-now-in-the-agentic-era",
+        "rss-2026-06-05-04-updates-to-legal-terms",
+        "rss-2026-06-05-05-nemotron-3-ultra-now-available-on-ai-gateway",
+        "rss-2026-06-05-06-builder-theme-openais-dan-roberts-why-ai-can-now-make-discoveries",
+        "rss-2026-06-05-07-builder-theme-sam-altman-on-man-the-early-days-of-the-internet-were-so-special",
+        "rss-2026-06-05-08-builder-theme-thibault-sottiaux-on-were-fixing-a-codex-bug-today-that-was-causing-us-to-undercount-toke"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-04": {
       "briefingIds": [
         "rss-2026-06-04"
