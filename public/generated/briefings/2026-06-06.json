@@ -1,0 +1,193 @@
+{
+  "date": "2026-06-06",
+  "briefings": [
+    {
+      "id": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-06",
+      "filePath": "2026-06-06.md",
+      "summaryTopline": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+      "insightIds": [
+        "rss-2026-06-06-01-unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+        "rss-2026-06-06-02-running-python-code-in-a-sandbox-with-micropython-and-wasm",
+        "rss-2026-06-06-03-openai-help-lockdown-mode",
+        "rss-2026-06-06-04-sx26p-500-rejects-spacex-also-blocking-entry-for-openai-and-anthropic",
+        "rss-2026-06-06-05-drives-for-vercel-sandbox-in-private-beta",
+        "rss-2026-06-06-06-llm-research-papers-the-2026-list-january-to-may",
+        "rss-2026-06-06-07-builder-theme-the-saas-apocalypse-is-a-goldmine-with-figmas-matt-colyer",
+        "rss-2026-06-06-08-builder-theme-claude-on-weve-doubled-usage-limits-in-claude-cowork-for-the-next-month-deleg",
+        "rss-2026-06-06-09-builder-theme-boris-cherny-on-we-doubled-claude-cowork-usage-limits-for-the-next-month-this-applie"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-06-01-unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+      "publishedDate": "2026-06-05",
+      "title": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+      "summary": "Google 在 Gemini Enterprise Agent Platform 中发布了 Agentic RAG 架构，通过将传统 RAG 的检索与生成流程解耦为动态路由、多步推理和工具调用，实现了对复杂查询的可靠响应。",
+      "take": "核心工程范式是使用智能体代理替代固定检索-生成管道，让 LLM 主动规划检索策略、调用外部 API 或本地工具，并验证中间结果以提升事实一致性。开发者应关注如何为代理设计明确的决策边界（如何时停止检索或回退到默认回答），并利用结构化数据（如数据库查询）与向量检索的混合策略来减少幻觉。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-06-02-running-python-code-in-a-sandbox-with-micropython-and-wasm",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+      "publishedDate": "2026-06-06",
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "summary": "Simon Willison 发布了 micropython-wasm 实验性包，通过将 MicroPython 编译为 WebAssembly 在浏览器或服务器端沙箱中执行 Python 代码，作为 Datasette Agent 的代码执行沙箱插件。",
+      "take": "利用 WebAssembly 隔离 Python 运行时，无需依赖操作系统级沙箱或 Docker，即可安全执行用户提交的代码。这对构建 coding agent 或 RAG 中的代码执行模块提供了轻量、可嵌入的工程方案，但需注意 MicroPython 标准库有限，仅适用简单脚本场景。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-06-03-openai-help-lockdown-mode",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
+      "publishedDate": "2026-06-05",
+      "title": "OpenAI Help: Lockdown Mode",
+      "summary": "OpenAI 正式推出 Lockdown Mode，通过限制出站网络请求来阻止提示注入攻击的最后阶段——数据外泄，但不阻止提示注入本身影响模型行为。",
+      "take": "该模式仅阻断数据外传通道，而非防御注入攻击本身，因此开发者仍需在应用层实施输入验证与安全上下文分离。对于构建处理用户上传文件或网页缓存的 Agent 工作流，应假设 Lockdown Mode 无法防止恶意内容影响响应准确性，需结合沙箱或权限隔离机制。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-06-04-sx26p-500-rejects-spacex-also-blocking-entry-for-openai-and-anthropic",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+      "publishedDate": "2026-06-05",
+      "title": "S&#x26;P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+      "summary": "标普500指数拒绝为SpaceX、OpenAI和Anthropic等未盈利的科技巨头破例准入，维持其盈利性门槛规则。",
+      "take": "这是一个信号，表明传统资本市场指数构成规则对高估值但未盈利的AI公司仍保持严格壁垒。AI创业者需注意，依赖二级市场退出路径可能受限，应优先考虑私募融资或直接上市而非被动等待指数纳入。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-06-05-drives-for-vercel-sandbox-in-private-beta",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta",
+      "publishedDate": "2026-06-05",
+      "title": "Drives for Vercel Sandbox in Private Beta",
+      "summary": "Vercel Sandbox 推出私有测试版 Drives 功能，提供生命周期独立于沙箱的持久化可挂载存储，支持跨沙箱保留智能体工作区、代码仓库、依赖及构建产物。",
+      "take": "Drives 将沙箱状态持久化与计算隔离解耦，使 AI 智能体可在每次会话间保持工作区上下文，避免重复克隆仓库或安装依赖。开发者需使用 beta SDK（@vercel/sandbox@beta）或 CLI 创建并挂载驱动器，目前仅支持单沙箱读写挂载，不适合生产数据。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-06-06-llm-research-papers-the-2026-list-january-to-may",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Ahead of AI",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+      "publishedDate": "2026-06-06",
+      "title": "LLM Research Papers: The 2026 List (January to May)",
+      "summary": "Sebastian Raschka 发布了 2026 年 1 月至 5 月的重要 LLM 研究论文清单，涵盖架构改进、训练优化与推理效率等核心方向。",
+      "take": "开发者应重点关注这些论文中提出的新型注意力机制、稀疏化方法或对齐技术，以便在下一版模型或工具链中直接引入或集成，提升语义理解与部署效率。",
+      "topics": [
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-06-07-builder-theme-the-saas-apocalypse-is-a-goldmine-with-figmas-matt-colyer",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/watch?v=kYKebKB3-d0",
+      "title": "Builder Theme: The SaaS Apocalypse Is a Goldmine With Figma’s Matt Colyer",
+      "summary": "Figma的Matt Colyer提出，AI将推动全球开发者数量从数千万激增至数十亿，引发SaaS行业的“末日”转型，实质是软件开发民主化带来的数量级跃升。",
+      "take": "AI builders应关注这一趋势下工具链的根本转变：从服务专业开发者转向服务海量“公民开发者”，这意味着产品需重新设计为低代码/无代码代理接口，并优先考虑自动化协作而非手动操作。核心工程信号是，构建可被AI自主调用的API和组件化工作流将成为新护城河。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-06-08-builder-theme-claude-on-weve-doubled-usage-limits-in-claude-cowork-for-the-next-month-deleg",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2063018337567670285",
+      "title": "Builder Theme: Claude on We've doubled usage limits in Claude Cowork for the next month. Deleg...",
+      "summary": "Claude AI 宣布在Claude Cowork中将未来一个月的使用限制翻倍，允许用户委托更大、更复杂的任务给Claude。",
+      "take": "此变动直接提升了AI代理的吞吐量和任务复杂度上限，工程团队可借此规划更长时间跨度的自动化工作流，减少人工介入频率。应关注限频策略的调整对资源分配和成本模型的影响。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-06-09-builder-theme-boris-cherny-on-we-doubled-claude-cowork-usage-limits-for-the-next-month-this-applie",
+      "briefingId": "rss-2026-06-06",
+      "date": "2026-06-06",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2063028954546733462",
+      "title": "Builder Theme: Boris Cherny on We doubled Claude Cowork usage limits for the next month. This applie...",
+      "summary": "Boris Cherny 宣布将 Claude Cowork 的月度使用限制翻倍，具体针对5小时速率限制生效。",
+      "take": "对于依赖 Claude Cowork 进行大规模或复杂项目的开发者，这是短期内提升吞吐量的直接机会。可优先处理积压的杂乱代码库或高成本任务，以利用这一限时资源扩容。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
