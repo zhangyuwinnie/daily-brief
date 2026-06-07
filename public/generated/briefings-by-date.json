@@ -24913,5 +24913,116 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-07": {
+    "date": "2026-06-07",
+    "briefings": [
+      {
+        "id": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-07",
+        "filePath": "2026-06-07.md",
+        "summaryTopline": "Anthropic, please ship an official Claude Desktop for Linux",
+        "insightIds": [
+          "rss-2026-06-07-01-anthropic-please-ship-an-official-claude-desktop-for-linux",
+          "rss-2026-06-07-02-sponsors-especially-openai-codex-voucher-usage-for-codex-openai-challange",
+          "rss-2026-06-07-03-builder-theme-ep-89-ai-research-legends-honest-assessment-of-where-we-are",
+          "rss-2026-06-07-04-builder-theme-amjad-masad-on-when-i-spoke-out-against-the-gaza-genocide-a-bunch-of-midwit-vcs-gan",
+          "rss-2026-06-07-05-builder-theme-aaron-levie-on-token-costs-are-becoming-one-of-the-hottest-topics-for-any-enterprise"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-07-01-anthropic-please-ship-an-official-claude-desktop-for-linux",
+        "briefingId": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/65697",
+        "publishedDate": "2026-06-05",
+        "title": "Anthropic, please ship an official Claude Desktop for Linux",
+        "summary": "Anthropic社区用户强烈要求官方发布Claude Desktop的Linux版本，当前仅提供命令行界面Claude Code，导致Linux开发者缺乏原生桌面集成与图形界面体验。",
+        "take": "对于依赖Linux开发环境的AI构建者，当前需自行封装Claude Code的UI层或等待第三方工具填补空白；若Anthropic长期不推出官方桌面版，可能削弱其Agent工具链在Linux生态中的采用率，也提示开发者需评估跨平台工作流的替代方案。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-07-02-sponsors-especially-openai-codex-voucher-usage-for-codex-openai-challange",
+        "briefingId": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/build-small-hackathon/sponsors-vouchers",
+        "publishedDate": "2026-06-07",
+        "title": "Sponsors especially OPENAI CODEX voucher usage for codex - openAI challange",
+        "summary": "OpenAI在小型黑客松中提供Codex代金券作为赞助，开发者可通过申请获得付费API额度以调用Codex模型进行代码生成任务。",
+        "take": "开发者应关注利用赞助代金券降低Codex实验成本，重点测试其在代码补全、生成和调试中的实际工程效率提升，而非依赖免费层限制。",
+        "topics": [
+          "Coding Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-07-03-builder-theme-ep-89-ai-research-legends-honest-assessment-of-where-we-are",
+        "briefingId": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Unsupervised Learning",
+        "sourceUrl": "https://www.youtube.com/watch?v=N1geOimmdDo",
+        "title": "Builder Theme: Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
+        "summary": "Anthropic通过战略聚焦编程领域实现差异化突破，而OpenAI采取通用聊天路线，同时探讨现有推理方法是否足够支撑AI通用化的问题。",
+        "take": "推理本身可能不足以实现通用泛化，需要探索其他架构范式。对Builder而言，选择垂直领域（如编码）进行深度优化，而非追求通用能力，可能是获取实际工程优势的可行路径。",
+        "topics": [
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-07-04-builder-theme-amjad-masad-on-when-i-spoke-out-against-the-gaza-genocide-a-bunch-of-midwit-vcs-gan",
+        "briefingId": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2063344460705288401",
+        "title": "Builder Theme: Amjad Masad on When I spoke out against the Gaza genocide, a bunch of midwit VCs gan...",
+        "summary": "Amjad Masad 公开反对加沙种族灭绝后，遭遇部分风投资本家公开与私下攻击，同时得到另一批风投资本家支持，认为坚守信念可自动筛选出道德与回报率更高的合作者。",
+        "take": "对 AI 构建者而言，在涉及价值观的公开立场上保持一致性，可促使潜在合作者自我筛选，减少与短期逐利、缺乏长期信任基础的资本方合作的隐性成本。此模式适用于构建开源生态或去中心化协作网络时的共识机制设计。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-07-05-builder-theme-aaron-levie-on-token-costs-are-becoming-one-of-the-hottest-topics-for-any-enterprise",
+        "briefingId": "rss-2026-06-07",
+        "date": "2026-06-07",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2063320673217609936",
+        "title": "Builder Theme: Aaron Levie on Token costs are becoming one of the hottest topics for any enterprise...",
+        "summary": "Aaron Levie 指出，企业级 AI 应用中 Token 成本已成为核心议题，驱动规模化使用，并催生模型路由（Model Routing）作为应用层新的差异化竞争点。",
+        "take": "Token 成本规模化后，AI builders 应将模型路由作为核心架构，将高难度任务分配给前沿模型，低难度任务路由至低成本模型，以优化 token 效率与总成本。这要求代理工作流必须集成动态模型选择逻辑，而非固定调用单一模型。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
