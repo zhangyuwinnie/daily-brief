@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-08",
     "2026-06-07",
     "2026-06-06",
     "2026-06-05",
@@ -118,6 +119,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-08": {
+      "briefingIds": [
+        "rss-2026-06-08"
+      ],
+      "insightIds": [
+        "rss-2026-06-08-01-datasette-agent-edit-01a0",
+        "rss-2026-06-08-02-the-open-source-community-is-backing-openenv-for-agentic-rl",
+        "rss-2026-06-08-03-builder-theme-peter-steinberger-on-heres-your-monthly-reminder-that-you-shouldnt-be-prompting-coding-a",
+        "rss-2026-06-08-04-builder-theme-thibault-sottiaux-on-i-have-a-new-kind-of-big-button-that-i-can-press-for-codex-over-the"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-07": {
       "briefingIds": [
         "rss-2026-06-07"
