@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-09",
     "2026-06-08",
     "2026-06-07",
     "2026-06-06",
@@ -119,6 +120,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-09": {
+      "briefingIds": [
+        "rss-2026-06-09"
+      ],
+      "insightIds": [
+        "rss-2026-06-09-01-confidential-submission-of-draft-s-1-to-the-sec",
+        "rss-2026-06-09-02-built-to-benefit-everyone-our-plan",
+        "rss-2026-06-09-03-fluid-natural-voice-translation-with-gemini-35-live-translate",
+        "rss-2026-06-09-04-measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond",
+        "rss-2026-06-09-05-siri-ai-at-wwdc-2026",
+        "rss-2026-06-09-06-microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers",
+        "rss-2026-06-09-07-apple-reveals-new-ai-architecture-built-around-google-gemini-models",
+        "rss-2026-06-09-08-how-an-agent-built-a-3d-paris-gallery-by-chaining-two-hugging-face-spaces",
+        "rss-2026-06-09-09-deepseek-enters-the-fight-for-token-volume-anthropic-continues-to-dominate-spend",
+        "rss-2026-06-09-10-builder-theme-sam-altman-on-here-is-our-current-plan-for-openai",
+        "rss-2026-06-09-11-builder-theme-claude-on-final-stop-tokyo-register-to-hear-directly-from-the-teams-behind-cl",
+        "rss-2026-06-09-12-builder-theme-building-intelligent-apps-for-apple-platforms-with-claude-in-the-foundation-models-framework"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-08": {
       "briefingIds": [
         "rss-2026-06-08"
