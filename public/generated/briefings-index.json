@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-10",
     "2026-06-09",
     "2026-06-08",
     "2026-06-07",
@@ -120,6 +121,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-10": {
+      "briefingIds": [
+        "rss-2026-06-10"
+      ],
+      "insightIds": [
+        "rss-2026-06-10-01-initial-impressions-of-claude-fable-5",
+        "rss-2026-06-10-02-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+        "rss-2026-06-10-03-setting-a-custom-price-for-a-model-in-agentsview",
+        "rss-2026-06-10-04-budgets-for-api-keys-on-ai-gateway",
+        "rss-2026-06-10-05-what-codex-unlocks-for-notion",
+        "rss-2026-06-10-06-how-engineers-at-nextdoor-use-codex-to-build-without-limits",
+        "rss-2026-06-10-07-claude-fable-5-now-available-on-ai-gateway",
+        "rss-2026-06-10-08-claude-fable-5-and-new-ai-safety-fables",
+        "rss-2026-06-10-09-can-voice-agents-handle-bilingual-customers-benchmarking-frontier-asr-on-code-switched-speech",
+        "rss-2026-06-10-10-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+        "rss-2026-06-10-11-builder-theme-andrej-karpathy-on-this-is-a-super-exciting-release-claude-fable-5-is-the-same-underly",
+        "rss-2026-06-10-12-builder-theme-boris-cherny-on-fable-5-is-the-biggest-step-up-ive-felt-in-our-models-since-opus-45"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-09": {
       "briefingIds": [
         "rss-2026-06-09"

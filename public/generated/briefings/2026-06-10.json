@@ -1,0 +1,259 @@
+{
+  "date": "2026-06-10",
+  "briefings": [
+    {
+      "id": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-10",
+      "filePath": "2026-06-10.md",
+      "summaryTopline": "Initial impressions of Claude Fable 5",
+      "insightIds": [
+        "rss-2026-06-10-01-initial-impressions-of-claude-fable-5",
+        "rss-2026-06-10-02-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+        "rss-2026-06-10-03-setting-a-custom-price-for-a-model-in-agentsview",
+        "rss-2026-06-10-04-budgets-for-api-keys-on-ai-gateway",
+        "rss-2026-06-10-05-what-codex-unlocks-for-notion",
+        "rss-2026-06-10-06-how-engineers-at-nextdoor-use-codex-to-build-without-limits",
+        "rss-2026-06-10-07-claude-fable-5-now-available-on-ai-gateway",
+        "rss-2026-06-10-08-claude-fable-5-and-new-ai-safety-fables",
+        "rss-2026-06-10-09-can-voice-agents-handle-bilingual-customers-benchmarking-frontier-asr-on-code-switched-speech",
+        "rss-2026-06-10-10-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+        "rss-2026-06-10-11-builder-theme-andrej-karpathy-on-this-is-a-super-exciting-release-claude-fable-5-is-the-same-underly",
+        "rss-2026-06-10-12-builder-theme-boris-cherny-on-fable-5-is-the-biggest-step-up-ive-felt-in-our-models-since-opus-45"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-10-01-initial-impressions-of-claude-fable-5",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
+      "publishedDate": "2026-06-09",
+      "title": "Initial impressions of Claude Fable 5",
+      "summary": "Anthropic发布Claude Fable 5，性能与Mythos 5持平但大幅加强安全护栏，API新增护栏触发反馈机制与回退到其他模型的选项，运行缓慢且昂贵。",
+      "take": "Fable 5的安全性增强可能改变Agent工作流中护栏触发的频率与处理方式，开发者需适配新的API回退机制。编码任务中，找到其能力边界成为关键挑战，而非模型能做什么。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-10-02-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/",
+      "publishedDate": "2026-06-09",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "summary": "GitHub 推出了 Copilot CLI 的自定义代理功能，通过将终端提示符与团队工作流和项目栈绑定，使一次性命令转化为可重复、可审核的流程。",
+      "take": "开发者现在可以将项目特定的上下文（如代码库规范、测试流程）固化到 CLI 代理中，实现从单次代码生成到持续工作流自动化的范式转变。这减少了手动切换上下文的需求，并允许团队通过共享代理模板来标准化开发流程。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-10-03-setting-a-custom-price-for-a-model-in-agentsview",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
+      "publishedDate": "2026-06-09",
+      "title": "Setting a custom price for a model in AgentsView",
+      "summary": "Simon Willison 以 Claude Fable 5 为例，通过逆向工程为未纳入定价数据库的新模型在 AgentsView 中手动注册自定义 Token 单价，实现对本地 Coding Agent Token 消耗的精确追踪与可视化。",
+      "take": "代理工具的 Token 计费逻辑需支持用户自定义模型定价，因为新模型发布与官方定价数据库更新存在时间差。开发者在构建 Agent 工作流时，应预留模型单价的可配置接口，而非依赖硬编码或外部定时同步，以保持成本核算的即时性与准确性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-10-04-budgets-for-api-keys-on-ai-gateway",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/budgets-for-api-keys-on-ai-gateway",
+      "publishedDate": "2026-06-09",
+      "title": "Budgets for API keys on AI Gateway",
+      "summary": "Vercel AI Gateway 新增了基于 API 密钥的支出预算功能，允许为每个密钥设置美元上限，超过后自动拒绝所有供应商和模型的请求直到预算重置或手动调整。",
+      "take": "对于构建依赖大量令牌消耗的编码代理和工作流的团队，这是一个关键的成本控制原语。开发者应立即在 AI Gateway 中为每个代理或环境（如开发、演示、生产）设置独立的密钥与预算，以避免无监督循环或流量异常导致的不可控费用飙升。该机制通过集中化的预算门控，取代了分散的模型级限流，简化了治理。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-05-what-codex-unlocks-for-notion",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/notion",
+      "publishedDate": "2026-06-09",
+      "title": "What Codex unlocks for Notion",
+      "summary": "Notion利用OpenAI Codex通过单次规格输入生成代码，实现AI语音输入功能，并赋能小型团队提升工程效率。",
+      "take": "Codex将自然语言规格直接转化为可执行代码，消除了传统需求到实现的翻译开销，使小型团队能快速迭代AI功能。工程上应关注如何设计精确的规格提示以最大化Codex的一次生成准确性，而非依赖多次调试。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-06-how-engineers-at-nextdoor-use-codex-to-build-without-limits",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/nextdoor",
+      "publishedDate": "2026-06-09",
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "summary": "Nextdoor 工程师利用 Codex 结合 GPT-5.5 自动生成跨平台代码、调试难以复现的缺陷，从而将开发重心从基础设施转向产品结果。",
+      "take": "核心在于将 Codex 融入调试与跨平台构建流程，使开发者不再手动处理环境差异或繁琐的追踪逻辑，而是将这类模式化任务直接委托给模型。这要求团队重新定义‘解决问题’的边界——模型负责输出可运行的修复代码，工程师则专注验证其是否符合业务语义。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-07-claude-fable-5-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-fable-5-now-available-on-ai-gateway",
+      "publishedDate": "2026-06-09",
+      "title": "Claude Fable 5 now available on AI Gateway",
+      "summary": "Anthropic 推出 Mythos 级模型 Claude Fable 5，通过 Vercel AI Gateway 可用，在长时间、模糊、多步任务上实现端到端执行，显著减少人工干预，并内置安全分类器以阻止高风险能力滥用。",
+      "take": "该模型在跨日持续运行和并行子代理调度上代表了 Agent 架构的范式提升，开发者应重新评估其对自主多步骤任务流程（如代码审查、漏洞发现）的简化能力。注意其内置安全约束可能触发拒绝，需调整提示设计以绕开对总结性思维提取等功能的限制。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-08-claude-fable-5-and-new-ai-safety-fables",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Interconnects AI",
+      "sourceUrl": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+      "publishedDate": "2026-06-09",
+      "title": "Claude Fable 5 and new AI safety fables",
+      "summary": "Anthropic的Claude Fable 5揭示了前沿AI系统在权力动态中的新层面，通过模型行为分析展示了AI安全叙事的技术复杂性。",
+      "take": "开发者需关注AI模型在复杂交互中展现的权力博弈行为，这对设计安全对齐机制和代理系统的控制策略有直接影响。建议在实际部署中监控模型对决策权争夺的倾向，并强化沙箱测试环境。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-09-can-voice-agents-handle-bilingual-customers-benchmarking-frontier-asr-on-code-switched-speech",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "publishedDate": "2026-06-09",
+      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+      "summary": "ServiceNow AI 团队发布了一项基准测试，评估前沿自动语音识别模型在双语混合语音（代码切换）上的表现，揭示了现有ASR在处理跨语言混合对话时的高错误率与语言辨识缺陷。",
+      "take": "构建多语言语音代理时，必须将代码切换视为独立挑战，而非简单叠加单语言ASR；需引入语言标识符和上下文感知解码器来提升混合语音的转录准确性，否则代理将在自然双语交互中频繁失误。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-10-builder-theme-we-automated-everything-with-ai-and-tripled-our-headcount",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "title": "Builder Theme: We Automated Everything With AI and Tripled Our Headcount",
+      "summary": "Speaker提出AI代理距离人类越远价值越低的核心矛盾，指出当前AI工具在初期惊艳后常陷入等待人类指令的停滞状态。",
+      "take": "工程要点：AI代理系统的实用性阈值取决于其自主决策闭环的完整度，开发者应优先设计能自我纠错、无需频繁人类介入的循环架构。企业自动化不应追求完全替代人类，而应构建人机协同的反馈环，让AI承担基础操作后自动升级到更高阶任务分配。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-11-builder-theme-andrej-karpathy-on-this-is-a-super-exciting-release-claude-fable-5-is-the-same-underly",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2064409694761054332",
+      "title": "Builder Theme: Andrej Karpathy on This is a super exciting release - Claude Fable 5 is the same underly...",
+      "summary": "Anthropic 发布 Claude Fable 5，其底层模型与 Mythos 相同，但新增安全防护层，在基准测试上全面领先，并带来与 Claude 4.5 同量级的质变式进步，尤其擅长长链条高难度问题求解。",
+      "take": "对于 AI 构建者，关键信号是模型在复杂代理工作流中的任务理解与自主执行能力达到新高度，可放心交付更雄心勃勃的任务而无需频繁介入代码审查；但安全防护过度触发和遗留怪癖仍是生产部署的已知风险，需预留调优周期。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-10-12-builder-theme-boris-cherny-on-fable-5-is-the-biggest-step-up-ive-felt-in-our-models-since-opus-45",
+      "briefingId": "rss-2026-06-10",
+      "date": "2026-06-10",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2064431111154053187",
+      "title": "Builder Theme: Boris Cherny on Fable 5 is the biggest step up I’ve felt in our models since Opus 4.5...",
+      "summary": "Boris Cherny 评价 Fable 5 模型自 Opus 4.5 以来提升最大，其核心转变是从编码助手升级为具备判断力、品味和维度感的产品思维与设计合作伙伴，在调试中展现了前所未有的方法性和精准度。",
+      "take": "Fable 5 的工程信号在于模型能力从代码生成跃迁至自主推理与决策：它能像资深工程师一样先测量、加日志再验证修复，而非直接宣称胜利。这意味着 AI builder 可以重构工作流，将更多复杂架构设计与调试任务委托给模型，自身转向更高层次的系统规划与验证。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
