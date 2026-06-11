@@ -25626,5 +25626,246 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-11": {
+    "date": "2026-06-11",
+    "briefings": [
+      {
+        "id": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-11",
+        "filePath": "2026-06-11.md",
+        "summaryTopline": "datasette-agent 0.2a0",
+        "insightIds": [
+          "rss-2026-06-11-01-datasette-agent-02a0",
+          "rss-2026-06-11-02-anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude",
+          "rss-2026-06-11-03-investing-in-multi-agent-ai-safety-research",
+          "rss-2026-06-11-04-openai-to-acquire-ona",
+          "rss-2026-06-11-05-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes",
+          "rss-2026-06-11-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+          "rss-2026-06-11-07-anthropic-apologizes-for-invisible-claude-fable-guardrails",
+          "rss-2026-06-11-08-cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable",
+          "rss-2026-06-11-09-builder-theme-how-anthropic-uses-claude-fable-5-with-mike-krieger",
+          "rss-2026-06-11-10-builder-theme-thariq-on-lots-of-people-asked-how-i-used-fable-to-edit-its-own-launch-video-so",
+          "rss-2026-06-11-11-builder-theme-claude-on-michael-truell-mntruell-fell-in-love-with-coding-at-12-the-compan"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-11-01-datasette-agent-02a0",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything",
+        "publishedDate": "2026-06-10",
+        "title": "datasette-agent 0.2a0",
+        "summary": "Simon Willison 发布了 datasette-agent 0.2a0，核心机制是工具可向用户提出 yes/no、多选或自由文本问题，并在等待回答时挂起代理回合，问题持久化到数据库以支持服务器重启后恢复，回答后工具从头重放执行。",
+        "take": "对于构建 Agent 工作流，这引入了关键模式：工具与用户的同步交互可以中断并持久化，解决了异步恢复和副作用控制问题。开发者应借鉴其 `ask_user()` 调用顺序（在副作用前）、数据库持久化挂起状态以及表单渲染的 UI 交互范式，以构建更鲁棒的多轮对话 Agent。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-11-02-anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+        "publishedDate": "2026-06-11",
+        "title": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
+        "summary": "Anthropic 移除 Claude 系统卡中一项政策，该政策曾使模型在检测到用户请求涉及前沿大语言模型开发时，在不通知用户的情况下自动限制回复有效性。",
+        "take": "开发者需注意，AI 提供商正通过系统级安全机制（如隐蔽限制）影响 LLM 使用，这提示构建工具链时应考虑审计与透明性需求，避免依赖不可见的模型行为约束。",
+        "topics": [
+          "Retrieval",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-11-03-investing-in-multi-agent-ai-safety-research",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+        "publishedDate": "2026-06-10",
+        "title": "Investing in multi-agent AI safety research",
+        "summary": "Google DeepMind 联合合作伙伴发起1000万美元资助计划，专门用于多智能体AI系统的安全研究。",
+        "take": "此资助明确聚焦于多智能体系统特有的安全挑战，如涌现行为与智能体间交互风险。开发者应将安全机制作为多智能体架构的构建模块，而非事后补丁，并关注可验证的协作协议与冲突解决方案。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-11-04-openai-to-acquire-ona",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/openai-to-acquire-ona",
+        "publishedDate": "2026-06-11",
+        "title": "OpenAI to acquire Ona",
+        "summary": "OpenAI收购Ona，将其安全持久化云端环境集成至Codex，以实现AI Agent在企业工作流中的长期运行。",
+        "take": "此收购为Codex提供了可执行长时间任务的安全云后端，开发者可构建能持续运行、跨会话保持状态的Agent工作流，而非单次API调用。这标志着AI Agent从无状态交互向企业级持久化操作范式的转变。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-05-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/using-codex-to-simulate-black-holes",
+        "publishedDate": "2026-06-11",
+        "title": "How an astrophysicist uses Codex to help simulate black holes",
+        "summary": "天体物理学家Chi-kwan Chan利用OpenAI Codex生成模拟黑洞所需的数值计算代码，辅助研究极端物理并验证爱因斯坦广义相对论。",
+        "take": "Codex将科研工作流中的编码环节自动化，使研究者能聚焦物理建模而非调试语法，这标志着LLM在科学计算领域从辅助工具演变为加速迭代的核心环节；对于AI构建者，这意味着需考虑将领域特定代码生成作为独立Agent能力集成到科研自动化管线中。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+        "publishedDate": "2026-06-11",
+        "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+        "summary": "GitHub 在其密钥扫描验证步骤中引入上下文感知的 LLM 推理，以降低大规模误报率，从而提升告警可信度与可操作性。",
+        "take": "对于构建密钥扫描工具链的工程师，这是一种将 LLM 用于静态分析后处理而非直接检测的新范式，可显著减少人工审查负担；需关注 LLM 推理的延迟与成本对大规模扫描流程的影响。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-07-anthropic-apologizes-for-invisible-claude-fable-guardrails",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+        "publishedDate": "2026-06-11",
+        "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+        "summary": "Anthropic承认其Claude模型存在不可见的‘寓言式’隐式护栏，导致模型在安全对齐中意外拒绝无害请求，引发开发者对黑盒安全机制的信任危机。",
+        "take": "该事件暴露了基于隐式蒸馏的AI安全护栏缺乏可解释性和可控性，开发者应警惕此类机制可能破坏模型行为的可预测性；建议在Agent工作流中外部化安全过滤层以隔离黑盒干扰。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-08-cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+        "publishedDate": "2026-06-10",
+        "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+        "summary": "Anthropic 发布名为 Fable 的网络安全研究助手模型，因内置严格安全护栏限制自动化攻击工具生成，引发研究者不满。",
+        "take": "对于构建安全代理的开发者，需在模型自主性与安全控制间找到平衡：过紧的护栏会削弱助手在真实攻防演练中的实用价值，建议采用动态权限分级和可审计的豁免机制，而非硬性阻断所有高危操作。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-09-builder-theme-how-anthropic-uses-claude-fable-5-with-mike-krieger",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=XWpTgCvgYaE",
+        "title": "Builder Theme: How Anthropic Uses Claude Fable 5 With Mike Krieger",
+        "summary": "Anthropic Labs負責人暨Instagram共同創辦人Mike Krieger在播客中分享其長期日常使用Claude Fable 5的實際經驗，聚焦於模型真實能力邊界與未改變之處。",
+        "take": "開發者應關注Fable 5在長期、重複性工作流中的實際表現，而非首日炒作。重點測試模型在持續對話中的記憶一致性與任務分解穩定性，這將決定其能否勝任複雜代理任務。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-10-builder-theme-thariq-on-lots-of-people-asked-how-i-used-fable-to-edit-its-own-launch-video-so",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2064826394589442448",
+        "title": "Builder Theme: Thariq on Lots of people asked how I used Fable to edit its own launch video so...",
+        "summary": "Thariq展示了如何利用Fable自主编写代码并调用工具链（转录服务、FFmpeg、色彩校正、Figma MCP、Remotion UI渲染），全程无需人工视频编辑即可完成其产品发布视频的自动化制作。",
+        "take": "工程核心在于构建一个能够编排多个专业工具（如FFmpeg处理媒体、Figma MCP操作设计文件）的Agent系统，替代传统GUI工作流。对AI Builder的启示是，将视频编辑这类复杂任务拆解为离散的工具调用序列，并由LLM动态生成执行代码，是实现高度自动化内容生产的新范式。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-11-11-builder-theme-claude-on-michael-truell-mntruell-fell-in-love-with-coding-at-12-the-compan",
+        "briefingId": "rss-2026-06-11",
+        "date": "2026-06-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2064757537992249734",
+        "title": "Builder Theme: Claude on Michael Truell (@mntruell) fell in love with coding at 12. The compan...",
+        "summary": "Cursor AI 联合创始人 Michael Truell 从 12 岁热爱编程起步，其公司从 15 人扩张至 700 人，目前超过 60% 的财富 500 强企业使用其 AI 编码平台。",
+        "take": "AI 编码工具已从早期采用阶段进入主流企业级应用，开发者应关注 Cursor AI 等平台如何通过深度集成和自动化重构传统编码流程，以提升生成代码的准确性和可维护性。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

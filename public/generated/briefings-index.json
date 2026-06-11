@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-11",
     "2026-06-10",
     "2026-06-09",
     "2026-06-08",
@@ -121,6 +122,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-11": {
+      "briefingIds": [
+        "rss-2026-06-11"
+      ],
+      "insightIds": [
+        "rss-2026-06-11-01-datasette-agent-02a0",
+        "rss-2026-06-11-02-anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude",
+        "rss-2026-06-11-03-investing-in-multi-agent-ai-safety-research",
+        "rss-2026-06-11-04-openai-to-acquire-ona",
+        "rss-2026-06-11-05-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes",
+        "rss-2026-06-11-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+        "rss-2026-06-11-07-anthropic-apologizes-for-invisible-claude-fable-guardrails",
+        "rss-2026-06-11-08-cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable",
+        "rss-2026-06-11-09-builder-theme-how-anthropic-uses-claude-fable-5-with-mike-krieger",
+        "rss-2026-06-11-10-builder-theme-thariq-on-lots-of-people-asked-how-i-used-fable-to-edit-its-own-launch-video-so",
+        "rss-2026-06-11-11-builder-theme-claude-on-michael-truell-mntruell-fell-in-love-with-coding-at-12-the-compan"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-10": {
       "briefingIds": [
         "rss-2026-06-10"
