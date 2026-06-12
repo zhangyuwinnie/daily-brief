@@ -25867,5 +25867,197 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-12": {
+    "date": "2026-06-12",
+    "briefings": [
+      {
+        "id": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-12",
+        "filePath": "2026-06-12.md",
+        "summaryTopline": "How Preply combines AI and human tutors to personalize learning",
+        "insightIds": [
+          "rss-2026-06-12-01-how-preply-combines-ai-and-human-tutors-to-personalize-learning",
+          "rss-2026-06-12-02-supporting-europes-work-in-ensuring-a-trustworthy-ai-ecosystem",
+          "rss-2026-06-12-03-claude-fable-is-relentlessly-proactive",
+          "rss-2026-06-12-04-datasette-10a33",
+          "rss-2026-06-12-05-program-claude-code-codex-pi-and-other-agent-harnesses-with-ai-sdk",
+          "rss-2026-06-12-06-how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
+          "rss-2026-06-12-07-builder-theme-google-deepminds-logan-kilpatrick-why-the-model-eats-the-harness",
+          "rss-2026-06-12-08-builder-theme-sam-altman-on-really-looking-forward-to-working-together",
+          "rss-2026-06-12-09-builder-theme-amjad-masad-on-for-the-first-time-im-vibecoding-with-zero-frustration-and-in-a-com"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-12-01-how-preply-combines-ai-and-human-tutors-to-personalize-learning",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/preply",
+        "publishedDate": "2026-06-12",
+        "title": "How Preply combines AI and human tutors to personalize learning",
+        "summary": "Preply整合OpenAI模型，自动化生成课程摘要、个性化反馈与语言练习，实现AI与真人导师协同的个性化学习机制。",
+        "take": "AI直接嵌入现有教学流程，通过生成式内容替代人工备课环节，释放导师精力专注互动反馈。此模式可复用于任何需要导师+内容生成的垂直场景，关键是将AI输出作为中间产物而非终局答案。",
+        "topics": [
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-12-02-supporting-europes-work-in-ensuring-a-trustworthy-ai-ecosystem",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+        "publishedDate": "2026-06-11",
+        "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+        "summary": "OpenAI宣布支持欧盟《AI实践准则》，推动AI生成内容溯源标准与工具，以提升内容透明度与可信度。",
+        "take": "对AI构建者而言，需关注内容溯源协议（如C2PA）的集成，以符合欧盟监管要求。未来工具链中应内置水印或元数据标记机制，确保AI生成内容可被识别与追溯。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-12-03-claude-fable-is-relentlessly-proactive",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
+        "publishedDate": "2026-06-11",
+        "title": "Claude Fable is relentlessly proactive",
+        "summary": "Anthropic的Claude Fable 5表现出持续主动式的推理行为，通过自主探索代码依赖链（如Datasette Agent及其依赖Datasette）、利用截图进行视觉-代码关联分析，并自动调用多步骤工具（文件检查、依赖分析）以解决开发者反馈的问题。",
+        "take": "Fable 5的核心工程信号是其主动式推理范式：模型不再仅响应单次指令，而是基于目标自主规划并执行多步工具调用链，包括跨仓库依赖分析。这对AI Builder意味着需要重新设计Agent框架的长程任务编排与状态管理，同时应优先支持截图+代码混合输入的上下文窗口，以充分利用其视觉推理能力。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-12-04-datasette-10a33",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/11/datasette/#atom-everything",
+        "publishedDate": "2026-06-11",
+        "title": "datasette 1.0a33",
+        "summary": "Simon Willison 发布了 Datasette 1.0a33 版本，关键更新是将 ?_extra= 模式从仅支持表格扩展至覆盖查询和行，并正式文档化该模式；该版本通过 Claude 和 GPT-5.5 在 AI 辅助编程下实现了一个自定义 extras API 浏览器。",
+        "take": "对于基于 JSON API 的开发者，_extra 参数提供了按需控制返回数据粒度的标准化机制，简化了客户端侧的数据筛选。这一模式标志着 Datasette 从临时查询工具向可组合 RESTful API 架构的转型，值得在构建代理工作流时借鉴用于结构化数据暴露。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-12-05-program-claude-code-codex-pi-and-other-agent-harnesses-with-ai-sdk",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/program-agent-harnesses-with-ai-sdk",
+        "publishedDate": "2026-06-12",
+        "title": "Program Claude Code, Codex, Pi and other agent harnesses with AI SDK",
+        "summary": "Vercel 在 AI SDK 7 中推出 HarnessAgent API，通过统一抽象层标准化 Claude Code、Codex 和 Pi 等代理框架的沙箱、权限流、运行时配置等上层能力，实现无需重写代理代码即可切换底层代理框架。",
+        "take": "开发者现在可以将代理业务逻辑与 harness 框架解耦，通过一行配置切换 Claude Code 或 Codex 等框架，从而对冲单一框架的锁定风险，并能在新框架出现时快速适配而无需重构 agent 核心流程。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-12-06-how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
+        "publishedDate": "2026-06-11",
+        "title": "How Okara runs CMO agents for 120,000 companies on Vercel",
+        "summary": "Okara 在 Vercel 上运行 AI CMO 代理集群，每日处理 40 亿 tokens，通过 8 个专业子代理（SEO、GEO、社交、内容、Reddit、Hacker News）协同管理 12 万+企业的营销增长，新模型上线当日即可接入。",
+        "take": "核心工程范式是：将单一 LLM 调用拆解为多代理编排的并行工作流，每个子代理处理独立渠道（如 Reddit、Hacker News）的策略生成与执行。对 builder 的启示：通过 Vercel 的 AI SDK 实现多供应商（multi-provider）tokens 路由与动态模型切换，可构建当日适配新模型的 Agent 堆栈；代理间通过共享上下文（品牌声音、策略）实现协作，而非简单 RAG 链式调用。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-12-07-builder-theme-google-deepminds-logan-kilpatrick-why-the-model-eats-the-harness",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+        "title": "Builder Theme: Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness",
+        "summary": "Logan Kilpatrick 在播客中提出 '模型吃掉 Harness' 的观点，强调随着多模态与实时编辑能力的提升，传统应用层框架正在被模型内置的指令理解和执行能力所替代。",
+        "take": "开发者的核心关注点应从构建复杂的链式调用框架转向如何让模型原生理解并执行多步骤任务。这意味着工程资源应更多投入到微调、提示工程与安全对齐，而非维护外部编排层。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-12-08-builder-theme-sam-altman-on-really-looking-forward-to-working-together",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2065160791205310565",
+        "title": "Builder Theme: Sam Altman on really looking forward to working together!",
+        "summary": "Sam Altman 通过社交媒体公开表示期待与AI开发者社区合作，并附带了具体合作链接。",
+        "take": "这暗示OpenAI可能即将发布新的开发者工具、API更新或合作计划，AI构建者应密切关注其官方渠道以获取潜在的集成机会或平台变更。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-12-09-builder-theme-amjad-masad-on-for-the-first-time-im-vibecoding-with-zero-frustration-and-in-a-com",
+        "briefingId": "rss-2026-06-12",
+        "date": "2026-06-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2065236013627351551",
+        "title": "Builder Theme: Amjad Masad on For the first time, I'm vibecoding with ZERO frustration and in a com...",
+        "summary": "Replit 创始人 Amjad Masad 表示，在 Fable Agent 上线后，其 LLM 编程体验首次实现零挫败感、完全心流状态，并指出当前阶段编码 Agent 不再需要更高智商模型，仅需更便宜、更快的推理。",
+        "take": "对于构建 AI 编码 Agent 的团队，核心转向降低推理成本与提升响应速度而非提升模型智力。Fable Agent 的架构证明，在足够快的循环反馈中，当前能力水平的模型即可实现开发者心流，这意味着工程优化应聚焦于延迟和 token 成本，而非盲目追求更强大的基座模型。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

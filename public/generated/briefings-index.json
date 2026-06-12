@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-12",
     "2026-06-11",
     "2026-06-10",
     "2026-06-09",
@@ -122,6 +123,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-12": {
+      "briefingIds": [
+        "rss-2026-06-12"
+      ],
+      "insightIds": [
+        "rss-2026-06-12-01-how-preply-combines-ai-and-human-tutors-to-personalize-learning",
+        "rss-2026-06-12-02-supporting-europes-work-in-ensuring-a-trustworthy-ai-ecosystem",
+        "rss-2026-06-12-03-claude-fable-is-relentlessly-proactive",
+        "rss-2026-06-12-04-datasette-10a33",
+        "rss-2026-06-12-05-program-claude-code-codex-pi-and-other-agent-harnesses-with-ai-sdk",
+        "rss-2026-06-12-06-how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
+        "rss-2026-06-12-07-builder-theme-google-deepminds-logan-kilpatrick-why-the-model-eats-the-harness",
+        "rss-2026-06-12-08-builder-theme-sam-altman-on-really-looking-forward-to-working-together",
+        "rss-2026-06-12-09-builder-theme-amjad-masad-on-for-the-first-time-im-vibecoding-with-zero-frustration-and-in-a-com"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-11": {
       "briefingIds": [
         "rss-2026-06-11"
