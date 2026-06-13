@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-13",
     "2026-06-12",
     "2026-06-11",
     "2026-06-10",
@@ -123,6 +124,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-13": {
+      "briefingIds": [
+        "rss-2026-06-13"
+      ],
+      "insightIds": [
+        "rss-2026-06-13-01-new-openai-academy-courses-for-the-next-era-of-work",
+        "rss-2026-06-13-02-statement-on-the-us-government-directive-to-suspend-access-to-fable-5-and-mythos-5",
+        "rss-2026-06-13-03-openai-webrtc-audio-session-now-with-document-context",
+        "rss-2026-06-13-04-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+        "rss-2026-06-13-05-how-to-setup-a-local-coding-agent-on-macos",
+        "rss-2026-06-13-06-increased-blob-store-limit-for-hobby-users",
+        "rss-2026-06-13-07-workflow-sdk-now-runs-natively-in-nitro-v3",
+        "rss-2026-06-13-08-ire-identifies-another-lotuslite-specimen",
+        "rss-2026-06-13-09-builder-theme-ai-vibe-check-lab-wars-why-apis-might-vanish-amp-future-predictions",
+        "rss-2026-06-13-10-builder-theme-andrej-karpathy-on-in-awe-of-spacex-and-its-story-past-present-and-the-future-you-ca",
+        "rss-2026-06-13-11-builder-theme-thibault-sottiaux-on-heard-your-amusing-feedback-that-it-was-at-times-annoying-to-receiv"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-12": {
       "briefingIds": [
         "rss-2026-06-12"

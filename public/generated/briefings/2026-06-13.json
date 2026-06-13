@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-13",
+  "briefings": [
+    {
+      "id": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-13",
+      "filePath": "2026-06-13.md",
+      "summaryTopline": "New OpenAI Academy courses for the next era of work",
+      "insightIds": [
+        "rss-2026-06-13-01-new-openai-academy-courses-for-the-next-era-of-work",
+        "rss-2026-06-13-02-statement-on-the-us-government-directive-to-suspend-access-to-fable-5-and-mythos-5",
+        "rss-2026-06-13-03-openai-webrtc-audio-session-now-with-document-context",
+        "rss-2026-06-13-04-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+        "rss-2026-06-13-05-how-to-setup-a-local-coding-agent-on-macos",
+        "rss-2026-06-13-06-increased-blob-store-limit-for-hobby-users",
+        "rss-2026-06-13-07-workflow-sdk-now-runs-natively-in-nitro-v3",
+        "rss-2026-06-13-08-ire-identifies-another-lotuslite-specimen",
+        "rss-2026-06-13-09-builder-theme-ai-vibe-check-lab-wars-why-apis-might-vanish-amp-future-predictions",
+        "rss-2026-06-13-10-builder-theme-andrej-karpathy-on-in-awe-of-spacex-and-its-story-past-present-and-the-future-you-ca",
+        "rss-2026-06-13-11-builder-theme-thibault-sottiaux-on-heard-your-amusing-feedback-that-it-was-at-times-annoying-to-receiv"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-13-01-new-openai-academy-courses-for-the-next-era-of-work",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "publishedDate": "2026-06-12",
+      "title": "New OpenAI Academy courses for the next era of work",
+      "summary": "OpenAI推出了三门Academy课程，分别聚焦于构建实用AI技能、创建可复现工作流以及在日常工作中应用智能代理（Agent），旨在帮助开发者与从业人员系统化掌握基于其平台的AI应用开发。",
+      "take": "这些课程明确区分了技能构建、工作流自动化与代理部署三个层次，标志着OpenAI正从提供API向提供标准化工程方法论转型。开发者应关注其中关于工作流可重复性与代理自主决策边界的具体模式，这将是构建可靠生产级AI系统的核心挑战。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-13-02-statement-on-the-us-government-directive-to-suspend-access-to-fable-5-and-mythos-5",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+      "publishedDate": "2026-06-13",
+      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "summary": "美国政府以国家安全为由，依据出口管制指令，要求Anthropic立即对所有外国用户（含外国籍员工）暂停访问Fable 5与Mythos 5模型，Anthropic已按要求执行。",
+      "take": "出口管制已从硬件延伸至前沿LLM权重与部署层，AI builders需为模型访问权的地理或国籍限制建立预案。该事件暗示针对模型安全缺陷（如越狱方法）的政府级封禁将成为新常态，依赖单一模型API的架构风险骤增。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-13-03-openai-webrtc-audio-session-now-with-document-context",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/12/openai-webrtc/#atom-everything",
+      "publishedDate": "2026-06-12",
+      "title": "OpenAI WebRTC Audio Session, now with document context",
+      "summary": "Simon Willison 更新了其基于 OpenAI WebRTC 的音频对话工具，新版本支持选择 GPT-Realtime-2 模型，并允许用户粘贴大段文档上下文，从而实现浏览器内关于指定内容的语音对话。",
+      "take": "核心机制是 OpenAI 的 WebRTC API 结合了文档上下文注入，使得实时代理能够基于用户提供的文本进行语音交互。对构建者而言，这意味着可以直接将非结构化文档输入到音频代理的工作流中，无需额外转录或文本检索管道，为对话式知识探索提供了新范式。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-13-04-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+      "publishedDate": "2026-06-11",
+      "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+      "summary": "GitHub 使用上下文感知的 LLM 推理改进秘密扫描的验证步骤，在大规模场景下自动减少误报，提升警报的可信度与可操作性。",
+      "take": "该方案核心是将 LLM 引入既有规则引擎后处理管道，通过分析代码上下文而非仅匹配模式，显著降低误报率。工程师可将此模式应用于任何基于正则或模式的静态扫描工具，利用 LLM 的语义理解能力作为第二层验证过滤器，实现自动化精准分类。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-05-how-to-setup-a-local-coding-agent-on-macos",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "publishedDate": "2026-06-12",
+      "title": "How to setup a local coding agent on macOS",
+      "summary": "Kyle 在 macOS 上使用 Ollama 和 Continue 插件，结合本地 LLM 与 IDE 建立了一个无需联网的本地编码代理，实现了代码补全、生成和修改的离线工作流。",
+      "take": "此方案证明了利用消费级硬件和开源模型即可构建可用的本地编码代理，关键点在于选择适合代码任务的模型（如 CodeQwen）并配置 Continue 的自动补全和内联编辑功能，这对关注隐私和低延迟的 AI 构建者具有实用参考价值。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-06-increased-blob-store-limit-for-hobby-users",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/increased-blob-store-limit-for-hobby-users",
+      "publishedDate": "2026-06-15",
+      "title": "Increased Blob store limit for Hobby users",
+      "summary": "Vercel 将 Hobby 用户的 Blob 存储上限从 5 提升至 100，以支持按项目、环境或区域组织数据。",
+      "take": "对于使用 Vercel Blob 构建 RAG 应用的开发者，这一变更大幅降低了多索引或分片存储的配置门槛。应重新评估存储架构，将不同数据集或数据源映射至独立 Blob 存储，以提升可管理性和并发访问效率。",
+      "topics": [
+        "Evals",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-07-workflow-sdk-now-runs-natively-in-nitro-v3",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/workflow-sdk-now-runs-natively-in-nitro-v3",
+      "publishedDate": "2026-06-13",
+      "title": "Workflow SDK now runs natively in Nitro v3",
+      "summary": "Vercel 将 Workflow SDK 原生集成至 Nitro v3，工作流步骤不再独立打包，而是与应用共享同一运行时，并可直接调用 useStorage() 等 Nitro 服务端 API。",
+      "take": "此改动消除了工作流与主应用间的运行时隔离，减少了构建体积并提升了调试效率（通过内置 /_workflow UI）。对于构建 RAG 或复杂多步代理的团队，意味着可将工作流逻辑视为应用内原生函数而非外部编排任务，从而简化部署与依赖管理。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-08-ire-identifies-another-lotuslite-specimen",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/ire-identifies-another-lotuslite-specimen/",
+      "publishedDate": "2026-06-12",
+      "title": "Ire identifies another LOTUSLITE specimen",
+      "summary": "微软研究院的 Project Ire 通过逆向工程对一个及时出现的恶意软件样本进行了分析，并在大多数主流端点检测与响应（EDR）工具尚未检出时，成功识别出其具有 LOTUSLITE 的形态特征。",
+      "take": "核心工程启示是：对于 AI 构建者而言，当传统基于签名或行为的 EDR 工具失效时，可以借鉴 Ire 项目采用的深度逆向工程与特征化分析流程，将其自动化或集成到代理工作流中，以增强对新型或变种恶意软件的早期检测能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-09-builder-theme-ai-vibe-check-lab-wars-why-apis-might-vanish-amp-future-predictions",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/watch?v=W_iO8XxgD_I",
+      "title": "Builder Theme: AI Vibe Check: Lab Wars, Why APIs Might Vanish &amp; Future Predictions",
+      "summary": "Jacob Efron、Ari（前DeepMind及Meta研究员，现AI创业公司CEO）与Rob（AI风投机构Radical合伙人）在播客中围绕Fable发布及其模型能力展开讨论，并对AI实验室竞争格局及API未来趋势做出预判。",
+      "take": "关注Fable的发布细节及模型能力评测，这是当前AI实验室竞争的关键信号；API可能因模型能力内化而减少对第三方调用的依赖，建议Builder提前规划自有模型或微调策略以应对架构变化。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-10-builder-theme-andrej-karpathy-on-in-awe-of-spacex-and-its-story-past-present-and-the-future-you-ca",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2065490793092337691",
+      "title": "Builder Theme: Andrej Karpathy on In awe of SpaceX and its story - past, present and the future. You ca...",
+      "summary": "Andrej Karpathy 赞扬 SpaceX 的历史与未来，强调其成功可反复从多维度重新理解，是对团队巨大成就的祝贺。",
+      "take": "此推文无直接技术信号，但可视为对‘极致工程迭代’和‘复杂系统思维’的间接认可，提醒 AI 构建者关注长期技术积累而非短期炒作。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-13-11-builder-theme-thibault-sottiaux-on-heard-your-amusing-feedback-that-it-was-at-times-annoying-to-receiv",
+      "briefingId": "rss-2026-06-13",
+      "date": "2026-06-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2065468501750649006",
+      "title": "Builder Theme: Thibault Sottiaux on Heard your (amusing) feedback that it was at times annoying to receiv...",
+      "summary": "OpenAI 计划在重置 Codex 使用额度时，增加用户选择生效时间的选项，以响应开发者对无预警重置的反馈。",
+      "take": "这一改动将改变开发者与 AI 编码工具的交互流程，赋予用户对资源消耗的更多控制权。工程团队需适配新的时间点选择接口，以支持更灵活的配额管理流程。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
