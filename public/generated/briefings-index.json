@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-14",
     "2026-06-13",
     "2026-06-12",
     "2026-06-11",
@@ -124,6 +125,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-14": {
+      "briefingIds": [
+        "rss-2026-06-14"
+      ],
+      "insightIds": [
+        "rss-2026-06-14-01-publishing-wasm-wheels-to-pypi-for-use-with-pyodide",
+        "rss-2026-06-14-02-mapping-sqlite-result-columns-back-to-their-source-tablecolumn",
+        "rss-2026-06-14-03-builder-theme-amjad-masad-on-feels-like-were-getting-psyoped-the-end-game-here-is-something-bigg",
+        "rss-2026-06-14-04-builder-theme-thibault-sottiaux-on-hi-im-tibo-and-i-just-discovered-codex-ama"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-13": {
       "briefingIds": [
         "rss-2026-06-13"

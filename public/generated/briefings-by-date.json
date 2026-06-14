@@ -26292,5 +26292,98 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-14": {
+    "date": "2026-06-14",
+    "briefings": [
+      {
+        "id": "rss-2026-06-14",
+        "date": "2026-06-14",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-14",
+        "filePath": "2026-06-14.md",
+        "summaryTopline": "Publishing WASM wheels to PyPI for use with Pyodide",
+        "insightIds": [
+          "rss-2026-06-14-01-publishing-wasm-wheels-to-pypi-for-use-with-pyodide",
+          "rss-2026-06-14-02-mapping-sqlite-result-columns-back-to-their-source-tablecolumn",
+          "rss-2026-06-14-03-builder-theme-amjad-masad-on-feels-like-were-getting-psyoped-the-end-game-here-is-something-bigg",
+          "rss-2026-06-14-04-builder-theme-thibault-sottiaux-on-hi-im-tibo-and-i-just-discovered-codex-ama"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-14-01-publishing-wasm-wheels-to-pypi-for-use-with-pyodide",
+        "briefingId": "rss-2026-06-14",
+        "date": "2026-06-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything",
+        "publishedDate": "2026-06-13",
+        "title": "Publishing WASM wheels to PyPI for use with Pyodide",
+        "summary": "Pyodide 314.0 发布后，Python 包维护者可直接将针对 PyEmscripten 平台（PEP 783）构建的 WASM wheels 发布至 PyPI，并在运行时安装，取代了此前由 Pyodide 维护者手动维护和托管超 300 个包的模式。",
+        "take": "这一变更消除了 Pyodide 生态中包分发的集中式瓶颈，将 WASM wheels 的构建和发布流程标准化为与原生平台一致的 PyPI 工作流。对 AI 构建者而言，这意味着在浏览器或 WASM 运行时中动态加载 Python 依赖成为标准操作，可大幅简化基于 Pyodide 的 AI 工具链部署，无需依赖第三方镜像或手动打包。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-14-02-mapping-sqlite-result-columns-back-to-their-source-tablecolumn",
+        "briefingId": "rss-2026-06-14",
+        "date": "2026-06-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything",
+        "publishedDate": "2026-06-13",
+        "title": "Mapping SQLite result columns back to their source `table.column`",
+        "summary": "Simon Willison 探索如何利用 SQLite 的 C 函数 sqlite3_column_table_name()（通过 ctypes 或 apsw）将 SQL 查询结果列精确映射回源表.column，并借助 Claude Code 实现原型验证。",
+        "take": "对于构建可追溯列来源的数据分析工具（如 Datasette），可直接通过 SQLite 的 C API 或 apsw 绑定获取列来源，避免依赖静态解析。这一方式原生支持 JOIN、CTE 等复杂语法，为自动化元数据投射和智能列级权限控制提供了低开销工程路径。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-14-03-builder-theme-amjad-masad-on-feels-like-were-getting-psyoped-the-end-game-here-is-something-bigg",
+        "briefingId": "rss-2026-06-14",
+        "date": "2026-06-14",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2065838585358745653",
+        "title": "Builder Theme: Amjad Masad on Feels like we’re getting psyoped. The end-game here is something bigg...",
+        "summary": "Amjad Masad暗示AI领域正经历某种心理操控，最终目标远大于当前可见的议题。",
+        "take": "警惕社区叙事中隐藏的战略导向，关注实际技术进展而非情绪驱动的话题。设计工作流时，优先验证底层能力而非跟进短期热点。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-14-04-builder-theme-thibault-sottiaux-on-hi-im-tibo-and-i-just-discovered-codex-ama",
+        "briefingId": "rss-2026-06-14",
+        "date": "2026-06-14",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2066022651760721931",
+        "title": "Builder Theme: Thibault Sottiaux on Hi, I'm Tibo and I just discovered Codex. AMA",
+        "summary": "Thibault Sottiaux 公开表示刚发现并开始使用 OpenAI Codex，并以 AMA 形式分享其初步体验。",
+        "take": "这表明 Codex 作为代码生成模型的实用性仍在吸引新一批 AI 构建者，但尚未形成成熟的工作流范式。开发者应关注 Codex 在代码理解与生成中的实际边界，而非炒作其全能性。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
