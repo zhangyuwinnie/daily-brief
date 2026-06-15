@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-15",
     "2026-06-14",
     "2026-06-13",
     "2026-06-12",
@@ -125,6 +126,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-15": {
+      "briefingIds": [
+        "rss-2026-06-15"
+      ],
+      "insightIds": [
+        "rss-2026-06-15-01-introducing-the-openai-partner-network",
+        "rss-2026-06-15-02-they-screwed-us-personality-clashes-sent-anthropics-models-offline",
+        "rss-2026-06-15-03-why-ai-hasnt-replaced-software-engineers-and-wont",
+        "rss-2026-06-15-04-anthropics-safety-superpower",
+        "rss-2026-06-15-05-vercel-functions-can-now-run-up-to-30-minutes",
+        "rss-2026-06-15-06-auth0-joins-the-vercel-marketplace",
+        "rss-2026-06-15-07-how-wayfair-cut-ml-model-costs-by-90-twice-with-cursor",
+        "rss-2026-06-15-08-builder-theme-live-jensen-huang-on-building-the-dynamo-of-the-intelligence-age",
+        "rss-2026-06-15-09-builder-theme-amjad-masad-on-this-is-the-most-inspiring-positive-sum-vision-for-ai-in-the-enterpri",
+        "rss-2026-06-15-10-builder-theme-thibault-sottiaux-on-codex-can-see-and-set-its-own-goal-everything-we-build-we-build-al"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-14": {
       "briefingIds": [
         "rss-2026-06-14"

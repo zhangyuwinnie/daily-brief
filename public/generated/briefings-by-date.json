@@ -26385,5 +26385,214 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-15": {
+    "date": "2026-06-15",
+    "briefings": [
+      {
+        "id": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-15",
+        "filePath": "2026-06-15.md",
+        "summaryTopline": "Introducing the OpenAI Partner Network",
+        "insightIds": [
+          "rss-2026-06-15-01-introducing-the-openai-partner-network",
+          "rss-2026-06-15-02-they-screwed-us-personality-clashes-sent-anthropics-models-offline",
+          "rss-2026-06-15-03-why-ai-hasnt-replaced-software-engineers-and-wont",
+          "rss-2026-06-15-04-anthropics-safety-superpower",
+          "rss-2026-06-15-05-vercel-functions-can-now-run-up-to-30-minutes",
+          "rss-2026-06-15-06-auth0-joins-the-vercel-marketplace",
+          "rss-2026-06-15-07-how-wayfair-cut-ml-model-costs-by-90-twice-with-cursor",
+          "rss-2026-06-15-08-builder-theme-live-jensen-huang-on-building-the-dynamo-of-the-intelligence-age",
+          "rss-2026-06-15-09-builder-theme-amjad-masad-on-this-is-the-most-inspiring-positive-sum-vision-for-ai-in-the-enterpri",
+          "rss-2026-06-15-10-builder-theme-thibault-sottiaux-on-codex-can-see-and-set-its-own-goal-everything-we-build-we-build-al"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-15-01-introducing-the-openai-partner-network",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-openai-partner-network",
+        "publishedDate": "2026-06-14",
+        "title": "Introducing the OpenAI Partner Network",
+        "summary": "OpenAI推出了合作伙伴网络，并投入1.5亿美元，旨在帮助全球合作伙伴加速企业级AI的采纳、部署与转型。",
+        "take": "对于AI构建者而言，这意味着OpenAI正在构建一个正式的生态渠道，可能改变企业应用的部署和分销模式。关注其合作伙伴的认证标准和技术集成规范，这将成为新的企业级AI工作流入口。",
+        "topics": [
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-15-02-they-screwed-us-personality-clashes-sent-anthropics-models-offline",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
+        "publishedDate": "2026-06-15",
+        "title": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
+        "summary": "Anthropic 内部核心团队人员冲突导致其大模型服务下线，事件细节由 Axios 基于内部信源披露。",
+        "take": "团队内部冲突（尤其是核心技术负责人间的摩擦）可直接导致关键系统不可用，说明 AI 工程组织的人事稳定性与系统韧性同等重要；开发者应关注模型供应商的团队结构风险，避免单点依赖。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-15-03-why-ai-hasnt-replaced-software-engineers-and-wont",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+        "publishedDate": "2026-06-14",
+        "title": "Why AI hasn’t replaced software engineers, and won’t",
+        "summary": "Simon Willison引用Arvind Narayanan和Sayash Kapoor的分析，论证基于2025年纽约州WARN法案数据，AI尚未且不会导致软件工程师大规模失业，因为当前AI能力在复杂工程任务中仍无法替代人类判断与系统性调试能力。",
+        "take": "AI作为辅助工具能提升编码效率，但无法消除对工程师进行架构设计、需求分解和错误修复的核心需求。工程团队应聚焦于将AI集成到现有工作流中作为增强手段，而非预期其能独立完成端到端任务，从而避免对自动化能力的过度乐观部署。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-15-04-anthropics-safety-superpower",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://stratechery.com/2026/anthropics-safety-superpower/",
+        "publishedDate": "2026-06-15",
+        "title": "Anthropic's Safety Superpower",
+        "summary": "Anthropic通过其独特的‘宪法AI’对齐架构，将安全机制内嵌于模型训练的核心循环中，而非依赖外部过滤或事后调整。",
+        "take": "对于AI构建者，关键启示是：安全能力应作为模型架构的固有组成部分（如通过原则驱动的强化学习）来实现，而非附属模块。这要求重新设计训练流水线，将安全约束转化为可优化的目标函数，从而在推理时自动触发合规行为，无需二次干预。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-05-vercel-functions-can-now-run-up-to-30-minutes",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-functions-can-now-run-up-to-30-minutes",
+        "publishedDate": "2026-06-15",
+        "title": "Vercel Functions can now run up to 30 minutes",
+        "summary": "Vercel 将 Node.js 和 Python 函数的最大执行时间从 800 秒提升至 30 分钟，并采用活跃 CPU 计费模式（仅对代码执行时间计费，I/O 等待不计费），支持开发者通过 maxDuration 配置开启长时运行。",
+        "take": "长时函数支持使 Vercel 成为 LLM 推理、流式响应及复杂工作流（如网页自动化、文档处理）的无服务器执行平台。构建 Agent 时，可利用 Fluid Compute 的 I/O 暂停计费特性，低成本运行耗时逻辑，但需注意当前仅限 Node.js 和 Python 运行时，且需明确设置 maxDuration 以启用新限制。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-06-auth0-joins-the-vercel-marketplace",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/auth0-joins-the-vercel-marketplace",
+        "publishedDate": "2026-06-15",
+        "title": "Auth0 joins the Vercel Marketplace",
+        "summary": "Vercel Marketplace 集成 Auth0，提供一键式身份与访问管理（IAM）能力，专为 Next.js 及代理工作流（agentic workflows）设计，自动同步开发、预览、生产环境的认证配置。",
+        "take": "此集成将认证基础设施变成可部署的环境级资源，无需手动配置即可在分支间同步。对构建代理工作流的开发者而言，减少了身份层对代理状态管理的干扰，建议优先利用其自动化的 session 和角色管理来简化代理权限控制。",
+        "topics": [
+          "Agents",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-07-how-wayfair-cut-ml-model-costs-by-90-twice-with-cursor",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/wayfair",
+        "publishedDate": "2026-06-15",
+        "title": "How Wayfair cut ML model costs by 90% (twice!) with Cursor",
+        "summary": "Wayfair 通过使用 Cursor 的 AI 编码助手重构机器学习模型推理管道，将模型计算成本降低了 90%，且该优化方法被复制应用到第二个模型上同样实现了 90% 的成本削减。",
+        "take": "Cursor 能够显著加速对遗留代码库中性能瓶颈的识别与重写，尤其是通过提示链或局部重构来替换高成本算法或数据结构。工程团队可将 Cursor 视为一种“成本感知的自动重构工具”，在模型推理路径上系统性地挖掘低效算子并输出优化实现，从而以极低人力投入实现十倍级的成本压缩。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-08-builder-theme-live-jensen-huang-on-building-the-dynamo-of-the-intelligence-age",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=2UpQbeAZuqA",
+        "title": "Builder Theme: LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age",
+        "summary": "NVIDIA CEO黄仁勋定义AI工厂为新工业革命的核心基础设施，其运作模式类似于为AI生成token的专用发电厂，将计算转化为智能商品。",
+        "take": "开发者应重新将AI推理视为一种需按吞吐量和延迟优化的工业级计算资源，而非简单的API调用。建议构建工作流时，优先考虑批处理、本地推理集群或边缘部署，以模仿AI工厂的高效token生成模式，从而降低外部服务依赖并提升系统控制力。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-09-builder-theme-amjad-masad-on-this-is-the-most-inspiring-positive-sum-vision-for-ai-in-the-enterpri",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2066195933969412098",
+        "title": "Builder Theme: Amjad Masad on This is the most inspiring positive-sum vision for AI in the enterpri...",
+        "summary": "Amjad Masad 提出了一种面向企业级 AI 的正和博弈愿景，强调通过协作而非零和竞争来释放 AI 在组织中的价值。",
+        "take": "该愿景对 AI 构建者的核心启示是：企业级 AI 部署应当专注于增强人类决策与协作，而非简单地替代劳动。这意味着在设计 AI 系统时，应优先考虑与现有工作流的无缝集成与互操作性，以最大化整体生产力增益。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-15-10-builder-theme-thibault-sottiaux-on-codex-can-see-and-set-its-own-goal-everything-we-build-we-build-al",
+        "briefingId": "rss-2026-06-15",
+        "date": "2026-06-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2066270561081454989",
+        "title": "Builder Theme: Thibault Sottiaux on Codex can see and set its own /goal. Everything we build, we build al...",
+        "summary": "Anthropic 的 Codex 现在能够自主观察并设定自身目标，这是一种泛化的元提示机制，允许代理基于用户意图自行定义任务。",
+        "take": "这标志着从用户提供固定提示到代理自主设定目标的范式转变，开发者应重构工作流，将工具设计为同时服务于人类与代理，并探索动态目标规划以提升自动化和适应性。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
