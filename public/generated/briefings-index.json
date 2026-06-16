@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-16",
     "2026-06-15",
     "2026-06-14",
     "2026-06-13",
@@ -126,6 +127,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-16": {
+      "briefingIds": [
+        "rss-2026-06-16"
+      ],
+      "insightIds": [
+        "rss-2026-06-16-01-quoting-georgi-gerganov",
+        "rss-2026-06-16-02-the-fable-5-export-controls-harm-us-cyber-defense",
+        "rss-2026-06-16-03-github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+        "rss-2026-06-16-04-workflow-sdk-now-supports-inflight-cancellation",
+        "rss-2026-06-16-05-increased-blob-store-limit-for-hobby-users",
+        "rss-2026-06-16-06-builder-theme-peter-steinberger-on-wanted-to-buy-a-new-mac-studio-for-san-francisco-we-dont-even-know",
+        "rss-2026-06-16-07-builder-theme-josh-woodward-on-want-unreleased-geminiapp-features-before-anyone-else-love-breaking"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-15": {
       "briefingIds": [
         "rss-2026-06-15"

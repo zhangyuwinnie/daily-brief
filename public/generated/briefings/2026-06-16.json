@@ -1,0 +1,154 @@
+{
+  "date": "2026-06-16",
+  "briefings": [
+    {
+      "id": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-16",
+      "filePath": "2026-06-16.md",
+      "summaryTopline": "Quoting Georgi Gerganov",
+      "insightIds": [
+        "rss-2026-06-16-01-quoting-georgi-gerganov",
+        "rss-2026-06-16-02-the-fable-5-export-controls-harm-us-cyber-defense",
+        "rss-2026-06-16-03-github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+        "rss-2026-06-16-04-workflow-sdk-now-supports-inflight-cancellation",
+        "rss-2026-06-16-05-increased-blob-store-limit-for-hobby-users",
+        "rss-2026-06-16-06-builder-theme-peter-steinberger-on-wanted-to-buy-a-new-mac-studio-for-san-francisco-we-dont-even-know",
+        "rss-2026-06-16-07-builder-theme-josh-woodward-on-want-unreleased-geminiapp-features-before-anyone-else-love-breaking"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-16-01-quoting-georgi-gerganov",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+      "publishedDate": "2026-06-16",
+      "title": "Quoting Georgi Gerganov",
+      "summary": "Georgi Gerganov 在 Hacker News 评论中证实，Qwen3.6-27B 模型在本地编码任务中表现出色，他使用一个精简版的 pi 代理（pi -nc --offline）配合短系统提示词，在 M2 Ultra 和 RTX 5090 上每日执行小型维护任务。",
+      "take": "本地模型已具备实用编码能力，关键在于使用极简代理（如 pi --nc --offline）和短系统提示词来减少开销。开发者应优先选择 27B 级别的模型（如 Qwen3.6-27B）在高端消费级 GPU 上运行，以获得可接受的延迟和代码生成质量，从而替代云端 API 处理小型重复性任务。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-16-02-the-fable-5-export-controls-harm-us-cyber-defense",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
+      "publishedDate": "2026-06-16",
+      "title": "The Fable 5 Export Controls Harm US Cyber Defense",
+      "summary": "Anthropic的Claude Fable 5因多步手动流程中将“修复此代码”提示转化为安全补丁脚本，被认定为出口管制违规并遭禁用，而该流程本质是标准的漏洞修复开发者工作流。",
+      "take": "出口管制规则不应将防御性代码修复等同于攻击性利用生成；若工具链无法区分漏洞修补与漏洞利用，AI安全能力将被系统性削弱。开发者需推动政策区分静态分析、补丁生成与自动化攻击链之间的架构差异。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-16-03-github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/",
+      "publishedDate": "2026-06-15",
+      "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
+      "summary": "GitHub 发布 Copilot CLI 教程，介绍通过斜杠命令（如 `explain`、`git`）在终端中调用 AI 代理执行代码解释与 Git 操作等任务。",
+      "take": "斜杠命令将自然语言查询转化为终端操作，开发者可直接在 CLI 中利用 AI 代理完成代码解释、错误调试与 Git 流程，无需切换上下文。这标志着终端交互从手动命令向语义化代理工作流的初步转移，建议立即评估其对本地开发循环与 CI/CD 脚本的整合潜力。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-16-04-workflow-sdk-now-supports-inflight-cancellation",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/workflow-sdk-now-supports-inflight-cancellation",
+      "publishedDate": "2026-06-16",
+      "title": "Workflow SDK now supports inflight cancellation",
+      "summary": "Vercel 在 Workflow SDK 5 beta 中集成了标准 AbortController/AbortSignal API，支持跨工作流和步骤边界的中断操作，且信号在挂起和确定性重放中保持持久化。",
+      "take": "工程核心是：将原生 AbortSignal 的协作式取消机制引入持久化工作流，使得步骤可在运行中检查信号或传递给支持该 API 的服务以响应取消。直接可用的模式包括：竞态条件下终止慢步骤、首个成功响应后取消后续请求、或通过单一信号编排多步骤管道的终止。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-16-05-increased-blob-store-limit-for-hobby-users",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/increased-blob-store-limit-for-hobby-users",
+      "publishedDate": "2026-06-15",
+      "title": "Increased Blob store limit for Hobby users",
+      "summary": "Vercel 将 Hobby 用户可创建的 Blob 存储实例上限从 5 提升至 100，允许按项目、环境或区域更灵活地组织数据，但存储量、操作次数和传输限制保持不变。",
+      "take": "对于构建 RAG 应用的开发者，这意味着可以无需付费即可将不同数据源（如文档片段、嵌入向量）隔离到独立 Blob 存储中，简化多租户或分环境的数据管理。然而，单存储实例的容量和操作配额仍是瓶颈，大规模生产仍需考虑升级或使用外部对象存储（如 S3）。",
+      "topics": [
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-16-06-builder-theme-peter-steinberger-on-wanted-to-buy-a-new-mac-studio-for-san-francisco-we-dont-even-know",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2066471737068232835",
+      "title": "Builder Theme: Peter Steinberger on Wanted to buy a new Mac Studio for San Francisco. We don’t even know...",
+      "summary": "Peter Steinberger指出，因供应链或生产策略变化，新款Mac Studio在旧金山已无法购买，暗示苹果可能已停产或暂停该产品线。",
+      "take": "对于AI构建者而言，硬件可及性可能意外中断，需评估对本地模型训练或推理工作流的依赖风险，并准备基于云或替代硬件的备用方案。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-16-07-builder-theme-josh-woodward-on-want-unreleased-geminiapp-features-before-anyone-else-love-breaking",
+      "briefingId": "rss-2026-06-16",
+      "date": "2026-06-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Josh Woodward",
+      "sourceUrl": "https://x.com/joshwoodward/status/2066664862671921259",
+      "title": "Builder Theme: Josh Woodward on Want unreleased @GeminiApp features before anyone else? Love breaking...",
+      "summary": "Google 通过 Gemini 可信测试者计划，开放有限名额给高级用户提前体验 Gemini 应用未发布功能，参与测试与反馈。",
+      "take": "AI 构建者可通过加入该计划，获取 Gemini 最新特性的早期访问权限，从而提前适配或集成未公开 API 和功能，抢占技术先机。这提供了一个直接塑造产品迭代的反馈闭环，对工作流优化和代理能力测试具有实际价值。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
