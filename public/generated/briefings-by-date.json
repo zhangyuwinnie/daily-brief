@@ -26748,5 +26748,259 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-17": {
+    "date": "2026-06-17",
+    "briefings": [
+      {
+        "id": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-17",
+        "filePath": "2026-06-17.md",
+        "summaryTopline": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+        "insightIds": [
+          "rss-2026-06-17-01-from-the-hugging-face-hub-to-robot-hardware-with-strands-agents-and-lerobot",
+          "rss-2026-06-17-02-agentic-resource-discovery-let-agents-search",
+          "rss-2026-06-17-03-datasette-agent-03a0",
+          "rss-2026-06-17-04-datasette-10a34",
+          "rss-2026-06-17-05-introducing-eve",
+          "rss-2026-06-17-06-the-agent-stack",
+          "rss-2026-06-17-07-unlocking-uk-house-building-with-ai-accelerated-planning",
+          "rss-2026-06-17-08-predicting-model-behavior-before-release-by-simulating-deployment",
+          "rss-2026-06-17-09-from-pixels-to-planning-earth-ai-for-nature-restoration",
+          "rss-2026-06-17-10-builder-theme-simulating-humans-at-scale-similes-joon-sung-park",
+          "rss-2026-06-17-11-builder-theme-thibault-sottiaux-on-this-was-fixed-you-know-whats-coming-give-us-24-hours-to-reset-t",
+          "rss-2026-06-17-12-builder-theme-thariq-on-slack-now-renders-html-attachments-instead-of-just-showing-it-as-text"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-17-01-from-the-hugging-face-hub-to-robot-hardware-with-strands-agents-and-lerobot",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+        "publishedDate": "2026-06-17",
+        "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+        "summary": "Hugging Face与Amazon联合发布Strands Agents框架，利用LeRobot将预训练机器人操控模型从Hub直接部署至真实硬件，实现零代码到物理世界的闭环。",
+        "take": "此架构统一了仿真训练与实体推理的接口，开发者需将LeRobot的标准化动作表征集成至ROS2 pipeline；关键工程点在于处理域随机化与实时性权衡，建议优先复用预训练的扩散策略模型以减少从零训练成本。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-17-02-agentic-resource-discovery-let-agents-search",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+        "publishedDate": "2026-06-17",
+        "title": "Agentic Resource Discovery: Let agents search",
+        "summary": "Hugging Face 推出 Agentic Resource Discovery 功能，允许 AI 代理通过语义搜索动态发现和调用 Hugging Face 平台上的模型、数据集和 Spaces，作为一组标准工具集成到代理工作流中。",
+        "take": "此功能将 Hugging Face Hub 转化为一个可被代理直接查询与绑定的动态资源层，取代了硬编码工具列表。开发者需将代理工具构建从静态注册转向基于语义的运行时发现，以提升代理的适应性与工具使用的广度。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-17-03-datasette-agent-03a0",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
+        "publishedDate": "2026-06-15",
+        "title": "datasette-agent 0.3a0",
+        "summary": "Simon Willison 发布 datasette-agent 0.3a0，新增 execute_write_sql 工具，在写入数据库前请求用户审批并考虑用户权限，同时增强聊天终端模式支持审批流程，并引入 --unsafe 等自动审批选项。",
+        "take": "该版本展示了将 LLM 代理的数据库写入操作与用户审批和权限系统结合的模式，为构建安全可控的数据操作代理提供了参考。开发者可在代理工具中集成审批链，通过 --unsafe 模式在受控环境中跳过审批以加速迭代。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-17-04-datasette-10a34",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
+        "publishedDate": "2026-06-16",
+        "title": "datasette 1.0a34",
+        "summary": "Simon Willison 发布 Datasette 1.0a34，新增通过界面直接插入、编辑和删除行的功能，该功能灵感来自 Datasette Agent 的 SQL 写入支持，解决了聊天界面与常规 UI 功能不一致的问题。",
+        "take": "Datasette 补齐了数据操作的最后一块拼图，使开发者无需依赖 SQL 语句即可在 UI 中管理数据。对于构建 AI Agent 工作流，这意味着 Datasette 可作为可交互的数据库前端，支持 Agent 通过 API 或界面直接修改数据，简化了工具链中数据层的手动干预需求。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-05-introducing-eve",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/introducing-eve",
+        "publishedDate": "2026-06-17",
+        "title": "Introducing eve",
+        "summary": "Vercel 发布了开源 Agent 框架 eve，采用文件即组件的架构，将持久化执行、沙箱计算、人工审批、子代理与评估等生产环境必备能力内置为框架原生组件，旨在标准化 Agent 构建流程。",
+        "take": "eve 的核心理念是让开发者只需定义 Agent 行为，无需手动组装生产基础设施，通过文件系统定义每个组件。这标志着 Agent 开发从手写样板代码向框架化、可复用架构的范式转变，类似于 Next.js 对前端开发的标准化作用。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-06-the-agent-stack",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/agent-stack",
+        "publishedDate": "2026-06-18",
+        "title": "The Agent Stack",
+        "summary": "Vercel 发布了 Agent Stack，一个整合模型路由（Gemini、Claude 等）、多步骤工作流编排与系统/平台连接件的开源架构，旨在解决开发者构建生产级 Agent 时面临的供应商锁定与碎片化集成问题。",
+        "take": "Agent Stack 通过提供统一编排层，使开发者无需自建抽象即可实现模型间动态路由与长流程任务管理，可显著降低 Agent 系统在异构模型切换和工作流持久化上的工程复杂度。对于构建多步骤、多工具调用的 Agent 工作流，建议直接采用其模式而非从零搭建中间件。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-07-unlocking-uk-house-building-with-ai-accelerated-planning",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+        "publishedDate": "2026-06-16",
+        "title": "Unlocking UK house-building with AI-accelerated planning",
+        "summary": "Google DeepMind与英国政府合作开发AI原型系统，旨在加速住房规划审批流程，利用机器学习优化决策效率。",
+        "take": "该原型通过自动化分析规划文档与地理数据，减少人工审查瓶颈，可作为政务AI工作流中规则引擎与模型推理结合的示例。开发者若构建类似审批系统，需聚焦结构化与非结构化数据的融合处理，并确保模型输出可解释以符合监管要求。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-08-predicting-model-behavior-before-release-by-simulating-deployment",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/deployment-simulation",
+        "publishedDate": "2026-06-16",
+        "title": "Predicting model behavior before release by simulating deployment",
+        "summary": "OpenAI提出一種名為Deployment Simulation的方法，利用真實對話數據模擬部署場景，以提前預測AI模型行為並提升安全性評估準確度。",
+        "take": "此方法為開發者提供可於發布前模擬真實交互流程的評估框架，有助於減少模型部署後的意外行為。核心工程啟示是：將靜態基準測試替換為動態模擬環境，能更準確捕捉長尾風險與對齊偏移。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-09-from-pixels-to-planning-earth-ai-for-nature-restoration",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The latest research from Google",
+        "sourceUrl": "https://research.google/blog/from-pixels-to-planning-earth-ai-for-nature-restoration/",
+        "publishedDate": "2026-06-16",
+        "title": "From pixels to planning: Earth AI for nature restoration",
+        "summary": "Google 发布 Earth AI 研究，将遥感像素数据转化为生态修复规划，核心机制是结合计算机视觉与强化学习，实现从环境感知到行动决策的端到端规划。",
+        "take": "对 AI 构建者而言，该工作展示了将视觉基础模型与规划算法（如强化学习）直接耦合的新范式，可推广至机器人、自动驾驶等需要感知-规划闭环的代理系统。工程上需关注如何将稀疏的卫星影像奖励信号有效传导至策略网络。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-10-builder-theme-simulating-humans-at-scale-similes-joon-sung-park",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=lfhFmwcESRw",
+        "title": "Builder Theme: Simulating Humans at Scale: Simile's Joon Sung Park",
+        "summary": "Simile创始人Joon Sung Park基于科幻启发，利用大型语言模型驱动的小型自洽社会模拟架构，首次系统性地构建可规模化复现人类行为的仿真系统。",
+        "take": "核心工程信号是：通过精心设计的agent环境与记忆机制，LLM驱动的模拟体可在受限社会框架内产生涌现行为，这为AI builders提供了测试社会动态、策略推理与多智能体协作的新范式工作台。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-11-builder-theme-thibault-sottiaux-on-this-was-fixed-you-know-whats-coming-give-us-24-hours-to-reset-t",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2066956441173323943",
+        "title": "Builder Theme: Thibault Sottiaux on This was fixed. You know what's coming 👀 Give us 24 hours to reset t...",
+        "summary": "Claude Codex 速率限制将在24小时内跨所有计划重置，修复先前限制问题。",
+        "take": "开发者应提前规划Codex API调用峰值，利用重置窗口进行高密度任务调度；若依赖持续接入，需设计请求队列与退避机制，避免重置后再度触发限流。",
+        "topics": [
+          "Coding Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-17-12-builder-theme-thariq-on-slack-now-renders-html-attachments-instead-of-just-showing-it-as-text",
+        "briefingId": "rss-2026-06-17",
+        "date": "2026-06-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2067021344341098670",
+        "title": "Builder Theme: Thariq on Slack now renders HTML attachments instead of just showing it as text...",
+        "summary": "Thariq 指出 Slack 现已支持直接渲染 HTML 附件而不再将其显示为纯文本。",
+        "take": "AI 代理或需调整其通过 Slack 发送格式化内容时的策略：从依赖纯文本附件转向优先使用 HTML 以实现更丰富的内联渲染，这影响自动化工作流中信息呈现方式的工程选型。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

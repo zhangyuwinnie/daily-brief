@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-17",
     "2026-06-16",
     "2026-06-15",
     "2026-06-14",
@@ -127,6 +128,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-17": {
+      "briefingIds": [
+        "rss-2026-06-17"
+      ],
+      "insightIds": [
+        "rss-2026-06-17-01-from-the-hugging-face-hub-to-robot-hardware-with-strands-agents-and-lerobot",
+        "rss-2026-06-17-02-agentic-resource-discovery-let-agents-search",
+        "rss-2026-06-17-03-datasette-agent-03a0",
+        "rss-2026-06-17-04-datasette-10a34",
+        "rss-2026-06-17-05-introducing-eve",
+        "rss-2026-06-17-06-the-agent-stack",
+        "rss-2026-06-17-07-unlocking-uk-house-building-with-ai-accelerated-planning",
+        "rss-2026-06-17-08-predicting-model-behavior-before-release-by-simulating-deployment",
+        "rss-2026-06-17-09-from-pixels-to-planning-earth-ai-for-nature-restoration",
+        "rss-2026-06-17-10-builder-theme-simulating-humans-at-scale-similes-joon-sung-park",
+        "rss-2026-06-17-11-builder-theme-thibault-sottiaux-on-this-was-fixed-you-know-whats-coming-give-us-24-hours-to-reset-t",
+        "rss-2026-06-17-12-builder-theme-thariq-on-slack-now-renders-html-attachments-instead-of-just-showing-it-as-text"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-16": {
       "briefingIds": [
         "rss-2026-06-16"
