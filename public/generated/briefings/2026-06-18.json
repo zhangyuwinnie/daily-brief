@@ -1,0 +1,174 @@
+{
+  "date": "2026-06-18",
+  "briefings": [
+    {
+      "id": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-18",
+      "filePath": "2026-06-18.md",
+      "summaryTopline": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "insightIds": [
+        "rss-2026-06-18-01-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-children",
+        "rss-2026-06-18-02-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicinal-chemistry",
+        "rss-2026-06-18-03-glm-52-is-probably-the-most-powerful-text-only-open-weights-llm",
+        "rss-2026-06-18-04-quoting-charity-majors",
+        "rss-2026-06-18-05-vercel-ship-2026-recap",
+        "rss-2026-06-18-06-introducing-vercel-connect",
+        "rss-2026-06-18-07-builder-theme-thibault-sottiaux-on-reminder-that-you-can-use-the-codex-app-cli-and-sdk-with-any-open-so",
+        "rss-2026-06-18-08-builder-theme-sam-altman-on-noam-is-one-of-the-people-i-have-most-wanted-to-work-with-since-the-v"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-18-01-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-children",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "publishedDate": "2026-06-18",
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "summary": "OpenAI研究团队利用其推理模型，对未确诊的罕见儿童遗传疾病病例进行分析，成功识别出18个新诊断结果。",
+      "take": "该案例展示了复杂推理模型在医疗诊断中的实际应用，可通过多模态数据（如基因序列、临床记录）辅助缩小搜索空间。对AI开发者而言，这意味着在专业领域（如生物信息学）中，推理模型可显著提升长尾问题的求解效率，但需注意数据质量和领域专家的验证闭环。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-18-02-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicinal-chemistry",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/ai-chemist-improves-reaction",
+      "publishedDate": "2026-06-17",
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "summary": "OpenAI与Molecule.one合作，利用GPT-5.4驱动近自主AI化学家，在药物化学中优化了关键反应条件。",
+      "take": "该工作展示了LLM在科学实验中的新范式：模型直接控制执行物理实验、分析结果并迭代优化条件，而非仅提供理论建议。这种“模型即实验者”的闭环Agent架构，正将AI从辅助工具转向自主发现引擎，大幅加速药物研发等领域的假设测试周期。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-18-03-glm-52-is-probably-the-most-powerful-text-only-open-weights-llm",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+      "publishedDate": "2026-06-17",
+      "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+      "summary": "中國AI實驗室Z.ai於6月16日以MIT授權開源了GLM-5.2模型，這是一個753B參數、1.51TB大小的純文字MoE架構模型，擁有40個活躍參數及100萬token上下文窗口，在獨立基準測試中成為最強開源權重模型。",
+      "take": "GLM-5.2是目前開源權重中最強的純文字LLM，其MoE架構僅啟動40B參數即可達到頂尖效能，對於建構高吞吐量、低成本推論的AI代理工作流程具有直接價值。開發者應著重評估其1M上下文窗口在長文檔理解與複雜代理鏈中的表現，並利用MIT授權進行客製化微調。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-18-04-quoting-charity-majors",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
+      "publishedDate": "2026-06-17",
+      "title": "Quoting Charity Majors",
+      "summary": "Charity Majors指出，2025年代码生产的经济学被颠覆，从昂贵耗时转变为几乎免费且即时，代码从被精心维护的资产变为可丢弃和重新生成的消耗品。",
+      "take": "工程师必须接受代码成为一次性资产的现实，转而强化系统设计、可观测性和工程纪律，而非依赖传统代码复用与维护流程。这要求AI辅助开发工作流优先确保架构稳健性与自动化测试，以应对快速迭代带来的技术债风险。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-18-05-vercel-ship-2026-recap",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/vercel-ship-2026-recap",
+      "publishedDate": "2026-06-17",
+      "title": "Vercel Ship 2026 recap",
+      "summary": "Vercel 在 Ship 2026 大会上宣布其平台将转型为面向代理（Agent）的全栈基础设施，支持编码代理（如 Claude Code、Codex）直接部署软件，并提供了构建与运行自主代理所需的生产级工具链。",
+      "take": "Vercel 正在将自身重塑为代理原生的部署与运行平台，这意味着 AI 构建者应优先考虑将 Vercel 作为编码代理的默认部署目标，并利用其提供的全栈工具链来加速代理的构建和在生产环境中的稳定运行，从而降低代理应用从开发到上线的工程摩擦。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-18-06-introducing-vercel-connect",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/introducing-vercel-connect",
+      "publishedDate": "2026-06-17",
+      "title": "Introducing Vercel Connect",
+      "summary": "Vercel 推出 Connect 公开测试版，用细粒度、基于用户会话的动态权限系统替代长期存在的环境变量令牌，以解决 AI 代理在跨系统操作时的认证与授权安全漏洞。",
+      "take": "对于构建代理工作流的工程师，核心转变是从存储全能型长期令牌转向按需、最小权限的授权模型。这意味着必须重构代理的认证层，为每个用户和任务动态颁发短期凭证，而非共享环境变量——这是实现安全、多租户生产级 Agent 的基础架构要求。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-18-07-builder-theme-thibault-sottiaux-on-reminder-that-you-can-use-the-codex-app-cli-and-sdk-with-any-open-so",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2067181377028538431",
+      "title": "Builder Theme: Thibault Sottiaux on Reminder that you can use the Codex App, CLI and SDK with any open so...",
+      "summary": "Thibault Sottiaux 指出，OpenAI 的 Codex 应用、CLI 和 SDK 可与任意开源模型配合使用，而不仅限于 OpenAI 自家模型。",
+      "take": "这打破了开源模型与 OpenAI 工具链之间的壁垒，开发者可直接将 Codex 的代码生成和编辑能力接入本地或自定义开源模型，从而在保持灵活性的同时复用成熟的开发工具接口。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-18-08-builder-theme-sam-altman-on-noam-is-one-of-the-people-i-have-most-wanted-to-work-with-since-the-v",
+      "briefingId": "rss-2026-06-18",
+      "date": "2026-06-18",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2067427421083652131",
+      "title": "Builder Theme: Sam Altman on noam is one of the people I have most wanted to work with since the v...",
+      "summary": "Sam Altman宣布Noam Brown（曾任Meta AI高级研究员）加入OpenAI，标志其团队在长期战略人才布局上迈出关键一步。",
+      "take": "对于AI建设者，核心信号是OpenAI持续吸纳具有多智能体博弈或推理突破背景的研究者，这暗示其后续模型可能重点强化复杂规划与对抗性推理能力，可提前在自主Agent的决策框架中引入博弈论模块以对齐该方向。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

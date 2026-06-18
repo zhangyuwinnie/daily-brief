@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-18",
     "2026-06-17",
     "2026-06-16",
     "2026-06-15",
@@ -128,6 +129,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-18": {
+      "briefingIds": [
+        "rss-2026-06-18"
+      ],
+      "insightIds": [
+        "rss-2026-06-18-01-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-children",
+        "rss-2026-06-18-02-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicinal-chemistry",
+        "rss-2026-06-18-03-glm-52-is-probably-the-most-powerful-text-only-open-weights-llm",
+        "rss-2026-06-18-04-quoting-charity-majors",
+        "rss-2026-06-18-05-vercel-ship-2026-recap",
+        "rss-2026-06-18-06-introducing-vercel-connect",
+        "rss-2026-06-18-07-builder-theme-thibault-sottiaux-on-reminder-that-you-can-use-the-codex-app-cli-and-sdk-with-any-open-so",
+        "rss-2026-06-18-08-builder-theme-sam-altman-on-noam-is-one-of-the-people-i-have-most-wanted-to-work-with-since-the-v"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-17": {
       "briefingIds": [
         "rss-2026-06-17"
