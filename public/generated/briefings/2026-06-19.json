@@ -1,0 +1,242 @@
+{
+  "date": "2026-06-19",
+  "briefings": [
+    {
+      "id": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-19",
+      "filePath": "2026-06-19.md",
+      "summaryTopline": "New usage analytics and updated spend controls for enterprises",
+      "insightIds": [
+        "rss-2026-06-19-01-new-usage-analytics-and-updated-spend-controls-for-enterprises",
+        "rss-2026-06-19-02-improving-health-intelligence-in-chatgpt",
+        "rss-2026-06-19-03-datasette-apps-host-custom-html-applications-inside-datasette",
+        "rss-2026-06-19-04-zero-touch-oauth-for-mcp",
+        "rss-2026-06-19-05-mosaicleaks-can-your-research-agent-keep-a-secret",
+        "rss-2026-06-19-06-is-it-agentic-enough-benchmarking-open-models-on-your-own-tooling",
+        "rss-2026-06-19-07-banning-open-source-ai-would-be-a-mistake",
+        "rss-2026-06-19-08-builder-theme-the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban",
+        "rss-2026-06-19-09-builder-theme-claude-on-new-in-claude-code-artifacts-interactive-pages-built-from-your-sess",
+        "rss-2026-06-19-10-builder-theme-garry-tan-on-bernie-sanders-introduced-a-bill-to-seize-50-of-any-ai-startup-that",
+        "rss-2026-06-19-11-builder-theme-claude-code-now-supports-artifacts"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-19-01-new-usage-analytics-and-updated-spend-controls-for-enterprises",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "publishedDate": "2026-06-18",
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "summary": "OpenAI为ChatGPT Enterprise新增了细粒度支出控制功能和更深入的使用分析仪表盘，使企业能够按用户、部门或API调用级别设定预算并监控成本。",
+      "take": "企业AI部署现在获得了标准化的成本治理层：通过基于角色的支出上限和实时用量仪表盘，开发者可以构建自限性工作流并实现运营审计，这降低了规模化ChatGPT Enterprise时的合规不确定性。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-19-02-improving-health-intelligence-in-chatgpt",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "publishedDate": "2026-06-18",
+      "title": "Improving health intelligence in ChatGPT",
+      "summary": "OpenAI 发布了 GPT-5.5 Instant 模型，通过增强推理能力与医生参与评估，提升了 ChatGPT 在健康和 wellness 领域的回答准确性与上下文理解。",
+      "take": "对 AI 构建者而言，关键信号是 OpenAI 通过引入领域专家反馈循环来微调模型推理，而非仅靠数据扩展。这意味着在构建医疗或专业领域 agent 时，将人工标注与评估流程集成进训练管线，是提升模型可靠性及合规性的可复现路径。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-19-03-datasette-apps-host-custom-html-applications-inside-datasette",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
+      "publishedDate": "2026-06-18",
+      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "summary": "Simon Willison 发布 datasette-apps 插件，允许用户在 Datasette 环境中托管自包含的 HTML+JS 应用，这些应用通过沙箱隔离运行，仅能执行只读 SQL 查询，或通过预配置存储查询执行写操作。",
+      "take": "该插件为 AI 构建者提供了一种将自定义前端界面与结构化数据查询直接绑定在 Datasette 上的轻量方法，适用于快速构建 Agent 可调用的只读 RAG 数据展示层，无需额外后端服务。未来可扩展为 LLM 生成的前端组件或 Codex 构建的临时分析面板的托管沙箱。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-19-04-zero-touch-oauth-for-mcp",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "publishedDate": "2026-06-18",
+      "title": "Zero-Touch OAuth for MCP",
+      "summary": "MCP 推出零接触 OAuth 方案，通过预授权服务与客户端自动化协商机制，实现无需手动干预的企业级身份认证与资源授权。",
+      "take": "开发者需将 OAuth 2.0 设备授权流程嵌入 MCP 客户端，利用预配置的令牌端点与作用域实现自动化令牌交换；此举消除了手动凭证输入，使 MCP 协议原生支持持续集成管道中的无服务器代理认证，显著降低多工具链编排的运维复杂度。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-05-mosaicleaks-can-your-research-agent-keep-a-secret",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "publishedDate": "2026-06-18",
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "summary": "ServiceNow发布MosaicLeaks基准，用于评估AI研究代理在处理包含敏感信息的任务时，是否会无意中泄露机密数据。",
+      "take": "该基准揭示当前研究代理在上下文中的信息隔离能力存在显著漏洞，开发者需在代理架构中强制实施基于角色或任务的内存分区策略，并添加主动的敏感信息检查点，而非依赖模型自身的安全性。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-06-is-it-agentic-enough-benchmarking-open-models-on-your-own-tooling",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/is-it-agentic-enough",
+      "publishedDate": "2026-06-18",
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "summary": "Hugging Face 发布了一个开源基准测试框架，用于评估开放模型在自定义工具链上的代理能力，重点测试模型能否正确理解任务、调用工具并处理返回结果。",
+      "take": "该框架提供了可复现的评估方法，允许开发者直接将自己的工具集接入基准测试。关键启示是：模型在标准基准上的高分不一定能转化为实际工具使用中的可靠性，必须针对具体工具链进行独立验证。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-07-banning-open-source-ai-would-be-a-mistake",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Interconnects AI",
+      "sourceUrl": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
+      "publishedDate": "2026-06-19",
+      "title": "Banning Open Source AI Would Be A Mistake",
+      "summary": "多位技术专家联合发表评论，认为以安全为由全面禁止开源AI模型是一种政策错误，会扼杀创新与可审计性。",
+      "take": "对于AI构建者而言，开源生态的持续存在是获得底层模型透明度、进行自主微调与部署的关键；政策制定者应关注模型权重分发环节的治理而非全面禁令，工程团队应持续评估开源模型在可控性上的优势。",
+      "topics": [
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-08-builder-theme-the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "The MAD Podcast with Matt Turck",
+      "sourceUrl": "https://www.youtube.com/watch?v=0NttU4CbyVs",
+      "title": "Builder Theme: The Neocloud Boom: State of AI Compute 2026 - Stephen Balaban",
+      "summary": "Lambda CTO Stephen Balaban 断言 GPU 需求无止境，算力市场持续供不应求，并指出 Neo Cloud（新一代云计算服务商）是当前 AI 基础设施的核心增长点。",
+      "take": "AI 开发者应放弃传统云厂商节点，优先选择针对 GPU 大规模编排优化、支持即时扩容和裸机调度的 Neo Cloud 平台（如 Lambda），以应对 scaling laws 带来的持续计算需求。在评估算力成本时，需关注集群间低延迟互联和原生 LLM 推理部署的工程效率，而非单纯比较单卡价格。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-09-builder-theme-claude-on-new-in-claude-code-artifacts-interactive-pages-built-from-your-sess",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2067671912038240487",
+      "title": "Builder Theme: Claude on New in Claude Code: Artifacts. Interactive pages built from your sess...",
+      "summary": "Claude Code 新增 Artifacts 功能，可从编码会话中生成交互式页面（如PR走查或实时项目看板），并通过私有链接与团队共享，当前在Team和Enterprise计划中提供Beta版。",
+      "take": "这是一个将AI编码助手从单次会话工具转向协作式持续交付平台的信号——开发者可将每一次Agent交互固化、持久化并跨会话共享为交互式工件，暗示未来Agent工作流中将内建更完整的协作与制品管理能力。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-10-builder-theme-garry-tan-on-bernie-sanders-introduced-a-bill-to-seize-50-of-any-ai-startup-that",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2067636692794875923",
+      "title": "Builder Theme: Garry Tan on Bernie Sanders introduced a bill to seize 50% of any AI startup that...",
+      "summary": "美国参议员桑德斯提出法案，拟对营收超2亿美元的AI初创公司征收50%资产，该法案呼应了年内试图禁止初创公司并购的立法动向，威胁到85%创始人的唯一退出路径。",
+      "take": "此政策若通过将根本改变AI初创公司的资本结构和退出逻辑：开发者需重新评估以美国为基地的AI创业风险，考虑海外架构或非传统融资路径；同时，高营收AI公司可能被迫在规模化前寻求并购或拆分以规避资产罚没，这会重塑AI工具链和Agent的商业化策略。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-19-11-builder-theme-claude-code-now-supports-artifacts",
+      "briefingId": "rss-2026-06-19",
+      "date": "2026-06-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+      "publishedDate": "2026-06-18",
+      "title": "Builder Theme: Claude Code now supports artifacts",
+      "summary": "Claude Code 新增 artifact 功能，将对话工作流（如PR审查、系统分析、数据排查）自动生成为可共享、可交互的网页页面（如仪表盘、发布清单），并随会话进度实时更新。",
+      "take": "这一机制将CLI代理的输出从纯文本转向结构化、可协作的Web组件，改变了AI工作流的成果交付方式。开发者的核心行动点是：无需手动整理代理的中间或最终产出，Artifact为团队提供了实时的、可浏览的协作界面，减少了沟通状态的开销，并使代理进度对非技术成员透明化。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

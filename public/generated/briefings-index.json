@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-19",
     "2026-06-18",
     "2026-06-17",
     "2026-06-16",
@@ -129,6 +130,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-19": {
+      "briefingIds": [
+        "rss-2026-06-19"
+      ],
+      "insightIds": [
+        "rss-2026-06-19-01-new-usage-analytics-and-updated-spend-controls-for-enterprises",
+        "rss-2026-06-19-02-improving-health-intelligence-in-chatgpt",
+        "rss-2026-06-19-03-datasette-apps-host-custom-html-applications-inside-datasette",
+        "rss-2026-06-19-04-zero-touch-oauth-for-mcp",
+        "rss-2026-06-19-05-mosaicleaks-can-your-research-agent-keep-a-secret",
+        "rss-2026-06-19-06-is-it-agentic-enough-benchmarking-open-models-on-your-own-tooling",
+        "rss-2026-06-19-07-banning-open-source-ai-would-be-a-mistake",
+        "rss-2026-06-19-08-builder-theme-the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban",
+        "rss-2026-06-19-09-builder-theme-claude-on-new-in-claude-code-artifacts-interactive-pages-built-from-your-sess",
+        "rss-2026-06-19-10-builder-theme-garry-tan-on-bernie-sanders-introduced-a-bill-to-seize-50-of-any-ai-startup-that",
+        "rss-2026-06-19-11-builder-theme-claude-code-now-supports-artifacts"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-18": {
       "briefingIds": [
         "rss-2026-06-18"
