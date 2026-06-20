@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-20",
     "2026-06-19",
     "2026-06-18",
     "2026-06-17",
@@ -130,6 +131,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-20": {
+      "briefingIds": [
+        "rss-2026-06-20"
+      ],
+      "insightIds": [
+        "rss-2026-06-20-01-quoting-sean-lynch",
+        "rss-2026-06-20-02-how-we-built-an-internal-data-analytics-agent",
+        "rss-2026-06-20-03-llms-are-complicated-now",
+        "rss-2026-06-20-04-temporary-cloudflare-accounts-for-ai-agents",
+        "rss-2026-06-20-05-builder-theme-re-engineering-the-semiconductor-supply-chain-with-intel-ceo-lip-bu-tan",
+        "rss-2026-06-20-06-builder-theme-boris-cherny-on-cool-way-to-use-claude-code-deciphering-linear-a-a-3500-year-old-wr",
+        "rss-2026-06-20-07-builder-theme-guillermo-rauch-on-agents-are-motivating-so-many-healthy-software-habits-open-apis-doc"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-19": {
       "briefingIds": [
         "rss-2026-06-19"
