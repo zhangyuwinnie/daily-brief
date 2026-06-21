@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-21",
+  "briefings": [
+    {
+      "id": "rss-2026-06-21",
+      "date": "2026-06-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-21",
+      "filePath": "2026-06-21.md",
+      "summaryTopline": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+      "insightIds": [
+        "rss-2026-06-21-01-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-06-21-02-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-06-21-03-builder-theme-thibault-sottiaux-on-we-built-the-codex-app-with-models-that-were-okayish-at-front-end-wa",
+        "rss-2026-06-21-04-builder-theme-guillermo-rauch-on-genuinely-impressed-almost-shocked-at-how-good-glm-52-by-zai_org"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-21-01-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+      "briefingId": "rss-2026-06-21",
+      "date": "2026-06-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+      "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+      "summary": "Anthropic 提出托管代理（Managed Agents）架构，核心思路是将模型决策（大脑）与工具执行（手）解耦，并通过可插拔的上下文重置等机制动态适配不同模型版本的行为差异。",
+      "take": "构建长期运行的代理时，不要假设模型行为固定，须设计可调整的元架构（harness）以应对模型能力演进。关键工程实践：将上下文管理、任务终止等控制逻辑抽象为独立层，并定期测试其对最新模型版本的适配性，去除已失效的补偿逻辑。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-21-02-builder-theme-an-update-on-recent-claude-code-quality-reports",
+      "briefingId": "rss-2026-06-21",
+      "date": "2026-06-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "title": "Builder Theme: An update on recent Claude Code quality reports",
+      "summary": "Anthropic 调查并修复了三月以来因 Claude Code 默认推理强度从高改为中、Agent SDK 及 Cowork 产品的三项独立变更导致的用户感知质量下降问题，API 不受影响，修复已部署于版本 v2.1.116。",
+      "take": "推理强度作为关键超参数，在产品层默认值变更会显著影响下游任务表现，AI 工具链开发者应监控推理配置对用户反馈的敏感度，并建立跨产品变更的回归测试机制，避免非模型层的参数调整被误读为模型退化。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-21-03-builder-theme-thibault-sottiaux-on-we-built-the-codex-app-with-models-that-were-okayish-at-front-end-wa",
+      "briefingId": "rss-2026-06-21",
+      "date": "2026-06-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2068568650924409260",
+      "title": "Builder Theme: Thibault Sottiaux on We built the Codex App with models that were okayish at front-end. Wa...",
+      "summary": "Thibault Sottiaux团队使用前段能力一般的模型构建了Codex应用，并预期显著改善前端能力的模型将带来重大突破。",
+      "take": "当前AI模型前端生成能力尚未成熟，但已能支撑完整应用构建。工程师应优先优化模型对UI/UX的语义理解与视觉布局生成能力，这是提升端到端Agent自主构建应用能力的关键瓶颈。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-21-04-builder-theme-guillermo-rauch-on-genuinely-impressed-almost-shocked-at-how-good-glm-52-by-zai_org",
+      "briefingId": "rss-2026-06-21",
+      "date": "2026-06-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2068517095818809770",
+      "title": "Builder Theme: Guillermo Rauch on Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org...",
+      "summary": "Guillermo Rauch对智谱AI的GLM-5.2模型在编程任务上的表现感到震惊，认为其将改变现状。",
+      "take": "开发者应评估GLM-5.2作为编码助手或自动化编程代理的可行性，其性能可能挑战现有闭源模型的主导地位，值得集成到工具链中测试实际吞吐量和准确率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

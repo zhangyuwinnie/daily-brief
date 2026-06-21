@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-21",
     "2026-06-20",
     "2026-06-19",
     "2026-06-18",
@@ -131,6 +132,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-21": {
+      "briefingIds": [
+        "rss-2026-06-21"
+      ],
+      "insightIds": [
+        "rss-2026-06-21-01-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-06-21-02-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-06-21-03-builder-theme-thibault-sottiaux-on-we-built-the-codex-app-with-models-that-were-okayish-at-front-end-wa",
+        "rss-2026-06-21-04-builder-theme-guillermo-rauch-on-genuinely-impressed-almost-shocked-at-how-good-glm-52-by-zai_org"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-20": {
       "briefingIds": [
         "rss-2026-06-20"
