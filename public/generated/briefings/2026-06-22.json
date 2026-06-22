@@ -1,0 +1,177 @@
+{
+  "date": "2026-06-22",
+  "briefings": [
+    {
+      "id": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-22",
+      "filePath": "2026-06-22.md",
+      "summaryTopline": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "insightIds": [
+        "rss-2026-06-22-01-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainers",
+        "rss-2026-06-22-02-daybreak-tools-for-securing-every-organization-in-the-world",
+        "rss-2026-06-22-03-sqlite-utils-40rc1-adds-migrations-and-nested-transactions",
+        "rss-2026-06-22-04-temporary-cloudflare-accounts-for-ai-agents",
+        "rss-2026-06-22-05-sakana-fugu-ultra-now-available-on-ai-gateway",
+        "rss-2026-06-22-06-glm-52-is-the-step-change-for-open-agents",
+        "rss-2026-06-22-07-builder-theme-thibault-sottiaux-on-what-should-we-improve-in-the-codex-app-whats-not-delightful",
+        "rss-2026-06-22-08-builder-theme-guillermo-rauch-on-coding-agents-will-squeeze-every-ounce-of-ikea-effect-out-of-you-if"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-22-01-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainers",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/patch-the-planet",
+      "publishedDate": "2026-06-22",
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "summary": "OpenAI 推出 Patch the Planet 计划，通过 Daybreak 项目，利用 AI 辅助和专家审查流程，帮助开源维护者识别、验证并修复代码漏洞。",
+      "take": "AI 驱动的漏洞发现与修复流程正从自动化检测延伸到人工验证闭环，开源维护者应关注此类工具链集成，以降低安全维护成本并提升修复效率。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-22-02-daybreak-tools-for-securing-every-organization-in-the-world",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/daybreak-securing-the-world",
+      "publishedDate": "2026-06-22",
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "summary": "OpenAI 发布了 Daybreak 工具集，包含 Codex Security 和 GPT-5.5-Cyber，用于自动化企业级漏洞发现、验证与修复。",
+      "take": "Codex Security 将代码分析与 GPT 推理结合，实现了从漏洞定位到补丁生成的端到端闭环，开发者可直接将其集成到 CI/CD 管线中。GPT-5.5-Cyber 则专注于安全上下文理解，能处理复杂攻击链的模拟与防御策略建议，标志着 AI 从辅助编码向主动安全运营的范式迁移。",
+      "topics": [
+        "Coding Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-22-03-sqlite-utils-40rc1-adds-migrations-and-nested-transactions",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
+      "publishedDate": "2026-06-21",
+      "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+      "summary": "Simon Willison 发布了 sqlite-utils 4.0rc1，首次引入数据库迁移功能和嵌套事务支持，作为基于 Python sqlite3 的高层封装库及 CLI 工具的版本候选。",
+      "take": "对于构建 AI 工作流中依赖 SQLite 作为本地持久化层的开发者，迁移功能的加入意味着可以直接在 sqlite-utils 中管理 schema 演化，无需再依赖 Alembic 等外部工具；嵌套事务支持则提供了更细粒度的回滚控制，提升了复杂数据操作管线的鲁棒性。建议在稳定版发布前测试此 RC 以确保向后兼容性变更不影响现有流水线。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-22-04-temporary-cloudflare-accounts-for-ai-agents",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
+      "publishedDate": "2026-06-21",
+      "title": "Temporary Cloudflare Accounts for AI agents",
+      "summary": "Cloudflare 推出临时 Workers 项目功能，允许通过 npx wrangler deploy --temporary 命令无需账号即可部署并运行 60 分钟，Simon Willison 让 GPT-5.5 在 Codex Desktop 中生成并部署了一个 HTTP 重定向追踪工具。",
+      "take": "此功能为 AI 代理提供了无摩擦的临时计算环境，开发者可让代理自动生成代码并部署以验证结果，适用于短期测试或工具链自动化；核心工程模式是消除账号前置门槛，将部署作为瞬态资源管理，未来可被纳入代理的循环执行流程中。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-22-05-sakana-fugu-ultra-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/sakana-fugu-ultra-now-available-on-ai-gateway",
+      "publishedDate": "2026-06-22",
+      "title": "Sakana Fugu Ultra now available on AI Gateway",
+      "summary": "Sakana AI 推出了 Fugu Ultra 模型，通过协调 1-3 个公开前沿模型作为代理，组合输出单一答案，现可通过 Vercel AI Gateway 以统一 API 调用。",
+      "take": "Fugu Ultra 代表了多模型协作推理的工程范式，开发者无需维护单一巨型模型，而是利用 AI Gateway 的路由与失败转移能力，将复杂任务分解给多个代理模型并行处理，这为构建高鲁棒性与低成本推理系统提供了直接可复用的架构模式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-22-06-glm-52-is-the-step-change-for-open-agents",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Interconnects AI",
+      "sourceUrl": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "publishedDate": "2026-06-22",
+      "title": "GLM-5.2 is the step change for open agents",
+      "summary": "智谱AI发布GLM-5.2模型，通过改进基座模型的能力阈值，显著提升了开放智能体在复杂任务中的自主决策与执行能力。",
+      "take": "GLM-5.2的关键突破在于其能力阈值跃升，使得开发者无需依赖额外编排即可构建更可靠的自主智能体。这意味着Agent工作流可以从‘强提示+弱模型’范式转向‘弱提示+强模型’，降低系统复杂度与维护成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-22-07-builder-theme-thibault-sottiaux-on-what-should-we-improve-in-the-codex-app-whats-not-delightful",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2068736857312198928",
+      "title": "Builder Theme: Thibault Sottiaux on What should we improve in the Codex app. What's not delightful?",
+      "summary": "Thibault Sottiaux 公开征集对 Codex 应用的改进建议，聚焦用户体验中不够愉悦的环节，旨在从开发者视角优化 AI 编码工作流。",
+      "take": "直接从用户反馈中提取 UX 痛点（如交互延迟、上下文丢失、代码补全不准确）是迭代 AI 编码工具的关键。对于 AI Builder，应优先修复破坏心流体验的细节，而非堆砌新功能，这能直接提升采纳率与留存。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-22-08-builder-theme-guillermo-rauch-on-coding-agents-will-squeeze-every-ounce-of-ikea-effect-out-of-you-if",
+      "briefingId": "rss-2026-06-22",
+      "date": "2026-06-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2068778558672273422",
+      "title": "Builder Theme: Guillermo Rauch on Coding agents will squeeze every ounce of IKEA effect out of you, if...",
+      "summary": "Guillermo Rauch 指出，编码智能体将彻底榨干开发者对代码的“宜家效应”（即对自己亲手构建产物的过度珍视），前提是开发者放任其发生。",
+      "take": "核心工程启示是，编码智能体的高效替代将颠覆开发者对手动编写代码的心理依赖。开发者必须主动调整工作流，从珍视手写代码转向评估智能体产出的逻辑与结果，否则将被效率淘汰。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-22",
     "2026-06-21",
     "2026-06-20",
     "2026-06-19",
@@ -132,6 +133,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-22": {
+      "briefingIds": [
+        "rss-2026-06-22"
+      ],
+      "insightIds": [
+        "rss-2026-06-22-01-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainers",
+        "rss-2026-06-22-02-daybreak-tools-for-securing-every-organization-in-the-world",
+        "rss-2026-06-22-03-sqlite-utils-40rc1-adds-migrations-and-nested-transactions",
+        "rss-2026-06-22-04-temporary-cloudflare-accounts-for-ai-agents",
+        "rss-2026-06-22-05-sakana-fugu-ultra-now-available-on-ai-gateway",
+        "rss-2026-06-22-06-glm-52-is-the-step-change-for-open-agents",
+        "rss-2026-06-22-07-builder-theme-thibault-sottiaux-on-what-should-we-improve-in-the-codex-app-whats-not-delightful",
+        "rss-2026-06-22-08-builder-theme-guillermo-rauch-on-coding-agents-will-squeeze-every-ounce-of-ikea-effect-out-of-you-if"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-21": {
       "briefingIds": [
         "rss-2026-06-21"
