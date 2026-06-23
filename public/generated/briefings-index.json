@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-23",
     "2026-06-22",
     "2026-06-21",
     "2026-06-20",
@@ -133,6 +134,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-23": {
+      "briefingIds": [
+        "rss-2026-06-23"
+      ],
+      "insightIds": [
+        "rss-2026-06-23-01-how-omio-is-building-the-future-of-conversational-travel",
+        "rss-2026-06-23-02-codex-maxxing-for-long-running-work",
+        "rss-2026-06-23-03-prompt-injection-as-role-confusion",
+        "rss-2026-06-23-04-porting-the-moebius-02b-image-inpainting-model-to-run-in-the-browser-with-claude-code",
+        "rss-2026-06-23-05-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem",
+        "rss-2026-06-23-06-build-real-agentic-apps-using-cuga-two-dozen-working-examples-on-a-lightweight-harness",
+        "rss-2026-06-23-07-deploy-from-claude-design-to-vercel",
+        "rss-2026-06-23-08-redesigned-trace-viewer-for-vercel-workflows",
+        "rss-2026-06-23-09-builder-theme-sam-altman-on-we-want-to-help-all-companies-be-secure-working-with-the-usg-and-the",
+        "rss-2026-06-23-10-builder-theme-thibault-sottiaux-on-what-are-we-codexing-tonight"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-22": {
       "briefingIds": [
         "rss-2026-06-22"

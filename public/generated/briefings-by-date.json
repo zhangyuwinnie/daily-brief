@@ -27850,5 +27850,221 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-23": {
+    "date": "2026-06-23",
+    "briefings": [
+      {
+        "id": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-23",
+        "filePath": "2026-06-23.md",
+        "summaryTopline": "How Omio is building the future of conversational travel",
+        "insightIds": [
+          "rss-2026-06-23-01-how-omio-is-building-the-future-of-conversational-travel",
+          "rss-2026-06-23-02-codex-maxxing-for-long-running-work",
+          "rss-2026-06-23-03-prompt-injection-as-role-confusion",
+          "rss-2026-06-23-04-porting-the-moebius-02b-image-inpainting-model-to-run-in-the-browser-with-claude-code",
+          "rss-2026-06-23-05-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem",
+          "rss-2026-06-23-06-build-real-agentic-apps-using-cuga-two-dozen-working-examples-on-a-lightweight-harness",
+          "rss-2026-06-23-07-deploy-from-claude-design-to-vercel",
+          "rss-2026-06-23-08-redesigned-trace-viewer-for-vercel-workflows",
+          "rss-2026-06-23-09-builder-theme-sam-altman-on-we-want-to-help-all-companies-be-secure-working-with-the-usg-and-the",
+          "rss-2026-06-23-10-builder-theme-thibault-sottiaux-on-what-are-we-codexing-tonight"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-23-01-how-omio-is-building-the-future-of-conversational-travel",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/omio",
+        "publishedDate": "2026-06-23",
+        "title": "How Omio is building the future of conversational travel",
+        "summary": "Omio 利用 OpenAI 的 GPT 模型构建了基于自然语言对话的旅行预订系统，通过大语言模型理解用户意图、提取旅行偏好并动态生成多模态行程建议，实现了从传统搜索框到对话式交互的架构转变。",
+        "take": "工程上，核心是将 LLM 作为意图解析与对话状态管理的中枢，而非仅作为前端聊天 UI；关键在于设计结构化的 prompt 链路来提取实体（如日期、目的地）并绑定到后端 API 调用。这为构建其他垂直领域（如金融、医疗）的对话代理提供了可复用的模式：利用 LLM 将模糊自然语言转化为精确的查询参数，同时保持对用户上下文的记忆能力。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-23-02-codex-maxxing-for-long-running-work",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/codex-maxxing-long-running-work",
+        "publishedDate": "2026-06-22",
+        "title": "Codex-maxxing for long-running work",
+        "summary": "Jason Liu 演示了通过将 OpenAI Codex 与结构化上下文管理结合，使复杂项目任务在单个提示之外持续运行，从而避免上下文丢失。",
+        "take": "核心工程模式是将长期工作拆分为多个可被 Codex 理解和延续的模块化上下文片段，而非依赖单一长对话。开发者应借鉴这种‘代码即上下文’的架构，利用外部状态管理或文件系统来持久化 Agent 的工作记忆，以支持可中断、可恢复的复杂工作流。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-23-03-prompt-injection-as-role-confusion",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+        "publishedDate": "2026-06-22",
+        "title": "Prompt Injection as Role Confusion",
+        "summary": "Charles Ye等人通过实验证实，大型语言模型无法可靠区分特权角色标签（如<system>）与用户输入标签（如<user>），且模型更关注文本样式而非实际内容，导致提示注入攻击持续有效。",
+        "take": "核心工程启示：当前LLM对角色标签的解析存在固有缺陷，文本样式优先级高于标签语义。开发者不应依赖标签隔离（如系统提示与用户输入分离）来防御注入，而应转向输出验证、输入消毒或专用分类器等外部防御机制。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-23-04-porting-the-moebius-02b-image-inpainting-model-to-run-in-the-browser-with-claude-code",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+        "publishedDate": "2026-06-22",
+        "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
+        "summary": "Simon Willison将Moebius 0.2B轻量级图像修复模型从PyTorch/CUDA移植到浏览器中通过WebGPU运行，实现了用户标记区域后模型自动填充的交互式演示。",
+        "take": "表明低参数（0.2B）模型在WebGPU支持下可实现复杂视觉任务（如inpainting）的纯前端推理，为AI构建者提供了无需服务器GPU、直接集成到浏览器端工作流的可行范式。此案例验证了轻量级模型与WebGPU的结合可显著降低AI工具的部署成本和网络依赖，适合构建实时、隐私友好的客户端AI代理。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-05-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+        "publishedDate": "2026-06-22",
+        "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+        "summary": "GitHub 发布博客文章，概述其在开源生态系统中履行可访问性承诺的进展，并呼吁社区参与共建更包容的开源环境。",
+        "take": "对于AI构建者而言，可访问性不仅是伦理要求，更是扩大用户基础和数据来源的工程实践。检查你的工具链、文档和模型输出是否支持辅助技术（如屏幕阅读器）和国际化，这能减少工程反馈循环中的摩擦并提升代理的鲁棒性。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-06-build-real-agentic-apps-using-cuga-two-dozen-working-examples-on-a-lightweight-harness",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/cuga-apps",
+        "publishedDate": "2026-06-23",
+        "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+        "summary": "IBM Research发布CUGA框架及24个可运行代理应用示例，该框架通过将用户意图、工具调用与代码生成解耦，在轻量级运行系统上实现确定性多步骤代理流程。",
+        "take": "CUGA的核心创新是将传统链式调用改为结构化意图-工具-代码映射，使开发者无需依赖复杂编排库即可构建可靠代理。团队应关注其基于类型系统的工具合约设计，这能显著降低代理幻觉并提升跨模型可移植性。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-07-deploy-from-claude-design-to-vercel",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/claude-design-and-vercel",
+        "publishedDate": "2026-06-23",
+        "title": "Deploy from Claude Design to Vercel",
+        "summary": "Vercel将Claude Design的UI设计输出通过MCP服务器自动转换为可部署项目，并返回生产级实时URL，实现从设计到部署的零切换流水线。",
+        "take": "关键在于MCP协议打通了AI设计工具与部署平台之间的自动化通道，开发者无需手动导出代码或配置环境。这代表AI原生工作流的新范式：AI生成的UI设计可直接作为可运行项目推向生产，有望彻底消除设计与工程之间的‘手递手’交接成本。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-08-redesigned-trace-viewer-for-vercel-workflows",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/redesigned-trace-viewer-for-vercel-workflows",
+        "publishedDate": "2026-06-23",
+        "title": "Redesigned trace viewer for Vercel Workflows",
+        "summary": "Vercel 重新设计了 Workflows 的 Trace Viewer，支持在时间线中搜索跨度、缩放、键盘逐帧导航，并查看每个步骤的输入、输出和运行元数据，同时可通过 npx workflow@beta web 在本地开发环境中使用。",
+        "take": "对于构建 AI 工作流的开发者，此更新提供了一个可本地运行的端到端执行追踪工具，便于在调试代理或任务链时快速定位输入/输出异常。建议将此 Trace Viewer 集成到开发 CI 中，以替代传统的日志转储，提升复杂工作流调试效率。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-09-builder-theme-sam-altman-on-we-want-to-help-all-companies-be-secure-working-with-the-usg-and-the",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2069121360744550796",
+        "title": "Builder Theme: Sam Altman on We want to help all companies be secure, working with the USG and the...",
+        "summary": "OpenAI 推出 GPT-5.5-Cyber 完整版，在 CyberGym 基准测试中达到最先进性能，并结合 Patch The Planet 与 Codex Security 实现从漏洞发现到自动修补的闭环。",
+        "take": "对于 AI 安全构建者而言，重点在于 GPT-5.5-Cyber 验证了专用领域微调模型在特定安全基准上的优势，而非通用模型。更关键的工程信号是 Patch The Planet 与 Codex Security 的引入：它代表了从被动漏洞检测转向主动、自动化代码修复的范式，开发者应考虑将此类自动修补代理集成到 CI/CD 流程中，以降低修复延迟。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-23-10-builder-theme-thibault-sottiaux-on-what-are-we-codexing-tonight",
+        "briefingId": "rss-2026-06-23",
+        "date": "2026-06-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2069267387464274366",
+        "title": "Builder Theme: Thibault Sottiaux on What are we codexing tonight",
+        "summary": "Thibault Sottiaux 在一条简短推文中，以“今晚我们在编写什么代码”为引，面向AI构建者群体发起开放式协作或技术讨论邀请。",
+        "take": "该消息本身无具体工程细节，但其“Codex”一词暗示可能涉及基于大语言模型的代码生成或自动编程工具链。AI构建者应关注此类社区动态，以捕捉实验性工作流或工具原型的最新动向。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
