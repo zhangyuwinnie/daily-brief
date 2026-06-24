@@ -28066,5 +28066,201 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-06-24": {
+    "date": "2026-06-24",
+    "briefings": [
+      {
+        "id": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-06-24",
+        "filePath": "2026-06-24.md",
+        "summaryTopline": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+        "insightIds": [
+          "rss-2026-06-24-01-openai-and-broadcom-unveil-llm-optimized-inference-chip",
+          "rss-2026-06-24-02-helping-build-shared-standards-for-advanced-ai",
+          "rss-2026-06-24-03-opfs-pyodide-test-harness",
+          "rss-2026-06-24-04-i-automated-my-job-and-it-made-me-a-better-leader",
+          "rss-2026-06-24-05-github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
+          "rss-2026-06-24-06-experimenting-with-the-proposed-cross-origin-storage-api-in-transformersjs",
+          "rss-2026-06-24-07-coinbase-reduces-time-from-idea-to-production-by-90-with-cursor",
+          "rss-2026-06-24-08-builder-theme-andrej-karpathy-on-this-is-a-new-paradigm-for-interacting-with-claude-that-is-significan",
+          "rss-2026-06-24-09-builder-theme-peter-steinberger-on-google-fired-the-guy-that-made-the-google-workspace-cli-because-he-m"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-06-24-01-openai-and-broadcom-unveil-llm-optimized-inference-chip",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+        "publishedDate": "2026-06-24",
+        "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+        "summary": "OpenAI与Broadcom联合发布Jalapeño专用AI芯片，专为大型语言模型推理优化，旨在提升推理性能、能效及系统扩展能力。",
+        "take": "此芯片聚焦推理阶段而非训练，暗示推理专用硬件将成为AI系统瓶颈的关键突破点。开发者需关注其架构细节（如内存带宽与算子融合）以调整模型部署策略，同时评估对现有GPU推理栈的替代潜力。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-24-02-helping-build-shared-standards-for-advanced-ai",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+        "publishedDate": "2026-06-23",
+        "title": "Helping build shared standards for advanced AI",
+        "summary": "OpenAI通过Appia基金会推动先进AI的共享标准制定，重点支持评估框架、安全实践和全球协作。",
+        "take": "开发者需关注Appia基金会发布的评估框架和安全规范，这可能成为行业基准，影响AI系统的合规要求和集成接口设计。",
+        "topics": [
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-24-03-opfs-pyodide-test-harness",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
+        "publishedDate": "2026-06-23",
+        "title": "OPFS + Pyodide test harness",
+        "summary": "Simon Willison 使用 Claude Code 构建了一个 OPFS（Origin Private File System）+ Pyodide 测试工具，用于验证在浏览器中通过 WebAssembly 编辑本地持久化 SQLite 文件的可能性。",
+        "take": "OPFS 提供了浏览器中持久化文件系统的能力，结合 Pyodide 的 WebAssembly Python 运行时，可直接在浏览器端操作本地 SQLite 数据库，无需后端服务器。这对开发纯浏览器端的数据密集型应用（如 Datasette Lite）是关键的架构突破，开发者需重点关注不同浏览器对 OPFS 的实现差异和性能表现。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-06-24-04-i-automated-my-job-and-it-made-me-a-better-leader",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+        "publishedDate": "2026-06-23",
+        "title": "I automated my job (and it made me a better leader)",
+        "summary": "GitHub博客分享了一位高级领导者通过使用40个自动化工具重构日常工作流，从执行者转变为战略领导者的实践，并介绍了其偏爱的自动化方案。",
+        "take": "该案例揭示了AI自动化在管理层的应用范式：将重复性决策与操作委托给系统，释放精力聚焦高价值战略任务。开发者应关注如何设计自动化边界与异常处理机制，而非追求全面替代；同时需建立可观测的自动化反馈循环，以维持对工作流质量的控制。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-24-05-github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+        "publishedDate": "2026-06-23",
+        "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+        "summary": "GitHub联合多方联盟，呼吁修订加州AI透明度法案，以避免对开源许可模式产生法律冲突，并协调国际透明度标准。",
+        "take": "开源AI开发者需关注法案中关于数据集溯源和模型透明度条款的合规要求，特别是衍生作品分发时的许可证兼容性。短期内构建工具链时应优先采用可追溯数据来源的组件，长期需参与标准化倡议以嵌入开源豁免条款。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-24-06-experimenting-with-the-proposed-cross-origin-storage-api-in-transformersjs",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/cross-origin-storage",
+        "publishedDate": "2026-06-23",
+        "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+        "summary": "Hugging Face 在 Transformers.js 中实验性地实现了 Cross-Origin Storage API，允许浏览器端模型在跨域环境下通过共享存储机制缓存和复用推理数据，减少重复下载。",
+        "take": "该 API 通过将模型权重和计算中间结果存储在跨域可访问的隔离存储区域，为在异构 Web 应用间构建去中心化 RAG 管道提供了基础设施。开发者可利用此机制实现浏览器内模型实例的持久化与跨站点共享，从而降低推理延迟和带宽开销，同时需注意跨域安全策略的兼容性限制。",
+        "topics": [
+          "RAG",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-24-07-coinbase-reduces-time-from-idea-to-production-by-90-with-cursor",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/coinbase",
+        "publishedDate": "2026-06-23",
+        "title": "Coinbase reduces time from idea to production by 90% with Cursor",
+        "summary": "Coinbase 通过采用 Cursor AI 开发环境，将开发从创意到生产的周期缩短了 90%，主要利用了其代码生成与调试功能提升工程效率。",
+        "take": "AI 驱动的开发工具可显著压缩原型到部署的循环时间，团队应评估将 Cursor 类工具集成进 CI/CD 流程，以加速代理式开发与迭代。这对需要快速验证和发布功能的创业团队或大规模工程组织具有直接借鉴意义。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-24-08-builder-theme-andrej-karpathy-on-this-is-a-new-paradigm-for-interacting-with-claude-that-is-significan",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Andrej Karpathy",
+        "sourceUrl": "https://x.com/karpathy/status/2069547676849557725",
+        "title": "Builder Theme: Andrej Karpathy on This is a new paradigm for interacting with Claude that is significan...",
+        "summary": "Andrej Karpathy 指出，Claude 交互方式迎来第三次重大范式转移：从独立网站或应用，进化为与团队无缝协作、具备组织级工具与上下文的持久异步实体。",
+        "take": "工程核心在于实现底层无缝集成（工具、计算环境、记忆、安全），使LLM如同团队成员般自然嵌入人类工作流。此模式要求AI builder重新设计编排架构，支持持久化状态与跨系统上下文同步，以解锁大规模协作场景。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-06-24-09-builder-theme-peter-steinberger-on-google-fired-the-guy-that-made-the-google-workspace-cli-because-he-m",
+        "briefingId": "rss-2026-06-24",
+        "date": "2026-06-24",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Steinberger",
+        "sourceUrl": "https://x.com/steipete/status/2069594195522941059",
+        "title": "Builder Theme: Peter Steinberger on Google fired the guy that made the google workspace cli, because he m...",
+        "summary": "Google 解雇了开发 Google Workspace CLI 的工程师，因其自行构建了该工具，而作者 Peter Steinberger 强调其独立项目不受此限制。",
+        "take": "此事件凸显了大型平台内部创新与组织治理之间的紧张关系；对于 AI 构建者，依赖平台官方 API 或自行构建独立 CLI 工具时，需评估长期可控性与封禁风险，优先选择开放协议或去中心化架构以规避单点治理中断。",
+        "topics": [
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
