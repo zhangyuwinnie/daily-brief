@@ -1,0 +1,207 @@
+{
+  "date": "2026-06-25",
+  "briefings": [
+    {
+      "id": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-25",
+      "filePath": "2026-06-25.md",
+      "summaryTopline": "How agents are transforming work",
+      "insightIds": [
+        "rss-2026-06-25-01-how-agents-are-transforming-work",
+        "rss-2026-06-25-02-introducing-computer-use-in-gemini-35-flash",
+        "rss-2026-06-25-03-thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
+        "rss-2026-06-25-04-simonwbrowser-compat-db",
+        "rss-2026-06-25-05-quoting-tom-macwright",
+        "rss-2026-06-25-06-openai-unveils-its-first-custom-chip-built-by-broadcom",
+        "rss-2026-06-25-07-ai-sdk-7",
+        "rss-2026-06-25-08-builder-theme-building-a-school-where-ai-models-learn-about-humanity",
+        "rss-2026-06-25-09-builder-theme-garry-tan-on-we-arent-doing-this-trash-in-san-francisco-because-we-saw-what-these",
+        "rss-2026-06-25-10-builder-theme-thibault-sottiaux-on-spicy"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-25-01-how-agents-are-transforming-work",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/how-agents-are-transforming-work",
+      "publishedDate": "2026-06-25",
+      "title": "How agents are transforming work",
+      "summary": "OpenAI发布研究报告，揭示AI代理通过扩展任务持续时长与复杂度，正在改变工作模式并提升多角色生产力。",
+      "take": "核心工程信号是代理系统的任务编排能力从短周期向长链复杂任务迁移，开发者需关注状态持久化、上下文窗口管理及错误恢复机制以实现可靠的多步骤自主工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-25-02-introducing-computer-use-in-gemini-35-flash",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "publishedDate": "2026-06-24",
+      "title": "Introducing computer use in Gemini 3.5 Flash",
+      "summary": "Google DeepMind 在 Gemini 3.5 Flash 模型中引入了计算机使用能力，使其能够通过观察屏幕截图、执行鼠标点击和键盘输入等操作，直接与图形用户界面交互。",
+      "take": "这一机制将模型能力从文本处理扩展到直接操纵计算机环境，为构建自主代理提供了新的范式。开发者可以利用该接口实现自动化工作流，例如跨应用的复杂任务自动执行，但这要求模型具备高精度的视觉理解和低延迟的决策能力，以确保交互的可靠性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-25-03-thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms/",
+      "publishedDate": "2026-06-24",
+      "title": "Thinking to recall: How reasoning unlocks parametric knowledge in LLMs",
+      "summary": "Google研究表明，推理过程（如思维链）能解锁LLM参数化知识，通过引导模型在推理时更有效地检索和利用内部存储信息，而非依赖外部检索。",
+      "take": "在构建AI系统时，不应仅视推理为任务解决步骤，而应将其作为激活模型内部知识库的机制。这提示开发者可通过优化推理链设计（如结构化提示或中间步骤监督），来增强模型在无外部工具时的知识召回能力，从而减少对RAG的依赖。",
+      "topics": [
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-25-04-simonwbrowser-compat-db",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "publishedDate": "2026-06-24",
+      "title": "simonw/browser-compat-db",
+      "summary": "Simon Willison 将 Mozilla 的 mdn/browser-compat-data 仓库转换为 SQLite 数据库，通过 GitHub Actions 工作流将其强制推送到独立 orphan 分支，借助 GitHub CDN 提供带开放 CORS 头部的静态文件访问，并利用 Claude Code 和 Codex Desktop 辅助生成脚本与 CI 流程。",
+      "take": "此方法展示了如何利用 GitHub 仓库的静默文件托管特性 (而非 Release) 提供带 CORS 的开放数据服务，避免了自建 CDN 或对象存储的开销。对 AI 开发者而言，这是一种极低成本的数据分发模式，尤其适合需要浏览器兼容性等结构化数据作为 MCP 服务或 Agent 工具资源的使用场景，可直接复用其 GitHub Actions + orphan 分支的 CI 封装逻辑。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-05-quoting-tom-macwright",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "publishedDate": "2026-06-24",
+      "title": "Quoting Tom MacWright",
+      "summary": "Tom MacWright观察到求职者使用LLM生成简历、作品集、GitHub项目及提交信息，导致个人特质消失，形成“偶然匿名”现象。",
+      "take": "LLM使得候选人能够以零真实投入伪造完整技术履历，信号失真严重。工程团队应建立验证候选人原创深度与思想痕迹的面试机制，而非依赖任何LLM可伪造的文档或代码仓库。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-06-openai-unveils-its-first-custom-chip-built-by-broadcom",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "publishedDate": "2026-06-24",
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "summary": "OpenAI与Broadcom合作推出其首款定制AI推理芯片，旨在优化Transformer模型部署并降低对NVIDIA GPU的依赖。",
+      "take": "此定制芯片专门针对推理工作负载设计，可能带来更低的延迟和成本，尤其影响大规模LLM服务的架构选择。开发者应关注其对API定价、模型部署策略及未来OpenAI生态中硬件锁定可能性的影响。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-07-ai-sdk-7",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/ai-sdk-7",
+      "publishedDate": "2026-06-25",
+      "title": "AI SDK 7",
+      "summary": "Vercel 发布 AI SDK 7，为 TypeScript 代理工作流增加推理控制、工具审批、持久化 WorkflowAgent、沙箱支持、MCP 应用集成、实时语音与视频生成，以及跨框架可观测性。",
+      "take": "核心工程价值在于将代理从原型推向生产：通过 WorkflowAgent 实现有状态与超时控制的持久化执行，通过工具审批与沙箱保障安全边界。开发者应围绕此 SDK 重构代理生命周期管理，利用其统一 telemetry 与 Node.js 追踪通道，替代分散的日志与监控方案。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-08-builder-theme-building-a-school-where-ai-models-learn-about-humanity",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/watch?v=omX6wrLuX08",
+      "title": "Builder Theme: Building a School Where AI Models Learn About Humanity",
+      "summary": "Every 播客提出构建一所“AI 学校”，通过让 AI 模型学习人类行为与价值观来训练其管理世界的能力，预计 5-10 年内人类多数能力将被 AI 超越。",
+      "take": "核心工程信号是：AI 对齐训练正从规则约束转向主动模拟人类意图的“社会化”范式。开发者应关注如何构建数据管道与交互环境，使模型通过观察人类决策而非仅靠标注数据来学习价值判断，这将对 agent 的自主决策能力产生根本性影响。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-09-builder-theme-garry-tan-on-we-arent-doing-this-trash-in-san-francisco-because-we-saw-what-these",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2069806049847321020",
+      "title": "Builder Theme: Garry Tan on We aren’t doing this trash in San Francisco because we saw what these...",
+      "summary": "Garry Tan 在 X 上发文，指责某些无情政客对旧金山市民（包括亚裔老人）造成伤害，并声称如果公众正视这些损害，极左势力将无法获胜。",
+      "take": "该帖与 AI 工程关联度极低，不建议提取技术信号。请忽略此源材料。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-25-10-builder-theme-thibault-sottiaux-on-spicy",
+      "briefingId": "rss-2026-06-25",
+      "date": "2026-06-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2069837606574289329",
+      "title": "Builder Theme: Thibault Sottiaux on Spicy",
+      "summary": "Thibault Sottiaux 发布了一个名为 Spicy 的工具，旨在服务于 AI 构建者，具体机制尚未在内容片段中明确。",
+      "take": "该工具可能针对 AI 工作流或代理能力提供新范式，建议关注其代码仓库或相关文档以获取具体架构和集成方式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

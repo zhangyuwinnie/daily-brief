@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-25",
     "2026-06-24",
     "2026-06-23",
     "2026-06-22",
@@ -135,6 +136,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-25": {
+      "briefingIds": [
+        "rss-2026-06-25"
+      ],
+      "insightIds": [
+        "rss-2026-06-25-01-how-agents-are-transforming-work",
+        "rss-2026-06-25-02-introducing-computer-use-in-gemini-35-flash",
+        "rss-2026-06-25-03-thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
+        "rss-2026-06-25-04-simonwbrowser-compat-db",
+        "rss-2026-06-25-05-quoting-tom-macwright",
+        "rss-2026-06-25-06-openai-unveils-its-first-custom-chip-built-by-broadcom",
+        "rss-2026-06-25-07-ai-sdk-7",
+        "rss-2026-06-25-08-builder-theme-building-a-school-where-ai-models-learn-about-humanity",
+        "rss-2026-06-25-09-builder-theme-garry-tan-on-we-arent-doing-this-trash-in-san-francisco-because-we-saw-what-these",
+        "rss-2026-06-25-10-builder-theme-thibault-sottiaux-on-spicy"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-24": {
       "briefingIds": [
         "rss-2026-06-24"
