@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-26",
     "2026-06-25",
     "2026-06-24",
     "2026-06-23",
@@ -136,6 +137,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-26": {
+      "briefingIds": [
+        "rss-2026-06-26"
+      ],
+      "insightIds": [
+        "rss-2026-06-26-01-ai-and-liability",
+        "rss-2026-06-26-02-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks",
+        "rss-2026-06-26-03-run-a-vllm-server-on-hf-jobs-in-one-command",
+        "rss-2026-06-26-04-query-web-analytics-from-the-vercel-cli",
+        "rss-2026-06-26-05-teaching-agents-product-design-at-vercel",
+        "rss-2026-06-26-06-builder-theme-cloudflare-ceo-bot-takeover-edge-ai-the-hard-decision-every-ceo-will-face",
+        "rss-2026-06-26-07-builder-theme-thibault-sottiaux-on-codex-for-everything-at-openai",
+        "rss-2026-06-26-08-builder-theme-garry-tan-on-jarvis-core-is-the-new-most-powerful-launch-video-meme"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-25": {
       "briefingIds": [
         "rss-2026-06-25"
