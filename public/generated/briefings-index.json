@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-27",
     "2026-06-26",
     "2026-06-25",
     "2026-06-24",
@@ -137,6 +138,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-27": {
+      "briefingIds": [
+        "rss-2026-06-27"
+      ],
+      "insightIds": [
+        "rss-2026-06-27-01-previewing-gpt-56-sol-a-next-generation-model",
+        "rss-2026-06-27-02-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
+        "rss-2026-06-27-03-quoting-dean-w-ball",
+        "rss-2026-06-27-04-quoting-timothy-b-lee",
+        "rss-2026-06-27-05-github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source",
+        "rss-2026-06-27-06-us-allows-anthropic-to-release-mythos-ai-to-trusted-us-organizations",
+        "rss-2026-06-27-07-vercel-ship-2026-recap",
+        "rss-2026-06-27-08-trace-and-debug-eve-agent-sessions-with-vercel-observability",
+        "rss-2026-06-27-09-using-local-coding-agents",
+        "rss-2026-06-27-10-builder-theme-why-traditional-benchmarks-fail-modern-ai-models-with-openai-research-scientist-noam-brown",
+        "rss-2026-06-27-11-builder-theme-matt-turck-on-world-cup-scoring-strategies-argentina-pass-the-ball-to-messi-portu",
+        "rss-2026-06-27-12-builder-theme-thibault-sottiaux-on-we-are-giving-all-codex-users-a-usage-reset-on-the-house-should-be-s"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-26": {
       "briefingIds": [
         "rss-2026-06-26"
