@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-28",
     "2026-06-27",
     "2026-06-26",
     "2026-06-25",
@@ -138,6 +139,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-28": {
+      "briefingIds": [
+        "rss-2026-06-28"
+      ],
+      "insightIds": [
+        "rss-2026-06-28-01-what-happened-after-2000-people-tried-to-hack-my-ai-assistant",
+        "rss-2026-06-28-02-incident-report-cve-2026-lgtm",
+        "rss-2026-06-28-03-google-limits-metas-use-of-its-gemini-ai-models",
+        "rss-2026-06-28-04-builder-theme-memory-and-continual-learning-engrams-dan-biderman-and-jessy-lin",
+        "rss-2026-06-28-05-builder-theme-zara-zhang-on-last-year-i-barely-knew-how-github-worked-now-i-have-10k-followers-o",
+        "rss-2026-06-28-06-builder-theme-thibault-sottiaux-on-tons-of-improvements-landed-in-codex-handles-super-long-threads-sm"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-27": {
       "briefingIds": [
         "rss-2026-06-27"

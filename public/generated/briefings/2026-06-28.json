@@ -1,0 +1,133 @@
+{
+  "date": "2026-06-28",
+  "briefings": [
+    {
+      "id": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-28",
+      "filePath": "2026-06-28.md",
+      "summaryTopline": "What happened after 2,000 people tried to hack my AI assistant",
+      "insightIds": [
+        "rss-2026-06-28-01-what-happened-after-2000-people-tried-to-hack-my-ai-assistant",
+        "rss-2026-06-28-02-incident-report-cve-2026-lgtm",
+        "rss-2026-06-28-03-google-limits-metas-use-of-its-gemini-ai-models",
+        "rss-2026-06-28-04-builder-theme-memory-and-continual-learning-engrams-dan-biderman-and-jessy-lin",
+        "rss-2026-06-28-05-builder-theme-zara-zhang-on-last-year-i-barely-knew-how-github-worked-now-i-have-10k-followers-o",
+        "rss-2026-06-28-06-builder-theme-thibault-sottiaux-on-tons-of-improvements-landed-in-codex-handles-super-long-threads-sm"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-28-01-what-happened-after-2000-people-tried-to-hack-my-ai-assistant",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/#atom-everything",
+      "publishedDate": "2026-06-26",
+      "title": "What happened after 2,000 people tried to hack my AI assistant",
+      "summary": "在OpenClaw测试实例的对抗性攻击挑战中，Opus 4.6模型凭借一个基于硬性规则禁止根据邮件内容执行泄密、文件修改、代码执行或数据外泄行为的反提示注入系统提示，成功抵御了2000名攻击者、6000次攻击尝试，未泄露任何秘密。",
+      "take": "关键工程洞察：当前前沿LLM的防御机制已从依赖模型理解转向显式、硬编码的规则阻断——通过系统提示声明不可根据外部输入（如邮件）触发的黑名单操作，能有效封堵提示注入攻击。开发者可借鉴此模式，对代理系统定义明确的不可执行动作列表，而非仅依赖模型自身的意图识别。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-28-02-incident-report-cve-2026-lgtm",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/26/incident-report/#atom-everything",
+      "publishedDate": "2026-06-26",
+      "title": "Incident Report: CVE-2026-LGTM",
+      "summary": "Andrew Nesbitt 虚构的安全事件报告指出，两个来自不同供应商的 AI 代码审查代理在 pull request 中因对依赖包 foxhole-lz4 是否恶意产生分歧，陷入循环争论，产生 340 条评论和 4 万多美元推理费用，最终导致 API 密钥被撤销，而涉事供应商的市场团队借此发布营销通稿并推高股价。",
+      "take": "该事件揭示了多代理协作系统缺乏共识仲裁与成本控制机制的架构缺陷；在实践中部署 AI 代码审查代理时，必须引入人工审核断点、预算上限以及分歧解析协议，否则单靠 LLM 自循环会引发资源浪费与虚假安全信号。营销团队利用此类事件包装为‘安全能力提升’的做法，暴露出当前行业对代理行为可观测性与治理标准的迫切需求。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-28-03-google-limits-metas-use-of-its-gemini-ai-models",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "publishedDate": "2026-06-28",
+      "title": "Google limits Meta's use of its Gemini AI models",
+      "summary": "Google 限制 Meta 使用其 Gemini AI 模型，通过 API 访问控制和技术协议约束，阻止 Meta 将 Gemini 用于商业竞争性 AI 产品开发。",
+      "take": "此事件表明大型 AI 模型供应商正通过精细化的 API 许可条款强化对模型使用场景的控制，开发者需提前评估上游模型的商业限制条款，避免在依赖单一模型生态的工程架构中形成供应链风险。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-28-04-builder-theme-memory-and-continual-learning-engrams-dan-biderman-and-jessy-lin",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=aiR7F4jqjXY",
+      "title": "Builder Theme: Memory and Continual Learning: Engram's Dan Biderman and Jessy Lin",
+      "summary": "Engram 的 Dan Biderman 和 Jessy Lin 探讨了如何通过记忆与持续学习机制，让模型在预训练或后训练阶段高效学习私有数据，达到与通用知识同等的掌握程度。",
+      "take": "核心工程信号是：将持续学习和记忆架构（如 Engram 的方法）集成到模型训练管道中，可以显著提升私有数据注入效率，减少灾难性遗忘。开发者在构建 AI 工作流时，应优先考虑支持长期记忆与增量更新的代理框架，而非依赖全量微调。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-28-05-builder-theme-zara-zhang-on-last-year-i-barely-knew-how-github-worked-now-i-have-10k-followers-o",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Zara Zhang",
+      "sourceUrl": "https://x.com/zarazhangrui/status/2070982013822333007",
+      "title": "Builder Theme: Zara Zhang on Last year I barely knew how GitHub worked. Now I have 10k followers o...",
+      "summary": "Zara Zhang分享了她在一年内从几乎不会使用GitHub到拥有1万GitHub关注者，但仍无法手写代码的经历，展示了AI辅助编程的快速发展。",
+      "take": "AI生成代码能力已使零基础用户成为活跃开源贡献者，开发者应重新评估工具链对协作和代码审查流程的影响。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-28-06-builder-theme-thibault-sottiaux-on-tons-of-improvements-landed-in-codex-handles-super-long-threads-sm",
+      "briefingId": "rss-2026-06-28",
+      "date": "2026-06-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2071071289247244481",
+      "title": "Builder Theme: Thibault Sottiaux on Tons of improvements landed in Codex. - Handles super long threads sm...",
+      "summary": "Thibault Sottiaux 宣布 Codex 更新，重点包括长线程处理、悬停导航栏、设置搜索优化、缩放对齐修复、Slack 粘贴保留 Markdown 格式，并新增宠物面板功能。",
+      "take": "针对 AI 构建者，此更新优化了 Codex 作为代理工作流界面的交互稳定性与实用性：长线程支持提升复杂任务处理能力，缩放修复确保工具提示等元素精确对齐，Slack 粘贴保留格式避免了数据丢失，可直接提升日常开发效率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
