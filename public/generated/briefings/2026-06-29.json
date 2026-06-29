@@ -1,0 +1,208 @@
+{
+  "date": "2026-06-29",
+  "briefings": [
+    {
+      "id": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-06-29",
+      "filePath": "2026-06-29.md",
+      "summaryTopline": "Mapping Europe’s AI Workforce Opportunity",
+      "insightIds": [
+        "rss-2026-06-29-01-mapping-europes-ai-workforce-opportunity",
+        "rss-2026-06-29-02-hp-inc-launches-frontier-strategic-partnership-with-openai",
+        "rss-2026-06-29-03-quoting-jon-udell",
+        "rss-2026-06-29-04-hackerrank-open-sourced-its-ats-my-resume-scored-90x2f100-oh-wait-74-no-88",
+        "rss-2026-06-29-05-age-verification-is-just-a-precursor-to-automated-attribution-of-speech",
+        "rss-2026-06-29-06-query-speed-insights-from-the-vercel-cli",
+        "rss-2026-06-29-07-build-realtime-voice-agents-on-ai-gateway",
+        "rss-2026-06-29-08-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-06-29-09-builder-theme-boris-cherny-on-as-engineering-product-design-ds-etc-melt-into-a-new-kind-of-rol",
+        "rss-2026-06-29-10-builder-theme-guillermo-rauch-on-you-dont-need-a-linkedin-you-need-a-page-on-your-website-describing"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-06-29-01-mapping-europes-ai-workforce-opportunity",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "publishedDate": "2026-06-29",
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "summary": "OpenAI 发布报告，基于工作流程自动化潜力，绘制欧盟各职业受AI影响的分布图，识别出面临自动化、增长或工作流重构的岗位类型。",
+      "take": "开发者应关注报告中定义的高自动化风险职业模式，以优先构建针对这些工作流的AI工具；同时，报告揭示的岗位增长方向可作为AI应用设计的功能锚点，例如强化人类与AI协作的接口层而非完全替代。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-29-02-hp-inc-launches-frontier-strategic-partnership-with-openai",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/hp-frontier-partnership",
+      "publishedDate": "2026-06-28",
+      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+      "summary": "HP Inc. 扩大与OpenAI的Frontier合作，将AI部署于客户体验、软件开发及企业运营中。",
+      "take": "此合作表明企业级AI部署正从实验性转向规模化集成，开发者需关注如何将OpenAI的模型嵌入现有客户流程与内部开发工具链，而非仅为独立应用。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-29-03-quoting-jon-udell",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
+      "publishedDate": "2026-06-28",
+      "title": "Quoting Jon Udell",
+      "summary": "Jon Udell 提出将‘人在回路中’反转为‘代理人加入人的循环’，强调由人类主导、邀请AI代理加入现有开发流程，而非将人类排除在自动化黑箱之外。",
+      "take": "该观点颠覆了当前主流代理系统的‘委派-等待’模式，建议开发者设计代理工作流时，保持人工审查与干预节点，避免代理生成不可审查的PR；工程上应聚焦于构建‘人类驱动、代理辅助’的协作架构，而非完全自主的代理管线。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-06-29-04-hackerrank-open-sourced-its-ats-my-resume-scored-90x2f100-oh-wait-74-no-88",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://danunparsed.com/p/hackerrank-open-source-ats",
+      "publishedDate": "2026-06-28",
+      "title": "HackerRank open sourced its ATS. My resume scored 90&#x2F;100. Oh wait 74. No – 88",
+      "summary": "HackerRank 开源了其申请人跟踪系统（ATS），用户上传简历后系统返回了不一致的评分结果（90、74、88），暴露了其评分逻辑的不稳定性。",
+      "take": "开发者不能依赖单一 ATS 评分作为简历优化基准，因为评分机制存在随机性或非确定性波动。构建简历解析或匹配工具时，需引入多次采样取中位数或置信区间策略，并公开评分规则以提高可信度。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-05-age-verification-is-just-a-precursor-to-automated-attribution-of-speech",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
+      "publishedDate": "2026-06-29",
+      "title": "Age verification is just a precursor to automated attribution of speech",
+      "summary": "作者论证年龄验证系统是强制数字身份与言论归因绑定的技术前奏，通过降低匿名性门槛，逐步构建可追溯的在线言论图谱。",
+      "take": "对AI开发者而言，这一趋势意味着未来模型训练数据将更少包含匿名或伪匿名语料，导致模型对身份归因与审查信号的敏感性增加。Cursor等AI编程工具需提前适配身份认证接口，以应对潜在的输出归因合规要求。",
+      "topics": [
+        "Coding Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-06-query-speed-insights-from-the-vercel-cli",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/query-speed-insights-from-the-vercel-cli",
+      "publishedDate": "2026-06-29",
+      "title": "Query Speed Insights from the Vercel CLI",
+      "summary": "Vercel 在 CLI 中新增 `vercel metrics` 命令，允许开发者通过命令行查询基于真实用户流量的核心 Web Vitals（LCP、INP、CLS）及页面性能指标（FCP、TTFB），支持按维度筛选与时间比较。",
+      "take": "此功能直接向编码代理（Agent）开放了生产环境的性能数据查询接口，使代理能自主执行如“对比上周 INP 回归页面”或“按地域分析首屏速度”等诊断任务，无需依赖仪表盘。这标志着可观测性从人类手动操作向 Agent 化、CLI 驱动的自动化工作流演进的关键一步。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-07-build-realtime-voice-agents-on-ai-gateway",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/realtime-voice-agents-on-ai-gateway",
+      "publishedDate": "2026-06-29",
+      "title": "Build realtime voice agents on AI Gateway",
+      "summary": "Vercel AI Gateway 新增对音频模态的支持，通过统一 API 路由 OpenAI 和 xAI 的实时语音、文本转语音和语音转文本模型，提供与文本、图像相同的可观测性、成本控制和密钥管理功能。",
+      "take": "开发者现在可在 AI SDK 7 中通过单一网关调用实时语音双向流、TTS 和 STT，实现低延迟语音代理，并复用现有模态的监控与路由策略，简化多模态 AI 应用的工程栈。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-08-builder-theme-how-we-contain-claude-across-products",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "title": "Builder Theme: How we contain Claude across products",
+      "summary": "Anthropic 工程团队通过限制模型调用权限的“爆炸半径”（blast radius），使 Claude 得以在日常开发中访问能摧毁内部服务的高风险权限，从而在安全与生产力之间取得平衡。",
+      "take": "核心工程手段是定义严格的能力边界，通过分层沙箱、审计日志和自动撤销令牌来动态控制每次调用的最大影响范围。对于 AI 代理，应将“最小特权原则”从静态权限扩展到运行时上下文感知的权限授予，而非依赖模型自我约束。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-09-builder-theme-boris-cherny-on-as-engineering-product-design-ds-etc-melt-into-a-new-kind-of-rol",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2071379474277613732",
+      "title": "Builder Theme: Boris Cherny on As engineering, product, design, DS, etc. melt into a new kind of rol...",
+      "summary": "Boris Cherny 提出，随着工程、产品、设计、数据科学等职能融合，未来角色将演化为五种原型：原型师、构建者、清理者、增长者、维护者，并指出这些角色与现有岗位职能脱钩。",
+      "take": "AI 团队应重新定义人员结构，从传统岗位转向基于任务的原型（如原型师快速试错、清理者优化系统），并允许成员跨多个原型工作，以适配 AI 驱动的快速迭代和系统复杂度增长。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-06-29-10-builder-theme-guillermo-rauch-on-you-dont-need-a-linkedin-you-need-a-page-on-your-website-describing",
+      "briefingId": "rss-2026-06-29",
+      "date": "2026-06-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2071284129275285580",
+      "title": "Builder Theme: Guillermo Rauch on You don't need a LinkedIn, you need a page on your website describing...",
+      "summary": "Guillermo Rauch主张AI/软件构建者应放弃LinkedIn，转而建立个人网站页面，用以描述和链接实际发布的产品或项目。",
+      "take": "对于AI构建者，个人网站应成为展示交付成果的核心资产，替代传统社交简历以直接证明工程能力。这一模式将项目文档作为技术信号的载体，更符合开发者社区的信任机制与招聘逻辑。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

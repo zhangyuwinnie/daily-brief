@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-29",
     "2026-06-28",
     "2026-06-27",
     "2026-06-26",
@@ -139,6 +140,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-29": {
+      "briefingIds": [
+        "rss-2026-06-29"
+      ],
+      "insightIds": [
+        "rss-2026-06-29-01-mapping-europes-ai-workforce-opportunity",
+        "rss-2026-06-29-02-hp-inc-launches-frontier-strategic-partnership-with-openai",
+        "rss-2026-06-29-03-quoting-jon-udell",
+        "rss-2026-06-29-04-hackerrank-open-sourced-its-ats-my-resume-scored-90x2f100-oh-wait-74-no-88",
+        "rss-2026-06-29-05-age-verification-is-just-a-precursor-to-automated-attribution-of-speech",
+        "rss-2026-06-29-06-query-speed-insights-from-the-vercel-cli",
+        "rss-2026-06-29-07-build-realtime-voice-agents-on-ai-gateway",
+        "rss-2026-06-29-08-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-06-29-09-builder-theme-boris-cherny-on-as-engineering-product-design-ds-etc-melt-into-a-new-kind-of-rol",
+        "rss-2026-06-29-10-builder-theme-guillermo-rauch-on-you-dont-need-a-linkedin-you-need-a-page-on-your-website-describing"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-28": {
       "briefingIds": [
         "rss-2026-06-28"
