@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-06-30",
     "2026-06-29",
     "2026-06-28",
     "2026-06-27",
@@ -140,6 +141,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-06-30": {
+      "briefingIds": [
+        "rss-2026-06-30"
+      ],
+      "insightIds": [
+        "rss-2026-06-30-01-ornith-10-self-scaffolding-llms-for-agentic-coding",
+        "rss-2026-06-30-02-vercel-services-run-full-stack-on-vercel",
+        "rss-2026-06-30-03-introducing-vcr-vercel-container-registry",
+        "rss-2026-06-30-04-memora-a-harmonic-memory-representation-balancing-abstraction-and-specificity",
+        "rss-2026-06-30-05-html-table-extractor",
+        "rss-2026-06-30-06-highlights-from-git-255",
+        "rss-2026-06-30-07-build-from-anywhere-with-cursor-for-ios",
+        "rss-2026-06-30-08-words-are-a-byproduct-of-consciousness-for-llms-its-backwards",
+        "rss-2026-06-30-09-builder-theme-boris-cherny-on-in-the-next-version-of-claude-code-subagents-run-in-the-background-b",
+        "rss-2026-06-30-10-builder-theme-thibault-sottiaux-on-codex-usage-limits-will-be-fully-reset-again-in-the-next-hour-and-we"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-29": {
       "briefingIds": [
         "rss-2026-06-29"
