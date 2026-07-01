@@ -29465,5 +29465,280 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-01": {
+    "date": "2026-07-01",
+    "briefings": [
+      {
+        "id": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-01",
+        "filePath": "2026-07-01.md",
+        "summaryTopline": "Have your agent record video demos of its work with shot-scraper video",
+        "insightIds": [
+          "rss-2026-07-01-01-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video",
+          "rss-2026-07-01-02-scarfbench-benchmarking-ai-agents-for-enterprise-java-framework-migration",
+          "rss-2026-07-01-03-skillopt-agent-skills-as-trainable-parameters",
+          "rss-2026-07-01-04-an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+          "rss-2026-07-01-05-start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
+          "rss-2026-07-01-06-vercel-ship-2026-recap",
+          "rss-2026-07-01-07-whats-new-in-claude-sonnet-5",
+          "rss-2026-07-01-08-core-dump-epidemiology-fixing-an-18-year-old-bug",
+          "rss-2026-07-01-09-how-chatgpt-adoption-has-expanded",
+          "rss-2026-07-01-10-how-github-maintains-compliance-for-open-source-dependencies",
+          "rss-2026-07-01-11-builder-theme-why-hardware-software-co-design-is-ais-real-100x-dylan-patel-of-semianalysis",
+          "rss-2026-07-01-12-builder-theme-claude-on-sonnet-5-is-a-substantial-improvement-over-sonnet-46-on-reasoning-t",
+          "rss-2026-07-01-13-builder-theme-boris-cherny-on-you-asked-we-listened-claude-desktop-on-linux-is-here-download-lin"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-01-01-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+        "publishedDate": "2026-06-30",
+        "title": "Have your agent record video demos of its work with shot-scraper video",
+        "summary": "Simon Willison 发布 shot-scraper 1.10，新增 video 子命令，通过 storyboard.yml 定义步骤，利用 Playwright 录制 Web 应用的操作视频，用于让编码代理自动生成其成果演示。",
+        "take": "编码代理（如 Codex、Cursor 等）现在可集成 shot-scraper video，在完成功能后自动录制浏览器操作视频作为测试证明，形成闭环验证。开发者应在代理工作流中加入 storyboard.yml 定义关键交互序列，替代人工录屏，提升反馈效率与可信度。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-01-02-scarfbench-benchmarking-ai-agents-for-enterprise-java-framework-migration",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/scarfbench",
+        "publishedDate": "2026-06-30",
+        "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+        "summary": "IBM Research 发布了 ScarfBench，一个用于评估 AI 代理执行企业 Java 框架迁移任务（如从 Struts 到 Spring Boot）的基准测试，包含 120 个真实代码库和自动化验证管道。",
+        "take": "该基准测试揭示了当前 AI 代理在复杂、多步骤代码重构中的关键短板，尤其是对深层依赖关系和跨文件上下文的理解不足。开发者应利用此类基准测试来量化代理的工程实用性，优先改进其代码修改的准确性与回滚能力，而非单纯追求生成代码的行数或速度。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-01-03-skillopt-agent-skills-as-trainable-parameters",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/",
+        "publishedDate": "2026-06-30",
+        "title": "SkillOpt: Agent skills as trainable parameters",
+        "summary": "微软研究院推出SkillOpt框架，将AI代理的技能指令（skill）转化为可训练参数，通过优化过程自动调整技能内容，无需修改模型权重即可提升代理行为可靠性。",
+        "take": "SkillOpt将技能编辑从手动试错变为基于梯度的参数优化，改变了代理工程中技能管理的范式。开发者可直接将此技术集成到代理工作流中，通过训练数据自动迭代技能指令，减少人工微调负担，使代理行为更稳定且可预测。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-01-04-an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+        "publishedDate": "2026-06-30",
+        "title": "An expanded Vercel Agent: chat, investigations, and approved actions, now in public beta",
+        "summary": "Vercel 将 Agent 集成到仪表盘，利用部署、日志、指标等平台内部信号，支持对话式查询、生产问题根因追踪及经用户批准后自动执行修复操作。",
+        "take": "Agent 不再依赖外部上下文，而是深度绑定平台内部数据（如部署状态、运行时错误、成本波动）实现闭环调试。开发者应关注这种“平台内嵌智能体”模式：它通过授权机制（Approved Actions）平衡自动化与安全，可能成为 PaaS 层 Agent 的标准交互范式。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-05-start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+        "publishedDate": "2026-06-30",
+        "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+        "summary": "Google DeepMind发布Nano Banana 2 Lite和Gemini Omni Flash，前者为轻量级推理模型，后者为多模态实时交互模型，均面向开发者提供API接口。",
+        "take": "Nano Banana 2 Lite可部署于边缘设备，适合低延迟离线推理场景；Gemini Omni Flash支持文本、图像、音频等多模态输入输出，可用于构建实时交互的智能代理。开发者应评估这两种模型对现有工具链的替换成本，特别是多模态统一API对传统分模块架构的简化潜力。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-06-vercel-ship-2026-recap",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/vercel-ship-2026-recap",
+        "publishedDate": "2026-06-30",
+        "title": "Vercel Ship 2026 recap",
+        "summary": "Vercel在Ship 2026上宣布将其平台定位为智能体基础设施，支持编码Agent（如Claude Code、Codex）部署软件，并提供构建和运行自定义Agent的全栈工具。",
+        "take": "Vercel正从部署前端应用转向成为Agent原生部署平台，核心变化是让Claude Code等编码Agent将Vercel作为默认部署目标。开发者应关注Vercel新增的Agent工作流API和运行时能力，这会影响AI应用的CI/CD和自动运维模式。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-07-whats-new-in-claude-sonnet-5",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+        "publishedDate": "2026-06-30",
+        "title": "What's new in Claude Sonnet 5",
+        "summary": "Anthropic 发布 Claude Sonnet 5，性能接近 Opus 4.8 但价格更低，API 取消了 temperature、top_p、top_k 采样参数，并拥有 1 百万 token 上下文窗口。",
+        "take": "作为开发者，需立即移除对 temperature、top_p、top_k 等采样参数的依赖，转向模型默认的确定性输出；1 百万 token 上下文窗口直接扩展了长文档处理和代理工作流的上下文边界，但需注意模型在网络安全任务上被刻意削弱以规避监管限制。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-08-core-dump-epidemiology-fixing-an-18-year-old-bug",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+        "publishedDate": "2026-06-30",
+        "title": "Core dump epidemiology: fixing an 18-year-old bug",
+        "summary": "OpenAI工程师通过大规模core dump流行病学分析方法，定位并修复了一个持续18年的基础设施崩溃bug，该问题由硬件故障与软件缺陷共同引发。",
+        "take": "这一案例展示了基于生产环境崩溃转储的大规模逆向分析流程，可有效识别罕见、间歇性的系统级故障。对于构建高可靠性AI基础设施的团队，建议建立自动化的core dump采集与模式挖掘体系，以加速根因定位并降低人工调试成本。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-09-how-chatgpt-adoption-has-expanded",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+        "publishedDate": "2026-06-30",
+        "title": "How ChatGPT adoption has expanded",
+        "summary": "OpenAI公布Signals数据，显示ChatGPT在全球各区域和语言中用户活跃度提升、功能探索增加，采用率持续扩大。",
+        "take": "开发者应关注OpenAI Signals数据中用户行为模式变化，优化多语言和区域化适配策略；同时，功能探索增加意味着需扩展ChatGPT的插件、工具调用等能力集成，以匹配用户更深层次的使用需求。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-10-how-github-maintains-compliance-for-open-source-dependencies",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+        "publishedDate": "2026-06-30",
+        "title": "How GitHub maintains compliance for open source dependencies",
+        "summary": "GitHub Open Source Program Office利用GitHub新推出的许可证合规产品，实现对其内部使用的开源依赖的大规模合规管理。",
+        "take": "该产品为工程团队提供了自动化扫描和追踪依赖许可证的工具，可直接集成至CI/CD流程。关键动作是建立依赖清单（SBOM）与许可证策略之间的机器可执行映射，从而将合规审计从手动/事后转变为自动化/前置检查，这对任何在供应链中使用大量开源组件的Agentic系统或工具链都是关键的基础设施改进。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-11-builder-theme-why-hardware-software-co-design-is-ais-real-100x-dylan-patel-of-semianalysis",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
+        "title": "Builder Theme: Why Hardware-Software Co-Design Is AI's Real 100x: Dylan Patel of SemiAnalysis",
+        "summary": "Dylan Patel 在播客中阐述了硬件-软件协同设计（Hardware-Software Co-Design）是 AI 实现百倍性能提升的真正驱动力，而非单纯依靠算法或制程缩放。",
+        "take": "AI 构建者应放弃纯软件优化思维，主动将工作流与底层芯片架构（如稀疏性、内存层次、互联拓扑）耦合设计。这一范式要求开发者在模型训练和推理栈中，优先选择可编程硬件平台并针对其微架构进行算子级定制，而非等待通用硬件迭代。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-12-builder-theme-claude-on-sonnet-5-is-a-substantial-improvement-over-sonnet-46-on-reasoning-t",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2072017452335087996",
+        "title": "Builder Theme: Claude on Sonnet 5 is a substantial improvement over Sonnet 4.6 on reasoning, t...",
+        "summary": "Claude 发布 Sonnet 5，在推理、工具使用、编码和知识工作方面相比 Sonnet 4.6 有显著提升，性能接近 Opus 4.8 且价格更低。",
+        "take": "对于 AI 构建者而言，Sonnet 5 以更低成本提供了接近顶级模型的能力，适合作为生产环境中高性价比的推理与编码引擎。建议立即评估其在工具调用和复杂代码生成任务中的表现，以确定能否替代高成本 Opus 模型。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-01-13-builder-theme-boris-cherny-on-you-asked-we-listened-claude-desktop-on-linux-is-here-download-lin",
+        "briefingId": "rss-2026-07-01",
+        "date": "2026-07-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2072000214634742243",
+        "title": "Builder Theme: Boris Cherny on You asked, we listened. Claude Desktop on Linux is here! Download lin...",
+        "summary": "Anthropic 正式发布 Claude Desktop 的 Linux 版本，提供原生桌面客户端下载。",
+        "take": "Linux 开发者现在可以在本地桌面环境中直接集成 Claude，无需依赖 Web 界面或第三方封装，这简化了与本地文件系统、终端及开发工具的交互链路，适合构建私有化的 AI 辅助工作流。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

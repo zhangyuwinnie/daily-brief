@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-01",
     "2026-06-30",
     "2026-06-29",
     "2026-06-28",
@@ -141,6 +142,30 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-01": {
+      "briefingIds": [
+        "rss-2026-07-01"
+      ],
+      "insightIds": [
+        "rss-2026-07-01-01-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video",
+        "rss-2026-07-01-02-scarfbench-benchmarking-ai-agents-for-enterprise-java-framework-migration",
+        "rss-2026-07-01-03-skillopt-agent-skills-as-trainable-parameters",
+        "rss-2026-07-01-04-an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+        "rss-2026-07-01-05-start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
+        "rss-2026-07-01-06-vercel-ship-2026-recap",
+        "rss-2026-07-01-07-whats-new-in-claude-sonnet-5",
+        "rss-2026-07-01-08-core-dump-epidemiology-fixing-an-18-year-old-bug",
+        "rss-2026-07-01-09-how-chatgpt-adoption-has-expanded",
+        "rss-2026-07-01-10-how-github-maintains-compliance-for-open-source-dependencies",
+        "rss-2026-07-01-11-builder-theme-why-hardware-software-co-design-is-ais-real-100x-dylan-patel-of-semianalysis",
+        "rss-2026-07-01-12-builder-theme-claude-on-sonnet-5-is-a-substantial-improvement-over-sonnet-46-on-reasoning-t",
+        "rss-2026-07-01-13-builder-theme-boris-cherny-on-you-asked-we-listened-claude-desktop-on-linux-is-here-download-lin"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-06-30": {
       "briefingIds": [
         "rss-2026-06-30"
