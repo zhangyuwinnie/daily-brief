@@ -29740,5 +29740,155 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-02": {
+    "date": "2026-07-02",
+    "briefings": [
+      {
+        "id": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-02",
+        "filePath": "2026-07-02.md",
+        "summaryTopline": "Quoting Anthropic",
+        "insightIds": [
+          "rss-2026-07-02-01-quoting-anthropic",
+          "rss-2026-07-02-02-nano-banana-2-lite",
+          "rss-2026-07-02-03-claude-fable-5-access-restored-on-ai-gateway",
+          "rss-2026-07-02-04-enforce-consistent-code-for-agents-and-humans-with-konsistent",
+          "rss-2026-07-02-05-2026-bair-graduate-showcase",
+          "rss-2026-07-02-06-builder-theme-garry-tan-on-mega-get-head-of-uc-berkeley-eecs-omg-anthropic-is-on-a-tear",
+          "rss-2026-07-02-07-builder-theme-thibault-sottiaux-on-its-happening"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-02-01-quoting-anthropic",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
+        "publishedDate": "2026-06-30",
+        "title": "Quoting Anthropic",
+        "summary": "Anthropic宣布美国商务部解除了对Claude Fable 5与Mythos 5模型的出口管制，将于次日恢复访问权限。",
+        "take": "出口管制解除意味着Claude系列高端模型重新向全球开发者开放，可立即集成到跨国AI工作流或代理系统中。需关注模型规格变化与API端点更新，以适配原有依赖链。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-02-02-nano-banana-2-lite",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything",
+        "publishedDate": "2026-06-30",
+        "title": "Nano Banana 2 Lite",
+        "summary": "Google 發布 Gemini 3.1 Flash Lite Image（API 名稱 gemini-3.1-flash-lite-image），號稱最快且最便宜的 Gemini 圖像生成模型，專為高速度與規模化設計，但在文字拼寫上仍存在生成瑕疵。",
+        "take": "此模型專注於降低延遲與成本，適合需要大量、快速生成圖像的 AI 應用，但開發者必須在文字準確性（如拼寫）上加入後處理校驗或限制提示詞中的文字元素，避免產出低品質結果。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-02-03-claude-fable-5-access-restored-on-ai-gateway",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/claude-fable-5-access-restored-on-ai-gateway",
+        "publishedDate": "2026-07-01",
+        "title": "Claude Fable 5 access restored on AI Gateway",
+        "summary": "Vercel 恢复通过 AI Gateway 对 Anthropic 的 Claude Fable 5 模型（Mythos 级）的访问，源于美国解除出口管制；模型本身未变，但安全分类器已更新且更严格，可能拦截编码和调试请求。",
+        "take": "关键工程应对：需配置模型回退（model fallbacks）机制，在 AI Gateway 中使用 'anthropic/claude-fable-5' 作为模型名并指定顺序列表，当安全分类器触发时自动切换到备用模型，确保工作流不中断。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-02-04-enforce-consistent-code-for-agents-and-humans-with-konsistent",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/enforce-consistent-code-for-agents-and-humans-with-konsistent",
+        "publishedDate": "2026-07-01",
+        "title": "Enforce consistent code for agents and humans with konsistent",
+        "summary": "Vercel 开源了 konsistent，一个用于 TypeScript 代码库的 CLI 检查器，通过项目级 konsistent.json 配置文件强制实施 ESLint 和 TypeScript 无法建模的结构性约定（如文件导出模式、文件夹间文件关联、类实现特定接口），为人类和 AI 代理提供一致的代码上下文。",
+        "take": "konsistent 将代码结构性约束显式化并纳入配置，使 AI 代理在生成代码时能遵循项目级约定而非仅依赖隐式模式。对于使用 AI 辅助开发的团队，应在项目中引入此类结构化 lint 工具，并训练代理在生成代码前先读取并遵守 konsistent.json，以大幅减少人工审查中的结构性错误。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-02-05-2026-bair-graduate-showcase",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+        "sourceUrl": "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/",
+        "publishedDate": "2026-07-01",
+        "title": "2026 BAIR Graduate Showcase",
+        "summary": "BAIR 2026届博士毕业生在机器人、大语言模型、推理、AI安全等领域取得前沿成果，部分毕业生将进入学术界或工业界研究实验室。",
+        "take": "关注BAIR毕业生去向可追踪前沿研究方向，尤其是LLM推理、具身智能与AI安全的工程化落地。对AI构建者而言，这些研究预示着下一代代理工作流与RAG系统的能力边界拓展。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-02-06-builder-theme-garry-tan-on-mega-get-head-of-uc-berkeley-eecs-omg-anthropic-is-on-a-tear",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Garry Tan",
+        "sourceUrl": "https://x.com/garrytan/status/2072331451270606933",
+        "title": "Builder Theme: Garry Tan on Mega get, head of UC Berkeley EECS omg Anthropic is on a tear",
+        "summary": "Garry Tan 发布推文，指出 UC Berkeley EECS 负责人加入 Anthropic，并评论该公司正快速发展。",
+        "take": "Anthropic 持续从顶尖学术机构（如 UC Berkeley EECS）吸引核心人才，这对于关注前沿 AI 模型竞争格局的构建者而言，意味着其模型能力和工程团队储备将进一步增强。应密切关注其后续公开的技术文档及架构变更。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-02-07-builder-theme-thibault-sottiaux-on-its-happening",
+        "briefingId": "rss-2026-07-02",
+        "date": "2026-07-02",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2072410623380468190",
+        "title": "Builder Theme: Thibault Sottiaux on It's happening",
+        "summary": "Thibault Sottiaux 发布简短声明并附带链接，暗示AI构建者社区中一项关键事件或转折点正在发生。",
+        "take": "排查该链接内容，可能揭示新的AI构建范式或工具链的发布。对于AI构建者，应密切关注该来源，以获取潜在的工作流或架构变更信号。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

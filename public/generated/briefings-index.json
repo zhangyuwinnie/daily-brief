@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-02",
     "2026-07-01",
     "2026-06-30",
     "2026-06-29",
@@ -142,6 +143,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-02": {
+      "briefingIds": [
+        "rss-2026-07-02"
+      ],
+      "insightIds": [
+        "rss-2026-07-02-01-quoting-anthropic",
+        "rss-2026-07-02-02-nano-banana-2-lite",
+        "rss-2026-07-02-03-claude-fable-5-access-restored-on-ai-gateway",
+        "rss-2026-07-02-04-enforce-consistent-code-for-agents-and-humans-with-konsistent",
+        "rss-2026-07-02-05-2026-bair-graduate-showcase",
+        "rss-2026-07-02-06-builder-theme-garry-tan-on-mega-get-head-of-uc-berkeley-eecs-omg-anthropic-is-on-a-tear",
+        "rss-2026-07-02-07-builder-theme-thibault-sottiaux-on-its-happening"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-01": {
       "briefingIds": [
         "rss-2026-07-01"
