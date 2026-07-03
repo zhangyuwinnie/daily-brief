@@ -1,0 +1,186 @@
+{
+  "date": "2026-07-03",
+  "briefings": [
+    {
+      "id": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-03",
+      "filePath": "2026-07-03.md",
+      "summaryTopline": "llm-coding-agent 0.1a0",
+      "insightIds": [
+        "rss-2026-07-03-01-llm-coding-agent-01a0",
+        "rss-2026-07-03-02-using-dspy-to-evaluate-and-improve-datasette-agents-sql-system-prompts",
+        "rss-2026-07-03-03-how-github-used-secret-scanning-to-reach-inbox-zero",
+        "rss-2026-07-03-04-valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own",
+        "rss-2026-07-03-05-the-safari-mcp-server-for-web-developers",
+        "rss-2026-07-03-06-manage-vercel-flags-segments-with-vercel-cli",
+        "rss-2026-07-03-07-builder-theme-how-nuclear-will-unlock-energy-abundance-with-valar-atomics-founder-isaiah-taylor",
+        "rss-2026-07-03-08-builder-theme-thibault-sottiaux-on-cant-wait-to-see-what-people-will-do-with-gpt-56-sol-ultra-stash-y",
+        "rss-2026-07-03-09-builder-theme-sam-altman-on-going-to-world-cup-games-is-always-awesome-but-watching-the-usa-win"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-03-01-llm-coding-agent-01a0",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+      "publishedDate": "2026-07-02",
+      "title": "llm-coding-agent 0.1a0",
+      "summary": "Simon Willison 发布 llm-coding-agent 0.1a0，基于其 LLM 库演化的代理框架，通过 Claude Code 风格工具（文件读写、命令执行）构建编码代理，并采用 TDD 流程迭代开发。",
+      "take": "该实验表明，将 LLM 库抽象为代理框架后，编码代理的核心架构在于工具集（读取/编辑文件、执行命令）与提示策略（如 TDD 驱动）的耦合。开发者可直接复用此模式，将现有 LLM 库扩展为支持文件系统和命令行的自主编码代理，无需从头设计工具调用层。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-03-02-using-dspy-to-evaluate-and-improve-datasette-agents-sql-system-prompts",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+      "publishedDate": "2026-07-02",
+      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "summary": "Simon Willison使用DSPy框架结合Claude Code和GPT-4.1 mini/nano，自动化评估并改进Datasette Agent的SQL生成系统提示词，发现仅列出表名而非详细模式的schema提示可提升查询质量。",
+      "take": "DSPy提供了一种结构化方法，通过自动化提示优化和评估循环来迭代改进LLM代理的系统提示，而非手动调试。开发者可将其集成到CI流程中，持续测试不同提示变体对SQL生成准确性的影响，从而显著减少人工调优成本。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-03-03-how-github-used-secret-scanning-to-reach-inbox-zero",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "publishedDate": "2026-07-02",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "summary": "GitHub 通过构建基于模式匹配与上下文过滤的信号降噪管道，并自动化修复工作流（如自动撤销密钥、自动创建修复PR），在9个月内将20,000+条密钥扫描警报清零。",
+      "take": "工程团队应优先实现警报的自动化分类与修复路由，而非依赖人工分诊；其核心方法是将误报模式直接编码为规则，并强制在推送阶段拦截高置信度密钥，从而从源头减少警报积压。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-03-04-valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
+      "publishedDate": "2026-07-03",
+      "title": "Valve open source the Steam Machine e-ink screen so you can make your own",
+      "summary": "Valve 开源了 Steam Machine 的电子墨水屏显示方案，包含硬件设计、固件和驱动，允许开发者自制兼容设备。",
+      "take": "对于 AI 构建者，此开源方案可作为低功耗、高可读性的辅助显示界面参考，特别适用于需要始终在线状态反馈的智能硬件或边缘设备。它提供了现成的嵌入式驱动和功耗优化范例，可直接集成到自定义硬件原型中。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-03-05-the-safari-mcp-server-for-web-developers",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+      "publishedDate": "2026-07-01",
+      "title": "The Safari MCP server for web developers",
+      "summary": "Apple 为 Safari 浏览器发布了 MCP 服务器，使开发者能通过 Model Context Protocol 协议，以标准化接口让 AI 代理直接操作浏览器标签页、获取网页渲染状态及执行调试命令。",
+      "take": "此工具将浏览器变成了 AI 代理的可编程运行时环境，允许 LLM 主动触发渲染、模拟用户交互和捕获日志。开发者应关注其与 Playwright/Puppeteer 等传统自动化工具的互补性，以及 MCP 协议在无 headless 场景下对前端工作流的重塑潜力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-03-06-manage-vercel-flags-segments-with-vercel-cli",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/manage-vercel-flags-segments-with-vercel-cli",
+      "publishedDate": "2026-07-03",
+      "title": "Manage Vercel Flags segments with Vercel CLI",
+      "summary": "Vercel 在 CLI 中新增 `vercel flags segments` 命令，支持通过 `--add`、`--remove` 和 `--data` 参数以 include/exclude/rule 三种原子令牌增量或全量管理功能标志的细分定位，并支持 `--json` 输出以实现脚本化。",
+      "take": "该机制将功能标志的定位管理从 GUI 迁移至可脚本化的 CLI，为 CI/CD 流水线和智能体驱动的工作流提供了直接通过终端编程式检查和更新标志定位的能力，对自动化部署与灰度发布管线的开发者而言，意味着可以完全在基础设施即代码的框架内控制实验和发布策略，无需再手动操作面板。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-03-07-builder-theme-how-nuclear-will-unlock-energy-abundance-with-valar-atomics-founder-isaiah-taylor",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=5Xvbq_zvOQ4",
+      "title": "Builder Theme: How Nuclear Will Unlock Energy Abundance with Valar Atomics Founder Isaiah Taylor",
+      "summary": "Valar Atomics 实现了美国50年来首个新型TRISO核反应堆的启动，并首次为AI芯片供电，证明了初创公司在先进核能领域的工程可行性。",
+      "take": "AI算力需求的激增正推动能源供给端的范式转变，核能初创公司通过在反应堆设计、燃料技术（如TRISO）和快速部署上的突破，有望为数据中心提供更廉价、可扩展的基荷电力。开发者应关注核能作为AI基础设施的关键变量，其对模型训练成本与部署地理限制的解耦具有根本性影响。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-03-08-builder-theme-thibault-sottiaux-on-cant-wait-to-see-what-people-will-do-with-gpt-56-sol-ultra-stash-y",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2072607914217320644",
+      "title": "Builder Theme: Thibault Sottiaux on Can't wait to see what people will do with GPT-5.6 Sol Ultra. Stash y...",
+      "summary": "Thibault Sottiaux 预告 GPT-5.6 Sol Ultra 即将发布，建议开发者提前储备高难度提示词，等待模型能力释放。",
+      "take": "核心工程信号是：新模型迭代周期缩短，测试反馈闭环需加速。开发者应提前构建高复杂度提示词测试集和基准评估管道，以便在新模型上线第一时间验证能力边界变化，锁定实机用例优势。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-03-09-builder-theme-sam-altman-on-going-to-world-cup-games-is-always-awesome-but-watching-the-usa-win",
+      "briefingId": "rss-2026-07-03",
+      "date": "2026-07-03",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2072773542576586790",
+      "title": "Builder Theme: Sam Altman on going to world cup games is always awesome, but watching the USA win...",
+      "summary": "Sam Altman发布关于观看美国队在世界杯比赛获胜的个人感慨，无直接技术内容。",
+      "take": "无工程相关信号，可忽略此来源。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

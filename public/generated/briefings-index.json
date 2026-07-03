@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-03",
     "2026-07-02",
     "2026-07-01",
     "2026-06-30",
@@ -143,6 +144,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-03": {
+      "briefingIds": [
+        "rss-2026-07-03"
+      ],
+      "insightIds": [
+        "rss-2026-07-03-01-llm-coding-agent-01a0",
+        "rss-2026-07-03-02-using-dspy-to-evaluate-and-improve-datasette-agents-sql-system-prompts",
+        "rss-2026-07-03-03-how-github-used-secret-scanning-to-reach-inbox-zero",
+        "rss-2026-07-03-04-valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own",
+        "rss-2026-07-03-05-the-safari-mcp-server-for-web-developers",
+        "rss-2026-07-03-06-manage-vercel-flags-segments-with-vercel-cli",
+        "rss-2026-07-03-07-builder-theme-how-nuclear-will-unlock-energy-abundance-with-valar-atomics-founder-isaiah-taylor",
+        "rss-2026-07-03-08-builder-theme-thibault-sottiaux-on-cant-wait-to-see-what-people-will-do-with-gpt-56-sol-ultra-stash-y",
+        "rss-2026-07-03-09-builder-theme-sam-altman-on-going-to-world-cup-games-is-always-awesome-but-watching-the-usa-win"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-02": {
       "briefingIds": [
         "rss-2026-07-02"
