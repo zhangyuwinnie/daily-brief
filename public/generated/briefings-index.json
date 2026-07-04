@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-04",
     "2026-07-03",
     "2026-07-02",
     "2026-07-01",
@@ -144,6 +145,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-04": {
+      "briefingIds": [
+        "rss-2026-07-04"
+      ],
+      "insightIds": [
+        "rss-2026-07-04-01-open-source-ai-gap-map",
+        "rss-2026-07-04-02-quoting-josh-w-comeau",
+        "rss-2026-07-04-03-vercel-sandbox-now-supports-fuse-based-filesystems",
+        "rss-2026-07-04-04-agent-runs-now-available-in-the-vercel-mcp-and-cli",
+        "rss-2026-07-04-05-builder-theme-why-nvidia-is-giving-away-ai-models-bryan-catanzaro",
+        "rss-2026-07-04-06-builder-theme-thariq-on-ive-found-the-most-important-part-of-working-with-fable-is-discoveri",
+        "rss-2026-07-04-07-builder-theme-claude-on-squidsoup-is-a-collective-of-artists-and-designers-who-make-immersive"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-03": {
       "briefingIds": [
         "rss-2026-07-03"

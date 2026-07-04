@@ -30076,5 +30076,161 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-04": {
+    "date": "2026-07-04",
+    "briefings": [
+      {
+        "id": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-04",
+        "filePath": "2026-07-04.md",
+        "summaryTopline": "Open Source AI Gap Map",
+        "insightIds": [
+          "rss-2026-07-04-01-open-source-ai-gap-map",
+          "rss-2026-07-04-02-quoting-josh-w-comeau",
+          "rss-2026-07-04-03-vercel-sandbox-now-supports-fuse-based-filesystems",
+          "rss-2026-07-04-04-agent-runs-now-available-in-the-vercel-mcp-and-cli",
+          "rss-2026-07-04-05-builder-theme-why-nvidia-is-giving-away-ai-models-bryan-catanzaro",
+          "rss-2026-07-04-06-builder-theme-thariq-on-ive-found-the-most-important-part-of-working-with-fable-is-discoveri",
+          "rss-2026-07-04-07-builder-theme-claude-on-squidsoup-is-a-collective-of-artists-and-designers-who-make-immersive"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-04-01-open-source-ai-gap-map",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+        "publishedDate": "2026-07-03",
+        "title": "Open Source AI Gap Map",
+        "summary": "Simon Willison 发布开源AI差距地图 v0.1，收录了来自228个组织的421个深度产品和24,400个未分类工件，按模型组件、产品/用户体验和基础设施三层栈划分14个类别。",
+        "take": "该地图为开发者提供了开源AI生态系统的结构化索引，可直接用于评估工具链覆盖范围和识别技术空白。对于构建AI工作流或代理系统，可基于此定位所需组件、模型或数据集，而非依靠零散搜索。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-04-02-quoting-josh-w-comeau",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
+        "publishedDate": "2026-07-03",
+        "title": "Quoting Josh W. Comeau",
+        "summary": "Josh W. Comeau 报告其前端动画课程销量较去年下降约三分之二，并将主因归咎于 AI：开发者对职业前景的担忧抑制了学习投入，且 LLM 提供的个性化辅导替代了付费课程的需求。",
+        "take": "对于 AI 工具链构建者，这意味着 LLM 作为交互式编程导师的应用范式已开始显著侵蚀传统创作者经济中的付费教育市场。应优先开发将 LLM 嵌入 IDE 或运行时环境以提供即时、上下文相关的技能指导功能，而非仅作为代码补全工具。这为构建持续学习型 AI Agent 开辟了直接商业场景。",
+        "topics": [
+          "Agents",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-04-03-vercel-sandbox-now-supports-fuse-based-filesystems",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-now-supports-fuse-based-filesystems",
+        "publishedDate": "2026-07-03",
+        "title": "Vercel Sandbox now supports FUSE-based filesystems",
+        "summary": "Vercel Sandbox 新增对 FUSE 文件系统的支持，允许在运行时挂载 S3 桶、网络文件系统等远程存储为本地路径，实现数据流式访问与跨 Sandbox 状态共享。",
+        "take": "开发者可直接在无服务器环境中流式处理远程大模型训练数据集或 RAG 向量库，无需预加载或复制数据；通过共享 POSIX 文件系统，可构建跨 Sandbox 的持久化 Agent 缓存或协作工作流。此机制改变了传统无服务器函数的数据本地性限制，为构建高性能 AI 推理与数据管道提供了新的架构可能。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-04-04-agent-runs-now-available-in-the-vercel-mcp-and-cli",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/agent-runs-vercel-mcp-cli",
+        "publishedDate": "2026-07-03",
+        "title": "Agent Runs now available in the Vercel MCP and CLI",
+        "summary": "Vercel 在其 MCP 和 CLI 中新增 Agent Runs 功能，使 eve 框架的 Agent 在部署后自动被追踪，并提供项目筛选、运行列表查看及完整推理轨迹检索的工具。",
+        "take": "Agent 的可观测性从日志层级下沉至推理与工具调用层级，开发者现在可以基于 trace 数据对 Agent 的决策链进行离线调试与性能优化。这意味着构建复杂多步 Agent 时，调试闭环可直接集成到部署平台内，无需外部追踪服务。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-04-05-builder-theme-why-nvidia-is-giving-away-ai-models-bryan-catanzaro",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "The MAD Podcast with Matt Turck",
+        "sourceUrl": "https://www.youtube.com/watch?v=Oojrfdl42LI",
+        "title": "Builder Theme: Why NVIDIA Is Giving Away AI Models - Bryan Catanzaro",
+        "summary": "NVIDIA副总裁Bryan Catanzaro指出，在算力已达物理极限的前提下，提升AI智能的唯一路径是通过更高效率（而非更大规模），并类比“厨房作为外部胃”解释AI作为“外部大脑”的范式。",
+        "take": "工程核心是重新定义AI scaling策略：当算力瓶颈固定时，必须聚焦模型架构效率优化（如稀疏注意力、量化、蒸馏），而非单纯堆参数。对AI builder而言，这意味着工作流应从‘训练更大模型’转向‘设计更高效的推理管线’——这是当前实用化Agent能力的实际杠杆。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-04-06-builder-theme-thariq-on-ive-found-the-most-important-part-of-working-with-fable-is-discoveri",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2073101078145724589",
+        "title": "Builder Theme: Thariq on I’ve found the most important part of working with Fable is discoveri...",
+        "summary": "Fable用户Thariq提出，与AI工具协作的核心在于通过主动探索自身未知领域来优化提示工程，并分享了具体方法论。",
+        "take": "开发者在构建AI工作流时，应将提示工程视为一个迭代发现过程，而非一次性输入。通过系统性识别自身知识盲点并针对性调整提示，能显著提升模型输出质量，这本质是一种元认知驱动的调试范式。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-04-07-builder-theme-claude-on-squidsoup-is-a-collective-of-artists-and-designers-who-make-immersive",
+        "briefingId": "rss-2026-07-04",
+        "date": "2026-07-04",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2073028947478995406",
+        "title": "Builder Theme: Claude on Squidsoup is a collective of artists and designers who make immersive...",
+        "summary": "Claude AI与英国沉浸式艺术团体Squidsoup合作，为其在伦敦南岸中心的管弦乐现场表演项目提供技术支持，将AI融入大型公共艺术创作的跨媒体叙事流程。",
+        "take": "艺术与AI协作正从‘工具辅助’转向‘共构创作流程’：Builder需关注AI在实时多模态场景（光、声、空间）中的编排能力，以及LLM作为创意协作接口而非单纯内容生成器的工程范式。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
