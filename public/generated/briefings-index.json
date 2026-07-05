@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-05",
     "2026-07-04",
     "2026-07-03",
     "2026-07-02",
@@ -145,6 +146,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-05": {
+      "briefingIds": [
+        "rss-2026-07-05"
+      ],
+      "insightIds": [
+        "rss-2026-07-05-01-sqlite-utils-40rc2-mostly-written-by-claude-fable-for-about-14925",
+        "rss-2026-07-05-02-building-a-world-map-with-only-500-bytes",
+        "rss-2026-07-05-03-builder-theme-thibault-sottiaux-on-what-is-something-that-you-feel-is-surprising-that-codex-still-cant",
+        "rss-2026-07-05-04-builder-theme-sam-altman-on-grateful-to-the-people-that-created-the-idea-of-america-everyone-who"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-04": {
       "briefingIds": [
         "rss-2026-07-04"

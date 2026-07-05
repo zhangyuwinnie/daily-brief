@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-05",
+  "briefings": [
+    {
+      "id": "rss-2026-07-05",
+      "date": "2026-07-05",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-05",
+      "filePath": "2026-07-05.md",
+      "summaryTopline": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "insightIds": [
+        "rss-2026-07-05-01-sqlite-utils-40rc2-mostly-written-by-claude-fable-for-about-14925",
+        "rss-2026-07-05-02-building-a-world-map-with-only-500-bytes",
+        "rss-2026-07-05-03-builder-theme-thibault-sottiaux-on-what-is-something-that-you-feel-is-surprising-that-codex-still-cant",
+        "rss-2026-07-05-04-builder-theme-sam-altman-on-grateful-to-the-people-that-created-the-idea-of-america-everyone-who"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-05-01-sqlite-utils-40rc2-mostly-written-by-claude-fable-for-about-14925",
+      "briefingId": "rss-2026-07-05",
+      "date": "2026-07-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "publishedDate": "2026-07-05",
+      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "summary": "Simon Willison 借助 Claude Fable（费用约 149.25 美元）完成 sqlite-utils 4.0rc2 的最终审核与修复，识别并解决了 5 个发布阻塞问题，包括 delete_where() 未提交事务等关键缺陷。",
+      "take": "工程上，使用编码代理（如 Claude Fable）进行 pre-release 回归审查是低成本、高 ROI 的实践：代理能系统性地扫描未覆盖的边界情况（如事务提交遗漏），减少人工漏检风险，尤其适合维护 SemVer 兼容性的痛点场景。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-05-02-building-a-world-map-with-only-500-bytes",
+      "briefingId": "rss-2026-07-05",
+      "date": "2026-07-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+      "publishedDate": "2026-07-04",
+      "title": "Building a World Map with only 500 bytes",
+      "summary": "Iwo Kadziela 借助 Codex 使用 445 字节数据，通过 deflate 压缩与 DecompressionStream API 及 data: URI 的 fetch 组合，生成了一个高保真 ASCII 世界地图。",
+      "take": "核心工程信号在于：利用 deflate 压缩预处理静态数据，再通过浏览器原生 DecompressionStream 管道在 fetch 中即时解压，可将地理或大型配置数据压缩至百字节级，适用于包体积敏感或瞬时下载场景。开发者应探索将类似压缩-解压模式集成到静态资源或微数据加载链中，以极低成本换取前沿数据紧凑性。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-05-03-builder-theme-thibault-sottiaux-on-what-is-something-that-you-feel-is-surprising-that-codex-still-cant",
+      "briefingId": "rss-2026-07-05",
+      "date": "2026-07-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2073551549494596079",
+      "title": "Builder Theme: Thibault Sottiaux on What is something that you feel is surprising that Codex still can't...",
+      "summary": "Thibault Sottiaux 公开质疑 Codex 在基础代码理解与生成任务上仍存在长期未解决的显著短板。",
+      "take": "开发者应正视当前代码模型在复杂逻辑推理、跨文件引用和精确语义理解上的局限，不要依赖单一模型完成端到端工程任务。建议在工具链中引入多模型验证或结构化约束来弥补这些固有缺陷。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-05-04-builder-theme-sam-altman-on-grateful-to-the-people-that-created-the-idea-of-america-everyone-who",
+      "briefingId": "rss-2026-07-05",
+      "date": "2026-07-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2073635910512726444",
+      "title": "Builder Theme: Sam Altman on grateful to the people that created the idea of america, everyone who...",
+      "summary": "Sam Altman在社交媒体上表达对美国建国理念和250年建设历程的感谢，将其称为历史上最令人印象深刻的社会实验。",
+      "take": "此言论无直接技术或工程信号，属于个人观点表达。AI构建者应忽略此类非技术性内容，专注于算法、架构或工具链的实际进展。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
