@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-06",
     "2026-07-05",
     "2026-07-04",
     "2026-07-03",
@@ -146,6 +147,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-06": {
+      "briefingIds": [
+        "rss-2026-07-06"
+      ],
+      "insightIds": [
+        "rss-2026-07-06-01-sqlite-utils-40rc3",
+        "rss-2026-07-06-02-better-models-worse-tools",
+        "rss-2026-07-06-03-gpt-56-sol-ultra-will-be-in-codex",
+        "rss-2026-07-06-04-builder-theme-sam-altman-on-our-older-kid-put-two-words-together-for-the-first-time-and-i-am-appr",
+        "rss-2026-07-06-05-builder-theme-guillermo-rauch-on-usa-arg-final-you-heard-it-here-first"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-05": {
       "briefingIds": [
         "rss-2026-07-05"
