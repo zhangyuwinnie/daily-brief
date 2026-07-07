@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-07",
     "2026-07-06",
     "2026-07-05",
     "2026-07-04",
@@ -147,6 +148,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-07": {
+      "briefingIds": [
+        "rss-2026-07-07"
+      ],
+      "insightIds": [
+        "rss-2026-07-07-01-tencenthy3",
+        "rss-2026-07-07-02-sodium-ion-salt-batteries-will-revolutionize-electric-vehicle-and-grid-storage",
+        "rss-2026-07-07-03-give-your-eve-agent-github-tools",
+        "rss-2026-07-07-04-builder-theme-thibault-sottiaux-on",
+        "rss-2026-07-07-05-builder-theme-claude-on-weve-put-together-a-short-history-of-how-claude-code-came-to-be-tol"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-06": {
       "briefingIds": [
         "rss-2026-07-06"
