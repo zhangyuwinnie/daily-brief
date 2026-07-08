@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-08",
     "2026-07-07",
     "2026-07-06",
     "2026-07-05",
@@ -148,6 +149,30 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-08": {
+      "briefingIds": [
+        "rss-2026-07-08"
+      ],
+      "insightIds": [
+        "rss-2026-07-08-01-australian-payments-plus-moves-faster-with-chatgpt-and-codex",
+        "rss-2026-07-08-02-mufg-aims-to-become-ai-native-with-openai",
+        "rss-2026-07-08-03-sqlite-utils-40-now-with-database-schema-migrations",
+        "rss-2026-07-08-04-sqlite-utils-40rc4",
+        "rss-2026-07-08-05-q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide",
+        "rss-2026-07-08-06-gitlost-we-tricked-githubs-ai-agent-into-leaking-private-repos",
+        "rss-2026-07-08-07-run-ai-workloads-on-any-cloud-store-on-hugging-face-zero-egress-storage-with-skypilot",
+        "rss-2026-07-08-08-use-any-chat-sdk-adapter-with-eve",
+        "rss-2026-07-08-09-vercel-acquires-better-auth-to-accelerate-open-source-auth",
+        "rss-2026-07-08-10-intelligence-is-free-now-what-data-systems-for-of-and-by-agents",
+        "rss-2026-07-08-11-builder-theme-claude-on-were-extending-access-to-claude-fable-5-on-all-paid-plans-through-ju",
+        "rss-2026-07-08-12-builder-theme-inside-ziplines-autonomous-system-140m-miles-zero-incidents",
+        "rss-2026-07-08-13-builder-theme-sam-altman-on-gpt-56-sol-launches-thursday-happy-building"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-07": {
       "briefingIds": [
         "rss-2026-07-07"

@@ -1,0 +1,275 @@
+{
+  "date": "2026-07-08",
+  "briefings": [
+    {
+      "id": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-08",
+      "filePath": "2026-07-08.md",
+      "summaryTopline": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "insightIds": [
+        "rss-2026-07-08-01-australian-payments-plus-moves-faster-with-chatgpt-and-codex",
+        "rss-2026-07-08-02-mufg-aims-to-become-ai-native-with-openai",
+        "rss-2026-07-08-03-sqlite-utils-40-now-with-database-schema-migrations",
+        "rss-2026-07-08-04-sqlite-utils-40rc4",
+        "rss-2026-07-08-05-q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide",
+        "rss-2026-07-08-06-gitlost-we-tricked-githubs-ai-agent-into-leaking-private-repos",
+        "rss-2026-07-08-07-run-ai-workloads-on-any-cloud-store-on-hugging-face-zero-egress-storage-with-skypilot",
+        "rss-2026-07-08-08-use-any-chat-sdk-adapter-with-eve",
+        "rss-2026-07-08-09-vercel-acquires-better-auth-to-accelerate-open-source-auth",
+        "rss-2026-07-08-10-intelligence-is-free-now-what-data-systems-for-of-and-by-agents",
+        "rss-2026-07-08-11-builder-theme-claude-on-were-extending-access-to-claude-fable-5-on-all-paid-plans-through-ju",
+        "rss-2026-07-08-12-builder-theme-inside-ziplines-autonomous-system-140m-miles-zero-incidents",
+        "rss-2026-07-08-13-builder-theme-sam-altman-on-gpt-56-sol-launches-thursday-happy-building"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-08-01-australian-payments-plus-moves-faster-with-chatgpt-and-codex",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/australian-payments-plus",
+      "publishedDate": "2026-07-07",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "summary": "Australian Payments Plus 利用 ChatGPT Enterprise 和 Codex 加速处理支付系统的复杂性，在保持人工判断核心地位的同时提升效率与质量。",
+      "take": "该案例展示了 Codex 在特定行业（如支付）中用于自动化代码生成和复杂逻辑解析的实际价值，开发者可借鉴其模式，将大型语言模型集成到高合规性、高复杂性的业务工作流中，以实现自动化而不牺牲人工监督。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-08-02-mufg-aims-to-become-ai-native-with-openai",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/mufg",
+      "publishedDate": "2026-07-07",
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "summary": "MUFG借助ChatGPT Enterprise构建AI原生组织，通过将OpenAI模型深度集成至内部工作流，规模化交付新型AI驱动金融服务。",
+      "take": "对于AI构建者，核心信号是金融巨头采用企业级LLM平台改造核心业务流程，而非简单工具部署。这标志着企业级AI工作流从实验性工具走向系统级嵌入，需关注与现有基础设施的集成模式及合规性工程实践。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-08-03-sqlite-utils-40-now-with-database-schema-migrations",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "publishedDate": "2026-07-07",
+      "title": "sqlite-utils 4.0, now with database schema migrations",
+      "summary": "Simon Willison 发布了 sqlite-utils 4.0，核心新增基于 Python 库的数据库 schema 迁移机制、嵌套事务（db.atomic()）及复合外键支持，首次重大版本更新自 2020 年。",
+      "take": "对于构建 AI 代理或 RAG 管线的开发者，sqlite-utils 4.0 的迁移功能提供了在代理工作流中安全、可重复地演化 SQLite schema 的能力，尤其适合需要持久化存储和版本控制的 Agent 工具链。嵌套事务通过 db.atomic() 简化了复杂操作的一致性保证，减少了手动管理回滚的工程负担。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-08-04-sqlite-utils-40rc4",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
+      "publishedDate": "2026-07-07",
+      "title": "sqlite-utils 4.0rc4",
+      "summary": "Simon Willison 发布了 sqlite-utils 4.0rc4，这是基于 Claude Fable 5 详细代码审查反馈进行优化的候选版本，主要改进了 API 一致性与边缘情况处理。",
+      "take": "该 RC 版本表明，利用大型语言模型（如 Claude）进行代码审查已成为提升开源工具工程质量的可靠方法。开发者应将 LLM 驱动的代码审查集成到发布流程中，以快速捕获 API 设计缺陷和边界逻辑错误。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-05-q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/",
+      "publishedDate": "2026-07-07",
+      "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+      "summary": "GitHub 发布 Q1 2026 创新图谱数据，显示全球开源开发者社区增速创历史新高，跨经济体协作密度显著提升。",
+      "take": "开源协作正从少数国家主导转向全球多中心化，开发者应关注跨时区异步协作工具链的自动化，以及基于 GitHub 数据的社区健康度指标建模，以优化开源项目的贡献者 onboarding 流程。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-06-gitlost-we-tricked-githubs-ai-agent-into-leaking-private-repos",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "publishedDate": "2026-07-06",
+      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "summary": "安全研究人员通过诱导GitHub的AI Agent执行恶意操作，利用不当的权限绑定和指令注入，成功实现了私有仓库数据的泄露。",
+      "take": "工程要点：任何AI Agent若直接绑定高级权限（如仓库写权限）并使用单一系统提示词处理用户输入，极易被通过间接指令注入（如README中的隐式命令）劫持。开发者应在Agent架构中实施最小权限原则、上下文隔离以及可信输出验证，并对所有用户提供的输入（包括代码内容）进行严格的输入过滤和转义处理。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-07-run-ai-workloads-on-any-cloud-store-on-hugging-face-zero-egress-storage-with-skypilot",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/skypilot-hf-storage",
+      "publishedDate": "2026-07-07",
+      "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+      "summary": "Hugging Face 与 SkyPilot 集成，实现了在任意云上运行 AI 工作负载时，通过零出口流量费用直接从 Hugging Face 存储读取/写入数据集和模型，无需手动迁移数据。",
+      "take": "对 RAG 工作流而言，此架构消除了数据跨云复制的成本与延迟，允许开发者将 Hugging Face 作为统一的存储层，利用 SkyPilot 调度计算到成本最低的云上，从而简化数据管道并优化训练/推理的总体拥有成本（TCO）。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-08-use-any-chat-sdk-adapter-with-eve",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/eve-chat-sdk-channel",
+      "publishedDate": "2026-07-08",
+      "title": "Use any Chat SDK adapter with eve",
+      "summary": "Vercel 为 eve 代理推出 Chat SDK 通道，通过统一适配器接口连接 Facebook Messenger、WhatsApp、Resend、Liveblocks 等平台，开发者编写标准 Chat SDK 处理器代码即可实现代理消息路由、打字指示器、人工干预卡片渲染、会话持久化与失败报告。",
+      "take": "开发者可复用现有 Chat SDK 处理器逻辑，仅需为每个平台注册适配器路由（如 /eve/v1/chat/slack），即可将 eve 代理部署到多消息表面。关键在于利用内置的线程持久化与主动发送支持，使代理能够跨会话保持上下文并响应定时事件，从而简化多平台代理工作流的集成与运维。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-09-vercel-acquires-better-auth-to-accelerate-open-source-auth",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/vercel-acquires-better-auth",
+      "publishedDate": "2026-07-07",
+      "title": "Vercel acquires Better Auth to accelerate open source auth",
+      "summary": "Vercel 收购了开源 TypeScript 认证库 Better Auth，其创始团队将加入 Vercel 并专注于 Agent 身份认证（Agent Identity）领域，旨在解决代理（Agent）在运行时身份绑定与权限隔离的技术问题。",
+      "take": "核心工程信号是：AI Agent 的身份与权限管理正成为基础设施级需求。Better Auth 的框架无关性与便携性，结合 Vercel 平台，可能催生一套标准化 Agent 身份认证协议，让开发者可以精确控制每个 Agent 或子 Agent 的访问范围，而非简单复用用户身份。这意味着构建 Agent 系统时，身份与权限隔离应作为原生设计要素而非事后补丁。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-10-intelligence-is-free-now-what-data-systems-for-of-and-by-agents",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+      "sourceUrl": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+      "publishedDate": "2026-07-07",
+      "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
+      "summary": "BAIR指出，AI推理成本已从2023年初的每百万tokens约30美元降至不到1美元，年降幅中位数达50倍，提示智能接近免费的时代即将到来，焦点正转向为智能体设计数据系统。",
+      "take": "智能成本骤降意味着构建AI代理的工程瓶颈从模型调用价格转向数据架构：开发者需优先设计支持代理获取、生成和交互数据的系统，而非优化推理费用。RAG和推理工作流将围绕数据原生代理重新定义，这是工具链和Agent能力的下一个核心转向。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-11-builder-theme-claude-on-were-extending-access-to-claude-fable-5-on-all-paid-plans-through-ju",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2074548242386178258",
+      "title": "Builder Theme: Claude on We're extending access to Claude Fable 5 on all paid plans through Ju...",
+      "summary": "Claude将Fable 5模型访问权限扩展至所有付费计划，截止日期为7月12日。",
+      "take": "此项调整意味着付费用户可在限定窗口内直接获取Fable 5的推理能力，无需额外配置或等待队列。对于依赖高级推理的AI管道，可将此期间作为评估该模型架构在复杂任务（如代码生成、多步推理）中实际性能的关键测试窗口。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-12-builder-theme-inside-ziplines-autonomous-system-140m-miles-zero-incidents",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=6bGxm8gX41o",
+      "title": "Builder Theme: Inside Zipline's Autonomous System: 140M Miles, Zero Incidents",
+      "summary": "Zipline 自主配送系统在 1.4 亿英里运营里程中实现零事故，其核心机制是结合高冗余硬件架构与分层决策软件堆栈，实现实时环境感知与避障。",
+      "take": "为 AI 开发者提供的工程信号：构建高可靠性自主系统时，应将故障安全设计（如冗余传感器与执行器）与基于模型的预测性控制集成，而非依赖端到端学习。这直接启示了代理系统在关键任务场景中的鲁棒性架构原则。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-08-13-builder-theme-sam-altman-on-gpt-56-sol-launches-thursday-happy-building",
+      "briefingId": "rss-2026-07-08",
+      "date": "2026-07-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2074709023807664454",
+      "title": "Builder Theme: Sam Altman on GPT-5.6 sol launches thursday! happy building",
+      "summary": "Sam Altman 宣布 GPT-5.6（代号 sol）将于周四发布，面向 AI 构建者开放。",
+      "take": "新模型发布意味着构建者需立即评估其API接口变化、推理能力差异及调用成本。若支持多模态或更长上下文，可能改变现有Agent工作流的状态管理策略。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
