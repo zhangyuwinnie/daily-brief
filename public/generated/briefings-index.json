@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-09",
     "2026-07-08",
     "2026-07-07",
     "2026-07-06",
@@ -149,6 +150,31 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-09": {
+      "briefingIds": [
+        "rss-2026-07-09"
+      ],
+      "insightIds": [
+        "rss-2026-07-09-01-automating-cross-repo-documentation-with-github-agentic-workflows",
+        "rss-2026-07-09-02-rewriting-bun-in-rust",
+        "rss-2026-07-09-03-data-for-agents",
+        "rss-2026-07-09-04-native-speed-vllm-transformers-modeling-backend",
+        "rss-2026-07-09-05-introducing-gptlive",
+        "rss-2026-07-09-06-vercel-agent-an-agent-you-can-let-near-production",
+        "rss-2026-07-09-07-separating-signal-from-noise-in-coding-evaluations",
+        "rss-2026-07-09-08-update-project-settings-from-the-vercel-cli",
+        "rss-2026-07-09-09-flint-a-visualization-language-for-the-ai-era",
+        "rss-2026-07-09-10-our-approach-to-government-and-national-security-partnerships",
+        "rss-2026-07-09-11-introducing-grok-45",
+        "rss-2026-07-09-12-builder-theme-how-a-writer-uses-ai-without-losing-his-voice",
+        "rss-2026-07-09-13-builder-theme-boris-cherny-on-new-in-claude-code-checkup-run-checkup-to-1-clean-up-unused-skil",
+        "rss-2026-07-09-14-builder-theme-josh-woodward-on-whats-something-that-youre-surprised-geminiapp-cant-do-well-and"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-08": {
       "briefingIds": [
         "rss-2026-07-08"
