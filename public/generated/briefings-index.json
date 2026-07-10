@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-10",
     "2026-07-09",
     "2026-07-08",
     "2026-07-07",
@@ -150,6 +151,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-10": {
+      "briefingIds": [
+        "rss-2026-07-10"
+      ],
+      "insightIds": [
+        "rss-2026-07-10-01-how-deutsche-telekom-is-rewiring-telecommunications-with-ai",
+        "rss-2026-07-10-02-chatgpt-is-now-a-partner-for-your-most-ambitious-work",
+        "rss-2026-07-10-03-quoting-openai",
+        "rss-2026-07-10-04-the-new-gpt-56-family-luna-terra-sol",
+        "rss-2026-07-10-05-muse-spark-11-is-now-available-on-ai-gateway",
+        "rss-2026-07-10-06-gpt-56-sol-luna-and-terra-now-available-on-ai-gateway",
+        "rss-2026-07-10-07-builder-theme-ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today",
+        "rss-2026-07-10-08-builder-theme-sam-altman-on-we-have-heard-enterprises-on-their-concerns-about-ai-costs-and-56-s",
+        "rss-2026-07-10-09-builder-theme-thibault-sottiaux-on-to-celebrate-the-launch-of-gpt-56-sol-we-will-reset-the-rate-limits"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-09": {
       "briefingIds": [
         "rss-2026-07-09"
