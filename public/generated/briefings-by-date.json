@@ -31316,5 +31316,122 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-11": {
+    "date": "2026-07-11",
+    "briefings": [
+      {
+        "id": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-11",
+        "filePath": "2026-07-11.md",
+        "summaryTopline": "Introducing Muse Spark 1.1",
+        "insightIds": [
+          "rss-2026-07-11-01-introducing-muse-spark-11",
+          "rss-2026-07-11-02-llm-0311",
+          "rss-2026-07-11-03-better-tools-made-copilot-code-review-worse-here8217s-how-we-actually-improved-it",
+          "rss-2026-07-11-04-apple-sues-openai-accuses-ex-employees-of-stealing-trade-secrets",
+          "rss-2026-07-11-05-builder-theme-stripes-ai-chief-how-ai-agents-will-buy-sell-and-pay"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-11-01-introducing-muse-spark-11",
+        "briefingId": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+        "publishedDate": "2026-07-09",
+        "title": "Introducing Muse Spark 1.1",
+        "summary": "Meta 发布 Muse Spark 1.1，首次为该模型提供 API，显著改进了代理工具调用和计算机使用能力，并附带自对话吸引态等研究细节。",
+        "take": "开发者可通过 LLM CLI 工具及新插件 llm-meta-ai 直接调用该模型，用于构建需要高级工具调用和计算机交互的代理工作流；自对话吸引态现象提示模型在无外部输入时的内部状态行为，可能影响长期运行代理的设计。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-11-02-llm-0311",
+        "briefingId": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+        "publishedDate": "2026-07-09",
+        "title": "llm 0.31.1",
+        "summary": "llm 0.31.1 修复了OpenAI Chat Completion端点中，因工具调用传入空参数导致部分提供商返回JSON错误的漏洞，该问题源于llm-meta-ai测试时发现。",
+        "take": "当工具调用出现空参数时，需在客户端对provider返回的JSON进行容错处理，或强制校验参数非空后再发起调用，避免因标准不统一导致的模型交互中断。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-11-03-better-tools-made-copilot-code-review-worse-here8217s-how-we-actually-improved-it",
+        "briefingId": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+        "publishedDate": "2026-07-10",
+        "title": "Better tools made Copilot code review worse. Here&#8217;s how we actually improved it.",
+        "summary": "GitHub 通过将 Copilot 代码审查代理的工作流从依赖独立大模型推理重构为基于共享 Unix 风格代码探索工具的证据检索模式，降低了审查成本并提升了准确性。",
+        "take": "核心工程启示是：代理工作流不应让大模型独立承担全部推理，而应将其作为协调器，通过引入结构化工具（如 grep、ast-grep）进行精确代码定位，以最小化 LLM 调用次数并避免幻觉。这一模式可迁移至其他代码审查或调试场景，关键在于将证据收集与判断决策解耦。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-11-04-apple-sues-openai-accuses-ex-employees-of-stealing-trade-secrets",
+        "briefingId": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+        "publishedDate": "2026-07-10",
+        "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+        "summary": "Apple对OpenAI提起诉讼，指控其前员工窃取与AI模型训练及硬件优化相关的商业机密，涉及特定技术架构和数据转移细节。",
+        "take": "此类诉讼可能对AI行业的人才流动和技术分享产生寒蝉效应，开发者在构建Agent或模型时需更谨慎地设计内部代码和训练数据的隔离机制，以避免类似知识产权纠纷。对于使用第三方或合作方技术的AI工作流，应建立更严格的审计和来源追溯流程。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-11-05-builder-theme-stripes-ai-chief-how-ai-agents-will-buy-sell-and-pay",
+        "briefingId": "rss-2026-07-11",
+        "date": "2026-07-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "The MAD Podcast with Matt Turck",
+        "sourceUrl": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "title": "Builder Theme: Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay",
+        "summary": "Stripe的AI部门负责人指出，AI原生欺诈的新范式是盗用Token（而非资金或凭证），目前超过六分之一的AI企业注册属于此类滥用；同时，代理自主支付面临的核心工程挑战是授权控制，即如何防止代理超支、买错商品并允许用户中止交易。",
+        "take": "Token经济催生了新的欺诈攻击面，AI构建者必须将Token安全与额度控制作为基础设施级组件内嵌，而非事后补救。代理支付的工程实现需从“一次性授权”转向“动态可撤销的逐笔审批与预算约束机制”，这是支撑自主商业代理运作的关键架构决策。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

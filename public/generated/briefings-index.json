@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-11",
     "2026-07-10",
     "2026-07-09",
     "2026-07-08",
@@ -151,6 +152,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-11": {
+      "briefingIds": [
+        "rss-2026-07-11"
+      ],
+      "insightIds": [
+        "rss-2026-07-11-01-introducing-muse-spark-11",
+        "rss-2026-07-11-02-llm-0311",
+        "rss-2026-07-11-03-better-tools-made-copilot-code-review-worse-here8217s-how-we-actually-improved-it",
+        "rss-2026-07-11-04-apple-sues-openai-accuses-ex-employees-of-stealing-trade-secrets",
+        "rss-2026-07-11-05-builder-theme-stripes-ai-chief-how-ai-agents-will-buy-sell-and-pay"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-10": {
       "briefingIds": [
         "rss-2026-07-10"
