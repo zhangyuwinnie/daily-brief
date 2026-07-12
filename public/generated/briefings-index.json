@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-12",
     "2026-07-11",
     "2026-07-10",
     "2026-07-09",
@@ -152,6 +153,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-12": {
+      "briefingIds": [
+        "rss-2026-07-12"
+      ],
+      "insightIds": [
+        "rss-2026-07-12-01-sqlite-utils-41",
+        "rss-2026-07-12-02-old-and-new-apps-via-modern-coding-agents-by-terry-tao",
+        "rss-2026-07-12-03-builder-theme-sam-altman-on-there-are-a-lot-of-benchmarks-that-suggest-56-sol-is-the-best-model",
+        "rss-2026-07-12-04-builder-theme-travel-through-the-lens-of-ai-with-with-bookingcom-ceo-glenn-fogel",
+        "rss-2026-07-12-05-builder-theme-matt-turck-on-argentina-struggled-against-the-worlds-64-almost-got-eliminated-by"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-11": {
       "briefingIds": [
         "rss-2026-07-11"

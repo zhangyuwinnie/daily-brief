@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-12",
+  "briefings": [
+    {
+      "id": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-12",
+      "filePath": "2026-07-12.md",
+      "summaryTopline": "sqlite-utils 4.1",
+      "insightIds": [
+        "rss-2026-07-12-01-sqlite-utils-41",
+        "rss-2026-07-12-02-old-and-new-apps-via-modern-coding-agents-by-terry-tao",
+        "rss-2026-07-12-03-builder-theme-sam-altman-on-there-are-a-lot-of-benchmarks-that-suggest-56-sol-is-the-best-model",
+        "rss-2026-07-12-04-builder-theme-travel-through-the-lens-of-ai-with-with-bookingcom-ceo-glenn-fogel",
+        "rss-2026-07-12-05-builder-theme-matt-turck-on-argentina-struggled-against-the-worlds-64-almost-got-eliminated-by"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-12-01-sqlite-utils-41",
+      "briefingId": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
+      "publishedDate": "2026-07-11",
+      "title": "sqlite-utils 4.1",
+      "summary": "sqlite-utils 4.1 发布，新增 --code 选项，允许用户在 sqlite-utils insert 和 upsert 命令中直接传入 Python 代码块或 .py 文件路径，定义生成行的 rows() 函数或可迭代对象，替代从文件导入的方式。",
+      "take": "此功能将 Python 代码嵌入 CLI 工作流，使开发者能在不创建中间文件的情况下动态生成数据行插入 SQLite，适合需要从 API、算法或脚本实时计算数据场景。这是一种将数据管道逻辑原子化、内联到命令行的模式，可简化 CI/CD 或自动化脚本中的数据加载步骤。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-12-02-old-and-new-apps-via-modern-coding-agents-by-terry-tao",
+      "briefingId": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "publishedDate": "2026-07-11",
+      "title": "Old and new apps, via modern coding agents by Terry Tao",
+      "summary": "陶哲轩使用现代编码代理（如Claude Sonnet 4、GitHub Copilot）重构了其旧版Mac应用（如Wordle求解器、Scala拼写检查），通过自然语言提示让AI生成完整可运行的跨平台Python GUI应用，实现了从旧语言/框架到现代工具链的快速迁移。",
+      "take": "编码代理已能接管从旧代码解析到全新GUI实现的全链路任务，开发者应将其视为‘翻译+重构引擎’，而非仅补全工具；重点在于用精确的自然语言描述功能边界和UI需求，大幅降低维护老旧代码的成本。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-12-03-builder-theme-sam-altman-on-there-are-a-lot-of-benchmarks-that-suggest-56-sol-is-the-best-model",
+      "briefingId": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2075983427019612242",
+      "title": "Builder Theme: Sam Altman on there are a lot of benchmarks that suggest 5.6 sol is the best model...",
+      "summary": "Sam Altman 暗示，尽管多个基准测试将5.6 sol评为当前最佳模型，但最可靠的判断依据是Elon Musk再次对他痴迷。",
+      "take": "基准测试可能具有欺骗性，对AI构建者而言，主要竞争对手的情绪反应（尤其是公开痴迷）是更真实的模型性能信号。这提示应关注实际生态影响而非孤立指标。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-12-04-builder-theme-travel-through-the-lens-of-ai-with-with-bookingcom-ceo-glenn-fogel",
+      "briefingId": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=8nj_0wZkbtA",
+      "title": "Builder Theme: Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
+      "summary": "Booking.com CEO Glenn Fogel 强调在AI驱动的旅游行业中，不存在永久护城河，只有持续创新才能维持竞争优势，忽视行业复杂性的新进入者将面临资本风险。",
+      "take": "对于AI构建者，核心启示是：不要依赖静态的技术或数据优势作为护城河；应将AI系统设计为持续迭代和业务深化的平台，而非一次性解决方案。理解垂直领域（如旅游）的复杂运营与供需动态，比单纯的技术颠覆更重要。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-12-05-builder-theme-matt-turck-on-argentina-struggled-against-the-worlds-64-almost-got-eliminated-by",
+      "briefingId": "rss-2026-07-12",
+      "date": "2026-07-12",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Matt Turck",
+      "sourceUrl": "https://x.com/mattturck/status/2076141940484010189",
+      "title": "Builder Theme: Matt Turck on Argentina struggled against the world's #64, almost got eliminated by...",
+      "summary": "Matt Turck以阿根廷足球比赛喻指AI领域领先者与挑战者之间的实力差距远小于表面排名，即便强队也可能在劣势下苦战。",
+      "take": "领先AI团队不应高估自身优势，边缘对手在特定条件下（如资源受限、战术创新）可能构成实质威胁。开发者需持续关注低成本或非主流方案的能力跃迁，避免陷入路径依赖。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
