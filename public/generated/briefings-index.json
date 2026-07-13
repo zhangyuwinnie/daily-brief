@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-13",
     "2026-07-12",
     "2026-07-11",
     "2026-07-10",
@@ -153,6 +154,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-13": {
+      "briefingIds": [
+        "rss-2026-07-13"
+      ],
+      "insightIds": [
+        "rss-2026-07-13-01-directly-responsible-individuals-dri",
+        "rss-2026-07-13-02-fable-gets-another-bump",
+        "rss-2026-07-13-03-precursor",
+        "rss-2026-07-13-04-6-months-to-live-for-open-models",
+        "rss-2026-07-13-05-builder-theme-claude-on-were-extending-claude-fable-5-access-on-all-paid-plans-as-well-as-k",
+        "rss-2026-07-13-06-builder-theme-sam-altman-on-id-love-to-see-interesting-things-people-have-built-with-56-sol-i"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-12": {
       "briefingIds": [
         "rss-2026-07-12"
