@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-14",
     "2026-07-13",
     "2026-07-12",
     "2026-07-11",
@@ -154,6 +155,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-14": {
+      "briefingIds": [
+        "rss-2026-07-14"
+      ],
+      "insightIds": [
+        "rss-2026-07-14-01-empowering-indias-next-generation-of-innovators-with-atl-saathi",
+        "rss-2026-07-14-02-using-uvx-in-github-actions-in-a-cache-friendly-way",
+        "rss-2026-07-14-03-doomql",
+        "rss-2026-07-14-04-codex-scraped-the-icm-website-and-discovered-2026-fields-medal-winner-list",
+        "rss-2026-07-14-05-agentmail-joins-the-vercel-marketplace",
+        "rss-2026-07-14-06-chat-sdk-adds-x-adapter-support",
+        "rss-2026-07-14-07-builder-theme-sam-altman-on-i-thought-this-was-satire-kept-looking-for-the-handle-to-be-spelled",
+        "rss-2026-07-14-08-builder-theme-thibault-sottiaux-on-tomorrow-might-be-8m-active-user-celebration-day-just-saying"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-13": {
       "briefingIds": [
         "rss-2026-07-13"

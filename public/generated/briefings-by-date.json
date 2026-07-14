@@ -31678,5 +31678,173 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-14": {
+    "date": "2026-07-14",
+    "briefings": [
+      {
+        "id": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-14",
+        "filePath": "2026-07-14.md",
+        "summaryTopline": "Empowering India’s next generation of innovators with ATL Saathi",
+        "insightIds": [
+          "rss-2026-07-14-01-empowering-indias-next-generation-of-innovators-with-atl-saathi",
+          "rss-2026-07-14-02-using-uvx-in-github-actions-in-a-cache-friendly-way",
+          "rss-2026-07-14-03-doomql",
+          "rss-2026-07-14-04-codex-scraped-the-icm-website-and-discovered-2026-fields-medal-winner-list",
+          "rss-2026-07-14-05-agentmail-joins-the-vercel-marketplace",
+          "rss-2026-07-14-06-chat-sdk-adds-x-adapter-support",
+          "rss-2026-07-14-07-builder-theme-sam-altman-on-i-thought-this-was-satire-kept-looking-for-the-handle-to-be-spelled",
+          "rss-2026-07-14-08-builder-theme-thibault-sottiaux-on-tomorrow-might-be-8m-active-user-celebration-day-just-saying"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-14-01-empowering-indias-next-generation-of-innovators-with-atl-saathi",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+        "publishedDate": "2026-07-13",
+        "title": "Empowering India’s next generation of innovators with ATL Saathi",
+        "summary": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.。",
+        "take": "这件事与 Gemini 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-14-02-using-uvx-in-github-actions-in-a-cache-friendly-way",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+        "publishedDate": "2026-07-14",
+        "title": "Using uvx in GitHub Actions in a cache-friendly way",
+        "summary": "Simon Willison 提出利用 UV_EXCLUDE_NEWER 环境变量固定日期，并结合 GitHub Actions 缓存键，实现 uvx 工具在 CI 工作流中的缓存友好型调用，避免每次运行都从 PyPI 重新下载。",
+        "take": "核心工程技巧：设置 UV_EXCLUDE_NEWER 为特定日期（如运行日期前一日），将其作为缓存键的一部分。这样 uvx 命令每次解析到该日期前的最新版本，缓存命中则无需网络请求；如需升级工具，只需更新日期变量即可清除缓存。此方法适用于依赖 Python 工具的 CI 流，显著减少工作流执行时间和网络依赖。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-14-03-doomql",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+        "publishedDate": "2026-07-13",
+        "title": "DOOMQL",
+        "summary": "Peter Gostev 使用 GPT-5.6 Sol 构建了 DOOMQL，将 SQLite 作为完整的游戏引擎，通过递归 CTE 在 SQL 查询中实现光线追踪渲染、碰撞检测和敌人 AI，所有像素均由 SQL 直接生成。",
+        "take": "这一架构展示了将 LLM 生成的非传统 SQL 操作（如递归 CTE 光线追踪）用于实时计算的可能性，开发者可将 SQLite 作为通用计算层，替代传统游戏循环或渲染管线，尤其适用于需要高度可审计和可查询状态的 AI 代理工作流。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-14-04-codex-scraped-the-icm-website-and-discovered-2026-fields-medal-winner-list",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948",
+        "publishedDate": "2026-07-14",
+        "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list",
+        "summary": "Codex通过爬取国际数学家大会（ICM）网站，提前泄露了2026年菲尔兹奖得主名单，其中包含两位北京大学校友。",
+        "take": "此事件展示了AI代理（如Codex）利用自动化网页抓取与信息聚合能力，突破传统新闻时效性瓶颈，直接获取未公开结构化数据。这对构建实时情报或学术事件预测系统有直接参考价值，但需注意爬取行为可能违反网站条款，应在工程中集成合规检查机制。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-14-05-agentmail-joins-the-vercel-marketplace",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/agentmail-vercel-marketplace",
+        "publishedDate": "2026-07-14",
+        "title": "AgentMail joins the Vercel Marketplace",
+        "summary": "Vercel Marketplace 集成 AgentMail，允许开发者通过 API 直接为 AI 代理提供真实邮箱的收发与管理能力，处理邮件服务器和投递可靠性。",
+        "take": "关键在于将邮件协议抽象为 API 和 webhook/WebSocket 事件驱动接口，使 AI 代理能原生参与邮件工作流。这标志着从传统 SMTP 集成向代理原生通信基础设施的转变，可触发自动化响应和持续任务编排。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-14-06-chat-sdk-adds-x-adapter-support",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/chat-sdk-adds-x-adapter-support",
+        "publishedDate": "2026-07-14",
+        "title": "Chat SDK adds X adapter support",
+        "summary": "Vercel 的 Chat SDK 新增 X（Twitter）适配器，支持通过 X API v2 与 Activity API 构建回复提及和私信机器人，自动处理 CRC 验证、Webhook 签名及 OAuth 令牌刷新，但仅支持点赞反应且无原生流式响应。",
+        "take": "该适配器统一了跨平台机器人开发（Slack、Discord 等）的代码库，但需注意 X 的自动化规则限制。工程上直接复用现有 Chat SDK 逻辑即可切入 X 平台，但需处理无流式输出的单次响应模式及 OAuth 凭证管理。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-14-07-builder-theme-sam-altman-on-i-thought-this-was-satire-kept-looking-for-the-handle-to-be-spelled",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2076824686307271125",
+        "title": "Builder Theme: Sam Altman on i thought this was satire, kept looking for the handle to be spelled...",
+        "summary": "Sam Altman对某条内容疑似讽刺的推文发表评论，暗示其最初认为该内容为假消息，并搜索了类似Claude AI的账户名。",
+        "take": "此事件无实质工程信号，但提醒AI构建者需警惕社交媒体上的信息误判，避免将营销或讽刺内容误认为技术动态。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-14-08-builder-theme-thibault-sottiaux-on-tomorrow-might-be-8m-active-user-celebration-day-just-saying",
+        "briefingId": "rss-2026-07-14",
+        "date": "2026-07-14",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2076907789763621237",
+        "title": "Builder Theme: Thibault Sottiaux on Tomorrow might be 8M active user celebration day. Just saying",
+        "summary": "Thibault Sottiaux 暗示其AI产品即将达到800万日活跃用户里程碑。",
+        "take": "活跃用户规模是衡量AI产品市场验证和留存能力的关键工程指标，开发者应关注用户增长背后的架构扩展性与成本控制策略。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
