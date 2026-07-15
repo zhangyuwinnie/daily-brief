@@ -1,0 +1,190 @@
+{
+  "date": "2026-07-15",
+  "briefings": [
+    {
+      "id": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-15",
+      "filePath": "2026-07-15.md",
+      "summaryTopline": "How to manage AI investments in the agentic era",
+      "insightIds": [
+        "rss-2026-07-15-01-how-to-manage-ai-investments-in-the-agentic-era",
+        "rss-2026-07-15-02-simonwpedalican",
+        "rss-2026-07-15-03-lobsters-is-now-running-on-sqlite",
+        "rss-2026-07-15-04-if-you-want-claude-to-speak-nicely-to-you-try-hindi-or-arabic",
+        "rss-2026-07-15-05-vercel-blob-now-supports-consistent-reads-on-private-storage",
+        "rss-2026-07-15-06-vercel-plugin-now-available-in-vs-code-and-github-copilot-cli",
+        "rss-2026-07-15-07-builder-theme-anthropics-katelyn-lesse-amp-angela-jiang-building-an-ecosystem-not-a-walled-garden",
+        "rss-2026-07-15-08-builder-theme-thibault-sottiaux-on-or-what-if-we-gave-you-100-in-codex-credits-if-you-tell-us-what-you",
+        "rss-2026-07-15-09-builder-theme-sam-altman-on-56-sol-growth-is-insane-the-inference-team-has-done-heroic-work-to"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-15-01-how-to-manage-ai-investments-in-the-agentic-era",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "publishedDate": "2026-07-14",
+      "title": "How to manage AI investments in the agentic era",
+      "summary": "OpenAI提出企业在代理时代应以“每美元有用工作量”为核心指标，优化AI投资效率并规模化高价值工作流。",
+      "take": "工程关键在于将代理系统的成本效益量化为有用产出与资源消耗的比值，而非传统性能指标。开发者需构建可追踪、可计算的代理工作流计量框架，以驱动持续优化与规模化部署。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-15-02-simonwpedalican",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
+      "publishedDate": "2026-07-14",
+      "title": "simonw/pedalican",
+      "summary": "Simon Willison 创建了一个Codex Desktop自定义宠物（骑自行车的鹈鹕），该过程由GPT-5.6 Sol xhigh模型自动完成，包括通过gpt-image-2生成精灵素材及记录所有中间步骤。",
+      "take": "此案例展示了LLM驱动的端到端资产生成能力：开发者仅需自然语言描述，模型即可自主规划、生成并记录多轮图像创作流程，这为AI代理在UI组件与视觉素材的自动化生产上开辟了新范式。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-15-03-lobsters-is-now-running-on-sqlite",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
+      "publishedDate": "2026-07-14",
+      "title": "lobste.rs is now running on SQLite",
+      "summary": "Lobste.rs 社区完成从 MariaDB 到 SQLite 的迁移，将 Rails 应用精简至单 VPS 运行，主数据库文件 3.8GB，辅以独立缓存、队列和攻击防护数据库文件，CPU 及内存占用下降，VPS 成本减半。",
+      "take": "此案例验证了 SQLite 在中等规模读写型 Web 应用中的生产可行性，核心模式在于：将不同职责（缓存、队列、防护）拆分至独立 SQLite 文件，避免单文件锁争用。对于资源受限或追求运维简化的项目，可参考此多文件 SQLite 架构替代传统客户端-服务器数据库，但需评估并发写入量和备份策略是否匹配。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-15-04-if-you-want-claude-to-speak-nicely-to-you-try-hindi-or-arabic",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.theregister.com/ai-and-ml/2026/07/14/if-you-want-claude-to-speak-nicely-to-you-try-hindi-or-arabic/5271409",
+      "publishedDate": "2026-07-14",
+      "title": "If you want Claude to speak nicely to you, try Hindi or Arabic",
+      "summary": "用戶發現Claude在處理印地語或阿拉伯語提示時，表現出更友善、更順從的對話風格，推測模型對非英語語言施加了較弱的對齊約束或安全過濾。",
+      "take": "這揭示了大型語言模型在多語言環境下存在對齊強度不均的問題：工程師應測試模型在不同語言下的行為差異，避免因語言切換導致安全漏洞或意外輸出；同時，可考慮利用此特性進行特定場景的行為微調，但需警惕潛在的規避安全機制風險。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-15-05-vercel-blob-now-supports-consistent-reads-on-private-storage",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-blob-now-supports-consistent-reads-on-private-storage",
+      "publishedDate": "2026-07-14",
+      "title": "Vercel Blob now supports consistent reads on private storage",
+      "summary": "Vercel Blob 新增私有存储一致性读支持，通过调用 get() 或 presignUrl() 时传入 useCache: false 参数，可绕过 CDN 缓存（最长 60 秒过期间隔），强制从源端读取最新写入内容。",
+      "take": "对于需要强一致性的场景（如智能体记忆文件、会话记录、定时 JSON 报告），应显式使用 useCache: false 替代依赖默认最终一致性缓存。此改动提高了实时性但增加延迟和 Fast Origin Transfer 成本，需在一致性需求与性能成本间权衡。底层实现通过附加 cache=0 查询参数实现，可直接在私有 blob URL 上手动设置。",
+      "topics": [
+        "Agents",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-15-06-vercel-plugin-now-available-in-vs-code-and-github-copilot-cli",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-plugin-now-available-in-vs-code-and-github-copilot-cli",
+      "publishedDate": "2026-07-14",
+      "title": "Vercel Plugin now available in VS Code and GitHub Copilot CLI",
+      "summary": "Vercel 推出 VS Code 与 GitHub Copilot CLI 插件，使 Copilot 能够直接调用 Vercel 平台知识，包括 Next.js、AI SDK 及 Functions 的最新 API 与推荐模式。",
+      "take": "该插件将平台特定知识注入通用 AI 编码助手，实质上是为 Copilot 提供了可编程的领域技能集。工程团队可通过插件定义（如`npx plugins add vercel/vercel-plugin`）将自身平台的最新 API 与最佳实践作为“技能”动态注入 Copilot，从而减少 Agent 对过时上下文依赖，提升生成代码与当前基础设施的即时兼容性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-15-07-builder-theme-anthropics-katelyn-lesse-amp-angela-jiang-building-an-ecosystem-not-a-walled-garden",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=vPnVTHYplrQ",
+      "title": "Builder Theme: Anthropic's Katelyn Lesse &amp; Angela Jiang: Building an Ecosystem, not a Walled Garden",
+      "summary": "Anthropic 的 Katelyn Lesse 与 Angela Jiang 提出 AI 系统架构分为知识、执行与协调三层，协调层作为元调度器，基于 token 的非同质性（如咨询 vs 执行）编排组合策略，而非构建封闭围墙。",
+      "take": "工程关键是将执行层与协调层解耦：协调层不应硬编码 token 用途，而应设计为可插拔策略引擎，动态分配 token 为不同角色（如顾问、执行者）。这要求构建者将“策略”视为一等组件，独立于底层执行 harness 之上，以支持复杂、可组合的 agentic 工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-15-08-builder-theme-thibault-sottiaux-on-or-what-if-we-gave-you-100-in-codex-credits-if-you-tell-us-what-you",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2077248807533003257",
+      "title": "Builder Theme: Thibault Sottiaux on Or… what if we gave you $100 in Codex credits if you tell us what you...",
+      "summary": "OpenAI通过社区互动活动，向前1万名参与者赠送100美元Codex积分，以推广GPT-5.6 Sol模型。",
+      "take": "此事件表明OpenAI正通过激励措施加速GPT-5.6 Sol的采用，开发者可借此获取免费计算资源进行实验；但需注意活动可能伴随使用限制，应优先评估模型在自身工作流中的实际性能提升。",
+      "topics": [
+        "Coding Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-15-09-builder-theme-sam-altman-on-56-sol-growth-is-insane-the-inference-team-has-done-heroic-work-to",
+      "briefingId": "rss-2026-07-15",
+      "date": "2026-07-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2077106587307798989",
+      "title": "Builder Theme: Sam Altman on 5.6 sol growth is insane. the inference team has done heroic work to...",
+      "summary": "Sam Altman 表示推理团队已通过英雄式工作支撑住 5.6 倍的需求增长，但继续扩展可能很快会遇到一些障碍。",
+      "take": "需求突发性暴涨（5.6 倍）验证了推理基础设施的弹性瓶颈：团队需重点优化推理集群的弹性伸缩与容灾能力，工程上应预设故障、预留余量。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

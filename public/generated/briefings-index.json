@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-15",
     "2026-07-14",
     "2026-07-13",
     "2026-07-12",
@@ -155,6 +156,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-15": {
+      "briefingIds": [
+        "rss-2026-07-15"
+      ],
+      "insightIds": [
+        "rss-2026-07-15-01-how-to-manage-ai-investments-in-the-agentic-era",
+        "rss-2026-07-15-02-simonwpedalican",
+        "rss-2026-07-15-03-lobsters-is-now-running-on-sqlite",
+        "rss-2026-07-15-04-if-you-want-claude-to-speak-nicely-to-you-try-hindi-or-arabic",
+        "rss-2026-07-15-05-vercel-blob-now-supports-consistent-reads-on-private-storage",
+        "rss-2026-07-15-06-vercel-plugin-now-available-in-vs-code-and-github-copilot-cli",
+        "rss-2026-07-15-07-builder-theme-anthropics-katelyn-lesse-amp-angela-jiang-building-an-ecosystem-not-a-walled-garden",
+        "rss-2026-07-15-08-builder-theme-thibault-sottiaux-on-or-what-if-we-gave-you-100-in-codex-credits-if-you-tell-us-what-you",
+        "rss-2026-07-15-09-builder-theme-sam-altman-on-56-sol-growth-is-insane-the-inference-team-has-done-heroic-work-to"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-14": {
       "briefingIds": [
         "rss-2026-07-14"
