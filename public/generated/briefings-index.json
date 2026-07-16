@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-16",
     "2026-07-15",
     "2026-07-14",
     "2026-07-13",
@@ -156,6 +157,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-16": {
+      "briefingIds": [
+        "rss-2026-07-16"
+      ],
+      "insightIds": [
+        "rss-2026-07-16-01-xai-orggrok-build-now-open-source",
+        "rss-2026-07-16-02-mermaid-to-unicode-box-art-grok-mermaid",
+        "rss-2026-07-16-03-gpt-red-unlocking-self-improvement-for-robustness",
+        "rss-2026-07-16-04-what-building-shippy-taught-us-about-building-agents",
+        "rss-2026-07-16-05-inkling-from-thinking-machines-is-now-available-on-ai-gateway",
+        "rss-2026-07-16-06-vercel-connect-support-in-github-tools",
+        "rss-2026-07-16-07-the-us-is-advancing-ai-safety-through-state-and-federal-action",
+        "rss-2026-07-16-08-builder-theme-the-founder-of-a-15b-ai-company-on-what-comes-after-the-first-wave-of-ai-apps",
+        "rss-2026-07-16-09-builder-theme-boris-cherny-on-something-i-have-been-thinking-about-in-the-past-the-best-engineers",
+        "rss-2026-07-16-10-builder-theme-thibault-sottiaux-on-weve-had-no-5h-limit-in-codex-plus-and-pro-for-a-few-days-do-you-th"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-15": {
       "briefingIds": [
         "rss-2026-07-15"

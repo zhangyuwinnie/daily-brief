@@ -1,0 +1,220 @@
+{
+  "date": "2026-07-16",
+  "briefings": [
+    {
+      "id": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-16",
+      "filePath": "2026-07-16.md",
+      "summaryTopline": "xai-org/grok-build, now open source",
+      "insightIds": [
+        "rss-2026-07-16-01-xai-orggrok-build-now-open-source",
+        "rss-2026-07-16-02-mermaid-to-unicode-box-art-grok-mermaid",
+        "rss-2026-07-16-03-gpt-red-unlocking-self-improvement-for-robustness",
+        "rss-2026-07-16-04-what-building-shippy-taught-us-about-building-agents",
+        "rss-2026-07-16-05-inkling-from-thinking-machines-is-now-available-on-ai-gateway",
+        "rss-2026-07-16-06-vercel-connect-support-in-github-tools",
+        "rss-2026-07-16-07-the-us-is-advancing-ai-safety-through-state-and-federal-action",
+        "rss-2026-07-16-08-builder-theme-the-founder-of-a-15b-ai-company-on-what-comes-after-the-first-wave-of-ai-apps",
+        "rss-2026-07-16-09-builder-theme-boris-cherny-on-something-i-have-been-thinking-about-in-the-past-the-best-engineers",
+        "rss-2026-07-16-10-builder-theme-thibault-sottiaux-on-weve-had-no-5h-limit-in-codex-plus-and-pro-for-a-few-days-do-you-th"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-16-01-xai-orggrok-build-now-open-source",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
+      "publishedDate": "2026-07-15",
+      "title": "xai-org/grok-build, now open source",
+      "summary": "xAI因Grok Build CLI工具在上传操作中未做目录限制，导致用户私密数据（如SSH密钥、密码管理器文件）被批量上传至其Google Cloud存储桶，引发严重安全与隐私危机；作为回应，xAI已禁用该功能，并将全部Grok Build代码以Apache 2.0许可证开源，试图重建社区信任。",
+      "take": "对于构建AI Agent或CLI工具的开发者，此事件警示：任何涉及本地文件上传的功能必须严格限定作用域（如仅允许指定项目文件或显式确认路径），并实施上传前的安全扫描与用户确认机制；xAI开源代码的做法虽提供临时信任补偿，但核心教训在于，AI原生工具的设计必须默认以最小权限和防数据泄露为第一原则，否则即便模型能力再强，也会因信任崩塌导致工程失败。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-16-02-mermaid-to-unicode-box-art-grok-mermaid",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "publishedDate": "2026-07-16",
+      "title": "Mermaid to Unicode box art (grok-mermaid)",
+      "summary": "Simon Willison将Grok CLI中用于Mermaid图表的Rust终端渲染器通过WebAssembly移植到浏览器，并借助Claude Code生成可直接复制为Unicode框图的交互式工具。",
+      "take": "此举展示了将专用CLI工具（如Grok的Mermaid渲染器）通过WASM前端化的可行路径：开发者可使用Claude等编码代理快速提取并适配开源代码库中的核心模块，实现从终端图表到浏览器Unicode框图的零成本转换，为Agent辅助的代码复用和工具链增强提供范式。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-16-03-gpt-red-unlocking-self-improvement-for-robustness",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "publishedDate": "2026-07-15",
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "summary": "OpenAI推出了GPT-Red，一種基於自我對戰（self-play）的自動化紅隊系統，用於提升AI模型對抗提示注入和對齊漏洞的魯棒性。",
+      "take": "工程師可借鑑此範式，將模型自身作為對抗性攻擊者與防禦者，迭代生成對抗樣本並微調，以自動化取代人工紅隊測試，顯著提升安全評估效率與覆蓋率。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-16-04-what-building-shippy-taught-us-about-building-agents",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+      "publishedDate": "2026-07-15",
+      "title": "What building Shippy taught us about building agents",
+      "summary": "AllenAI 构建 Shippy 智能体，采用模块化架构将规划、工具调用与状态管理分离，通过强化学习微调语言模型以提升多步骤任务执行的鲁棒性。",
+      "take": "工程信号在于：智能体设计应优先解耦任务规划与执行层，使用独立状态追踪器而非依赖模型隐式记忆；利用离线强化学习（如基于搜索的轨迹优化）可系统性提升工具调用准确性，避免纯提示工程的天花板。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-05-inkling-from-thinking-machines-is-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/inkling-from-thinking-machines-is-now-available-on-ai-gateway",
+      "publishedDate": "2026-07-15",
+      "title": "Inkling from Thinking Machines is now available on AI Gateway",
+      "summary": "Vercel 的 AI Gateway 现已支持 Thinking Machines 的 Inkling 模型，该模型是一个通用型基础模型，专为代理、推理、编码、指令遵循、事实性、视觉和音频任务进行训练，并支持可控推理深度。",
+      "take": "开发者可通过 AI SDK 中设置 model 为 thinkingmachines/inkling 直接调用 Inkling，利用 AI Gateway 的统一 API 实现模型调用、用量追踪、成本控制、重试与故障转移机制。关键架构洞察：Inkling 的“可控思考努力”特性允许动态调整推理计算量，为代理工作流中平衡响应速度与推理深度提供了新范式；结合 AI Gateway 的零数据留存和 BYOK 支持，适用于对成本和隐私敏感的生产级 agent 系统。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-06-vercel-connect-support-in-github-tools",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-connect-support-in-github-tools",
+      "publishedDate": "2026-07-15",
+      "title": "Vercel Connect support in GitHub Tools",
+      "summary": "GitHub Tools 通过新增 @github-tools/sdk/connect 子路径，使 Agent 可在运行时通过 Vercel Connect 动态颁发短期、限定作用域的 GitHub 令牌，替代长期个人访问令牌的存储与轮换。",
+      "take": "工程核心转变：Agent 认证从静态密钥管理迁移到运行时动态令牌签发，消除了密钥存储、轮转与泄露风险。预设作用域（如 code-review、issue-triage）可自动映射到最小权限，实现多租户场景下每调用可覆盖 installationId 和仓库范围，直接降低 Agent 工具集的安全维护成本。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-07-the-us-is-advancing-ai-safety-through-state-and-federal-action",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "publishedDate": "2026-07-15",
+      "title": "The US is advancing AI safety through state and federal action",
+      "summary": "OpenAI 提出“反向联邦制”AI治理路径，主张通过各州法律先行实践，逐步汇聚形成国家级的AI安全框架。",
+      "take": "开发者需关注美国各州 AI 立法碎片化趋势，这意味着模型部署需适配多层次合规要求；其核心工程挑战在于将动态变化的州级法规转化为可配置的模型行为约束与审计机制。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-08-builder-theme-the-founder-of-a-15b-ai-company-on-what-comes-after-the-first-wave-of-ai-apps",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "title": "Builder Theme: The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps",
+      "summary": "Granolah 创始人指出，AI 应用的当前价值（如会议纪要）只是冰山一角，真正的变革是计算范式的全面革命，目前仍处于早期阶段。",
+      "take": "AI 初创公司应避免将功能（如笔记）误认为最终价值，而需聚焦于重塑计算交互范式的底层架构。这对 AI Builder 意味着：下一波机会在于构建全新的任务执行与决策代理机制，而非优化现有工作流。同时，即使在产品验证后，运营与扩展的挑战依然严峻，需在工程架构中预留弹性与迭代空间。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-09-builder-theme-boris-cherny-on-something-i-have-been-thinking-about-in-the-past-the-best-engineers",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2077460395279692197",
+      "title": "Builder Theme: Boris Cherny on Something I have been thinking about: in the past, the best engineers...",
+      "summary": "Boris Cherny 指出，过去顶尖工程师通过自动化（如Vim/Emacs宏、lint规则、端到端测试）来倍增个人产出，现在这种自动化对AI代理集群的效率提升同样关键。",
+      "take": "核心工程认知是：将基础设施和开发体验（DevX）自动化，不仅能加速人类工程师，还能成倍加速每个AI代理的产出。这意味着，自动化杠杆率的计算模型应从“个人×工具”升级为“代理集群×自动化工具体系”，即把更多操作编码化以降低代理的执行延迟和决策成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-16-10-builder-theme-thibault-sottiaux-on-weve-had-no-5h-limit-in-codex-plus-and-pro-for-a-few-days-do-you-th",
+      "briefingId": "rss-2026-07-16",
+      "date": "2026-07-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2077632589498913087",
+      "title": "Builder Theme: Thibault Sottiaux on We've had no 5h limit in Codex plus and pro for a few days. Do you th...",
+      "summary": "OpenAI Codex Plus和Pro版本移除了5小时使用限制，持续数日，用户需更有效地管理每周配额。",
+      "take": "移除硬性时间限制后，AI构建者需要重新评估工具链中的配额策略，转向基于任务复杂度的动态资源分配，而非固定计时。这提示设计代理系统时，应考虑弹性预算机制，避免因无限制导致失控消耗。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
