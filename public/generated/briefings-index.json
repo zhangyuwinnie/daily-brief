@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-17",
     "2026-07-16",
     "2026-07-15",
     "2026-07-14",
@@ -157,6 +158,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-17": {
+      "briefingIds": [
+        "rss-2026-07-17"
+      ],
+      "insightIds": [
+        "rss-2026-07-17-01-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark",
+        "rss-2026-07-17-02-vulnhunter-capital-ones-agentic-ai-code-security-tool",
+        "rss-2026-07-17-03-nvidia-nemotron-3-embed-ranks-1-overall-on-rteb-advancing-agentic-retrieval",
+        "rss-2026-07-17-04-quoting-kimi-k3",
+        "rss-2026-07-17-05-how-cars24-scales-conversations-and-builds-faster-with-openai",
+        "rss-2026-07-17-06-lm-studio-bionic-the-ai-agent-for-open-models",
+        "rss-2026-07-17-07-write-utilization-now-available-in-isr-observability",
+        "rss-2026-07-17-08-kimi-k3-is-now-available-on-ai-gateway",
+        "rss-2026-07-17-09-why-teens-deserve-access-to-safe-ai",
+        "rss-2026-07-17-10-builder-theme-ep-91-top-ai-analyst-unpacks-todayaposs-ai-hype-cycle",
+        "rss-2026-07-17-11-builder-theme-sam-altman-on-we-did-not-have-our-best-last-12-months-ever-which-is-mostly-my-faul",
+        "rss-2026-07-17-12-builder-theme-thibault-sottiaux-on-evening-weve-gotten-lots-of-great-feedback-on-the-new-chatgpt-deskt"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-16": {
       "briefingIds": [
         "rss-2026-07-16"
