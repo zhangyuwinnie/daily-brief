@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-18",
     "2026-07-17",
     "2026-07-16",
     "2026-07-15",
@@ -158,6 +159,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-18": {
+      "briefingIds": [
+        "rss-2026-07-18"
+      ],
+      "insightIds": [
+        "rss-2026-07-18-01-a-scorecard-for-the-ai-age",
+        "rss-2026-07-18-02-claude-make-fable-5-permanent",
+        "rss-2026-07-18-03-llm-cliche-highlighter",
+        "rss-2026-07-18-04-data-downloaded-by-vercel-sandbox-is-now-free",
+        "rss-2026-07-18-05-optimized-cdn-caching-and-deploying-of-immutable-static-assets",
+        "rss-2026-07-18-06-controlling-reasoning-effort-in-llms",
+        "rss-2026-07-18-07-builder-theme-claude-on-beginning-july-20-claude-fable-5-will-be-included-in-all-max-and-tea",
+        "rss-2026-07-18-08-builder-theme-openais-compute-chief-we-cant-build-fast-enough-sachin-katti",
+        "rss-2026-07-18-09-builder-theme-thibault-sottiaux-on-oops-i-did-it-again-enjoy-reset-usage-limits-for-all-paid-users-f"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-17": {
       "briefingIds": [
         "rss-2026-07-17"

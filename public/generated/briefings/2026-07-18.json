@@ -1,0 +1,186 @@
+{
+  "date": "2026-07-18",
+  "briefings": [
+    {
+      "id": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-18",
+      "filePath": "2026-07-18.md",
+      "summaryTopline": "A scorecard for the AI age",
+      "insightIds": [
+        "rss-2026-07-18-01-a-scorecard-for-the-ai-age",
+        "rss-2026-07-18-02-claude-make-fable-5-permanent",
+        "rss-2026-07-18-03-llm-cliche-highlighter",
+        "rss-2026-07-18-04-data-downloaded-by-vercel-sandbox-is-now-free",
+        "rss-2026-07-18-05-optimized-cdn-caching-and-deploying-of-immutable-static-assets",
+        "rss-2026-07-18-06-controlling-reasoning-effort-in-llms",
+        "rss-2026-07-18-07-builder-theme-claude-on-beginning-july-20-claude-fable-5-will-be-included-in-all-max-and-tea",
+        "rss-2026-07-18-08-builder-theme-openais-compute-chief-we-cant-build-fast-enough-sachin-katti",
+        "rss-2026-07-18-09-builder-theme-thibault-sottiaux-on-oops-i-did-it-again-enjoy-reset-usage-limits-for-all-paid-users-f"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-18-01-a-scorecard-for-the-ai-age",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "publishedDate": "2026-07-17",
+      "title": "A scorecard for the AI age",
+      "summary": "OpenAI的CFO Sarah Friar提出以AI分数卡来衡量投资回报率，核心指标包括有用工作、成功任务成本、可靠性和计算回报。",
+      "take": "工程师应将评估重点从泛泛的性能指标转向具体的任务成功率和单位成本，这要求AI系统的设计必须模块化、可复测且计算效率可追踪。分数卡本质上是将AI作为可量化生产工具，推动开发者在工作流中嵌入可观测性层，以便动态调整计算资源分配。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-18-02-claude-make-fable-5-permanent",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+      "publishedDate": "2026-07-18",
+      "title": "Claude make Fable 5 permanent",
+      "summary": "Anthropic由于竞争压力（GPT-5.6 Sol和Kimi 3），将Claude Fable 5从原定仅API访问的计划改为永久包含在Max和Team Premium订阅中（限制为50%额度），并给Pro和Team Standard用户提供一次性$100额度。",
+      "take": "LLM模型的订阅策略正受竞争对手模型能力直接影响，工程团队需关注竞品发布节点以调整定价和资源分配；Fable 5从仅API回到订阅层，暗示计算容量瓶颈可通过工程优化或缩减训练任务缓解，而非单纯依赖定价分层。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-18-03-llm-cliche-highlighter",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
+      "publishedDate": "2026-07-17",
+      "title": "LLM cliché highlighter",
+      "summary": "Simon Willison 使用 Fable 5 的 Vibe Coding 方式构建了一个 LLM 惯用短语高亮工具，用于自动检测并标记 AI 生成文本中常见的十个陈词滥调模式。",
+      "take": "该工具揭示了 LLM 输出中可量化的模式化语言特征，开发者可将其作为检测 AI 生成内容的启发式方法。对于构建写作辅助或内容审核工具，将模式匹配与概率模型结合可实现更精准的识别。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-18-04-data-downloaded-by-vercel-sandbox-is-now-free",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/data-downloaded-by-vercel-sandbox-is-now-free",
+      "publishedDate": "2026-07-17",
+      "title": "Data downloaded by Vercel Sandbox is now free",
+      "summary": "Vercel 宣布 Sandbox 环境从互联网下载数据（包括安装包、克隆 Git 仓库、拉取外部数据集）不再计费，仅保留对暴露端口入站流量及 Sandbox 主动出站流量的计费。",
+      "take": "对于构建 RAG 或 AI 工作流的开发者，此变更消除了在无服务器沙箱中拉取外部知识库、模型权重或依赖时的网络传输成本，可直接将 Vercel Sandbox 作为数据加载与预处理的环境，而无需担心数据摄入的额外开销。建议在 Agent 编排中利用此特性，将沙箱作为低成本的数据摄取节点。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-18-05-optimized-cdn-caching-and-deploying-of-immutable-static-assets",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/optimized-cdn-caching-and-deploying-of-immutable-static-assets",
+      "publishedDate": "2026-07-17",
+      "title": "Optimized CDN caching and deploying of immutable static assets",
+      "summary": "Vercel 复用内容寻址静态资源，跨部署保留不可变文件，实现零配置 CDN 缓存优化、部署速度提升 30% 及全局 TTFB 降低 60%+。",
+      "take": "对使用内容寻址构建的 RAG 应用，建议强制静态资源生成哈希文件名以利用跨部署缓存复用；同时需注意框架级生命周期管理，避免手动干预文件清理或路由逻辑。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-18-06-controlling-reasoning-effort-in-llms",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Ahead of AI",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+      "publishedDate": "2026-07-18",
+      "title": "Controlling Reasoning Effort in LLMs",
+      "summary": "Sebastian Raschka 分析并展示了通过微调或提示工程控制LLM推理深度（低/中/高努力模式）的技术机制与实现路径。",
+      "take": "推理努力控制的核心工程手段是训练或引导模型在短链直觉推理与长链逐步推理间切换，开发者可直接通过约束生成步数、或使用特定推理标记数据微调来动态调节模型的计算成本与输出深度，这对构建成本敏感的Agent系统至关重要。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-18-07-builder-theme-claude-on-beginning-july-20-claude-fable-5-will-be-included-in-all-max-and-tea",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2078302415804379218",
+      "title": "Builder Theme: Claude on Beginning July 20, Claude Fable 5 will be included in all Max and Tea...",
+      "summary": "Anthropic 宣布自 7 月 20 日起，Claude Fable 5 模型将被纳入所有 Max 和 Team Premium 订阅计划，但使用限制为原配额的 50%；Pro 和 Team Standard 用户仍可通过使用积分访问，并获一次性 100 美元积分，以应对需求波动和容量限制。",
+      "take": "此变更表明，前沿 AI 模型（如 Fable 5）的部署策略正从无限制订阅转向基于配额的分层访问，以管理不可预测的计算需求。对 AI 构建者而言，需将应用设计为能适应模型访问的配额限制和峰值流量，并在集成时优先考虑高价值用例以最大化有限配额的效用。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-18-08-builder-theme-openais-compute-chief-we-cant-build-fast-enough-sachin-katti",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "The MAD Podcast with Matt Turck",
+      "sourceUrl": "https://www.youtube.com/watch?v=wEZBlmvxx4o",
+      "title": "Builder Theme: OpenAI’s Compute Chief: We Can’t Build Fast Enough - Sachin Katti",
+      "summary": "OpenAI的算力负责人Sachin Katti指出，当前对AI计算的需求远超供给，任何新增算力都会被立即消耗，且物理世界扩张速度限制了建设，但相信递归自我设计系统的时代即将到来。",
+      "take": "核心工程信号：算力永远是瓶颈，开发者必须为高延迟和稀缺资源设计弹性架构。未来趋势是AI系统自主设计训练和运行硬件，这要求工具链和Agent工作流提前适配递归自动化范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-18-09-builder-theme-thibault-sottiaux-on-oops-i-did-it-again-enjoy-reset-usage-limits-for-all-paid-users-f",
+      "briefingId": "rss-2026-07-18",
+      "date": "2026-07-18",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2078320950488297917",
+      "title": "Builder Theme: Thibault Sottiaux on Oops... I did it again. Enjoy reset usage limits for all paid users f...",
+      "summary": "OpenAI 重置所有付费用户的 Codex 和 ChatGPT Workspace 使用限制，以应对快速增长的需求并提升团队迭代速度。",
+      "take": "此举表明 OpenAI 正优先通过放宽使用限制来吸引和留住付费用户，同时暗示其系统架构能够承受更大负载。AI 构建者应关注 API 限速策略的临时调整，并考虑在应用中动态适配这些变更以避免服务中断。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
