@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-19",
     "2026-07-18",
     "2026-07-17",
     "2026-07-16",
@@ -159,6 +160,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-19": {
+      "briefingIds": [
+        "rss-2026-07-19"
+      ],
+      "insightIds": [
+        "rss-2026-07-19-01-ai-mania-is-eviscerating-global-decision-making",
+        "rss-2026-07-19-02-claude-code-uses-bun-written-in-rust-now",
+        "rss-2026-07-19-03-builder-theme-thariq-on-this-was-due-to-a-heroic-effort-by-many-people-at-anthropic-working-s",
+        "rss-2026-07-19-04-builder-theme-guillermo-rauch-on-based-on-internal-evals-kimi-k3-is-top-tier-at-cybersecurity-ther"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-18": {
       "briefingIds": [
         "rss-2026-07-18"
