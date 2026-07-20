@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-20",
+  "briefings": [
+    {
+      "id": "rss-2026-07-20",
+      "date": "2026-07-20",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-20",
+      "filePath": "2026-07-20.md",
+      "summaryTopline": "Quoting Sam Altman",
+      "insightIds": [
+        "rss-2026-07-20-01-quoting-sam-altman",
+        "rss-2026-07-20-02-sqlite-query-explainer",
+        "rss-2026-07-20-03-builder-theme-thibault-sottiaux-on-i-was-so-inspired-reading-all-the-dms-on-how-folks-here-use-chatgpt-w",
+        "rss-2026-07-20-04-builder-theme-guillermo-rauch-on-gm"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-20-01-quoting-sam-altman",
+      "briefingId": "rss-2026-07-20",
+      "date": "2026-07-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+      "publishedDate": "2026-07-20",
+      "title": "Quoting Sam Altman",
+      "summary": "Sam Altman在2022年10月给OpenAI董事会的邮件中提出，计划发布一个能本地运行于消费级硬件的、能力接近GPT-3的语言模型，以抢在Stability等公司之前推出，从而抑制竞争对手并获得融资优势。",
+      "take": "这揭示了OpenAI早期开源策略的竞争本质：用有限能力模型作为遏制对手的战术工具，而非推动社区发展。AI建设者应警惕这种“伪开源”动机，评估模型发布方的实际意图与长期生态影响。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-20-02-sqlite-query-explainer",
+      "briefingId": "rss-2026-07-20",
+      "date": "2026-07-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+      "publishedDate": "2026-07-18",
+      "title": "SQLite Query Explainer",
+      "summary": "Simon Willison 发布了一款基于 Pyodide 和 Claude 的 SQLite 查询解释工具，通过在浏览器中运行 WebAssembly 版 SQLite，自动为 EXPLAIN 和 EXPLAIN QUERY PLAN 输出添加自然语言注释。",
+      "take": "此工具展示了将 LLM 与 WebAssembly 数据库引擎结合，为开发者提供即时、可验证的查询计划解读的新范式。核心工程信号是：利用 Pyodide 在浏览器内执行 SQLite，并调用 Claude 生成解释层，构建无需后端的高交互性 AI 辅助调试链。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-20-03-builder-theme-thibault-sottiaux-on-i-was-so-inspired-reading-all-the-dms-on-how-folks-here-use-chatgpt-w",
+      "briefingId": "rss-2026-07-20",
+      "date": "2026-07-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2079058139207573541",
+      "title": "Builder Theme: Thibault Sottiaux on I was so inspired reading all the DMs on how folks here use ChatGPT W...",
+      "summary": "Thibault Sottiaux 在 X 平台发起众包征集，收集用户分享 ChatGPT 对个人生活产生深远积极影响的具体案例。",
+      "take": "此事件反映 AI 应用层正在从工具效率转向情感与生活赋能，开发者可关注构建能产生个人化、情感共鸣的交互模式，而非仅优化任务完成度。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-20-04-builder-theme-guillermo-rauch-on-gm",
+      "briefingId": "rss-2026-07-20",
+      "date": "2026-07-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2078896698869375396",
+      "title": "Builder Theme: Guillermo Rauch on gm 🇦🇷",
+      "summary": "Guillermo Rauch 以‘gm 🇦🇷’问候社群，暗示其持续关注 AI 构建者生态与阿根廷技术圈。",
+      "take": "此帖无实质技术内容，属日常社交信号；AI 构建者应忽略此类噪音，聚焦实际工程产出。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

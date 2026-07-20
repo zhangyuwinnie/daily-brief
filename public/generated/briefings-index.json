@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-20",
     "2026-07-19",
     "2026-07-18",
     "2026-07-17",
@@ -160,6 +161,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-20": {
+      "briefingIds": [
+        "rss-2026-07-20"
+      ],
+      "insightIds": [
+        "rss-2026-07-20-01-quoting-sam-altman",
+        "rss-2026-07-20-02-sqlite-query-explainer",
+        "rss-2026-07-20-03-builder-theme-thibault-sottiaux-on-i-was-so-inspired-reading-all-the-dms-on-how-folks-here-use-chatgpt-w",
+        "rss-2026-07-20-04-builder-theme-guillermo-rauch-on-gm"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-19": {
       "briefingIds": [
         "rss-2026-07-19"
