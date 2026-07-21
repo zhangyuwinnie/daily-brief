@@ -32887,5 +32887,177 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-21": {
+    "date": "2026-07-21",
+    "briefings": [
+      {
+        "id": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-21",
+        "filePath": "2026-07-21.md",
+        "summaryTopline": "Safety and alignment in an era of long-horizon models",
+        "insightIds": [
+          "rss-2026-07-21-01-safety-and-alignment-in-an-era-of-long-horizon-models",
+          "rss-2026-07-21-02-nativ-run-ai-models-locally-on-your-mac",
+          "rss-2026-07-21-03-a-fireside-chat-with-cat-and-thariq-from-the-claude-code-team",
+          "rss-2026-07-21-04-100-million-for-open-source-a-milestone-built-by-the-community",
+          "rss-2026-07-21-05-agent-swarms-and-the-new-model-economics",
+          "rss-2026-07-21-06-configure-where-run-state-lives-in-vercel-workflows",
+          "rss-2026-07-21-07-builder-theme-thibault-sottiaux-on-never-a-dull-moment-when-you-work-at-openai-absolutely-incredible-pl",
+          "rss-2026-07-21-08-builder-theme-guillermo-rauch-on-the-big-lesson-from-ai-is-that-everything-is-code-a-slide-deck-is-co"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-21-01-safety-and-alignment-in-an-era-of-long-horizon-models",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/safety-alignment-long-horizon-models",
+        "publishedDate": "2026-07-20",
+        "title": "Safety and alignment in an era of long-horizon models",
+        "summary": "OpenAI 基于长周期运行模型的部署经验，揭示了时间跨度延长带来的新型安全风险与失败模式，并通过迭代部署改进了防护机制。",
+        "take": "针对长时程智能体，开发者需建立动态状态监控与干预点机制，而非依赖单次输入验证；建议在模型推理循环中嵌入实时风险检测与回滚策略，以应对决策链累积的偏移与不可逆故障。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-21-02-nativ-run-ai-models-locally-on-your-mac",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+        "publishedDate": "2026-07-21",
+        "title": "Nativ: Run AI models locally on your Mac",
+        "summary": "Prince Canuma 发布了 Nativ，一款基于 MLX 的 macOS 桌面应用，能够本地运行 LLM 和视觉-LLM，提供聊天界面和本地 API 服务器，并自动识别 Hugging Face 缓存中的已有模型。",
+        "take": "Nativ 将 MLX 的 Python 库封装为原生 macOS 应用，降低了在 Apple Silicon 上本地运行多模态模型的工程门槛，尤其适合无需联网的 AI 工作流和隐私敏感场景。开发者可直接通过本地 API 调用模型，简化了从实验到集成的链路。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-21-03-a-fireside-chat-with-cat-and-thariq-from-the-claude-code-team",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+        "publishedDate": "2026-07-21",
+        "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+        "summary": "Anthropic 的 Claude Code 团队通过内部自用（dogfooding）验证用户留存率后，才将功能推送给外部用户，其新协作 Slack 集成 Claude Tag 已承担该团队 65% 的产品工程 PR。",
+        "take": "复用 Claude Tag 的协作模式，将代理驱动的代码审查与 Slack 深度集成，可显著提升工程团队的代码合并效率。Coding Agent 功能的发布应优先通过内部高留存率验证再广泛推出，确保工程实用性与用户粘性。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-21-04-100-million-for-open-source-a-milestone-built-by-the-community",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+        "publishedDate": "2026-07-20",
+        "title": "$100 million for open source: A milestone built by the community",
+        "summary": "GitHub 社区累计向开源维护者贡献了 1 亿美元资金，作为对其持续维护和构建开源软件工作的支持。",
+        "take": "这一里程碑表明，围绕开源项目的资金和开发者支持机制已从零散捐赠转向规模化、平台驱动的生态系统。AI 构建者应关注平台级资金流向，将其视为评估项目可持续性和社区健康度的工程信号。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-21-05-agent-swarms-and-the-new-model-economics",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://cursor.com/blog/agent-swarm-model-economics",
+        "publishedDate": "2026-07-20",
+        "title": "Agent swarms and the new model economics",
+        "summary": "Cursor 发布关于代理群体（Agent Swarms）与模型经济学的新分析，指出多代理协作架构正在改变 AI 工作流的成本结构与效率边界，强调模型调用频率与任务分解的优化成为关键工程挑战。",
+        "take": "工程上需优先设计代理间的通信协议与任务分配策略，以控制总令牌消耗；同时，监控与回退机制（如降级到更便宜模型）成为群体工作流的生产就绪必备组件。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-21-06-configure-where-run-state-lives-in-vercel-workflows",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/configure-where-run-state-lives-in-vercel-workflows",
+        "publishedDate": "2026-07-20",
+        "title": "Configure where run state lives in Vercel Workflows",
+        "summary": "Vercel Workflows 推出运行状态区域性固定功能，允许开发者将每个工作流运行的状态、队列调度和输出流锁定在起始区域或指定区域内，并在此区域内完成执行、检查点和输出流，故障时自动故障转移到最近区域。",
+        "take": "对构建代理的开发者而言，这意味着工作流运行的生命周期现在可以固定在用户所在区域，显著降低延迟和合规风险。升级 SDK 到 workflow@5.0.0-beta.33 后，通过 start() 传入 region 参数即可指定区域，无需修改现有代码或迁移。这是将有状态代理的执行地域化的重要工程手段，尤其适合地理分布型用户场景。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-21-07-builder-theme-thibault-sottiaux-on-never-a-dull-moment-when-you-work-at-openai-absolutely-incredible-pl",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2079355529101705264",
+        "title": "Builder Theme: Thibault Sottiaux on Never a dull moment when you work at OpenAI. Absolutely incredible pl...",
+        "summary": "OpenAI員工Thibault Sottiaux發文表示在OpenAI工作從不乏味，但未揭露任何具體技術細節或架構變革。",
+        "take": "此帖文為純粹的企業文化宣傳，不包含任何可供AI建構者利用的工程訊號或架構資訊，應予忽略。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-21-08-builder-theme-guillermo-rauch-on-the-big-lesson-from-ai-is-that-everything-is-code-a-slide-deck-is-co",
+        "briefingId": "rss-2026-07-21",
+        "date": "2026-07-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2079274102129304026",
+        "title": "Builder Theme: Guillermo Rauch on The big lesson from AI is that everything is code. A slide deck is co...",
+        "summary": "Guillermo Rauch 提出，AI 的核心启示在于所有事物本质上都是代码，包括幻灯片、设计、视频和自动化流程。",
+        "take": "AI 将非结构化输出（如设计、视频）转化为可编程、可版本控制的代码，意味着开发者应构建能够生成并操作这些代码的工具链，以统一开发与创意工作流。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

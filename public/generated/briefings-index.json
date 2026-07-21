@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-21",
     "2026-07-20",
     "2026-07-19",
     "2026-07-18",
@@ -161,6 +162,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-21": {
+      "briefingIds": [
+        "rss-2026-07-21"
+      ],
+      "insightIds": [
+        "rss-2026-07-21-01-safety-and-alignment-in-an-era-of-long-horizon-models",
+        "rss-2026-07-21-02-nativ-run-ai-models-locally-on-your-mac",
+        "rss-2026-07-21-03-a-fireside-chat-with-cat-and-thariq-from-the-claude-code-team",
+        "rss-2026-07-21-04-100-million-for-open-source-a-milestone-built-by-the-community",
+        "rss-2026-07-21-05-agent-swarms-and-the-new-model-economics",
+        "rss-2026-07-21-06-configure-where-run-state-lives-in-vercel-workflows",
+        "rss-2026-07-21-07-builder-theme-thibault-sottiaux-on-never-a-dull-moment-when-you-work-at-openai-absolutely-incredible-pl",
+        "rss-2026-07-21-08-builder-theme-guillermo-rauch-on-the-big-lesson-from-ai-is-that-everything-is-code-a-slide-deck-is-co"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-20": {
       "briefingIds": [
         "rss-2026-07-20"
