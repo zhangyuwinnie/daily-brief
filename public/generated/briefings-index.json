@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-22",
     "2026-07-21",
     "2026-07-20",
     "2026-07-19",
@@ -162,6 +163,30 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-22": {
+      "briefingIds": [
+        "rss-2026-07-22"
+      ],
+      "insightIds": [
+        "rss-2026-07-22-01-reverse-engineering-is-cheap-now",
+        "rss-2026-07-22-02-introducing-openai-presence",
+        "rss-2026-07-22-03-introducing-the-new-vercel-agent",
+        "rss-2026-07-22-04-how-to-build-interactive-experiences-with-canvases",
+        "rss-2026-07-22-05-vercel-connect-adds-90-preset-connectors",
+        "rss-2026-07-22-06-whos-afraid-of-chinese-models",
+        "rss-2026-07-22-07-introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
+        "rss-2026-07-22-08-jack-dorsey-launches-buzz-to-combine-team-chat-ai-agents-and-git-hosting",
+        "rss-2026-07-22-09-openai-says-its-ai-went-rogue-and-launched-unprecedented-cyber-attack",
+        "rss-2026-07-22-10-openai-and-hugging-face-partner-to-address-security-incident-during-model-evaluation",
+        "rss-2026-07-22-11-builder-theme-factorys-matan-grinberg-the-coming-dark-factory-where-software-builds-itself",
+        "rss-2026-07-22-12-builder-theme-claude-on-new-in-claude-cowork-teach-claude-a-skill-record-your-screen-while",
+        "rss-2026-07-22-13-builder-theme-andrej-karpathy-on-one-pattern-i-find-useful-for-working-with-llms-is-a-nice-long-ramble"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-21": {
       "briefingIds": [
         "rss-2026-07-21"
