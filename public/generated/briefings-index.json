@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-23",
     "2026-07-22",
     "2026-07-21",
     "2026-07-20",
@@ -163,6 +164,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-23": {
+      "briefingIds": [
+        "rss-2026-07-23"
+      ],
+      "insightIds": [
+        "rss-2026-07-23-01-ntt-data-group-cuts-incident-analysis-to-30-minutes-with-codex",
+        "rss-2026-07-23-02-symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment",
+        "rss-2026-07-23-03-copilot-vs-raw-api-access-what-are-you-actually-paying-for",
+        "rss-2026-07-23-04-openais-accidental-cyberattack-against-hugging-face-is-science-fiction-that-happened",
+        "rss-2026-07-23-05-ai-gateway-now-supports-streaming-transcription",
+        "rss-2026-07-23-06-quoting-seth-larson",
+        "rss-2026-07-23-07-extend-eve-agents-with-installable-extensions",
+        "rss-2026-07-23-08-building-ai-infrastructure-with-the-effingham-county-community",
+        "rss-2026-07-23-09-builder-theme-claude-on-the-claude-security-plugin-for-claude-code-is-now-available-in-beta",
+        "rss-2026-07-23-10-builder-theme-thibault-sottiaux-on-unbelievable-excited-for-whats-coming-together-tomorrow-is-feeling"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-22": {
       "briefingIds": [
         "rss-2026-07-22"
