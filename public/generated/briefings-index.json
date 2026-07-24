@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-24",
     "2026-07-23",
     "2026-07-22",
     "2026-07-21",
@@ -164,6 +165,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-24": {
+      "briefingIds": [
+        "rss-2026-07-24"
+      ],
+      "insightIds": [
+        "rss-2026-07-24-01-the-first-known-runaway-ai-agent-or-a-very-bad-marketing-stunt",
+        "rss-2026-07-24-02-quoting-thomas-ptacek",
+        "rss-2026-07-24-03-hetzner-is-working-on-llm-inference",
+        "rss-2026-07-24-04-inspect-feature-flag-history-with-vercel-cli",
+        "rss-2026-07-24-05-github-tools-are-now-an-installable-eve-extension",
+        "rss-2026-07-24-06-builder-theme-claude-on-voice-mode-now-runs-on-claudes-more-capable-models-and-reaches-the-t",
+        "rss-2026-07-24-07-builder-theme-thibault-sottiaux-on-jarvis-samantha-tars-etc-try-it-and-do-your-best-work-all-whil"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-23": {
       "briefingIds": [
         "rss-2026-07-23"
