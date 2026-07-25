@@ -1,0 +1,163 @@
+{
+  "date": "2026-07-25",
+  "briefings": [
+    {
+      "id": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-25",
+      "filePath": "2026-07-25.md",
+      "summaryTopline": "Quoting Boris Cherny",
+      "insightIds": [
+        "rss-2026-07-25-01-quoting-boris-cherny",
+        "rss-2026-07-25-02-introducing-claude-opus-5",
+        "rss-2026-07-25-03-workflow-steps-now-support-extended-function-durations",
+        "rss-2026-07-25-04-claude-opus-5-now-available-on-ai-gateway",
+        "rss-2026-07-25-05-builder-theme-building-an-autonomous-delivery-experience-with-doordash-co-founders-andy-fang-and-stanley-tang",
+        "rss-2026-07-25-06-builder-theme-sam-altman-on-i-want-the-us-to-win-in-ai-both-in-open-source-and-proprietary-models",
+        "rss-2026-07-25-07-builder-theme-thariq-on-we-removed-80-of-the-claude-code-system-prompt-for-our-newest-model"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-25-01-quoting-boris-cherny",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "publishedDate": "2026-07-25",
+      "title": "Quoting Boris Cherny",
+      "summary": "More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but acros。",
+      "take": "这件事与 LLM、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-25-02-introducing-claude-opus-5",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+      "publishedDate": "2026-07-24",
+      "title": "Introducing Claude Opus 5",
+      "summary": "Introducing Claude Opus 5 I've been offline kayaking with sea otters for much of today so I haven't had a chance to put Anthropic's new model Claude Opus 5 through its paces yet. T。",
+      "take": "这件事与 LLM、Engineering、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-25-03-workflow-steps-now-support-extended-function-durations",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/workflow-steps-now-support-extended-function-durations",
+      "publishedDate": "2026-07-24",
+      "title": "Workflow steps now support extended function durations",
+      "summary": "Workflow steps on Pro and Enterprise plans can now run for up to 30 minutes (1800 seconds), up from 800 seconds, using extended function durations (in beta). To opt in, set VERCEL_。",
+      "take": "这件事与 Workflow 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-25-04-claude-opus-5-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-opus-5-now-available-on-ai-gateway",
+      "publishedDate": "2026-07-24",
+      "title": "Claude Opus 5 now available on AI Gateway",
+      "summary": "Claude Opus 5 from Anthropic is now available on AI Gateway. Opus 5 improves on previous Opus models for long-horizon agentic coding, handling multi-file features, larger refactors。",
+      "take": "这件事与 Agent、Agentic、Workflow、Reasoning、Coding Agent、Anthropic、Claude 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-25-05-builder-theme-building-an-autonomous-delivery-experience-with-doordash-co-founders-andy-fang-and-stanley-tang",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=vNpcg_Ma-FA",
+      "title": "Builder Theme: Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang",
+      "summary": "Speaker 1 | 00:05 - 00:34 Hi, listeners. Welcome back to No Priors. Today, I'm here with Andy Fang and Stanley Tang, cofounders at DoorDash. We talk about how DoorDash has been a r。",
+      "take": "这件事与 AI builders、podcast 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-25-06-builder-theme-sam-altman-on-i-want-the-us-to-win-in-ai-both-in-open-source-and-proprietary-models",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2080683363174945065",
+      "title": "Builder Theme: Sam Altman on i want the US to win in AI both in open source and proprietary models...",
+      "summary": "i want the US to win in AI both in open source and proprietary models, and i am glad to see this https://t.co/fkYFw30437。",
+      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-25-07-builder-theme-thariq-on-we-removed-80-of-the-claude-code-system-prompt-for-our-newest-model",
+      "briefingId": "rss-2026-07-25",
+      "date": "2026-07-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2080710971228918066",
+      "title": "Builder Theme: Thariq on We removed ~80% of the Claude Code system prompt for our newest model...",
+      "summary": "We removed ~80% of the Claude Code system prompt for our newest models, this is what we've learned about writing system prompts, skills and Claude.MDs for them. https://t.co/6DZwSr。",
+      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

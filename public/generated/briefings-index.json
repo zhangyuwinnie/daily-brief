@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-25",
     "2026-07-24",
     "2026-07-23",
     "2026-07-22",
@@ -165,6 +166,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-25": {
+      "briefingIds": [
+        "rss-2026-07-25"
+      ],
+      "insightIds": [
+        "rss-2026-07-25-01-quoting-boris-cherny",
+        "rss-2026-07-25-02-introducing-claude-opus-5",
+        "rss-2026-07-25-03-workflow-steps-now-support-extended-function-durations",
+        "rss-2026-07-25-04-claude-opus-5-now-available-on-ai-gateway",
+        "rss-2026-07-25-05-builder-theme-building-an-autonomous-delivery-experience-with-doordash-co-founders-andy-fang-and-stanley-tang",
+        "rss-2026-07-25-06-builder-theme-sam-altman-on-i-want-the-us-to-win-in-ai-both-in-open-source-and-proprietary-models",
+        "rss-2026-07-25-07-builder-theme-thariq-on-we-removed-80-of-the-claude-code-system-prompt-for-our-newest-model"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-24": {
       "briefingIds": [
         "rss-2026-07-24"
