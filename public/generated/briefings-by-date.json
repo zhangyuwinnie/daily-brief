@@ -33867,5 +33867,117 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-26": {
+    "date": "2026-07-26",
+    "briefings": [
+      {
+        "id": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-26",
+        "filePath": "2026-07-26.md",
+        "summaryTopline": "Ruff v0.16.0",
+        "insightIds": [
+          "rss-2026-07-26-01-ruff-v0160",
+          "rss-2026-07-26-02-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+          "rss-2026-07-26-03-builder-theme-an-update-on-recent-claude-code-quality-reports",
+          "rss-2026-07-26-04-builder-theme-thibault-sottiaux-on-chatgpt-work-officially-has-overtaken-codex-in-number-of-active-users",
+          "rss-2026-07-26-05-builder-theme-aaron-levie-on-now-with-google-on-board-this-is-a-complete-endorsement-of-open-weig"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-26-01-ruff-v0160",
+        "briefingId": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+        "publishedDate": "2026-07-25",
+        "title": "Ruff v0.16.0",
+        "summary": "Astral 在 Ruff v0.16.0 中大幅提升了默认规则数量至413条（原59条），使许多此前需手动配置的语法错误和运行时错误检测成为默认行为。",
+        "take": "对于 Python 开发者，此版本意味着只需运行 `uvx ruff check` 即可获得远超以往的即时代码质量问题检测，无需额外配置。这直接减少了 CI 流水线和编码 Agent 的调优工作，建议立即升级并修复新触发的问题，或将 `ruff` 依赖固定版本以避免构建中断。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-26-02-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "briefingId": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+        "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+        "summary": "Anthropic 在 Claude 的托管智能体架构中提出松耦合设计：将规划与推理（大脑）从工具执行（手）中解耦，并强调智能体框架需随模型能力演进持续剔除过时假设，例如 Claude Sonnet 4.5 的上下文焦虑在 Opus 4.5 中已消失。",
+        "take": "构建长期运行智能体时，应将 harness（工具调用、上下文管理）与模型核心推理分离，形成可独立演化的模块。关键工程模式是定期对 harness 中的“补偿逻辑”进行压力测试，因为模型能力提升（如 Opus 4.5 消除上下文焦虑）会直接使之前的变通方案成为死代码。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-26-03-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "briefingId": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+        "title": "Builder Theme: An update on recent Claude Code quality reports",
+        "summary": "Anthropic 追溯并修复了导致 Claude Code、Claude Agent SDK 和 Claude Cowork 质量下降的三个独立工程变更（包括将默认推理努力从高调至中），API 层未受影响，修复版本为 v2.1.116（2025年4月20日）。",
+        "take": "工程关键：推理努力级别的默认调优直接影响用户感知的模型输出质量，需在性能与成本间建立可观测的回归测试机制。对 Agent SDK 和劳动工具的变更应视为独立部署单元，须有差异化监控与回滚策略，避免因单一优化意图波及多个工具链。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-26-04-builder-theme-thibault-sottiaux-on-chatgpt-work-officially-has-overtaken-codex-in-number-of-active-users",
+        "briefingId": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2081198608293187635",
+        "title": "Builder Theme: Thibault Sottiaux on ChatGPT Work officially has overtaken Codex in number of active users...",
+        "summary": "Thibault Sottiaux 指出 ChatGPT Work 在活跃用户数量上已正式超越 Codex，标志着 AI 编码工具用户基础的范式转移。",
+        "take": "对 AI 构建者而言，这意味着基于对话的编程工作流（ChatGPT Work）已取代纯代码补全工具（Codex）成为主流入口。应将开发重点转向优化多轮交互与上下文管理能力，而非单纯提升代码生成速度。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-26-05-builder-theme-aaron-levie-on-now-with-google-on-board-this-is-a-complete-endorsement-of-open-weig",
+        "briefingId": "rss-2026-07-26",
+        "date": "2026-07-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2081054531908247937",
+        "title": "Builder Theme: Aaron Levie on Now with Google on board, this is a complete endorsement of open weig...",
+        "summary": "Aaron Levie 指出，谷歌加入开放权重AI阵营，是对这一模式的全面认可，标志着行业格局的关键转变。",
+        "take": "对于AI构建者而言，这强化了开放权重模型（如Llama、Mistral）作为长期基础设施的地位，意味着供应链和工具链应优先考虑可自部署、可微调的权重方案。工程上，应减少对专有API的依赖，构建可移植的推理及训练管道，以利用开放的权重生态红利。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

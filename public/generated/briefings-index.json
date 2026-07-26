@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-26",
     "2026-07-25",
     "2026-07-24",
     "2026-07-23",
@@ -166,6 +167,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-26": {
+      "briefingIds": [
+        "rss-2026-07-26"
+      ],
+      "insightIds": [
+        "rss-2026-07-26-01-ruff-v0160",
+        "rss-2026-07-26-02-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-07-26-03-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-07-26-04-builder-theme-thibault-sottiaux-on-chatgpt-work-officially-has-overtaken-codex-in-number-of-active-users",
+        "rss-2026-07-26-05-builder-theme-aaron-levie-on-now-with-google-on-board-this-is-a-complete-endorsement-of-open-weig"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-25": {
       "briefingIds": [
         "rss-2026-07-25"
