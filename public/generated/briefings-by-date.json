@@ -33979,5 +33979,144 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-07-27": {
+    "date": "2026-07-27",
+    "briefings": [
+      {
+        "id": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-07-27",
+        "filePath": "2026-07-27.md",
+        "summaryTopline": "How AI is expanding what people do at work",
+        "insightIds": [
+          "rss-2026-07-27-01-how-ai-is-expanding-what-people-do-at-work",
+          "rss-2026-07-27-02-an-inside-look-at-the-relay-market-powering-token-resellers-and-fraud",
+          "rss-2026-07-27-03-run-claude-managed-agents-with-chat-sdk",
+          "rss-2026-07-27-04-teaching-llms-to-update-beliefs-for-efficient-long-horizon-interaction",
+          "rss-2026-07-27-05-builder-theme-sam-altman-on-chatgpt-work-is-remarkable-and-work-undersells-it-from-my-phone-i",
+          "rss-2026-07-27-06-builder-theme-thibault-sottiaux-on-let-chatgpt-work-for-you-how-many-time-have-you-wanted-to-negotiat"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-07-27-01-how-ai-is-expanding-what-people-do-at-work",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+        "publishedDate": "2026-07-27",
+        "title": "How AI is expanding what people do at work",
+        "summary": "OpenAI研究指出，使用ChatGPT的工人正跨越传统角色边界承担更多任务，AI正在重塑职业边界而非替代岗位。",
+        "take": "工程启示：AI工具正作为任务扩展器，使开发者能低成本跨职能处理非核心业务，这要求代理系统设计需支持动态角色切换与多领域上下文融合。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-27-02-an-inside-look-at-the-relay-market-powering-token-resellers-and-fraud",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+        "publishedDate": "2026-07-26",
+        "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+        "summary": "Matt Lenhard 揭露了通过开源API代理（如 one-api 和 new-api）聚合多个来源的API密钥，以折扣价转售LLM代币的地下市场，主要利用免费试用漏洞、未保护的支持机器人或信用卡欺诈等手段降低成本。",
+        "take": "工程上需警惕开源API代理工具被滥用于代币套利和欺诈；开发者应加强API密钥的访问速率限制、来源验证和异常计费监控，避免代理池被非法利用。此模式也暴露了LLM服务定价与免费策略的设计缺陷，未来可考虑更细粒度的按需身份验证机制。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-27-03-run-claude-managed-agents-with-chat-sdk",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/claude-managed-agents-with-chat-sdk",
+        "publishedDate": "2026-07-27",
+        "title": "Run Claude Managed Agents with Chat SDK",
+        "summary": "Vercel 在 Chat SDK 中集成 Anthropic 的 Claude Managed Agents，由服务端管理包括模型、工具、会话状态和沙箱网络搜索在内的完整代理循环，通过单一类型安全处理器提供聊天接口，并支持令牌流式输出、实时活动馈送以及直接读取服务端会话存储，无需开发者维护后端数据库。",
+        "take": "开发者可通过 Chat SDK 的处理器和适配器（如 Slack、WhatsApp）快速将 Claude 的服务器端代理循环嵌入多平台聊天应用，核心工程价值在于将状态和工具执行卸载给 Anthropic 管理，自己只需关注前端交互和指令编排，显著降低构建多工具自主代理的运维复杂度。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-07-27-04-teaching-llms-to-update-beliefs-for-efficient-long-horizon-interaction",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+        "sourceUrl": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "publishedDate": "2026-07-26",
+        "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+        "summary": "UC Berkeley团队提出ABBEL方法，通过微调LLM在长时交互中显式表示和更新信念状态（belief states），以替代传统RAG或全历史检索，实现更高效的长期记忆管理。",
+        "take": "工程上注意：这是将LLM内部信念建模为可差分更新的显式向量，本质是让模型学会在长期对话中只检索和更新与当前目标相关的关键信息，而非全量历史。对构建超过数百步交互的Agent（如Cursor的长期项目理解）有直接参考价值，可大幅降低上下文窗口需求与检索延迟。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "RAG",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-27-05-builder-theme-sam-altman-on-chatgpt-work-is-remarkable-and-work-undersells-it-from-my-phone-i",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2081396796174282900",
+        "title": "Builder Theme: Sam Altman on chatgpt work is remarkable, and \"work\" undersells it. from my phone i...",
+        "summary": "Sam Altman 演示了通过单一自然语言指令，让 ChatGPT 利用全部聊天历史，自主完成从行程构思、多方案规划、全栈网站开发、群体协作投票到最终邮件草拟的端到端复杂任务链。",
+        "take": "这标志着AI Agent从单轮问答跃升至持久化上下文驱动的多步骤自主执行，核心工程范式是‘历史即数据库’与‘指令即工作流’。对AI Builder而言，需立即关注如何设计支持长期上下文索引、工具链自动调用（如全栈部署、Gmail API）以及用户意图到可执行计划的精确映射的Agent架构。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-07-27-06-builder-theme-thibault-sottiaux-on-let-chatgpt-work-for-you-how-many-time-have-you-wanted-to-negotiat",
+        "briefingId": "rss-2026-07-27",
+        "date": "2026-07-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2081444811647963244",
+        "title": "Builder Theme: Thibault Sottiaux on Let ChatGPT *work* for you. How many time have you wanted to negotiat...",
+        "summary": "Thibault Sottiaux 展示如何通过单一提示词（One Prompt）让 ChatGPT 在手机上自动执行账单谈判、退订垃圾邮件、比价等日常任务，实现每日20次以上的自动化操作。",
+        "take": "核心工程信号在于：不再依赖手动调度或复杂管道，而是通过优化提示词设计，将AI模型直接嵌入移动端高频使用场景，实现任务级自动化。对AI builders而言，关键在于设计极低摩擦的“单提示词工作流”，使LLM从对话助手转变为无人值守的服务代理，并确保其在电话端稳定触发与执行。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

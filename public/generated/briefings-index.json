@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-27",
     "2026-07-26",
     "2026-07-25",
     "2026-07-24",
@@ -167,6 +168,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-27": {
+      "briefingIds": [
+        "rss-2026-07-27"
+      ],
+      "insightIds": [
+        "rss-2026-07-27-01-how-ai-is-expanding-what-people-do-at-work",
+        "rss-2026-07-27-02-an-inside-look-at-the-relay-market-powering-token-resellers-and-fraud",
+        "rss-2026-07-27-03-run-claude-managed-agents-with-chat-sdk",
+        "rss-2026-07-27-04-teaching-llms-to-update-beliefs-for-efficient-long-horizon-interaction",
+        "rss-2026-07-27-05-builder-theme-sam-altman-on-chatgpt-work-is-remarkable-and-work-undersells-it-from-my-phone-i",
+        "rss-2026-07-27-06-builder-theme-thibault-sottiaux-on-let-chatgpt-work-for-you-how-many-time-have-you-wanted-to-negotiat"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-26": {
       "briefingIds": [
         "rss-2026-07-26"
