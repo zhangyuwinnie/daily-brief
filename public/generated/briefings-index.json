@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-28",
     "2026-07-27",
     "2026-07-26",
     "2026-07-25",
@@ -168,6 +169,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-28": {
+      "briefingIds": [
+        "rss-2026-07-28"
+      ],
+      "insightIds": [
+        "rss-2026-07-28-01-moonshotaikimi-k3",
+        "rss-2026-07-28-02-an-opinionated-guide-to-which-ai-to-use-to-do-stuff",
+        "rss-2026-07-28-03-the-harness-is-all-you-need-mostly",
+        "rss-2026-07-28-04-github-copilot-app-for-beginners-getting-started",
+        "rss-2026-07-28-05-fast-remediation-is-the-new-trust-model-jfrog-and-openai-zero-day-findings",
+        "rss-2026-07-28-06-eve-adds-new-slack-event-hooks-and-session-controls",
+        "rss-2026-07-28-07-deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities",
+        "rss-2026-07-28-08-builder-theme-thibault-sottiaux-on-were-celebrating-the-fast-adoption-of-chatgpt-work-and-all-the-incre",
+        "rss-2026-07-28-09-builder-theme-sam-altman-on-wrong"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-27": {
       "briefingIds": [
         "rss-2026-07-27"

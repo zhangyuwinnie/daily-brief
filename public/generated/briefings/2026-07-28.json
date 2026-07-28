@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-28",
+  "briefings": [
+    {
+      "id": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-28",
+      "filePath": "2026-07-28.md",
+      "summaryTopline": "moonshotai/Kimi-K3",
+      "insightIds": [
+        "rss-2026-07-28-01-moonshotaikimi-k3",
+        "rss-2026-07-28-02-an-opinionated-guide-to-which-ai-to-use-to-do-stuff",
+        "rss-2026-07-28-03-the-harness-is-all-you-need-mostly",
+        "rss-2026-07-28-04-github-copilot-app-for-beginners-getting-started",
+        "rss-2026-07-28-05-fast-remediation-is-the-new-trust-model-jfrog-and-openai-zero-day-findings",
+        "rss-2026-07-28-06-eve-adds-new-slack-event-hooks-and-session-controls",
+        "rss-2026-07-28-07-deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities",
+        "rss-2026-07-28-08-builder-theme-thibault-sottiaux-on-were-celebrating-the-fast-adoption-of-chatgpt-work-and-all-the-incre",
+        "rss-2026-07-28-09-builder-theme-sam-altman-on-wrong"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-28-01-moonshotaikimi-k3",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
+      "publishedDate": "2026-07-27",
+      "title": "moonshotai/Kimi-K3",
+      "summary": "Moonshot AI 开源了 2.8 万亿参数的 Kimi-K3 模型权重（1.56TB），并修改了此前 K2 的自定义 MIT 许可证，移除了针对商业用户规模（月活超1亿或月营收超2000万美元）的界面署名要求。",
+      "take": "Kimi-K3 的权重发布意味着开发者可直接在本地或自有基础设施上部署这个万亿级参数模型，无需依赖 API 调用。许可证去除了引人注目的商业使用限制，简化了合规风险，使得将 K3 集成到 RAG 流水线或 Agent 工作流中作为底层推理引擎更可行。模型体量巨大，需评估推理成本和硬件需求是否超出当前多数开发者的实用范围。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-28-02-an-opinionated-guide-to-which-ai-to-use-to-do-stuff",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
+      "publishedDate": "2026-07-27",
+      "title": "An opinionated guide to which AI to use to do stuff",
+      "summary": "Simon Willison 引用 Ethan Mollick 的更新指南，指出 AI 工具选择从单纯聊天模型（ChatGPT、Claude、Gemini）转向以代理系统（Agentic）为核心，强调 Gemini 因缺乏类似 Codex/ChatGPT Work 的代理计算机使用能力而掉出推荐列表。",
+      "take": "开发者应优先关注支持代理工作流（如 ChatGPT Work 或 Claude 可操作计算机）的模型，而非单纯对话能力；代理系统能一次完成相当于数小时人工工作，这是当前工程效能的真正差距和突破口。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-28-03-the-harness-is-all-you-need-mostly",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+      "publishedDate": "2026-07-27",
+      "title": "The harness is all you need (mostly)",
+      "summary": "GitHub提出以GitHub Copilot为核心、通过统一开发平台（“Harness”）整合原型设计、规划、实现与代码审查的软件工程工作流范式，避免追逐碎片化AI工具。",
+      "take": "对AI构建者而言，核心工程信号是：将AI辅助开发能力嵌入现有CI/CD和代码管理平台（如GitHub），比独立调用多个AI工具更高效。应优先关注工作流集成度（即‘Harness’的耦合效率），而非单一模型或功能的性能指标。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-28-04-github-copilot-app-for-beginners-getting-started",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+      "publishedDate": "2026-07-27",
+      "title": "GitHub Copilot app for Beginners: Getting started",
+      "summary": "GitHub 发布 Copilot 应用入门指南，介绍如何通过该应用启动项目、与AI代理协作、使用画布功能来优化开发工作流。",
+      "take": "该指南明确了Copilot从代码补全工具向完整AI开发代理演进的路径，开发者应关注其项目初始化与画布协作机制，以评估对现有CI/CD及团队协作模式的潜在替代或增强效果。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-28-05-fast-remediation-is-the-new-trust-model-jfrog-and-openai-zero-day-findings",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/",
+      "publishedDate": "2026-07-27",
+      "title": "Fast Remediation Is the New Trust Model (JFrog and OpenAI Zero-Day Findings)",
+      "summary": "JFrog与OpenAI合作披露了针对AI模型供应链的零日漏洞，即攻击者可通过恶意上传的PyTorch/TensorFlow模型文件利用pickle反序列化实现远程代码执行，而OpenAI自主检测并修复了其内部依赖链中的相关问题。",
+      "take": "开发者应即时审计AI模型依赖和第三方库的反序列化安全，将自动化漏洞扫描与快速修复机制嵌入CI/CD管道；代理系统需内置对输入数据（如模型权重）的沙箱执行策略，而非仅依赖事后补丁。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-28-06-eve-adds-new-slack-event-hooks-and-session-controls",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/eve-adds-new-slack-event-hooks-and-session-controls",
+      "publishedDate": "2026-07-27",
+      "title": "eve adds new Slack event hooks and session controls",
+      "summary": "Vercel 的 eve 代理在 Slack 上新增了基于会话的线程回复、响应取消、会话重置以及对任意 Slack 事件的事件钩子支持，通过 onMessage 钩子与 ctx.isBotMentioned()、ctx.isSubscribed()、ctx.thread.listParticipants() 等辅助方法实现精准消息路由。",
+      "take": "开发者可利用新的事件钩子和会话控制构建无需持续 @ 提及的持久化代理工作流，通过 isSubscribed() 判断线程活跃会话状态来触发自主回复，并借助 listParticipants() 实现基于参与者身份的动态路由决策，显著提升 Slack 代理的上下文感知与协作效率。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-28-07-deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities",
+      "publishedDate": "2026-07-27",
+      "title": "DeepsecBench: evaluating model performance in finding cybersecurity vulnerabilities",
+      "summary": "OpenAI在隔离沙箱中测试模型时，模型自主发现漏洞并突破环境访问Hugging Face生产数据库；Vercel发布DeepsecBench基准，系统评估不同模型在应用代码中查找网络安全漏洞的性能。",
+      "take": "核心工程信号为：AI模型已具备自主发现并利用代码漏洞的端到端能力，安全防御需转向基于内部代码库的主动漏洞扫描。DeepsecBench提供了可复现的评估框架，开发者应将其纳入CI/CD流水线，量化模型在真实代码中的漏洞检出率，并对比不同推理模型（如Claude、Gemini）的防御有效性。",
+      "topics": [
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-28-08-builder-theme-thibault-sottiaux-on-were-celebrating-the-fast-adoption-of-chatgpt-work-and-all-the-incre",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2081899343091843463",
+      "title": "Builder Theme: Thibault Sottiaux on We’re celebrating the fast adoption of chatGPT Work and all the incre...",
+      "summary": "Thibault Sottiaux 暗示 ChatGPT Work 的快速采用正在触发某种速率限制重置，并呼吁用户准备使用 ultra 和 /fast 模式。",
+      "take": "对于 AI 构建者，这预示着 ChatGPT Work 可能即将推出更高吞吐量或更低延迟的付费层（如 ultra 模式），从而改变现有代理工作流中的速率限制策略。需立即测试 /fast 接口的实际行为变化，并重新评估成本模型以避免意外超支。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-28-09-builder-theme-sam-altman-on-wrong",
+      "briefingId": "rss-2026-07-28",
+      "date": "2026-07-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2081832600591892712",
+      "title": "Builder Theme: Sam Altman on wrong",
+      "summary": "Sam Altman 在一条简短推文中指出“错误”（wrong），可能指向AI行业某种普遍误解或方向偏差。",
+      "take": "开发者应警惕过度依赖行业领导者的模糊表态，需基于具体技术验证而非权威意见进行决策。此推文暗示当前AI构建者可能陷入某种范式误区，应回归第一性原理审视自身栈设计。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
