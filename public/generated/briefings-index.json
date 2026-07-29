@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-29",
     "2026-07-28",
     "2026-07-27",
     "2026-07-26",
@@ -169,6 +170,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-29": {
+      "briefingIds": [
+        "rss-2026-07-29"
+      ],
+      "insightIds": [
+        "rss-2026-07-29-01-scientific-computing-in-the-age-of-agentic-ai",
+        "rss-2026-07-29-02-discovering-cryptographic-weaknesses-with-claude",
+        "rss-2026-07-29-03-quoting-akshat-bubna",
+        "rss-2026-07-29-04-vercel-sandbox-supports-forking",
+        "rss-2026-07-29-05-builder-theme-thibault-sottiaux-on-hello-people-of-sol-ive-reset-usage-limits-for-all-chatgpt-work-and",
+        "rss-2026-07-29-06-builder-theme-aaron-levie-on"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-28": {
       "briefingIds": [
         "rss-2026-07-28"

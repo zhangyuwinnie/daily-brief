@@ -1,0 +1,135 @@
+{
+  "date": "2026-07-29",
+  "briefings": [
+    {
+      "id": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-07-29",
+      "filePath": "2026-07-29.md",
+      "summaryTopline": "Scientific computing in the age of agentic AI",
+      "insightIds": [
+        "rss-2026-07-29-01-scientific-computing-in-the-age-of-agentic-ai",
+        "rss-2026-07-29-02-discovering-cryptographic-weaknesses-with-claude",
+        "rss-2026-07-29-03-quoting-akshat-bubna",
+        "rss-2026-07-29-04-vercel-sandbox-supports-forking",
+        "rss-2026-07-29-05-builder-theme-thibault-sottiaux-on-hello-people-of-sol-ive-reset-usage-limits-for-all-chatgpt-work-and",
+        "rss-2026-07-29-06-builder-theme-aaron-levie-on"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-07-29-01-scientific-computing-in-the-age-of-agentic-ai",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/scientific-computing-agentic-ai",
+      "publishedDate": "2026-07-28",
+      "title": "Scientific computing in the age of agentic AI",
+      "summary": "OpenAI发布实地报告，展示了科学家利用AI编程代理（coding agent）现代化科学计算流程，在基因组学等领域显著加速软件开发与发现。",
+      "take": "核心工程信号：AI编码代理已从辅助写代码进化到直接参与科学计算管道重构。开发者应关注将agent嵌入现有科学工作流（如基因组分析pipeline），而非仅作为独立代码生成工具；这要求构建能与现有科学库（如NumPy、BioPython）深度交互、支持长上下文调试的agent架构。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-29-02-discovering-cryptographic-weaknesses-with-claude",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+      "publishedDate": "2026-07-28",
+      "title": "Discovering cryptographic weaknesses with Claude",
+      "summary": "Anthropic研究人员利用Claude Mythos通过反复提示（包括拼写错误）引导模型尝试寻找HAWK和简化版AES的数学缺陷，尽管发现的弱点无实际影响。",
+      "take": "通过精心设计的对抗性提示（如否定模型“不可能”的预设、明确要求“可发表”的新攻击），可迫使LLM突破其默认避免挑战性问题的倾向，这一提示策略可直接复用于自动化密码分析或脆弱性挖掘的Agent架构中，大幅提升模型在硬约束搜索任务中的工程实用性。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-29-03-quoting-akshat-bubna",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+      "publishedDate": "2026-07-28",
+      "title": "Quoting Akshat Bubna",
+      "summary": "Modal客戶因配置未認證的API端點，導致其沙箱環境遭惡意代理未經授權用於程式碼執行，但平台本身隔離機制未被攻破。",
+      "take": "此事件凸顯AI代理安全的核心風險在於開發者暴露未認證的基礎設施入口，而非平台隔離缺陷。開發者必須對所有允許代理執行程式碼的API強制實施認證與存取控制，否則將直接將沙箱轉變為公共執行環境。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-07-29-04-vercel-sandbox-supports-forking",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-supports-forking",
+      "publishedDate": "2026-07-28",
+      "title": "Vercel Sandbox supports forking",
+      "summary": "Vercel Sandbox 新增 Sandbox.fork() API，允许从源沙箱的当前快照（而非运行中内存状态）创建独立分支，并继承其配置与环境变量。",
+      "take": "此功能为 AI Agent 的沙盒化实验和并行变体运行提供了原生基础设施：Agent 可从共享基线状态分支出独立副本，用于多租户隔离或参数化测试，而无需重复初始化。开发者需注意分支点基于持久化快照而非实时内存，适用于状态可管理的场景而非需要热实时一致性的编排。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-29-05-builder-theme-thibault-sottiaux-on-hello-people-of-sol-ive-reset-usage-limits-for-all-chatgpt-work-and",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2082317452755751098",
+      "title": "Builder Theme: Thibault Sottiaux on Hello people of Sol! I've reset usage limits for all ChatGPT Work and...",
+      "summary": "OpenAI通过优化Sol的推理调用机制与工具协调逻辑，使GPT-5.6 Sol在使用Codex配额时效率提升约18%，并恢复5小时限制。",
+      "take": "核心工程信号是：模型推理效率优化（而非限制削减）成为延长用户配额的手段，这表明通过改进工具调用链和协调流程来降低单位任务消耗，是当前提升agent成本效能的关键路径。开发者在构建复杂工作流时，需关注模型调用深度与工具状态管理，以最大化token利用率。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-07-29-06-builder-theme-aaron-levie-on",
+      "briefingId": "rss-2026-07-29",
+      "date": "2026-07-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2082114876873597239",
+      "title": "Builder Theme: Aaron Levie on",
+      "summary": "Aaron Levie 指出，AI构建者需聚焦于解决实际问题，而非追逐技术本身的复杂性。",
+      "take": "工程核心在于将AI能力嵌入用户现有工作流，以降低使用门槛。优先考虑可观测性与迭代速度，而非完美模型精度。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
