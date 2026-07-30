@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-30",
     "2026-07-29",
     "2026-07-28",
     "2026-07-27",
@@ -170,6 +171,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-30": {
+      "briefingIds": [
+        "rss-2026-07-30"
+      ],
+      "insightIds": [
+        "rss-2026-07-30-01-how-gpt-56-fuses-frontier-intelligence-with-frontier-efficiency",
+        "rss-2026-07-30-02-adding-a-custom-mcp-server-to-claude-and-chatgpt",
+        "rss-2026-07-30-03-ai-gateway-adds-unified-fast-mode-support",
+        "rss-2026-07-30-04-grok-voice-think-fast-20-now-available-on-ai-gateway",
+        "rss-2026-07-30-05-anatomy-of-a-frontier-lab-agent-intrusion-a-technical-timeline-of-the-july-2026-incident",
+        "rss-2026-07-30-06-how-enabling-two-settings-tripled-our-scores-on-the-arc-agi-3-benchmark",
+        "rss-2026-07-30-07-from-cuda-to-mlx-how-k-search-brings-decades-of-kernel-expertise-to-apple-silicon",
+        "rss-2026-07-30-08-tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast",
+        "rss-2026-07-30-09-builder-theme-thibault-sottiaux-on-turns-out-gpt-56-sol-is-actually-sota-on-arc-agi-3-just-took-two-se",
+        "rss-2026-07-30-10-builder-theme-sam-altman-on-so-excited-for-this-very-close-to-models-that-will-significantly-acc"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-29": {
       "briefingIds": [
         "rss-2026-07-29"
