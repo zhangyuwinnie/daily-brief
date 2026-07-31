@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-07-31",
     "2026-07-30",
     "2026-07-29",
     "2026-07-28",
@@ -171,6 +172,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-07-31": {
+      "briefingIds": [
+        "rss-2026-07-31"
+      ],
+      "insightIds": [
+        "rss-2026-07-31-01-how-avatarin-built-a-247-retail-agent-with-gpt-realtime",
+        "rss-2026-07-31-02-gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+        "rss-2026-07-31-03-investigating-three-real-world-incidents-in-our-cybersecurity-evaluations",
+        "rss-2026-07-31-04-run-multiple-isolated-agents-in-a-single-sandbox",
+        "rss-2026-07-31-05-echoverse-deep-evolving-environments-for-computer-use-agents",
+        "rss-2026-07-31-06-advancing-the-price-performance-frontier-with-gpt-56",
+        "rss-2026-07-31-07-ai-worming-through-word",
+        "rss-2026-07-31-08-latest-mcp-spec-now-supported-in-mcp-handler",
+        "rss-2026-07-31-09-evolib-turning-experience-into-evolving-knowledge",
+        "rss-2026-07-31-10-builder-theme-the-biggest-ai-deployment-nobody-talks-about-samsara-ceo-sanjit-biswas",
+        "rss-2026-07-31-11-builder-theme-sam-altman-on-major-price-cuts-today-80-drop-for-gpt-56-luna-now-020-per-mil",
+        "rss-2026-07-31-12-builder-theme-thibault-sottiaux-on-what-should-we-improve-on-codex-to-improve-the-everyday-experience-n"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-30": {
       "briefingIds": [
         "rss-2026-07-30"
