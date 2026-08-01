@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-01",
     "2026-07-31",
     "2026-07-30",
     "2026-07-29",
@@ -172,6 +173,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-01": {
+      "briefingIds": [
+        "rss-2026-08-01"
+      ],
+      "insightIds": [
+        "rss-2026-08-01-01-deepseek-aideepseek-v4-flash-0731",
+        "rss-2026-08-01-02-stateless-mcp-has-recaptured-my-interest-and-inspired-mcp-explorer-and-datasette-mcp",
+        "rss-2026-08-01-03-deepseek-v4-flash-now-runs-updated-weights-on-ai-gateway",
+        "rss-2026-08-01-04-vercel-mcp-now-supports-the-2026-07-28-mcp-specification",
+        "rss-2026-08-01-05-ten-advances-in-mathematics-and-theoretical-computer-science",
+        "rss-2026-08-01-06-advancing-responsible-ai-across-europe",
+        "rss-2026-08-01-07-builder-theme-ep-92-xai-co-founder-unpacks-the-future-of-model-development",
+        "rss-2026-08-01-08-builder-theme-thibault-sottiaux-on-to-celebrate-a-week-of-efficiency-and-let-you-run-100000-luna-thread",
+        "rss-2026-08-01-09-builder-theme-sam-altman-on-cool-use-case-of-chatgpt-work-i-heard-last-night-connect-your-family"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-07-31": {
       "briefingIds": [
         "rss-2026-07-31"

@@ -1,0 +1,194 @@
+{
+  "date": "2026-08-01",
+  "briefings": [
+    {
+      "id": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-01",
+      "filePath": "2026-08-01.md",
+      "summaryTopline": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "insightIds": [
+        "rss-2026-08-01-01-deepseek-aideepseek-v4-flash-0731",
+        "rss-2026-08-01-02-stateless-mcp-has-recaptured-my-interest-and-inspired-mcp-explorer-and-datasette-mcp",
+        "rss-2026-08-01-03-deepseek-v4-flash-now-runs-updated-weights-on-ai-gateway",
+        "rss-2026-08-01-04-vercel-mcp-now-supports-the-2026-07-28-mcp-specification",
+        "rss-2026-08-01-05-ten-advances-in-mathematics-and-theoretical-computer-science",
+        "rss-2026-08-01-06-advancing-responsible-ai-across-europe",
+        "rss-2026-08-01-07-builder-theme-ep-92-xai-co-founder-unpacks-the-future-of-model-development",
+        "rss-2026-08-01-08-builder-theme-thibault-sottiaux-on-to-celebrate-a-week-of-efficiency-and-let-you-run-100000-luna-thread",
+        "rss-2026-08-01-09-builder-theme-sam-altman-on-cool-use-case-of-chatgpt-work-i-heard-last-night-connect-your-family"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-01-01-deepseek-aideepseek-v4-flash-0731",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
+      "publishedDate": "2026-07-31",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "summary": "DeepSeek 發布 DeepSeek-V4-Flash-0731，一款 3040 億參數的 MoE 模型，主打增強 Agentic 能力，並以每百萬 tokens 輸入 0.14 美元與輸出 0.27 美元的定價，在效能與成本比上超越 MiniMax M3。",
+      "take": "此模型驗證了低成本 MoE 架構能提供頂尖 Agentic 能力，其 `reasoning_effort` 參數對輸出品質影響顯著，開發者應將動態調整推理強度納入 Agent 工作流，以最佳化成本與成效。作為目前最具性價比的智慧模型，它是建構高頻率 Agent 呼叫與大規模推理管線的首選，但需注意預設推理等級可能不足，需明確設定較高參數。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-01-02-stateless-mcp-has-recaptured-my-interest-and-inspired-mcp-explorer-and-datasette-mcp",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+      "publishedDate": "2026-07-31",
+      "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+      "summary": "Simon Willison 指出，2026-07-28 发布的 MCP 2.0（Stateless MCP）规范是协议自推出以来最重大的变更，通过引入无状态操作模式，重新激发了他对 MCP 的兴趣，并催生了 mcp-explorer 与 datasette-mcp 两个新工具。",
+      "take": "Stateless MCP 的工程意义在于：它解决了此前 MCP 依赖有状态会话、难以与基于终端的代理工作流（如 curl+SSH）灵活组合的痛点。对构建者而言，这意味着 MCP 工具现在可以像无状态 REST API 一样被独立调用和测试，大幅降低了集成成本，并可能使 MCP 重新成为比 Skills 更通用的工具暴露标准——尤其当你的代理需要跨会话复用工具或需要并发调用时。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-01-03-deepseek-v4-flash-now-runs-updated-weights-on-ai-gateway",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/deepseek-v4-flash-now-runs-updated-weights-on-ai-gateway",
+      "publishedDate": "2026-07-31",
+      "title": "DeepSeek V4 Flash now runs updated weights on AI Gateway",
+      "summary": "DeepSeek V4 Flash 更新权重已默认部署于 Vercel AI Gateway，模型 ID 不变，Terminal-Bench 得分从 56.9 升至 82.7，当前仅 DeepSeek 官方提供更新权重，其他提供商（含 Zero Data Retention）将于下周接入。",
+      "take": "现有调用 deepseek/deepseek-v4-flash 的代码无需改动即可自动获得更强 agentic 能力，显著提升编码代理在终端任务上的表现。工程上应优先通过 AI Gateway 路由以锁定最新权重，并留意后续多提供商支持以平衡数据留存与性能需求。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-01-04-vercel-mcp-now-supports-the-2026-07-28-mcp-specification",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-mcp-now-supports-the-2026-07-28-mcp-specification",
+      "publishedDate": "2026-07-31",
+      "title": "Vercel MCP now supports the 2026-07-28 MCP specification",
+      "summary": "Vercel MCP 现于同一端点通过官方 MCP SDK v2 与 mcp-handler 2.x 同时支持 2025 与 2026-07-28 规范，为新型客户端提供无状态请求模型与更新的授权行为，旧客户端保持原协议不变，无需任何配置更改。",
+      "take": "工程要点：基于 SDK 双协议协商机制，单一连接可自动适配新旧客户端，无需维护多端点或复杂迁移逻辑。构建 MCP 服务端时应优先采用官方 SDK v2 与 mcp-handler 2.x 以透明获得协议兼容，同时将无状态请求与授权更新纳入设计，以便即刻对接升级后的生态客户端，而旧版集成零成本保留。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-01-05-ten-advances-in-mathematics-and-theoretical-computer-science",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/ten-advances-in-mathematics",
+      "publishedDate": "2026-08-01",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "summary": "OpenAI 发布在数学与理论计算机科学领域的十项新成果，涵盖几何、密码学与复杂性理论中的长期开放问题。",
+      "take": "这些进展表明前沿模型正从模式识别走向形式化推理，能在无需人类提示的情况下探索数学结构。构建者应关注模型在密码学与复杂性理论中的生成式证明能力，这可能重塑自动定理证明与安全协议验证的工作流。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-01-06-advancing-responsible-ai-across-europe",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "publishedDate": "2026-07-31",
+      "title": "Advancing responsible AI across Europe",
+      "summary": "OpenAI概述其在欧洲推进负责任AI的实践，涵盖安全、安保、透明度及内容来源识别，以配合欧盟AI法案的逐步实施。",
+      "take": "对开发者而言，核心信号是内容溯源（如C2PA）与安全评估将成为面向欧洲市场的默认合规基线。集成这些机制到Agent或应用构建流程中，可降低未来监管摩擦，并提升系统可信度。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-01-07-builder-theme-ep-92-xai-co-founder-unpacks-the-future-of-model-development",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/@RedpointAI",
+      "title": "Builder Theme: Ep 92: xAI Co-Founder Unpacks the Future of Model Development",
+      "summary": "xAI 共同創辦人 Igor Babushkin 在 Redpoint 的 Unsupervised Learning 播客中，闡述他創立 River AI 的技術方向：聚焦企業與消費者的個人化 AI，並搭配本地硬體運算，同時分享了他從 DeepMind、OpenAI 到 xAI 的模型開發經驗。",
+      "take": "模型開發的下一個前沿不再是單純擴大規模，而是結合本地硬體與個人化資料的專屬 AI 系統。開發者應關注異質硬體（如 Colossus 級集群）與模型協同設計的架構，並預期 agent 工作流將從雲端中心轉向邊緣與終端裝置。這意味著新的推論與模型壓縮技術（如 quantization、distillation）將成為 agent 部署的關鍵瓶頸。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-01-08-builder-theme-thibault-sottiaux-on-to-celebrate-a-week-of-efficiency-and-let-you-run-100000-luna-thread",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2083395449814229287",
+      "title": "Builder Theme: Thibault Sottiaux on To celebrate a week of efficiency and let you run 100'000 Luna thread...",
+      "summary": "Thibault Sottiaux宣布重置Codex與ChatGPT Work的用量限制，以慶祝一週效率提升，並允許用戶本週末執行高達100,000個Luna執行緒。",
+      "take": "此事件反映平台方可能主動釋出大量運算額度以蒐集真實世界負載數據。開發者應視此為壓力測試機會，優化代理程式的執行效率與錯誤處理，而非僅依賴暫時資源擴充。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-01-09-builder-theme-sam-altman-on-cool-use-case-of-chatgpt-work-i-heard-last-night-connect-your-family",
+      "briefingId": "rss-2026-08-01",
+      "date": "2026-08-01",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2083221585792762171",
+      "title": "Builder Theme: Sam Altman on cool use case of chatgpt work i heard last night: connect your family...",
+      "summary": "Sam Altman 分享了一个 ChatGPT 实用案例：将家庭日历与孩子兴趣数据接入，每天早上自动生成面向家庭驾驶场景的个性化播客，涵盖孩子当日活动、生日提醒及新闻等。",
+      "take": "此案例展示了 LLM 在多源个人数据聚合与动态内容生成上的低门槛应用范式。工程要点在于利用现有日历与偏好数据，通过简单接口即可驱动定制化音频输出，无需复杂 Agent 编排，即可实现高频率、场景化的内容服务，是数据驱动生成式产品的一个可复制模板。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
