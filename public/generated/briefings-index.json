@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-02",
     "2026-08-01",
     "2026-07-31",
     "2026-07-30",
@@ -173,6 +174,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-02": {
+      "briefingIds": [
+        "rss-2026-08-02"
+      ],
+      "insightIds": [
+        "rss-2026-08-02-01-open-letters-about-ai-development",
+        "rss-2026-08-02-02-july-2026-newsletter",
+        "rss-2026-08-02-03-llms-discover-pnp-comic",
+        "rss-2026-08-02-04-builder-theme-building-an-autonomous-enterprise-for-real-world-services-with-netic-founder-melisa-tokmak",
+        "rss-2026-08-02-05-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-08-02-06-builder-theme-andrej-karpathy-on-were-starting-to-leave-the-territory-where-youd-test-an-llm-by-eg",
+        "rss-2026-08-02-07-builder-theme-thibault-sottiaux-on-the-week-was-for-efficiency-the-weekend-is-for-10-major-breakthrough"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-01": {
       "briefingIds": [
         "rss-2026-08-01"

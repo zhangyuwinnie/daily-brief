@@ -1,0 +1,150 @@
+{
+  "date": "2026-08-02",
+  "briefings": [
+    {
+      "id": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-02",
+      "filePath": "2026-08-02.md",
+      "summaryTopline": "Open letters about AI development",
+      "insightIds": [
+        "rss-2026-08-02-01-open-letters-about-ai-development",
+        "rss-2026-08-02-02-july-2026-newsletter",
+        "rss-2026-08-02-03-llms-discover-pnp-comic",
+        "rss-2026-08-02-04-builder-theme-building-an-autonomous-enterprise-for-real-world-services-with-netic-founder-melisa-tokmak",
+        "rss-2026-08-02-05-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-08-02-06-builder-theme-andrej-karpathy-on-were-starting-to-leave-the-territory-where-youd-test-an-llm-by-eg",
+        "rss-2026-08-02-07-builder-theme-thibault-sottiaux-on-the-week-was-for-efficiency-the-weekend-is-for-10-major-breakthrough"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-02-01-open-letters-about-ai-development",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+      "publishedDate": "2026-08-02",
+      "title": "Open letters about AI development",
+      "summary": "微软主导、235家AI相关企业（含NVIDIA、Amazon、OpenAI等）签署公开信《开放权重与美国AI领导力》，主张开放权重模型不应因安全担忧被禁，并以Claude Fable 5事件为例论证封闭模型同样可被攻破或滥用且外部难以检测。",
+      "take": "开放权重与封闭模型的安全争论已从理念转向政策博弈，工程上应默认封闭模型并非更安全，需将可审计性、可复现性和外部监督纳入模型部署基线。对构建者而言，开放权重生态的持续存在是降低供应链锁定风险的关键，需在架构中预留模型可替换接口，而非绑定单一供应商。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-02-02-july-2026-newsletter",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+      "publishedDate": "2026-08-02",
+      "title": "July 2026 newsletter",
+      "summary": "Simon Willison 发布 2026 年 7 月赞助者专属月刊，涵盖 OpenAI/Anthropic 模型意外网络攻击测试、GPT-5.6 Sol/Terra/Luna、Claude Opus 5、Kimi K3、DeepSeek-V4-Flash-0731 等发布，并重新点燃对 MCP 的兴趣。",
+      "take": "追踪模型发布与安全测试细节可提前识别能力边界，但更关键的是 MCP 生态回暖——开发者应优先基于 MCP 构建可移植的 agent 工具层，避免绑定单一模型。赞助订阅提供一个月信息差，对依赖前沿模型的工程决策有实际价值。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-02-03-llms-discover-pnp-comic",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://chatgpt.com/s/m_6a6f252612a08191b4081f60a92bceba",
+      "publishedDate": "2026-08-02",
+      "title": "LLMs Discover P=NP (Comic)",
+      "summary": "Hacker News 上以漫画形式讨论 LLM 宣称发现 P=NP，本质是对 LLM 输出可靠性及过度自信现象的讽刺性隐喻，反映模型在数学推理上的虚假突破倾向。",
+      "take": "该事件提示构建者不应将 LLM 的数学或逻辑结论视为验证结果；需引入形式化验证或外部求解器作为硬约束，并在 agent 工作流中为高置信度输出设置完整性检查，避免错误传播至下游决策。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-02-04-builder-theme-building-an-autonomous-enterprise-for-real-world-services-with-netic-founder-melisa-tokmak",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=wWbX3NL6_Uo",
+      "title": "Builder Theme: Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+      "summary": "Netic创始人Melisa Tokmak基于其在Scale AI和Meta的工程与市场经验，构建了面向HVAC、宠物护理、屋顶维修等现实世界服务的AI自动化企业，将AI能力直接嵌入垂直服务行业的实际业务流程中。",
+      "take": "核心工程启示在于：AI代理的企业化落地需从垂直行业的具体服务痛点切入，而非泛化平台。关键在于建立从数据采集、模型推理到现场执行反馈的闭环系统，并利用行业特有数据（如服务记录、客户交互）持续优化模型。这要求开发者优先设计可扩展的领域工作流编排层，而非仅关注模型能力，以实现真正的自主服务交付。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-02-05-builder-theme-how-we-contain-claude-across-products",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "title": "Builder Theme: How we contain Claude across products",
+      "summary": "Anthropic Engineering描述其内部产品中Claude从受限工具演变为可访问内部服务的高权限代理，并通过架构手段控制其潜在的故障波及范围，从而在高自主性与风险控制间取得平衡。",
+      "take": "核心工程思路是将代理的权限授予视为常态，但必须显式设计爆炸半径上限，例如通过服务隔离、细粒度权限撤销和运行时监控来限制单点故障的影响。对AI builders而言，关键不是拒绝风险，而是接受风险后以可量化的架构约束来降低其实际损害，这将成为构建高自主性代理产品的基准范式。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-02-06-builder-theme-andrej-karpathy-on-were-starting-to-leave-the-territory-where-youd-test-an-llm-by-eg",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2083749667410727319",
+      "title": "Builder Theme: Andrej Karpathy on We're starting to leave the territory where you'd test an LLM by e.g....",
+      "summary": "Andrej Karpathy 以《魔戒》首段為輸入、1M token 預算與數小時運算，測試 Opus 5 生成 5500 行 JavaScript，程序化渲染 3D 場景，驗證 LLM 從單一提示自主完成長時間、高複雜度的程式創作。",
+      "take": "評估 LLM 的標準正從單一任務準確性轉向長時間自主執行複雜建構能力；開發者應設計可讓模型在 1M token 預算下進行多步驟、資源密集的程式生成，並重視程序化與可視化輸出的新測試框架。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-02-07-builder-theme-thibault-sottiaux-on-the-week-was-for-efficiency-the-weekend-is-for-10-major-breakthrough",
+      "briefingId": "rss-2026-08-02",
+      "date": "2026-08-02",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2083556636455752050",
+      "title": "Builder Theme: Thibault Sottiaux on The week was for efficiency. The weekend is for 10 major breakthrough...",
+      "summary": "Thibault Sottiaux 在推文中对照工作日与周末的产出差异，指出周末将迎来科学领域的10项重大突破，并暗示已有迹象可循。",
+      "take": "对AI构建者而言，应关注工作日效率优化与周末创新突破之间的节奏分离，将探索性实验和前沿研究集中在非结构化时间窗口，以捕获重大技术跃迁的先兆信号。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
