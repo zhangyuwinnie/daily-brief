@@ -35262,5 +35262,176 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-03": {
+    "date": "2026-08-03",
+    "briefings": [
+      {
+        "id": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-03",
+        "filePath": "2026-08-03.md",
+        "summaryTopline": "condense-json 1.0",
+        "insightIds": [
+          "rss-2026-08-03-01-condense-json-10",
+          "rss-2026-08-03-02-quoting-greg-brockman",
+          "rss-2026-08-03-03-devtools-must-be-open-source",
+          "rss-2026-08-03-04-prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
+          "rss-2026-08-03-05-qwen-38-max-now-available-on-vercel-ai-gateway",
+          "rss-2026-08-03-06-builder-theme-building-the-automated-agi-lab-core-automations-jerry-tworek-and-rohan-anil",
+          "rss-2026-08-03-07-builder-theme-guillermo-rauch-on-ai-alone-is-cool-but-mastery-creativity-ai-hits-on-a-whole-diffe",
+          "rss-2026-08-03-08-builder-theme-thariq-on-you-can-already-see-jevons-paradox-at-work-in-mathematics-there-is-mo"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-03-01-condense-json-10",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+        "publishedDate": "2026-08-02",
+        "title": "condense-json 1.0",
+        "summary": "Simon Willison 发布 condense-json 1.0，一个通过替换字典将 JSON 中重复字符串片段压缩为引用标记（如 {$r: [...]}）的库，用于减小 LLM 相关 JSON 数据体积。",
+        "take": "该库提供了一种基于运行时字符串匹配的压缩范式：在保持 JSON 结构不变的前提下，将高频子串替换为短引用，显著降低 token 消耗。对依赖 JSON 作为 LLM 上下文或输出格式的 Agent 工作流，这是一条可直接嵌入预处理管线的低成本优化路径，尤其适合日志、工具返回等结构重复的场景。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-03-02-quoting-greg-brockman",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
+        "publishedDate": "2026-08-01",
+        "title": "Quoting Greg Brockman",
+        "summary": "OpenAI总裁Greg Brockman指出，员工普遍反感同事的ChatGPT机器人主动联系请求协助，即使同一任务由人类同事提出也会乐意帮忙，凸显AI作为中介层在职场协作中的社交摩擦。",
+        "take": "工程上应避免让AI代理直接代表个人发起跨人请求，优先设计为辅助人类沟通的工具（如帮起草消息），而非替代人际互动。这提示多代理系统需引入“人际路由”机制，将AI请求降级为对人类的建议或提醒，以维持组织内信任与社会契约。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-03-03-devtools-must-be-open-source",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://blog.exe.dev/devtools-must-be-open-source",
+        "publishedDate": "2026-08-02",
+        "title": "Devtools must be open source",
+        "summary": "开发者工具（Devtools）必须开源，因其作为AI代理与软件基础设施交互的底层协议层，闭源将导致不可审计的执行路径与能力锁定。",
+        "take": "核心工程启示：在AI代理自主编写、调试和部署代码的背景下，开源的Devtools成为可验证性与可扩展性的强制约束——闭源工具链会引入黑盒行为，破坏代理的确定性。构建者应优先采用开源核心工具（如编译器、调试器、CLI），并在自定义代理中显式声明对开源协议的依赖，以规避供应链风险与合规漏洞。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-03-04-prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+        "publishedDate": "2026-08-02",
+        "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+        "summary": "开发者Ankur Sethi提出通过手动重新输入LLM生成的代码，以强制深度理解并防止认知债务积累的方法。",
+        "take": "工程上，手动重打代码可作为一种认知校验手段，迫使开发者逐行消化生成逻辑，减少盲信与后续调试成本。对AI辅助编码工作流而言，应引入'重打验证'步骤作为质量门禁，尤其对核心模块或复杂算法，以平衡生成速度与代码可维护性。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-03-05-qwen-38-max-now-available-on-vercel-ai-gateway",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/qwen-3-8-max-now-available-on-vercel-ai-gateway",
+        "publishedDate": "2026-08-02",
+        "title": "Qwen 3.8 Max now available on Vercel AI Gateway",
+        "summary": "Vercel AI Gateway 现已支持阿里 Qwen 3.8 Max，该模型为 2.4 万亿参数、支持 1M token 上下文及文本与视觉统一处理，可通过 alibaba/qwen3.8-max 模型标识直接调用，并支持在 Claude Code、Codex、OpenCode 或 Pi 等编码代理中无缝集成。",
+        "take": "工程要点在于，通过 AI Gateway 的统一 API，开发者无需修改代理逻辑即可将 Qwen 3.8 Max 作为视觉-语言多模态后端，直接替换或补充现有编码代理的模型层，且能利用网关自带的重试、故障转移与成本追踪能力。对于处理截屏生成页面或图像问答等视觉密集型编码任务，此模型可作为 Claude 或 Codex 的高吞吐替代方案，但需自行验证其代码生成质量与延迟是否满足生产级工作流。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-03-06-builder-theme-building-the-automated-agi-lab-core-automations-jerry-tworek-and-rohan-anil",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=2RJiaf0SY8s",
+        "title": "Builder Theme: Building the Automated AGI Lab: Core Automation's Jerry Tworek and Rohan Anil",
+        "summary": "Core Automation的Jerry Tworek與Rohan Anil在訪談中探討建構自動化AGI實驗室的核心機制，對比強化學習（如踢足球的反覆調整）與深度概念理解（如數學的內化連結），強調兩者皆屬經驗學習但運算資源分配差異顯著，並指出強化學習並非經驗學習的終點。",
+        "take": "工程面上，AGI實驗室自動化需區分不同學習類型：強化學習適合可量化回饋的任務（如運動控制），而深度推理需另一種經驗學習機制（如內部模擬與概念重組）。當前過度集中算力於強化學習可能忽略其他學習範式，未來應探索混合架構，將強化學習與基於模型的深度思考結合，以擴展代理能力邊界。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-03-07-builder-theme-guillermo-rauch-on-ai-alone-is-cool-but-mastery-creativity-ai-hits-on-a-whole-diffe",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2083969120270450911",
+        "title": "Builder Theme: Guillermo Rauch on AI alone is cool. But mastery + creativity + AI hits on a whole diffe...",
+        "summary": "Guillermo Rauch 强调，AI 单独使用虽有趣，但唯有将领域精通（mastery）与创造力（creativity）结合 AI，才能实现质变性的成果提升，并鼓励开发者持续追求卓越与技艺。",
+        "take": "对 AI 构建者而言，核心洞察是：AI 是能力放大器，而非替代品。应深耕垂直领域的技术细节与设计审美，将 AI 作为执行层工具，而非思考层依赖。追求‘匠艺’（craft）——即对系统架构、代码质量或产品体验的极致打磨——才是构建差异化 agent 或工作流的关键壁垒。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-03-08-builder-theme-thariq-on-you-can-already-see-jevons-paradox-at-work-in-mathematics-there-is-mo",
+        "briefingId": "rss-2026-08-03",
+        "date": "2026-08-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2083977795290734975",
+        "title": "Builder Theme: Thariq on you can already see Jevons paradox at work in mathematics there is mo...",
+        "summary": "Thariq 指出，数学领域已可见杰文斯悖论（Jevons paradox）——AI 降低理解门槛后，数学活动总量增加、抽象层级提升，且数学家与外部讨论时间变多，对数学思考与知识人才的需求反而上升。",
+        "take": "对 AI 构建者而言，成本下降不会减少对深度技能的需求，反而会扩大高抽象层级的协作与创造空间。应把模型能力视为提升讨论与抽象层级的杠杆，而非替代专业人力；关键在适配更复杂、更高阶的协作流程，例如让 AI 处理低层计算，人类专注更高层的架构与推理。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

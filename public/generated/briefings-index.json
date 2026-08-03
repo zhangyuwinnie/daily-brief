@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-03",
     "2026-08-02",
     "2026-08-01",
     "2026-07-31",
@@ -174,6 +175,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-03": {
+      "briefingIds": [
+        "rss-2026-08-03"
+      ],
+      "insightIds": [
+        "rss-2026-08-03-01-condense-json-10",
+        "rss-2026-08-03-02-quoting-greg-brockman",
+        "rss-2026-08-03-03-devtools-must-be-open-source",
+        "rss-2026-08-03-04-prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
+        "rss-2026-08-03-05-qwen-38-max-now-available-on-vercel-ai-gateway",
+        "rss-2026-08-03-06-builder-theme-building-the-automated-agi-lab-core-automations-jerry-tworek-and-rohan-anil",
+        "rss-2026-08-03-07-builder-theme-guillermo-rauch-on-ai-alone-is-cool-but-mastery-creativity-ai-hits-on-a-whole-diffe",
+        "rss-2026-08-03-08-builder-theme-thariq-on-you-can-already-see-jevons-paradox-at-work-in-mathematics-there-is-mo"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-02": {
       "briefingIds": [
         "rss-2026-08-02"
