@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-04",
     "2026-08-03",
     "2026-08-02",
     "2026-08-01",
@@ -175,6 +176,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-04": {
+      "briefingIds": [
+        "rss-2026-08-04"
+      ],
+      "insightIds": [
+        "rss-2026-08-04-01-apple-is-getting-this-wrong",
+        "rss-2026-08-04-02-circles-powers-telco-personalization-with-openai-technology",
+        "rss-2026-08-04-03-quoting-steve-yegge",
+        "rss-2026-08-04-04-dont-be-a-meat-proxy",
+        "rss-2026-08-04-05-deploy-local-agents-everywhere-with-lfm25-26b",
+        "rss-2026-08-04-06-give-your-eve-agent-a-browser",
+        "rss-2026-08-04-07-how-factory-scaled-its-cloud-backend-to-tens-of-millions-of-daily-requests-on-vercel",
+        "rss-2026-08-04-08-orchard-an-open-framework-for-scalable-agentic-ai",
+        "rss-2026-08-04-09-builder-theme-ai-vibe-check-chinese-open-models-distillation-amp-the-hugging-face-breach",
+        "rss-2026-08-04-10-builder-theme-thibault-sottiaux-on-given-some-of-the-results-im-seeing-recently-its-pretty-clear-code",
+        "rss-2026-08-04-11-builder-theme-thariq-on-i-think-a-lot-of-people-dont-realize-if-you-connect-a-claude-connec"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-03": {
       "briefingIds": [
         "rss-2026-08-03"

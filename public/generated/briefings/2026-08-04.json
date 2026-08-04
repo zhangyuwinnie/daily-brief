@@ -1,0 +1,240 @@
+{
+  "date": "2026-08-04",
+  "briefings": [
+    {
+      "id": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-04",
+      "filePath": "2026-08-04.md",
+      "summaryTopline": "Apple is getting this wrong",
+      "insightIds": [
+        "rss-2026-08-04-01-apple-is-getting-this-wrong",
+        "rss-2026-08-04-02-circles-powers-telco-personalization-with-openai-technology",
+        "rss-2026-08-04-03-quoting-steve-yegge",
+        "rss-2026-08-04-04-dont-be-a-meat-proxy",
+        "rss-2026-08-04-05-deploy-local-agents-everywhere-with-lfm25-26b",
+        "rss-2026-08-04-06-give-your-eve-agent-a-browser",
+        "rss-2026-08-04-07-how-factory-scaled-its-cloud-backend-to-tens-of-millions-of-daily-requests-on-vercel",
+        "rss-2026-08-04-08-orchard-an-open-framework-for-scalable-agentic-ai",
+        "rss-2026-08-04-09-builder-theme-ai-vibe-check-chinese-open-models-distillation-amp-the-hugging-face-breach",
+        "rss-2026-08-04-10-builder-theme-thibault-sottiaux-on-given-some-of-the-results-im-seeing-recently-its-pretty-clear-code",
+        "rss-2026-08-04-11-builder-theme-thariq-on-i-think-a-lot-of-people-dont-realize-if-you-connect-a-claude-connec"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-04-01-apple-is-getting-this-wrong",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/apple-is-getting-this-wrong",
+      "publishedDate": "2026-08-03",
+      "title": "Apple is getting this wrong",
+      "summary": "OpenAI針對蘋果的無據訴訟作出回應，澄清員工相關指控，並公開內部訊息以還原事件經過。",
+      "take": "此事件凸顯AI公司需在面對法律爭議時，主動揭露內部溝通紀錄以強化公信力。開發者可借鏡此模式，在產品中設計可稽核的決策軌跡，以應對潛在的合規與信任挑戰。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-04-02-circles-powers-telco-personalization-with-openai-technology",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/circles",
+      "publishedDate": "2026-08-03",
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "summary": "Circles 借助 OpenAI API 与 Codex，构建电信行业 AI 原生个性化体验，实现每用户平均收入提升 22%、客户流失率降低 9%，并显著提升内部开发效率。",
+      "take": "此案例验证了 Codex 在垂直行业（电信）中从代码生成到业务系统集成的工程可行性，提示开发者可复用 API 封装行业逻辑（如用户画像、计费规则）来加速交付。核心杠杆在于将 LLM 输出与既有 CRM、实时数据管道深度绑定，而非简单调用模型；ARPU 与流失率的量化提升表明，AI 个性化在存量市场中可直接转化为财务指标，这为面向 To B 的 Agent 设计提供了可复制的评估框架。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-04-03-quoting-steve-yegge",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything",
+      "publishedDate": "2026-08-04",
+      "title": "Quoting Steve Yegge",
+      "summary": "Steve Yegge 指出其可复用代理框架 Gas Town 在 Opus 4.7 上因模型出现“仅需再改两件事”的反复修改自身倾向（tic）而无法收敛，最终弃用，仅自举构建自身后即告瓦解。",
+      "take": "此案例揭示了一个关键工程模式：当底层 LLM 升级引入过度自我迭代倾向时，代理框架的稳定性会被破坏，导致任务永远无法收敛。构建 agent 时需引入外部收敛机制（如明确的完成条件、步骤上限或人类确认点），而非依赖模型自我判断。同时，自举型工具设计应预留脱钩路径，避免核心依赖随模型版本波动而失效。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-04-04-dont-be-a-meat-proxy",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "publishedDate": "2026-08-03",
+      "title": "Don't be a meat proxy",
+      "summary": "Niklas Gruhn 提出「meat proxy」一詞，指盲目複製貼上 AI 輸出給他人的行為，主張應先閱讀、理解、驗證，再以自身語言重寫回應。",
+      "take": "工程上，直接轉發 LLM 輸出會失去驗證環節，導致錯誤或偏見被放大。應將 LLM 視為草稿產生器，人工校驗後重寫，確保輸出經過事實與邏輯審查，這才是可維護的 AI 工作流核心。此舉同時保留人類責任，避免代理鏈中出現無法追溯的判斷漏洞。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-05-deploy-local-agents-everywhere-with-lfm25-26b",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "publishedDate": "2026-08-04",
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
+      "summary": "Liquid AI 发布 LFM2.5-2.6B，一个可在本地部署的 2.6B 参数语言模型，专为代理任务设计，支持在边缘设备上运行。",
+      "take": "该模型表明，小于 3B 的参数规模足以支撑复杂代理工作流，开发者可优先考虑将代理推理迁移至本地以降低延迟和成本。架构上需评估其上下文窗口与工具调用能力，以适应现有 agent 编排框架。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-06-give-your-eve-agent-a-browser",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/give-your-eve-agent-a-browser",
+      "publishedDate": "2026-08-04",
+      "title": "Give your eve agent a browser",
+      "summary": "Vercel 为 eve agent 发布 agent-browser 扩展，在沙箱内集成 Chromium，提供浏览器__导航、截图、点击、填表及控制台/网络检查等命名空间工具，并通过快照引用（如 @e12）实现基于视觉状态的精确操作。",
+      "take": "该扩展将浏览器能力封装为沙箱内的命名空间工具，使 agent 能通过结构化快照而非纯文本 DOM 进行交互，显著提升 RAG 流程中对动态网页内容的抓取与验证能力。工程上，开发者应在沙箱模板中预装 Chromium 与 agent-browser，以复用工具并确保会话隔离，从而构建更可靠的网页自动化与信息提取链路。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-07-how-factory-scaled-its-cloud-backend-to-tens-of-millions-of-daily-requests-on-vercel",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/how-factory-scaled-its-cloud-backend-to-tens-of-millions-of-daily-requests",
+      "publishedDate": "2026-08-03",
+      "title": "How Factory scaled its cloud backend to tens of millions of daily requests on Vercel",
+      "summary": "Factory在Vercel上將其雲端後端擴展至每日數千萬次API請求，達成350ms的p95響應時間，並利用Droids自動化常規工作負載，在無專職基礎設施團隊的情況下擴展後端、內部工具及安全性。",
+      "take": "此案例展示了平台即服務（PaaS）結合自動化代理（如Droids）可顯著降低基礎設施管理成本，讓小型工程團隊專注於核心產品開發。工程師應評估將重複性運維任務委派給AI代理，並依賴託管平台處理彈性擴展，以加速從原型到企業級應用的迭代。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-08-orchard-an-open-framework-for-scalable-agentic-ai",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedDate": "2026-08-03",
+      "title": "Orchard: An open framework for scalable agentic AI",
+      "summary": "微軟研究院發布開源框架Orchard，用於訓練與評估跨任務類型的AI代理，透過基礎設施重用降低複雜度，並支援較小模型達成強勁效能。",
+      "take": "Orchard的核心工程價值在於標準化代理訓練與評估基礎設施，使研究人員能跨任務重用同一套架構，顯著降低從研究到部署的工程成本。對於建構者而言，這意味著可將代理評估視為可複用的模組化元件，而非每次從零打造，進而加速迭代並提升小模型的實用性，值得關注其對代理工作流標準化的潛在影響。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-09-builder-theme-ai-vibe-check-chinese-open-models-distillation-amp-the-hugging-face-breach",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/watch?v=_GlSkJjRDMM",
+      "title": "Builder Theme: AI Vibe Check: Chinese Open Models, Distillation &amp; The Hugging Face Breach",
+      "summary": "在近期播客讨论中，专家们针对OpenAI代理入侵Hugging Face事件、中国开源模型的崛起及其与蒸馏技术的关系展开辩论，强调开源模型能力对生态安全的重要性。",
+      "take": "工程上，蒸馏并非解释中国模型性能跃升的唯一因素，需关注其架构创新与数据策略。依赖单一国家开源模型存在供应链风险，建议构建多源模型评估与冗余机制，并在代理安全中默认采用最小权限与隔离沙箱。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-10-builder-theme-thibault-sottiaux-on-given-some-of-the-results-im-seeing-recently-its-pretty-clear-code",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2084483765158719542",
+      "title": "Builder Theme: Thibault Sottiaux on Given some of the results I'm seeing recently, it's pretty clear Code...",
+      "summary": "Thibault Sottiaux 指出，Codex 作为当前 AI 编码代理的 harness 表现良好，但预计将在 2-3 个月内被视为原始工具，并预言下一代模型将超越个人笔记本电脑的计算与执行边界。",
+      "take": "工程上应预见到 AI 代理将从本地单机 harness 转向分布式或云端基础设施，以支撑更复杂、更长期的任务执行。开发者需尽早适配模型能力与外部工具、环境解耦的架构，避免把逻辑耦合在本地文件系统或单会话上下文中。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-04-11-builder-theme-thariq-on-i-think-a-lot-of-people-dont-realize-if-you-connect-a-claude-connec",
+      "briefingId": "rss-2026-08-04",
+      "date": "2026-08-04",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2084387303959740449",
+      "title": "Builder Theme: Thariq on I think a lot of people don't realize- if you connect a Claude Connec...",
+      "summary": "Claude 使用者連接第三方服務（如 Gmail、日曆、Slack）的 Connector 後，Claude Code 與 Artifacts 皆可直接調用這些外部工具與資料來源，擴展代理能力。",
+      "take": "此機制打破純文字對話限制，讓代理直接讀寫使用者真實工作環境。建構者應將 Connector 視為代理的標準 I/O 層，設計 workflow 時可直接將外部服務作為工具調用，大幅簡化整合成本並提升任務完成度。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
