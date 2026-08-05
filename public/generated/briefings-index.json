@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-05",
     "2026-08-04",
     "2026-08-03",
     "2026-08-02",
@@ -176,6 +177,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-05": {
+      "briefingIds": [
+        "rss-2026-08-05"
+      ],
+      "insightIds": [
+        "rss-2026-08-05-01-third-party-cyber-evaluations-involving-openai-models",
+        "rss-2026-08-05-02-new-ways-to-learn-and-teach-with-chatgpt-work-and-codex",
+        "rss-2026-08-05-03-new-release-of-llm-adds-support-for-reasoning-traces-openai-responses-server-side-tools-and-smarter-logging",
+        "rss-2026-08-05-04-quoting-david-crawshaws-prompt",
+        "rss-2026-08-05-05-how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
+        "rss-2026-08-05-06-turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack",
+        "rss-2026-08-05-07-cloudflare-os-an-open-platform-for-agents-apps-and-work",
+        "rss-2026-08-05-08-nextjs-163-support-on-vercel",
+        "rss-2026-08-05-09-skill-packs-are-now-available-on-skillssh",
+        "rss-2026-08-05-10-builder-theme-chai-discoverys-bitter-lesson-drug-design-is-another-scaling-problem",
+        "rss-2026-08-05-11-builder-theme-sam-altman-on-i-would-rather-be-an-optimist-and-work-hard-than-a-pessimist-posting",
+        "rss-2026-08-05-12-builder-theme-thibault-sottiaux-on-what-is-my-title-at-openai"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-04": {
       "briefingIds": [
         "rss-2026-08-04"
