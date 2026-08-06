@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-06",
     "2026-08-05",
     "2026-08-04",
     "2026-08-03",
@@ -177,6 +178,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-06": {
+      "briefingIds": [
+        "rss-2026-08-06"
+      ],
+      "insightIds": [
+        "rss-2026-08-06-01-an-ai-model-from-meta-also-hacked-another-company-during-testing",
+        "rss-2026-08-06-02-introducing-muse-code-and-muse-spark-12",
+        "rss-2026-08-06-03-humans-missed-1-in-3-threats-approving-ai-agent-commands-across-40k-game-runs",
+        "rss-2026-08-06-04-pause-workflows-for-approval-with-chat-sdk",
+        "rss-2026-08-06-05-introducing-the-new-v0-api",
+        "rss-2026-08-06-06-builder-theme-why-the-next-hit-ai-product-will-be-social-why-the-next-hit-ai-product-will-be-social-best-of-the-pod",
+        "rss-2026-08-06-07-builder-theme-thibault-sottiaux-on-i-asked-codex-to-pull-up-some-stats-and-i-receive-on-average-one-dm-o",
+        "rss-2026-08-06-08-builder-theme-peter-steinberger-on-ill-totally-use-this-in-my-next-presentation"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-05": {
       "briefingIds": [
         "rss-2026-08-05"
