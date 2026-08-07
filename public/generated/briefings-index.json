@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-07",
     "2026-08-06",
     "2026-08-05",
     "2026-08-04",
@@ -178,6 +179,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-07": {
+      "briefingIds": [
+        "rss-2026-08-07"
+      ],
+      "insightIds": [
+        "rss-2026-08-07-01-how-hsp-gruppe-builds-ai-capabilities-for-tax-advisory",
+        "rss-2026-08-07-02-working-with-the-american-psychological-association-on-youth-mental-health-and-ai",
+        "rss-2026-08-07-03-third-party-cyber-evaluations-involving-openai-models",
+        "rss-2026-08-07-04-incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+        "rss-2026-08-07-05-a-guide-to-slash-commands-in-the-github-copilot-app",
+        "rss-2026-08-07-06-kitesurf-agent-first-browser-that-runs-in-v8-isolates",
+        "rss-2026-08-07-07-introducing-agent-plugins",
+        "rss-2026-08-07-08-marketplace-integrations-now-install-provider-skills",
+        "rss-2026-08-07-09-builder-theme-sam-altman-on-56-sol-much-better-in-chat-now-and-unlimited-text-chat-for-free-user",
+        "rss-2026-08-07-10-builder-theme-claude-on-were-updating-claude-fable-5s-biology-safeguards-to-reduce-false-po"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-06": {
       "briefingIds": [
         "rss-2026-08-06"
