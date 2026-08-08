@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-08",
     "2026-08-07",
     "2026-08-06",
     "2026-08-05",
@@ -179,6 +180,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-08": {
+      "briefingIds": [
+        "rss-2026-08-08"
+      ],
+      "insightIds": [
+        "rss-2026-08-08-01-responding-to-the-next-frontier-of-critical-cyber-capabilities",
+        "rss-2026-08-08-02-quoting-john-gruber",
+        "rss-2026-08-08-03-now-we-have-a-timeline-of-the-openai-accidental-attack-against-hugging-face",
+        "rss-2026-08-08-04-vercel-ai-gateway-and-vercel-sandbox-now-available-on-hermes-agent",
+        "rss-2026-08-08-05-skill-packs-are-now-available-on-skillssh",
+        "rss-2026-08-08-06-builder-theme-sam-altman-on-astra-is-a-powerful-model-and-we-are-working-to-make-it-generally-ava",
+        "rss-2026-08-08-07-builder-theme-thibault-sottiaux-on-i-feel-theo-is-in-need-of-a-reset"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-07": {
       "briefingIds": [
         "rss-2026-08-07"
