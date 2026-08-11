@@ -36698,5 +36698,240 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-11": {
+    "date": "2026-08-11",
+    "briefings": [
+      {
+        "id": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-11",
+        "filePath": "2026-08-11.md",
+        "summaryTopline": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+        "insightIds": [
+          "rss-2026-08-11-01-muse-glimmer-30b-parameter-model-optimized-for-always-on-local-agent-workflows",
+          "rss-2026-08-11-02-introducing-muse-glimmer",
+          "rss-2026-08-11-03-build-low-latency-multilingual-voice-agents-open-weights-full-deployment-control-with-nvidia-magpie-tts",
+          "rss-2026-08-11-04-vercel-sandbox-now-runs-on-vercel-managed-images",
+          "rss-2026-08-11-05-a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+          "rss-2026-08-11-06-github-models-is-now-retired",
+          "rss-2026-08-11-07-expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "rss-2026-08-11-08-how-to-organize-claude-code-for-product-work",
+          "rss-2026-08-11-09-putting-frontier-cyber-models-in-more-trusted-hands",
+          "rss-2026-08-11-10-builder-theme-ryo-lu-on-i-left-cursor-after-10-years-inside-the-tech-bubble-in-san-francisco",
+          "rss-2026-08-11-11-builder-theme-thibault-sottiaux-on-hi-it-is-done"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-11-01-muse-glimmer-30b-parameter-model-optimized-for-always-on-local-agent-workflows",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+        "publishedDate": "2026-08-10",
+        "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+        "summary": "Meta 推出 Muse Glimmer，一個 30B 參數的開放 agentic 模型，針對常駐本機 agent 工作流程進行延遲與記憶體最佳化。",
+        "take": "開發者可將此模型視為本機 agent 的即時決策層，替代雲端 LLM 呼叫以降低延遲與成本。重點在於其常駐記憶體設計，適合需要持續感知上下文與快速反應的 agent 循環，而非一次性生成任務。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-11-02-introducing-muse-glimmer",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+        "publishedDate": "2026-08-10",
+        "title": "Introducing Muse Glimmer",
+        "summary": "Meta 發布 Muse Glimmer，一個 30B 參數、Apache 2.0 授權的開源模型，針對端到端代理任務完成、可靠工具使用與多步推理進行最佳化，並在 DeepSearch QA、MCP-Atlas、𝛕-Bench 與 SWE-Bench 等基準上展現高成功率。",
+        "take": "Muse Glimmer 以 Apache 2.0 授權回歸開源重量級賽局，消除過往 Llama 授權限制，可直接整合進商業代理堆疊。其對工具呼叫與長程任務鏈的強化，意味著本地端代理現在能勝任更複雜的 MCP 工作流與程式碼除錯，減少對雲端 LLM 的依賴，是建構自主 agent 基礎設施的可行替代方案。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-11-03-build-low-latency-multilingual-voice-agents-open-weights-full-deployment-control-with-nvidia-magpie-tts",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+        "publishedDate": "2026-08-10",
+        "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
+        "summary": "NVIDIA 发布 Magpie TTS，一个开源多语言文本转语音模型系列，提供低延迟语音代理能力，支持全权部署控制（包括本地或私有云）。",
+        "take": "工程师可将 Magpie TTS 集成至现有代理架构中，以替换或增强商业 TTS API，实现更低的流式延迟与数据主权控制。其开放权重允许针对特定语言或领域进行微调，从而优化代理的语音交互体验并降低长期运营成本。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-11-04-vercel-sandbox-now-runs-on-vercel-managed-images",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-managed-images",
+        "publishedDate": "2026-08-10",
+        "title": "Vercel Sandbox now runs on Vercel Managed Images",
+        "summary": "Vercel 推出 Vercel Managed Images（VMI），以版本化开源基础镜像取代已弃用的 Sandbox runtimes，默认镜像 vercel/sandbox/universal:latest 预装 Node.js、Python 及常见编码代理，并将操作系统从 Amazon Linux 切换至 Ubuntu，镜像每日夜间发布并支持滚动标签更新。",
+        "take": "编码代理沙箱的默认配置正从自定义构建转向标准化基础镜像，降低启动时安装依赖的开销。工程上应优先采用官方预置镜像以缩短冷启动时间，仅在必要时扩展 VMI；同时注意滚动标签（latest）的每日更新可能导致环境漂移，生产环境需固定版本标签以保障可复现性。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-05-a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+        "publishedDate": "2026-08-11",
+        "title": "A sandbox without a network boundary is only half a sandbox",
+        "summary": "Vercel 提出，运行不可信代码的安全沙盒必须同时具备计算隔离（如 microVM）与网络出口控制，否则仅能隔离进程而无法限制其数据外泄或攻击外部系统的能力。",
+        "take": "构建 AI Agent 或代码执行沙盒时，除隔离宿主资源外，必须显式管理网络权限：限制可连接的目标地址、可使用的凭据及出口流量策略。此举可防止 Agent 因读文件、执行命令或安装包而引发的数据渗透与横向攻击，是生产级 Agent 工作流的关键安全边界。实现上建议采用默认拒绝的 egress 代理或策略引擎，而非仅依赖微虚拟机隔离。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-06-github-models-is-now-retired",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+        "publishedDate": "2026-08-09",
+        "title": "GitHub Models is now retired",
+        "summary": "GitHub Models 已正式退役，其功能原本是提供统一 API 与模型游乐场，并允许 GitHub Actions 利用现有 API 密钥直接调用多种 LLM，现因计划性退役而终止服务。",
+        "take": "依赖 GitHub Models 作为 CI/CD 中 LLM 调用通道的 agent 工作流需立即迁移至自托管 API 或直接调用各提供商端点，并改用显式密钥管理。这标志了平台内置模型网关的不可持续性，未来应在 workflow 中内嵌 provider 抽象层，避免与单一平台绑定。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-07-expanding-daybreak-as-the-cyber-defense-window-narrows",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+        "publishedDate": "2026-08-10",
+        "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+        "summary": "OpenAI推出GPT-5.6-Cyber，专为网络安全设计，通过Daybreak Red平台向授权研究人员提供漏洞研究、漏洞利用验证与安全测试能力。",
+        "take": "该模型将AI代理直接嵌入攻击面分析流程，显著压缩了从漏洞发现到验证的周期。构建安全工具链时，应优先集成此类专用模型以自动化利用链验证，并设计权限隔离机制以确保合规。此动向表明，AI在防御窗口收窄的背景下正从辅助分析转向主动测试执行者。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-08-how-to-organize-claude-code-for-product-work",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.theaithinker.com/p/how-to-organize-claude-code-for-product",
+        "publishedDate": "2026-08-10",
+        "title": "How to organize Claude Code for product work",
+        "summary": "开发者基于产品工作流，提出将Claude Code按模块化任务目录（如分析、生成、验证）组织，配合显式上下文文件和状态追踪机制，以提升多步骤AI编码的稳定性与可维护性。",
+        "take": "核心工程启示：将Claude Code的输入输出拆分为可复用的原子任务单元，并在文件系统中固化中间产物（如需求、架构、测试结果），避免上下文丢失和逻辑漂移。这为构建可审计的AI驱动开发流水线提供了模式：以文件作为记忆层，以目录结构作为状态机，从而把不可控的对话式编码转变为可预测的批处理流程。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-09-putting-frontier-cyber-models-in-more-trusted-hands",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+        "publishedDate": "2026-08-10",
+        "title": "Putting frontier cyber models in more trusted hands",
+        "summary": "OpenAI宣布经批准的合作夥伴可使用其前沿網路安全模型（代號Daybreak）提供經授權且受監管的網路安全服務，將模型權限限制於受信任的第三方。",
+        "take": "此舉顯示OpenAI開始將高風險能力（如漏洞研究與網路防禦）以治理框架分發給特定合作方，而非全面開放。對AI建構者而言，這意味著前沿模型的企業級安全部署將伴隨嚴格審核、責任分擔與監管機制，未來整合此類能力需設計合規層，並預期API層級將出現更細緻的存取控制與使用追蹤。這也暗示代理型安全工具（如自動化滲透測試）的商用化將以授權生態為前提，而非通用API。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-10-builder-theme-ryo-lu-on-i-left-cursor-after-10-years-inside-the-tech-bubble-in-san-francisco",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Ryo Lu",
+        "sourceUrl": "https://x.com/ryolu_/status/2086854498639822942",
+        "title": "Builder Theme: Ryo Lu on i left Cursor. after 10 years inside the tech bubble in San Francisco...",
+        "summary": "Ryo Lu 在舊金山科技圈工作十年後，離開 Cursor，選擇移居亞洲，以尋求更慢的節奏、更多生活文化體驗，並在此基礎上繼續自由開發。",
+        "take": "對 AI builders 而言，這反映地理與節奏的選擇正成為開發者生態的一環。Cursor 類 AI 工具已高度遠端化，頂尖工程師可在非矽谷環境維持產能；但團隊文化與個人注意力配置仍是關鍵變數，異地開發可能改變協作時區與產品回饋迴圈，需重新設計 workflow。此趨勢暗示，未來 AI 工具的競爭不只是功能，而是如何支援分散式、高自主性的開發者生活型態。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-11-11-builder-theme-thibault-sottiaux-on-hi-it-is-done",
+        "briefingId": "rss-2026-08-11",
+        "date": "2026-08-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2086972802457063486",
+        "title": "Builder Theme: Thibault Sottiaux on Hi. It is done.",
+        "summary": "Thibault Sottiaux 宣布其AI建構者相關項目已完成，並附上具體成果連結。",
+        "take": "對AI建構者而言，此舉代表一個可立即驗證的里程碑；工程上應直接檢視連結內容以提取實作細節，而非依賴摘要敘述。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

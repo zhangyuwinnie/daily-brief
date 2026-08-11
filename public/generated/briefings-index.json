@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-11",
     "2026-08-10",
     "2026-08-09",
     "2026-08-08",
@@ -182,6 +183,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-11": {
+      "briefingIds": [
+        "rss-2026-08-11"
+      ],
+      "insightIds": [
+        "rss-2026-08-11-01-muse-glimmer-30b-parameter-model-optimized-for-always-on-local-agent-workflows",
+        "rss-2026-08-11-02-introducing-muse-glimmer",
+        "rss-2026-08-11-03-build-low-latency-multilingual-voice-agents-open-weights-full-deployment-control-with-nvidia-magpie-tts",
+        "rss-2026-08-11-04-vercel-sandbox-now-runs-on-vercel-managed-images",
+        "rss-2026-08-11-05-a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+        "rss-2026-08-11-06-github-models-is-now-retired",
+        "rss-2026-08-11-07-expanding-daybreak-as-the-cyber-defense-window-narrows",
+        "rss-2026-08-11-08-how-to-organize-claude-code-for-product-work",
+        "rss-2026-08-11-09-putting-frontier-cyber-models-in-more-trusted-hands",
+        "rss-2026-08-11-10-builder-theme-ryo-lu-on-i-left-cursor-after-10-years-inside-the-tech-bubble-in-san-francisco",
+        "rss-2026-08-11-11-builder-theme-thibault-sottiaux-on-hi-it-is-done"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-10": {
       "briefingIds": [
         "rss-2026-08-10"
