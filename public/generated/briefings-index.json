@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-12",
     "2026-08-11",
     "2026-08-10",
     "2026-08-09",
@@ -183,6 +184,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-12": {
+      "briefingIds": [
+        "rss-2026-08-12"
+      ],
+      "insightIds": [
+        "rss-2026-08-12-01-stealing-reasoning-traces-from-proprietary-llm-apis",
+        "rss-2026-08-12-02-there-are-no-lossless-transformations-of-natural-language-text",
+        "rss-2026-08-12-03-from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer",
+        "rss-2026-08-12-04-daybreak-models-are-now-available-on-aws",
+        "rss-2026-08-12-05-vercel-connect-now-supports-cli-setup-for-100-connectors",
+        "rss-2026-08-12-06-from-assistance-to-execution-how-enterprises-put-ai-to-work",
+        "rss-2026-08-12-07-deepseek-overtakes-google-on-volume-cost-per-token-falls-136",
+        "rss-2026-08-12-08-introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement",
+        "rss-2026-08-12-09-what-sort-of-maths-are-llms-good-at",
+        "rss-2026-08-12-10-builder-theme-the-biggest-ai-deployment-nobody-talks-about-samsara-ceo-sanjit-biswas",
+        "rss-2026-08-12-11-builder-theme-thibault-sottiaux-on-we-did-it-finally-codex-amp-chatgpt-desktop-now-on-linux-than",
+        "rss-2026-08-12-12-builder-theme-boris-cherny-on-llms-still-produce-bugs-but-those-bugs-are-different-than-what-they"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-11": {
       "briefingIds": [
         "rss-2026-08-11"
