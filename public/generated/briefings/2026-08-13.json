@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-13",
+  "briefings": [
+    {
+      "id": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-13",
+      "filePath": "2026-08-13.md",
+      "summaryTopline": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "insightIds": [
+        "rss-2026-08-13-01-deepseek-v4-pro-0813-on-openrouter",
+        "rss-2026-08-13-02-alchemy-utils-01a0",
+        "rss-2026-08-13-03-use-acp-compatible-harnesses-with-the-ai-sdk-harness-layer",
+        "rss-2026-08-13-04-deepseek-v4-pro-now-runs-updated-weights-on-ai-gateway",
+        "rss-2026-08-13-05-how-ringcentral-builds-ai-native-work-from-engineering-to-ops",
+        "rss-2026-08-13-06-introducing-grok-46",
+        "rss-2026-08-13-07-mindtopo-reveals-vlms8217-spatial-reasoning-abilities",
+        "rss-2026-08-13-08-builder-theme-thibault-sottiaux-on-old-news-actually-from-a-bunch-of-days-ago-but-crossed-that-15m-enj",
+        "rss-2026-08-13-09-builder-theme-claude-on-your-claude-in-chrome-sessions-now-carry-over-to-desktop-web-and-mo"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-13-01-deepseek-v4-pro-0813-on-openrouter",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "publishedDate": "2026-08-12",
+      "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "summary": "DeepSeek V4 Pro 0813 (on OpenRouter) The latest DeepSeek Pro model is now available, via API only. I had to link to OpenRouter because DeepSeek don't have any obvious announcement 。",
+      "take": "这件事与 LLM、Reasoning 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-13-02-alchemy-utils-01a0",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "publishedDate": "2026-08-12",
+      "title": "alchemy-utils 0.1a0",
+      "summary": "Simon Willison 使用 Codex 和 GPT-5.6 Sol Ultra 构建 alchemy-utils 0.1a0 原型，旨在以 SQLAlchemy 为后端，复制 sqlite-utils 的核心 API（insert/upsert/insert_all/update 及表内省），支持 PostgreSQL、SQLite 和 DuckDB，并遵循 TDD 与 uv 初始化流程。",
+      "take": "此项目验证了 AI 代理可快速将特定数据库工具抽象为多数据库通用层，关键模式是让 LLM 基于现有代码库做研究尖峰并生成兼容 API。对构建者而言，这意味着可显著降低跨数据库工具链的迁移成本，但需注意 SQLAlchemy 抽象层可能带来的性能开销及方言特性丢失，建议在原型阶段严格用 pytest 覆盖各引擎差异。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-13-03-use-acp-compatible-harnesses-with-the-ai-sdk-harness-layer",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/use-acp-compatible-harnesses-with-the-ai-sdk-harness-layer",
+      "publishedDate": "2026-08-13",
+      "title": "Use ACP-compatible harnesses with the AI SDK harness layer",
+      "summary": "Vercel 的 AI SDK harness 层新增 @ai-sdk/harness-acp 元适配器，通过 HarnessAgent 支持任何符合 Agent Client Protocol (ACP) 的 harness，取代了原先针对 Claude Code、Codex 等特定运行时的单独适配器。",
+      "take": "该元适配器将 harness 适配逻辑从具体运行时抽象到协议层，使开发者只需实现 ACP 兼容包即可接入任意编码代理，显著降低集成成本。但需注意 ACP 并非所有 harness 都支持，且可能限制或改变部分 harness 的功能表现，选择时需评估协议抽象带来的能力损失。这标志着 AI 代理工具链正从“每个运行时写适配器”转向“统一协议 + 协议适配”的标准化方向。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-13-04-deepseek-v4-pro-now-runs-updated-weights-on-ai-gateway",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/deepseek-v4-pro-now-runs-updated-weights-on-ai-gateway",
+      "publishedDate": "2026-08-12",
+      "title": "DeepSeek V4 Pro now runs updated weights on AI Gateway",
+      "summary": "Vercel AI Gateway 已将 DeepSeek V4 Pro 更新至新权重版本（模型ID: deepseek/deepseek-v4-pro-0813），默认路由旧ID请求至新权重，并支持通过 coding-agents 命令在编码代理中配置使用，且不收取推理平台费用。",
+      "take": "编码代理若沿用 deepseek/deepseek-v4-pro 旧ID将自动获得新权重，但如需显式锁定版本则改调 -0813 后缀。对构建AI代理的团队，重点是AI Gateway实现了权重热切换而无需改动客户端代码，同时BYOK下零平台抽成降低了规模化推理成本，适合作为多代理或多租户场景的统一模型路由层。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-13-05-how-ringcentral-builds-ai-native-work-from-engineering-to-ops",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/ringcentral",
+      "publishedDate": "2026-08-12",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "summary": "RingCentral利用ChatGPT Work与Codex将AI产品开发加速并整合工程与运维的运营智能，实现AI原生工作流。",
+      "take": "工程团队可借鉴其模式：以Codex作为代码生成与任务自动化的核心代理，结合统一LLM入口（如ChatGPT Work）打通从需求到部署的闭环，从而减少跨工具上下文切换，并让运维情报直接反哺开发决策。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-13-06-introducing-grok-46",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/grok-4-6",
+      "publishedDate": "2026-08-12",
+      "title": "Introducing Grok 4.6",
+      "summary": "Cursor博客发布Grok 4.6，专为长时间运行的代理及更复杂的交互式和视觉任务设计。",
+      "take": "该模型针对代理工作流中的长时运行场景优化，意味着在需要持续多步推理和视觉交互的构建中，可将其作为更强的后端模型。开发者应优先测试其在长时间上下文保持和视觉理解上的实际性能，以匹配现有的代理编排层。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-13-07-mindtopo-reveals-vlms8217-spatial-reasoning-abilities",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedDate": "2026-08-12",
+      "title": "MindTopo reveals VLMs&#8217; spatial reasoning abilities",
+      "summary": "微软研究院推出MindTopo基准测试，通过路径、围栏、绳结等拓扑关系任务，系统评估视觉语言模型（VLM）的空间推理与规划能力。",
+      "take": "MindTopo为VLM的空间推理提供了可量化的新评测维度，揭示当前模型在拓扑关系理解上的局限。开发者可基于此基准优化模型对非欧几里得空间关系的表征与推理机制，并为具身智能或导航类agent的规划模块设计提供测试基线。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-13-08-builder-theme-thibault-sottiaux-on-old-news-actually-from-a-bunch-of-days-ago-but-crossed-that-15m-enj",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2087706104814023111",
+      "title": "Builder Theme: Thibault Sottiaux on Old news actually from a bunch of days ago, but crossed that 15M. Enj...",
+      "summary": "Thibault Sottiaux 宣布其AI项目在经历一波流量高峰后，已突破1500万次访问量，并预告即将进行系统重置与加速部署。",
+      "take": "对于AI builder，高并发流量下的系统重置是常态运维操作，需重点设计可快速回滚的状态管理机制。借鉴其'跨过阈值即重置'的策略，可有效避免累积状态导致的性能退化。落地时优先关注缓存失效、连接池重建和任务队列清空等关键路径。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-13-09-builder-theme-claude-on-your-claude-in-chrome-sessions-now-carry-over-to-desktop-web-and-mo",
+      "briefingId": "rss-2026-08-13",
+      "date": "2026-08-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2087635262390026525",
+      "title": "Builder Theme: Claude on Your Claude in Chrome sessions now carry over to desktop, web, and mo...",
+      "summary": "Anthropic 将 Claude 的 Chrome 会话状态（含对话、技能与连接器）跨桌面、网页与移动端同步，支持 Max 与 Team 套餐，Pro 用户数周内逐步开放。",
+      "take": "会话持久化与跨端统一是代理工作流的关键基础设施，意味着开发者可在浏览器中启动的复杂多步任务（依赖 skills/connectors）无缝迁移到其他设备继续执行，无需重建上下文。这降低了移动端或跨设备 Agent 编排的工程成本，但需注意同步冲突与技能权限的跨端一致性设计。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
