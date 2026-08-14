@@ -1,0 +1,258 @@
+{
+  "date": "2026-08-14",
+  "briefings": [
+    {
+      "id": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-14",
+      "filePath": "2026-08-14.md",
+      "summaryTopline": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "insightIds": [
+        "rss-2026-08-14-01-previewing-ultrafast-mode-gpt-56-sol-at-up-to-14x-the-speed",
+        "rss-2026-08-14-02-llm-gemini-033",
+        "rss-2026-08-14-03-the-builders-guide-to-gpt56",
+        "rss-2026-08-14-04-introducing-gemini-37-flash",
+        "rss-2026-08-14-05-record-train-and-deploy-from-one-place-with-strands-agents-lerobot-and-hugging-face-storage-buckets",
+        "rss-2026-08-14-06-grok-build-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-08-14-07-exa-joins-the-vercel-agent-marketplace",
+        "rss-2026-08-14-08-what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
+        "rss-2026-08-14-09-quoting-florian-herrengt",
+        "rss-2026-08-14-10-cursor-is-joining-spacex",
+        "rss-2026-08-14-11-builder-theme-boris-cherny-on-a-weird-experiment-ive-been-trying-the-last-few-weeks-is-having-clau",
+        "rss-2026-08-14-12-builder-theme-thibault-sottiaux-on-sometimes-you-have-have-to-go-ultrafast"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-14-01-previewing-ultrafast-mode-gpt-56-sol-at-up-to-14x-the-speed",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/previewing-ultrafast",
+      "publishedDate": "2026-08-13",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "summary": "OpenAI 预览其新的 API 服务层级 Ultrafast，该层级通过 Cerebras 硬件加速，为 GPT-5.6 Sol 模型提供高达 14 倍的推理速度，输出速率最高可达每秒 750 个 token。",
+      "take": "对于延迟敏感的代理化工作流，此服务层级意味着可将推理时间缩短一个数量级，使得实时交互式代理或大规模流式生成场景变得可行。开发者需重新评估其请求批处理策略与流式解析逻辑，以充分利用极高的 token 吞吐量，并注意该速度提升可能伴随的成本模型变化。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-14-02-llm-gemini-033",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "publishedDate": "2026-08-13",
+      "title": "llm-gemini 0.33",
+      "summary": "llm-gemini 0.33 插件发布，新增支持 Gemini 3.7 Flash、3.6 Flash、3.5 Flash Lite 及两个嵌入模型，并兼容 LLM 0.32，支持显示推理轨迹及通过 -T CodeExecution 启用服务端工具。",
+      "take": "服务端工具（如代码执行）现在可通过命令行参数直接启用，无需额外客户端逻辑，简化了代理端工具编排。推理轨迹的可见性提升，使调试模型思考过程更直接，但 3.7 Flash 移除了 minimal 思考选项，需注意阈值调整。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-14-03-the-builders-guide-to-gpt56",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "publishedDate": "2026-08-13",
+      "title": "The builder’s guide to GPT‑5.6",
+      "summary": "OpenAI 发布 GPT-5.6 构建者指南，重点展示初创公司如何通过更优的模型选择和新的 Responses API 能力，构建更快、更具成本效益的 AI 代理。",
+      "take": "核心工程信号是模型选择策略的转变：不再默认使用最大模型，而是根据任务复杂度动态路由到更小、更便宜的变体。Responses API 新增的能力可能简化了代理状态管理与工具调用循环，降低了多步推理的延迟和成本。构建者应重新评估其代理工作流，将模型级联和 API 原生状态管理作为默认架构，而非事后优化。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-14-04-introducing-gemini-37-flash",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "publishedDate": "2026-08-13",
+      "title": "Introducing Gemini 3.7 Flash",
+      "summary": "Google DeepMind 發布 Gemini 3.7 Flash，一個專為低延遲與高吞吐量工具呼叫設計的輕量級模型，可能採用混合專家或蒸餾架構來壓縮推理路徑。",
+      "take": "核心工程意涵在於：針對 agent 密集的 function calling 與多步工具鏈，此類輕量模型可作為預濾器或因應高頻次請求的執行器，降低整體延遲與成本。開發者應立即測試其與既有 agent 框架的延遲基準，並將路徑切換邏輯設計成動態分流，讓複雜推理仍走大型模型，簡單工具操作走 Flash 版，形成最佳化的異構代理架構。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-05-record-train-and-deploy-from-one-place-with-strands-agents-lerobot-and-hugging-face-storage-buckets",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedDate": "2026-08-13",
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "summary": "Hugging Face 发布 Strands Agents 与 LeRobot 及 Storage Buckets 的集成方案，实现从机器人数据采集、模型训练到部署的一体化闭环工作流。",
+      "take": "该方案将数据流管道（录制→存储→训练→部署）标准化为可复用的 Agent 工具链，显著降低机器人学习项目的工程复杂度。开发者可直接利用 Hugging Face 基础设施构建数据飞轮，无需自建存储和版本管理系统，加速从演示到生产模型的迭代周期。此模式可作为多模态 Agent 数据管理的参考范式。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-06-grok-build-is-now-available-in-the-ai-sdk-harness-layer",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/grok-build-harness-adapter",
+      "publishedDate": "2026-08-13",
+      "title": "Grok Build is now available in the AI SDK harness layer",
+      "summary": "Vercel 在 AI SDK harness 层新增 Grok Build 适配器 (@ai-sdk/harness-grok-build)，基于 ACP 适配器构建，使 Grok Build 可通过统一 HarnessAgent 接口与 Claude Code、Codex 等运行时无缝切换。",
+      "take": "工程上，harness 层抽象了编码代理运行时的调用边界，允许应用以统一接口替换底层代理而不改业务代码。基于 ACP 的适配意味着 Grok Build 遵循标准 Agent Client Protocol，可复用现有工具链的互操作性逻辑，降低多代理编排的集成成本。此更新提示开发者应优先选择支持 ACP 的代理，以最大化未来可移植性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-07-exa-joins-the-vercel-agent-marketplace",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/exa-joins-the-vercel-agent-marketplace",
+      "publishedDate": "2026-08-13",
+      "title": "Exa joins the Vercel Agent Marketplace",
+      "summary": "Exa 的神经搜索引擎以原生集成方式加入 Vercel Agent Marketplace，通过单一 API 密钥统一访问其所有产品，计费直接关联 Vercel 账户，并提供 Next.js 搜索模板以快速部署。",
+      "take": "开发者可在 Vercel 应用内直接调用 Exa 的即时搜索、深度答案与内容提取能力，为 agent 提供实时网络数据，显著简化工具链集成。此模式暗示平台化 AI 市场正整合搜索基础设施，以强化 agent 的环境感知与事实依据，减少自建抓取与解析成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-08-what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+      "publishedDate": "2026-08-13",
+      "title": "What 50 open source projects taught us about security in the AI era",
+      "summary": "GitHub Secure Open Source Fund 第四期整合AI辅助工作流、维护者专业知识、GitHub安全工具、专家指导及资金，对50个开源项目进行安全强化，并总结其经验。",
+      "take": "AI辅助工作流需与人工审查及专业工具链结合，才能有效提升开源项目安全性。安全加固应作为持续流程，而非一次性审计，同时资金与专家指导是落地关键要素。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-09-quoting-florian-herrengt",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "publishedDate": "2026-08-12",
+      "title": "Quoting Florian Herrengt",
+      "summary": "Florian Herrengt 指出，团队过度依赖 AI 修复 bug，导致项目复杂度超出任何成员的理解能力，形成认知债务。",
+      "take": "当 AI 生成的代码缺乏人工审查和架构约束时，系统会快速积累不可理解的抽象层，最终使调试成本指数上升。工程团队必须强制 AI 输出可验证的中间设计文档，并设定复杂度上限，否则 AI 辅助开发将加速技术债的积累而非消除。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-10-cursor-is-joining-spacex",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/joining-spacex",
+      "publishedDate": "2026-08-14",
+      "title": "Cursor is joining SpaceX",
+      "summary": "Cursor已被SpaceX正式收购，标志着AI编程工具进入航天工程基础设施市场。",
+      "take": "工程团队需评估Cursor在受监管、高可靠性场景下的合规性与供应链风险；此收购可能加速AI辅助代码生成在航天软件验证流程中的落地，也可能导致Cursor产品方向偏向内部工具，影响外部开发者生态的优先级。",
+      "topics": [
+        "Coding Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-11-builder-theme-boris-cherny-on-a-weird-experiment-ive-been-trying-the-last-few-weeks-is-having-clau",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2088014489438621990",
+      "title": "Builder Theme: Boris Cherny on A weird experiment I've been trying the last few weeks is having Clau...",
+      "summary": "Boris Cherny 在 Slack 频道中通过 Claude Tag 运行每日例行任务（崩溃模糊测试、重复抽象统一、死代码移除、抽象泄漏修复等），让 Claude 接管其应用套件（iOS、Android、桌面、Web、CLI、Agent SDK）的日常维护，并观察到初步可行迹象。",
+      "take": "将 LLM 从一次性代码生成任务转向持续维护代理时，关键在于将工程维护拆解为可每日执行的确定性工作流（如崩溃复现+修复、死代码检测+二次验证），而非依赖模型自主规划。这种模式验证了构建异步维护代理的可行性：通过 Slack 作为控制平面，让模型在真实代码库上以低风险、可回滚的方式执行重复性重构，从而释放人工精力用于更高层设计。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-14-12-builder-theme-thibault-sottiaux-on-sometimes-you-have-have-to-go-ultrafast",
+      "briefingId": "rss-2026-08-14",
+      "date": "2026-08-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2088019704803897705",
+      "title": "Builder Theme: Thibault Sottiaux on Sometimes you have have to go /ultrafast.",
+      "summary": "Thibault Sottiaux 在其帖文中提出，在某些开发或构建场景下，开发者必须切换到「/ultrafast」模式，以极速迭代来应对特定需求或瓶颈。",
+      "take": "核心工程启示在于，AI 构建流程中应预设多种速度档位，而非单一标准执行路径。当面对探索性任务或紧追时间窗口时，主动降级推理深度、跳过中间验证环节，能显著缩短反馈循环。这种显式速度切换机制，可视为对 agent 工作流中「准确性与延迟」权衡的实用战术补充。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
