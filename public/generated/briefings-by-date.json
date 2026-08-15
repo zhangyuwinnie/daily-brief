@@ -37640,5 +37640,122 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-15": {
+    "date": "2026-08-15",
+    "briefings": [
+      {
+        "id": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-15",
+        "filePath": "2026-08-15.md",
+        "summaryTopline": "Don't classify. Hallucinate!",
+        "insightIds": [
+          "rss-2026-08-15-01-dont-classify-hallucinate",
+          "rss-2026-08-15-02-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
+          "rss-2026-08-15-03-maximizing-the-value-of-your-claude-code-sessions",
+          "rss-2026-08-15-04-builder-theme-thibault-sottiaux-on-whats-a-hard-problem-codex-solved-for-you-this-week-where-do-you-le",
+          "rss-2026-08-15-05-builder-theme-josh-woodward-on-37-flash-is-in-the-geminiapp"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-15-01-dont-classify-hallucinate",
+        "briefingId": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+        "publishedDate": "2026-08-14",
+        "title": "Don't classify. Hallucinate!",
+        "summary": "Simon Willison 介紹 Doug Turnbull 提出的新方法：不直接讓 LLM 從既有標籤集中分類，而是先讓模型自由產生新標籤，再利用向量嵌入比對既有標籤語料庫，找出最相似的既有標籤作為最終結果。",
+        "take": "此方法解決了 LLM 在大量標籤（如 1856 個）下無法一次處理的分類問題，將分類任務轉為生成+檢索的兩階段流程。工程上可應用於任何需要對大量既有類別進行分類的場景（如票務系統、文件歸檔），透過向量相似度取代精確匹配，同時保留模型對新概念的理解彈性，並降低提示詞長度與分類錯誤率。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-15-02-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
+        "briefingId": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
+        "publishedDate": "2026-08-14",
+        "title": "How to bring your software delivery workflow into GitHub with agent apps",
+        "summary": "GitHub 推出四款代理应用，将软件交付生命周期（SDLC）中的范围界定、安全、发布与上线流程直接嵌入 GitHub 平台，使得开发、安全与运维工作无需离开 GitHub 即可完成。",
+        "take": "这一机制将传统分散在 Jenkins、Jira、安全扫描工具中的工作流收敛为 GitHub 原生代理编排，关键在于代理间的上下文共享与状态传递。工程团队应评估其现有 SDLC 工具链的耦合同步成本，并将可自动化的决策节点（如安全门禁、发布审批）迁移至代理应用，以降低跨系统切换的开销并提升端到端可追溯性。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-15-03-maximizing-the-value-of-your-claude-code-sessions",
+        "briefingId": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+        "publishedDate": "2026-08-14",
+        "title": "Maximizing the value of your Claude Code sessions",
+        "summary": "Anthropic发布官方指南，系统阐述通过结构化工作流、上下文管理及工具调用优化来最大化Claude Code会话价值的工程实践。",
+        "take": "核心在于将Claude Code视为可编程的代理运行时，而非简单聊天界面。开发者应利用其CLI接口、子代理机制和文件系统权限，构建可复用的自动化流水线，并将会话状态持久化以支持复杂任务分解与断点续跑。这标志着从交互式编码向声明式、可编排的AI软件开发范式的转变。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-15-04-builder-theme-thibault-sottiaux-on-whats-a-hard-problem-codex-solved-for-you-this-week-where-do-you-le",
+        "briefingId": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2088500028721832432",
+        "title": "Builder Theme: Thibault Sottiaux on What’s a hard problem codex solved for you this week? Where do you le...",
+        "summary": "OpenAI的Thibault Sottiaux在X上发起讨论，征集开发者如何使用Codex解决本周复杂问题，并探讨如何从他人经验中学习以推进工程边界。",
+        "take": "对于AI构建者，Codex已从代码生成工具演变为解决具体工程难题的协作代理。关注社区中‘硬问题’的应用实例，能提炼出超越文档的模式化技巧，直接转化为自身工作流的效率提升。建议将此类问答作为迭代反馈信号，驱动工具链配置与提示策略的优化。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-15-05-builder-theme-josh-woodward-on-37-flash-is-in-the-geminiapp",
+        "briefingId": "rss-2026-08-15",
+        "date": "2026-08-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Josh Woodward",
+        "sourceUrl": "https://x.com/joshwoodward/status/2088344782821326980",
+        "title": "Builder Theme: Josh Woodward on 3.7 Flash is in the @GeminiApp",
+        "summary": "Google將Gemini 3.7 Flash模型整合至Gemini應用程式，使開發者與使用者可直接在官方產品介面中存取該模型。",
+        "take": "此舉代表Google將最新輕量級模型直接導入前端產品，縮短模型部署至用戶觸點的延遲。對AI builders而言，意味著可更快在生產環境測試新模型，並需評估其與既有Gemini模型的效能差異，以調整代理工作流的模型選擇策略。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

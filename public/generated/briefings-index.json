@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-15",
     "2026-08-14",
     "2026-08-13",
     "2026-08-12",
@@ -186,6 +187,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-15": {
+      "briefingIds": [
+        "rss-2026-08-15"
+      ],
+      "insightIds": [
+        "rss-2026-08-15-01-dont-classify-hallucinate",
+        "rss-2026-08-15-02-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
+        "rss-2026-08-15-03-maximizing-the-value-of-your-claude-code-sessions",
+        "rss-2026-08-15-04-builder-theme-thibault-sottiaux-on-whats-a-hard-problem-codex-solved-for-you-this-week-where-do-you-le",
+        "rss-2026-08-15-05-builder-theme-josh-woodward-on-37-flash-is-in-the-geminiapp"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-14": {
       "briefingIds": [
         "rss-2026-08-14"
