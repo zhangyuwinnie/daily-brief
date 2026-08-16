@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-16",
     "2026-08-15",
     "2026-08-14",
     "2026-08-13",
@@ -187,6 +188,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-16": {
+      "briefingIds": [
+        "rss-2026-08-16"
+      ],
+      "insightIds": [
+        "rss-2026-08-16-01-cors-chat",
+        "rss-2026-08-16-02-software-engineering-fundamentals-matter-more",
+        "rss-2026-08-16-03-builder-theme-thibault-sottiaux-on-incredible-things-are-happening-at-openai-right-now-energy-is-high",
+        "rss-2026-08-16-04-builder-theme-thariq-on-watermarking-without-quality-loss-is-a-bit-unintuitive-doesnt-feel"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-15": {
       "briefingIds": [
         "rss-2026-08-15"
