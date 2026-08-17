@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-17",
     "2026-08-16",
     "2026-08-15",
     "2026-08-14",
@@ -188,6 +189,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-17": {
+      "briefingIds": [
+        "rss-2026-08-17"
+      ],
+      "insightIds": [
+        "rss-2026-08-17-01-the-defenders-window",
+        "rss-2026-08-17-02-openai-joins-ports-pike-project",
+        "rss-2026-08-17-03-qwen-38-27b-is-excellent-but-it-defaults-to-wildly-overthinking-things",
+        "rss-2026-08-17-04-quoting-dario-amodei",
+        "rss-2026-08-17-05-builder-theme-openais-model-hacked-us-hugging-faces-thomas-wolf",
+        "rss-2026-08-17-06-builder-theme-thibault-sottiaux-on-here-is-how-to-enable-a-1m-token-context-window-in-codex-for-gpt-56",
+        "rss-2026-08-17-07-builder-theme-thariq-on-it-says-a-lot-that-the-creators-of-three-of-the-most-iconic-web-frame"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-16": {
       "briefingIds": [
         "rss-2026-08-16"
