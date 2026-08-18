@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-18",
     "2026-08-17",
     "2026-08-16",
     "2026-08-15",
@@ -189,6 +190,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-18": {
+      "briefingIds": [
+        "rss-2026-08-18"
+      ],
+      "insightIds": [
+        "rss-2026-08-18-01-partnering-with-codeai-to-prepare-the-first-ai-generation",
+        "rss-2026-08-18-02-new-policy-ideas-for-the-intelligence-age",
+        "rss-2026-08-18-03-qwen-38-27b-scores-52-on-the-artificial-analysis-intelligence-index",
+        "rss-2026-08-18-04-we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
+        "rss-2026-08-18-05-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+        "rss-2026-08-18-06-claude-writing-a-macos-driver-for-my-obscure-hp-printer-built-only-for-windows",
+        "rss-2026-08-18-07-deploy-cursor-origin-repositories-with-vercel-in-public-beta",
+        "rss-2026-08-18-08-gpt-56-sol-is-50-off-on-ai-gateway-for-the-next-month",
+        "rss-2026-08-18-09-teaching-everyone-to-fish-for-tokens",
+        "rss-2026-08-18-10-builder-theme-chasing-trillion-dollar-companies-founder-ambition-token-budgets-and-regulatory-capture-with-sarah-amp-elad",
+        "rss-2026-08-18-11-builder-theme-thibault-sottiaux-on-what-is-an-obvious-thing-that-we-should-do-with-codex-api-or-our-mod",
+        "rss-2026-08-18-12-builder-theme-guillermo-rauch-on-you-can-now-host-your-repos-in-cursor-origin-and-deploy-to-vercel-via"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-17": {
       "briefingIds": [
         "rss-2026-08-17"

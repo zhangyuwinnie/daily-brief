@@ -38005,5 +38005,257 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-18": {
+    "date": "2026-08-18",
+    "briefings": [
+      {
+        "id": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-18",
+        "filePath": "2026-08-18.md",
+        "summaryTopline": "Partnering with CodeAI to prepare the first AI generation",
+        "insightIds": [
+          "rss-2026-08-18-01-partnering-with-codeai-to-prepare-the-first-ai-generation",
+          "rss-2026-08-18-02-new-policy-ideas-for-the-intelligence-age",
+          "rss-2026-08-18-03-qwen-38-27b-scores-52-on-the-artificial-analysis-intelligence-index",
+          "rss-2026-08-18-04-we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
+          "rss-2026-08-18-05-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+          "rss-2026-08-18-06-claude-writing-a-macos-driver-for-my-obscure-hp-printer-built-only-for-windows",
+          "rss-2026-08-18-07-deploy-cursor-origin-repositories-with-vercel-in-public-beta",
+          "rss-2026-08-18-08-gpt-56-sol-is-50-off-on-ai-gateway-for-the-next-month",
+          "rss-2026-08-18-09-teaching-everyone-to-fish-for-tokens",
+          "rss-2026-08-18-10-builder-theme-chasing-trillion-dollar-companies-founder-ambition-token-budgets-and-regulatory-capture-with-sarah-amp-elad",
+          "rss-2026-08-18-11-builder-theme-thibault-sottiaux-on-what-is-an-obvious-thing-that-we-should-do-with-codex-api-or-our-mod",
+          "rss-2026-08-18-12-builder-theme-guillermo-rauch-on-you-can-now-host-your-repos-in-cursor-origin-and-deploy-to-vercel-via"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-18-01-partnering-with-codeai-to-prepare-the-first-ai-generation",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/partnering-with-codeai",
+        "publishedDate": "2026-08-18",
+        "title": "Partnering with CodeAI to prepare the first AI generation",
+        "summary": "OpenAI與CodeAI建立合作夥伴關係，旨在透過教育計畫培養學生的AI素養、批判性思考能力，以及負責任使用與塑造AI的實作技能。",
+        "take": "此合作反映AI廠商正從工具提供者延伸至教育生態系建構者，以標準化AI素養課程。對開發者而言，未來可能出現更多圍繞AI倫理、評估與負責任使用設計的API或教育框架，值得關注其如何轉化為可整合的技術規範與評估基準。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-18-02-new-policy-ideas-for-the-intelligence-age",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+        "publishedDate": "2026-08-17",
+        "title": "New policy ideas for the Intelligence Age",
+        "summary": "OpenAI 资助 14 个独立研究项目，探索旨在扩大经济机会并增强社会韧性的新 AI 政策框架，以应对智能时代的系统性影响。",
+        "take": "政策制定者与开发者需关注从个体模型能力转向社会级 AI 治理架构的设计。这些项目可能引入新的合规接口、经济再分配机制或数据权利模式，直接影响未来 AI 应用的市场准入条件与部署约束。对构建者而言，应提前将可审计性、可解释性和社会影响评估纳入产品架构，而非事后补救。",
+        "topics": [
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-18-03-qwen-38-27b-scores-52-on-the-artificial-analysis-intelligence-index",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
+        "publishedDate": "2026-08-17",
+        "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+        "summary": "Qwen 3.8 27B 在 Artificial Analysis Intelligence Index 上獲得 52 分，與 GPT-5.6 Luna (max) 持平，僅落後 GLM-5.2 (753B) 與 DeepSeek V4 Pro (1.7T) 一分，展示極高效率的參數規模效益。",
+        "take": "此結果表明，模型智慧密度已成為關鍵競爭維度，27B 規模即可逼近巨型模型表現，開發者應重新評估模型選擇策略，優先採用小體積高評分模型以降低推論成本並提升部署彈性。此趨勢將加速 edge 與端側 AI 應用普及，並促使架構設計轉向多小模型協作而非單一大模型。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-18-04-we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+        "publishedDate": "2026-08-17",
+        "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+        "summary": "404 Media 透過在稀有書籍訂單中放置 AirTag 進行追蹤，揭露大量書籍最終被送往亞馬遜 AI 訓練設施，證實其大規模掃描書籍以作為 AI 訓練資料的運作模式。",
+        "take": "此事件再次驗證 RAG 與模型訓練的資料供應鏈已延伸至實體世界，形成匿名、價格不敏感的書籍收購作業。對 AI 建構者而言，確保訓練資料的來源合法性與可追溯性將成為關鍵的合規與倫理課題，且此類實體資料獲取模式可能成為企業級 AI 訓練的常態做法。",
+        "topics": [
+          "RAG"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-05-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+        "publishedDate": "2026-08-17",
+        "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+        "summary": "GitHub 博客文章介绍如何利用画布（Canvases）界面使代理工作流程可视化、可操控且更节省成本，以弥补纯聊天界面在代理执行过程中信息丢失的问题。",
+        "take": "开发者应将画布作为代理工作流的标准交互层，通过可视化状态和中间产物实现实时干预，避免黑盒执行。这能降低调试成本，提升对代理行动的控制精度，是构建可靠代理系统的关键实践。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-06-claude-writing-a-macos-driver-for-my-obscure-hp-printer-built-only-for-windows",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://twitter.com/kuberwastaken/status/2089377982536388964",
+        "publishedDate": "2026-08-17",
+        "title": "Claude writing a macOS driver for my obscure HP printer built only for Windows",
+        "summary": "开发者利用Claude为仅支持Windows的冷门HP打印机生成了macOS驱动程序，通过逆向工程或协议分析实现跨平台兼容。",
+        "take": "此案例展示LLM在设备驱动逆向与适配中的潜力：利用模型理解硬件协议并生成系统级代码，可大幅降低传统驱动开发门槛。工程启示是，AI可辅助解析专有接口并将其转化为跨平台实现，但需人工验证安全性与稳定性，避免驱动导致的系统级故障。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-07-deploy-cursor-origin-repositories-with-vercel-in-public-beta",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/deploy-cursor-origin-repositories-with-vercel-in-public-beta",
+        "publishedDate": "2026-08-17",
+        "title": "Deploy Cursor Origin repositories with Vercel in public beta",
+        "summary": "Vercel 公开测试版新增对 Cursor Origin 代码仓库的原生集成，允许 Pro 客户连接 Origin 仓库，实现 Pull Request 自动生成 Preview 部署、合并自动触发 Production 部署，并支持通过 Team/Project 设置或仓库内 Apps 标签双向连接。",
+        "take": "该集成标志着 Cursor 从编辑器向托管协作平台延伸，AI 代码生成后的部署闭环被标准化。工程上，团队可将 Origin 作为 Git 事实源，直接复用 Vercel 现有部署管道，无需迁移仓库或配置 CI。注意 Origin 仍处早期 beta，且受 Vercel 私有仓库策略约束，生产环境需评估稳定性与权限边界。",
+        "topics": [
+          "Coding Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-08-gpt-56-sol-is-50-off-on-ai-gateway-for-the-next-month",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/gpt-5-6-sol-is-50-off-on-ai-gateway-for-the-next-month",
+        "publishedDate": "2026-08-17",
+        "title": "GPT-5.6 Sol is 50% off on AI Gateway for the next month",
+        "summary": "Vercel AI Gateway 推出 OpenAI GPT-5.6 Sol 模型五折优惠，截至 9 月 18 日，适用于所有 token 类型、服务层级（含 Priority 快速模式）、缓存及长上下文请求，仅限经 AI Gateway 路由的非 BYOK 调用，价格降至 $2.50/$15.00 每百万 token（输入/输出）。",
+        "take": "工程要点：若你的编码代理或推理管线依赖 GPT-5.6 Sol 且尚未绑定 BYOK，可立即将请求切至 Vercel AI Gateway 以降低 50% 推理成本，尤其在 Priority 模式下节省绝对值最大。此折扣覆盖缓存写入与长上下文，适合高吞吐 agentic 工作负载；但注意该优惠不适用于自带密钥（BYOK），需评估供应商锁定与数据路径变更的权衡。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-09-teaching-everyone-to-fish-for-tokens",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Interconnects AI",
+        "sourceUrl": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+        "publishedDate": "2026-08-17",
+        "title": "Teaching Everyone to Fish for Tokens",
+        "summary": "Nvidia正推动企业自行构建定制模型，以削弱对Anthropic和OpenAI等外部API供应商的依赖，其策略聚焦于提供基础设施与开源工具链，将模型训练与推理能力下放至用户侧。",
+        "take": "对企业AI架构而言，核心转向是自建模型管线的成本与灵活性权衡。Nvidia此举强化了GPU硬件生态与软件栈的绑定，开发者应评估在自有基础设施上微调或训练小模型的可行性，而非默认接入闭源API。这要求工作流集成数据准备、分布式训练和推理优化，同时保留对模型权重和推理路径的控制权，从而在长期降低每token成本并规避外部依赖风险。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-10-builder-theme-chasing-trillion-dollar-companies-founder-ambition-token-budgets-and-regulatory-capture-with-sarah-amp-elad",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "No Priors",
+        "sourceUrl": "https://www.youtube.com/watch?v=6l8oAO_LBx4",
+        "title": "Builder Theme: Chasing Trillion-Dollar Companies, Founder Ambition, Token Budgets, and Regulatory Capture with Sarah &amp; Elad",
+        "summary": "Sarah與Elad在No Priors節目中，以核能安全監管導致美國40年未建反應爐為類比，討論AI風險管理、監管俘獲（regulatory capture）對創業生態的影響，以及全球能容納的兆美元級公司數量。",
+        "take": "監管過度保守（如美國核能產業）可能扼殺創新，AI領域應避免重蹈覆轍，創業者須警惕監管俘獲對產品迭代與市場准入的長期制約。對Builder而言，理解政策風險與資本配置上限是策略規劃的隱性變數，尤其當token預算與算力成本成為規模化關鍵時，監管動向將直接影響資源部署效率。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-11-builder-theme-thibault-sottiaux-on-what-is-an-obvious-thing-that-we-should-do-with-codex-api-or-our-mod",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2089500941842342287",
+        "title": "Builder Theme: Thibault Sottiaux on What is an obvious thing that we should do with Codex, API or our mod...",
+        "summary": "Thibault Sottiaux 在 X 上公开呼吁 AI 构建者反思：有哪些用 Codex、API 或现有模型显然可以做到、却因惯性或短视而尚未执行的高确定性行动。",
+        "take": "核心信号是：当前工程痛点多源于执行惰性，而非能力缺口。立即审计现有 Codex 与 API 工作流，列出所有「技术上可行但未自动化」的环节，优先实现可消除人工往返的确定性改动。此思路指向一种工程纪律：将模型能力视为已就绪资源，而非待探索前沿。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-18-12-builder-theme-guillermo-rauch-on-you-can-now-host-your-repos-in-cursor-origin-and-deploy-to-vercel-via",
+        "briefingId": "rss-2026-08-18",
+        "date": "2026-08-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2089409162270965858",
+        "title": "Builder Theme: Guillermo Rauch on You can now host your repos in Cursor Origin and deploy to Vercel via...",
+        "summary": "Vercel首席执行官Guillermo Rauch宣布，Cursor Origin现已支持代码仓库托管并可直接部署至Vercel，且该服务自身运行于Vercel之上，区别于GitHub的在线特性。",
+        "take": "Cursor Origin与Vercel的深度集成，将代码托管与部署链路统一于同一平台，减少跨系统上下文切换。对AI构建者而言，这意味着更短的反馈回路和更简化的CI/CD管道，可能推动以代理为中心的开发工作流进一步向平台原生一体化演进。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
