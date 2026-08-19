@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-19",
     "2026-08-18",
     "2026-08-17",
     "2026-08-16",
@@ -190,6 +191,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-19": {
+      "briefingIds": [
+        "rss-2026-08-19"
+      ],
+      "insightIds": [
+        "rss-2026-08-19-01-strengthening-democratic-oversight-in-national-security",
+        "rss-2026-08-19-02-pacing-model-development-in-an-era-of-cyber-critical-capabilities",
+        "rss-2026-08-19-03-mojo-is-now-open-source",
+        "rss-2026-08-19-04-how-much-memory-does-your-agent-actually-need",
+        "rss-2026-08-19-05-1-million-hacker-challenge-for-vercel-sandbox",
+        "rss-2026-08-19-06-cline-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-08-19-07-builder-theme-rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again",
+        "rss-2026-08-19-08-builder-theme-sam-altman-on-we-have-paused-some-frontier-rl-training-to-ensure-that-we-can-meet-t",
+        "rss-2026-08-19-09-builder-theme-thibault-sottiaux-on-i-was-gifted-a-very-fancy-new-reset-button-today"
+      ],
+      "hasAudio": true,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-18": {
       "briefingIds": [
         "rss-2026-08-18"

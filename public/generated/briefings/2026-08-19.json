@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-19",
+  "briefings": [
+    {
+      "id": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-19",
+      "filePath": "2026-08-19.md",
+      "summaryTopline": "Strengthening democratic oversight in national security",
+      "insightIds": [
+        "rss-2026-08-19-01-strengthening-democratic-oversight-in-national-security",
+        "rss-2026-08-19-02-pacing-model-development-in-an-era-of-cyber-critical-capabilities",
+        "rss-2026-08-19-03-mojo-is-now-open-source",
+        "rss-2026-08-19-04-how-much-memory-does-your-agent-actually-need",
+        "rss-2026-08-19-05-1-million-hacker-challenge-for-vercel-sandbox",
+        "rss-2026-08-19-06-cline-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-08-19-07-builder-theme-rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again",
+        "rss-2026-08-19-08-builder-theme-sam-altman-on-we-have-paused-some-frontier-rl-training-to-ensure-that-we-can-meet-t",
+        "rss-2026-08-19-09-builder-theme-thibault-sottiaux-on-i-was-gifted-a-very-fancy-new-reset-button-today"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-19-01-strengthening-democratic-oversight-in-national-security",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "publishedDate": "2026-08-18",
+      "title": "Strengthening democratic oversight in national security",
+      "summary": "OpenAI 启动一项倡议，通过提供工具、培训与专家支持，加强政府对国家安防领域中 AI 应用的民主监督机制。",
+      "take": "对构建者而言，这标志着 AI 供应链将引入更多政府审计接口与合规框架，尤其在国家安全场景下。开发者需提前设计可解释性、审计日志与权限隔离，以适配未来公共部门的监督要求。这也暗示了 AI 能力在关键基础设施中的部署将更多受制于政治流程而非纯技术优化。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-19-02-pacing-model-development-in-an-era-of-cyber-critical-capabilities",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "publishedDate": "2026-08-18",
+      "title": "Pacing model development in an era of cyber-critical capabilities",
+      "summary": "OpenAI 发布针对前沿模型的新安全框架，通过强化监控、对齐与安全措施，主动调控模型开发节奏以应对网络关键能力风险。",
+      "take": "开发者需将安全治理视为模型生命周期的一等公民，而非事后补丁。新框架预示未来前沿模型发布将附带更严格的能力边界与运行监控要求，Agent 工作流在自主执行高影响操作前必须集成可审计的安全闸门。这推动安全对齐从静态训练目标转向动态运行时的持续约束。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-19-03-mojo-is-now-open-source",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+      "publishedDate": "2026-08-18",
+      "title": "Mojo🔥 is now open source",
+      "summary": "Mojo编程语言正式开源，编译器与工具链以Apache 2许可证发布，并放弃原有“Python超集”目标，转而利用AI辅助编码工具促进Python向Mojo迁移。",
+      "take": "核心转变在于：Mojo从“兼容Python”转向“独立语言+AI迁移路径”，这降低了生态引导成本。工程上，AI辅助迁移工具成为语言采用的关键杠杆，未来构建语言工具链时，应优先设计面向LLM的迁移接口与代码转换模式，而非追求语法完全兼容。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-19-04-how-much-memory-does-your-agent-actually-need",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "publishedDate": "2026-08-18",
+      "title": "How Much Memory Does Your Agent Actually Need?",
+      "summary": "IBM Research 提出 ALTK-Evolve 框架，通过评估不同记忆窗口大小对代理任务性能的影响，揭示代理所需记忆量与任务复杂度及环境动态性的关系，并动态调整记忆分配策略。",
+      "take": "核心工程启示：代理的记忆配置不应是固定超参数，而需根据任务状态动态演化。开发者可借鉴该框架，将记忆窗口视为可调资源，通过在线监控任务性能（如累计奖励或错误率）来实时增减记忆容量，以在计算开销与任务表现间取得最优平衡。这暗示下一代代理架构将引入元认知层来管理自身记忆生命周期，而非依赖静态设定。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-19-05-1-million-hacker-challenge-for-vercel-sandbox",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/one-million-dollar-hacker-challenge-for-vercel-sandbox",
+      "publishedDate": "2026-08-18",
+      "title": "$1 million hacker challenge for Vercel Sandbox",
+      "summary": "Vercel 宣布针对其 Sandbox 产品发起 100 万美元黑客挑战赛，强调微VM（Firecracker）与宿主侧网络控制必须同时成立才能实现真正隔离，并公开测试了无防护开源模型对 Sandbox 的逃逸尝试（未成功但成功映射客户内核并构建复现VM）。",
+      "take": "核心工程要点：运行不可信代码的 Agent 沙箱，仅依赖微VM边界不足以防逃逸，必须将网络路径视为一等隔离边界（宿主侧出口控制与VM内核隔离对等）；挑战赛本质是激励验证网络层与VM层联合防线，开发者设计Agent执行环境时应默认网络路径是攻击面，而非仅信任VM隔离。 对于构建RAG或Agent工具链的团队，此事件标志着沙箱安全评估从单一VM逃逸转向全路径攻击面审计，未来需将网络策略与运行时隔离联合测试作为CI/CD强制环节。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-19-06-cline-is-now-available-in-the-ai-sdk-harness-layer",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/cline-harness-adapter",
+      "publishedDate": "2026-08-18",
+      "title": "Cline is now available in the AI SDK harness layer",
+      "summary": "Vercel在AI SDK harness层新增Cline官方适配器@ai-sdk/harness-cline，使Cline通过统一HarnessAgent接口运行，与Claude Code、Codex等并列，且Cline完全运行于宿主进程，以沙箱作为远端文件系统与shell，无需在沙箱内安装桥接进程。",
+      "take": "工程上，这代表编码智能体运行时正走向可插拔标准化：借助HarnessAgent接口，切换Claude Code、Cline或Codex无需改动应用代码，降低绑定成本。对构建多智能体编排或工具链的团队，应优先采用此类抽象层，并留意Cline的进程模型（宿主运行、沙箱仅作远程执行），以规避沙箱内守护进程带来的安全与隔离开销。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-19-07-builder-theme-rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/watch?v=xH7U7w9Qzlo",
+      "title": "Builder Theme: Rich Sutton and Khurram Javed: Why AI Models Stop Learning, and How to Start It Again",
+      "summary": "Rich Sutton與Khurram Javed於podcast中論證，當前AI模型靜態訓練範式違背學習本質，主張所有學習皆應為持續性的，並探討如何透過持續學習機制重啟模型在部署後的學習能力。",
+      "take": "此觀點直指AI開發者依賴的離線訓練+凍結權重流程為例外而非常態。工程上需轉向線上學習架構，設計能於推論時持續更新參數的機制，並處理災難性遺忘與穩定性-可塑性權衡，這將重塑agentic系統的長期自主適應能力。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-19-08-builder-theme-sam-altman-on-we-have-paused-some-frontier-rl-training-to-ensure-that-we-can-meet-t",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2089787807611195475",
+      "title": "Builder Theme: Sam Altman on We have paused some frontier RL training to ensure that we can meet t...",
+      "summary": "OpenAI 暂停部分前沿强化学习训练，以遵循对齐、安全与监控标准，并指出模型进展速度已超过安全对齐步伐，未来安全信心将决定 AI 进展节奏。",
+      "take": "工程上需将安全护栏视为训练循环的硬性门控条件，而非事后审查；能力扩展与对齐验证需并行，置信度阈值应动态调节训练暂停。同时，单方暂停虽可执行，但行业协调共享标准将是长期必要，构建者可提前设计可验证的对齐接口以应对监管与安全约束。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-19-09-builder-theme-thibault-sottiaux-on-i-was-gifted-a-very-fancy-new-reset-button-today",
+      "briefingId": "rss-2026-08-19",
+      "date": "2026-08-19",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2089941380336644295",
+      "title": "Builder Theme: Thibault Sottiaux on I was gifted a very fancy new reset button today",
+      "summary": "Thibault Sottiaux 宣称获得了一个全新的高级重置按钮，暗示一种能够彻底重置或重新初始化系统状态的能力或工具。",
+      "take": "对于AI构建者而言，这预示着一类能够快速回滚或重置Agent状态、上下文或工具链的新机制。重点在于理解重置的范围（局部或全局）和粒度，以便在长时运行或多步代理工作流中设计有效的故障恢复与状态管理策略。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
