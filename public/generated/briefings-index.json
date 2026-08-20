@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-20",
     "2026-08-19",
     "2026-08-18",
     "2026-08-17",
@@ -191,6 +192,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-20": {
+      "briefingIds": [
+        "rss-2026-08-20"
+      ],
+      "insightIds": [
+        "rss-2026-08-20-01-offering-zero-data-retention-for-frontier-models",
+        "rss-2026-08-20-02-smolmachines-smolvm-as-a-sandbox-for-untrusted-python-javascript",
+        "rss-2026-08-20-03-quoting-jeremy-morrell",
+        "rss-2026-08-20-04-algolia-joins-the-vercel-marketplace",
+        "rss-2026-08-20-05-introducing-vercel-for-slack",
+        "rss-2026-08-20-06-builder-theme-the-ai-alien-companion-app-thats-bringing-in-4m-a-year-best-of-the-pod",
+        "rss-2026-08-20-07-builder-theme-thibault-sottiaux-on-it-has-not-been-used-yet-but-would-you-look-at-that-codex-for-scale",
+        "rss-2026-08-20-08-builder-theme-amjad-masad-on-agents-made-software-cheaper-but-made-coding-expensive-today-togeth"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-19": {
       "briefingIds": [
         "rss-2026-08-19"

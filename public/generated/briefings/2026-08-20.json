@@ -1,0 +1,175 @@
+{
+  "date": "2026-08-20",
+  "briefings": [
+    {
+      "id": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-20",
+      "filePath": "2026-08-20.md",
+      "summaryTopline": "Offering Zero Data Retention for frontier models",
+      "insightIds": [
+        "rss-2026-08-20-01-offering-zero-data-retention-for-frontier-models",
+        "rss-2026-08-20-02-smolmachines-smolvm-as-a-sandbox-for-untrusted-python-javascript",
+        "rss-2026-08-20-03-quoting-jeremy-morrell",
+        "rss-2026-08-20-04-algolia-joins-the-vercel-marketplace",
+        "rss-2026-08-20-05-introducing-vercel-for-slack",
+        "rss-2026-08-20-06-builder-theme-the-ai-alien-companion-app-thats-bringing-in-4m-a-year-best-of-the-pod",
+        "rss-2026-08-20-07-builder-theme-thibault-sottiaux-on-it-has-not-been-used-yet-but-would-you-look-at-that-codex-for-scale",
+        "rss-2026-08-20-08-builder-theme-amjad-masad-on-agents-made-software-cheaper-but-made-coding-expensive-today-togeth"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-20-01-offering-zero-data-retention-for-frontier-models",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "publishedDate": "2026-08-19",
+      "title": "Offering Zero Data Retention for frontier models",
+      "summary": "OpenAI 为符合条件的 API 客户提供零数据保留（ZDR）选项，并预览私有安全处理机制，在先进 AI 安全审查中不牺牲数据隐私。",
+      "take": "ZDR 消除了服务端存储原始请求/响应的合规负担，但需验证实际日志与监控链路是否完全隔离。私有安全处理暗示安全审查可在可信执行环境或本地化沙箱中运行，为高敏数据场景的模型调用提供了新路径。工程上应评估 ZDR 对调试、可观测性和安全审计的影响，并设计客户端加密与最小化传输方案以充分利用该特性。",
+      "topics": [
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-20-02-smolmachines-smolvm-as-a-sandbox-for-untrusted-python-javascript",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+      "publishedDate": "2026-08-19",
+      "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+      "summary": "研究評估 smolmachines/smolvm 作為快速安全沙盒，用以執行不受信任的 Python 與 JavaScript 程式碼，並限制 RAM、CPU 時間、網路存取及檔案系統範圍；但 Claude Code for web 的容器環境（本身為 Firecracker guest）無法運行該沙盒。",
+      "take": "核心工程啟示：在受限環境（如 Firecracker guest）中嵌套虛擬機或沙盒並非總是可行，需先驗證宿主環境的虛擬化支援與權限。若要安全執行使用者程式碼，應設計資源配額（如 cgroup）、網路隔離（如 seccomp/nftables）及檔案系統白名單，並將沙盒作為獨立服務部署，而非依賴於同層容器內執行。",
+      "topics": [
+        "Coding Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-20-03-quoting-jeremy-morrell",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
+      "publishedDate": "2026-08-19",
+      "title": "Quoting Jeremy Morrell",
+      "summary": "Jeremy Morrell提出假设：LLM大幅降低扩展编写成本，结合现代沙箱原语降低部署成本并提供安全边界，为Web上的可扩展软件创造新机会，应用可构建稳固核心并让LLM安全填充扩展。",
+      "take": "工程上，此思路指向一种新架构范式：将应用视为可靠核心，利用LLM动态生成扩展代码，并依赖沙箱（如Wasm或隔离进程）保证安全。对AI构建者而言，这意味着可将LLM从对话助手升级为运行时扩展引擎，换取用户自定义能力，但需严格设计沙箱权限与验证机制以防恶意或错误代码。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-20-04-algolia-joins-the-vercel-marketplace",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/algolia-vercel-marketplace",
+      "publishedDate": "2026-08-19",
+      "title": "Algolia joins the Vercel Marketplace",
+      "summary": "Algolia 现已通过 Vercel Marketplace 提供直接配置与管理，安装后自动将凭据注入环境变量，并附带 Agent 技能，使编码代理可直接调用其搜索 API。",
+      "take": "此集成简化了搜索基础设施的部署，代理技能降低了编码代理集成 Algolia 的上下文成本。工程上，应将搜索索引视为可配置资源，而非自建服务；利用 Crawler 自动索引 Vercel 域名，可加速文档或目录类站点的搜索功能上线。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-20-05-introducing-vercel-for-slack",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/introducing-vercel-for-slack",
+      "publishedDate": "2026-08-19",
+      "title": "Introducing Vercel for Slack",
+      "summary": "Vercel 將 AI 代理整合至 Slack，透過提及觸發代理讀取對話脈絡、查詢部署平台狀態，並直接將團隊決策轉換為需經批准的程式碼變更，今日起對 Pro 與 Enterprise 團隊開放公開測試版。",
+      "take": "此模式將代理從獨立工具轉為對話內的工作流參與者，關鍵在於代理能解析 Slack 執行緒語意並結合平台即時狀態（如部署日誌、環境變數）產生可執行動作。工程團隊應重新設計審批機制，讓變更提案直接在聊天介面完成決策閉環，並評估代理對多執行緒並行處理與權限隔離的支援強度，以確保生產環境安全。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-20-06-builder-theme-the-ai-alien-companion-app-thats-bringing-in-4m-a-year-best-of-the-pod",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "AI & I by Every",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "title": "Builder Theme: The AI Alien Companion App That's Bringing In $4M a Year (Best of the Pod)",
+      "summary": "AI伴侣应用“To land”通过提供情感支持与关系建议，年收入达400万美元，其核心机制是作为用户的亲密对话伙伴，而非生产力工具。",
+      "take": "该案例表明，AI应用在情感陪伴领域的付费意愿极强，关键在于设计深度个性化对话体验，而非泛化聊天。开发者应聚焦细分情感场景，利用用户数据（如关系动态）提供有决策价值的建议，从而提升粘性和变现效率。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-20-07-builder-theme-thibault-sottiaux-on-it-has-not-been-used-yet-but-would-you-look-at-that-codex-for-scale",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2090116476414136830",
+      "title": "Builder Theme: Thibault Sottiaux on It has not been used yet, but would you look at that. Codex for scale.",
+      "summary": "OpenAI的Codex工具在尚未被广泛使用的情况下，已展现出大规模应用的潜力，暗示其可能在AI编程和自动化任务中实现规模化部署。",
+      "take": "工程上应关注Codex的实际API和CLI接口，将其集成到大规模代码生成和修复流水线中，而非停留在演示阶段。其未使用前的表现可作为性能基线，用于评估token消耗和任务成功率，从而优化智能体工作流设计。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-20-08-builder-theme-amjad-masad-on-agents-made-software-cheaper-but-made-coding-expensive-today-togeth",
+      "briefingId": "rss-2026-08-20",
+      "date": "2026-08-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Amjad Masad",
+      "sourceUrl": "https://x.com/amasad/status/2090079496124674377",
+      "title": "Builder Theme: Amjad Masad on Agents made software cheaper but made coding expensive. Today, togeth...",
+      "summary": "Amjad Masad（Replit CEO）宣称，AI代理虽降低了软件成本，却使编码过程本身变得更昂贵，因此与OpenAI合作发布新方案以扭转此趋势。",
+      "take": "核心权衡在于：代理化开发将人力成本从编写代码转移到审查、调试与验证AI生成代码，增加了隐性工程开销。工程上应聚焦于可验证性与可追溯性工具链，例如结构化测试生成或行为追踪，以压缩代理产出的审查成本，而非单纯追求生成速度。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
