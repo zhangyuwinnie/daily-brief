@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-21",
     "2026-08-20",
     "2026-08-19",
     "2026-08-18",
@@ -192,6 +193,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-21": {
+      "briefingIds": [
+        "rss-2026-08-21"
+      ],
+      "insightIds": [
+        "rss-2026-08-21-01-introducing-ai-futures",
+        "rss-2026-08-21-02-stampli-cuts-launch-hours-by-68-using-chatgpt-work",
+        "rss-2026-08-21-03-chatgpt-search-now-uses-the-siteoperator-at-scale",
+        "rss-2026-08-21-04-a-shot-scraper-style-json-api-on-bun-14s-new-bunwebview",
+        "rss-2026-08-21-05-manage-vercel-toolbar-comments-from-the-cli",
+        "rss-2026-08-21-06-vercel-agent-is-now-available-in-slack-code-channels",
+        "rss-2026-08-21-07-builder-theme-from-restoring-sight-to-reimagining-the-brain-with-max-hodak",
+        "rss-2026-08-21-08-builder-theme-thibault-sottiaux-on-weve-investigated-a-few-messages-about-codex-usage-limits-being-diff",
+        "rss-2026-08-21-09-builder-theme-boris-cherny-on-weve-been-working-on-this-with-customers-for-a-while-mythos-class-m"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-20": {
       "briefingIds": [
         "rss-2026-08-20"

@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-21",
+  "briefings": [
+    {
+      "id": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-21",
+      "filePath": "2026-08-21.md",
+      "summaryTopline": "Introducing AI Futures",
+      "insightIds": [
+        "rss-2026-08-21-01-introducing-ai-futures",
+        "rss-2026-08-21-02-stampli-cuts-launch-hours-by-68-using-chatgpt-work",
+        "rss-2026-08-21-03-chatgpt-search-now-uses-the-siteoperator-at-scale",
+        "rss-2026-08-21-04-a-shot-scraper-style-json-api-on-bun-14s-new-bunwebview",
+        "rss-2026-08-21-05-manage-vercel-toolbar-comments-from-the-cli",
+        "rss-2026-08-21-06-vercel-agent-is-now-available-in-slack-code-channels",
+        "rss-2026-08-21-07-builder-theme-from-restoring-sight-to-reimagining-the-brain-with-max-hodak",
+        "rss-2026-08-21-08-builder-theme-thibault-sottiaux-on-weve-investigated-a-few-messages-about-codex-usage-limits-being-diff",
+        "rss-2026-08-21-09-builder-theme-boris-cherny-on-weve-been-working-on-this-with-customers-for-a-while-mythos-class-m"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-21-01-introducing-ai-futures",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-ai-futures",
+      "publishedDate": "2026-08-20",
+      "title": "Introducing AI Futures",
+      "summary": "OpenAI 推出名为 AI Futures 的新博客，旨在探讨变革性 AI 如何重塑权力、治理、经济和个人自由。",
+      "take": "该博客是 OpenAI 构建政策与治理话语权的信号，表明其将主导 AI 社会影响框架的定义。对开发者而言，需关注博客发布的具体技术提案（如安全、对齐标准），因其可能成为未来 API 使用条款或模型行为的隐含约束。短期内无直接工程影响，但可作为预测 OpenAI 产品方向（如受监管领域部署）的早期指标。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-21-02-stampli-cuts-launch-hours-by-68-using-chatgpt-work",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/stampli",
+      "publishedDate": "2026-08-20",
+      "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+      "summary": "Stampli利用OpenAI的Codex和ChatGPT Work，将原本需数周的发布准备工作压缩至数天，实现启动时间减少68%。",
+      "take": "工程要点在于将成熟的Codex自动化编码能力和ChatGPT Work的协作任务编排结合，用于处理设计资源受限的固定期限发布流程。这验证了多代理工作流在真实生产调度中的价值，即通过并行化设计交接和代码生成瓶颈来压缩关键路径，而非单纯依赖单一AI工具。对于构建者，此案例表明应优先将AI集成到已有发布管道的瓶颈环节，并量化时间节省以证明工具链投资回报。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-21-03-chatgpt-search-now-uses-the-siteoperator-at-scale",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "publishedDate": "2026-08-20",
+      "title": "ChatGPT search now uses the site:operator at scale",
+      "summary": "ChatGPT搜尋在GPT-5.6版本推出後，於大規模查詢中開始採用site:運算子，此變化由Promptwatch透過自動化追蹤跨產品回應所觀測到。",
+      "take": "對RAG與代理工作流而言，這是重大訊號：頂級AI產品已將指定來源檢索內建為預設策略，而非僅依賴語意檢索。開發者應在自建RAG管線中主動整合site:或等效的來源過濾機制，以提升事實一致性並降低幻覺；同時，針對AI驅動的流量分析（如GEO）需將此類運算子使用模式納入監控，因為它改變了內容可被檢索與引用的條件。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-21-04-a-shot-scraper-style-json-api-on-bun-14s-new-bunwebview",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+      "publishedDate": "2026-08-20",
+      "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
+      "summary": "Simon Willison 在 Bun 1.4 新发布的 Bun.WebView 上，实验性地构建了一个 shot-scraper 风格的 JSON API，用于通过无头浏览器截取网页并提取结构化数据。",
+      "take": "Bun.WebView 提供了一种轻量级、内建的无头浏览器能力，使开发者无需依赖 Puppeteer 或 Playwright 即可实现网页截图与 DOM 数据提取，从而显著降低代理工具或自动化工作流中的依赖复杂度与启动开销。该 API 可无缝集成到 LLM 工具链中，作为低成本、高并发的网页数据摄取层，尤其适合需要快速验证或频繁调用的场景，但需注意其功能边界与浏览器兼容性。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-21-05-manage-vercel-toolbar-comments-from-the-cli",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/manage-vercel-toolbar-comments-from-the-cli",
+      "publishedDate": "2026-08-20",
+      "title": "Manage Vercel Toolbar comments from the CLI",
+      "summary": "Vercel 在 CLI 中新增 `vercel comments` 命令，支持对 Toolbar 评论进行完整的过滤、查看、回复、解决、重开、编辑和删除操作，并提供 `--format json` 输出以适配脚本与编码代理。",
+      "take": "编码代理现在可以直接通过 CLI 驱动评论闭环，无需切换 UI，从而将人工审阅反馈无缝集成到自动化的修复工作流中。`--format json` 输出是关键，它允许代理以结构化方式解析线程并执行状态变更，标志着从“读代码”到“读并改评论”的代理能力扩展。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-21-06-vercel-agent-is-now-available-in-slack-code-channels",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-agent-is-now-available-in-slack-code-channels",
+      "publishedDate": "2026-08-20",
+      "title": "Vercel Agent is now available in Slack code channels",
+      "summary": "Vercel Agent 现已集成至 Slack 新推出的 code channels，用户可直接在 Slack 侧边栏创建频道并选择 Vercel 作为代理，代理会在频道内自动发布部署、日志、错误及代码差异，支持团队协作审查代码、处理事故及管理依赖升级等长期任务。",
+      "take": "该集成将编码代理嵌入团队日常协作界面，消除了上下文切换成本。工程上关键在于代理能携带现有频道或线程的上下文创建新频道，并自动推送关键事件流，使团队能以异步、可追踪方式管理代理驱动的开发工作流。这预示编码代理正从独立工具向协作基础设施演进，开发者需考虑如何在团队沟通协议中标准化代理的指令与审查循环。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-21-07-builder-theme-from-restoring-sight-to-reimagining-the-brain-with-max-hodak",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=7HXqMepjvy8",
+      "title": "Builder Theme: From Restoring Sight to Reimagining the Brain, with Max Hodak",
+      "summary": "Max Hodak 在播客中阐述，大脑本质上是计算机，通过颅神经和脊神经等少量线缆与环境交互；其公司当前重点是通过视网膜假体恢复视觉信号，以此作为脑机接口（BCI）的核心概念验证，并最终目标是从修复感官延伸至重构思大脑计算架构。",
+      "take": "工程上，BCI 的核心不是解码复杂语义，而是先打通视觉、听觉、平衡和运动等感觉-运动信号的高带宽输入/输出通道；视网膜假体是验证这一通道可行性的最低成本切入点。对 AI 构建者的启示是：未来智能体的感知接口将不再局限于文本/像素，而是直接与神经信号对接，需要重新设计特征提取和实时校准管线。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-21-08-builder-theme-thibault-sottiaux-on-weve-investigated-a-few-messages-about-codex-usage-limits-being-diff",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2090675027670978569",
+      "title": "Builder Theme: Thibault Sottiaux on We've investigated a few messages about codex usage limits being diff...",
+      "summary": "OpenAI工程副总裁Thibault Sottiaux澄清，Codex使用限制差异源于部分用户通过sub2api将订阅流量转为API并转售/共享，触发欺诈检测系统；官方支持通过ChatGPT登录（Sign in With ChatGPT）在官方或开源客户端（如Pi、OpenCode）中使用订阅额度。",
+      "take": "订阅制与API计费在OpenAI是严格隔离的，任何将订阅流量伪装成API流量并转发的行为都会被自动标记。构建基于Codex的辅助工具时，应使用官方支持的OAuth登录流程（Sign in With ChatGPT）以复用订阅额度，而非拦截API密钥或订阅token，否则将面临账号风控风险。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-21-09-builder-theme-boris-cherny-on-weve-been-working-on-this-with-customers-for-a-while-mythos-class-m",
+      "briefingId": "rss-2026-08-21",
+      "date": "2026-08-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2090537902912815536",
+      "title": "Builder Theme: Boris Cherny on We've been working on this with customers for a while. Mythos-class m...",
+      "summary": "Anthropic 正在与客户合作开发 Mythos 级模型，该模型需额外安全措施，企业可完全拥有并控制自身数据，且 Anthropic 不保留任何数据，预计今年秋季推出。",
+      "take": "企业级 AI 部署正在转向私有化数据主权范式，核心机制是模型供应商完全不接触客户数据，而由客户掌控。对构建者而言，这要求工作流必须将数据隔离、合规审计和权限控制内建到 Agent 的推理与执行链路中，而非事后附加，以适配企业隐私法规。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
