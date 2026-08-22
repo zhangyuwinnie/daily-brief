@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-22",
     "2026-08-21",
     "2026-08-20",
     "2026-08-19",
@@ -193,6 +194,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-22": {
+      "briefingIds": [
+        "rss-2026-08-22"
+      ],
+      "insightIds": [
+        "rss-2026-08-22-01-llm-0321",
+        "rss-2026-08-22-02-stop-making-tuis",
+        "rss-2026-08-22-03-how-ora-benchmarks-every-major-ai-agent-on-vercel",
+        "rss-2026-08-22-04-deployment-storage-keeps-your-deployments-rollback-ready",
+        "rss-2026-08-22-05-how-claude-watermarks-ai-generated-text",
+        "rss-2026-08-22-06-builder-theme-thariq-on-a-skill-people-at-anthropic-have-been-using-a-lot-recently-eli5-eli",
+        "rss-2026-08-22-07-builder-theme-thibault-sottiaux-on-the-banked-reset-has-landed-i-repeat-the-banked-reset-has-landed-h"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-21": {
       "briefingIds": [
         "rss-2026-08-21"

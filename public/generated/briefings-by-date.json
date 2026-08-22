@@ -38830,5 +38830,160 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-22": {
+    "date": "2026-08-22",
+    "briefings": [
+      {
+        "id": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-22",
+        "filePath": "2026-08-22.md",
+        "summaryTopline": "llm 0.32.1",
+        "insightIds": [
+          "rss-2026-08-22-01-llm-0321",
+          "rss-2026-08-22-02-stop-making-tuis",
+          "rss-2026-08-22-03-how-ora-benchmarks-every-major-ai-agent-on-vercel",
+          "rss-2026-08-22-04-deployment-storage-keeps-your-deployments-rollback-ready",
+          "rss-2026-08-22-05-how-claude-watermarks-ai-generated-text",
+          "rss-2026-08-22-06-builder-theme-thariq-on-a-skill-people-at-anthropic-have-been-using-a-lot-recently-eli5-eli",
+          "rss-2026-08-22-07-builder-theme-thibault-sottiaux-on-the-banked-reset-has-landed-i-repeat-the-banked-reset-has-landed-h"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-22-01-llm-0321",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/21/llm/",
+        "publishedDate": "2026-08-21",
+        "title": "llm 0.32.1",
+        "summary": "Simon Willison 发布 llm 0.32.1 点版本，修复因 OpenAI Python 库移除 httpx 传递依赖导致的安装失败，通过固定 openai 版本临时解决，并预告 0.33 将迁移至 httpx2。",
+        "take": "传递依赖的隐性耦合是工具链的脆弱点，尤其当上游库变更时。开发者应显式声明所有直接使用的依赖，而非依赖传递；同时，面对 HTTP 客户端生态变动，主动规划迁移路径（如 httpx 到 httpx2）是长期稳定的关键。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-22-02-stop-making-tuis",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+        "publishedDate": "2026-08-21",
+        "title": "Stop Making TUIs",
+        "summary": "Thomas Ptacek主张即便对最小型个人工具也应构建真正的原生用户界面，因编码代理已大幅降低开发可用GUI的成本；Simon Willison以自身带宽与GPU监控macOS任务栏应用佐证，并认同此趋势。",
+        "take": "工程要点：编码代理已使从CLI转型为原生UI的边际成本趋近于零，开发者应重新评估默认方案，将临时性命令行工具升级为常驻图形界面；这不仅是交互改进，更能改变工作流中工具的使用频率与心智模型，尤其对代理生成代码的反馈循环和调试体验有实质增益。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-22-03-how-ora-benchmarks-every-major-ai-agent-on-vercel",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-ora-benchmarks-every-major-ai-agent-on-vercel",
+        "publishedDate": "2026-08-21",
+        "title": "How Ora benchmarks every major AI agent on Vercel",
+        "summary": "Ora 在 Vercel 平台上对多个主流 AI Agent 进行实时网站基准测试，通过让 Agent 执行注册、集成和付费等完整任务，量化评估网站对 Agent 的兼容性，并定位失败原因。",
+        "take": "Agent 兼容性将成为网站开发的一等公民；开发时应以 Agent 可执行性为测试标准，而非仅依赖人工 UX。Ora 的方法论表明，99% 的现有网站需重构交互流程（如简化表单、明确 API 端点）才能支持自主 Agent，这为 RAG 和 workflow 设计提供了新的调试维度。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-22-04-deployment-storage-keeps-your-deployments-rollback-ready",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/deployment-storage-keeps-your-deployments-rollback-ready",
+        "publishedDate": "2026-08-21",
+        "title": "Deployment Storage keeps your deployments rollback-ready",
+        "summary": "Vercel 推出 Deployment Storage 功能，为每个部署持久化存储页面、函数与静态资源，支持在数秒内通过即时回滚将域名重新指向历史部署，无需重新构建，定价为每 GB 每月 0.10 美元，Hobby 团队包含 10 GB 存储。",
+        "take": "该机制将部署产物从可丢弃的构建输出转变为版本化持久层，使得回滚成本从重建+重部署降至纯指针切换（O(1) 操作），适用于 CI/CD 流水线中低成本蓝绿切换或金丝雀回退。对 AI 代理工作流而言，若代理负责部署管理，可利用此 API 实现自主回滚决策，但需注意存储成本随迭代频率线性增长，需纳入清理策略。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-22-05-how-claude-watermarks-ai-generated-text",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Ahead of AI",
+        "sourceUrl": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+        "publishedDate": "2026-08-22",
+        "title": "How Claude Watermarks AI-Generated Text",
+        "summary": "Anthropic在Claude中实现了基于token采样的文本水印技术，通过调整生成过程中的token选择概率嵌入可检测模式，并配套了水印检测与移除机制，视频详细演示了从采样到检测的完整流程。",
+        "take": "水印不再依赖后处理，而是嵌入生成算法的核心采样步骤，这意味着检测器能直接读取概率分布中的信号。对于构建者，若需规避或利用此类水印，需深入干预采样层而非输出文本。同时，水印移除机制的存在表明该方案并非不可逆，工程上需权衡鲁棒性与生成质量。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-22-06-builder-theme-thariq-on-a-skill-people-at-anthropic-have-been-using-a-lot-recently-eli5-eli",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2090884854590382515",
+        "title": "Builder Theme: Thariq on a skill people at Anthropic have been using a lot recently: ELI5 /eli...",
+        "summary": "Anthropic 内部近期频繁使用名为 ELI5 的 skill，其核心机制是要求 AI 以 HTML artifact 形式、用大图少字的方式，向完全不了解该主题的用户解释复杂概念。",
+        "take": "此模式提示开发者：将知识蒸馏为视觉化、极简文本的交互式 HTML，可显著提升模型输出的可理解性与传播效率。建议在 agent 工作流中加入此类“科普渲染”skill，用于生成面向非技术受众的解释文档或演示内容。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-08-22-07-builder-theme-thibault-sottiaux-on-the-banked-reset-has-landed-i-repeat-the-banked-reset-has-landed-h",
+        "briefingId": "rss-2026-08-22",
+        "date": "2026-08-22",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2090964822422949999",
+        "title": "Builder Theme: Thibault Sottiaux on The banked reset has landed, I repeat, the banked reset has landed. H...",
+        "summary": "Thibault Sottiaux 宣布「banked reset」功能已正式上线，强调其作为核心机制落地的里程碑事件。",
+        "take": "此功能可能涉及状态重置或上下文恢复机制，对构建需要持久会话或可回滚状态的AI代理有直接参考价值。开发者应关注其API语义及与现有缓存/记忆系统的集成方式，以优化长流程任务的稳定性。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
