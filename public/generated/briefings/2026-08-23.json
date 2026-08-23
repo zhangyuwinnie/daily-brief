@@ -1,0 +1,131 @@
+{
+  "date": "2026-08-23",
+  "briefings": [
+    {
+      "id": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-23",
+      "filePath": "2026-08-23.md",
+      "summaryTopline": "Quoting Linus Torvalds",
+      "insightIds": [
+        "rss-2026-08-23-01-quoting-linus-torvalds",
+        "rss-2026-08-23-02-llm-033",
+        "rss-2026-08-23-03-i-gave-qwen-38-27b-a-reverse-engineering-job-and-it-finished-in-30-minutes",
+        "rss-2026-08-23-04-new-mcp-roadmap",
+        "rss-2026-08-23-05-builder-theme-thibault-sottiaux-on-update-on-rate-limits-in-codex-weve-found-a-some-inefficiencies-w",
+        "rss-2026-08-23-06-builder-theme-guillermo-rauch-on-san-francisco-is-a-paradise-on-earth"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-23-01-quoting-linus-torvalds",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "publishedDate": "2026-08-22",
+      "title": "Quoting Linus Torvalds",
+      "summary": "Linus Torvalds 在 Linux 内核 drm/xe 驱动的深度调试中，使用 AI 辅助完成大量重复性调试工作（添加调试代码、分析输出），尽管 AI 多次断言问题无解，但最终在人类坚持下成功定位并修复问题，且提交信息由 AI 撰写。",
+      "take": "AI 在复杂系统调试中可承担高强度的‘苦力’工作（循环插桩、分析日志），但其‘放弃倾向’（因训练数据偏向于报告问题而非死磕）需人类工程师以明确指令持续压测。工程上应设计为‘人类主导方向，AI 执行迭代’，而非完全委托决策，尤其在 LLM 输出不确定性的场景中，保留人为否决权可显著提升成功率。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-23-02-llm-033",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/llm/",
+      "publishedDate": "2026-08-22",
+      "title": "llm 0.33",
+      "summary": "llm 0.33 升级至 OpenAI Python 库 3.x，将 HTTP 客户端从 httpx 切换至 httpx2，并为嵌入命令及方法新增 --key/ key= 参数，支持按调用传递密钥且不改变共享模型状态。",
+      "take": "嵌入 API 的密钥处理与常规 LLM 模型统一，可安全地在多租户或并发场景中按请求传递密钥，避免全局状态污染。升级至 OpenAI 库 3.x 和 httpx2 是重大依赖变更，现有集成需重新测试 HTTP 兼容性和错误处理路径。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-23-03-i-gave-qwen-38-27b-a-reverse-engineering-job-and-it-finished-in-30-minutes",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
+      "publishedDate": "2026-08-22",
+      "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+      "summary": "用户在Hacker News上报告，Qwen 3.8 27B模型在30分钟内完成了一项逆向工程任务，挑战了前沿模型在该领域的垄断地位。",
+      "take": "此案例表明，中小型开源模型在特定工程任务（如逆向工程）中已具备接近前沿模型的实用能力，可能改变开发者对模型选型的成本与性能权衡。建议评估Qwen 3.8 27B在自身工作流中的具体任务表现，并关注其与工具链（如反编译器、调试器）的集成方式。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-23-04-new-mcp-roadmap",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "publishedDate": "2026-08-22",
+      "title": "New MCP Roadmap",
+      "summary": "Anthropic 發布 MCP (Model Context Protocol) 官方路線圖，明確未來版本將聚焦於核心協議穩定性、認證與授權標準化、以及針對 Agentic 工作流（如長任務、多步工具呼叫）的傳輸層改進，旨在將 MCP 從『檔案/工具存取標準』升級為『跨供應商的 Agent 執行基礎設施』。",
+      "take": "工程核心訊號是：MCP 將正式引入遠端認證（OAuth 2.1）與資源授權模型，這意味著當前基於無狀態 HTTP + 靜態 Token 的內部 MCP Server 需要重新設計為可驗證的租戶隔離架構。同時，路線圖強調了『客戶端必須具備能力協商與逐步授權』，這將促使 Agent 開發者從『一次授予所有工具』轉向『動態權限擴展』的設計模式，否則將在未來生態中被鎖在閘道之外。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-23-05-builder-theme-thibault-sottiaux-on-update-on-rate-limits-in-codex-weve-found-a-some-inefficiencies-w",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2091407991736332689",
+      "title": "Builder Theme: Thibault Sottiaux on Update on rate limits in Codex. We’ve found (a) some inefficiencies w...",
+      "summary": "OpenAI Codex 團隊發現並修復了三個不必要的額度消耗來源：長會話中多輪壓縮期間處理圖像的低效、Computer History 功能在高 p95+ 用量上的資源佔用，以及自動生成對話標題功能的過度消耗，並將於隔日為所有付費訂閱重置用量，同時一併推出提高效率的新方法。",
+      "take": "對 AI builder 而言，這表明基於 token 或運算成本的 API 產品中，隱性功能（如自動標題生成、歷史記錄保留）可能在長任務中成為主要成本來源，需自行監控這類非核心路徑的用量。Codex 的全量重置意味著短暫的額度恢復，但更重要的啟示是：設計 agent 工作流時，應避免長時間會話中反覆壓縮上下文，並考慮定期重啟 session 以降低隱性消耗。團隊計劃的下週效率提升方案，可能預示著 API 計價或上下文管理方式的結構性改變，值得追蹤。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-23-06-builder-theme-guillermo-rauch-on-san-francisco-is-a-paradise-on-earth",
+      "briefingId": "rss-2026-08-23",
+      "date": "2026-08-23",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2091263423359389951",
+      "title": "Builder Theme: Guillermo Rauch on San Francisco is a paradise on Earth",
+      "summary": "Vercel執行長Guillermo Rauch宣稱舊金山是地球上的天堂，並附帶連結，隱含對該地AI開發者生態與生活品質的推崇。",
+      "take": "此貼文缺乏技術細節，無直接工程信號。對AI建構者而言，舊金山作為人才與資本聚集地的地理優勢已屬常識，不構成新的架構或工作流程變革；應視為文化氛圍表態，而非可操作的技術情報。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

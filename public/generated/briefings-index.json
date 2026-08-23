@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-23",
     "2026-08-22",
     "2026-08-21",
     "2026-08-20",
@@ -194,6 +195,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-23": {
+      "briefingIds": [
+        "rss-2026-08-23"
+      ],
+      "insightIds": [
+        "rss-2026-08-23-01-quoting-linus-torvalds",
+        "rss-2026-08-23-02-llm-033",
+        "rss-2026-08-23-03-i-gave-qwen-38-27b-a-reverse-engineering-job-and-it-finished-in-30-minutes",
+        "rss-2026-08-23-04-new-mcp-roadmap",
+        "rss-2026-08-23-05-builder-theme-thibault-sottiaux-on-update-on-rate-limits-in-codex-weve-found-a-some-inefficiencies-w",
+        "rss-2026-08-23-06-builder-theme-guillermo-rauch-on-san-francisco-is-a-paradise-on-earth"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-22": {
       "briefingIds": [
         "rss-2026-08-22"
