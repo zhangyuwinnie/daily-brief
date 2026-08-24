@@ -1,0 +1,127 @@
+{
+  "date": "2026-08-24",
+  "briefings": [
+    {
+      "id": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-24",
+      "filePath": "2026-08-24.md",
+      "summaryTopline": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "insightIds": [
+        "rss-2026-08-24-01-anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-tools-thrive",
+        "rss-2026-08-24-02-quoting-drew-breunig",
+        "rss-2026-08-24-03-i-were-17-id-learn-how-to-build-llms-from-scratch",
+        "rss-2026-08-24-04-vercel-sandbox-is-now-globally-available",
+        "rss-2026-08-24-05-builder-theme-thibault-sottiaux-on-good-sunday-reset-has-been-propagated-to-accounts-and-we-landed-some",
+        "rss-2026-08-24-06-builder-theme-aaron-levie-on-im-good-to-retire-now"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-24-01-anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-tools-thrive",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "publishedDate": "2026-08-23",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "summary": "Anthropic年化營收達650億美元，但旗艦模型使用者增長趨緩；OpenAI在GPT-5.6推出後，季度營收增長35%達400億美元，顯示價格與效能平衡成為市場競爭關鍵。",
+      "take": "模型品質不再是唯一競爭維度；開發者選擇模型時，成本效率與生態整合（如Ramp顯示的實際支出模式）影響採用率。建置Agent或工具鏈時，應優先考量推論成本與任務匹配度，而非旗艦模型名氣。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-24-02-quoting-drew-breunig",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "publishedDate": "2026-08-23",
+      "title": "Quoting Drew Breunig",
+      "summary": "Drew Breunig指出，随着Anthropic Claude Fable等高端模型价格飙升，此前“新模型会以相同或更低价格解决所有工程问题”的免费午餐时代已终结，开发者被迫重新分配工作负载。",
+      "take": "工程上必须将编码harness与上下文策略视为一等优化对象，而非寄望于模型迭代自动掩盖缺陷。成本分层成为必要：按任务复杂度混合调用Opus、5.6、K3或GLM等模型，以最低成本达成足够质量，从而将预算集中投向真正需要顶级模型能力的核心路径。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-24-03-i-were-17-id-learn-how-to-build-llms-from-scratch",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://twitter.com/paulg/status/2091544343589060625",
+      "publishedDate": "2026-08-23",
+      "title": "I were 17, I'd learn how to build LLMs from scratch",
+      "summary": "Paul Graham 在推文中建议17岁的年轻人从零开始构建LLM，强调通过亲手实现底层架构（如Transformer、注意力机制、训练循环）来获得对模型工作原理的深度理解。",
+      "take": "工程上，不要仅依赖高级框架（如PyTorch Lightning或Hugging Face），应从张量操作、反向传播、tokenization等基础组件手工搭建小型LLM，这能显著提升调试能力、性能优化直觉以及对新架构（如Mamba、RWKV）的适应速度。任何涉及模型压缩、蒸馏或领域微调的系统设计，都应建立在对底层数据流和损失函数的具体认知上，而非黑盒调用。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-24-04-vercel-sandbox-is-now-globally-available",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-is-now-globally-available",
+      "publishedDate": "2026-08-24",
+      "title": "Vercel Sandbox is now globally available",
+      "summary": "Vercel Sandbox現已全球上線，初始提供四個區域（iad1、sfo1、cle1、cdg1），預設為iad1，支援區域選擇及Pro/Enterprise團隊的故障轉移區域配置，需更新SDK或CLI以使用新功能。",
+      "take": "建置RAG或依賴低延遲資料存取的工作流時，應將Sandbox區域設定為與資料庫或物件儲存相同位置，以最小化跨區域延遲。Pro/Enterprise團隊可配置故障轉移區域，提升可用性，但需確保主區域與備援區域間的資料同步策略能容忍區域級故障。",
+      "topics": [
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-24-05-builder-theme-thibault-sottiaux-on-good-sunday-reset-has-been-propagated-to-accounts-and-we-landed-some",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2091688655828246890",
+      "title": "Builder Theme: Thibault Sottiaux on Good Sunday. Reset has been propagated to accounts and we landed some...",
+      "summary": "Thibault Sottiaux 宣布已向账户推送重置，并修复了昨日发现的用量相关问题，用户体验应有明显改善，后续将持续更新。",
+      "take": "对于依赖外部 API 的 AI 构建者，关注供应商的用量重置与修复动态至关重要，这直接影响成本与配额管理；及时跟进可避免因配额耗尽导致的服务中断，同时需为可能的突发用量波动预留缓冲。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-24-06-builder-theme-aaron-levie-on-im-good-to-retire-now",
+      "briefingId": "rss-2026-08-24",
+      "date": "2026-08-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2091580656598102047",
+      "title": "Builder Theme: Aaron Levie on I’m good to retire now",
+      "summary": "Box執行長Aaron Levie於X平台發布貼文，僅表示「我現在可以退休了」，未提供任何技術細節、架構描述或具體事件說明。",
+      "take": "此訊息缺乏可操作的工程內容，無法從中提煉出任何對AI建構者有用的技術見解或架構變革。在資訊萃取流程中，此類純情感表達或個人聲明應被明確歸類為低信號雜訊，不應耗費處理資源進行深度分析。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

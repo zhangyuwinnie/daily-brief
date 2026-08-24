@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-24",
     "2026-08-23",
     "2026-08-22",
     "2026-08-21",
@@ -195,6 +196,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-24": {
+      "briefingIds": [
+        "rss-2026-08-24"
+      ],
+      "insightIds": [
+        "rss-2026-08-24-01-anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-tools-thrive",
+        "rss-2026-08-24-02-quoting-drew-breunig",
+        "rss-2026-08-24-03-i-were-17-id-learn-how-to-build-llms-from-scratch",
+        "rss-2026-08-24-04-vercel-sandbox-is-now-globally-available",
+        "rss-2026-08-24-05-builder-theme-thibault-sottiaux-on-good-sunday-reset-has-been-propagated-to-accounts-and-we-landed-some",
+        "rss-2026-08-24-06-builder-theme-aaron-levie-on-im-good-to-retire-now"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-23": {
       "briefingIds": [
         "rss-2026-08-23"
