@@ -1,0 +1,174 @@
+{
+  "date": "2026-08-25",
+  "briefings": [
+    {
+      "id": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-25",
+      "filePath": "2026-08-25.md",
+      "summaryTopline": "Disrupting a new covert influence campaign from Russia",
+      "insightIds": [
+        "rss-2026-08-25-01-disrupting-a-new-covert-influence-campaign-from-russia",
+        "rss-2026-08-25-02-llm-anthropic-027",
+        "rss-2026-08-25-03-openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users",
+        "rss-2026-08-25-04-wire-it-run-it-deploy-it-ai-workflows-in-gradio",
+        "rss-2026-08-25-05-bring-your-agent-to-notion-with-chat-sdk",
+        "rss-2026-08-25-06-connect-v0-apps-to-slack-google-and-100-other-services",
+        "rss-2026-08-25-07-builder-theme-thibault-sottiaux-on-tomorrow-we-will-bring-back-the-5h-limit-for-plus-accounts-across-cha",
+        "rss-2026-08-25-08-builder-theme-peter-steinberger-on-we-need-to-get-away-from-software-that-we-cant-change-with-a-prompt"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-25-01-disrupting-a-new-covert-influence-campaign-from-russia",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "publishedDate": "2026-08-25",
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "summary": "OpenAI封禁了源自俄罗斯的账户，这些账户利用AI生成内容，推广虚假的以色列智库及所谓“主权”指数，以赞扬俄罗斯并批评西方。",
+      "take": "模型滥用检测需超越单点行为分析，转向跨账户、跨平台的内容叙事关联分析。防御方应建立针对AI生成政治宣传的自动化识别与溯源机制，并在模型部署层集成实时风险评估。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-25-02-llm-anthropic-027",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+      "publishedDate": "2026-08-24",
+      "title": "llm-anthropic 0.27",
+      "summary": "llm-anthropic 0.27 发布，主要兼容 anthropic Python 库 v1.0.0 的迁移（从 httpx 切换到 httpx2），并使用 Claude Code 中的 Fable 5 代理自动完成升级与测试修复。",
+      "take": "核心工程信号是生态级 HTTP 客户端底层迁移（httpx→httpx2）正在蔓延（OpenAI 两周前已同步）。开发者需立即检查依赖锁文件，主动适配 anthropic>=1.0 与 openai>=3.0 的 API 变化。同时，该代理驱动的迁移 PR 展示了 LLM 在依赖升级场景中可执行的模式：将迁移指南作为上下文，自动修改代码并跑通测试，这将成为未来工具链升级的标准工作流。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-25-03-openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+      "publishedDate": "2026-08-25",
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "summary": "OpenAI 將 ChatGPT Plus 用戶的 Codex 與 Work 功能使用限制恢復為每 5 小時的配額，取代先前因應高負載而實施的較嚴格限制。",
+      "take": "此調整反映 OpenAI 在推理成本與使用者留存之間的動態平衡，對依賴 Codex 進行自動化開發的團隊而言，需重新評估長時程 Agent 任務的批次規劃，以避開配額重置週期。同時，這暗示 OpenAI 的容量規劃已趨於穩定，未來 API 或產品的 rate limit 政策可能更貼近實際運算成本而非單純行銷策略。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-25-04-wire-it-run-it-deploy-it-ai-workflows-in-gradio",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+      "publishedDate": "2026-08-25",
+      "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+      "summary": "Hugging Face 发布 Gradio 工作流指南，演示如何通过 Python 代码将多个 AI 组件（模型、API、工具）串联为可交互的流程，并支持一键部署到 Spaces 或本地。",
+      "take": "该指南展示了 Gradio 从单一 demo 工具向通用 AI 工作流编排层的演进，开发者可基于其 Blocks API 和事件监听机制快速构建多步骤、有状态的处理管线。核心工程价值在于将 UI、后端逻辑和部署统一在同一抽象中，减少传统前后端分离的开发开销，尤其适合原型验证和内部工具链搭建。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-25-05-bring-your-agent-to-notion-with-chat-sdk",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/notion-chat-sdk",
+      "publishedDate": "2026-08-25",
+      "title": "Bring your agent to Notion with Chat SDK",
+      "summary": "Vercel 发布 Chat SDK 的 Notion 适配器，将 Notion 页面映射为频道、评论线程映射为线程，使现有跨平台 Agent 无需额外代码即可参与 Notion 页面评论讨论，支持提及触发、消息编辑、历史记录及最多三个文件附件。",
+      "take": "核心工程价值在于抽象层统一：同一 Agent 代码库可无缝接入 Notion，消除为每个平台维护独立集成的成本。需注意 Notion 平台限制（无按钮/模态/反应，卡片降级为 Markdown，且不支持内联文本范围评论），构建 Agent 交互时须按平台能力降级设计，而非假设全功能 UI。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-25-06-connect-v0-apps-to-slack-google-and-100-other-services",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/connect-v0-apps-to-slack-google-and-100-other-services",
+      "publishedDate": "2026-08-24",
+      "title": "Connect v0 apps to Slack, Google, and 100+ other services",
+      "summary": "Vercel 在 v0 中集成 Vercel Connect，使 AI 构建的应用和代理能安全连接 Slack、Google、Notion、GitHub、Salesforce 等 100 多个服务；通过托管连接器自动处理应用注册，或支持自带凭证，并在运行时签发短期令牌，免去存储和轮换长期密钥。",
+      "take": "工程上，这标志着 AI 生成应用从“生成代码”转向“自动配置外部服务”，大幅降低集成成本。关键模式是：连接器团队级一次配置、应用级复用，且运行时短期令牌取代长期密钥，适合代理工作流频繁创建实例的场景。构建者应优先采用托管连接器以消除 OAuth 手工配置，并利用 v0 的自然语言引导能力，将“连接服务”纳入 AI 工作流的标准步骤。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-25-07-builder-theme-thibault-sottiaux-on-tomorrow-we-will-bring-back-the-5h-limit-for-plus-accounts-across-cha",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2092058556707344708",
+      "title": "Builder Theme: Thibault Sottiaux on Tomorrow we will bring back the 5h limit for Plus accounts across Cha...",
+      "summary": "OpenAI宣布将于明日恢复ChatGPT Plus账户在ChatGPT Work与Codex上的每5小时使用限制，以平滑计算负载并维持周用量慷慨性，而Pro（$100/$200）订阅在接下来数月内不受此限。",
+      "take": "Plus用户需将工作负载迁移至Pro层级或采用批处理/异步模式以避免中断。5小时窗口限制将迫使AI构建者重新设计调用策略，优先考虑Pro订阅的成本效益或利用限外时段进行非关键任务，同时监控API配额以优化资源分配。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-25-08-builder-theme-peter-steinberger-on-we-need-to-get-away-from-software-that-we-cant-change-with-a-prompt",
+      "briefingId": "rss-2026-08-25",
+      "date": "2026-08-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2091923535513928015",
+      "title": "Builder Theme: Peter Steinberger on We need to get away from software that we can’t change with a prompt.",
+      "summary": "Peter Steinberger主张，软件应能以提示词进行修改，从而摆脱不可变、僵化的传统软件架构。",
+      "take": "这一观点指向了以提示词为驱动接口的可演化软件范式，对AI builders而言，意味着产品应从静态代码转向可被LLM动态解释或修改的声明式配置与行为层，以提升系统的可塑性和自动化调试与定制能力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-25",
     "2026-08-24",
     "2026-08-23",
     "2026-08-22",
@@ -196,6 +197,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-25": {
+      "briefingIds": [
+        "rss-2026-08-25"
+      ],
+      "insightIds": [
+        "rss-2026-08-25-01-disrupting-a-new-covert-influence-campaign-from-russia",
+        "rss-2026-08-25-02-llm-anthropic-027",
+        "rss-2026-08-25-03-openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users",
+        "rss-2026-08-25-04-wire-it-run-it-deploy-it-ai-workflows-in-gradio",
+        "rss-2026-08-25-05-bring-your-agent-to-notion-with-chat-sdk",
+        "rss-2026-08-25-06-connect-v0-apps-to-slack-google-and-100-other-services",
+        "rss-2026-08-25-07-builder-theme-thibault-sottiaux-on-tomorrow-we-will-bring-back-the-5h-limit-for-plus-accounts-across-cha",
+        "rss-2026-08-25-08-builder-theme-peter-steinberger-on-we-need-to-get-away-from-software-that-we-cant-change-with-a-prompt"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-24": {
       "briefingIds": [
         "rss-2026-08-24"
