@@ -1,0 +1,310 @@
+{
+  "date": "2026-08-26",
+  "briefings": [
+    {
+      "id": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-26",
+      "filePath": "2026-08-26.md",
+      "summaryTopline": "Introducing the Admin plugin for ChatGPT Work and Codex",
+      "insightIds": [
+        "rss-2026-08-26-01-introducing-the-admin-plugin-for-chatgpt-work-and-codex",
+        "rss-2026-08-26-02-introducing-run-sdk-secure-eval-for-your-agents",
+        "rss-2026-08-26-03-the-end-of-credential-sprawl-for-agents",
+        "rss-2026-08-26-04-quoting-paul-dix",
+        "rss-2026-08-26-05-granite-42-llms-how-theyre-built",
+        "rss-2026-08-26-06-how-to-evaluate-llms-before-production",
+        "rss-2026-08-26-07-how-loveholidays-is-making-everyone-a-builder-with-codex",
+        "rss-2026-08-26-08-agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr",
+        "rss-2026-08-26-09-eve-online-the-move-to-python-3-begins",
+        "rss-2026-08-26-10-imdex-uses-cursor-to-build-integrated-subsurface-data-and-analytics-platform-in-months-not-years",
+        "rss-2026-08-26-11-openai-jalapeno-better-than-nvidia-blackwell",
+        "rss-2026-08-26-12-x-sends-in-the-lawyers-to-shut-down-open-source-project",
+        "rss-2026-08-26-13-builder-theme-parallels-parag-agrawal-building-a-new-web-for-ai-agents",
+        "rss-2026-08-26-14-builder-theme-sam-altman-on-we-made-a-chip-and-it-is-fast",
+        "rss-2026-08-26-15-builder-theme-claude-on-claude-now-has-one-memory-across-chat-and-claude-cowork-and-you-deci"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-26-01-introducing-the-admin-plugin-for-chatgpt-work-and-codex",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-admin-plugin",
+      "publishedDate": "2026-08-25",
+      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+      "summary": "OpenAI 推出 Admin 插件，面向 ChatGPT Work 与 Codex 工作区，用于分析使用情况、管理成员与权限、调整限额并处理管理员请求。",
+      "take": "该插件将管理员操作从控制台下沉到聊天与编码界面，意味着权限与资源管理可被自然语言驱动和自动化。开发者可将其集成到 Agent 工作流中，实现基于对话的租户治理、限额动态调整及审计动作，减少对 API 或手动控制台的依赖。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-26-02-introducing-run-sdk-secure-eval-for-your-agents",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/introducing-run",
+      "publishedDate": "2026-08-25",
+      "title": "Introducing Run SDK: secure eval for your agents",
+      "summary": "Vercel发布Run SDK，用于在隔离环境中执行不可信的JavaScript/TypeScript代理程序，通过窄接口暴露宿主函数，并支持在认证或人工审批边界暂停与恢复执行，且不重复已完成工作。",
+      "take": "Run SDK为代理工作流提供了原生的安全执行边界与人工介入点，使开发者能安全地让代理编写并运行代码，同时精确控制其访问权限。工程上，它解决了eval直接执行带来的安全风险，并实现了可中断、可恢复的长时间运行任务，这是构建可靠生产级代理的关键范式。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-26-03-the-end-of-credential-sprawl-for-agents",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/the-end-of-credential-sprawl-for-agents",
+      "publishedDate": "2026-08-25",
+      "title": "The end of credential sprawl for agents",
+      "summary": "Vercel Connect正式GA，用运行时按任务请求、自动过期的作用域令牌取代长期令牌，并统一了超过100个连接器的治理机制，终结代理系统的凭证扩散问题。",
+      "take": "核心转变在于将凭证生命周期从静态配置转为动态、任务绑定的运行时获取，这消除了长期令牌泄漏风险，并让代理在调用Slack、Snowflake等外部服务时可按最小权限原则自动获得短期凭证。工程上，这意味着代理工作流需适配支持运行时令牌交换的MCP或连接器抽象层，以统一管理跨工具的授权与审计。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-26-04-quoting-paul-dix",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+      "publishedDate": "2026-08-26",
+      "title": "Quoting Paul Dix",
+      "summary": "Paul Dix 指出，AI 在数个月内编写并持续优化了 100 万行代码，最终生成可靠软件并运行于数百万开发者机器上，强调构建验证系统与明确方向是成功关键。",
+      "take": "工程要点在于：AI 驱动的软件开发已从辅助编码演进为自主编写与迭代大型代码库，前提是具备可自动化的验证体系（如 oracle 或测试套件）。开发者应聚焦构建验证闭环与高层指导，而非逐行审查代码，以释放 AI 在复杂系统生成上的潜力。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-05-granite-42-llms-how-theyre-built",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "publishedDate": "2026-08-25",
+      "title": "Granite 4.2 LLMs: How They're Built",
+      "summary": "IBM 發布 Granite 4.2 系列 LLM，採用混合專家（MoE）與密集架構，透過可擴展的訓練流程與資料配方最佳化，在低延遲與高吞吐場景提供高效能推論。",
+      "take": "Granite 4.2 強調架構彈性（MoE vs 密集）與部署效率，工程團隊應依據延遲與硬體約束選擇對應變體。其訓練方法論（資料混合與規模擴展）可作為中型模型在算力受限下的設計參考，尤其針對工具呼叫與代理工作流的推論成本最佳化。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-06-how-to-evaluate-llms-before-production",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "publishedDate": "2026-08-25",
+      "title": "How to evaluate LLMs before production",
+      "summary": "GitHub公開了其在實際秘密掃描場景中評估LLM的經驗，聚焦於生產前的系統化評估方法。",
+      "take": "評估LLM時需基於真實應用場景設計測試集，而非僅依賴通用基準。GitHub的經驗顯示，針對特定任務（如秘密掃描）的評估更有效，應結合精確率、召回率與誤報率等指標，並迭代優化提示與模型選擇。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-07-how-loveholidays-is-making-everyone-a-builder-with-codex",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/loveholidays",
+      "publishedDate": "2026-08-26",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "summary": "OpenAI 案例研究：旅游公司 loveholidays 利用 Codex 将软件开发能力下放到非工程团队，使业务人员能直接以自然语言将想法转化为产品，加速从概念到交付的迭代周期。",
+      "take": "核心工程价值在于 Codex 将 IDE 和部署管线的复杂性抽象为对话界面，降低了组织的技术准入门槛。对构建者而言，这意味着 AI 辅助开发工具正从代码补全转向全流程产品生成，企业应重新评估其 CI/CD、数据访问控制和安全审查流程，以适应非技术人员的 AI 驱动开发工作流。",
+      "topics": [
+        "Coding Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-08-agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/",
+      "publishedDate": "2026-08-25",
+      "title": "AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR",
+      "summary": "Google 发布 AgentHands，一种在 XR 环境中为空间锚定的智能体对话生成交互式手部手势的方法，通过结合空间上下文与语言模型来驱动虚拟代理的自然手势。",
+      "take": "核心工程信号在于将手势生成从纯动画驱动转向空间语义驱动：开发者应关注如何将环境几何、物体位置与对话意图注入生成管线，以提升智能体在混合现实中的社交存在感。这对多模态交互系统与具身智能体的动作规划层提出了新接口要求。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-09-eve-online-the-move-to-python-3-begins",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+      "publishedDate": "2026-08-25",
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "summary": "EVE Online宣布启动自2010年Stackless Python 2.7以来最大规模升级，将使用futurize脚本处理240万行代码，并手动审查约2万个Python 2/3行为差异点，但尚未公布Stackless的替代方案。",
+      "take": "这是对存量超大规模Python单体（尤其是Stackless依赖）迁移路径的真实案例：自动化脚本仅能处理语法，核心成本在于逐一甄别语义差异，且Stackless消亡意味着必须重构调度层。AI builders应关注其年度大会提出的Carbon引擎替代方案，这代表对事件驱动或异步调度的根本性替换，而非简单版本升级。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-10-imdex-uses-cursor-to-build-integrated-subsurface-data-and-analytics-platform-in-months-not-years",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/imdex",
+      "publishedDate": "2026-08-25",
+      "title": "IMDEX uses Cursor to build integrated subsurface data and analytics platform in months, not years",
+      "summary": "IMDEX 利用 Cursor 的 AI 驱动开发环境，在数月内构建了集成地下数据与分析平台，替代了传统多年周期。",
+      "take": "Cursor 将开发者从样板代码和 API 集成中解放，直接聚焦领域逻辑与数据建模。工程上，AI 配对编程可显著压缩企业级软件交付时间，但需确保架构验证与代码审查流程随之加速，否则技术债务将快速累积。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-11-openai-jalapeno-better-than-nvidia-blackwell",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "publishedDate": "2026-08-25",
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "summary": "OpenAI 的 Jalapeño 芯片据称在推理性能上优于 Nvidia Blackwell，通过针对 Transformer 推理阶段的定制化内存层次与数据流架构，减少了对高带宽内存的依赖，从而提升能效与吞吐量。",
+      "take": "对于 AI 构建者，芯片级定制化推理加速将成为新的性能杠杆，尤其是在长上下文与高并发推理场景。工程上应关注模型架构与硬件协同设计（如稀疏注意力与内存调度的匹配），而非仅依赖通用 GPU 集群。这预示未来推理成本可能因专用硬件而显著下降，但需重构现有部署栈以适配新的执行模型。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-12-x-sends-in-the-lawyers-to-shut-down-open-source-project",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.theregister.com/legal/2026/08/26/nitter-no-more-x-sends-in-the-lawyers-to-shut-down-open-source-project/5292548",
+      "publishedDate": "2026-08-26",
+      "title": "X sends in the lawyers to shut down open source project",
+      "summary": "X 向开源项目 Nitter 发出法律警告，迫使该项目停止运营，以切断其对 X 平台数据的非官方访问途径。",
+      "take": "开源项目依赖逆向工程或非官方 API 访问社交平台时，面临持续的法律与平台策略风险。开发者应优先设计合规的抓取架构，或基于官方 API 构建，并明确区分『数据获取』与『接口模拟』的法律边界，以避免项目周期中的法律中断。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-13-builder-theme-parallels-parag-agrawal-building-a-new-web-for-ai-agents",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: Parallel’s Parag Agrawal: Building a New Web for AI Agents",
+      "summary": "Parallel 创始人 Parag Agrawal 提出，为 AI 代理构建新网络，核心是用代理反馈替代人类点击数据，并将模型压缩技术应用于搜索索引与排序。",
+      "take": "工程上，这意味着搜索系统可放弃以人类行为信号（点击率）为优化目标，转向直接优化代理任务成功率；同时可将预训练模型的表示学习能力迁移至索引层，实现端到端的代理原生检索链路。对 AI Builder 而言，应优先设计可反馈代理执行结果的协议和数据管道，而非继续适配旧有网页结构。",
+      "topics": [
+        "Agents",
+        "RAG",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-14-builder-theme-sam-altman-on-we-made-a-chip-and-it-is-fast",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2092339694210040187",
+      "title": "Builder Theme: Sam Altman on we made a chip and it is fast",
+      "summary": "Sam Altman宣布其团队自研了一款芯片，并强调其性能表现“快速”。",
+      "take": "对AI构建者而言，自研芯片意味着推理成本与延迟可能进一步降低，但需等待具体架构及基准数据验证。短期应关注其API或硬件生态兼容性，避免因单一性能声明调整技术栈。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-26-15-builder-theme-claude-on-claude-now-has-one-memory-across-chat-and-claude-cowork-and-you-deci",
+      "briefingId": "rss-2026-08-26",
+      "date": "2026-08-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2092299704864284888",
+      "title": "Builder Theme: Claude on Claude now has one memory across chat and Claude Cowork, and you deci...",
+      "summary": "Anthropic 为 Claude 推出跨 Chat 与 Claude Cowork 的统一持久记忆机制，用户可显式控制记忆内容，使 Cowork 任务自动继承历史对话上下文。",
+      "take": "核心转变在于将对话上下文从会话级提升为工作区级状态，形成可复用的事实层。构建者应设计显式记忆写入/清理接口，避免历史偏见污染新任务，同时可基于该共享记忆构建多步骤、跨会话的自主代理工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

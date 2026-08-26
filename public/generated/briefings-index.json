@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-26",
     "2026-08-25",
     "2026-08-24",
     "2026-08-23",
@@ -197,6 +198,32 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-26": {
+      "briefingIds": [
+        "rss-2026-08-26"
+      ],
+      "insightIds": [
+        "rss-2026-08-26-01-introducing-the-admin-plugin-for-chatgpt-work-and-codex",
+        "rss-2026-08-26-02-introducing-run-sdk-secure-eval-for-your-agents",
+        "rss-2026-08-26-03-the-end-of-credential-sprawl-for-agents",
+        "rss-2026-08-26-04-quoting-paul-dix",
+        "rss-2026-08-26-05-granite-42-llms-how-theyre-built",
+        "rss-2026-08-26-06-how-to-evaluate-llms-before-production",
+        "rss-2026-08-26-07-how-loveholidays-is-making-everyone-a-builder-with-codex",
+        "rss-2026-08-26-08-agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr",
+        "rss-2026-08-26-09-eve-online-the-move-to-python-3-begins",
+        "rss-2026-08-26-10-imdex-uses-cursor-to-build-integrated-subsurface-data-and-analytics-platform-in-months-not-years",
+        "rss-2026-08-26-11-openai-jalapeno-better-than-nvidia-blackwell",
+        "rss-2026-08-26-12-x-sends-in-the-lawyers-to-shut-down-open-source-project",
+        "rss-2026-08-26-13-builder-theme-parallels-parag-agrawal-building-a-new-web-for-ai-agents",
+        "rss-2026-08-26-14-builder-theme-sam-altman-on-we-made-a-chip-and-it-is-fast",
+        "rss-2026-08-26-15-builder-theme-claude-on-claude-now-has-one-memory-across-chat-and-claude-cowork-and-you-deci"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-25": {
       "briefingIds": [
         "rss-2026-08-25"
