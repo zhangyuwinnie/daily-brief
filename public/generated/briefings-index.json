@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-27",
     "2026-08-26",
     "2026-08-25",
     "2026-08-24",
@@ -198,6 +199,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-27": {
+      "briefingIds": [
+        "rss-2026-08-27"
+      ],
+      "insightIds": [
+        "rss-2026-08-27-01-expanding-openais-presence-in-brazil",
+        "rss-2026-08-27-02-learning-never-stops-how-ai-makes-learning-continuous",
+        "rss-2026-08-27-03-gemini-omni-11-flash-lets-you-build-with-more-control",
+        "rss-2026-08-27-04-intelligent-transcription-with-gemini-35-transcribe",
+        "rss-2026-08-27-05-qwen38-flash-next",
+        "rss-2026-08-27-06-run-claude-managed-agents-with-chat-sdk",
+        "rss-2026-08-27-07-cursor-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-08-27-08-builder-theme-sam-altman-on-i-think-we-should-do-another-party-for-our-next-model-release-the-5",
+        "rss-2026-08-27-09-builder-theme-thibault-sottiaux-on-a-few-weeks-at-openai-feel-like-years-at-other-companies-in-terms-of",
+        "rss-2026-08-27-10-builder-theme-claude-in-chrome-is-generally-available",
+        "rss-2026-08-27-11-builder-theme-claude-gets-its-own-browser-in-cowork"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-26": {
       "briefingIds": [
         "rss-2026-08-26"

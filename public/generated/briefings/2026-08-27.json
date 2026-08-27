@@ -1,0 +1,229 @@
+{
+  "date": "2026-08-27",
+  "briefings": [
+    {
+      "id": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-27",
+      "filePath": "2026-08-27.md",
+      "summaryTopline": "Expanding OpenAI’s presence in Brazil",
+      "insightIds": [
+        "rss-2026-08-27-01-expanding-openais-presence-in-brazil",
+        "rss-2026-08-27-02-learning-never-stops-how-ai-makes-learning-continuous",
+        "rss-2026-08-27-03-gemini-omni-11-flash-lets-you-build-with-more-control",
+        "rss-2026-08-27-04-intelligent-transcription-with-gemini-35-transcribe",
+        "rss-2026-08-27-05-qwen38-flash-next",
+        "rss-2026-08-27-06-run-claude-managed-agents-with-chat-sdk",
+        "rss-2026-08-27-07-cursor-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-08-27-08-builder-theme-sam-altman-on-i-think-we-should-do-another-party-for-our-next-model-release-the-5",
+        "rss-2026-08-27-09-builder-theme-thibault-sottiaux-on-a-few-weeks-at-openai-feel-like-years-at-other-companies-in-terms-of",
+        "rss-2026-08-27-10-builder-theme-claude-in-chrome-is-generally-available",
+        "rss-2026-08-27-11-builder-theme-claude-gets-its-own-browser-in-cowork"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-27-01-expanding-openais-presence-in-brazil",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "publishedDate": "2026-08-27",
+      "title": "Expanding OpenAI’s presence in Brazil",
+      "summary": "OpenAI宣布扩大其在巴西的业务布局，以深化与当地开发者、企业和社区的互动，推动AI技术在该国的采用。",
+      "take": "该举措标志着OpenAI加速国际化市场拓展，具体合作模式与技术支持细节尚未披露。对开发者而言，短期内可能迎来更多本地化资源或合作机会，但需关注实际落地政策与基础设施投入。长期看，区域扩展将影响API服务的可达性与合规要求。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-27-02-learning-never-stops-how-ai-makes-learning-continuous",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/learning-never-stops",
+      "publishedDate": "2026-08-26",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "summary": "OpenAI发布报告，阐述学生与教育者如何利用ChatGPT将学习从课堂延伸至课外的持续过程，并展示其作为常态化认知辅助工具的角色。",
+      "take": "该报告并未引入新架构或技术突破，核心信号在于OpenAI将AI定位为学习流程中的持续中间层，而非一次性问答工具。对构建者而言，这意味着教育类Agent的设计应聚焦于跨会话上下文保持与主动介入能力，而非单纯优化单轮响应质量。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-27-03-gemini-omni-11-flash-lets-you-build-with-more-control",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "publishedDate": "2026-08-27",
+      "title": "Gemini Omni 1.1 Flash lets you build with more control",
+      "summary": "Google DeepMind 发布 Gemini Omni 1.1 Flash，通过引入更细粒度的生成控制机制，增强开发者对多模态输出流程的干预能力。",
+      "take": "核心变化在于控制粒度：开发者现可精确指定输出阶段的行为（如分步生成、中间结果拦截），而非仅依赖端到端黑盒。构建多模态 Agent 时，应优先利用该控制接口实现可校验的中间状态，以提升复杂任务的调试性与可追溯性；同时注意 Flash 定位暗示延迟优先，适合高频交互场景。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-27-04-intelligent-transcription-with-gemini-35-transcribe",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "publishedDate": "2026-08-26",
+      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe，以更智能的语音转文字技术提升转录能力。",
+      "take": "开发者应评估其在实际语音工作流中的准确率提升，并考虑将其集成到现有音频处理管线，以优化转录后处理与语义理解环节。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-05-qwen38-flash-next",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+      "publishedDate": "2026-08-26",
+      "title": "Qwen3.8-Flash-Next",
+      "summary": "Qwen发布Qwen3.8-Flash-Next，一个125B总参数量、6B激活参数的多模态MoE模型，作为Qwen4架构的早期预览，并已通过Unsloth量化版本在DGX Spark上运行测试。",
+      "take": "该模型验证了超大规模稀疏MoE（约20:1激活比）在降低推理成本的同时保持高性能的可行性，值得关注其架构细节以预判Qwen4方向。工程上，量化版本（如UD-Q2_K_XL）能在消费级硬件上运行，但需测试不同量化级别对推理质量和推理努力（reasoning effort）设置的影响，以平衡性能与资源。对于构建多模态Agent，此类模型可作为高性价比的视觉-文本融合基座。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-06-run-claude-managed-agents-with-chat-sdk",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-managed-agents-with-chat-sdk",
+      "publishedDate": "2026-08-28",
+      "title": "Run Claude Managed Agents with Chat SDK",
+      "summary": "Vercel 在 Chat SDK 中整合 Claude Managed Agents，将代理循环（模型、工具、会话状态、沙箱化网络研究）完全移至服务端，并支持逐 token 流式输出、实时活动源及无数据库持久化。",
+      "take": "开发者无需自建状态或代理编排，即可通过 SDK 直接调用托管代理，大幅降低聊天机器人（如 Slack 机器人）的工程复杂度。关键收益在于：单个流式响应内同时获得文本与工具调用轨迹，且切换模型或代理仅需修改少量 handler 代码，这标志着聊天应用从“自带推理循环”向“消费托管代理服务”的范式转变。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-07-cursor-is-now-available-in-the-ai-sdk-harness-layer",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/cursor-ai-sdk-harness-adapter",
+      "publishedDate": "2026-08-27",
+      "title": "Cursor is now available in the AI SDK harness layer",
+      "summary": "Vercel 在 AI SDK 的 harness 层中新增了官方 @ai-sdk/harness-cursor 适配器，通过底层复用 @ai-sdk/harness-acp 并遵循 Agent Client Protocol (ACP)，使 Cursor 能与其他编码代理（如 Claude Code、Codex 等）以统一的 HarnessAgent 接口进行替换。",
+      "take": "工程上，这意味着你现在可以在同一应用代码中，通过标准接口无侵入地切换或并行调用多款编码代理，而无需为每家代理编写专用集成。核心价值在于 harness 层抽象了代理的协议差异，使代理编排、比较测试或故障转移成为可配置项而非代码实现。若你正在构建多代理工作流或代理网关，应优先考虑基于 ACP 的 harness 抽象，而非直接绑定单一代理 SDK。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-08-builder-theme-sam-altman-on-i-think-we-should-do-another-party-for-our-next-model-release-the-5",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2092733018838290817",
+      "title": "Builder Theme: Sam Altman on i think we should do another party for our next model release, the 5....",
+      "summary": "OpenAI執行長Sam Altman在X上發文，提議為下一代模型發布（暗示為5.x系列）再次舉辦派對，並公開徵求讓活動更出色的點子。",
+      "take": "此舉反映OpenAI將模型發布塑造為社群導向的體驗式事件，而非僅是技術公告。對AI建構者而言，值得關注的是這類社群氛圍可能暗示新模型發布時程臨近，且官方重視開發者社群的參與回饋，可提前準備API整合與測試。「5.5派對」的成功經驗或許預示未來發布將結合娛樂與技術展示，形成新的社群互動模式。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-09-builder-theme-thibault-sottiaux-on-a-few-weeks-at-openai-feel-like-years-at-other-companies-in-terms-of",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2092756702349398036",
+      "title": "Builder Theme: Thibault Sottiaux on A few weeks at OpenAI feel like years at other companies in terms of...",
+      "summary": "OpenAI 工程副总裁 Thibault Sottiaux 在社交平台指出，OpenAI 内部数周的工作产出密度堪比其他公司数年，且高强度节奏对个人精力的消耗极大。",
+      "take": "对 AI 构建者而言，OpenAI 的迭代速度意味着依赖其 API 或模型能力的系统需假设每隔数周就有破坏性变更，应设计解耦架构与自动迁移测试。同时，团队管理上须为高密度冲刺预留缓冲期，否则个体衰老式损耗会不可逆地降低长期工程输出质量。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-10-builder-theme-claude-in-chrome-is-generally-available",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "publishedDate": "2026-08-26",
+      "title": "Builder Theme: Claude in Chrome is generally available",
+      "summary": "Anthropic 将 Claude in Chrome 全面开放至所有付费套餐，使 Claude 能够在浏览器中自主执行操作（如阅读、点击、填写表单），并引入前置安全检查器对每个动作进行验证以防御提示注入。",
+      "take": "核心工程信号是：浏览器成为 agent 操作层，且安全模型从‘每步人工审批’转向‘预执行分类器验证’。构建者应重新设计 agent 工作流，将权限控制下沉到动作级验证（而非仅会话级授权），同时关注提示注入防护在自主浏览场景下的必要性，因为现有登录态和内部系统暴露将显著扩大攻击面。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-27-11-builder-theme-claude-gets-its-own-browser-in-cowork",
+      "briefingId": "rss-2026-08-27",
+      "date": "2026-08-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/cowork-built-in-browser",
+      "publishedDate": "2026-08-26",
+      "title": "Builder Theme: Claude gets its own browser in Cowork",
+      "summary": "Anthropic 在 Claude Cowork 桌面应用中集成内置浏览器，使 Claude 可在侧边栏自主导航网页、读取内容并执行点击与输入操作，无需扩展或共享用户浏览器即可完成表单填写、数据提取等网页任务，本周开始逐步推出。",
+      "take": "此功能将网页交互从用户浏览器中解耦，为代理提供独立的浏览器运行时，显著降低依赖浏览器扩展或连接器的集成复杂度。开发者需调整工作流设计，将原本需要用户手动协助的网页操作（如登录态页面内的数据录入）委托给 Cowork 会话，同时注意内置浏览器与用户浏览器在 Cookie、会话隔离上的差异，避免代理任务因认证状态缺失而失败。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
