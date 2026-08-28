@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-28",
     "2026-08-27",
     "2026-08-26",
     "2026-08-25",
@@ -199,6 +200,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-28": {
+      "briefingIds": [
+        "rss-2026-08-28"
+      ],
+      "insightIds": [
+        "rss-2026-08-28-01-supporting-thailands-next-generation-of-ai-startups",
+        "rss-2026-08-28-02-just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit-these-days",
+        "rss-2026-08-28-03-breaking-claude-code-opus-5-auto-mode",
+        "rss-2026-08-28-04-hy4-preview-now-available-on-ai-gateway",
+        "rss-2026-08-28-05-build-and-deploy-eve-agents-from-the-vercel-dashboard",
+        "rss-2026-08-28-06-builder-theme-ai-could-take-over-in-2029-is-it-already-too-late-ryan-greenblatt",
+        "rss-2026-08-28-07-builder-theme-sam-altman-on-this-is-a-critically-important-moment-for-cyber-defense-with-ai-ther",
+        "rss-2026-08-28-08-builder-theme-claude-on-starting-today-10000-scientists-across-every-field-from-math-to-ch"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-27": {
       "briefingIds": [
         "rss-2026-08-27"
