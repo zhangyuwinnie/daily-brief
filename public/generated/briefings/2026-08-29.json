@@ -1,0 +1,156 @@
+{
+  "date": "2026-08-29",
+  "briefings": [
+    {
+      "id": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-08-29",
+      "filePath": "2026-08-29.md",
+      "summaryTopline": "Our decision on Cursor following its acquisition by SpaceX",
+      "insightIds": [
+        "rss-2026-08-29-01-our-decision-on-cursor-following-its-acquisition-by-spacex",
+        "rss-2026-08-29-02-vercel-cli-expands-commands-for-dns-domains-and-projects",
+        "rss-2026-08-29-03-run-claude-managed-agents-with-chat-sdk",
+        "rss-2026-08-29-04-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-08-29-05-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-08-29-06-builder-theme-thibault-sottiaux-on-we-unfortunately-have-decided-that-we-cannot-continue-providing-acces",
+        "rss-2026-08-29-07-builder-theme-thariq-on-long-time-admirer-of-the-cursor-team-few-have-done-more-to-bring-ai"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-08-29-01-our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "publishedDate": "2026-08-28",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "summary": "OpenAI因Cursor被SpaceX收购，决定终止向其提供OpenAI模型的合同。",
+      "take": "模型供应商与下游工具整合的合同需明确所有权变更条款。收购可触发断供，影响依赖特定模型API的IDE等代理工具的架构稳定性。开发者需评估模型供应商集中化及并购带来的供应中断风险，规划多模型抽象层以增强韧性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-29-02-vercel-cli-expands-commands-for-dns-domains-and-projects",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-cli-expands-commands-for-dns-domains-and-projects",
+      "publishedDate": "2026-08-28",
+      "title": "Vercel CLI expands commands for DNS, domains, and projects",
+      "summary": "Vercel CLI 新增专用命令，支持通过终端直接管理 DNS 记录、域名续费与项目控制，覆盖原本仅限仪表盘与 API 的功能。",
+      "take": "开发者与 AI 代理现在可将 DNS 与域名生命周期操作纳入脚本或自主工作流，无需切换至网页控制台；特别是 `vercel dns update` 支持按记录 ID 原地修改 TTL、MX 等字段，为基础设施即代码与代理驱动的运维自动化提供了标准接口。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-29-03-run-claude-managed-agents-with-chat-sdk",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-managed-agents-with-chat-sdk",
+      "publishedDate": "2026-08-28",
+      "title": "Run Claude Managed Agents with Chat SDK",
+      "summary": "Vercel 的 Chat SDK 现已支持运行 Claude Managed Agents，由 Anthropic 在服务端管理代理循环（模型、工具、会话状态及沙盒化网络研究），并通过单一流式响应提供逐 token 输出和实时工具调用活动源，无需自建数据库。",
+      "take": "工程上，这意味着构建代理应用时可完全免去自管会话状态与代理编排逻辑，将循环执行外包给云端，从而大幅简化后端。开发者仅需关注 UI 层与事件流（token 流、活动源）的消费，同时通过替换 handler 中的少量代码即可在不同代理后端间切换，实现可移植的代理 UI 架构。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-08-29-04-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+      "title": "Builder Theme: Scaling Managed Agents: Decoupling the brain from the hands",
+      "summary": "Anthropic 推出 Claude Managed Agents，将智能体的大脑（模型推理）与双手（工具执行与长期任务编排）解耦，通过托管式 harness 管理上下文重置等操作，并强调 harness 假设需随模型迭代持续更新。",
+      "take": "核心工程启示是：harness 设计必须动态适配模型能力，而非固化假设——Sonnet 4.5 需要上下文重置，Opus 4.5 则不需要，因此复用同一 harness 会引入死重。构建长期运行代理时，应把 harness 视为可演化层，定期用新模型回归测试，移除失效的补偿逻辑，避免过度工程化拖累性能与成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-29-05-builder-theme-an-update-on-recent-claude-code-quality-reports",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "title": "Builder Theme: An update on recent Claude Code quality reports",
+      "summary": "Anthropic 在 4 月 23 日发布故障报告，将近期用户反映的 Claude 响应质量下降归因于三个独立变更：Claude Code 默认推理强度从 high 调整为 medium、Agent SDK 与 Cowork 的特定问题；API 与推理层未受影响，所有问题已于 4 月 20 日 v2.1.116 修复。",
+      "take": "对构建者，核心信号是 Claude Code 默认推理强度已从 high 降至 medium，可能影响复杂任务输出深度，需在长链路或高精度场景显式指定 reasoning effort。Anthropic 的根因是产品层配置而非模型能力退化，且已回滚；建议监控自身工作流中依赖默认参数的代码生成质量，并优先使用显式参数覆盖默认值以规避此类产品级变更带来的隐性漂移。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-29-06-builder-theme-thibault-sottiaux-on-we-unfortunately-have-decided-that-we-cannot-continue-providing-acces",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2093515916076343774",
+      "title": "Builder Theme: Thibault Sottiaux on We unfortunately have decided that we cannot continue providing acces...",
+      "summary": "OpenAI宣布终止与Cursor的模型合作，自11月12日起不再通过Cursor直接提供GPT模型访问，但保留用户自带API密钥及IDE扩展等替代路径。",
+      "take": "OpenAI正在收紧模型分发渠道控制，以信任为由切断与Cursor的深度集成。构建者应避免依赖单一宿主，优先采用自带API密钥或官方扩展的方式确保模型访问的稳定性；此举也暗示模型层与工具层的边界将更明确，代理工作流需考虑厂商锁定风险。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-08-29-07-builder-theme-thariq-on-long-time-admirer-of-the-cursor-team-few-have-done-more-to-bring-ai",
+      "briefingId": "rss-2026-08-29",
+      "date": "2026-08-29",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2093541555068182781",
+      "title": "Builder Theme: Thariq on Long-time admirer of the Cursor team, few have done more to bring AI...",
+      "summary": "Thariq公开表示长期欣赏Cursor团队在AI编程普及方面的贡献，并宣布将继续与其合作。",
+      "take": "该动态主要传递合作关系信号，而非技术突破。对开发者而言，关注点应放在Cursor后续功能更新上，而非此社交声明。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-29",
     "2026-08-28",
     "2026-08-27",
     "2026-08-26",
@@ -200,6 +201,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-29": {
+      "briefingIds": [
+        "rss-2026-08-29"
+      ],
+      "insightIds": [
+        "rss-2026-08-29-01-our-decision-on-cursor-following-its-acquisition-by-spacex",
+        "rss-2026-08-29-02-vercel-cli-expands-commands-for-dns-domains-and-projects",
+        "rss-2026-08-29-03-run-claude-managed-agents-with-chat-sdk",
+        "rss-2026-08-29-04-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-08-29-05-builder-theme-an-update-on-recent-claude-code-quality-reports",
+        "rss-2026-08-29-06-builder-theme-thibault-sottiaux-on-we-unfortunately-have-decided-that-we-cannot-continue-providing-acces",
+        "rss-2026-08-29-07-builder-theme-thariq-on-long-time-admirer-of-the-cursor-team-few-have-done-more-to-bring-ai"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-28": {
       "briefingIds": [
         "rss-2026-08-28"
