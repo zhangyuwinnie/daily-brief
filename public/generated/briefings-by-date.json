@@ -40292,5 +40292,96 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-30": {
+    "date": "2026-08-30",
+    "briefings": [
+      {
+        "id": "rss-2026-08-30",
+        "date": "2026-08-30",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-30",
+        "filePath": "2026-08-30.md",
+        "summaryTopline": "Introducing Hy4 Preview",
+        "insightIds": [
+          "rss-2026-08-30-01-introducing-hy4-preview",
+          "rss-2026-08-30-02-just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit-these-days",
+          "rss-2026-08-30-03-builder-theme-thibault-sottiaux-on-this-celebration-is-moved-to-tomorrow-as-the-button-was-already-press",
+          "rss-2026-08-30-04-builder-theme-guillermo-rauch-on-i-read-every-dm-people-send-me-even-if-i-dont-reply-to-all-im-con"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-30-01-introducing-hy4-preview",
+        "briefingId": "rss-2026-08-30",
+        "date": "2026-08-30",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/29/hy4/",
+        "publishedDate": "2026-08-29",
+        "title": "Introducing Hy4 Preview",
+        "summary": "腾讯发布开源权重文本输入LLM Hy4预览版，总参数770B、激活参数49B、上下文1M token，模型体积达1.56TB，相比Hy3参数和上下文规模大幅提升，并通过chat_template.jinja强制要求reasoning_effort参数设置为'high'或'no_think'。",
+        "take": "Hy4将MoE稀疏激活与强制推理模式结合，激活参数仅占总参数6.4%，但上下文长度提升至1M，暗示训练或推理阶段针对长序列优化。开发者需适配其模板校验逻辑，确保API调用显式传入reasoning_effort，否则会触发异常。规模跃升表明腾讯正押注超大规模稀疏模型，后续需关注其推理成本与真实长文本性能，而非仅看参数数字。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-30-02-just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit-these-days",
+        "briefingId": "rss-2026-08-30",
+        "date": "2026-08-30",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+        "publishedDate": "2026-08-28",
+        "title": "Just a rumour of a bug is enough to find a security exploit these days",
+        "summary": "劍橋教授Anil Madhavapeddy報告，OCaml專案在修補程式討論發布後約十分鐘內，即遭受針對percent-encoded traversal序列的自動化探測，顯示現代編碼代理能僅憑漏洞謠言迅速定位並嘗試利用安全缺陷。",
+        "take": "對開源維護者而言，公開討論漏洞修補已等同於發布利用指引；必須預設惡意代理會即時監看儲存庫並自動化攻擊。工程上應採用私有披露管道、延遲公開修補，並在合併前加強對可疑路徑的模糊測試與權限驗證，以縮短攻擊窗口。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-30-03-builder-theme-thibault-sottiaux-on-this-celebration-is-moved-to-tomorrow-as-the-button-was-already-press",
+        "briefingId": "rss-2026-08-30",
+        "date": "2026-08-30",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2093811840258293947",
+        "title": "Builder Theme: Thibault Sottiaux on This celebration is moved to tomorrow as the button was already press...",
+        "summary": "Thibault Sottiaux宣布原定于今日的庆祝活动推迟至明日，原因是触发按钮已于今日被按下，暗指某项关键发布或事件已提前生效。",
+        "take": "对于AI构建者而言，事件时间线的动态调整（如提前触发）可能意味着底层能力已验证完毕，建议密切关注其后续正式文档或API变更，以便及时适配工作流。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-30-04-builder-theme-guillermo-rauch-on-i-read-every-dm-people-send-me-even-if-i-dont-reply-to-all-im-con",
+        "briefingId": "rss-2026-08-30",
+        "date": "2026-08-30",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2093803989578170404",
+        "title": "Builder Theme: Guillermo Rauch on I read every DM people send me, even if I don’t reply to all. I’m con...",
+        "summary": "Vercel CEO Guillermo Rauch 表示会阅读所有收到的私信，并称其是持续获取产品改进、人才招募与投资方向等洞见的核心信息渠道。",
+        "take": "对 AI 构建者而言，高信号反馈常藏于非结构化的一对一通信中。可将 DM 处理流程纳入 Agent 的输入管道，用自动化工具做意图分类、情感分析与主题聚类，将低信噪比的文本流转化为可执行的产品或招聘决策依据。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

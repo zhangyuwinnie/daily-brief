@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-30",
     "2026-08-29",
     "2026-08-28",
     "2026-08-27",
@@ -201,6 +202,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-30": {
+      "briefingIds": [
+        "rss-2026-08-30"
+      ],
+      "insightIds": [
+        "rss-2026-08-30-01-introducing-hy4-preview",
+        "rss-2026-08-30-02-just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit-these-days",
+        "rss-2026-08-30-03-builder-theme-thibault-sottiaux-on-this-celebration-is-moved-to-tomorrow-as-the-button-was-already-press",
+        "rss-2026-08-30-04-builder-theme-guillermo-rauch-on-i-read-every-dm-people-send-me-even-if-i-dont-reply-to-all-im-con"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-29": {
       "briefingIds": [
         "rss-2026-08-29"
