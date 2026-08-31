@@ -40383,5 +40383,102 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-08-31": {
+    "date": "2026-08-31",
+    "briefings": [
+      {
+        "id": "rss-2026-08-31",
+        "date": "2026-08-31",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-08-31",
+        "filePath": "2026-08-31.md",
+        "summaryTopline": "Understanding ChatGPT Work",
+        "insightIds": [
+          "rss-2026-08-31-01-understanding-chatgpt-work",
+          "rss-2026-08-31-02-agent-memory-as-a-file-format",
+          "rss-2026-08-31-03-builder-theme-thibault-sottiaux-on-what-i-wanted-to-say-yesterday-is-that-we-hit-25m-active-users-and-to",
+          "rss-2026-08-31-04-builder-theme-peter-steinberger-on-two-months-ago-we-started-the-mission-to-build-openclaw-with-opencl"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-08-31-01-understanding-chatgpt-work",
+        "briefingId": "rss-2026-08-31",
+        "date": "2026-08-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+        "publishedDate": "2026-08-30",
+        "title": "Understanding ChatGPT Work",
+        "summary": "OpenAI 的ChatGPT Work实为两个独立产品：Work Cloud（云端运行，通过chatgpt.com或移动应用访问）与Work Local（桌面应用，原Codex重塑，可直接访问本地文件并执行程序），后者面向非开发者降低了使用门槛。",
+        "take": "（补充）当前迭代速度极快，接口与能力可能频繁变动，构建依赖时应抽象出统一适配层，隔离OpenAI官方变更带来的破坏性影响。",
+        "topics": [
+          "Coding Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-31-02-agent-memory-as-a-file-format",
+        "briefingId": "rss-2026-08-31",
+        "date": "2026-08-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://calpaterson.com/memoryfields.html",
+        "publishedDate": "2026-08-31",
+        "title": "Agent memory as a file format",
+        "summary": "Cal Paterson 提出将 Agent 记忆持久化为一种文件格式（memoryfields），模拟 Unix 文件系统语义，以结构化字段而非向量数据库或对话历史来存储代理状态。",
+        "take": "核心工程启示：Agent 记忆应作为可寻址、可版本化的文件系统抽象，而非隐式嵌入或日志流。采用字段化文件格式可自然获得路径访问、权限控制与跨进程共享，显著简化调试、回溯与多代理协作；建议在构建持久层时优先考虑确定性文件结构，而非依赖向量检索或 RAG 管道。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-31-03-builder-theme-thibault-sottiaux-on-what-i-wanted-to-say-yesterday-is-that-we-hit-25m-active-users-and-to",
+        "briefingId": "rss-2026-08-31",
+        "date": "2026-08-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2094252447271366730",
+        "title": "Builder Theme: Thibault Sottiaux on What I wanted to say yesterday is that we hit 25M active users and to...",
+        "summary": "OpenAI宣布其产品（含ChatGPT Work与Codex）已达到2500万活跃用户，并为所有付费订阅重置了使用额度以作庆祝。",
+        "take": "对AI构建者而言，用户基数跃升至2500万，表明基于大模型的自动化编码与工作流工具已进入主流采用阶段。重置使用额度降低了实验门槛，开发者可借此机会更密集地测试Codex等代理式编码工具的长时程任务，以评估其稳定性和成本效率。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-08-31-04-builder-theme-peter-steinberger-on-two-months-ago-we-started-the-mission-to-build-openclaw-with-opencl",
+        "briefingId": "rss-2026-08-31",
+        "date": "2026-08-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Peter Steinberger",
+        "sourceUrl": "https://x.com/steipete/status/2094290652649636173",
+        "title": "Builder Theme: Peter Steinberger on Two months ago, we started the mission to “build OpenClaw with OpenCl...",
+        "summary": "Peter Steinberger的团队在两个月内完成从本地编码环境到共享代理OpenClaw的全面迁移，该代理统一编排多人协作与云端无限计算资源，取代本地工具链。",
+        "take": "共享代理将协作状态与资源调度集中化，使团队突破单机限制，实现真正的多人并行编码。这意味着开发流程正从个人本地环境转向组织级AI编排层，未来工具链的核心竞争力在于状态共享与资源弹性，而非本地编码能力。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

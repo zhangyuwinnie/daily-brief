@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-08-31",
     "2026-08-30",
     "2026-08-29",
     "2026-08-28",
@@ -202,6 +203,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-08-31": {
+      "briefingIds": [
+        "rss-2026-08-31"
+      ],
+      "insightIds": [
+        "rss-2026-08-31-01-understanding-chatgpt-work",
+        "rss-2026-08-31-02-agent-memory-as-a-file-format",
+        "rss-2026-08-31-03-builder-theme-thibault-sottiaux-on-what-i-wanted-to-say-yesterday-is-that-we-hit-25m-active-users-and-to",
+        "rss-2026-08-31-04-builder-theme-peter-steinberger-on-two-months-ago-we-started-the-mission-to-build-openclaw-with-opencl"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-30": {
       "briefingIds": [
         "rss-2026-08-30"
