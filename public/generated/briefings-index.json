@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-01",
     "2026-08-31",
     "2026-08-30",
     "2026-08-29",
@@ -203,6 +204,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-01": {
+      "briefingIds": [
+        "rss-2026-09-01"
+      ],
+      "insightIds": [
+        "rss-2026-09-01-01-openai-supports-californias-bill-to-advance-youth-ai-safety",
+        "rss-2026-09-01-02-polimill-builds-japans-next-generation-public-ai-infrastructure",
+        "rss-2026-09-01-03-python-3150-candidate-2-is-here",
+        "rss-2026-09-01-04-introducing-wrapture",
+        "rss-2026-09-01-05-compute-that-takes-any-shape",
+        "rss-2026-09-01-06-fx-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-09-01-07-builder-theme-thibault-sottiaux-on-if-you-still-havent-tried-codex-but-have-considered-it-in-the-past",
+        "rss-2026-09-01-08-builder-theme-nan-yu-on-some-personal-newsim-joining-openai-to-work-on-codex-and-chatgpt-i"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-08-31": {
       "briefingIds": [
         "rss-2026-08-31"
