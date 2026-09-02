@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-02",
     "2026-09-01",
     "2026-08-31",
     "2026-08-30",
@@ -204,6 +205,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-02": {
+      "briefingIds": [
+        "rss-2026-09-02"
+      ],
+      "insightIds": [
+        "rss-2026-09-02-01-introducing-gemini-38-flash-and-38-flash-cyber",
+        "rss-2026-09-02-02-introducing-agentic-video-understanding-with-gemini",
+        "rss-2026-09-02-03-gemini-38-flash-now-available-on-ai-gateway",
+        "rss-2026-09-02-04-qwen-38-max-0902-now-available-on-ai-gateway",
+        "rss-2026-09-02-05-codex-bundles-libreoffice",
+        "rss-2026-09-02-06-datasette-mcp-02",
+        "rss-2026-09-02-07-benchmirt-what-are-llm-benchmarks-actually-measuring",
+        "rss-2026-09-02-08-how-ai-native-companies-turn-workflows-into-operating-capability",
+        "rss-2026-09-02-09-path-to-astra-critical-capabilities-and-frontier-safeguards",
+        "rss-2026-09-02-10-llms-intelligence-vs-cost",
+        "rss-2026-09-02-11-builder-theme-sam-altman-on-over-the-summer-we-have-been-sprinting-on-safety-priorities-its-mo",
+        "rss-2026-09-02-12-builder-theme-thibault-sottiaux-on-should-we-do-a-merch-line"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-01": {
       "briefingIds": [
         "rss-2026-09-01"

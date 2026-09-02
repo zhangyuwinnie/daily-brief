@@ -40656,5 +40656,261 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-02": {
+    "date": "2026-09-02",
+    "briefings": [
+      {
+        "id": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-02",
+        "filePath": "2026-09-02.md",
+        "summaryTopline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "insightIds": [
+          "rss-2026-09-02-01-introducing-gemini-38-flash-and-38-flash-cyber",
+          "rss-2026-09-02-02-introducing-agentic-video-understanding-with-gemini",
+          "rss-2026-09-02-03-gemini-38-flash-now-available-on-ai-gateway",
+          "rss-2026-09-02-04-qwen-38-max-0902-now-available-on-ai-gateway",
+          "rss-2026-09-02-05-codex-bundles-libreoffice",
+          "rss-2026-09-02-06-datasette-mcp-02",
+          "rss-2026-09-02-07-benchmirt-what-are-llm-benchmarks-actually-measuring",
+          "rss-2026-09-02-08-how-ai-native-companies-turn-workflows-into-operating-capability",
+          "rss-2026-09-02-09-path-to-astra-critical-capabilities-and-frontier-safeguards",
+          "rss-2026-09-02-10-llms-intelligence-vs-cost",
+          "rss-2026-09-02-11-builder-theme-sam-altman-on-over-the-summer-we-have-been-sprinting-on-safety-priorities-its-mo",
+          "rss-2026-09-02-12-builder-theme-thibault-sottiaux-on-should-we-do-a-merch-line"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-02-01-introducing-gemini-38-flash-and-38-flash-cyber",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+        "publishedDate": "2026-09-02",
+        "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "summary": "Google DeepMind 推出 Gemini 3.8 Flash 及专用的 3.8 Flash Cyber 变体，后者为代理式网络任务（如漏洞检测与事件响应）进行优化。",
+        "take": "对 AI 构建者而言，3.8 Flash 系列聚焦于低延迟、高吞吐的代理推理场景，而 Cyber 变体暗示了针对安全领域工作流的专属微调与工具集成能力。这标志着模型从通用聊天转向任务特化（如自主渗透测试与威胁追踪）的趋势，建议评估其在网络代理栈中作为执行层模型，而非仅作通用后端。核心价值在于利用其针对性强化来减少外部编排逻辑的复杂度，从而提升安全自动化任务的可靠性与响应速度。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-02-02-introducing-agentic-video-understanding-with-gemini",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+        "publishedDate": "2026-09-01",
+        "title": "Introducing agentic video understanding with Gemini",
+        "summary": "Google DeepMind 发布 Gemini 的代理式视频理解能力，使模型能对连续视频流进行实时推理、规划与动作决策，而非仅处理静态帧或剪辑片段。",
+        "take": "工程上，这标志着多模态模型从离线分析转向在线交互式视觉代理：开发者可构建能持续观察环境并主动采取行动的系统，需重新设计视频输入管道、上下文压缩策略及延迟优化机制。对 agent 工作流而言，视频成为新的‘感官通道’，推动具身智能与实时监控类应用进入高效解决方案区间。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-02-03-gemini-38-flash-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/gemini-3-8-flash-now-available-on-ai-gateway",
+        "publishedDate": "2026-09-02",
+        "title": "Gemini 3.8 Flash now available on AI Gateway",
+        "summary": "Vercel AI Gateway 正式上架 Google Gemini 3.8 Flash，支持 1M token 上下文、多模态输入、工具调用及网络搜索，默认开启思考模式，年底前享 5 折优惠，并可通过单一命令接入 Claude Code、Cursor 等主流编码代理。",
+        "take": "该模型在同等速度与成本下显著提升软件工程、代理任务及多步推理能力，且思考默认启用，适合作为编码代理的后端推理引擎。工程团队可直接通过 `vercel ai-gateway coding-agents setup` 切换，以评估其在复杂任务中的收益，而非仅依赖 Claude 或 Cursor 的既有路径。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-02-04-qwen-38-max-0902-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/qwen-3-8-max-0902-now-available-on-ai-gateway",
+        "publishedDate": "2026-09-01",
+        "title": "Qwen 3.8 Max 0902 now available on AI Gateway",
+        "summary": "Vercel AI Gateway 新增阿里巴巴 Qwen 3.8 Max 0902 快照，重點強化大型專案編碼、長時間無人監督任務及代理執行，並改善圖表與密集文件的視覺理解準確度；透過固定日期模型 ID 或重寫規則實現無痛遷移。",
+        "take": "工程團隊應利用固定日期快照 ID 鎖定行為，避免後續版本漂移；透過 Gateway 重寫規則可零程式碼切換既有流量，適合需要快速驗證新模型於編碼代理或長時間自主任務的效能提升，特別是在大型程式碼庫與複雜文件理解場景。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-05-codex-bundles-libreoffice",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+        "publishedDate": "2026-09-01",
+        "title": "Codex bundles LibreOffice",
+        "summary": "OpenAI Codex桌面应用（現更名ChatGPT）在其快取目錄中打包了1.7GB的完整Python、Node.js、Poppler、git及LibreOffice原生二進位檔，並透過插件技能（skills）指導模型定位與使用這些工具。",
+        "take": "此舉顯示OpenAI正將Codex從純程式碼代理擴展為通用文件處理代理，直接內建辦公室套件與PDF工具鏈，消除模型對外部API依賴。開發者應預期此模式將成為主流：代理環境預載全面原生工具，透過技能檔案暴露介面，而非即時安裝或呼叫雲端服務——這大幅降低延遲並提升離線與隱私能力。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-06-datasette-mcp-02",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+        "publishedDate": "2026-09-01",
+        "title": "datasette-mcp 0.2",
+        "summary": "datasette-mcp 0.2 发布首个非 alpha 版本，将 execute_sql 工具返回的 rows 从数组嵌套改为对象数组，并升级依赖至 mcp>=2.1.1。",
+        "take": "对象数组格式直接消除列位置映射歧义，对弱推理模型显著降低错误率，可作为自定义 MCP 工具输出的默认模式。升级 mcp 版本以获取最新协议支持，建议所有基于 MCP 的 SQL 工具跟进此变更。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-07-benchmirt-what-are-llm-benchmarks-actually-measuring",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/allenai/benchmirt",
+        "publishedDate": "2026-09-01",
+        "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+        "summary": "AllenAI 提出 BenchMIRT 框架，通过将基准测试问题映射到其潜在的内在知识需求（事实、推理或指令跟随），系统性地分解并测量 LLM 在基准上的表现，以揭示分数掩盖的能力差异。",
+        "take": "评估应转向分层诊断而非总分对比：利用 BenchMIRT 式的问题-技能归因，识别模型在特定知识类型或推理链上的瓶颈。工程上可将此方法集成到持续评估管线，对失败样本做技能标签聚类，以指导针对性的微调数据合成或推理时策略调整。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-08-how-ai-native-companies-turn-workflows-into-operating-capability",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/ai-native-company-workflows",
+        "publishedDate": "2026-09-01",
+        "title": "How AI-native companies turn workflows into operating capability",
+        "summary": "OpenAI 發布案例研究，展示 Basis、Clay 與 Exa Labs 如何將 AI 代理嵌入具體工作流程（入職、帳戶管理、開發者整合），將流程轉化為可重複的營運能力。",
+        "take": "核心訊號是：AI-native 的關鍵不在於單點自動化，而在於將代理作為工作流的一等公民，透過 API 與數據迴路整合進既有系統。工程師應優先設計代理可觀測的狀態轉移與失敗重試機制，而非追求端到端全自動；從高頻、低風險流程切入並建立評估閉環，是規模化營運能力的務實路徑。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-09-path-to-astra-critical-capabilities-and-frontier-safeguards",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/path-to-astra",
+        "publishedDate": "2026-09-01",
+        "title": "Path to Astra: critical capabilities and frontier safeguards",
+        "summary": "OpenAI 發布 Astra，宣稱其為首個在 Preparedness Framework 下達到「重大網路安全能力」門檻的模型，並為此強化發布前的安全防護措施。",
+        "take": "對於建構者而言，Astra 代表前沿模型的能力上限已明確跨入需嚴格紅隊測試與部署管控的領域；未來整合高風險 AI 代理時，必須主動將威脅模型、權限隔離及濫用監控納入架構設計，而非僅依賴模型廠商的既有保證。此舉亦暗示監管與標準化將加速收緊，代理系統的合規邊界需提前規劃。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-10-llms-intelligence-vs-cost",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://openteams.com/intelligence-vs-cost/",
+        "publishedDate": "2026-09-01",
+        "title": "LLMs: Intelligence vs. Cost",
+        "summary": "OpenTeams 发布文章讨论 LLM 智能水平与推理成本之间的权衡，Hacker News 评论区聚焦于不同模型在复杂任务中的实际性能与 token 消耗比。",
+        "take": "工程上需按任务复杂度分层选型：简单任务用低成本小模型，复杂推理才调用高智能大模型，并引入路由或级联架构以优化总成本。评估模型时不应只看基准分数，须结合真实工作负载下的 token 费用与延迟做端到端成本建模。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-11-builder-theme-sam-altman-on-over-the-summer-we-have-been-sprinting-on-safety-priorities-its-mo",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2094934592062959832",
+        "title": "Builder Theme: Sam Altman on Over the summer, we have been sprinting on safety priorities; it's mo...",
+        "summary": "Sam Altman 表示 OpenAI 在整个夏季优先推进安全对齐工作，并即将发布已完成训练的新模型 Astra，该模型在能力与对齐上均有显著进步，同时为后续模型刻意放缓发布节奏以满足更高能力等级所需的安全标准。",
+        "take": "能力与安全需同步升级，不能先发布再补救；Astra 的延迟发布表明对齐训练是发布前置条件而非可后置的补丁。构建者应预期未来模型迭代周期变长、能力跃迁伴随更严格的使用限制，并围绕稳定 API 而非频繁新模型设计系统架构。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-02-12-builder-theme-thibault-sottiaux-on-should-we-do-a-merch-line",
+        "briefingId": "rss-2026-09-02",
+        "date": "2026-09-02",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2094826808114057246",
+        "title": "Builder Theme: Thibault Sottiaux on Should we do a merch line?",
+        "summary": "AI建構者Thibault Sottiaux在X上發布貼文，詢問是否應推出週邊商品線，並附帶連結，內容並未揭露具體技術或架構細節。",
+        "take": "此貼文缺乏工程信號，僅為社群互動或產品策略試探。對AI建構者而言，應忽略此類非技術內容，專注於可驗證的架構變革或工具鏈更新，避免被行銷噪音分散注意力。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
