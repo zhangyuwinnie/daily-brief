@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-03",
     "2026-09-02",
     "2026-09-01",
     "2026-08-31",
@@ -205,6 +206,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-03": {
+      "briefingIds": [
+        "rss-2026-09-03"
+      ],
+      "insightIds": [
+        "rss-2026-09-03-01-give-your-coding-agents-a-memory-you-own",
+        "rss-2026-09-03-02-llm-gemini-034",
+        "rss-2026-09-03-03-gemini-38-flash-and-38-flash-cyber",
+        "rss-2026-09-03-04-github-copilot-app-for-beginners-run-several-agents-at-once",
+        "rss-2026-09-03-05-cursor-cloud-agents-can-now-run-in-vercel-sandbox",
+        "rss-2026-09-03-06-basic-build-machines-are-now-available-on-pro-and-enterprise",
+        "rss-2026-09-03-07-claudes-new-system-prompt-really-doesnt-want-to-reproduce-song-lyrics",
+        "rss-2026-09-03-08-decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing8230-oh-my",
+        "rss-2026-09-03-09-nokia-analyzes-50m-lines-of-code-in-two-weeks-with-cursor",
+        "rss-2026-09-03-10-chatgpt-claude-and-grok-are-down",
+        "rss-2026-09-03-11-builder-theme-claude-on-claude-can-now-use-your-computer-in-the-background-in-claude-cowork-a",
+        "rss-2026-09-03-12-builder-theme-thibault-sottiaux-on-the-chatgpt-desktop-app-is-now-my-main-browser-and-my-productivity-ha"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-02": {
       "briefingIds": [
         "rss-2026-09-02"

@@ -40912,5 +40912,268 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-03": {
+    "date": "2026-09-03",
+    "briefings": [
+      {
+        "id": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-03",
+        "filePath": "2026-09-03.md",
+        "summaryTopline": "Give Your Coding Agents a Memory You Own",
+        "insightIds": [
+          "rss-2026-09-03-01-give-your-coding-agents-a-memory-you-own",
+          "rss-2026-09-03-02-llm-gemini-034",
+          "rss-2026-09-03-03-gemini-38-flash-and-38-flash-cyber",
+          "rss-2026-09-03-04-github-copilot-app-for-beginners-run-several-agents-at-once",
+          "rss-2026-09-03-05-cursor-cloud-agents-can-now-run-in-vercel-sandbox",
+          "rss-2026-09-03-06-basic-build-machines-are-now-available-on-pro-and-enterprise",
+          "rss-2026-09-03-07-claudes-new-system-prompt-really-doesnt-want-to-reproduce-song-lyrics",
+          "rss-2026-09-03-08-decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing8230-oh-my",
+          "rss-2026-09-03-09-nokia-analyzes-50m-lines-of-code-in-two-weeks-with-cursor",
+          "rss-2026-09-03-10-chatgpt-claude-and-grok-are-down",
+          "rss-2026-09-03-11-builder-theme-claude-on-claude-can-now-use-your-computer-in-the-background-in-claude-cowork-a",
+          "rss-2026-09-03-12-builder-theme-thibault-sottiaux-on-the-chatgpt-desktop-app-is-now-my-main-browser-and-my-productivity-ha"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-03-01-give-your-coding-agents-a-memory-you-own",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/funes",
+        "publishedDate": "2026-09-03",
+        "title": "Give Your Coding Agents a Memory You Own",
+        "summary": "Hugging Face 發布了一個名為 Funes 的開源工具，讓開發者能為編碼代理創建自托管、可檢索的持久記憶層，以替代依賴第三方雲端或內建於模型上下文中的短期記憶。",
+        "take": "此架構將代理的狀態與對話歷史從模型供應商或上下窗口解耦，轉為可由開發者完全掌控、並能跨 session 重建的向量資料庫。工程上的關鍵是：透過顯式的記憶讀寫 API 與檢索機制，可讓編碼代理在大型任務中維持對先前決策、約束或程式碼片段的長期引用，而無需重複複製上下文，這直接影響代理的可靠性與可擴展性，尤其適用於多步驟重構或長時運行的工作流。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-03-02-llm-gemini-034",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+        "publishedDate": "2026-09-02",
+        "title": "llm-gemini 0.34",
+        "summary": "llm-gemini 0.34 新增支援 gemini-3.8-flash，提供低、中、高三種思考強度等級，並修正非同步回應未能記錄解析模型版本的問題。",
+        "take": "針對需要低延遲與低成本的原型驗證，gemini-3.8-flash 的 HTML/JavaScript 生成能力（13 秒、1.8 美分）可作為前端代碼代理的即時測試骨幹。工程上應評估其 thinking 等級對推理任務的品質差異，並留意 Cyber 版本僅限受信任防禦者使用，暗示其具備安全敏感能力但不可公開存取。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-03-03-gemini-38-flash-and-38-flash-cyber",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "publishedDate": "2026-09-02",
+        "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "summary": "Google 发布 Gemini 3.8 Flash 与其专用安全变体 3.8 Flash Cyber，后者针对网络安全任务优化，通过增强的防御性能力在低延迟下执行更复杂的代理工作流。",
+        "take": "对于 AI 构建者，Flash 系列的低延迟属性意味着可在实时代理循环中部署，而 Cyber 变体提示了一个特定领域微调（安全数据与工具集成）的趋势。评估指标应聚焦于自主威胁检测与修复的可靠性，而非通用基准分数。这验证了针对高价值垂直领域构建专用、可审计模型实例的架构方向。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-03-04-github-copilot-app-for-beginners-run-several-agents-at-once",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+        "publishedDate": "2026-09-03",
+        "title": "GitHub Copilot app for Beginners: Run several agents at once",
+        "summary": "GitHub 官方部落格介紹 Copilot app 的平行代理功能，引導初學者同時執行多個 agent，以體驗其協作威力。",
+        "take": "平行代理是將大型任務拆解為多個獨立子任務的關鍵模式，能顯著縮短開發循環；建置者應學習設計清楚的任務邊界，並利用 Copilot 的平行執行能力，將審查、測試與實作拆分至不同 agent，以提升整體吞吐量。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-05-cursor-cloud-agents-can-now-run-in-vercel-sandbox",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/run-cursor-cloud-agents-vercel-sandbox",
+        "publishedDate": "2026-09-03",
+        "title": "Cursor Cloud Agents can now run in Vercel Sandbox",
+        "summary": "Vercel 与 Cursor 集成，使 Cursor Cloud Agents 可在 Vercel Sandbox 的 Firecracker 微虚拟机中执行，由 Vercel Functions 与 Workflow 构成持久控制平面，负责队列领取、工作进程供给、会话监控与自动清理。",
+        "take": "此架构将代理执行环境从厂商托管机器迁移至用户可控的隔离沙箱，实现了按请求伸缩至零的 worker 池，并支持持久重试。对构建者而言，关键在于可利用 Cursor Enterprise 的 Self-Hosted Machines API 自定义执行环境，结合 Vercel 的 Workflow 机制直接集成到现有 CI/CD 管线，无需维护长驻虚拟机，从而降低运行成本并增强代理任务的可靠性与隔离性。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-06-basic-build-machines-are-now-available-on-pro-and-enterprise",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/basic-build-machines",
+        "publishedDate": "2026-09-03",
+        "title": "Basic build machines are now available on Pro and Enterprise",
+        "summary": "Vercel 在 Pro 和 Enterprise 计划中新增 Basic 构建机器选项，提供 2 vCPU 与 8GB 内存，按 vCPU 每分钟 $0.0035 计费，新项目默认仍使用 Elastic 构建机器，可通过团队/项目设置或 CLI 59.6.0+ 切换。",
+        "take": "对于资源需求稳定的轻量级应用或 agent 构建，Basic 机器可显著降低成本，但需明确其无自动扩展能力，构建并发或峰值负载可能导致排队。建议在 CI/CD 中按项目特征显式选择机器类型，避免依赖默认 Elastic 配置造成不必要的开支。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-07-claudes-new-system-prompt-really-doesnt-want-to-reproduce-song-lyrics",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+        "publishedDate": "2026-09-02",
+        "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+        "summary": "Anthropic 在其平台文档中重新整理了 Claude 消费级应用（Claude.ai 与移动端）的系统提示词，改为按模型分页展示并保留历史版本，且支持通过追加 .md 后缀直接获取 Markdown 格式内容，最新提示词明确强化了对歌词等版权材料的复制限制。",
+        "take": "此变更显示提示词工程正转向可追溯的版本化治理，工程团队应效仿将系统提示词视为受控工件，利用文档即接口的 .md 机制实现自动化抓取与差异比对，以快速适配模型行为突变。对依赖 Claude 生成或总结音乐内容的 RAG 与工作流，必须预设版权过滤层，而非依赖隐式提示约束，否则易触发输出阻断或合规风险。",
+        "topics": [
+          "RAG",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-08-decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing8230-oh-my",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+        "publishedDate": "2026-09-02",
+        "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing&#8230; oh my!",
+        "summary": "GitHub Podcast 透過解析 AI 開發圈新興術語（如 loops、harnesses、squads、hill climbing、open weights），解釋這些詞彙背後的工程概念與協作模式。",
+        "take": "重點在於理解「loop engineering」代表迭代式代理工作流的核心，而「harnesses」與「squads」暗示多代理協作與外部工具鏈結的標準化趨勢。開發者應將此視為代理架構中控制流與資源調度語彙的收斂，並據以設計更具可組合性的 AI 系統。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-09-nokia-analyzes-50m-lines-of-code-in-two-weeks-with-cursor",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Cursor Blog",
+        "sourceUrl": "https://cursor.com/blog/nokia",
+        "publishedDate": "2026-09-02",
+        "title": "Nokia analyzes 50M+ lines of code in two weeks with Cursor",
+        "summary": "Nokia利用Cursor的企业级AI编码工具，在两周内完成对5000万行以上代码库的分析，展示了大型组织如何在受限环境中规模化部署AI辅助代码审查与理解。",
+        "take": "Cursor向企业场景的扩展验证了AI代码代理可处理百万行级遗留代码库的静态分析任务，但实际工程价值取决于代码图谱索引效率与定制化规则集。团队应关注其本地/私有化部署的上下文压缩与检索机制，而非仅视为编码补全工具，这可能重塑大型代码库的现代化评估流程。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-10-chatgpt-claude-and-grok-are-down",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/",
+        "publishedDate": "2026-09-03",
+        "title": "ChatGPT, Claude, and Grok Are Down",
+        "summary": "2026年9月3日，ChatGPT、Claude与Grok三大主流AI服务同时发生大规模中断，Hacker News评论中用户报告API错误率飙升及响应超时，推测故障源于共享基础设施层或云提供商依赖。",
+        "take": "工程上应警惕单点故障的连锁反应：跨平台依赖同一底层云或认证服务时，需构建独立健康检查与降级路由。开发者应优先部署多提供商故障转移，并利用本地缓存与队列缓冲API抖动，而非依赖单一模型的可用性承诺。",
+        "topics": [
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-11-builder-theme-claude-on-claude-can-now-use-your-computer-in-the-background-in-claude-cowork-a",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2095226833293685100",
+        "title": "Builder Theme: Claude on Claude can now use your computer in the background in Claude Cowork a...",
+        "summary": "Anthropic在Claude Cowork和Claude Code中推出后台计算机操作能力，使Claude能像用户一样在桌面端点击、输入并打开应用程序，同时用户可并行处理其他任务。",
+        "take": "此功能标志着agentic工作流从单一任务执行转向并行桌面操作，关键工程信号在于Claude具备了后台GUI自动化能力，能让模型在独立会话中操作非浏览器应用。对AI builders而言，这意味着需重新考虑agent隔离与资源竞争模型，例如多实例并发操作同一桌面的状态冲突管理，以及事件驱动型GUI交互（非仅终端/API）作为新tool-use边界的架构设计。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-03-12-builder-theme-thibault-sottiaux-on-the-chatgpt-desktop-app-is-now-my-main-browser-and-my-productivity-ha",
+        "briefingId": "rss-2026-09-03",
+        "date": "2026-09-03",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2095288416292487289",
+        "title": "Builder Theme: Thibault Sottiaux on The ChatGPT desktop app is now my main browser and my productivity ha...",
+        "summary": "Thibault Sottiaux 将 ChatGPT 桌面应用作为其主要浏览器，通过将日常浏览与信息检索、任务执行整合进 AI 原生界面，显著提升了个人的生产力水平。",
+        "take": "这一实践揭示了一种新范式：桌面 AI 应用正在从辅助工具演变为整合的工作入口，其核心价值在于取代传统浏览器成为信息流与行动的中枢。对 AI 构建者而言，这意味着产品设计应优先考虑将浏览、上下文管理和生成式任务无缝融合于单一界面，从而降低工具切换成本并最大化用户认知带宽。",
+        "topics": [
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
