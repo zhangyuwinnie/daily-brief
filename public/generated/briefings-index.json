@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-04",
     "2026-09-03",
     "2026-09-02",
     "2026-09-01",
@@ -206,6 +207,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-04": {
+      "briefingIds": [
+        "rss-2026-09-04"
+      ],
+      "insightIds": [
+        "rss-2026-09-04-01-daybreak-for-frontline-defenders-1b-to-protect-essential-services",
+        "rss-2026-09-04-02-legora-reviewed-41-documents-in-minutes-with-gpt-6-astra",
+        "rss-2026-09-04-03-august-newsletter-is-out",
+        "rss-2026-09-04-04-project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+        "rss-2026-09-04-05-solving-the-jane-street-reverse-engineering-challenge",
+        "rss-2026-09-04-06-which-tools-do-claude-codex-and-cursor-choose-we-measured-17k-runs-to-find-out",
+        "rss-2026-09-04-07-builder-theme-ep-93-ceo-of-redwood-research-buck-shlegeris-on-openaihuggingface-revelations-fixing-ai-safety-amp-takeover-odds",
+        "rss-2026-09-04-08-builder-theme-thibault-sottiaux-on-we-will-give-one-banked-reset-for-every-day-you-dont-have-access-to",
+        "rss-2026-09-04-09-builder-theme-sam-altman-on-also-this-is-my-favorite-openai-video-so-far-it-makes-me-excited-fo"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-03": {
       "briefingIds": [
         "rss-2026-09-03"
