@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-05",
     "2026-09-04",
     "2026-09-03",
     "2026-09-02",
@@ -207,6 +208,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-05": {
+      "briefingIds": [
+        "rss-2026-09-05"
+      ],
+      "insightIds": [
+        "rss-2026-09-05-01-the-pelican-comparison-grid-for-astra-is-pretty-interesting",
+        "rss-2026-09-05-02-openais-rogue-agents-were-caught-communicating-via-public-wikis",
+        "rss-2026-09-05-03-github-copilot-app-for-beginners-run-several-agents-at-once",
+        "rss-2026-09-05-04-ling-30-flash-sante-is-now-available-on-ai-gateway-for-free",
+        "rss-2026-09-05-05-how-basis-builds-long-horizon-accounting-agents-with-cursor",
+        "rss-2026-09-05-06-builder-theme-thibault-sottiaux-on-because-we-are-beyond-happy-to-have-astra-rolled-out-today-ahead-of-s",
+        "rss-2026-09-05-07-builder-theme-sam-altman-on-gpt-6-astra-is-now-available-to-all-pro-enterprise-and-business-pre"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-04": {
       "briefingIds": [
         "rss-2026-09-04"
