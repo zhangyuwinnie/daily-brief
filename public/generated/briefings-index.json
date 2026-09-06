@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-06",
     "2026-09-05",
     "2026-09-04",
     "2026-09-03",
@@ -208,6 +209,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-06": {
+      "briefingIds": [
+        "rss-2026-09-06"
+      ],
+      "insightIds": [
+        "rss-2026-09-06-01-introducing-gpt-6-astra-for-developers",
+        "rss-2026-09-06-02-using-blender-with-coding-agents-on-macos",
+        "rss-2026-09-06-03-project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+        "rss-2026-09-06-04-builder-theme-guillermo-rauch-on-ai-software-factories-will-yield-bug-free-self-improving-software",
+        "rss-2026-09-06-05-builder-theme-amjad-masad-on-the-singularity-is-here-its-just-not-evenly-distributed"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-05": {
       "briefingIds": [
         "rss-2026-09-05"
