@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-07",
     "2026-09-06",
     "2026-09-05",
     "2026-09-04",
@@ -209,6 +210,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-07": {
+      "briefingIds": [
+        "rss-2026-09-07"
+      ],
+      "insightIds": [
+        "rss-2026-09-07-01-supporting-independent-journalism-in-ukraine",
+        "rss-2026-09-07-02-research-acceleration-the-view-inside-openai",
+        "rss-2026-09-07-03-builder-theme-aaron-levie-on-the-internet-is-almost-entirely-unprepared-for-a-future-where-everyon",
+        "rss-2026-09-07-04-builder-theme-zara-zhang-on-one-of-the-biggest-crises-of-our-time-is-the-shortening-of-the-human"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-06": {
       "briefingIds": [
         "rss-2026-09-06"
