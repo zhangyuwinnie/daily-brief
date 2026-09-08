@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-08",
     "2026-09-07",
     "2026-09-06",
     "2026-09-05",
@@ -210,6 +211,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-08": {
+      "briefingIds": [
+        "rss-2026-09-08"
+      ],
+      "insightIds": [
+        "rss-2026-09-08-01-funding-grants-for-new-research-into-ai-and-teen-development",
+        "rss-2026-09-08-02-openai-expands-initiatives-to-support-journalism-from-classrooms-to-newsrooms",
+        "rss-2026-09-08-03-llm-035",
+        "rss-2026-09-08-04-quoting-jakub-pachocki",
+        "rss-2026-09-08-05-reverse-engineering-the-2008-logicola-a-logic-drill-program",
+        "rss-2026-09-08-06-builder-theme-thibault-sottiaux-on-i-think-i-can-officially-say-we-are-so-back",
+        "rss-2026-09-08-07-builder-theme-amanda-askell-on-it-would-be-cool-to-set-up-an-email-address-that-autonomous-ai-models"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-07": {
       "briefingIds": [
         "rss-2026-09-07"
