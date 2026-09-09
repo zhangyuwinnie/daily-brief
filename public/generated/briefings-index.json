@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-09",
     "2026-09-08",
     "2026-09-07",
     "2026-09-06",
@@ -211,6 +212,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-09": {
+      "briefingIds": [
+        "rss-2026-09-09"
+      ],
+      "insightIds": [
+        "rss-2026-09-09-01-how-gpt-56-sol-helps-run-quantum-computing-experiments",
+        "rss-2026-09-09-02-1password-increases-engineering-productivity-21-with-codex",
+        "rss-2026-09-09-03-on-the-navierstokes-millennium-prize-problem",
+        "rss-2026-09-09-04-introducing-chatgpt-images-25",
+        "rss-2026-09-09-05-gpt-6-astra-looped-transformers-and-hidden-reasoning",
+        "rss-2026-09-09-06-anthropic-is-building-a-predictive-surveillance-system-to-monitor-activists",
+        "rss-2026-09-09-07-introducing-flat-rate-cdn",
+        "rss-2026-09-09-08-gpt-image-25-flare-and-sunburst-now-available-on-ai-gateway",
+        "rss-2026-09-09-09-when-will-average-people-feel-ais-impact",
+        "rss-2026-09-09-10-builder-theme-sam-altman-on-images-25-is-here-i-dont-think-it-can-solve-super-difficult-math-p",
+        "rss-2026-09-09-11-builder-theme-thibault-sottiaux-on-demand-for-astra-is-really-unprecedented-were-pulling-all-the-lever"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-08": {
       "briefingIds": [
         "rss-2026-09-08"
