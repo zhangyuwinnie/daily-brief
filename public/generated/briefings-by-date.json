@@ -42125,5 +42125,224 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-10": {
+    "date": "2026-09-10",
+    "briefings": [
+      {
+        "id": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-10",
+        "filePath": "2026-09-10.md",
+        "summaryTopline": "DeepSeek V4.1 Flash now available on AI Gateway",
+        "insightIds": [
+          "rss-2026-09-10-01-deepseek-v41-flash-now-available-on-ai-gateway",
+          "rss-2026-09-10-02-persistent-memory-for-eve-agents",
+          "rss-2026-09-10-03-blend-url-viewer",
+          "rss-2026-09-10-04-rebuilding-automatic1111-with-gradio-workflow",
+          "rss-2026-09-10-05-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimicrobial-molecules",
+          "rss-2026-09-10-06-now-everyone-can-put-data-to-work",
+          "rss-2026-09-10-07-quoting-calif-research",
+          "rss-2026-09-10-08-more-questions-about-whether-researchers-can-trust-openai-with-unpublished-math",
+          "rss-2026-09-10-09-builder-theme-sam-altman-on-ocarina-of-time-remake-is-the-best-news-in-a-long-time-i-will-be-una",
+          "rss-2026-09-10-10-builder-theme-thibault-sottiaux-on-there-was-a-bit-of-a-kerfuffle-this-morning-with-some-banked-resets-n"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-10-01-deepseek-v41-flash-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/deepseek-v4-1-flash-now-available-on-ai-gateway",
+        "publishedDate": "2026-09-09",
+        "title": "DeepSeek V4.1 Flash now available on AI Gateway",
+        "summary": "Vercel AI Gateway上线DeepSeek V4.1 Flash模型，具备原生图像理解、100万token上下文窗口、最高384,000 token输出，并采用输入输出分离处理的新架构降低各阶段活跃计算量，可直接接入Claude Code、Codex、Cursor等编码代理。",
+        "take": "输入与输出处理解耦的架构意味着推理与生成可独立优化，长上下文场景下的有效计算成本将显著下降。上下文与输出窗口的扩张使代理可一次性吞吐整个仓库级代码与截图，减少分块检索与工具调用往返。开发者应立即在现有编码代理中切换模型名测试视觉+超长上下文工作流，验证端到端延迟与准确率收益。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-10-02-persistent-memory-for-eve-agents",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/persistent-memory-for-eve-agents",
+        "publishedDate": "2026-09-09",
+        "title": "Persistent memory for eve agents",
+        "summary": "Vercel 为 eve agents 引入持久内存机制，通过 agent/memory/ 下的命名 slot 定义 provider 与 scope（如按认证用户隔离），并在每轮对话前自动检索相关记忆注入模型上下文，支持回合后或通过工具更新。",
+        "take": "记忆被抽象为可配置的 slot（provider + scope），使多租户隔离与共享策略成为声明式配置而非硬编码；对构建者而言，agent 状态管理从会话内上下文工程转向跨会话的外部化存储层，可复用现有 Blob 等基础设施实现按用户粒度的长期记忆。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-10-03-blend-url-viewer",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+        "publishedDate": "2026-09-09",
+        "title": ".blend URL Viewer",
+        "summary": "Simon Willison 利用 GPT-6 Astra 驱动的 Codex 调用本地 Blender 技能，从 ChatGPT Images 2.5 生成的法贝热彩蛋图像自动构建出多个 .blend 3D 模型文件，耗时 17 分 51 秒。",
+        "take": "Codex 通过加载本地技能文件（skill file）将图像理解转化为 Blender 可执行脚本，实现了从 2D 图像到 3D 模型的全自动生成。这标志着 LLM 智能体开始具备调用本地专业工具链（如 Blender）完成复杂多步创作任务的能力，技能文件正成为扩展智能体领域能力的标准接口。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-10-04-rebuilding-automatic1111-with-gradio-workflow",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/gradio-workflow-1111",
+        "publishedDate": "2026-09-10",
+        "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "summary": "Hugging Face 发布技术博客，展示使用 Gradio Workflow 从零重建 AUTOMATIC1111 风格的 Stable Diffusion WebUI。",
+        "take": "Gradio Workflow 将复杂 AI 应用的 UI 状态与后端执行流解耦，使开发者能以声明式节点图替代传统命令式事件回调来构建生成式 AI 前端。这为复用和组合扩散模型工作流提供了可移植的架构范式，降低了从脚本到交互式工具的重构成本。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-05-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimicrobial-molecules",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+        "publishedDate": "2026-09-10",
+        "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+        "summary": "César de la Fuente 实验室利用 Codex 与 ChatGPT 在现存及灭绝生物基因组中挖掘抗菌分子候选物，以对抗耐药性感染。",
+        "take": "LLM 辅助的基因组挖掘将生物信息学搜索从人工规则驱动转向模型驱动的候选物生成，扩展了可探索的序列空间至灭绝物种。核心工程启示在于把代码生成模型作为科学发现流水线中的搜索原语，而非仅作编码助手。",
+        "topics": [
+          "Coding Agents",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-06-now-everyone-can-put-data-to-work",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/put-data-to-work",
+        "publishedDate": "2026-09-10",
+        "title": "Now everyone can put data to work",
+        "summary": "OpenAI在ChatGPT Work中推出Data agent，允许用户通过自然语言连接企业数据、挖掘洞察并构建交互式仪表板。",
+        "take": "该功能将数据分析工作流从手动SQL/BI工具转向对话式代理，降低了非技术用户的数据操作门槛。对构建者而言，需关注代理如何通过自然语言接口封装数据连接、查询生成与可视化编排的完整链路。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-07-quoting-calif-research",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/10/calif-research/",
+        "publishedDate": "2026-09-10",
+        "title": "Quoting Calif Research",
+        "summary": "Calif Research 利用 AI 在约两天内发现微信通话的零点击漏洞并编写出首个 RCE 利用，再用一周构建出可跨 iOS 与 Android 传播的 WeWorm 蠕虫，受害者无需接听或交互即可被感染。",
+        "take": "AI 已将漏洞发现与武器化周期从数月压缩至数天，显著降低了高级持续性威胁的开发门槛。安全团队须重新评估零点击攻击面的暴露程度，并将防御假设从“需要用户交互”转向“无需交互即可失陷”。",
+        "topics": [
+          "Evals",
+          "Retrieval",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-08-more-questions-about-whether-researchers-can-trust-openai-with-unpublished-math",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+        "publishedDate": "2026-09-09",
+        "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+        "summary": "数学研究者公开质疑OpenAI违反保密约定，将未发表数学成果用于模型训练，引发研究界对AI实验室数据来源透明度和信任机制的讨论。",
+        "take": "构建者需注意，学术合作中未发表预印本和审稿材料可能被模型实验室用于训练，当前缺乏可验证的数据来源追踪机制。对AI实验室而言，建立数据溯源和保密协议的可审计技术方案，是获取高质量学术数据的必要前提。",
+        "topics": [
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-09-builder-theme-sam-altman-on-ocarina-of-time-remake-is-the-best-news-in-a-long-time-i-will-be-una",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2097696043492143157",
+        "title": "Builder Theme: Sam Altman on ocarina of time remake is the best news in a long time. i will be una...",
+        "summary": "Sam Altman宣布因《塞尔达传说：时之笛》重制版消息，将于11月5日至6日暂停工作。",
+        "take": "该信息为个人娱乐动态，不包含AI工程、架构或智能体能力的可操作信号，对AI构建者无技术参考价值。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-10-10-builder-theme-thibault-sottiaux-on-there-was-a-bit-of-a-kerfuffle-this-morning-with-some-banked-resets-n",
+        "briefingId": "rss-2026-09-10",
+        "date": "2026-09-10",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2097752790177370535",
+        "title": "Builder Theme: Thibault Sottiaux on There was a bit of a kerfuffle this morning with some banked resets n...",
+        "summary": "OpenAI的Thibault Sottiaux承认，今早ChatGPT Work与Codex中已存储的重置（banked resets）在特定时间窗口内未能完全生效，官方将为受影响用户额外补发一次重置并发送致歉邮件。",
+        "take": "对依赖额度重置进行高频Agent调用与代码生成的工作流，此类状态未落账的故障会直接中断任务队列。构建者应在关键任务中引入额度状态自检与幂等重试机制，避免将上线或代码提交节点绑定在单一重置事件上。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

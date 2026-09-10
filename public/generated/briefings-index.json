@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-10",
     "2026-09-09",
     "2026-09-08",
     "2026-09-07",
@@ -212,6 +213,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-10": {
+      "briefingIds": [
+        "rss-2026-09-10"
+      ],
+      "insightIds": [
+        "rss-2026-09-10-01-deepseek-v41-flash-now-available-on-ai-gateway",
+        "rss-2026-09-10-02-persistent-memory-for-eve-agents",
+        "rss-2026-09-10-03-blend-url-viewer",
+        "rss-2026-09-10-04-rebuilding-automatic1111-with-gradio-workflow",
+        "rss-2026-09-10-05-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimicrobial-molecules",
+        "rss-2026-09-10-06-now-everyone-can-put-data-to-work",
+        "rss-2026-09-10-07-quoting-calif-research",
+        "rss-2026-09-10-08-more-questions-about-whether-researchers-can-trust-openai-with-unpublished-math",
+        "rss-2026-09-10-09-builder-theme-sam-altman-on-ocarina-of-time-remake-is-the-best-news-in-a-long-time-i-will-be-una",
+        "rss-2026-09-10-10-builder-theme-thibault-sottiaux-on-there-was-a-bit-of-a-kerfuffle-this-morning-with-some-banked-resets-n"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-09": {
       "briefingIds": [
         "rss-2026-09-09"
