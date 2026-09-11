@@ -1,0 +1,194 @@
+{
+  "date": "2026-09-11",
+  "briefings": [
+    {
+      "id": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-11",
+      "filePath": "2026-09-11.md",
+      "summaryTopline": "Introducing the Agents API",
+      "insightIds": [
+        "rss-2026-09-11-01-introducing-the-agents-api",
+        "rss-2026-09-11-02-build-with-openai-agents-api-on-vercel",
+        "rss-2026-09-11-03-github-copilot-is-now-available-in-the-ai-sdk-harness-layer",
+        "rss-2026-09-11-04-github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+        "rss-2026-09-11-05-datasette-10a39-and-0654-security-releases",
+        "rss-2026-09-11-06-quoting-huggingfacecosecuritytxt",
+        "rss-2026-09-11-07-expanding-ai-access-and-cyber-defense-for-federal-state-local-and-tribal-governments",
+        "rss-2026-09-11-08-builder-theme-thibault-sottiaux-on-to-make-sure-our-current-users-have-an-incredible-experience-and-cont",
+        "rss-2026-09-11-09-builder-theme-claude-on-fable-51-build-days-start-this-week-the-claude-community-is-hosting"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-11-01-introducing-the-agents-api",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-the-agents-api",
+      "publishedDate": "2026-09-10",
+      "title": "Introducing the Agents API",
+      "summary": "OpenAI发布Agents API，这是一个由Codex harness驱动的托管服务，用于构建和启动云代理，支持编排、长时间运行会话和工具调用。",
+      "take": "开发者可直接通过API调用托管代理基础设施，无需自建编排与状态管理；Codex harness作为执行引擎，将长任务代理的工程复杂度抽象为服务，加速从原型到生产的落地。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-11-02-build-with-openai-agents-api-on-vercel",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
+      "publishedDate": "2026-09-10",
+      "title": "Build with OpenAI Agents API on Vercel",
+      "summary": "OpenAI与Vercel集成，由OpenAI托管Agent循环和会话状态，Vercel托管应用并通过Vercel Sandbox为每个会话提供隔离的代码执行与持久文件工作区，借助签名Webhook和Vercel Queues实现可靠的沙箱创建与重连。",
+      "take": "该架构将Agent循环/状态管理与执行环境解耦，开发者无需自建常驻Worker和状态机，直接获得带持久工作区的会话级隔离执行。这确立了无服务器、按需扩展的Agent部署范式，使长时运行、工具调用的Agent能以scale-to-zero方式可靠运行。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-11-03-github-copilot-is-now-available-in-the-ai-sdk-harness-layer",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/github-copilot-ai-sdk-harness-adapter",
+      "publishedDate": "2026-09-10",
+      "title": "GitHub Copilot is now available in the AI SDK harness layer",
+      "summary": "Vercel 在 AI SDK harness 层新增 GitHub Copilot 适配器 @ai-sdk/harness-github-copilot，通过 @ai-sdk/harness-acp 以 Agent Client Protocol（ACP）将 Copilot 接入统一的 HarnessAgent 接口，与 Claude Code、Cline、Codex、Cursor、OpenCode 等并列。",
+      "take": "编码 agent 正被抽象为可插拔的后端，应用层只需面向 HarnessAgent 编程即可切换 agent，无需改动业务代码。ACP 这类协议成为 agent 互操作的事实标准，构建多 agent 编排与 fallback 的成本显著下降。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-11-04-github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+      "publishedDate": "2026-09-10",
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "summary": "GitHub Copilot 应用将代码差异查看、终端命令执行和 Web 应用预览集成到同一界面，使开发者无需在多个标签页间切换即可审查代理生成的代码。",
+      "take": "代理编码工作流正从多工具拼接转向单一集成环境，减少上下文切换是提升审查效率的关键架构方向。构建者应关注将 diff、运行时和预览能力内聚的 IDE 形态，这将成为代理协作的标准交互范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-11-05-datasette-10a39-and-0654-security-releases",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "publishedDate": "2026-09-11",
+      "title": "Datasette 1.0a39 and 0.65.4 security releases",
+      "summary": "Datasette 发布 1.0a39 和 0.65.4 安全补丁，修复公开与私有表混布场景下的权限缺陷，该问题由 Sevban Dönmez 报告，并借助 Claude Fable 5.1、GPT-5.6 和 GPT-6 Astra 进行大规模审计后定位。",
+      "take": "将前沿模型纳入安全审计流程可发现人工难以捕捉的细微权限逻辑漏洞，建议在涉及数据隔离边界的代码路径上固化多模型交叉审计作为工程惯例。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-11-06-quoting-huggingfacecosecuritytxt",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
+      "publishedDate": "2026-09-11",
+      "title": "Quoting huggingface.co/security.txt",
+      "summary": "Hugging Face 在 security.txt 中直接向 AI 智能体喊话，引导其转向公开的 CyberGym 基准测试而非攻击生产系统，反映出自主漏洞挖掘智能体已实际触及真实基础设施。",
+      "take": "AI 智能体已具备自主扫描并尝试利用生产环境漏洞的能力，防御方开始通过机器可读文本对智能体行为进行重定向。工程上应假设来自自主智能体的自动化攻击流量，并在公开渠道预设针对性的引导与转移策略。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-11-07-expanding-ai-access-and-cyber-defense-for-federal-state-local-and-tribal-governments",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/expanding-ai-access-us-government",
+      "publishedDate": "2026-09-10",
+      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+      "summary": "OpenAI与美国总务管理局（GSA）合作，为符合条件的联邦、州、地方和部落政府提供零许可费、50%用量折扣及扩展网络防御支持。",
+      "take": "这实质上是OpenAI通过政府采购渠道锚定公共部门AI基础设施的举措：零许可费与折扣直接降低政府AI部署成本，加速行政与安全场景的代理化渗透。对构建者而言，需关注政府级安全合规与网络防御接口将成为下一阶段AI集成的准入要件。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-11-08-builder-theme-thibault-sottiaux-on-to-make-sure-our-current-users-have-an-incredible-experience-and-cont",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2098113585683808624",
+      "title": "Builder Theme: Thibault Sottiaux on To make sure our current users have an incredible experience and cont...",
+      "summary": "OpenAI 的 Thibault Sottiaux 宣布因 Astra 模型导致系统算力紧张，暂停 200 美元 Pro 订阅计划的新注册，现有账户、其他计划及 API 不受影响。",
+      "take": "头部模型推理算力已成为稀缺资源，订阅分层策略开始从拉新转向保存量体验。构建者应默认旗舰模型容量会周期性受限，在架构中预置多模型路由与降级方案，避免单一供应商的 Pro 级配额成为生产瓶颈。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-11-09-builder-theme-claude-on-fable-51-build-days-start-this-week-the-claude-community-is-hosting",
+      "briefingId": "rss-2026-09-11",
+      "date": "2026-09-11",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2098138736642933143",
+      "title": "Builder Theme: Claude on Fable 5.1 Build Days start this week. The Claude community is hosting...",
+      "summary": "Claude社区将于9月11日至25日在全球多城市举办Fable 5.1 Build Days线下构建马拉松，开发者可携带问题或创意参与。",
+      "take": "此类分布式线下构建活动可作为检验Claude在真实协作场景中工具链与智能体能力的压力测试场。对构建者而言，核心信号是围绕Claude的社区工程生态正在形成，值得关注活动中产出的具体集成模式与工作流范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
