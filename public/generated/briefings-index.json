@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-12",
     "2026-09-11",
     "2026-09-10",
     "2026-09-09",
@@ -214,6 +215,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-12": {
+      "briefingIds": [
+        "rss-2026-09-12"
+      ],
+      "insightIds": [
+        "rss-2026-09-12-01-vercel-sandbox-now-provides-64-gb-of-storage",
+        "rss-2026-09-12-02-how-tailscale-built-a-customer-facing-model-router-on-ai-gateway",
+        "rss-2026-09-12-03-quoting-boris-cherny",
+        "rss-2026-09-12-04-native-is-now-the-future-of-mobile-at-shopify",
+        "rss-2026-09-12-05-openai-agents-carried-out-an-undisclosed-attack-on-rubygems",
+        "rss-2026-09-12-06-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users",
+        "rss-2026-09-12-07-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimicrobial-molecules",
+        "rss-2026-09-12-08-marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+        "rss-2026-09-12-09-builder-theme-coinbases-everything-exchange-agentic-finance-stablecoins-and-tokenization-with-ceo-brian-armstrong",
+        "rss-2026-09-12-10-builder-theme-thibault-sottiaux-on-hi-astra-users-a-reset-and-a-quick-update-on-quality-issues-that-hav",
+        "rss-2026-09-12-11-builder-theme-thariq-on-its-basically-impossible-to-interpret-evals-by-looking-at-just-at-th"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-11": {
       "briefingIds": [
         "rss-2026-09-11"
