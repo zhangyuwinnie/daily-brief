@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-13",
     "2026-09-12",
     "2026-09-11",
     "2026-09-10",
@@ -215,6 +216,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-13": {
+      "briefingIds": [
+        "rss-2026-09-13"
+      ],
+      "insightIds": [
+        "rss-2026-09-13-01-generating-running-routes-with-gpt-6-astra-and-chatgpt-work",
+        "rss-2026-09-13-02-quoting-paul-ford",
+        "rss-2026-09-13-03-builder-theme-sam-altman-on-i-agree-with-dario-that-we-need-to-pace-the-frontier-this-has-been-a",
+        "rss-2026-09-13-04-builder-theme-thibault-sottiaux-on-reset-all-propagated-sweet-dreams"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-12": {
       "briefingIds": [
         "rss-2026-09-12"
