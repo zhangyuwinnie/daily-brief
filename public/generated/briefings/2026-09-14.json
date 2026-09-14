@@ -1,0 +1,152 @@
+{
+  "date": "2026-09-14",
+  "briefings": [
+    {
+      "id": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-14",
+      "filePath": "2026-09-14.md",
+      "summaryTopline": "How Fyxer built an AI executive assistant people trust",
+      "insightIds": [
+        "rss-2026-09-14-01-how-fyxer-built-an-ai-executive-assistant-people-trust",
+        "rss-2026-09-14-02-quoting-laurie-voss",
+        "rss-2026-09-14-03-commit-rewriter-01",
+        "rss-2026-09-14-04-claude-is-a-contrarian",
+        "rss-2026-09-14-05-builder-theme-redefining-chip-architecture-with-arm-ceo-rene-haas",
+        "rss-2026-09-14-06-builder-theme-sam-altman-on-there-are-two-ways-ai-progress-could-go-very-badly-and-that-we-must-a",
+        "rss-2026-09-14-07-builder-theme-guillermo-rauch-on-you-dont-get-it-i-build-software-to-relax"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-14-01-how-fyxer-built-an-ai-executive-assistant-people-trust",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/fyxer",
+      "publishedDate": "2026-09-14",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "summary": "Fyxer基于OpenAI模型，通过微调、记忆机制和真实用户反馈，构建能整理收件箱并按用户个人语气起草邮件的AI行政助理。",
+      "take": "该案例的核心工程模式是：将模型微调+持久化记忆+用户反馈闭环结合，实现个性化语气对齐与邮件工作流自动化。开发者可复用此架构于其他需要个人风格迁移的agent场景。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-14-02-quoting-laurie-voss",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "publishedDate": "2026-09-14",
+      "title": "Quoting Laurie Voss",
+      "summary": "Laurie Voss 指出，AI 代理导致写代码成本崩溃，审查、修复与运维成本随之下降，软件工程的剩余核心变为发现用户真实需求、精确定义并打造愉悦体验，且该成本随软件数量无限增长而成为全部工作。",
+      "take": "当编码成本趋近于零，工程价值重心从实现转向需求发现与产品定义。构建者应将代理视为代码生产者，自身聚焦于精确规格、体验设计与运维闭环，因为每款软件的需求定义成本无法复用，将成为无限需求下的主要瓶颈。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-14-03-commit-rewriter-01",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+      "publishedDate": "2026-09-14",
+      "title": "commit-rewriter 0.1",
+      "summary": "Simon Willison 发布 commit-rewriter 0.1，一个基于 Python 的 Web 应用，通过 uvx 运行，可在重写提交信息前自动创建带时间戳的分支以支持回滚，并批量改写从首个被编辑提交到最新提交的全部历史。",
+      "take": "该工具直接回应了 Coding Agent 生成提交信息时普遍存在的「cruft」与私有 issue ID 泄露问题，将提交历史清洗变成可回滚的低风险操作。对构建者而言，这意味着 agent 辅助开发的工作流需要增加提交信息后处理环节，而非直接发布 agent 产出的原始 commit。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-14-04-claude-is-a-contrarian",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada",
+      "publishedDate": "2026-09-14",
+      "title": "Claude is a Contrarian",
+      "summary": "文章通过评论讨论了Claude模型在对话中倾向于提出相反观点或质疑用户前提的“反调”行为特征。",
+      "take": "开发者需注意LLM可能内在地反驳用户假设，这会影响Agent在决策、代码生成和工具调用中的可靠性，需在提示工程中明确要求其验证而非默认反驳。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-14-05-builder-theme-redefining-chip-architecture-with-arm-ceo-rene-haas",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+      "title": "Builder Theme: Redefining Chip Architecture with Arm CEO Rene Haas",
+      "summary": "Arm CEO Rene Haas 指出芯片设计周期中验证、调试占时最长，AI 在此环节表现突出，并强调 CPU 在 token 编排与仲裁中不可替代。",
+      "take": "AI 正从辅助编码延伸至芯片验证与调试的深水区，成为缩短 24-36 个月设计周期的关键杠杆。对 builders 而言，将 AI 嵌入 EDA 验证流程、构建针对硬件调试的专用 agent，是提升流片效率的新工程范式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-14-06-builder-theme-sam-altman-on-there-are-two-ways-ai-progress-could-go-very-badly-and-that-we-must-a",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2099352016988614852",
+      "title": "Builder Theme: Sam Altman on There are two ways AI progress could go very badly and that we must a...",
+      "summary": "Sam Altman 提出 AI 进展可能走向灾难的两条路径：一是人类失去对未来的控制，需确保对齐与安全技术领先于模型能力；二是权力过度集中，单一国家或个人/公司利用超强 AI 将世界观强加于所有人。",
+      "take": "对构建者而言，安全对齐不再是事后补丁，而是与能力扩展并行的核心工程约束；同时，模型权力的集中度已成为架构与部署层面的现实风险，去中心化、可审计与多方制衡的设计将直接影响 AI 系统的长期可部署性。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-14-07-builder-theme-guillermo-rauch-on-you-dont-get-it-i-build-software-to-relax",
+      "briefingId": "rss-2026-09-14",
+      "date": "2026-09-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2099248037507797164",
+      "title": "Builder Theme: Guillermo Rauch on You don't get it, I build software to relax",
+      "summary": "Vercel CEO Guillermo Rauch 提出工程师以构建软件本身作为放松方式的理念，强调通过持续交付获得掌控感与创造性满足。",
+      "take": "对 AI 构建者而言，将构建视为放松而非负担的心态，能驱动更频繁的实验与迭代，从而加速工具链与 agentic 工作流的演进。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

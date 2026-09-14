@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-14",
     "2026-09-13",
     "2026-09-12",
     "2026-09-11",
@@ -216,6 +217,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-14": {
+      "briefingIds": [
+        "rss-2026-09-14"
+      ],
+      "insightIds": [
+        "rss-2026-09-14-01-how-fyxer-built-an-ai-executive-assistant-people-trust",
+        "rss-2026-09-14-02-quoting-laurie-voss",
+        "rss-2026-09-14-03-commit-rewriter-01",
+        "rss-2026-09-14-04-claude-is-a-contrarian",
+        "rss-2026-09-14-05-builder-theme-redefining-chip-architecture-with-arm-ceo-rene-haas",
+        "rss-2026-09-14-06-builder-theme-sam-altman-on-there-are-two-ways-ai-progress-could-go-very-badly-and-that-we-must-a",
+        "rss-2026-09-14-07-builder-theme-guillermo-rauch-on-you-dont-get-it-i-build-software-to-relax"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-13": {
       "briefingIds": [
         "rss-2026-09-13"
