@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-15",
     "2026-09-14",
     "2026-09-13",
     "2026-09-12",
@@ -217,6 +218,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-15": {
+      "briefingIds": [
+        "rss-2026-09-15"
+      ],
+      "insightIds": [
+        "rss-2026-09-15-01-introducing-gemini-38-live-and-38-live-extended-thinking",
+        "rss-2026-09-15-02-the-contagion-of-fear",
+        "rss-2026-09-15-03-what-blog-posts-influenced-your-thinking-the-most",
+        "rss-2026-09-15-04-theres-a-100-chance-ai-agents-are-ruining-the-internet",
+        "rss-2026-09-15-05-how-much-of-f-droid-is-llm-generated",
+        "rss-2026-09-15-06-your-agent-aced-the-task-will-it-do-it-again",
+        "rss-2026-09-15-07-ai-sdk-harness-layer-now-supports-native-subscription-authentication",
+        "rss-2026-09-15-08-builder-theme-how-we-contain-claude-across-products",
+        "rss-2026-09-15-09-builder-theme-thibault-sottiaux-on-whats-a-feature-we-should-remove-from-codex-that-isnt-useful-anymor",
+        "rss-2026-09-15-10-builder-theme-boris-cherny-on-claude-mods-are-landing-now-someone-already-built-a-tetris-in-claude"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-14": {
       "briefingIds": [
         "rss-2026-09-14"

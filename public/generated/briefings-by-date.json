@@ -43018,5 +43018,211 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-15": {
+    "date": "2026-09-15",
+    "briefings": [
+      {
+        "id": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-15",
+        "filePath": "2026-09-15.md",
+        "summaryTopline": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+        "insightIds": [
+          "rss-2026-09-15-01-introducing-gemini-38-live-and-38-live-extended-thinking",
+          "rss-2026-09-15-02-the-contagion-of-fear",
+          "rss-2026-09-15-03-what-blog-posts-influenced-your-thinking-the-most",
+          "rss-2026-09-15-04-theres-a-100-chance-ai-agents-are-ruining-the-internet",
+          "rss-2026-09-15-05-how-much-of-f-droid-is-llm-generated",
+          "rss-2026-09-15-06-your-agent-aced-the-task-will-it-do-it-again",
+          "rss-2026-09-15-07-ai-sdk-harness-layer-now-supports-native-subscription-authentication",
+          "rss-2026-09-15-08-builder-theme-how-we-contain-claude-across-products",
+          "rss-2026-09-15-09-builder-theme-thibault-sottiaux-on-whats-a-feature-we-should-remove-from-codex-that-isnt-useful-anymor",
+          "rss-2026-09-15-10-builder-theme-boris-cherny-on-claude-mods-are-landing-now-someone-already-built-a-tetris-in-claude"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-15-01-introducing-gemini-38-live-and-38-live-extended-thinking",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+        "publishedDate": "2026-09-15",
+        "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+        "summary": "Google DeepMind 发布 Gemini 3.8 Live 及支持扩展思考的 3.8 Live Extended Thinking 版本。",
+        "take": "扩展思考模式将推理链显式引入实时多模态交互，开发者需在延迟、成本与推理深度之间建立新的动态路由策略。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-15-02-the-contagion-of-fear",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+        "publishedDate": "2026-09-14",
+        "title": "The contagion of fear",
+        "summary": "Bryan Cantrill 与 Simon Willison 讨论了前 Anthropic 员工 Jacob Coxon 关于 AI 可能在十年内灭绝人类的言论，指出这些主张依赖对未来的模糊外推（如‘黑客攻击关键基础设施’和‘灭绝级生物武器’），且 Coxon 并非相关领域专家。",
+        "take": "在构建 AI 系统时，应警惕技术领袖基于非专业领域的手挥式未来预测所引发的恐慌传染，这可能导致资源错配和监管过度。工程决策应基于可验证的机制和当前能力，而非未经验证的末日叙事。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-15-03-what-blog-posts-influenced-your-thinking-the-most",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/14/influences/",
+        "publishedDate": "2026-09-14",
+        "title": "What blog posts influenced your thinking the most?",
+        "summary": "Simon Willison 回顾了对其工程思维影响最深的博客文章，强调 Joel Spolsky 的《抽象泄漏定律》、Will Larson 的《迁移是解决技术债的唯一可扩展方案》以及 Charity Majors 的《工程师/经理钟摆》三篇核心文献。",
+        "take": "抽象泄漏定律要求工程师持续深入理解当前工作层之下的底层机制，以应对抽象失效；迁移应被视为软件工程的核心可复用技能而非一次性特殊任务，需主动投资并规模化实践。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-15-04-theres-a-100-chance-ai-agents-are-ruining-the-internet",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/",
+        "publishedDate": "2026-09-15",
+        "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
+        "summary": "Hacker News 评论讨论了 AI 代理大规模自动化抓取与交互对互联网基础设施造成的实际破坏，包括资源耗尽、内容污染和反爬机制失效。",
+        "take": "构建代理系统时必须默认其行为会对外部服务产生副作用，需在架构层内置速率限制、身份标识和资源配额；同时，网站运营方需转向基于行为而非签名的代理检测与隔离策略。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-05-how-much-of-f-droid-is-llm-generated",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://tintotint.eu/whacky-corner/f-droid_slop/",
+        "publishedDate": "2026-09-15",
+        "title": "How much of F-Droid is LLM generated?",
+        "summary": "通过分析F-Droid上应用元数据中的文本模式，作者发现部分应用描述具有LLM生成特征，并量化了疑似LLM生成的应用比例。",
+        "take": "开源应用仓库中LLM生成内容的检测需依赖统计模式而非人工审查，这为构建自动化代码与内容溯源工具提供了新需求；开发者应意识到自动化提交可能污染包管理生态，需在CI流程中集成LLM内容检测。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-06-your-agent-aced-the-task-will-it-do-it-again",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "publishedDate": "2026-09-15",
+        "title": "Your Agent Aced the Task. Will It Do It Again?",
+        "summary": "IBM Research 在 Hugging Face 发布 ALTK-Evolve，通过让智能体在相同任务上重复执行并对比结果，量化其行为一致性，而非仅评估单次任务成功率。",
+        "take": "单次任务通过不等于可靠，构建者需将跨轮次一致性作为智能体评估与部署的核心指标。这推动评估从静态基准转向对轨迹稳定性的持续监控。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-07-ai-sdk-harness-layer-now-supports-native-subscription-authentication",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
+        "publishedDate": "2026-09-14",
+        "title": "AI SDK harness layer now supports native subscription authentication",
+        "summary": "Vercel AI SDK 的 harness 层新增对原生订阅认证的支持，通过统一 HarnessAgent 接口运行不同编码代理，并自动在主机边界解析 OAuth 凭证或环境变量凭证。",
+        "take": "这一变更消除了切换编码代理（如 Claude、Codex、Cursor）时的应用代码改动，使多代理编排和代理热切换成为零成本操作。凭证解析统一收敛到主机边界，为构建安全、可移植的代理工作流提供了标准化的认证抽象层。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-08-builder-theme-how-we-contain-claude-across-products",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Anthropic Engineering",
+        "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "title": "Builder Theme: How we contain Claude across products",
+        "summary": "Anthropic 通过将安全焦点从降低故障概率转向限制故障爆炸半径，实现了让 Claude 代理获取足以关闭内部服务的常规化高权限访问，从而大幅提升开发者生产力。",
+        "take": "代理工程的核心范式正从预防故障转向控制影响范围，构建隔离与权限边界以限制单点故障的破坏半径，成为安全部署高能力代理的关键架构原则。当代理能替代团队级工作时，不部署的代价远超风险，前提是产品能通过爆炸半径封顶实现安全。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-09-builder-theme-thibault-sottiaux-on-whats-a-feature-we-should-remove-from-codex-that-isnt-useful-anymor",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2099393115241300166",
+        "title": "Builder Theme: Thibault Sottiaux on What’s a feature we should remove from Codex that isn’t useful anymor...",
+        "summary": "OpenAI Codex团队负责人Thibault Sottiaux公开征集用户反馈，探讨应移除Codex中哪些已无用的功能。",
+        "take": "这标志着AI编码代理正从功能堆叠转向功能精简，提示构建者应建立基于实际使用数据的功能退役机制，避免过时交互模式增加模型上下文负担与用户认知成本。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-15-10-builder-theme-boris-cherny-on-claude-mods-are-landing-now-someone-already-built-a-tetris-in-claude",
+        "briefingId": "rss-2026-09-15",
+        "date": "2026-09-15",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2099551291601248485",
+        "title": "Builder Theme: Boris Cherny on Claude Mods are landing now. Someone already built a Tetris-in-Claude...",
+        "summary": "Claude Mods 功能正式落地，社区开发者已在其上构建出运行于 Claude 内的俄罗斯方块模组。",
+        "take": "这标志着 LLM 从纯对话界面转向可扩展的模组化运行时环境，开发者可直接在模型生态内构建并分发交互式应用，AI 工作流正从提示词工程演进为平台化插件架构。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
