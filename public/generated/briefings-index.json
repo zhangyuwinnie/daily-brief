@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-16",
     "2026-09-15",
     "2026-09-14",
     "2026-09-13",
@@ -218,6 +219,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-16": {
+      "briefingIds": [
+        "rss-2026-09-16"
+      ],
+      "insightIds": [
+        "rss-2026-09-16-01-how-delphi-ships-100-times-a-day-with-its-python-backend-on-vercel",
+        "rss-2026-09-16-02-mem0-joins-the-vercel-marketplace",
+        "rss-2026-09-16-03-gemini-38-live-and-38-live-extended-thinking",
+        "rss-2026-09-16-04-gemini-live-audio",
+        "rss-2026-09-16-05-claude-cowork-and-chat-are-now-one-claude",
+        "rss-2026-09-16-06-quoting-mustafa-suleyman",
+        "rss-2026-09-16-07-helping-older-adults-use-ai-in-everyday-life",
+        "rss-2026-09-16-08-how-workers-are-unlocking-new-ways-of-working",
+        "rss-2026-09-16-09-builder-theme-sam-altman-on-big-this-week-and-then-for-devday",
+        "rss-2026-09-16-10-builder-theme-claude-on-salesforce-in-claude-is-now-available-in-beta-it-brings-your-account",
+        "rss-2026-09-16-11-builder-theme-claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-15": {
       "briefingIds": [
         "rss-2026-09-15"

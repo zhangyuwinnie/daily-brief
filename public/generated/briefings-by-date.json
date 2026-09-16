@@ -43224,5 +43224,237 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-16": {
+    "date": "2026-09-16",
+    "briefings": [
+      {
+        "id": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-16",
+        "filePath": "2026-09-16.md",
+        "summaryTopline": "How Delphi ships 100 times a day with its Python backend on Vercel",
+        "insightIds": [
+          "rss-2026-09-16-01-how-delphi-ships-100-times-a-day-with-its-python-backend-on-vercel",
+          "rss-2026-09-16-02-mem0-joins-the-vercel-marketplace",
+          "rss-2026-09-16-03-gemini-38-live-and-38-live-extended-thinking",
+          "rss-2026-09-16-04-gemini-live-audio",
+          "rss-2026-09-16-05-claude-cowork-and-chat-are-now-one-claude",
+          "rss-2026-09-16-06-quoting-mustafa-suleyman",
+          "rss-2026-09-16-07-helping-older-adults-use-ai-in-everyday-life",
+          "rss-2026-09-16-08-how-workers-are-unlocking-new-ways-of-working",
+          "rss-2026-09-16-09-builder-theme-sam-altman-on-big-this-week-and-then-for-devday",
+          "rss-2026-09-16-10-builder-theme-claude-on-salesforce-in-claude-is-now-available-in-beta-it-brings-your-account",
+          "rss-2026-09-16-11-builder-theme-claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-16-01-how-delphi-ships-100-times-a-day-with-its-python-backend-on-vercel",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-delphi-ships-100-times-a-day-with-its-python-backend-on-vercel",
+        "publishedDate": "2026-09-15",
+        "title": "How Delphi ships 100 times a day with its Python backend on Vercel",
+        "summary": "Delphi 的 10 人工程团队（无专职基础设施角色，产品与设计也参与发布）将其 Python 后端部署在 Vercel 上，通过功能标志实现日均 100+ 次生产部署，以快速迭代数字心智产品。",
+        "take": "小团队无需专职基础设施即可实现高频部署，关键在于将功能标志与开发者体验优先的平台（如 Vercel）结合，让产品、设计等非传统工程角色也能安全发布代码。这种模式将部署频率从运维瓶颈转化为产品学习速度，适用于需要快速验证用户需求的 agentic 工作流。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-16-02-mem0-joins-the-vercel-marketplace",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/mem0-joins-the-vercel-marketplace",
+        "publishedDate": "2026-09-16",
+        "title": "Mem0 joins the Vercel Marketplace",
+        "summary": "Mem0以Vercel Marketplace原生集成形式发布，为AI代理和应用提供长期记忆能力，自动配置作用域项目与MEM0_API_KEY环境变量，并支持Vercel账单统一计费。",
+        "take": "代理记忆层正从自建方案转向平台原生集成，开发者可通过环境变量直接接入跨会话的用户偏好、事实与上下文持久化。这降低了代理状态管理的工程开销，使记忆成为可组合的基础设施组件。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-16-03-gemini-38-live-and-38-live-extended-thinking",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+        "publishedDate": "2026-09-15",
+        "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+        "summary": "Google发布Gemini 3.8 Live及3.8 Live Extended Thinking，在实时多模态交互中引入可配置的扩展思考机制以提升复杂推理能力。",
+        "take": "将扩展思考（Extended Thinking）嵌入实时API，意味着开发者可在低延迟流式交互与深度推理之间动态切换，为构建需要即时响应且能处理复杂任务的语音/视频Agent提供了新架构模式。需关注思考预算（thinking budget）对延迟和成本的实际影响。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-16-04-gemini-live-audio",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+        "publishedDate": "2026-09-15",
+        "title": "Gemini Live audio",
+        "summary": "Google 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking 两款语音到语音模型，通过 WebSocket 端点 BidiGenerateContent 和 Web Audio API 实现浏览器内实时语音对话与打断。",
+        "take": "语音到语音模型正沿 OpenAI GPT-Live 的架构路线收敛，核心接口是双向流式 WebSocket。无需任何库即可用 Web Audio API 完成采集与回放，开发者可直接构建可打断的实时语音代理。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-05-claude-cowork-and-chat-are-now-one-claude",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://claude.com/blog/cowork-is-now-claude",
+        "publishedDate": "2026-09-16",
+        "title": "Claude Cowork and chat are now one Claude",
+        "summary": "Anthropic将Claude Cowork（协作/工作空间模式）与Claude Chat合并为统一的Claude入口，消除产品线分裂。",
+        "take": "统一入口简化了开发者与AI交互的调用面，减少在chat与协作模式间切换的上下文损耗，暗示未来Agent工作流将默认集成持久化工作空间而非无状态对话。关注合并后API/工具调用语义是否变化。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-06-quoting-mustafa-suleyman",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+        "publishedDate": "2026-09-16",
+        "title": "Quoting Mustafa Suleyman",
+        "summary": "微软Mustafa Suleyman警告不应将模型拟人化赋予情感、偏好或权利，认为意识是伦理与法律体系的基础，赋予AI任何形式权利缺乏证据支持，并将加剧AI控制与对齐的难度。",
+        "take": "在工程实践中应严格区分模型行为模拟与真实意识，避免以拟人化框架设计智能体接口与对齐策略。将模型福利纳入伦理讨论会分散对可控性与对齐核心问题的工程资源，增加系统失控风险。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-07-helping-older-adults-use-ai-in-everyday-life",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+        "publishedDate": "2026-09-16",
+        "title": "Helping older adults use AI in everyday life",
+        "summary": "OpenAI与AARP合作，在美国10个城市为1000名老年人提供免费的ChatGPT实操工作坊，旨在安全地建立实用AI技能。",
+        "take": "此举将AI普及从通用数字素养转向针对特定人群（老年人）的实操培训，强调安全使用。对开发者而言，这意味着需要设计更直观、低门槛的交互界面和防误用机制，以覆盖非技术用户群体。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-08-how-workers-are-unlocking-new-ways-of-working",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/unlocking-new-ways-of-working",
+        "publishedDate": "2026-09-16",
+        "title": "How workers are unlocking new ways of working",
+        "summary": "OpenAI经济研究显示，员工正在将AI应用于传统角色之外的广泛任务，且部分新活动已固化为其重复性工作流程的一部分。",
+        "take": "AI的采用正从单点辅助转向工作流内嵌，开发者和构建者应关注如何将AI能力设计为可复用的日常操作模块，而非一次性工具。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-09-builder-theme-sam-altman-on-big-this-week-and-then-for-devday",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2099872600977760451",
+        "title": "Builder Theme: Sam Altman on big 🚢 this week and then for devday 🚢🚢🚢🚢🚢🚢",
+        "summary": "Sam Altman通过X平台预告本周将有重大产品发布，并暗示DevDay将有多项（六个🚢符号）重要更新。",
+        "take": "开发者应密切关注本周及DevDay的发布，预计将涉及API、模型或工具链的实质性升级。具体内容未披露，需等待官方细节以评估对开发工作流的影响。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-10-builder-theme-claude-on-salesforce-in-claude-is-now-available-in-beta-it-brings-your-account",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2099876514330206578",
+        "title": "Builder Theme: Claude on Salesforce in Claude is now available in beta. It brings your account...",
+        "summary": "Claude 推出 Salesforce 集成测试版，将账户、商机和销售管道数据引入对话界面，并内置 37 项预构建销售技能，支持在对话中完成通话准备、交易审查、管道仪表盘创建和预测发送。",
+        "take": "将 CRM 数据结构化为对话上下文并预置领域技能，是 agentic 工作流向垂直业务系统渗透的典型模式；开发者应关注这种「数据接入+预构建技能」的封装方式，它降低了企业 AI 助手的集成门槛，也意味着工具调用层正从通用 API 编排转向场景化的技能库。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-16-11-builder-theme-claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+        "briefingId": "rss-2026-09-16",
+        "date": "2026-09-16",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude Blog",
+        "sourceUrl": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+        "publishedDate": "2026-09-15",
+        "title": "Builder Theme: Claude for Small Business launches new workflows, integrations, and training programs",
+        "summary": "Anthropic 为 Claude for Small Business 新增 43 个工作流和 27 个集成（含 Shopify、Salesforce、Stripe、Zapier 等），将该产品从后台办公扩展至业务增长场景，累计安装量已超 90 万次。",
+        "take": "预构建工作流加原生 SaaS 连接器正成为 AI 落地的标准交付形态，开发者应优先构建可复用的连接器与工作流模板，而非通用对话界面。这一趋势表明，agent 能力的竞争焦点正从模型推理转向对既有业务工具链的深度集成覆盖。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
