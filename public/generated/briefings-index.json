@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-17",
     "2026-09-16",
     "2026-09-15",
     "2026-09-14",
@@ -219,6 +220,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-17": {
+      "briefingIds": [
+        "rss-2026-09-17"
+      ],
+      "insightIds": [
+        "rss-2026-09-17-01-reimagining-advertising-with-ai",
+        "rss-2026-09-17-02-how-to-connect-ai-usage-to-business-value",
+        "rss-2026-09-17-03-claude-cowork-and-chat-are-now-one-claude",
+        "rss-2026-09-17-04-migrating-the-github-copilot-runtime-to-rust-using-copilot",
+        "rss-2026-09-17-05-the-skills-cli-now-supports-notion-hosted-skills",
+        "rss-2026-09-17-06-hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+        "rss-2026-09-17-07-builder-theme-sam-altman-on-the-main-thing-i-was-excited-about-launching-this-week-will-be-next-w",
+        "rss-2026-09-17-08-builder-theme-thibault-sottiaux-on-sometimes-physics-cant-be-cheated"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-16": {
       "briefingIds": [
         "rss-2026-09-16"

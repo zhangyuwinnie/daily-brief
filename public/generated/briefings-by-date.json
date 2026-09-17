@@ -43456,5 +43456,176 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-17": {
+    "date": "2026-09-17",
+    "briefings": [
+      {
+        "id": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-17",
+        "filePath": "2026-09-17.md",
+        "summaryTopline": "Reimagining advertising with AI",
+        "insightIds": [
+          "rss-2026-09-17-01-reimagining-advertising-with-ai",
+          "rss-2026-09-17-02-how-to-connect-ai-usage-to-business-value",
+          "rss-2026-09-17-03-claude-cowork-and-chat-are-now-one-claude",
+          "rss-2026-09-17-04-migrating-the-github-copilot-runtime-to-rust-using-copilot",
+          "rss-2026-09-17-05-the-skills-cli-now-supports-notion-hosted-skills",
+          "rss-2026-09-17-06-hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+          "rss-2026-09-17-07-builder-theme-sam-altman-on-the-main-thing-i-was-excited-about-launching-this-week-will-be-next-w",
+          "rss-2026-09-17-08-builder-theme-thibault-sottiaux-on-sometimes-physics-cant-be-cheated"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-17-01-reimagining-advertising-with-ai",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/reimagining-advertising-with-ai",
+        "publishedDate": "2026-09-16",
+        "title": "Reimagining advertising with AI",
+        "summary": "OpenAI推出由AI驱动的广告新体验，包括Sponsored Agents、面向营销人员的工具，以及与HubSpot和Shopify的集成。",
+        "take": "广告正从静态展示转变为由Agent执行的交互式任务流，营销人员需构建可被Agent调用的工具接口而非仅优化素材。与HubSpot、Shopify的集成表明Agent将成为商业转化链路中的直接执行层。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-17-02-how-to-connect-ai-usage-to-business-value",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+        "publishedDate": "2026-09-16",
+        "title": "How to connect AI usage to business value",
+        "summary": "OpenAI 发布 ChatGPT Work 与 Codex 分析功能，通过追踪 AI 使用量与支出数据，帮助企业识别培训需求并将采用度关联至业务成果。",
+        "take": "开发者工具链新增使用遥测与成本归因层，使 AI 编程助手的 ROI 可量化；团队可将 Codex 调用数据纳入工程效能指标，实现基于实际消耗的容量规划与技能缺口分析。",
+        "topics": [
+          "Coding Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-17-03-claude-cowork-and-chat-are-now-one-claude",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/16/one-claude/",
+        "publishedDate": "2026-09-16",
+        "title": "Claude Cowork and chat are now one Claude",
+        "summary": "Anthropic将Claude Cowork与Claude聊天合并为单一Claude应用，支持任务在用户关闭笔记本后继续后台执行，首先面向Pro和Max计划的Web、桌面及移动端用户逐步推送。",
+        "take": "聊天与后台任务执行合一标志着Claude从对话式助手转向通用自主Agent，产品边界消失后开发者需围绕持久化后台任务与长时程规划重构工作流；这与OpenAI将Codex应用改名为ChatGPT的路径一致，通用Agent正成为LLM产品的默认形态。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-17-04-migrating-the-github-copilot-runtime-to-rust-using-copilot",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "publishedDate": "2026-09-17",
+        "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+        "summary": "GitHub利用Copilot智能体将Copilot运行时迁移至80万行生产级Rust代码。",
+        "take": "大规模重写成本因智能体而变得可承受，验证了智能体在超大型代码库迁移中的工程可行性。这标志着智能体从辅助编码转向主导系统性重构，改变了遗留系统现代化的成本模型。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-17-05-the-skills-cli-now-supports-notion-hosted-skills",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/skills-cli-notion-skills",
+        "publishedDate": "2026-09-17",
+        "title": "The skills CLI now supports Notion hosted skills",
+        "summary": "skills CLI 1.7.0 将 Notion 技能数据库新增为 agent 技能的安装源，支持通过 Notion 页面编写技能、经 ntn CLI 认证后按页面权限安装单个技能或技能包，无需 Git 仓库。",
+        "take": "技能分发从 Git 仓库解耦，直接复用 Notion 的页面权限与协作流程，使非工程团队也能在既有工作区内创作、评审和更新 agent 技能。对构建者而言，技能供应链的访问控制与版本治理将转向宿主平台权限模型，而非代码托管平台。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-17-06-hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+        "publishedDate": "2026-09-16",
+        "title": "Hobby projects now retain fewer deployments to free up storage",
+        "summary": "Vercel 对 Hobby 项目调整部署保留策略：每个项目仅保留最近3次生产部署及最近3次任意类型部署，预览部署不再单独保护，超出10GB部署存储限额将阻止新部署。",
+        "take": "免费层存储约束正成为部署频率的硬性上限，开发者需将部署保留策略纳入CI/CD设计，或通过清理旧部署、使用生产别名、迁移至外部存储来避免阻塞。这标志着无服务器平台的免费资源模型从宽松转向配额精细化管理。",
+        "topics": [
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-17-07-builder-theme-sam-altman-on-the-main-thing-i-was-excited-about-launching-this-week-will-be-next-w",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2100351958167220547",
+        "title": "Builder Theme: Sam Altman on the main thing i was excited about launching this week will be next w...",
+        "summary": "Sam Altman宣布原定本周发布的核心产品推迟至下周，未透露具体技术细节，仅强调值得等待。",
+        "take": "无实质工程信息，仅可视为发布节奏信号；建议持续关注下周官方公告以获取可集成的API或模型更新。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-17-08-builder-theme-thibault-sottiaux-on-sometimes-physics-cant-be-cheated",
+        "briefingId": "rss-2026-09-17",
+        "date": "2026-09-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2100363668051603608",
+        "title": "Builder Theme: Thibault Sottiaux on Sometimes physics can't be cheated",
+        "summary": "Thibault Sottiaux 强调在 AI 系统构建中物理约束不可绕过，暗示当前架构设计需正视算力、延迟和带宽等硬性限制。",
+        "take": "工程上应优先围绕物理瓶颈（内存带宽、互连延迟、能耗）做架构取舍，而非依赖抽象层规避；这要求 builders 在模型规模、并行策略和部署拓扑上回归第一性原理。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
