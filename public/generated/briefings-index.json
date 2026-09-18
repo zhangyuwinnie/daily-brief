@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-18",
     "2026-09-17",
     "2026-09-16",
     "2026-09-15",
@@ -220,6 +221,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-18": {
+      "briefingIds": [
+        "rss-2026-09-18"
+      ],
+      "insightIds": [
+        "rss-2026-09-18-01-self-generated-prompt-injections-in-compaction-summaries",
+        "rss-2026-09-18-02-zcode-the-glm-coding-agent-silently-uploads-your-git-history",
+        "rss-2026-09-18-03-grasslobster-ai-agentic-generation-of-parametric-geometry-workflows",
+        "rss-2026-09-18-04-introducing-astra-for-law",
+        "rss-2026-09-18-05-run-terminal-bench-and-other-harbor-evals-on-vercel-sandbox",
+        "rss-2026-09-18-06-sub-second-artifact-deployments-are-now-supported-in-vercel-cli",
+        "rss-2026-09-18-07-should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
+        "rss-2026-09-18-08-our-framework-for-reporting-model-misalignment",
+        "rss-2026-09-18-09-be-alert-targeted-attacks-on-prominent-rustaceans",
+        "rss-2026-09-18-10-builder-theme-thibault-sottiaux-on-has-anyone-yet-tried-to-get-astra-and-fable-to-agree-on-the-perfect-s",
+        "rss-2026-09-18-11-builder-theme-boris-cherny-on-projects-have-changed-not-only-how-i-interact-with-claude-but-how-i-c"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-17": {
       "briefingIds": [
         "rss-2026-09-17"
