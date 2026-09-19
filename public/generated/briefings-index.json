@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-19",
     "2026-09-18",
     "2026-09-17",
     "2026-09-16",
@@ -221,6 +222,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-19": {
+      "briefingIds": [
+        "rss-2026-09-19"
+      ],
+      "insightIds": [
+        "rss-2026-09-19-01-introducing-the-australian-youth-safety-blueprint",
+        "rss-2026-09-19-02-gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai",
+        "rss-2026-09-19-03-note-on-18th-september-2026",
+        "rss-2026-09-19-04-webmcp-support-now-available-in-mcp-handler",
+        "rss-2026-09-19-05-jev-is-the-fastest-adopted-model-in-ai-gateway-history",
+        "rss-2026-09-19-06-builder-theme-thariq-on-were-adding-support-for-agentsmd-to-claude-code-starting-today-in",
+        "rss-2026-09-19-07-builder-theme-thibault-sottiaux-on-we-were-working-on-the-keynote-today-with-romainhuet-and-sama-and-m"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-18": {
       "briefingIds": [
         "rss-2026-09-18"
