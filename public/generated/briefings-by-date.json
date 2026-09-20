@@ -44022,5 +44022,120 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-20": {
+    "date": "2026-09-20",
+    "briefings": [
+      {
+        "id": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-20",
+        "filePath": "2026-09-20.md",
+        "summaryTopline": "datasette-auth-github 1.0",
+        "insightIds": [
+          "rss-2026-09-20-01-datasette-auth-github-10",
+          "rss-2026-09-20-02-quoting-thariq-shihipar",
+          "rss-2026-09-20-03-builder-theme-when-ai-improves-itself-richard-socher-recursive",
+          "rss-2026-09-20-04-builder-theme-thibault-sottiaux-on-2026-is-the-year-of-linux-desktop",
+          "rss-2026-09-20-05-builder-theme-guillermo-rauch-on-the-coolest-thing-about-the-recent-wave-of-ai-is-that-everyone-is-exc"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-20-01-datasette-auth-github-10",
+        "briefingId": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/19/datasette-auth-github/",
+        "publishedDate": "2026-09-19",
+        "title": "datasette-auth-github 1.0",
+        "summary": "datasette-auth-github 发布 1.0 版本，核心变更是修复 #80 中未设置 Max-Age 参数导致认证会话在浏览器会话结束时过期的 cookie 问题。",
+        "take": "无状态或缺失持久化参数的认证 cookie 会静默截断会话生命周期，尤其在 Mobile Safari 上触发频繁过期；构建 agent 站点时，认证令牌的持久化必须显式声明 Max-Age 或过期时间，否则 agent 的上下文连续性会不可预测地中断。",
+        "topics": [
+          "Agents",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-20-02-quoting-thariq-shihipar",
+        "briefingId": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+        "publishedDate": "2026-09-18",
+        "title": "Quoting Thariq Shihipar",
+        "summary": "Claude Code 2.1.277 新增对 AGENTS.md 的支持：当目录中不存在 CLAUDE.md 时，自动回退读取 AGENTS.md，该功能基于即将推出的 Claude Code mods 机制实现，并已开源内置 mod 源码。",
+        "take": "AGENTS.md 正成为跨工具的项目级 agent 指令通用标准，Claude Code 通过 mods 架构将其作为可替换的指令加载层，意味着项目上下文配置可与具体 harness 解耦。开发者应优先在仓库根目录维护 AGENTS.md 以兼容多 agent 工具链，同时关注 mods 带来的自定义 harness 能力。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-20-03-builder-theme-when-ai-improves-itself-richard-socher-recursive",
+        "briefingId": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "The MAD Podcast with Matt Turck",
+        "sourceUrl": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "title": "Builder Theme: When AI Improves Itself - Richard Socher (Recursive)",
+        "summary": "Richard Socher为其新公司Recursive融资6.5亿美元，专注于递归自我改进（RSI），即利用AI自动优化AI模型与架构，其新书《The Eureka Machine》阐述了该技术路径。",
+        "take": "RSI将AI开发从人工调参转向自动化闭环：模拟环境中的迭代可让模型自行发现更优架构与训练策略。对构建者而言，核心机遇在于设计可自动评估与改进的元学习系统，而非仅优化单个模型。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-20-04-builder-theme-thibault-sottiaux-on-2026-is-the-year-of-linux-desktop",
+        "briefingId": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2101431497437950458",
+        "title": "Builder Theme: Thibault Sottiaux on 2026 is the year of linux desktop",
+        "summary": "OpenAI工程师Thibault Sottiaux预言2026年将成为Linux桌面元年，暗示AI工具链与代理工作流将推动Linux在开发者桌面生态中占据主导地位。",
+        "take": "若AI构建工具与代理运行时优先适配Linux，开发者需提前将本地工作流、自动化脚本和容器化环境向Linux原生栈迁移。桌面操作系统的选择正从个人偏好转向由AI基础设施兼容性驱动的工程决策。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-20-05-builder-theme-guillermo-rauch-on-the-coolest-thing-about-the-recent-wave-of-ai-is-that-everyone-is-exc",
+        "briefingId": "rss-2026-09-20",
+        "date": "2026-09-20",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2101397206595231765",
+        "title": "Builder Theme: Guillermo Rauch on The coolest thing about the recent wave of AI is that everyone is exc...",
+        "summary": "Guillermo Rauch 指出，近期 AI 浪潮的核心价值在于重新点燃了大众的构建热情，推动用户从内容消费者转向主动创造与交付者。",
+        "take": "对开发者而言，这意味着工具链与 Agent 能力的需求重心正从信息检索转向降低构建与发布门槛。谁能将 AI 工作流压缩为可直接交付产品的管道，谁就能捕获这批新增构建者的势能。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

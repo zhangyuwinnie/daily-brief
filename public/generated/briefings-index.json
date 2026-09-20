@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-20",
     "2026-09-19",
     "2026-09-18",
     "2026-09-17",
@@ -222,6 +223,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-20": {
+      "briefingIds": [
+        "rss-2026-09-20"
+      ],
+      "insightIds": [
+        "rss-2026-09-20-01-datasette-auth-github-10",
+        "rss-2026-09-20-02-quoting-thariq-shihipar",
+        "rss-2026-09-20-03-builder-theme-when-ai-improves-itself-richard-socher-recursive",
+        "rss-2026-09-20-04-builder-theme-thibault-sottiaux-on-2026-is-the-year-of-linux-desktop",
+        "rss-2026-09-20-05-builder-theme-guillermo-rauch-on-the-coolest-thing-about-the-recent-wave-of-ai-is-that-everyone-is-exc"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-19": {
       "briefingIds": [
         "rss-2026-09-19"
