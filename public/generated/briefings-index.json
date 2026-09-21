@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-21",
     "2026-09-20",
     "2026-09-19",
     "2026-09-18",
@@ -223,6 +224,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-21": {
+      "briefingIds": [
+        "rss-2026-09-21"
+      ],
+      "insightIds": [
+        "rss-2026-09-21-01-advisory-group-on-mathematics-and-artificial-intelligence",
+        "rss-2026-09-21-02-building-standards-for-the-next-phase-of-ai",
+        "rss-2026-09-21-03-quoting-voxium",
+        "rss-2026-09-21-04-llm-keys-ui-01",
+        "rss-2026-09-21-05-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimization-problem",
+        "rss-2026-09-21-06-vercel-connect-now-supports-microsoft-teams",
+        "rss-2026-09-21-07-grok-47-now-available-and-40-off-on-ai-gateway-fx-and-eve",
+        "rss-2026-09-21-08-builder-theme-aaron-levie-on-literally-impenetrable-from-agent-swarms",
+        "rss-2026-09-21-09-builder-theme-peter-steinberger-on-new-benchmark-dropped"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-20": {
       "briefingIds": [
         "rss-2026-09-20"

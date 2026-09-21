@@ -1,0 +1,195 @@
+{
+  "date": "2026-09-21",
+  "briefings": [
+    {
+      "id": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-21",
+      "filePath": "2026-09-21.md",
+      "summaryTopline": "Advisory Group on Mathematics and Artificial Intelligence",
+      "insightIds": [
+        "rss-2026-09-21-01-advisory-group-on-mathematics-and-artificial-intelligence",
+        "rss-2026-09-21-02-building-standards-for-the-next-phase-of-ai",
+        "rss-2026-09-21-03-quoting-voxium",
+        "rss-2026-09-21-04-llm-keys-ui-01",
+        "rss-2026-09-21-05-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimization-problem",
+        "rss-2026-09-21-06-vercel-connect-now-supports-microsoft-teams",
+        "rss-2026-09-21-07-grok-47-now-available-and-40-off-on-ai-gateway-fx-and-eve",
+        "rss-2026-09-21-08-builder-theme-aaron-levie-on-literally-impenetrable-from-agent-swarms",
+        "rss-2026-09-21-09-builder-theme-peter-steinberger-on-new-benchmark-dropped"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-21-01-advisory-group-on-mathematics-and-artificial-intelligence",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "publishedDate": "2026-09-21",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "summary": "OpenAI成立独立的数学与人工智能咨询小组，旨在指导新兴AI成果的评审与沟通工作。",
+      "take": "该机制引入外部专家评审层，可能成为高风险AI能力（如数学推理）的标准化验证范式；开发者需关注其对模型发布节奏、评估透明度及下游应用可信度的影响。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-21-02-building-standards-for-the-next-phase-of-ai",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/building-standards-next-phase-ai",
+      "publishedDate": "2026-09-21",
+      "title": "Building standards for the next phase of AI",
+      "summary": "OpenAI提出通过协调评估、报告与治理机制，推动建立全球共享的AI标准框架。",
+      "take": "这标志着AI治理从分散合规向标准化评估接口演进，开发者需关注未来模型评估、报告格式与治理协议的标准化趋势，这可能影响模型部署与跨平台互操作性。",
+      "topics": [
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-21-03-quoting-voxium",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "publishedDate": "2026-09-20",
+      "title": "Quoting voxium",
+      "summary": "某大型科技公司全员（从L1到L7工程师）使用Claude Code生成规格、代码、测试、PRD、工单及报告，但无人阅读产出物，工程师每天工作12-13小时仅用于按回车执行生成。",
+      "take": "当生成成本趋近于零而评审环节被完全跳过时，代码提交量不再构成瓶颈，真正的瓶颈转移到人类注意力与验证能力上。工程团队需将LLM产出物纳入强制审查、可追溯性与质量门禁，否则生成速度只会放大未验证代码的堆积与返工风险。",
+      "topics": [
+        "Coding Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-21-04-llm-keys-ui-01",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
+      "publishedDate": "2026-09-20",
+      "title": "llm-keys-ui 0.1",
+      "summary": "Simon Willison 发布 llm-keys-ui 0.1 插件，通过 uvx 在远程机器上启动本地 Web 界面写入 API 密钥，并让 Codex 代理用 `llm keys get` 命令按需读取，避免密钥直接粘贴进代理会话。",
+      "take": "该模式将密钥写入与代理上下文解耦：代理只持有读取命令而非明文，降低密钥泄露到会话日志或提示词的风险。对远程/移动端编码代理场景，这是可复用的安全原语——凭证经独立 UI 注入，代理通过 CLI 按需获取。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-21-05-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimization-problem",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedDate": "2026-09-21",
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "summary": "研究者将LLM块剪枝建模为伊辛优化问题，利用物理退火方法在组合空间中搜索最优块移除方案，以在压缩模型的同时保持性能。",
+      "take": "该工作将组合优化求解器引入模型压缩流程，为在离散剪枝空间中寻找全局更优解提供了可操作范式。对AI构建者而言，这意味着剪枝工具链可从启发式规则转向基于能量函数的优化器，尤其适用于块级结构化剪枝场景。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-21-06-vercel-connect-now-supports-microsoft-teams",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
+      "publishedDate": "2026-09-21",
+      "title": "Vercel Connect now supports Microsoft Teams",
+      "summary": "Vercel Connect 新增 Microsoft Teams 托管连接器，自动在租户内注册 Entra 应用与 Azure Bot 资源，免除客户端密钥管理，并将 Teams 活动验证后作为 Connect 触发器转发至项目，供应用与 Agent 以机器人身份收发消息。",
+      "take": "Agent 接入企业 IM 的集成成本被彻底托管化：开发者不再处理 OAuth 密钥、Bot 注册与活动校验，仅需消费 SDK 按需获取范围化令牌。这使 Teams 成为 Agent 的一等运行时通道，推动工作流从 API 轮询转向事件驱动的人机交互范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-21-07-grok-47-now-available-and-40-off-on-ai-gateway-fx-and-eve",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve",
+      "publishedDate": "2026-09-21",
+      "title": "Grok 4.7 now available and 40% off on AI Gateway, fx, and eve",
+      "summary": "SpaceXAI的Grok 4.7模型上线Vercel AI Gateway，具备500K token上下文窗口和low至xhigh四档推理等级，9月27日前调用spacexai/grok-4.7可自动享受40%折扣，且通过统一模型ID兼容AI SDK、OpenAI格式API及Cursor、Codex等编码代理。",
+      "take": "统一模型ID打通SDK、兼容API与编码代理，降低了多工具链切换成本；四档推理等级让开发者可按延迟与深度需求动态调节Agent行为，xhigh档适合复杂推理与代码生成场景，值得在编码Agent中实测对比。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-21-08-builder-theme-aaron-levie-on-literally-impenetrable-from-agent-swarms",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Aaron Levie",
+      "sourceUrl": "https://x.com/levie/status/2101731574668747081",
+      "title": "Builder Theme: Aaron Levie on Literally impenetrable from agent swarms",
+      "summary": "Aaron Levie 提出“对 agent swarms 而言几乎不可穿透”的概念，指向多智能体集群在协作或攻击面下的防御与穿透难度问题。",
+      "take": "多智能体 swarm 架构的工程重点正从单体能力转向集群级鲁棒性与不可穿透性设计。构建者需关注 agent 间通信、权限边界与失败传播机制，而非仅优化单个 agent 性能。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-21-09-builder-theme-peter-steinberger-on-new-benchmark-dropped",
+      "briefingId": "rss-2026-09-21",
+      "date": "2026-09-21",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2101748820237500557",
+      "title": "Builder Theme: Peter Steinberger on New benchmark dropped",
+      "summary": "Peter Steinberger 发布了一个新基准测试（benchmark），但未提供具体技术细节。",
+      "take": "基准测试是评估代理能力的关键工程信号，但需关注其具体任务设计、评估维度和可复现性，而非仅凭发布本身做判断。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
