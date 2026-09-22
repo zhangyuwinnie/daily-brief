@@ -1,0 +1,215 @@
+{
+  "date": "2026-09-22",
+  "briefings": [
+    {
+      "id": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-22",
+      "filePath": "2026-09-22.md",
+      "summaryTopline": "Expanding OpenAI Academy with new learning paths",
+      "insightIds": [
+        "rss-2026-09-22-01-expanding-openai-academy-with-new-learning-paths",
+        "rss-2026-09-22-02-how-v7-gives-ai-agents-institutional-memory",
+        "rss-2026-09-22-03-llm-typesafe-01a0",
+        "rss-2026-09-22-04-jev-introduces-a-new-shape-of-llm-system-one-aka-decision-models",
+        "rss-2026-09-22-05-writing-rust-code-thats-fast-by-asking-agents-to-make-the-code-faster",
+        "rss-2026-09-22-06-vacate-a-drone-restriction-that-criminalized-recording-immigration-agents",
+        "rss-2026-09-22-07-claude-opus-55-now-available-on-ai-gateway",
+        "rss-2026-09-22-08-mimo-v26-models-now-available-on-ai-gateway",
+        "rss-2026-09-22-09-builder-theme-thibault-sottiaux-on-ladies-and-gentlemen-start-your-engines-we-are-almost-tuesd",
+        "rss-2026-09-22-10-builder-theme-peter-steinberger-on-because-this-meta-uses-openclaw-story-is-going-around-they-built-t"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-22-01-expanding-openai-academy-with-new-learning-paths",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "publishedDate": "2026-09-21",
+      "title": "Expanding OpenAI Academy with new learning paths",
+      "summary": "OpenAI推出面向员工、开发者、领导者、教育者和学生的全新OpenAI Academy学习路径，旨在帮助构建并展示实用AI技能。",
+      "take": "该学习路径将AI技能培训产品化，使开发者、企业团队和教育机构可基于标准化课程快速建立从基础到应用的AI能力体系；对AI工具链和Agent开发而言，意味着人才技能标准化将加速AI工作流的规模化落地。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-22-02-how-v7-gives-ai-agents-institutional-memory",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/v7",
+      "publishedDate": "2026-09-21",
+      "title": "How V7 gives AI agents institutional memory",
+      "summary": "V7利用GPT-5.6将企业分散的文件转化为可被AI代理调用的上下文，以完成复杂的、带源链接的工作。",
+      "take": "核心工程启示在于，通过构建结构化的企业知识层，代理可获得可追溯的“机构记忆”，从而支持需要源链接的复杂任务。这标志着代理能力从无状态交互向具备持久、可验证上下文的范式转变。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-22-03-llm-typesafe-01a0",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
+      "publishedDate": "2026-09-22",
+      "title": "llm-typesafe 0.1a0",
+      "summary": "Simon Willison 发布 llm-typesafe 0.1a0 插件，为 LLM CLI 接入 TypeSafe AI 的 Jev 模型，通过 JSON schema 约束输出（noul 布尔置信度或 choice 分类），实现 yes/no 与多类别判定任务。",
+      "take": "将 LLM 判定任务从自由文本输出转为结构化置信度分数，可直接接入路由与风控流水线。开发者可把意图分类、消息分派等逻辑从提示词工程迁移到带 schema 约束的模型调用，减少解析与后处理代码。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-22-04-jev-introduces-a-new-shape-of-llm-system-one-aka-decision-models",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/21/jev/",
+      "publishedDate": "2026-09-21",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "summary": "TypeSafe AI 发布 Jev，一种输入文本、输出带置信度的浮点分类/布尔/评分决策而非文本的“System One/决策模型”，仅按输入计费、输出免费，速度极快且成本极低。",
+      "take": "将 LLM 从生成式文本接口降维为“非结构化状态进、类型化概率决策出”的函数调用，使推理成本与延迟与输出长度解耦。对构建者而言，这为分类、路由、评分、agent 门控等确定性判定任务提供了比 prompt 解析更廉价高效的替代范式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-05-writing-rust-code-thats-fast-by-asking-agents-to-make-the-code-faster",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://minimaxir.com/2026/09/agentic-iteration/",
+      "publishedDate": "2026-09-21",
+      "title": "Writing Rust code that's fast by asking agents to make the code faster",
+      "summary": "作者通过让AI代理迭代优化Rust代码，以自动化方式提升程序运行速度。",
+      "take": "将性能优化任务委托给AI代理可形成自动化迭代闭环，工程师应转向定义优化目标与验证基准，而非手动调优。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-06-vacate-a-drone-restriction-that-criminalized-recording-immigration-agents",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://www.eff.org/deeplinks/2026/09/dc-circuit-must-vacate-drone-flight-restriction-criminalized-recording-immigration",
+      "publishedDate": "2026-09-21",
+      "title": "Vacate a drone restriction that criminalized recording immigration agents",
+      "summary": "EFF敦促DC巡回上诉法院撤销一项将无人机飞行限制刑事化的规定，该规定实际上禁止了记录移民执法人员的活动。",
+      "take": "监管框架可将飞行限制武器化为信息控制手段，这与自主系统的技术能力无关；构建者应关注空域规则、传感器策略和部署约束作为核心系统参数，而非事后合规问题。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-07-claude-opus-55-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-opus-5-5-now-available-on-ai-gateway",
+      "publishedDate": "2026-09-22",
+      "title": "Claude Opus 5.5 now available on AI Gateway",
+      "summary": "Anthropic在Vercel AI Gateway上线Claude Opus 5.5，主打长周期代理任务与代理式编码能力，并强制思考自适应（禁用关闭或固定思考预算，否则返回HTTP 400），同时废弃强制工具调用。",
+      "take": "API语义向“模型自主决策”收紧：思考预算与工具调用控制权从调用方转移至模型，开发者需改用effort参数与提示词引导行为，并以自然语言汇报作为长任务监控接口。依赖强制工具调用或固定思考预算的既有编排逻辑必须重构。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-08-mimo-v26-models-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/mimo-v2-6-models-now-available-on-ai-gateway",
+      "publishedDate": "2026-09-21",
+      "title": "MiMo V2.6 models now available on AI Gateway",
+      "summary": "小米的MiMo V2.6系列模型（Pro/Flash/UltraSpeed）上线Vercel AI Gateway，全系原生支持文本、图像、音频、视频理解，具备1M token上下文与最高128K结构化输出，其中Pro为1.02T总参数、42B激活的稀疏MoE架构，Flash为309B总参数、15B激活。",
+      "take": "多模态原生+1M上下文+结构化工具调用使编码与推理Agent可直接处理长仓库、完整工具轨迹和跨会话状态，无需外部分块或记忆层。参数分级（Pro对标复杂软件工程，Flash对标高频多模态自动化）意味着Agent工作流可按任务粒度动态路由模型，在成本与能力间精细权衡。该能力进入网关意味着接入层即可按负载切换模型，降低自建多模型编排的工程成本。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-09-builder-theme-thibault-sottiaux-on-ladies-and-gentlemen-start-your-engines-we-are-almost-tuesd",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2102254445082116335",
+      "title": "Builder Theme: Thibault Sottiaux on Ladies and gentlemen... start... your... ENGINES. We are almost Tuesd...",
+      "summary": "OpenAI Codex负责人Thibault Sottiaux预告将在周二对Codex进行重置（reset）并公布其他更新，但未披露具体技术细节。",
+      "take": "该预告缺乏可执行信息，建议开发者等待周二官方发布后再评估影响；若涉及Codex工具链或工作流变更，需优先验证API、CLI及Agent集成的兼容性。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-22-10-builder-theme-peter-steinberger-on-because-this-meta-uses-openclaw-story-is-going-around-they-built-t",
+      "briefingId": "rss-2026-09-22",
+      "date": "2026-09-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2102116206371315854",
+      "title": "Builder Theme: Peter Steinberger on Because this “Meta uses OpenClaw” story is going around. They built t...",
+      "summary": "Peter Steinberger澄清Meta并未直接使用OpenClaw，而是受其启发自研了内部Agent，并对Nat团队的OpenClaw工作表示认可。",
+      "take": "这标志着头部AI实验室已进入“自研Agent架构”阶段，开源Agent项目（如OpenClaw）的实际价值更多体现在架构范式启发而非直接部署。对构建者而言，应关注Agent设计模式的复用性，而非工具本身的直接集成。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

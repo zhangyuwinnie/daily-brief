@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-22",
     "2026-09-21",
     "2026-09-20",
     "2026-09-19",
@@ -224,6 +225,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-22": {
+      "briefingIds": [
+        "rss-2026-09-22"
+      ],
+      "insightIds": [
+        "rss-2026-09-22-01-expanding-openai-academy-with-new-learning-paths",
+        "rss-2026-09-22-02-how-v7-gives-ai-agents-institutional-memory",
+        "rss-2026-09-22-03-llm-typesafe-01a0",
+        "rss-2026-09-22-04-jev-introduces-a-new-shape-of-llm-system-one-aka-decision-models",
+        "rss-2026-09-22-05-writing-rust-code-thats-fast-by-asking-agents-to-make-the-code-faster",
+        "rss-2026-09-22-06-vacate-a-drone-restriction-that-criminalized-recording-immigration-agents",
+        "rss-2026-09-22-07-claude-opus-55-now-available-on-ai-gateway",
+        "rss-2026-09-22-08-mimo-v26-models-now-available-on-ai-gateway",
+        "rss-2026-09-22-09-builder-theme-thibault-sottiaux-on-ladies-and-gentlemen-start-your-engines-we-are-almost-tuesd",
+        "rss-2026-09-22-10-builder-theme-peter-steinberger-on-because-this-meta-uses-openclaw-story-is-going-around-they-built-t"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-21": {
       "briefingIds": [
         "rss-2026-09-21"

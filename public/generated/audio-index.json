@@ -1680,5 +1680,12 @@
     "status": "pending",
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-09-21"
+  },
+  "2026-09-22": {
+    "id": "audio-2026-09-22",
+    "briefingDate": "2026-09-22",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-09-22"
   }
 }
