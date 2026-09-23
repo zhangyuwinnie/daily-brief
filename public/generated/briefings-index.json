@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-23",
     "2026-09-22",
     "2026-09-21",
     "2026-09-20",
@@ -225,6 +226,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-23": {
+      "briefingIds": [
+        "rss-2026-09-23"
+      ],
+      "insightIds": [
+        "rss-2026-09-23-01-claude-opus-55-gpt-6-sol-gpt-6-luna-and-a-new-price-war",
+        "rss-2026-09-23-02-claude-code-reads-agentsmd-only-when-telemetry-is-on-fixed",
+        "rss-2026-09-23-03-llm-036",
+        "rss-2026-09-23-04-drives-for-vercel-sandbox-are-now-in-public-beta",
+        "rss-2026-09-23-05-gpt-6-sol-and-luna-now-available-on-ai-gateway",
+        "rss-2026-09-23-06-ringgs-ai-agents-resolve-up-to-65-of-customer-calls-with-openai",
+        "rss-2026-09-23-07-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra",
+        "rss-2026-09-23-08-gemini-38-text-to-speech-says-hello",
+        "rss-2026-09-23-09-builder-theme-thibault-sottiaux-on-gpt-6-sol-and-luna-are-out-not-only-are-they-a-very-significant-impr",
+        "rss-2026-09-23-10-builder-theme-boris-cherny-on-opus-55-is-a-really-good-model-its-been-my-daily-driver-the-last-f"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-22": {
       "briefingIds": [
         "rss-2026-09-22"
