@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-24",
+  "briefings": [
+    {
+      "id": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-24",
+      "filePath": "2026-09-24.md",
+      "summaryTopline": "Introducing Gemini 3.8 Live with Live Avatar",
+      "insightIds": [
+        "rss-2026-09-24-01-introducing-gemini-38-live-with-live-avatar",
+        "rss-2026-09-24-02-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models",
+        "rss-2026-09-24-03-vercel-connect-now-supports-tanstack-ai",
+        "rss-2026-09-24-04-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulation-and-learning-workflows",
+        "rss-2026-09-24-05-gemini-38-tts-playground",
+        "rss-2026-09-24-06-gemini-38-text-to-speech-models-now-available-on-ai-gateway",
+        "rss-2026-09-24-07-sf-october-14th-a-birds-of-a-feather-session-on-agentic-engineering",
+        "rss-2026-09-24-08-openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+        "rss-2026-09-24-09-builder-theme-thibault-sottiaux-on-voice-ive-gotten-so-used-to-just-call-chatgpt-and-talk-about-all-th",
+        "rss-2026-09-24-10-builder-theme-claude-on-you-can-now-discover-tools-agents-and-expert-partners-on-claude-mark"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-24-01-introducing-gemini-38-live-with-live-avatar",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "publishedDate": "2026-09-24",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "summary": "Google DeepMind 发布 Gemini 3.8 Live，新增 Live Avatar 功能，支持实时多模态交互与动态虚拟形象生成。",
+      "take": "实时音视频流与虚拟形象的低延迟集成，将推动交互式Agent从文本/语音向具身化界面演进，开发者需关注流式API的延迟与状态同步设计。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-24-02-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/airbnb-gpt-6-astra",
+      "publishedDate": "2026-09-23",
+      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+      "summary": "Airbnb 将 GPT-6 Astra 及 OpenAI 前沿模型集成到工程团队工作流中，用于缺陷修复、系统设计与加速交付。",
+      "take": "核心信号是前沿模型从辅助编码转向深度嵌入架构设计等高认知工程环节，开发者需重新定义人机协作边界，将模型视为系统级设计参与者而非单纯代码生成器。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-24-03-vercel-connect-now-supports-tanstack-ai",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-connect-tanstack-ai",
+      "publishedDate": "2026-09-24",
+      "title": "Vercel Connect now supports TanStack AI",
+      "summary": "Vercel Connect 新增对 TanStack AI 的支持，通过 @vercel/connect/tanstack-ai 子路径导出 connectMCPTransport，使 TanStack AI 构建的 Agent 能调用受 OAuth 保护的 MCP 服务器，且无需存储或轮换凭证，每次 MCP 请求前都会调用 Connect 认证提供者以获取新鲜令牌。",
+      "take": "该集成将 OAuth 授权处理从 Agent 代码中剥离，统一由 Vercel Connect 在传输层注入，开发者只需在 createMCPClient 失败时捕获 getConsentChallenge 并重定向到授权 URL，避免授权错误被模型误读为工具调用错误。这为 Agent 工作流提供了标准化的无凭证 MCP 接入范式，降低了多框架下的安全集成成本。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-24-04-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulation-and-learning-workflows",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedDate": "2026-09-23",
+      "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "summary": "NVIDIA 在 Hugging Face 博客中介绍了如何结合 Warp（GPU 加速的 Python 框架）与 MjWarp（MuJoCo 的 Warp 移植版）来加速机器人仿真与学习工作流，通过将物理仿真和并行环境部署到 GPU 上实现端到端加速。",
+      "take": "核心工程信号是物理仿真栈的 GPU 原生化：MjWarp 将 MuJoCo 的物理步进移植到 Warp 上，使大规模并行环境的仿真与强化学习训练共享同一 GPU 内存空间，消除了 CPU-GPU 数据传输瓶颈。对构建者而言，这意味着机器人 RL 工作流可以采用\"仿真-训练一体化\"架构，直接在 GPU 上生成 rollout 并消费梯度，显著降低大规模并行采样的工程复杂度。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-05-gemini-38-tts-playground",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+      "publishedDate": "2026-09-23",
+      "title": "Gemini 3.8 TTS Playground",
+      "summary": "Google发布gemini-3.8-flash-tts和gemini-3.8-flash-lite-tts两款语音合成模型，支持2000余种音色及仅需30秒样本的声音克隆，Simon Willison借助开放CORS策略用GPT-6 Astra快速构建了BYOK测试界面。",
+      "take": "API原生支持多角色对话的语音与风格定义，将多说话人音频生成从拼接工程转变为单次结构化调用；30秒声音克隆与开放CORS降低了前端直连语音Agent的开发门槛。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-06-gemini-38-text-to-speech-models-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/gemini-3-8-text-to-speech-models-now-available-on-ai-gateway",
+      "publishedDate": "2026-09-23",
+      "title": "Gemini 3.8 text-to-speech models now available on AI Gateway",
+      "summary": "Vercel AI Gateway 上线 Gemini 3.8 Flash-Lite TTS 与 Flash TTS 两款模型，支持超100种语言、长篇旁白、双人对话，其中 Flash-Lite 面向高吞吐量语音生成并提供语调与节奏控制，Flash TTS 则通过自然语言提示实现音色与角色设计。",
+      "take": "TTS 的接口正从参数化调节转向提示词驱动的角色与表演控制，开发者可将配音、语气与对话反应纳入可编程提示层。统一网关聚合语音与文本生成 API，显著降低多模型切换与集成的工程成本。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-07-sf-october-14th-a-birds-of-a-feather-session-on-agentic-engineering",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
+      "publishedDate": "2026-09-23",
+      "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
+      "summary": "Simon Willison与Jesse Vincent将于10月14日在旧金山举办面向编码智能体构建者的非正式交流活动，聚焦未公开的、实验性的、无明确市场价值的智能体工程项目分享。",
+      "take": "此类非正式同行交流是获取智能体工程前沿实践信号的关键渠道，尤其适合捕捉尚未产品化的早期架构模式与失败经验。构建者应关注此类活动产出的非公开实验细节，而非已包装的产品叙事。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-08-openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "publishedDate": "2026-09-23",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "summary": "OpenAI将Daybreak网络安全计划扩展至乌克兰政府，用于支持民用基础设施的网络防御。",
+      "take": "此举表明前沿AI模型正被直接嵌入国家级民用网络防御工作流，从通用助手转向特定领域的防御性安全工具。对构建者而言，这意味着高价值AI应用正从内容生成转向实时威胁检测与关键基础设施防护。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-09-builder-theme-thibault-sottiaux-on-voice-ive-gotten-so-used-to-just-call-chatgpt-and-talk-about-all-th",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2102814202117411196",
+      "title": "Builder Theme: Thibault Sottiaux on Voice! I've gotten so used to just call ChatGPT and talk about all th...",
+      "summary": "OpenAI产品负责人Thibault Sottiaux演示通过纯语音调用ChatGPT完成邮件检查、编码和日历管理，并打通包括第三方在内的全生态插件系统。",
+      "take": "语音正从交互层升级为统一的Agent调度入口，插件生态的跨平台兼容性成为关键工程约束。开发者需优先设计语音优先的意图路由与插件编排层，而非仅做文字接口的语音转写。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-24-10-builder-theme-claude-on-you-can-now-discover-tools-agents-and-expert-partners-on-claude-mark",
+      "briefingId": "rss-2026-09-24",
+      "date": "2026-09-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2102840851538080172",
+      "title": "Builder Theme: Claude on You can now discover tools, agents and expert partners on Claude Mark...",
+      "summary": "Claude 推出 Marketplace，支持发现和集成工具、代理及专家合作伙伴，包括连接器（如 Slack、Notion）、购买第三方代理（如 Cursor、CrowdStrike）以及对接服务伙伴（如 Accenture、Deloitte）。",
+      "take": "开发者可将外部工具和代理直接嵌入 Claude 工作流，实现功能扩展和任务自动化；这标志着 AI 平台向模块化、可组合的代理生态演进，加速从单一模型向多代理协作范式转变。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

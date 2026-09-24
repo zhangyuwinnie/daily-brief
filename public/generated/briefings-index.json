@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-24",
     "2026-09-23",
     "2026-09-22",
     "2026-09-21",
@@ -226,6 +227,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-24": {
+      "briefingIds": [
+        "rss-2026-09-24"
+      ],
+      "insightIds": [
+        "rss-2026-09-24-01-introducing-gemini-38-live-with-live-avatar",
+        "rss-2026-09-24-02-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models",
+        "rss-2026-09-24-03-vercel-connect-now-supports-tanstack-ai",
+        "rss-2026-09-24-04-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulation-and-learning-workflows",
+        "rss-2026-09-24-05-gemini-38-tts-playground",
+        "rss-2026-09-24-06-gemini-38-text-to-speech-models-now-available-on-ai-gateway",
+        "rss-2026-09-24-07-sf-october-14th-a-birds-of-a-feather-session-on-agentic-engineering",
+        "rss-2026-09-24-08-openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+        "rss-2026-09-24-09-builder-theme-thibault-sottiaux-on-voice-ive-gotten-so-used-to-just-call-chatgpt-and-talk-about-all-th",
+        "rss-2026-09-24-10-builder-theme-claude-on-you-can-now-discover-tools-agents-and-expert-partners-on-claude-mark"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-23": {
       "briefingIds": [
         "rss-2026-09-23"
