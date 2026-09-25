@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-25",
     "2026-09-24",
     "2026-09-23",
     "2026-09-22",
@@ -227,6 +228,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-25": {
+      "briefingIds": [
+        "rss-2026-09-25"
+      ],
+      "insightIds": [
+        "rss-2026-09-25-01-proaction-boosts-sales-60-and-saves-75-hours-with-codex",
+        "rss-2026-09-25-02-note-on-24th-september-2026",
+        "rss-2026-09-25-03-ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+        "rss-2026-09-25-04-us-appeals-court-upholds-designation-of-anthropic-as-supply-chain-risk",
+        "rss-2026-09-25-05-state-of-agent-skills",
+        "rss-2026-09-25-06-the-vercel-bug-bounty-program-is-now-publicly-available",
+        "rss-2026-09-25-07-builder-theme-thariq-on-lots-feedback-here-many-of-you-are-planning-yourself-amp-dont-nee",
+        "rss-2026-09-25-08-builder-theme-amjad-masad-on-muse-can-now-make-apps-on-replit"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-24": {
       "briefingIds": [
         "rss-2026-09-24"

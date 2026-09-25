@@ -44973,5 +44973,179 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-25": {
+    "date": "2026-09-25",
+    "briefings": [
+      {
+        "id": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-25",
+        "filePath": "2026-09-25.md",
+        "summaryTopline": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+        "insightIds": [
+          "rss-2026-09-25-01-proaction-boosts-sales-60-and-saves-75-hours-with-codex",
+          "rss-2026-09-25-02-note-on-24th-september-2026",
+          "rss-2026-09-25-03-ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+          "rss-2026-09-25-04-us-appeals-court-upholds-designation-of-anthropic-as-supply-chain-risk",
+          "rss-2026-09-25-05-state-of-agent-skills",
+          "rss-2026-09-25-06-the-vercel-bug-bounty-program-is-now-publicly-available",
+          "rss-2026-09-25-07-builder-theme-thariq-on-lots-feedback-here-many-of-you-are-planning-yourself-amp-dont-nee",
+          "rss-2026-09-25-08-builder-theme-amjad-masad-on-muse-can-now-make-apps-on-replit"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-25-01-proaction-boosts-sales-60-and-saves-75-hours-with-codex",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/proaction",
+        "publishedDate": "2026-09-25",
+        "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+        "summary": "Proaction 利用 Codex、GPT-Live-1 和 GPT-6 Astra 构建并运营现代车队管理系统，实现销售额提升60%并节省超过75小时。",
+        "take": "核心工程信号在于将大模型深度嵌入产品构建与销售运营全链路，使Agentic能力从辅助编码扩展至业务自动化闭环，直接压缩交付周期并放大营收杠杆。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-25-02-note-on-24th-september-2026",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/24/harder/",
+        "publishedDate": "2026-09-24",
+        "title": "Note on 24th September 2026",
+        "summary": "Simon Willison 基于大量编码智能体实践经验指出，智能体虽能极大扩展工程能力边界，但其效能释放高度依赖开发者具备极强的工程纪律与系统知识。",
+        "take": "编码智能体并未降低软件工程门槛，而是将瓶颈从代码产出转移到架构约束、验证闭环与知识管理能力上。团队应优先建立严格的规范、测试与审查机制，才能将智能体能力转化为稳定工程产出。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-25-03-ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+        "publishedDate": "2026-09-24",
+        "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+        "summary": "GitHub Security Lab 推出基于其 Taskflow Agent AI 框架的模糊测试任务流，用于自动化漏洞挖掘。",
+        "take": "将 LLM 智能体编排进模糊测试流水线，使安全测试从人工编写种子与变异策略转向任务流驱动的自主探索，可显著降低安全工程师的重复性劳动并提升覆盖率。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-25-04-us-appeals-court-upholds-designation-of-anthropic-as-supply-chain-risk",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+        "publishedDate": "2026-09-25",
+        "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+        "summary": "美国联邦上诉法院维持国防部将Anthropic列为供应链风险的裁定，该裁定基于军方对AI模型供应商自主性及合规控制的技术评估。",
+        "take": "此判例将模型供应商的治理架构与出口合规控制提升为可诉的法律风险维度，开发者需在模型选型时纳入供应商监管状态评估，并考虑多云/多模型冗余以规避单一供应商合规风险。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-25-05-state-of-agent-skills",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/state-of-agent-skills",
+        "publishedDate": "2026-09-25",
+        "title": "State of agent skills",
+        "summary": "Vercel 的 skills.sh 注册表在七个月内积累了 100 万个 agent 技能和近 2.8 亿次安装，验证了通过纯文本文件将团队专有上下文注入通用 agent 的 Agent Skills 模式。",
+        "take": "技能正成为封装领域知识的新软件单元，将隐性经验转化为可复用、可安装的模块。工程重心应从构建全能 agent 转向建立技能注册与分发基础设施，使 agent 能力通过组合专业化技能而非重训模型来扩展。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-25-06-the-vercel-bug-bounty-program-is-now-publicly-available",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/the-vercel-bug-bounty-program-is-now-publicly-available",
+        "publishedDate": "2026-09-24",
+        "title": "The Vercel Bug Bounty Program is now publicly available",
+        "summary": "Vercel 将其私有与开源漏洞赏金计划合并为单一公开的 Vercel Bug Bounty 项目，以应对 AI 导致漏洞报告数量指数级增长的情况。",
+        "take": "AI 已根本改变漏洞赏金生态，报告量爆炸迫使平台重构安全运营流程。工程团队需预期并设计能处理大量低质量自动生成报告的分流与验证机制。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-25-07-builder-theme-thariq-on-lots-feedback-here-many-of-you-are-planning-yourself-amp-dont-nee",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2103212051065921632",
+        "title": "Builder Theme: Thariq on lots feedback here, many of you are planning yourself &amp; don't nee...",
+        "summary": "Thariq 宣布将 Claude 的 plan mode 从硬编码功能重构为内置 mod，并开放 mod 系统以支持新增模式或覆盖 shift+tab 快捷键，从而让用户自行编排规划与头脑风暴工作流。",
+        "take": "这标志着 AI 助手从固定交互模式转向可编程模式架构，开发者可通过 mod 层自定义 agent 的认知状态与按键绑定，将规划、思考等行为解耦为可插拔组件。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-25-08-builder-theme-amjad-masad-on-muse-can-now-make-apps-on-replit",
+        "briefingId": "rss-2026-09-25",
+        "date": "2026-09-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2103129037011120525",
+        "title": "Builder Theme: Amjad Masad on Muse can now make apps on Replit",
+        "summary": "Amjad Masad 宣布 Muse 现可在 Replit 上直接生成应用。",
+        "take": "AI 代理正从代码补全转向在云端 IDE 中自主创建完整应用，开发者需重构工作流以将代理视为端到端构建器而非辅助工具。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
