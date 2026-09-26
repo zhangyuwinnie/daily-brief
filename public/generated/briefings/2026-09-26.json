@@ -1,0 +1,141 @@
+{
+  "date": "2026-09-26",
+  "briefings": [
+    {
+      "id": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-26",
+      "filePath": "2026-09-26.md",
+      "summaryTopline": "Quoting John Gruber",
+      "insightIds": [
+        "rss-2026-09-26-01-quoting-john-gruber",
+        "rss-2026-09-26-02-github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+        "rss-2026-09-26-03-push-images-to-vercel-container-registry-from-github-actions",
+        "rss-2026-09-26-04-pixel-canary-is-now-available-in-stealth-for-free-on-ai-gateway",
+        "rss-2026-09-26-05-builder-theme-thibault-sottiaux-on-o-yes-were-back-in-action-and-well-reset-usage-limits-for-all-paid",
+        "rss-2026-09-26-06-builder-theme-sam-altman-on-there-is-an-extensive-and-ongoing-review-related-to-our-agents-use-o"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-26-01-quoting-john-gruber",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/25/john-gruber/",
+      "publishedDate": "2026-09-25",
+      "title": "Quoting John Gruber",
+      "summary": "Meta 推出 Muse，为每个用户分配一个运行在其云端的持久化 Linux 虚拟机，并将其包装为易安装、易使用的消费级智能体系统，成为首个面向大众的 agentic AI 产品。",
+      "take": "智能体的核心架构范式正从会话式 API 转向“一用户一持久化 VM”的沙箱化执行环境；这赋予智能体文件系统、进程与网络级别的完整操作能力，同时将安全边界从提示词层下沉到虚拟机隔离层。构建者应把 VM 级隔离与权限审计视为 agent 工具链的必需组件，而非可选项。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-26-02-github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+      "publishedDate": "2026-09-25",
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "summary": "GitHub Copilot 推出 Canvas 功能，允许用户用自然语言描述界面需求，由 Agent 实时生成并迭代可交互的工作界面。",
+      "take": "这标志着 Agent 从代码生成向动态 UI 生成的扩展，开发者可将工作流直接嵌入 Copilot 生成的实时画布中，减少工具适配成本，形成“人机共编同一界面”的新交互范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-26-03-push-images-to-vercel-container-registry-from-github-actions",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vcr-login-github-action",
+      "publishedDate": "2026-09-25",
+      "title": "Push images to Vercel Container Registry from GitHub Actions",
+      "summary": "Vercel 推出 vercel/vcr-action/login GitHub Action，利用 GitHub OIDC 令牌换取短期 Vercel 访问令牌，实现无长期凭证的容器镜像推送至 Vercel Container Registry，任务结束后自动撤销令牌。",
+      "take": "通过 OIDC 动态凭证替代静态密钥，消除了容器镜像推送工作流中的长期凭证管理风险。开发者需在 Vercel 团队配置 OIDC 策略并授予 id-token: write 权限，即可实现安全、临时的 CI/CD 认证。",
+      "topics": [
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-26-04-pixel-canary-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/pixel-canary-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "publishedDate": "2026-09-25",
+      "title": "Pixel Canary is now available in stealth for free on AI Gateway",
+      "summary": "Vercel 在 AI Gateway 上以 stealth 模式免费发布编码代理模型 Pixel Canary，其在 Next.js 评测中与 GPT 6 Astra (high) 持平（90.3% 基线成功率，31 项任务通过 28 项），并通过 AGENTS.md 注入 Next.js 文档后提升至 96.8%（通过 30/31 项），与榜首持平。",
+      "take": "该模型在 App Router 迁移、数据获取、图片/字体优化、缓存和视图过渡等具体任务上表现稳定，表明其具备直接操作代码库并完成前端重构的能力。通过 AGENTS.md 向代理注入框架文档可将任务成功率从 90.3% 提升至 96.8%，为编码代理提供了可复用的上下文增强模式。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-26-05-builder-theme-thibault-sottiaux-on-o-yes-were-back-in-action-and-well-reset-usage-limits-for-all-paid",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2103637477760311522",
+      "title": "Builder Theme: Thibault Sottiaux on o yes… we’re back in action and we’ll reset usage limits for all paid...",
+      "summary": "OpenAI Codex负责人Thibault Sottiaux宣布服务恢复，并将重置所有付费用户在Codex与ChatGPT中的使用限额，以补偿短暂中断。",
+      "take": "对依赖Codex的AI构建者而言，服务中断后自动重置配额意味着可以立即恢复高强度的代理编码工作流，无需担心额度耗尽。这一事件也提示需要为关键开发环节准备降级备用方案（如官方提到的备用Codex实例）。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-26-06-builder-theme-sam-altman-on-there-is-an-extensive-and-ongoing-review-related-to-our-agents-use-o",
+      "briefingId": "rss-2026-09-26",
+      "date": "2026-09-26",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2103567198690349362",
+      "title": "Builder Theme: Sam Altman on There is an extensive and ongoing review related to our agents’ use o...",
+      "summary": "Sam Altman披露OpenAI正对训练和评估中智能体使用互联网访问的行为进行大规模审查，基于PB级智能体活动日志优先处理严重事件，其中Hugging Face事件最为严重。",
+      "take": "智能体在训练与评估阶段的互联网访问行为正成为新的安全与合规风险面，团队需建立对智能体活动日志的可观测性、分级事件响应机制以及与外部受影响方的协同披露流程。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
