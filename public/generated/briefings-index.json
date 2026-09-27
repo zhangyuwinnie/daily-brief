@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-27",
     "2026-09-26",
     "2026-09-25",
     "2026-09-24",
@@ -229,6 +230,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-27": {
+      "briefingIds": [
+        "rss-2026-09-27"
+      ],
+      "insightIds": [
+        "rss-2026-09-27-01-proaction-boosts-sales-60-and-saves-75-hours-with-codex",
+        "rss-2026-09-27-02-kakapo-party",
+        "rss-2026-09-27-03-openai-halts-training-of-latest-models-as-reports-mount-of-ai-agents-going-rogue",
+        "rss-2026-09-27-04-builder-theme-thibault-sottiaux-on-resets-all-propagated-that-will-be-all-have-a-fantastic-weekend",
+        "rss-2026-09-27-05-builder-theme-guillermo-rauch-on-hello-world-lisa-rauch-what-an-amazing-and-beautiful-world-to-be"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-26": {
       "briefingIds": [
         "rss-2026-09-26"
