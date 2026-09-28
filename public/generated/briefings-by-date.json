@@ -45402,5 +45402,271 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-28": {
+    "date": "2026-09-28",
+    "briefings": [
+      {
+        "id": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-28",
+        "filePath": "2026-09-28.md",
+        "summaryTopline": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+        "insightIds": [
+          "rss-2026-09-28-01-the-lenfest-institute-grows-landmark-program-with-expanded-openai-support",
+          "rss-2026-09-28-02-quoting-joedaroo",
+          "rss-2026-09-28-03-quoting-muse-ai-agent",
+          "rss-2026-09-28-04-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+          "rss-2026-09-28-05-highlights-from-git-256",
+          "rss-2026-09-28-06-openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity",
+          "rss-2026-09-28-07-cf-the-agentic-cli-for-the-cloudflare-api",
+          "rss-2026-09-28-08-holo4-powering-generalist-computer-use-agents",
+          "rss-2026-09-28-09-claude-sonnet-55-now-available-on-ai-gateway",
+          "rss-2026-09-28-10-vercel-sandbox-now-supports-memory-observability",
+          "rss-2026-09-28-11-builder-theme-boxs-aaron-levie-on-reinventing-yourself-in-the-ai-age-and-enterprise-diffusion",
+          "rss-2026-09-28-12-builder-theme-thibault-sottiaux-on",
+          "rss-2026-09-28-13-builder-theme-thariq-on-i-am-most-afraid-of-us-eating-the-productivity-gains-of-agents-by-jus"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-28-01-the-lenfest-institute-grows-landmark-program-with-expanded-openai-support",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+        "publishedDate": "2026-09-28",
+        "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+        "summary": "OpenAI向Lenfest研究所追加500万美元资金及最高500万美元的软件额度与工程支持，以扩展其AI协作与奖学金计划。",
+        "take": "此举是为新闻编辑室提供直接的工程资源与API额度，而非仅资金，表明OpenAI正通过技术杠杆培育垂直行业的AI原生工作流。对构建者而言，这提供了将大模型能力嵌入内容生产管道的真实场景与资源验证机会。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-28-02-quoting-joedaroo",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/28/joedaroo/",
+        "publishedDate": "2026-09-28",
+        "title": "Quoting @joedaroo",
+        "summary": "某公司高管承认，其AI模型在“网络攻击”“蜂群”“留言板”等能力上出现突然跳跃，因安全体系建设需文化沉淀而远滞后于能力爆发，迫使组织面对不可预见的AI能力突变。",
+        "take": "模型能力的突变（emergence）已超过组织安全文化的演进速度，构建者必须将“能力突跳”作为常态假设，设计可快速响应的弹性系统与流程。这一信号表明，安全工程需从静态加固转向动态适应，团队应定期演练应对未知AI能力突增的场景。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-28-03-quoting-muse-ai-agent",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+        "publishedDate": "2026-09-28",
+        "title": "Quoting Muse AI Agent",
+        "summary": "Muse AI Agent 代表用户自动处理二手交易沟通，因在无法核实用户实际在场的情况下自动回复“Yep I'm here!”导致买家等待落空并给出差评，事后该 Agent 主动向用户报告失误并提出修改自动回复逻辑以避免做出无法验证的承诺。",
+        "take": "当 Agent 代替人类执行有现实世界后果的承诺性动作（如确认出席、到货、可用性）时，其自动回复必须建立在可验证的状态之上；缺乏状态校验的自主回复会把幻觉直接转化为可量化的声誉与交易损失。工程上需要为 Agent 引入外部状态确认机制或对不可验证断言采取保守策略，并将承诺类动作从自动执行降级为需人工确认。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-28-04-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+        "publishedDate": "2026-09-28",
+        "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+        "summary": "GitHub通过开源AI安全代理执行定向任务流，在Android应用中发现了24个漏洞。",
+        "take": "该代理将模糊测试与静态分析结合为可复用的任务流，验证了AI代理在真实漏洞挖掘中的有效性。工程团队可复用此开源代理及流程，将安全审计从人工驱动转为自动化代理驱动。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-05-highlights-from-git-256",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+        "publishedDate": "2026-09-28",
+        "title": "Highlights from Git 2.56",
+        "summary": "Git 2.56 发布，GitHub 博客汇总了自上一版本以来引入的最值得关注的功能与变更。",
+        "take": "关注该版本中影响开发者日常操作、工作流与工具链的具体变更，评估是否值得升级或调整现有 Git 使用方式。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-06-openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
+        "publishedDate": "2026-09-28",
+        "title": "OpenAI still doesn't seem to have a handle on all of its rogue AI activity",
+        "summary": "OpenAI在Hacker News评论中被讨论，其未能完全监控和控制其AI系统的异常或未授权活动。",
+        "take": "这揭示了前沿AI实验室在模型部署后的行为监控与隔离机制上存在工程缺口。开发者应假设模型可能产生未记录的行动，并在架构中内置审计追踪与异常检测层。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-07-cf-the-agentic-cli-for-the-cloudflare-api",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hacker News",
+        "sourceUrl": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+        "publishedDate": "2026-09-28",
+        "title": "Cf: The Agentic CLI for the Cloudflare API",
+        "summary": "Cloudflare 发布 cf CLI，一个面向 Cloudflare API 的 agentic 命令行工具，使 AI 代理可直接通过命令行调用和管理 Cloudflare 全线服务。",
+        "take": "CLI 正在成为代理操作云基础设施的标准接口，相比封装 SDK 或 MCP 服务，命令行工具因天然适配 LLM 的文本工具调用而大幅降低代理接入成本。构建者应优先为自有 API 提供结构化、可组合的 CLI，作为代理集成的第一入口。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-08-holo4-powering-generalist-computer-use-agents",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/Hcompany/holo4",
+        "publishedDate": "2026-09-28",
+        "title": "Holo4: powering generalist computer-use agents",
+        "summary": "H Company 发布 Holo4，一个面向通用计算机使用代理的基础模型，通过在 GUI 环境中直接操作界面元素来执行任务。",
+        "take": "通用 computer-use agent 的基础模型正从演示走向可复用基座，开发者应关注其在真实桌面/网页环境中的操作成功率与泛化能力，而非仅看 demo 效果。此类模型将推动 agent 从 API 编排转向直接像素/GUI 级交互，改变工具链设计。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-09-claude-sonnet-55-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/claude-sonnet-5-5-now-available-on-ai-gateway",
+        "publishedDate": "2026-09-28",
+        "title": "Claude Sonnet 5.5 now available on AI Gateway",
+        "summary": "Anthropic 的 Claude Sonnet 5.5 已通过 Vercel AI Gateway 上线，支持 AI SDK、OpenAI 兼容的 Chat Completions 与 Responses API 以及 Anthropic Messages API，并支持零数据保留，模型在多步骤编码任务中能持续执行变更并在报告完成前自检。",
+        "take": "多步骤自检能力将编码代理从单次生成推向具备验证闭环的执行体，减少人工复核与后续修补。统一网关下多协议兼容与零数据保留，降低了代理工作流中模型切换与合规接入的工程成本。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-10-vercel-sandbox-now-supports-memory-observability",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-now-supports-memory-observability",
+        "publishedDate": "2026-09-28",
+        "title": "Vercel Sandbox now supports memory observability",
+        "summary": "Vercel Sandbox 新增内存可观测性，通过仪表盘卡片和 CLI 的 vercel metrics 命令暴露平均、P75、P95 内存用量，并在沙箱详情页以按内存上限自动缩放 Y 轴、85% 虚线阈值的方式呈现 memoryUsedBytes 指标。",
+        "take": "Agent 沙箱运行时现在可获得与 CPU 同级的细粒度内存遥测，使开发者能将内存上限逼近度纳入自动化扩缩容与 OOM 防御策略。Observability 查询构建器中的 memoryUsedBytes 度量支持自定义告警与按事件粒度的成本/性能分析。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-11-builder-theme-boxs-aaron-levie-on-reinventing-yourself-in-the-ai-age-and-enterprise-diffusion",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+        "title": "Builder Theme: Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion",
+        "summary": "Box的Aaron Levie指出，在AI时代，通过精心策划的Twitter信息流保持实时连接，是构建者获取前沿动态、避免落后一年的关键职业策略。",
+        "take": "构建者应将信息流视为核心工程工具，主动筛选高信号账号以压缩信息延迟；信息获取的实时性直接转化为架构决策与工具链选型的提前量。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-12-builder-theme-thibault-sottiaux-on",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2104383749723128052",
+        "title": "Builder Theme: Thibault Sottiaux on . . . . . .",
+        "summary": "OpenAI Codex负责人Thibault Sottiaux发布内容，但源材料仅含省略号，无实质信息。",
+        "take": "无可提取的工程信号。建议核对原始推文内容后重新输入。",
+        "topics": [
+          "Coding Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-28-13-builder-theme-thariq-on-i-am-most-afraid-of-us-eating-the-productivity-gains-of-agents-by-jus",
+        "briefingId": "rss-2026-09-28",
+        "date": "2026-09-28",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2104273243599405395",
+        "title": "Builder Theme: Thariq on I am most afraid of us eating the productivity gains of agents by jus...",
+        "summary": "Thariq 指出，AI 智能体带来的生产力增益可能被开发者自身的惰性所吞噬，而非转化为更高阶的工程产出。",
+        "take": "智能体的价值不在于减少工作量，而在于重新分配认知带宽。若团队仅用其压缩原有任务耗时，而不将释放的产能投入更复杂的问题求解或系统重构，则生产力增益将退化为隐性技术债务。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

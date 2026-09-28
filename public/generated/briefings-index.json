@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-28",
     "2026-09-27",
     "2026-09-26",
     "2026-09-25",
@@ -230,6 +231,30 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-28": {
+      "briefingIds": [
+        "rss-2026-09-28"
+      ],
+      "insightIds": [
+        "rss-2026-09-28-01-the-lenfest-institute-grows-landmark-program-with-expanded-openai-support",
+        "rss-2026-09-28-02-quoting-joedaroo",
+        "rss-2026-09-28-03-quoting-muse-ai-agent",
+        "rss-2026-09-28-04-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+        "rss-2026-09-28-05-highlights-from-git-256",
+        "rss-2026-09-28-06-openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity",
+        "rss-2026-09-28-07-cf-the-agentic-cli-for-the-cloudflare-api",
+        "rss-2026-09-28-08-holo4-powering-generalist-computer-use-agents",
+        "rss-2026-09-28-09-claude-sonnet-55-now-available-on-ai-gateway",
+        "rss-2026-09-28-10-vercel-sandbox-now-supports-memory-observability",
+        "rss-2026-09-28-11-builder-theme-boxs-aaron-levie-on-reinventing-yourself-in-the-ai-age-and-enterprise-diffusion",
+        "rss-2026-09-28-12-builder-theme-thibault-sottiaux-on",
+        "rss-2026-09-28-13-builder-theme-thariq-on-i-am-most-afraid-of-us-eating-the-productivity-gains-of-agents-by-jus"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-27": {
       "briefingIds": [
         "rss-2026-09-27"
