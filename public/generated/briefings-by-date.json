@@ -45668,5 +45668,251 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-09-29": {
+    "date": "2026-09-29",
+    "briefings": [
+      {
+        "id": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-09-29",
+        "filePath": "2026-09-29.md",
+        "summaryTopline": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+        "insightIds": [
+          "rss-2026-09-29-01-getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents",
+          "rss-2026-09-29-02-gpt-61-sol-now-available-on-ai-gateway",
+          "rss-2026-09-29-03-openai-devday-2026-live-blog",
+          "rss-2026-09-29-04-devday-2026-recap",
+          "rss-2026-09-29-05-claude-sonnet-55",
+          "rss-2026-09-29-06-search-trace-spans-from-the-vercel-cli",
+          "rss-2026-09-29-07-introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology",
+          "rss-2026-09-29-08-introducing-dots",
+          "rss-2026-09-29-09-developer-policy-update-transparency-state-policy-and-whats-ahead",
+          "rss-2026-09-29-10-builder-theme-sam-altman-on-pretty-excited-for-devday-tomorrow-we-have-found-a-new-thing",
+          "rss-2026-09-29-11-builder-theme-boris-cherny-on-sonnet-55-fixing-a-bug-with-claude-code-30-faster-and-30-less-usa"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-09-29-01-getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "publishedDate": "2026-09-29",
+        "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+        "summary": "针对MCP代理提出源感知验证方法，在事实验证中不仅检查事实正确性，还追踪并验证信息来源的可靠性。",
+        "take": "代理验证流程需从单纯事实核查转向源感知验证，将来源可信度纳入决策链路。这为构建可审计、抗投毒的MCP工具调用与RAG工作流提供了工程范式。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-29-02-gpt-61-sol-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/gpt-6-1-sol-now-available-on-ai-gateway",
+        "publishedDate": "2026-09-29",
+        "title": "GPT-6.1 Sol now available on AI Gateway",
+        "summary": "OpenAI的GPT-6.1 Sol模型现已上线Vercel AI Gateway，该模型在编码、计算机操作和多步骤工作流方面较GPT-6 Sol有所提升，支持通过AI SDK、兼容OpenAI的Chat Completions API或Responses API调用，并可在Codex、Cursor等编码代理中选用。",
+        "take": "缓存输入定价更低，使其适合复用长共享上下文的场景，可显著降低多步骤代理工作流的调用成本；开发者可通过标准化API直接替换模型，无需重构现有代理代码。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-29-03-openai-devday-2026-live-blog",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+        "publishedDate": "2026-09-29",
+        "title": "OpenAI DevDay 2026 live blog",
+        "summary": "Simon Willison在OpenAI DevDay 2026现场实时博客记录主题演讲，聚焦Agent、LLM与编码代理相关发布。",
+        "take": "实时博客是获取DevDay一手工程细节的最快渠道，开发者应直接追踪现场记录以第一时间捕获Agent与编码代理的API/架构变更。",
+        "topics": [
+          "Coding Agents",
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-09-29-04-devday-2026-recap",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/devday-2026-recap",
+        "publishedDate": "2026-09-29",
+        "title": "DevDay 2026 Recap",
+        "summary": "OpenAI在DevDay 2026发布超20项公告，涵盖GPT-6 Astra、ChatGPT、Codex、API、安全及面向构建者的新工具。",
+        "take": "Codex与API的更新意味着开发者需重新评估智能体工作流中的代码生成与工具链集成方式；安全与构建者工具的并列发布表明平台正将智能体权限控制与可观测性作为一等工程约束。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-05-claude-sonnet-55",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+        "publishedDate": "2026-09-28",
+        "title": "Claude Sonnet 5.5",
+        "summary": "Anthropic 发布 Claude Sonnet 5.5，在价格与 Sonnet 5 持平的情况下实现 30%+ 速度提升、最多 30% 成本下降且全面超越前代基准，同时成为免费层默认模型，部分编码任务逼近 Opus 5.5 水平。",
+        "take": "中端模型正以更低推理成本逼近旗舰能力，使高吞吐编码代理与免费层大规模部署的经济性显著改善。但'max'思考档位会耗尽 128K token 预算并失败，说明扩展思考仍需按任务动态分配预算，而非一味拉满。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-06-search-trace-spans-from-the-vercel-cli",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/search-trace-spans-from-the-vercel-cli",
+        "publishedDate": "2026-09-29",
+        "title": "Search trace spans from the Vercel CLI",
+        "summary": "Vercel CLI 新增 `vercel traces search` 命令，允许开发者与编码代理直接在终端按环境、服务、跨度名称、状态、部署/请求/追踪/跨度 ID 及 KQL 查询过滤最近一小时的最多 100 条 trace span，并支持 JSON 输出。",
+        "take": "编码代理无需打开 dashboard 即可通过终端获取可编程的 trace span 数据，将可观测性查询直接嵌入 agentic 工作流。结构化 JSON 输出使代理能以第一手运行时信号自主定位错误、延迟与安全异常，减少人工上下文切换。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Retrieval",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-07-introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+        "publishedDate": "2026-09-29",
+        "title": "Introducing Quine: An AI research system designed for the complexity of biology",
+        "summary": "微软研究院推出Quine，一个多模态生物学世界模型，通过跨生物尺度与模态连接洞察，让科学家在计算机中搜索远超直觉的实验假设空间，并利用实验结果反馈优化研究方向。",
+        "take": "该架构将生物实验从“假设-验证”线性流程重构为“计算搜索-实验反馈”闭环，使AI系统成为假设生成与优先级排序的核心引擎。对构建者而言，关键信号是领域世界模型需支持多尺度模态融合与迭代反馈，而非单一任务预测。",
+        "topics": [
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-08-introducing-dots",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-dots",
+        "publishedDate": "2026-09-29",
+        "title": "Introducing dots",
+        "summary": "OpenAI 推出 dots，一种可跨复杂项目与日常任务持续自主推进的主动式助手，用户可在工作推进过程中保持控制权。",
+        "take": "从被动响应转向持久后台代理，任务执行与用户监督解耦；构建者需围绕可中断、可审计的长时运行工作流设计工具链与权限边界。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-09-developer-policy-update-transparency-state-policy-and-whats-ahead",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/",
+        "publishedDate": "2026-09-29",
+        "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+        "summary": "GitHub发布开发者政策更新，公开透明度数据并汇总影响开源开发者的州级政策变化及后续计划。",
+        "take": "平台政策透明度数据正在成为开发者评估合规风险与生态稳定性的新信号源。对于依赖开源协作的团队，需将平台政策动态纳入工具链与供应链风险评估流程。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-10-builder-theme-sam-altman-on-pretty-excited-for-devday-tomorrow-we-have-found-a-new-thing",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2104661956879913457",
+        "title": "Builder Theme: Sam Altman on Pretty excited for DevDay tomorrow. We have found a new thing.",
+        "summary": "Sam Altman在DevDay前夕预告OpenAI发现了某项新技术成果，但未披露具体机制或架构细节。",
+        "take": "信息量极低，仅为预热性公告，无可操作的技术信号。建议等待DevDay正式发布后再评估其对开发者工具链或Agent能力的影响。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-09-29-11-builder-theme-boris-cherny-on-sonnet-55-fixing-a-bug-with-claude-code-30-faster-and-30-less-usa",
+        "briefingId": "rss-2026-09-29",
+        "date": "2026-09-29",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2104638725317923228",
+        "title": "Builder Theme: Boris Cherny on Sonnet 5.5 fixing a bug with Claude Code. 30% faster and 30% less usa...",
+        "summary": "Boris Cherny 使用 Sonnet 5.5 修复 Claude Code 中的 bug，实现速度提升 30% 且用量减少 30%。",
+        "take": "模型迭代在真实工程任务中同时优化延迟与 token 效率，直接降低 agentic 工作流的单次任务成本。构建者应优先将此类效率增益纳入 CI/CD 或自动化修复管线的基准测试。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

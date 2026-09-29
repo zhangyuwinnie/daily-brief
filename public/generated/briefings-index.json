@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-29",
     "2026-09-28",
     "2026-09-27",
     "2026-09-26",
@@ -231,6 +232,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-29": {
+      "briefingIds": [
+        "rss-2026-09-29"
+      ],
+      "insightIds": [
+        "rss-2026-09-29-01-getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents",
+        "rss-2026-09-29-02-gpt-61-sol-now-available-on-ai-gateway",
+        "rss-2026-09-29-03-openai-devday-2026-live-blog",
+        "rss-2026-09-29-04-devday-2026-recap",
+        "rss-2026-09-29-05-claude-sonnet-55",
+        "rss-2026-09-29-06-search-trace-spans-from-the-vercel-cli",
+        "rss-2026-09-29-07-introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology",
+        "rss-2026-09-29-08-introducing-dots",
+        "rss-2026-09-29-09-developer-policy-update-transparency-state-policy-and-whats-ahead",
+        "rss-2026-09-29-10-builder-theme-sam-altman-on-pretty-excited-for-devday-tomorrow-we-have-found-a-new-thing",
+        "rss-2026-09-29-11-builder-theme-boris-cherny-on-sonnet-55-fixing-a-bug-with-claude-code-30-faster-and-30-less-usa"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-28": {
       "briefingIds": [
         "rss-2026-09-28"
