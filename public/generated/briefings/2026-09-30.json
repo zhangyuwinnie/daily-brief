@@ -1,0 +1,151 @@
+{
+  "date": "2026-09-30",
+  "briefings": [
+    {
+      "id": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-09-30",
+      "filePath": "2026-09-30.md",
+      "summaryTopline": "Disrupting a coordinated model-distillation campaign",
+      "insightIds": [
+        "rss-2026-09-30-01-disrupting-a-coordinated-model-distillation-campaign",
+        "rss-2026-09-30-02-helping-small-businesses-put-ai-to-work",
+        "rss-2026-09-30-03-quoting-anthropic-frontier-red-team",
+        "rss-2026-09-30-04-gpt-61-sol-near-astra-intelligence-for-a-fifth-of-the-price",
+        "rss-2026-09-30-05-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+        "rss-2026-09-30-06-builder-theme-sam-altman-on-dots-are-here-a-new-way-to-use-ai-that-works-247-for-you-get-more",
+        "rss-2026-09-30-07-builder-theme-thibault-sottiaux-on-we-will-have-a-few-million-dots-online-within-days-working-on-all-so"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-09-30-01-disrupting-a-coordinated-model-distillation-campaign",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "publishedDate": "2026-09-30",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "summary": "OpenAI披露并阻断了一场针对其模型推理过程的协同蒸馏攻击，该攻击旨在提取受保护的推理数据，公司同时加强了对抗性蒸馏的防御措施。",
+      "take": "模型推理轨迹已成为可被系统性提取的高价值资产，防御对抗性蒸馏需要从单纯保护权重扩展到保护推理输出本身。构建者应预期API侧的推理暴露会成为新的攻击面，并在架构中默认加入输出扰动、速率限制或推理轨迹脱敏机制。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-30-02-helping-small-businesses-put-ai-to-work",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "publishedDate": "2026-09-30",
+      "title": "Helping small businesses put AI to work",
+      "summary": "OpenAI与全美小企业发展中心（SBDC）合作，为小企业提供线下AI培训与本地支持，并发布小团队AI应用报告。",
+      "take": "AI能力正从通用API转向渠道化落地，开发者需关注面向非技术用户的集成式工具与本地化工作流。小企业场景更看重开箱即用与人工辅助，而非模型微调。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-30-03-quoting-anthropic-frontier-red-team",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
+      "publishedDate": "2026-09-29",
+      "title": "Quoting Anthropic Frontier Red Team",
+      "summary": "Anthropic前沿红队在其内部二进制漏洞利用基准测试中，发现GLM-5.3在4%的试验中实现了完整的控制流劫持，Claude Mythos Preview为6%，而早期模型Claude Opus 4.6与GLM-5.2均无一成功。",
+      "take": "这标志着LLM已跨过从辅助分析到自主生成可用漏洞利用的关键阈值，AI代理在攻击性安全场景的工程可行性发生质变。构建者需重新评估模型安全护栏与自动化渗透测试工作流的风险边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-09-30-04-gpt-61-sol-near-astra-intelligence-for-a-fifth-of-the-price",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "publishedDate": "2026-09-29",
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，以 Astra 约五分之一的成本提供接近 Astra 的智能水平。",
+      "take": "前沿模型能力正快速商品化，单位智能成本大幅下降。开发者应重新评估模型路由策略，将高性价比的近前沿模型作为默认推理层，仅在必要时升级至顶级模型。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-30-05-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+      "publishedDate": "2026-09-28",
+      "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+      "summary": "GitHub 使用其开源 AI 安全代理，通过针对性的 AI 任务流在 Android 应用中发现了 24 个漏洞，并公开了运行该代理的方法。",
+      "take": "该代理将安全审计转化为可复用的 AI 任务流，开发者可直接在自有应用上运行以自动化漏洞挖掘。这标志着安全测试从人工规则向代理驱动的定向任务编排转变，降低了高级漏洞发现的工程门槛。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-30-06-builder-theme-sam-altman-on-dots-are-here-a-new-way-to-use-ai-that-works-247-for-you-get-more",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2104995014208258235",
+      "title": "Builder Theme: Sam Altman on Dots are here! A new way to use AI that works 24/7 for you; get more...",
+      "summary": "Sam Altman发布名为Dots的新AI交互方式，宣称可24/7自主运行，帮助用户将时间与注意力回归更高层次的工作。",
+      "take": "Dots暗示AI从被动响应工具转向持续运行的后台代理，这可能推动异步后台代理与主动式工作流范式的落地。开发者需关注持久化代理基础设施、任务编排与状态管理以支撑24/7自治运行。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-09-30-07-builder-theme-thibault-sottiaux-on-we-will-have-a-few-million-dots-online-within-days-working-on-all-so",
+      "briefingId": "rss-2026-09-30",
+      "date": "2026-09-30",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2105105086506840421",
+      "title": "Builder Theme: Thibault Sottiaux on We will have a few million dots online within days, working on all so...",
+      "summary": "Thibault Sottiaux宣布将在数天内上线数百万个“dot”智能体实例，覆盖广泛社区场景，其个人使用2-3天后通过偏好教学获得能力跃升，并能自主承担高难度任务，团队版dot创建功能将基于用户对主dot的使用学习后发布。",
+      "take": "这标志着从单体助手向可组合、可个性化的多智能体团队架构演进：单个dot通过少量交互快速适配用户偏好并自主执行复杂任务，成为可复制扩展的智能体单元。构建者应关注dot的偏好学习机制与主dot到dot团队的管理编排范式，而非单次对话能力。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

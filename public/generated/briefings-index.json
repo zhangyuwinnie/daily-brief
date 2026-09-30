@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-09-30",
     "2026-09-29",
     "2026-09-28",
     "2026-09-27",
@@ -232,6 +233,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-09-30": {
+      "briefingIds": [
+        "rss-2026-09-30"
+      ],
+      "insightIds": [
+        "rss-2026-09-30-01-disrupting-a-coordinated-model-distillation-campaign",
+        "rss-2026-09-30-02-helping-small-businesses-put-ai-to-work",
+        "rss-2026-09-30-03-quoting-anthropic-frontier-red-team",
+        "rss-2026-09-30-04-gpt-61-sol-near-astra-intelligence-for-a-fifth-of-the-price",
+        "rss-2026-09-30-05-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+        "rss-2026-09-30-06-builder-theme-sam-altman-on-dots-are-here-a-new-way-to-use-ai-that-works-247-for-you-get-more",
+        "rss-2026-09-30-07-builder-theme-thibault-sottiaux-on-we-will-have-a-few-million-dots-online-within-days-working-on-all-so"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-29": {
       "briefingIds": [
         "rss-2026-09-29"
