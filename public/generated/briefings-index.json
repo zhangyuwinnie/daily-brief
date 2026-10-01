@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-01",
     "2026-09-30",
     "2026-09-29",
     "2026-09-28",
@@ -233,6 +234,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-01": {
+      "briefingIds": [
+        "rss-2026-10-01"
+      ],
+      "insightIds": [
+        "rss-2026-10-01-01-how-albertsons-companies-is-reimagining-retail-from-the-inside-out",
+        "rss-2026-10-01-02-gemini-4-argon-our-next-era-of-frontier-intelligence",
+        "rss-2026-10-01-03-quoting-matthew-green",
+        "rss-2026-10-01-04-microsoft-ai-models-are-now-available-on-ai-gateway",
+        "rss-2026-10-01-05-vercel-agent-now-installs-private-packages-from-npm-and-custom-registries",
+        "rss-2026-10-01-06-builder-theme-how-sam-altman-uses-dots-to-take-back-his-time",
+        "rss-2026-10-01-07-builder-theme-thibault-sottiaux-on-gpt-61-sol-is-our-most-demanded-model-pretty-much-ever-both-across-b",
+        "rss-2026-10-01-08-builder-theme-claude-on-claude-founder-house-is-coming-to-sf-tech-week-oct-68-and-stockhol"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-09-30": {
       "briefingIds": [
         "rss-2026-09-30"
