@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-02",
     "2026-10-01",
     "2026-09-30",
     "2026-09-29",
@@ -234,6 +235,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-02": {
+      "briefingIds": [
+        "rss-2026-10-02"
+      ],
+      "insightIds": [
+        "rss-2026-10-02-01-a-model-guide-for-the-gpt-6-family",
+        "rss-2026-10-02-02-chatham-scales-its-capital-markets-expertise-with-openai",
+        "rss-2026-10-02-03-ai-is-changing-developer-work-here-are-three-skills-to-strengthen",
+        "rss-2026-10-02-04-autosynthdata-generating-training-data-for-enterprise-agents",
+        "rss-2026-10-02-05-jev-for-python-engineers",
+        "rss-2026-10-02-06-how-rogo-ships-agent-written-code-to-production-in-5-minutes-on-vercel",
+        "rss-2026-10-02-07-builder-theme-andrej-karpathy-on-well-be-spending-a-lot-more-time-trying-to-understand-the-outputs-of",
+        "rss-2026-10-02-08-builder-theme-thibault-sottiaux-on-global-reset-landing-tomorrow-10am-pst-for-all-paid-chatgpt-accounts",
+        "rss-2026-10-02-09-builder-theme-scaling-managed-agents-decoupling-the-brain-from-the-hands",
+        "rss-2026-10-02-10-builder-theme-an-update-on-recent-claude-code-quality-reports"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-01": {
       "briefingIds": [
         "rss-2026-10-01"
