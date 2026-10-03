@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-03",
     "2026-10-02",
     "2026-10-01",
     "2026-09-30",
@@ -235,6 +236,19 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-03": {
+      "briefingIds": [
+        "rss-2026-10-03"
+      ],
+      "insightIds": [
+        "rss-2026-10-03-01-builder-theme-sam-altman-on-the-contrast-between-hanging-up-the-last-phone-call-of-the-day-of-hig",
+        "rss-2026-10-03-02-builder-theme-thibault-sottiaux-on-fortunately-our-future-models-will-be-much-better-at-code-deletion-an"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-02": {
       "briefingIds": [
         "rss-2026-10-02"
