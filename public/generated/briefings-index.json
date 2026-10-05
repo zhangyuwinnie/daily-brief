@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-05",
     "2026-10-04",
     "2026-10-03",
     "2026-10-02",
@@ -237,6 +238,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-05": {
+      "briefingIds": [
+        "rss-2026-10-05"
+      ],
+      "insightIds": [
+        "rss-2026-10-05-01-our-approach-to-eu-text-provenance-rules",
+        "rss-2026-10-05-02-building-advertising-for-the-way-people-use-ai",
+        "rss-2026-10-05-03-qwen38-27b-addition-in-words",
+        "rss-2026-10-05-04-reviewbench-an-open-benchmark-for-ai-code-review",
+        "rss-2026-10-05-05-builder-theme-re-founding-incumbents-for-the-ai-era-with-sequence-holdings-co-founder-and-ceo-michael-lee",
+        "rss-2026-10-05-06-builder-theme-thibault-sottiaux-on-over-the-next-28-days-each-day-well-either-ship-one-thing-that-is-a",
+        "rss-2026-10-05-07-builder-theme-guillermo-rauch-on-dhh-is-fundamentally-right-about-rust-for-context-vercel-has-been-u"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-04": {
       "briefingIds": [
         "rss-2026-10-04"

@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-05",
+  "briefings": [
+    {
+      "id": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-05",
+      "filePath": "2026-10-05.md",
+      "summaryTopline": "Our approach to EU text provenance rules",
+      "insightIds": [
+        "rss-2026-10-05-01-our-approach-to-eu-text-provenance-rules",
+        "rss-2026-10-05-02-building-advertising-for-the-way-people-use-ai",
+        "rss-2026-10-05-03-qwen38-27b-addition-in-words",
+        "rss-2026-10-05-04-reviewbench-an-open-benchmark-for-ai-code-review",
+        "rss-2026-10-05-05-builder-theme-re-founding-incumbents-for-the-ai-era-with-sequence-holdings-co-founder-and-ceo-michael-lee",
+        "rss-2026-10-05-06-builder-theme-thibault-sottiaux-on-over-the-next-28-days-each-day-well-either-ship-one-thing-that-is-a",
+        "rss-2026-10-05-07-builder-theme-guillermo-rauch-on-dhh-is-fundamentally-right-about-rust-for-context-vercel-has-been-u"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-05-01-our-approach-to-eu-text-provenance-rules",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/eu-text-provenance",
+      "publishedDate": "2026-10-05",
+      "title": "Our approach to EU text provenance rules",
+      "summary": "OpenAI为满足欧盟文本溯源规则，采用文本水印方案，明确适用输出范围、检测机制，并优先向研究人员开放检测访问。",
+      "take": "关键工程点在于将水印嵌入生成管线并配套可验证的检测接口，而非事后追溯；开发者应预期水印可能影响输出分发与合规审计，并需提前规划面向研究者的检测集成路径。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-05-02-building-advertising-for-the-way-people-use-ai",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "publishedDate": "2026-10-05",
+      "title": "Building advertising for the way people use AI",
+      "summary": "OpenAI在ChatGPT中引入可视化广告格式，并扩展归因合作伙伴与品牌适配测量工具，使广告直接嵌入AI对话界面。",
+      "take": "这标志着对话式AI界面正式成为可程序化投放与测量的广告载体。对开发者而言，需关注ChatGPT交互层新增的广告位API与归因接口，可能催生围绕对话上下文的广告编排与效果追踪工具链。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-05-03-qwen38-27b-addition-in-words",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "publishedDate": "2026-10-04",
+      "title": "Qwen3.8 27B addition in words",
+      "summary": "Simon Willison在DGX Spark本地硬件上，通过Codex Remote会话驱动GPT-6 Astra，用Qwen3.8-27B-Q4_K_M.gguf复现了Colin Frasier两年前用GPT-4o做的实验：让模型计算大数加法但用文字输出结果，并在推理关闭与开启两种模式下各跑30次对比。",
+      "take": "该实验提供了一个可控的本地评测范式：通过固定模型权重、量化格式与采样次数，隔离推理模式这一变量来观察LLM算术能力的真实边界。对构建者而言，这说明可将远端Codex作为编排层、本地GGUF模型作为执行层，快速搭建可复现的模型能力探针，而不依赖闭源API。",
+      "topics": [
+        "Coding Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-05-04-reviewbench-an-open-benchmark-for-ai-code-review",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "publishedDate": "2026-10-05",
+      "title": "ReviewBench: An open benchmark for AI code review",
+      "summary": "GitHub 发布 ReviewBench，一个基于真实 PR、多源真值、校准评估和生产对齐指标的 AI 代码审查智能体开放基准。",
+      "take": "该基准将代码审查从主观评估转为可量化工程指标，推动审查智能体的标准化迭代；开发者应关注其多源真值与生产对齐设计，以校准自建审查流水线的评估方式。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-05-05-builder-theme-re-founding-incumbents-for-the-ai-era-with-sequence-holdings-co-founder-and-ceo-michael-lee",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=TCpRwJBQvW0",
+      "title": "Builder Theme: Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee",
+      "summary": "Sequence Holdings联合创始人兼CEO Michael Lee提出，AI时代企业转型需将工程师树立为核心文化符号，并以每年仅完成一笔交易的极低频率投资模式运作。",
+      "take": "工程文化成为AI时代alpha来源，组织激励应转向工程师而非传统业务角色；极低频重仓投资策略可能替代传统风险投资组合模式，迫使团队聚焦深度技术整合而非快速包装退出。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-05-06-builder-theme-thibault-sottiaux-on-over-the-next-28-days-each-day-well-either-ship-one-thing-that-is-a",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2106845241357824205",
+      "title": "Builder Theme: Thibault Sottiaux on Over the next 28 days, each day we’ll either ship one thing that is a...",
+      "summary": "Thibault Sottiaux 宣布在 28 天内以每日一次的高频节奏，为 Codex 及代码工作流用户持续交付明确改进或进行完整重置，旨在快速迭代开发者工具链。",
+      "take": "这种每日交付或重置的节奏缩短了反馈循环，使开发者工具能根据真实使用数据快速演进而非依赖长期路线图。构建者应关注这种高频实验模式对工作流稳定性和工具采用策略的影响。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-05-07-builder-theme-guillermo-rauch-on-dhh-is-fundamentally-right-about-rust-for-context-vercel-has-been-u",
+      "briefingId": "rss-2026-10-05",
+      "date": "2026-10-05",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2106863842450133114",
+      "title": "Builder Theme: Guillermo Rauch on DHH is fundamentally right about Rust. For context, Vercel has been u...",
+      "summary": "Guillermo Rauch 指出 Vercel 将 Turborepo 从 Go 迁移到 Rust 的内部投资回报率存在争议，因为人工迁移成本高昂，但 AI 编程改变了这一权衡，使得“对人类最佳”不再等同于“对业务最佳”。",
+      "take": "AI 编码代理正在改变语言与框架的选型逻辑：以往因开发者体验和迭代速度而偏向 Go 等语言，现在可以优先选择 Rust 等底层最优方案，将迁移与维护的“人力税”转移给 AI，从而围绕代理能力重构工具链决策。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
