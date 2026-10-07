@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-07",
+  "briefings": [
+    {
+      "id": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-07",
+      "filePath": "2026-10-07.md",
+      "summaryTopline": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "insightIds": [
+        "rss-2026-10-07-01-agent-lightning-v10-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses",
+        "rss-2026-10-07-02-building-git-infrastructure-for-agent-scale-development",
+        "rss-2026-10-07-03-using-parseable-with-datasette-for-opentelemetry-traces",
+        "rss-2026-10-07-04-llm-openai-decisions-01a0",
+        "rss-2026-10-07-05-claude-haiku-55-now-available-on-ai-gateway",
+        "rss-2026-10-07-06-openai-decisions-api-now-available-on-ai-gateway",
+        "rss-2026-10-07-07-how-jump-trading-is-scaling-quant-research-with-chatgpt",
+        "rss-2026-10-07-08-radisson-hotel-group-brings-hotel-discovery-into-chatgpt",
+        "rss-2026-10-07-09-builder-theme-ep-94-applied-compute-ceo-on-the-limits-of-rl-the-new-ai-hyperscaler-amp-why-post-training-wins-inference",
+        "rss-2026-10-07-10-builder-theme-thibault-sottiaux-on-we-shipped-four-things-that-were-deemed-good-to-great-and-some-math-p",
+        "rss-2026-10-07-11-builder-theme-boris-cherny-on-i-am-surprised-that-people-are-surprised-this-is-how-i-prompt-claude"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-07-01-agent-lightning-v10-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "publishedDate": "2026-10-07",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "summary": "微软研究院发布Agent Lightning v1.0，一个约3500行的轻量级智能体强化学习框架，可将现有智能体直接接入RL训练流程而无需重构其工具、上下文与决策框架。",
+      "take": "核心工程价值在于解耦了智能体运行时与RL训练循环，使开发者能复用已部署的harness进行策略优化，降低了将生产级agent改造为可训练RL环境的迁移成本。这为基于真实工具链的在线持续学习与agent能力迭代提供了低改造路径。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-07-02-building-git-infrastructure-for-agent-scale-development",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+      "publishedDate": "2026-10-06",
+      "title": "Building Git infrastructure for agent-scale development",
+      "summary": "GitHub 在保持服务运行的同时重建其 Git 基础设施，为 agent 规模的软件开发（大量 AI agent 并发读写代码仓库）打造底层支撑。",
+      "take": "agent 规模开发将 Git 从人类交互工具转变为高并发、机器驱动的读写后端，核心工程挑战在于在线迁移与写入吞吐。构建 agent 工具链时需假设仓库操作来自海量自动化进程，而非人工低频提交。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-07-03-using-parseable-with-datasette-for-opentelemetry-traces",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/",
+      "publishedDate": "2026-10-06",
+      "title": "Using Parseable with Datasette for OpenTelemetry traces",
+      "summary": "Simon Willison 使用 Codex 自动配置开源 Rust 单二进制可观测平台 Parseable，接收 Datasette 1.0a41 新增 OpenTelemetry 支持所生成的追踪数据，并在其本地 Web 界面中查看链路。",
+      "take": "Rust 单二进制（约 180MB）使可观测性后端可本地秒级启动，配合 Datasette 的原生 OTel 支持，开发者能低成本建立从 SQLite 数据应用到追踪可视化的闭环；用 Codex 自动推导部署与接入命令，展示了 Agent 在运维胶水代码与工具链集成上的实际生产力。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-07-04-llm-openai-decisions-01a0",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
+      "publishedDate": "2026-10-06",
+      "title": "llm-openai-decisions 0.1a0",
+      "summary": "OpenAI发布Jev风格的Decisions API，Simon Willison借助GPT-6 Astra自动阅读官方文档并生成llm-openai-decisions插件，支持文本与图像输入，按每百万输入token 10美分计费。",
+      "take": "该插件证明LLM可自主阅读API文档并生成可用的工具插件，显著缩短新API到工具链的集成路径；同时决策类模型支持图像输入，为多模态Agent的决策流程提供更直接的接口。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-05-claude-haiku-55-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-haiku-5-5-now-available-on-ai-gateway",
+      "publishedDate": "2026-10-07",
+      "title": "Claude Haiku 5.5 now available on AI Gateway",
+      "summary": "Anthropic的Claude Haiku 5.5已上线Vercel AI Gateway，作为首个支持low至max五档effort level的Haiku模型，采用自适应思考机制，可关闭思考以执行高并发成本敏感任务，并可作为子代理配合大模型完成编码工作。",
+      "take": "effort level的引入让开发者能在同一模型上按任务动态调节推理深度与token消耗，低档任务可彻底关闭思考以压低延迟和成本。将Haiku 5.5作为coding agent的子代理（负责上下文压缩、分类、摘要）与旗舰模型分层编排，是降低agentic工作流总成本的关键模式。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-06-openai-decisions-api-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/openai-decisions-api-now-available-on-ai-gateway",
+      "publishedDate": "2026-10-07",
+      "title": "OpenAI Decisions API now available on AI Gateway",
+      "summary": "OpenAI Decisions API 通过兼容 OpenAI 的 /v1/decisions 端点上线 Vercel AI Gateway，使用独立模型 ID（如 openai/gpt-6-luna-decisions）对共享输入返回类型化结果——概率、选项与评分，而非生成文本。",
+      "take": "决策模型将 LLM 从文本生成器转为结构化分类/评分引擎，原生适配路由、分诊、护栏与评分卡场景，且可在单次请求中同时执行谓词（是/否）、多选与打分查询。开发者应将其视为独立的推理构件接入现有 OpenAI SDK、AI SDK 或 /v1/evaluate HTTP 接口，而非复用语言模型 ID。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-07-how-jump-trading-is-scaling-quant-research-with-chatgpt",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/jump-trading",
+      "publishedDate": "2026-10-06",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "summary": "Jump Trading 利用 OpenAI 模型构建可长时间运行的 AI 工作流，将多源数据整合与人工审核相结合，以扩展量化研究规模。",
+      "take": "核心工程信号在于长时运行 Agent 工作流开始进入对精度要求极高的量化金融生产环境，模式为“多源数据摄入 + 人工复核节点”。对构建者而言，这意味着需重点设计可中断、可审计的人机协同机制，而非追求完全自动化。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-08-radisson-hotel-group-brings-hotel-discovery-into-chatgpt",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/radisson",
+      "publishedDate": "2026-10-07",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "summary": "Radisson酒店集团与Accenture合作，基于OpenAI技术构建ChatGPT插件，使旅客能在对话中搜索、比较并预订酒店。",
+      "take": "这标志着企业服务正从独立应用转向嵌入对话式AI平台，开发者需优先构建插件或API以接入ChatGPT生态。核心工程挑战在于将预订、库存与支付系统无缝封装为LLM可调用的工具链。这为代理化工作流（如自动行程规划与交易执行）提供了可直接复用的商业范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-09-builder-theme-ep-94-applied-compute-ceo-on-the-limits-of-rl-the-new-ai-hyperscaler-amp-why-post-training-wins-inference",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/@RedpointAI",
+      "title": "Builder Theme: Ep 94: Applied Compute CEO on the Limits of RL, the New AI Hyperscaler &amp; Why Post-Training Wins Inference",
+      "summary": "Applied Compute CEO 指出强化学习本质是爬山机器，其核心瓶颈在于定义目标函数（即评估体系），并强调企业需像保护核心员工一样保护自有模型智能。",
+      "take": "企业应将评估体系（evals）作为核心资产来构建和防护，而非依赖通用基准；自有模型的训练与智能产权管理正成为与人才保留同等重要的工程战略。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-10-builder-theme-thibault-sottiaux-on-we-shipped-four-things-that-were-deemed-good-to-great-and-some-math-p",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2107676072871600470",
+      "title": "Builder Theme: Thibault Sottiaux on We shipped four things that were deemed good to great and some math p...",
+      "summary": "Thibault Sottiaux 宣布尽管四项已交付功能获评良好甚至优秀并附带数学证明，但社区投票明确要求重置，经其校准发现规则似乎偏向重置选项，最终执行了重置。",
+      "take": "社区投票机制在功能评估中可能因规则偏差而系统性地偏向特定结果，工程团队需在治理流程中预先审计投票规则的公平性，否则技术交付质量可能被机制缺陷覆盖。",
+      "topics": [
+        "Evals",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-07-11-builder-theme-boris-cherny-on-i-am-surprised-that-people-are-surprised-this-is-how-i-prompt-claude",
+      "briefingId": "rss-2026-10-07",
+      "date": "2026-10-07",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Boris Cherny",
+      "sourceUrl": "https://x.com/bcherny/status/2107565388250874193",
+      "title": "Builder Theme: Boris Cherny on I am surprised that people are surprised this is how I prompt Claude....",
+      "summary": "Boris Cherny指出随着模型从Sonnet 3.5演进，提示工程已从精细脚手架转向目标导向，只需向模型明确任务目标、投入程度和验证方式三点。",
+      "take": "开发者应从编写详尽指令转向定义目标、控制推理算力预算与验收标准，这标志着Agent工作流从提示工程回归到管理协作范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

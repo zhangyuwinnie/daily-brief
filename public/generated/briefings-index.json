@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-07",
     "2026-10-06",
     "2026-10-05",
     "2026-10-04",
@@ -239,6 +240,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-07": {
+      "briefingIds": [
+        "rss-2026-10-07"
+      ],
+      "insightIds": [
+        "rss-2026-10-07-01-agent-lightning-v10-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses",
+        "rss-2026-10-07-02-building-git-infrastructure-for-agent-scale-development",
+        "rss-2026-10-07-03-using-parseable-with-datasette-for-opentelemetry-traces",
+        "rss-2026-10-07-04-llm-openai-decisions-01a0",
+        "rss-2026-10-07-05-claude-haiku-55-now-available-on-ai-gateway",
+        "rss-2026-10-07-06-openai-decisions-api-now-available-on-ai-gateway",
+        "rss-2026-10-07-07-how-jump-trading-is-scaling-quant-research-with-chatgpt",
+        "rss-2026-10-07-08-radisson-hotel-group-brings-hotel-discovery-into-chatgpt",
+        "rss-2026-10-07-09-builder-theme-ep-94-applied-compute-ceo-on-the-limits-of-rl-the-new-ai-hyperscaler-amp-why-post-training-wins-inference",
+        "rss-2026-10-07-10-builder-theme-thibault-sottiaux-on-we-shipped-four-things-that-were-deemed-good-to-great-and-some-math-p",
+        "rss-2026-10-07-11-builder-theme-boris-cherny-on-i-am-surprised-that-people-are-surprised-this-is-how-i-prompt-claude"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-06": {
       "briefingIds": [
         "rss-2026-10-06"
