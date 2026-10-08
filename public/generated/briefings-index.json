@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-08",
     "2026-10-07",
     "2026-10-06",
     "2026-10-05",
@@ -240,6 +241,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-08": {
+      "briefingIds": [
+        "rss-2026-10-08"
+      ],
+      "insightIds": [
+        "rss-2026-10-08-01-claude-haiku-55",
+        "rss-2026-10-08-02-introducing-mistral-large-4-le-chonk",
+        "rss-2026-10-08-03-step-5-preview-now-available-on-ai-gateway",
+        "rss-2026-10-08-04-glyph-cluster-is-now-available-in-stealth-for-free-on-ai-gateway",
+        "rss-2026-10-08-05-how-oracle-turns-days-of-work-into-minutes-with-chatgpt-and-codex",
+        "rss-2026-10-08-06-pollo-ai-turns-creative-ideas-into-campaigns-with-openai",
+        "rss-2026-10-08-07-builder-theme-google-labs-on-new-experiment-playground-is-an-experimental-gaming-platform-tha",
+        "rss-2026-10-08-08-builder-theme-claude-on-one-more-thing-were-halving-the-price-of-cache-reads-on-claude-sonn"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-07": {
       "briefingIds": [
         "rss-2026-10-07"
