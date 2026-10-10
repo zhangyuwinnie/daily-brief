@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-10",
     "2026-10-09",
     "2026-10-08",
     "2026-10-07",
@@ -242,6 +243,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-10": {
+      "briefingIds": [
+        "rss-2026-10-10"
+      ],
+      "insightIds": [
+        "rss-2026-10-10-01-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-61-sol",
+        "rss-2026-10-10-02-quoting-the-new-york-times",
+        "rss-2026-10-10-03-deno-is-joining-cloudflare",
+        "rss-2026-10-10-04-agents-can-now-buy-domains-with-the-vercel-cli",
+        "rss-2026-10-10-05-new-pro-teams-now-default-to-30-day-deployment-retention",
+        "rss-2026-10-10-06-builder-theme-thibault-sottiaux-on-your-chatgpt-subscription-is-now-also-a-devin-subscription",
+        "rss-2026-10-10-07-builder-theme-thariq-on-before-i-joined-anthropic-i-spent-about-2-weeks-hacking-on-this-as-a"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-09": {
       "briefingIds": [
         "rss-2026-10-09"
