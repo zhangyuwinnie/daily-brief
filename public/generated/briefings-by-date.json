@@ -47744,5 +47744,77 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-10-11": {
+    "date": "2026-10-11",
+    "briefings": [
+      {
+        "id": "rss-2026-10-11",
+        "date": "2026-10-11",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-10-11",
+        "filePath": "2026-10-11.md",
+        "summaryTopline": "Deployment Storage billing begins for existing Pro teams",
+        "insightIds": [
+          "rss-2026-10-11-01-deployment-storage-billing-begins-for-existing-pro-teams",
+          "rss-2026-10-11-02-builder-theme-thibault-sottiaux-on-put-the-reset-in-the-bag-all-propagated",
+          "rss-2026-10-11-03-builder-theme-guillermo-rauch-on-all-plausible-science-fiction-will-be-realized-within-our-lifetime-i"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-10-11-01-deployment-storage-billing-begins-for-existing-pro-teams",
+        "briefingId": "rss-2026-10-11",
+        "date": "2026-10-11",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/deployment-storage-pricing-expands-to-existing-teams",
+        "publishedDate": "2026-10-09",
+        "title": "Deployment Storage billing begins for existing Pro teams",
+        "summary": "Vercel 对现有 Pro 团队按每 GB-月 0.10 美元收取部署存储与函数存储费用，并将默认部署保留窗口改为 30 天，超期部署自 10 月 23 日起删除（可在保留设置中选择退出）。",
+        "take": "团队需立即审计部署保留策略并按 Pre-Production、Production、Canceled、Errored 分类缩短保留期以控制成本；被删除的部署无法用于回滚，因此回滚依赖必须迁移到制品仓库或显式归档机制，而非平台默认历史。",
+        "topics": [
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-11-02-builder-theme-thibault-sottiaux-on-put-the-reset-in-the-bag-all-propagated",
+        "briefingId": "rss-2026-10-11",
+        "date": "2026-10-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2109132167112782291",
+        "title": "Builder Theme: Thibault Sottiaux on Put the reset in the bag. All propagated.",
+        "summary": "Thibault Sottiaux 宣布将 reset 操作纳入 bag 机制并完成全量传播（All propagated）。",
+        "take": "bag 机制现已原生支持 reset 操作并完成传播，构建者应检查依赖该状态的工具链与 agent 工作流，确认上游变更后行为一致。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-11-03-builder-theme-guillermo-rauch-on-all-plausible-science-fiction-will-be-realized-within-our-lifetime-i",
+        "briefingId": "rss-2026-10-11",
+        "date": "2026-10-11",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2109038632518782989",
+        "title": "Builder Theme: Guillermo Rauch on All plausible science fiction will be realized within our lifetime. I...",
+        "summary": "Vercel CEO Guillermo Rauch 断言，所有合理的科幻设想都将在我们有生之年变成现实，并将当前时代定义为人类历史上最幸运的时期。",
+        "take": "作为构建者，这一判断意味着技术兑现周期正被大幅压缩，科幻级能力不再属于远期愿景，而应被当作当下可规划的产品路线图输入。团队需重新校准技术赌注的时间尺度，把此前视为不可能的架构与交互提前纳入研发议程。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      }
+    ]
   }
 }
