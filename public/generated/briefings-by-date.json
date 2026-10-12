@@ -47816,5 +47816,135 @@
         "isTopSignal": true
       }
     ]
+  },
+  "2026-10-12": {
+    "date": "2026-10-12",
+    "briefings": [
+      {
+        "id": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-10-12",
+        "filePath": "2026-10-12.md",
+        "summaryTopline": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+        "insightIds": [
+          "rss-2026-10-12-01-hello-python-315-goodbye-310-and-now-i-can-use-311",
+          "rss-2026-10-12-02-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+          "rss-2026-10-12-03-muse-wonder-now-available-on-ai-gateway",
+          "rss-2026-10-12-04-builder-theme-andrej-karpathy-on-dusting-off-this-tweet-from-april-because-this-gap-in-shared-understa",
+          "rss-2026-10-12-05-builder-theme-frontier-chips-for-frontier-ai-labs-with-walter-goodwin-founderceo-of-fractile",
+          "rss-2026-10-12-06-builder-theme-thibault-sottiaux-on-day-7-we-have-increased-default-context-length-for-gpt-61-sol-to-50"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-10-12-01-hello-python-315-goodbye-310-and-now-i-can-use-311",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+        "publishedDate": "2026-10-12",
+        "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+        "summary": "Python 3.15 发布，引入 PEP 810 显式惰性导入（lazy import），允许模块在首次使用符号时才加载，从而避免安装重量级插件依赖时拖慢启动。",
+        "take": "惰性导入将启动性能问题从运行时前移到首次调用，插件架构可默认采用该机制而无需手动设计延迟加载；同时 3.11 成为新的最低兼容基线，开发者可全面使用其性能与语法改进，但需维护多版本兼容策略。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-12-02-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+        "publishedDate": "2026-10-12",
+        "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+        "summary": "GitHub 官方发布教程，指导开发者通过添加自定义指令与技能、使用自定义 Agent 以及接入 Playwright 等 MCP 服务器，让 Copilot 理解特定代码库的上下文。",
+        "take": "代码库上下文注入正从手动提示转向仓库级配置（自定义指令/技能）与 MCP 工具接入的标准化组合。这标志着 Agent 能力扩展的核心路径：以仓库为单元固化领域知识，再通过 MCP 挂载外部执行工具。",
+        "topics": [
+          "Agents",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-12-03-muse-wonder-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/muse-wonder-now-available-on-ai-gateway",
+        "publishedDate": "2026-10-12",
+        "title": "Muse Wonder now available on AI Gateway",
+        "summary": "Meta的Muse Wonder模型通过Vercel AI Gateway上线，具备100万token上下文窗口，支持文本、图像、PDF输入与工具调用，专为编码、长时运行agent和计算机使用设计，可规划多步任务、委派子agent并从中断中恢复。",
+        "take": "该模型将多模态输入与长上下文结合，使agent能在同一工作流中处理代码、截图和文档，减少跨工具切换开销；子agent委派和错误恢复能力为构建复杂长时任务agent提供了新架构模式，开发者仅需单一API密钥即可接入，无需单独管理Meta账户。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-12-04-builder-theme-andrej-karpathy-on-dusting-off-this-tweet-from-april-because-this-gap-in-shared-understa",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Andrej Karpathy",
+        "sourceUrl": "https://x.com/karpathy/status/2109361546505966046",
+        "title": "Builder Theme: Andrej Karpathy on Dusting off this tweet from April because this gap in shared understa...",
+        "summary": "Karpathy指出公众对LLM能力的理解差距正从“两群人各说各话”演变为急剧分化的漏斗：约60亿人（75%人口）几乎未接触过LLM，10-20亿人（20%）仅将免费ChatGPT类产品当作更优搜索引擎或写作辅助的休闲用户，仅有极少数人真正触及LLM的深层能力边界。",
+        "take": "这揭示了一个关键工程现实：绝大多数用户所处的交互层与LLM真实能力存在巨大鸿沟，构建者应聚焦于弥合这一认知断层——通过将agentic能力封装为面向非技术用户的直观工作流，而非依赖用户自行探索模型上限。产品设计中，默认交互模式（如单次问答）会严重低估模型价值，需主动引导用户进入多步推理与工具调用场景。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-12-05-builder-theme-frontier-chips-for-frontier-ai-labs-with-walter-goodwin-founderceo-of-fractile",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "No Priors",
+        "sourceUrl": "https://www.youtube.com/watch?v=OpeCP4wCxkA",
+        "title": "Builder Theme: Frontier Chips for Frontier AI Labs, with Walter Goodwin, Founder/CEO of Fractile",
+        "summary": "Fractile创始人Walter Goodwin指出，当前正致力于打造单芯片以对标NVIDIA由6-9颗定制芯片组成的系统，并倡导建立可随时触发规模化生产的滚动式前沿技术押注引擎。",
+        "take": "芯片领域的竞争正从单一硬件转向系统级集成与持续迭代能力，构建类似前沿模型的滚动押注与快速量产引擎，比单纯追求单芯片性能更具结构性优势。开发者应关注这种“制造机器”的架构思维，将硬件路线图视为可动态调整的投资组合而非静态产品。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-12-06-builder-theme-thibault-sottiaux-on-day-7-we-have-increased-default-context-length-for-gpt-61-sol-to-50",
+        "briefingId": "rss-2026-10-12",
+        "date": "2026-10-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2109430343346581527",
+        "title": "Builder Theme: Thibault Sottiaux on Day 7/ We have increased default context length for GPT-6.1 Sol to 50...",
+        "summary": "OpenAI将GPT-6.1 Sol在Codex和Work中的默认上下文长度从272k提升至500k（增幅约80%），最大可配置至1M。",
+        "take": "上下文窗口的扩展直接降低自动压缩频率，使长周期、高细节保持的任务（如大型代码库重构、长链路Agent执行）更可靠；架构上应重新评估分块与记忆管理策略，减少对摘要压缩的依赖。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

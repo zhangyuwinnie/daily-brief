@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-12",
     "2026-10-11",
     "2026-10-10",
     "2026-10-09",
@@ -244,6 +245,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-12": {
+      "briefingIds": [
+        "rss-2026-10-12"
+      ],
+      "insightIds": [
+        "rss-2026-10-12-01-hello-python-315-goodbye-310-and-now-i-can-use-311",
+        "rss-2026-10-12-02-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+        "rss-2026-10-12-03-muse-wonder-now-available-on-ai-gateway",
+        "rss-2026-10-12-04-builder-theme-andrej-karpathy-on-dusting-off-this-tweet-from-april-because-this-gap-in-shared-understa",
+        "rss-2026-10-12-05-builder-theme-frontier-chips-for-frontier-ai-labs-with-walter-goodwin-founderceo-of-fractile",
+        "rss-2026-10-12-06-builder-theme-thibault-sottiaux-on-day-7-we-have-increased-default-context-length-for-gpt-61-sol-to-50"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-11": {
       "briefingIds": [
         "rss-2026-10-11"
