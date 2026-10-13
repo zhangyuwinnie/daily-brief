@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-13",
     "2026-10-12",
     "2026-10-11",
     "2026-10-10",
@@ -245,6 +246,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-13": {
+      "briefingIds": [
+        "rss-2026-10-13"
+      ],
+      "insightIds": [
+        "rss-2026-10-13-01-quoting-geoffrey-huntley",
+        "rss-2026-10-13-02-web-edit-01a0",
+        "rss-2026-10-13-03-run-fast-private-agents-on-device-with-lfm25-24b-a2b",
+        "rss-2026-10-13-04-repository-checkout-and-git-lfs-downloads-are-now-faster",
+        "rss-2026-10-13-05-gemini-4-argon-now-available-on-ai-gateway",
+        "rss-2026-10-13-06-builder-theme-thibault-sottiaux-on-what-would-you-like-with-your-side-of-reset-its-done",
+        "rss-2026-10-13-07-builder-theme-peter-steinberger-on-61-sol-ultrafast-gtgtgt-6-astra-same-cost-but-whole-differen"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-12": {
       "briefingIds": [
         "rss-2026-10-12"
