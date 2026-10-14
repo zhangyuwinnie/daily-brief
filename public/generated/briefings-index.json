@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-14",
     "2026-10-13",
     "2026-10-12",
     "2026-10-11",
@@ -246,6 +247,29 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-14": {
+      "briefingIds": [
+        "rss-2026-10-14"
+      ],
+      "insightIds": [
+        "rss-2026-10-14-01-redesigning-source-control-at-anthropic",
+        "rss-2026-10-14-02-how-third-moment-research-runs-10000-agents-for-36-hours",
+        "rss-2026-10-14-03-llm-gemini-035",
+        "rss-2026-10-14-04-amp-puts-ai-agents-to-work-beyond-code-with-openai-models",
+        "rss-2026-10-14-05-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+        "rss-2026-10-14-06-putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges",
+        "rss-2026-10-14-07-nemotron-35-lightning-now-available-on-ai-gateway-for-free",
+        "rss-2026-10-14-08-gemini-4-argon-built-to-solve-your-hardest-problems",
+        "rss-2026-10-14-09-developing-gemini-4-argon-responsibly-and-safely",
+        "rss-2026-10-14-10-builder-theme-redesigning-source-control-at-anthropic",
+        "rss-2026-10-14-11-builder-theme-thibault-sottiaux-on-day-9-weve-rolled-out-optimizations-to-how-we-store-state-on-disk-f",
+        "rss-2026-10-14-12-builder-theme-guillermo-rauch-on-congrats-gemini-team-never-bet-against-google-the-company-that-brou"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-13": {
       "briefingIds": [
         "rss-2026-10-13"
