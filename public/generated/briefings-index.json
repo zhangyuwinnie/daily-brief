@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-15",
     "2026-10-14",
     "2026-10-13",
     "2026-10-12",
@@ -247,6 +248,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-15": {
+      "briefingIds": [
+        "rss-2026-10-15"
+      ],
+      "insightIds": [
+        "rss-2026-10-15-01-sentinelone-cuts-malware-analysis-from-weeks-to-hours",
+        "rss-2026-10-15-02-how-block-is-building-ai-powered-security-with-openai-technology",
+        "rss-2026-10-15-03-anthropic-tells-investors-quarterly-revenue-up-nearly-50-to-168bn-ahead-of-ipo",
+        "rss-2026-10-15-04-tree-appreciator",
+        "rss-2026-10-15-05-from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers",
+        "rss-2026-10-15-06-findings-from-the-1m-vercel-sandbox-challenge",
+        "rss-2026-10-15-07-amazon-s3-joins-the-vercel-marketplace",
+        "rss-2026-10-15-08-builder-theme-thibault-sottiaux-on-the-reports-of-my-reset-button-being-lost-are-greatly-exaggerated-day",
+        "rss-2026-10-15-09-builder-theme-garry-tan-on-the-academics-think-the-founder-who-raised-at-2b-valuation-can-pay-b"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-14": {
       "briefingIds": [
         "rss-2026-10-14"
