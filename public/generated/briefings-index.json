@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-16",
     "2026-10-15",
     "2026-10-14",
     "2026-10-13",
@@ -248,6 +249,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-16": {
+      "briefingIds": [
+        "rss-2026-10-16"
+      ],
+      "insightIds": [
+        "rss-2026-10-16-01-introducing-vercel-drives-persistent-storage-for-agents",
+        "rss-2026-10-16-02-vercel-ship-2026-recap",
+        "rss-2026-10-16-03-chirp-pong",
+        "rss-2026-10-16-04-the-next-developer-interface-is-ambient-intelligence",
+        "rss-2026-10-16-05-sullivan-cromwell-brings-legal-expertise-into-agreement-review",
+        "rss-2026-10-16-06-builder-theme-thibault-sottiaux-on-either-we-are-out-of-ideas-or-we-are-cooking-time-will-tell",
+        "rss-2026-10-16-07-builder-theme-guillermo-rauch-on"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-15": {
       "briefingIds": [
         "rss-2026-10-15"
