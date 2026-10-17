@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-17",
     "2026-10-16",
     "2026-10-15",
     "2026-10-14",
@@ -249,6 +250,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-17": {
+      "briefingIds": [
+        "rss-2026-10-17"
+      ],
+      "insightIds": [
+        "rss-2026-10-17-01-benefit-street-partners-answers-questions-faster-with-codex",
+        "rss-2026-10-17-02-stack-overflow-for-agents-triples-signups-with-chatgpt-plugin",
+        "rss-2026-10-17-03-grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
+        "rss-2026-10-17-04-quoting-addy-osmani-morgan-westlee-lunt-and-qing-wang",
+        "rss-2026-10-17-05-deepseek-v41-flash-1017-now-available-on-ai-gateway",
+        "rss-2026-10-17-06-vercel-and-shopify-make-agents-first-class-shoppers",
+        "rss-2026-10-17-07-builder-theme-sam-altman-on-wow-the-new-roadster-looks-quite-amazing-good-job-elonmusk",
+        "rss-2026-10-17-08-builder-theme-the-changing-physics-of-cybersecurity-and-drug-development-with-openai-president-greg-brockman",
+        "rss-2026-10-17-09-builder-theme-boris-cherny-on-i-could-not-imagine-being-productive-without-claude-code-review-it-r"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-16": {
       "briefingIds": [
         "rss-2026-10-16"
