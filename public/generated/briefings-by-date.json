@@ -48904,5 +48904,80 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-10-18": {
+    "date": "2026-10-18",
+    "briefings": [
+      {
+        "id": "rss-2026-10-18",
+        "date": "2026-10-18",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-10-18",
+        "filePath": "2026-10-18.md",
+        "summaryTopline": "AI Gateway logs now show session affinity",
+        "insightIds": [
+          "rss-2026-10-18-01-ai-gateway-logs-now-show-session-affinity",
+          "rss-2026-10-18-02-builder-theme-thibault-sottiaux-on-done",
+          "rss-2026-10-18-03-builder-theme-aaron-levie-on-the-biggest-misread-of-anyone-predicting-the-end-of-software-engineer"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-10-18-01-ai-gateway-logs-now-show-session-affinity",
+        "briefingId": "rss-2026-10-18",
+        "date": "2026-10-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
+        "publishedDate": "2026-10-17",
+        "title": "AI Gateway logs now show session affinity",
+        "summary": "Vercel AI Gateway 日志新增 Sessions 视图，将请求按会话分组并展示会话亲和性路由结果，每行显示运行的编码代理或应用（如 Claude Code、Codex、Cursor）及其成本、模型、提供商和跨轮次的输入缓存比例。",
+        "take": "会话亲和性把每一轮请求路由到上一轮的提供商，使提供商缓存中已有大部分提示词，从而提升缓存命中率；通过 Sessions 视图可直观审计多轮代理会话的缓存复用与成本分布，为优化 Agent 工作流的提供商粘性和上下文复用提供可观测性基础。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-18-02-builder-theme-thibault-sottiaux-on-done",
+        "briefingId": "rss-2026-10-18",
+        "date": "2026-10-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
+        "title": "Builder Theme: Thibault Sottiaux on Done",
+        "summary": "Thibault Sottiaux仅发布“Done”一词，未提供任何可解析的技术细节、架构或工程方法。",
+        "take": "源材料信息量近乎为零，无可提取的工程信号。建议校验该推文原上下文或线程内容，确认是否存在被截断的发布公告或工具交付信息后再行分析。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-18-03-builder-theme-aaron-levie-on-the-biggest-misread-of-anyone-predicting-the-end-of-software-engineer",
+        "briefingId": "rss-2026-10-18",
+        "date": "2026-10-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2111525362446520466",
+        "title": "Builder Theme: Aaron Levie on The biggest misread of anyone predicting the end of software engineer...",
+        "summary": "Aaron Levie指出，预测软件工程终结的最大误读在于假设世界对软件的需求总量固定；实际上，具备工具调用、实时编写代码和高速数据处理能力的Agent正将更多非数字化问题转化为软件问题，从而扩大而非缩减工程需求。",
+        "take": "Agent的核心工程价值在于将过去因成本或复杂度无法数字化的流程转为可编程系统，这要求开发者从编写固定代码转向设计Agent可调用的工具链与架构。工程角色的经济权重因此上升，builder应聚焦于构建让Agent规模化生成和编排软件的基础设施，而非优化现有代码产出效率。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      }
+    ]
   }
 }
