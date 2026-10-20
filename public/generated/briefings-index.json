@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-20",
     "2026-10-19",
     "2026-10-18",
     "2026-10-17",
@@ -252,6 +253,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-20": {
+      "briefingIds": [
+        "rss-2026-10-20"
+      ],
+      "insightIds": [
+        "rss-2026-10-20-01-advancing-coding-in-lowresource-programming-languages",
+        "rss-2026-10-20-02-my-obituary-for-programming",
+        "rss-2026-10-20-03-how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+        "rss-2026-10-20-04-how-to-continue-a-github-copilot-app-session-in-vs-code",
+        "rss-2026-10-20-05-fairstress-a-deeper-evaluation-of-fairness-in-llm-decision-making",
+        "rss-2026-10-20-06-ai-gateway-logs-now-show-session-affinity",
+        "rss-2026-10-20-07-builder-theme-thibault-sottiaux-on-day-15-were-cooked",
+        "rss-2026-10-20-08-builder-theme-thariq-on-i-think-most-people-multi-tasking-with-agents-could-benefit-from-slow"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-19": {
       "briefingIds": [
         "rss-2026-10-19"
