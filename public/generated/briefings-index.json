@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-21",
     "2026-10-20",
     "2026-10-19",
     "2026-10-18",
@@ -253,6 +254,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-21": {
+      "briefingIds": [
+        "rss-2026-10-21"
+      ],
+      "insightIds": [
+        "rss-2026-10-21-01-openai-models-are-coming-to-google-cloud",
+        "rss-2026-10-21-02-patch-the-planet-global-response-coordination-as-agents-uncover-critical-vulnerabilities",
+        "rss-2026-10-21-03-battle-drones-a-vibe-coded-rts-with-audio-based-multiplayer",
+        "rss-2026-10-21-04-the-bridge-to-agent-scale-git-infrastructure",
+        "rss-2026-10-21-05-deepseek-v41-flash-is-now-available-in-token-pass",
+        "rss-2026-10-21-06-builder-theme-thibault-sottiaux-on-there-were-reports-of-usage-draining-faster-than-anticipated-for-some",
+        "rss-2026-10-21-07-builder-theme-sam-altman-on-i-am-very-grateful-aleksander-accepted-our-request-to-come-take-this"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-20": {
       "briefingIds": [
         "rss-2026-10-20"
