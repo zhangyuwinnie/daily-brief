@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-22",
+  "briefings": [
+    {
+      "id": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-22",
+      "filePath": "2026-10-22.md",
+      "summaryTopline": "What FDE means at OpenAI",
+      "insightIds": [
+        "rss-2026-10-22-01-what-fde-means-at-openai",
+        "rss-2026-10-22-02-uber-brings-chatgpt-work-to-all-employees-with-openai",
+        "rss-2026-10-22-03-quoting-armin-ronacher",
+        "rss-2026-10-22-04-todays-php-security-release-and-how-were-strengthening-php-security",
+        "rss-2026-10-22-05-flint-interactive-a-language-for-creating-interactive-data-visualizations",
+        "rss-2026-10-22-06-builder-theme-peter-steinberger-on-that-php-vulnerability-thats-gonna-cause-havoc-this-week-was-found-w",
+        "rss-2026-10-22-07-builder-theme-thibault-sottiaux-on-dot-dotter-dottest"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-22-01-what-fde-means-at-openai",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/forward-deployed-engineering-means",
+      "publishedDate": "2026-10-22",
+      "title": "What FDE means at OpenAI",
+      "summary": "OpenAI 设立前置部署工程（FDE）岗位，将工程师直接嵌入客户现场，以弥合通用模型能力与实际业务部署之间的落地鸿沟。",
+      "take": "这标志着模型厂商从单纯提供 API 转向“模型+现场工程”的交付模式，开发者需关注由此带来的定制化集成与工作流重构机会。对构建者而言，agent 落地的瓶颈正从模型能力转向场景适配与系统集成，现场工程能力将成为差异化竞争的关键。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-22-02-uber-brings-chatgpt-work-to-all-employees-with-openai",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "publishedDate": "2026-10-22",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.。",
+      "take": "这件事与 Workflow、OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-22-03-quoting-armin-ronacher",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "publishedDate": "2026-10-22",
+      "title": "Quoting Armin Ronacher",
+      "summary": "Armin Ronacher 指出，过去30年积累的大量低质量软件在LLM与生成式AI广泛接入的背景下正集中暴露安全与可靠性缺陷，形成系统性技术债反噬。",
+      "take": "用LLM改造存量系统前，应先审计并重构历史遗留代码的脆弱面，否则AI会放大既有架构缺陷。工程团队需将安全审计与代码质量治理前置到AI集成流程中，而非事后补救。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-22-04-todays-php-security-release-and-how-were-strengthening-php-security",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "publishedDate": "2026-10-21",
+      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "summary": "PHP 8.x全版本紧急发布安全更新修复两个远程代码执行漏洞，但因协调披露流程泄露，CVE编号提前在社交平台流传（附错误发布时间与10.0的CVSS评分），迫使PHP项目将原定10月22日的发布提前至10月20日19:30 UTC。",
+      "take": "所有运行PHP 8.x的环境须立即升级；协调披露流程中的信息泄露会压缩防御窗口，构建者应将依赖更新与紧急补丁响应纳入自动化流水线，而非依赖人工跟进。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-22-05-flint-interactive-a-language-for-creating-interactive-data-visualizations",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "publishedDate": "2026-10-22",
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "summary": "微软研究院推出Flint-interactive，一种面向AI智能体的交互式数据可视化语言，使智能体能够生成支持点击图表、筛选数据、高亮关联内容并探索原始视图之外数据的动态图表。",
+      "take": "该语言将交互式可视化能力抽象为智能体可编程的规范，使智能体从生成静态图表转向构建可探索的数据界面。开发者应关注其如何通过语言层解耦可视化生成与交互逻辑，为智能体工作流引入数据驱动的动态UI生成范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-22-06-builder-theme-peter-steinberger-on-that-php-vulnerability-thats-gonna-cause-havoc-this-week-was-found-w",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Peter Steinberger",
+      "sourceUrl": "https://x.com/steipete/status/2112913060709228764",
+      "title": "Builder Theme: Peter Steinberger on That PHP vulnerability that’s gonna cause havoc this week was found w...",
+      "summary": "Peter Steinberger 指出，本周将引发严重影响的 PHP 漏洞是由 GPT‑5.6 Sol 模型发现的。",
+      "take": "这表明大语言模型已具备在真实生产代码中进行深度漏洞挖掘的能力，AI 辅助安全审计正从辅助工具转向自主发现关键漏洞。构建者应将模型驱动的静态分析与漏洞扫描纳入 CI/CD 流程，以应对自动化攻击面扩大带来的新风险。",
+      "topics": [
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-22-07-builder-theme-thibault-sottiaux-on-dot-dotter-dottest",
+      "briefingId": "rss-2026-10-22",
+      "date": "2026-10-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2113029655095836957",
+      "title": "Builder Theme: Thibault Sottiaux on Dot, Dotter, Dottest",
+      "summary": "目前仅公开了“Dot、Dotter、Dottest”三个命名，缺乏关于架构、能力或底层机制的任何技术细节。",
+      "take": "现有信息不足以提取工程层面的有效信号，建议先获取原始推文正文或源码/文档后再判断是否值得纳入简报。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

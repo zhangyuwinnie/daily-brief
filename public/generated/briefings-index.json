@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-22",
     "2026-10-21",
     "2026-10-20",
     "2026-10-19",
@@ -254,6 +255,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-22": {
+      "briefingIds": [
+        "rss-2026-10-22"
+      ],
+      "insightIds": [
+        "rss-2026-10-22-01-what-fde-means-at-openai",
+        "rss-2026-10-22-02-uber-brings-chatgpt-work-to-all-employees-with-openai",
+        "rss-2026-10-22-03-quoting-armin-ronacher",
+        "rss-2026-10-22-04-todays-php-security-release-and-how-were-strengthening-php-security",
+        "rss-2026-10-22-05-flint-interactive-a-language-for-creating-interactive-data-visualizations",
+        "rss-2026-10-22-06-builder-theme-peter-steinberger-on-that-php-vulnerability-thats-gonna-cause-havoc-this-week-was-found-w",
+        "rss-2026-10-22-07-builder-theme-thibault-sottiaux-on-dot-dotter-dottest"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-21": {
       "briefingIds": [
         "rss-2026-10-21"
