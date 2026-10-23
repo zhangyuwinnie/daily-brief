@@ -49611,5 +49611,184 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "briefings": [
+      {
+        "id": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-10-23",
+        "filePath": "2026-10-23.md",
+        "summaryTopline": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+        "insightIds": [
+          "rss-2026-10-23-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+          "rss-2026-10-23-02-openai-and-polands-nask-partner-to-advance-ai-safety-and-security",
+          "rss-2026-10-23-03-donating-agent-skills-to-the-agentic-ai-foundation",
+          "rss-2026-10-23-04-turning-database-grading-into-rl-rewards-post-training-agents-with-thinkingbox",
+          "rss-2026-10-23-05-send-feedback-from-the-vercel-mcp",
+          "rss-2026-10-23-06-how-vercel-agent-accesses-production-safely",
+          "rss-2026-10-23-07-builder-theme-claude-on-starting-next-week-sessions-across-claude-web-desktop-and-mobile-a",
+          "rss-2026-10-23-08-builder-theme-thibault-sottiaux-on-day-18-decisions-api-is-ga-openresponses-joined-the-linux-foundatio"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-10-23-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+        "publishedDate": "2026-10-23",
+        "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+        "summary": "OpenAI通过为Habitat存储系统引入可靠多租户架构、全局缓存和Azure Cosmos DB，将ChatGPT的读取速度提升12倍以支撑超10亿用户。",
+        "take": "多租户隔离与全局缓存是超大规模AI存储的核心工程模式，直接决定读取延迟；构建高并发AI产品时应优先设计缓存分层与租户级资源隔离，而非单纯扩容后端数据库。",
+        "topics": [
+          "RAG"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-23-02-openai-and-polands-nask-partner-to-advance-ai-safety-and-security",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+        "publishedDate": "2026-10-23",
+        "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+        "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.。",
+        "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Retrieval",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-23-03-donating-agent-skills-to-the-agentic-ai-foundation",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+        "publishedDate": "2026-10-22",
+        "title": "Donating Agent Skills to the Agentic AI Foundation",
+        "summary": "Anthropic将其Agent Skills标准捐赠给Linux基金会下的Agentic AI Foundation（AAIF），该基金会由Anthropic、Block和OpenAI共同创立，此前MCP规范也已捐赠至此。",
+        "take": "Agent Skills与MCP将进入厂商中立的基金会治理模式，开发者可预期更稳定的跨厂商互操作标准；构建Agent时应将Skills和MCP视为与具体LLM供应商解耦的开放协议层，而非绑定单一平台的私有能力。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-23-04-turning-database-grading-into-rl-rewards-post-training-agents-with-thinkingbox",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+        "publishedDate": "2026-10-22",
+        "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+        "summary": "微软在Hugging Face发布ThinkingBox，将数据库操作任务的自动评分结果直接转化为强化学习奖励信号，用于对智能体进行后训练。",
+        "take": "把可验证的环境反馈（如数据库执行结果）直接映射为RL奖励，绕过了人工标注和奖励模型，为工具调用型智能体提供了可扩展的后训练范式。构建者应优先识别任务中可自动校验的信号，将其设计为稠密奖励，而非依赖偏好数据。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-23-05-send-feedback-from-the-vercel-mcp",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/send-feedback-from-vercel-mcp",
+        "publishedDate": "2026-10-23",
+        "title": "Send feedback from the Vercel MCP",
+        "summary": "Vercel MCP 新增 submit_feedback 工具，允许智能体或执行框架以自然语言并结合结构化上下文（任务描述、预期行为、错误详情）直接向 Vercel 团队提交缺陷报告、摩擦报告和功能请求，该工具需登录并在用户明确要求时才发送反馈。",
+        "take": "这标志着 MCP 从单纯的能力暴露层扩展为智能体与平台维护者之间的双向反馈通道，为工具链中的摩擦提供了可编程的闭环。构建者可在 agent harness 中集成结构化反馈上报，将部署错误等运行时问题转化为带有完整上下文的高质量问题单，降低人工转述损耗。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-23-06-how-vercel-agent-accesses-production-safely",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
+        "publishedDate": "2026-10-23",
+        "title": "How Vercel Agent accesses production safely",
+        "summary": "Vercel Agent 采用“先调查、后提案、按计划授权”的权限模型：在只读调查后生成包含操作步骤与所需权限的执行计划，用户批准计划后才授予对应权限并执行，从而将权限范围绑定到已审阅的计划而非预授权或逐步审批。",
+        "take": "核心工程范式是 Plan-then-Grant（计划即权限边界）：把权限申请与具体执行计划绑定，审批一次即授权整条计划所需的最小权限集，避免宽泛授权和审批疲劳。对构建生产级 Agent 而言，应把规划阶段与执行阶段解耦，并让权限授予由结构化计划驱动，而非由单步动作或静态角色驱动。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-23-07-builder-theme-claude-on-starting-next-week-sessions-across-claude-web-desktop-and-mobile-a",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2113360845409583307",
+        "title": "Builder Theme: Claude on Starting next week, sessions across Claude web, desktop, and mobile a...",
+        "summary": "Claude 将在下周把 Pro、Max 和 Team 套餐的网页、桌面和移动端会话默认切换为自动模式，用自动化风险检查替代逐步人工审批，用户可随时切回手动。",
+        "take": "权限模型从“每步人工确认”转向“策略约束下的自动执行”，Agent 循环的瓶颈由人工审批转移至风险判定规则的设计质量。构建者需重新评估破坏性操作，并确保安全护栏可从内部强制执行，而非依赖用户点击确认。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-23-08-builder-theme-thibault-sottiaux-on-day-18-decisions-api-is-ga-openresponses-joined-the-linux-foundatio",
+        "briefingId": "rss-2026-10-23",
+        "date": "2026-10-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2113492187770175603",
+        "title": "Builder Theme: Thibault Sottiaux on Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundatio...",
+        "summary": "OpenAI的Thibault Sottiaux宣布Decisions API正式GA、OpenResponses加入Linux基金会、性能优化已上线，且Uber全面采用Codex与work。",
+        "take": "Decisions API与OpenResponses标准化意味着工具链与模型交互层正走向开放治理，降低厂商锁定风险；Uber的全面采用验证了Codex在大型工程组织中的生产级可用性，开发者应关注API集成与性能优化带来的工作流重构机会。",
+        "topics": [
+          "Coding Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-23",
     "2026-10-22",
     "2026-10-21",
     "2026-10-20",
@@ -255,6 +256,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-23": {
+      "briefingIds": [
+        "rss-2026-10-23"
+      ],
+      "insightIds": [
+        "rss-2026-10-23-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+        "rss-2026-10-23-02-openai-and-polands-nask-partner-to-advance-ai-safety-and-security",
+        "rss-2026-10-23-03-donating-agent-skills-to-the-agentic-ai-foundation",
+        "rss-2026-10-23-04-turning-database-grading-into-rl-rewards-post-training-agents-with-thinkingbox",
+        "rss-2026-10-23-05-send-feedback-from-the-vercel-mcp",
+        "rss-2026-10-23-06-how-vercel-agent-accesses-production-safely",
+        "rss-2026-10-23-07-builder-theme-claude-on-starting-next-week-sessions-across-claude-web-desktop-and-mobile-a",
+        "rss-2026-10-23-08-builder-theme-thibault-sottiaux-on-day-18-decisions-api-is-ga-openresponses-joined-the-linux-foundatio"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-22": {
       "briefingIds": [
         "rss-2026-10-22"
