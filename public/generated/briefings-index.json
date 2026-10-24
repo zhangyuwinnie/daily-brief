@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-24",
     "2026-10-23",
     "2026-10-22",
     "2026-10-21",
@@ -256,6 +257,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-24": {
+      "briefingIds": [
+        "rss-2026-10-24"
+      ],
+      "insightIds": [
+        "rss-2026-10-24-01-securing-our-frontier-model-training-environment",
+        "rss-2026-10-24-02-battledrones-v14-compass-rose-a-four-player-map",
+        "rss-2026-10-24-03-quick-study",
+        "rss-2026-10-24-04-vercel-cli-adds-spend-management",
+        "rss-2026-10-24-05-vercel-connect-adds-managed-stripe-api-keys",
+        "rss-2026-10-24-06-build-your-own-reasoning-model-a-full-video-course",
+        "rss-2026-10-24-07-builder-theme-thariq-on-ive-left-anthropic-after-more-than-a-year-of-working-on-claude-code",
+        "rss-2026-10-24-08-builder-theme-thibault-sottiaux-on-day-19-small-updates-calls-connect-much-faster-for-dots-changing-r"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-23": {
       "briefingIds": [
         "rss-2026-10-23"
