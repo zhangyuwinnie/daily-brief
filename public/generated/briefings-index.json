@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-25",
     "2026-10-24",
     "2026-10-23",
     "2026-10-22",
@@ -257,6 +258,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-25": {
+      "briefingIds": [
+        "rss-2026-10-25"
+      ],
+      "insightIds": [
+        "rss-2026-10-25-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+        "rss-2026-10-25-02-introducing-kimi-k31-pro",
+        "rss-2026-10-25-03-send-feedback-from-the-vercel-mcp",
+        "rss-2026-10-25-04-how-vercel-agent-accesses-production-safely",
+        "rss-2026-10-25-05-builder-theme-jev-the-ai-that-makes-decisions-not-text-and-why-it-changes-everything-diogo-almeida",
+        "rss-2026-10-25-06-builder-theme-thibault-sottiaux-on-day-20-rest-and-reset",
+        "rss-2026-10-25-07-builder-theme-guillermo-rauch-on-therell-be-times-where-you-over-guide-the-ai-it-knows-better-than-y"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-24": {
       "briefingIds": [
         "rss-2026-10-24"

@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-25",
+  "briefings": [
+    {
+      "id": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-25",
+      "filePath": "2026-10-25.md",
+      "summaryTopline": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "insightIds": [
+        "rss-2026-10-25-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+        "rss-2026-10-25-02-introducing-kimi-k31-pro",
+        "rss-2026-10-25-03-send-feedback-from-the-vercel-mcp",
+        "rss-2026-10-25-04-how-vercel-agent-accesses-production-safely",
+        "rss-2026-10-25-05-builder-theme-jev-the-ai-that-makes-decisions-not-text-and-why-it-changes-everything-diogo-almeida",
+        "rss-2026-10-25-06-builder-theme-thibault-sottiaux-on-day-20-rest-and-reset",
+        "rss-2026-10-25-07-builder-theme-guillermo-rauch-on-therell-be-times-where-you-over-guide-the-ai-it-knows-better-than-y"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-25-01-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "publishedDate": "2026-10-23",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "summary": "OpenAI通过为Habitat存储系统构建可靠的多租户架构、全局缓存层及Azure Cosmos DB集成，将ChatGPT的在线存储读取性能提升12倍以支撑超10亿用户。",
+      "take": "多租户隔离与全局缓存的组合是超大规模型AI应用存储层的关键工程模式；将热点数据前置缓存可显著降低后端数据库压力并压缩读取延迟，该架构可直接复用至需要高并发RAG检索的生产系统。",
+      "topics": [
+        "RAG",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-25-02-introducing-kimi-k31-pro",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "publishedDate": "2026-10-23",
+      "title": "Introducing Kimi K3.1 Pro",
+      "summary": "月之暗面通过API发布Kimi K3.1 Pro，暂未开放权重（承诺2026年11月4日前公开），定价为输入每百万token 2美元、输出每百万token 10美元，与GPT-6.1 Sol持平、为Claude Opus 5.5的一半，并提供价格为两倍、速度快2-3倍的Highspeed版本；Artificial Analysis评分为55，超过Claude Fable 5.1、GPT-6 Astra和Gemini 4 Argon（均为53），仅次于Claude Opus 5.5（58）。",
+      "take": "以Opus 5.5一半的价格提供接近前沿的推理能力，直接压缩了高端闭源模型的定价空间。Highspeed版本按溢价定价但缓存命中不涨价，说明缓存复用已成为降低Agent长上下文成本的关键杠杆。权重尚未开放，但已承诺公开时间，值得提前规划自托管与微调路径。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-25-03-send-feedback-from-the-vercel-mcp",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/send-feedback-from-vercel-mcp",
+      "publishedDate": "2026-10-23",
+      "title": "Send feedback from the Vercel MCP",
+      "summary": "Vercel在其MCP中新增submit_feedback工具，允许Agent或harness将bug报告、摩擦报告和功能请求连同结构化的任务、预期行为与错误上下文直接提交给Vercel团队。",
+      "take": "这为Agent工作流引入了标准化的反馈回传通道，使运行时摩擦可直接转化为可执行的结构化报告，而非依赖人工转述。构建者可将此模式复用到自身平台，让Agent承担自诊断与上报，降低调试信息在传递中的损耗。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-25-04-how-vercel-agent-accesses-production-safely",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
+      "publishedDate": "2026-10-23",
+      "title": "How Vercel Agent accesses production safely",
+      "summary": "Vercel Agent 采用“先调查问题、再生成计划、批准计划即授予执行所需权限”的流程，将权限范围绑定到具体计划而非预先授予宽泛访问，从而安全地操作生产环境。",
+      "take": "将权限授予与代理提出的具体执行计划绑定，而非在任务开始时预先赋予宽泛权限，可同时避免过度授权和频繁逐项审批导致的审批疲劳。这一“计划即权限边界”的模式为生产环境中的代理操作提供了可复用的最小权限授权范式。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-25-05-builder-theme-jev-the-ai-that-makes-decisions-not-text-and-why-it-changes-everything-diogo-almeida",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "The MAD Podcast with Matt Turck",
+      "sourceUrl": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "title": "Builder Theme: Jev: The AI That Makes Decisions, Not Text - and Why It Changes Everything (Diogo Almeida)",
+      "summary": "TypeSafe CEO Diogo Almeida提出Jev模型，主张AI应作为执行决策与验证的工程组件而非文本生成器，通过明确置信度（如区分95%正确与5%错误）来实现可自动化的工作流。",
+      "take": "核心信号：Agent可靠性的瓶颈在于模型能否主动暴露不确定性边界，而非生成质量本身；工程上应优先构建带置信度校准与失败上报机制的执行层，而非继续堆叠预训练规模。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-25-06-builder-theme-thibault-sottiaux-on-day-20-rest-and-reset",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2114200152701575656",
+      "title": "Builder Theme: Thibault Sottiaux on Day 20/ Rest and reset",
+      "summary": "Thibault Sottiaux 在 X 平台发布“Day 20/ Rest and reset”，内容仅提及休息与重置，未包含任何技术机制、架构或工程细节。",
+      "take": "该来源缺乏可提取的工程信号，对开发者工具链、工作流或智能体能力无实质参考价值，建议直接跳过。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-25-07-builder-theme-guillermo-rauch-on-therell-be-times-where-you-over-guide-the-ai-it-knows-better-than-y",
+      "briefingId": "rss-2026-10-25",
+      "date": "2026-10-25",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2114085432749347086",
+      "title": "Builder Theme: Guillermo Rauch on There’ll be times where you over-guide the AI. It knows better than y...",
+      "summary": "Vercel CEO Guillermo Rauch 提出，AI 构建者的核心技能是动态调节引导强度：过度引导会限制模型能力，引导不足则会导致偏见或上下文缺失。",
+      "take": "工程范式从静态 Prompt 工程转向运行时的引导强度动态调度，需建立可观测的反馈回路来判断模型何时优于人类判断、何时需要补充上下文约束。这要求 Agent 工具链支持引导粒度的实时调节与偏差检测，而非一次性指令配置。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
