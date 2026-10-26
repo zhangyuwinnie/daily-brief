@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-26",
     "2026-10-25",
     "2026-10-24",
     "2026-10-23",
@@ -258,6 +259,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-26": {
+      "briefingIds": [
+        "rss-2026-10-26"
+      ],
+      "insightIds": [
+        "rss-2026-10-26-01-chatgpts-expanding-world-of-work",
+        "rss-2026-10-26-02-how-fanatics-and-openai-streamline-the-fan-experience",
+        "rss-2026-10-26-03-discover-1000-services-on-vercel-connect-from-the-cli",
+        "rss-2026-10-26-04-run-scale-ais-agentenv-evals-on-vercel-sandbox",
+        "rss-2026-10-26-05-builder-theme-thibault-sottiaux-on-day-21-wonder-what-happens-the-remaining-seven-days-but-today-is-a",
+        "rss-2026-10-26-06-builder-theme-aaron-levie-on-good-assessment-of-the-on-the-ground-reality-for-security-in-most-lar"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-25": {
       "briefingIds": [
         "rss-2026-10-25"
