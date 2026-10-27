@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-27",
     "2026-10-26",
     "2026-10-25",
     "2026-10-24",
@@ -259,6 +260,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-27": {
+      "briefingIds": [
+        "rss-2026-10-27"
+      ],
+      "insightIds": [
+        "rss-2026-10-27-01-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai",
+        "rss-2026-10-27-02-webframe-evaluated-as-a-scraper-and-a-sandbox",
+        "rss-2026-10-27-03-vercel-sandbox-commands-now-support-stdin",
+        "rss-2026-10-27-04-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra",
+        "rss-2026-10-27-05-vercel-agent-can-now-validate-alerts-before-paging",
+        "rss-2026-10-27-06-the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+        "rss-2026-10-27-07-gpt-61-terra",
+        "rss-2026-10-27-08-can-we-trust-llms-to-judge-whether-a-research-idea-is-novel",
+        "rss-2026-10-27-09-builder-theme-thibault-sottiaux-on-day-22-terra-is-back-our-first-model-that-is-significantly-better-a",
+        "rss-2026-10-27-10-builder-theme-sam-altman-on-61-terra-is-here-it-is-good-at-a-lot-of-things-but-we-are-especial"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-26": {
       "briefingIds": [
         "rss-2026-10-26"

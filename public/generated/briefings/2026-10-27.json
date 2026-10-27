@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-27",
+  "briefings": [
+    {
+      "id": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-27",
+      "filePath": "2026-10-27.md",
+      "summaryTopline": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "insightIds": [
+        "rss-2026-10-27-01-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai",
+        "rss-2026-10-27-02-webframe-evaluated-as-a-scraper-and-a-sandbox",
+        "rss-2026-10-27-03-vercel-sandbox-commands-now-support-stdin",
+        "rss-2026-10-27-04-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra",
+        "rss-2026-10-27-05-vercel-agent-can-now-validate-alerts-before-paging",
+        "rss-2026-10-27-06-the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+        "rss-2026-10-27-07-gpt-61-terra",
+        "rss-2026-10-27-08-can-we-trust-llms-to-judge-whether-a-research-idea-is-novel",
+        "rss-2026-10-27-09-builder-theme-thibault-sottiaux-on-day-22-terra-is-back-our-first-model-that-is-significantly-better-a",
+        "rss-2026-10-27-10-builder-theme-sam-altman-on-61-terra-is-here-it-is-good-at-a-lot-of-things-but-we-are-especial"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-27-01-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/openai-cut-incident-investigation",
+      "publishedDate": "2026-10-26",
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "summary": "OpenAI工程师在事故调查工作流中部署Codex Ultrafast，将原本数小时的事件排查压缩至分钟级，覆盖安全分析与代码重构等高频任务。",
+      "take": "核心信号是LLM从辅助补全转向承担端到端调查推理，把多步日志检索、假设验证与代码上下文关联压缩为单次交互。构建者应重估agent在安全运营与故障定位中的定位，将耗时调查流程重构为模型驱动的自动化流水线。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Retrieval",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-27-02-webframe-evaluated-as-a-scraper-and-a-sandbox",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
+      "publishedDate": "2026-10-26",
+      "title": "webframe: evaluated as a scraper and a sandbox",
+      "summary": "webframe 项目基于 Go 语言与 glaze 库，调用系统原生 WebView（WKWebView/WebKitGTK/WebView2）执行网页中的 JavaScript，将 console.log 输出至 stdout、异常输出至 stderr，从而无需捆绑浏览器引擎即可把网页当作程序运行。",
+      "take": "该方案以系统 WebView 替代 Playwright 等重型依赖，为 AI Agent 提供轻量级网页执行与数据抓取原语，降低部署体积与资源开销。工程上可探索将其用作 RAG 流水线或 Agent 工具链中的沙箱化网页脚本执行层。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-27-03-vercel-sandbox-commands-now-support-stdin",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-commands-now-support-stdin",
+      "publishedDate": "2026-10-26",
+      "title": "Vercel Sandbox commands now support stdin",
+      "summary": "Vercel Sandbox 新增对运行中命令的 stdin 支持，TypeScript SDK 通过 runCommand() 设置 stdin: true 与 detached: true 并用 writeStdin()/closeStdin() 交互，Python SDK 通过 subprocess.PIPE 与 server.stdin.send()/communicate() 交互，从而支持 stdio MCP 服务器（如 agent-browser）的持续消息交换。",
+      "take": "这让沙箱内的长驻进程可被双向流式驱动，MCP over stdio 服务器与交互式命令行工具得以在托管沙箱中运行而非仅一次性输入。构建 agent 工具链时应将 stdin 流式通道作为默认交互模式，并显式管理 writeStdin/closeStdin 生命周期以避免进程挂起或输出丢失。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-27-04-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/greptile-code-review-codex-astra",
+      "publishedDate": "2026-10-26",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "summary": "Greptile利用GPT-6 Astra模拟真实用户工作流进行缺陷检测，结合Daybreak强化安全防护、Codex减少返工，将缺陷发现环节从代码审查前移至运行时行为验证。",
+      "take": "缺陷检测的切入点从静态代码模式转向动态工作流仿真，这为AI Agent在CI/CD中承担端到端行为验证提供了可复用的架构范式。工程团队应将测试重心从代码级lint迁移至用户路径级仿真，并让Codex类模型直接消化检测结果以闭环减少返工。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-05-vercel-agent-can-now-validate-alerts-before-paging",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
+      "publishedDate": "2026-10-26",
+      "title": "Vercel Agent can now validate alerts before paging",
+      "summary": "Vercel Agent 新增告警验证能力，在告警进入分页系统前通过检查日志与指标评估影响，仅将通过分类为 Critical 的告警发送至 webhook 目标，并支持 CLI 的 --critical-only 配置。",
+      "take": "Agent 从被动通知转向告警前的自动影响评估，可过滤掉不影响客户的健康检查错误，并确认真正影响业务（如结账请求的持续 5xx 错误）的故障。这为运维工作流引入了 Agent 作为告警分诊层的新范式，开发者可通过 webhook 与 CLI 精确控制哪些告警触发分页。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-06-the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "publishedDate": "2026-10-27",
+      "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "summary": "谷歌提出Sleep框架，通过在持续学习阶段引入离线“睡眠”巩固机制，使LLM在不遗忘旧知识的前提下保留新知识。",
+      "take": "核心工程启示是将训练与巩固解耦：推理/交互阶段仅做临时适应，离线阶段再通过重放或参数整合固化知识，从而绕开灾难性遗忘。这为构建可持续增量学习的LLM与长期运行的智能体提供了可复用的架构范式。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-07-gpt-61-terra",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "publishedDate": "2026-10-26",
+      "title": "GPT-6.1 Terra",
+      "summary": "OpenAI发布GPT-6.1 Terra，定位对标Anthropic Sonnet的中端模型，重点强化视觉推理与计算机操作能力，可执行填表、编辑视频、解读技术图纸等桌面任务。",
+      "take": "计算机操作与视觉推理被合并为同一模型的核心能力，意味着Agent可端到端完成截图理解与界面操作，减少对专用工具链的拆分依赖。中端定位使成本与能力更均衡，架构上可按任务复杂度动态在Terra与更大模型间路由。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-08-can-we-trust-llms-to-judge-whether-a-research-idea-is-novel",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+      "publishedDate": "2026-10-27",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "summary": "AllenAI发布Novelty Bench，系统评估LLM作为研究新颖性评审者的可靠性，揭示其在判断科研想法原创性时的能力边界与偏差模式。",
+      "take": "在将LLM引入科研评审或创意筛选流程前，必须先做基准校准，而非默认其判断可信。开发者应关注该基准揭示的失效模式（如对熟悉领域的偏好或伪新颖误判），据此设计人机协同的评审架构与置信度阈值。",
+      "topics": [
+        "Evals",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-09-builder-theme-thibault-sottiaux-on-day-22-terra-is-back-our-first-model-that-is-significantly-better-a",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2114800277677092936",
+      "title": "Builder Theme: Thibault Sottiaux on Day 22/ Terra is back! Our first model that is significantly better a...",
+      "summary": "Thibault Sottiaux 宣布 Terra 模型回归，该模型在写作、个性化和请求细微理解上显著提升，计算机使用能力出色，并在 API 与订阅中提供比 6.1 Sol 多 2 倍的用量。",
+      "take": "新模型将写作质量、人格化交互与 computer use 能力整合进同一模型，并直接提升 2 倍配额，意味着构建 Agent 工作流时可减少模型切换与限流妥协。开发者应重点验证其在多步骤工具调用与模糊指令解析上的实际表现。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-27-10-builder-theme-sam-altman-on-61-terra-is-here-it-is-good-at-a-lot-of-things-but-we-are-especial",
+      "briefingId": "rss-2026-10-27",
+      "date": "2026-10-27",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2114818620782248024",
+      "title": "Builder Theme: Sam Altman on 6.1 Terra is here! It is good at a lot of things, but we are especial...",
+      "summary": "Sam Altman宣布6.1 Terra模型发布，该模型具备多方面能力，重点强调其开启了AI计算机使用（Computer Use）的新时代。",
+      "take": "模型定位从对话生成转向直接操作计算机界面，意味着Agent执行链路可延伸到实际桌面与浏览器交互层。Builder需关注Computer Use接口的稳定性与工具调用范式，而非单纯文本生成能力。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
