@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-28",
     "2026-10-27",
     "2026-10-26",
     "2026-10-25",
@@ -260,6 +261,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-28": {
+      "briefingIds": [
+        "rss-2026-10-28"
+      ],
+      "insightIds": [
+        "rss-2026-10-28-01-fx-is-now-available-in-t3-code",
+        "rss-2026-10-28-02-the-fx-adapter-now-runs-the-harness-on-the-host",
+        "rss-2026-10-28-03-gemini-4-carbon-our-next-frontier-model",
+        "rss-2026-10-28-04-github-octoverse-2026",
+        "rss-2026-10-28-05-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+        "rss-2026-10-28-06-the-october-inflection-point-for-vibe-game-development",
+        "rss-2026-10-28-07-legora-is-building-the-agentic-operating-system-for-legal-work",
+        "rss-2026-10-28-08-retell-uses-openai-models-to-help-power-100m-monthly-calls",
+        "rss-2026-10-28-09-builder-theme-thariq-on-experimenting-with-a-lil-personal-project-an-ai-native-macos-dock-wi",
+        "rss-2026-10-28-10-builder-theme-thibault-sottiaux-on-has-landed"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-27": {
       "briefingIds": [
         "rss-2026-10-27"

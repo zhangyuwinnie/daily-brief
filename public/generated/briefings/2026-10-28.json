@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-28",
+  "briefings": [
+    {
+      "id": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-10-28",
+      "filePath": "2026-10-28.md",
+      "summaryTopline": "fx is now available in T3 Code",
+      "insightIds": [
+        "rss-2026-10-28-01-fx-is-now-available-in-t3-code",
+        "rss-2026-10-28-02-the-fx-adapter-now-runs-the-harness-on-the-host",
+        "rss-2026-10-28-03-gemini-4-carbon-our-next-frontier-model",
+        "rss-2026-10-28-04-github-octoverse-2026",
+        "rss-2026-10-28-05-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+        "rss-2026-10-28-06-the-october-inflection-point-for-vibe-game-development",
+        "rss-2026-10-28-07-legora-is-building-the-agentic-operating-system-for-legal-work",
+        "rss-2026-10-28-08-retell-uses-openai-models-to-help-power-100m-monthly-calls",
+        "rss-2026-10-28-09-builder-theme-thariq-on-experimenting-with-a-lil-personal-project-an-ai-native-macos-dock-wi",
+        "rss-2026-10-28-10-builder-theme-thibault-sottiaux-on-has-landed"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-10-28-01-fx-is-now-available-in-t3-code",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/fx-is-now-available-in-t3-code",
+      "publishedDate": "2026-10-28",
+      "title": "fx is now available in T3 Code",
+      "summary": "Vercel将其开源编码代理框架fx集成至开源编码代理控制平面T3 Code，支持Web、桌面和移动端，并内置Supervised与Auto两种运行模式及现有模型与技能。",
+      "take": "编码代理的调用层（harness）与控制层（control plane）正在解耦，开发者可将fx作为可插拔provider接入统一编排界面，从而在跨端会话中复用既有模型与技能配置。这一模式意味着工具链正从单体IDE代理转向可组合的代理基础设施。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-28-02-the-fx-adapter-now-runs-the-harness-on-the-host",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+      "publishedDate": "2026-10-27",
+      "title": "The fx adapter now runs the harness on the host",
+      "summary": "Vercel 的 AI SDK HarnessAgent fx 适配器已重构为在宿主进程内直接运行 harness 与模型请求，仅将文件系统和 Shell 操作隔离在沙箱中，并通过 libfx 消除了沙箱内安装 fx、沙箱桥接及端口暴露的需求。",
+      "take": "关键工程转变是将控制面与模型凭证保留在宿主侧，仅把高风险的文件与 Shell 执行下放到沙箱，从而缩小攻击面并简化部署拓扑。同时新增内置工具过滤、回合中途指令注入、结构化输出、图像工具结果返回以及可跨宿主进程恢复的会话能力，直接扩展了 Agent 的可控性与可恢复性边界。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-28-03-gemini-4-carbon-our-next-frontier-model",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "publishedDate": "2026-10-28",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "summary": "该内容标题为“Gemini 4 Carbon：我们的下一个前沿模型”，来源于 Google DeepMind 新闻，但正文片段为空，无法确认具体技术机制、架构或工程细节。",
+      "take": "来源缺少可提取的工程内容，无法据此给出可操作的技术结论；需获取完整正文后再评估其对模型能力、工具链或 agent 架构的实际影响。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-10-28-04-github-octoverse-2026",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "publishedDate": "2026-10-28",
+      "title": "GitHub Octoverse 2026",
+      "summary": "GitHub 2026年Octoverse报告显示，代理式工程（agentic engineering）使合并PR数在不到一年内翻三倍至每月2.2亿，提交数超三倍至每月73.8亿，新仓库率翻倍至每月3030万。",
+      "take": "代理式工程正从根本上重构代码贡献的量级与节奏，开发者需重新评估代码审查、CI/CD与仓库治理的吞吐设计。工程指标已从人力驱动转向代理驱动，工具链需为高频自动化提交与互操作性/逆向工程类仓库提供原生支持。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-05-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "publishedDate": "2026-10-28",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "summary": "GitHub 2026 Octoverse 报告显示，开发者借助 AI 代理（agents）进行构建，推动提交（commits）与推送（pushes）量创下历史新高，增长覆盖所有行业与开发者类型。",
+      "take": "AI 代理已从实验性工具转变为开发工作流的核心参与者，直接驱动代码产出量激增。架构师需重新评估代码审查、CI/CD 流水线与协作规范，以适配代理生成代码的高频提交节奏。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-06-the-october-inflection-point-for-vibe-game-development",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "publishedDate": "2026-10-28",
+      "title": "The October inflection point for vibe game development",
+      "summary": "截至2026年10月，Claude Opus 5.5等模型在3D建模、音乐生成与游戏设计上显著提升，标志着“氛围游戏开发”（vibe game development）进入新拐点。",
+      "take": "模型已能端到端完成从设计到资产生成的完整游戏构建，开发者应将游戏原型与创意验证纳入智能体流水线；非专业开发者也能通过自然语言驱动完整游戏开发，工具链重心正从手工编码转向设计意图描述与资产编排。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-07-legora-is-building-the-agentic-operating-system-for-legal-work",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "publishedDate": "2026-10-28",
+      "title": "Legora is building the agentic operating system for legal work",
+      "summary": "Legora基于OpenAI模型、ChatGPT与Codex构建法律领域智能体操作系统，用于加速合同分析等法律工作流。",
+      "take": "法律垂直场景正从单点AI工具转向以智能体编排为核心的领域操作系统，Codex类代码生成能力被复用于结构化合同分析与流程自动化。开发者应关注将通用模型封装为可组合的领域智能体工作流，而非直接调用裸模型。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-08-retell-uses-openai-models-to-help-power-100m-monthly-calls",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/retell-ai",
+      "publishedDate": "2026-10-27",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "summary": "Retell AI基于OpenAI的GPT-6 Astra模型构建语音Agent并通过其语音基准测试，同时利用Codex提升开发效率，实现每名员工160万美元年化营收。",
+      "take": "语音Agent的生产力杠杆已从模型能力转向工程编排：底层模型选型决定交互质量上限，而Codex类代码生成工具直接压缩单客获取与迭代成本，使小团队高人均营收成为可复制的架构模式而非个案。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-09-builder-theme-thariq-on-experimenting-with-a-lil-personal-project-an-ai-native-macos-dock-wi",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2115135857669881939",
+      "title": "Builder Theme: Thariq on experimenting with a lil personal project: an AI-native macOS dock wi...",
+      "summary": "Thariq开发了一个AI原生macOS dock个人项目，通过自定义模式（写作、构建等）保持专注，其智能体使用jev实时分类用户活动和通知并据此行动，且能自定义模式行为并新增模式。",
+      "take": "展示了智能体作为OS层活动分类器与执行器的可行路径：实时感知上下文并主动干预，而非被动响应指令。关键工程点在于将模式定义为可被智能体动态扩展的配置，使工具行为随用户意图自适应演进。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-10-28-10-builder-theme-thibault-sottiaux-on-has-landed",
+      "briefingId": "rss-2026-10-28",
+      "date": "2026-10-28",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2115297093879472332",
+      "title": "Builder Theme: Thibault Sottiaux on has landed",
+      "summary": "Thibault Sottiaux 发布了一个新的 Builder Theme 资源（具体内容通过 t.co 短链接指向，未提供详细技术细节）。",
+      "take": "由于源材料仅有“has landed”的简短表述和短链接，无法提取具体的架构模式或工程机制。建议直接访问原始链接获取实际内容后再评估其对开发者工作流的影响。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
