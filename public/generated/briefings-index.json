@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-29",
     "2026-10-28",
     "2026-10-27",
     "2026-10-26",
@@ -261,6 +262,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-29": {
+      "briefingIds": [
+        "rss-2026-10-29"
+      ],
+      "insightIds": [
+        "rss-2026-10-29-01-vercel-ci-is-now-in-beta",
+        "rss-2026-10-29-02-introducing-vercel-ci",
+        "rss-2026-10-29-03-how-we-detect-frontier-model-misalignment",
+        "rss-2026-10-29-04-building-a-multiplayer-game-world-with-autonomous-fable-class-models",
+        "rss-2026-10-29-05-legora-is-building-the-agentic-operating-system-for-legal-work",
+        "rss-2026-10-29-06-quoting-terk-terkowitz",
+        "rss-2026-10-29-07-builder-theme-claude-on-new-in-claude-for-legal-a-gallery-of-ready-made-artifacts-for-contra",
+        "rss-2026-10-29-08-builder-theme-thariq-on-very-weird-thing-happening-rn-technical-people-are-sad-they-think-th"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-28": {
       "briefingIds": [
         "rss-2026-10-28"
