@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-30",
     "2026-10-29",
     "2026-10-28",
     "2026-10-27",
@@ -262,6 +263,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-30": {
+      "briefingIds": [
+        "rss-2026-10-30"
+      ],
+      "insightIds": [
+        "rss-2026-10-30-01-community-safety-report-and-new-protections-for-teens",
+        "rss-2026-10-30-02-an-updated-model-spec-for-more-capable-and-beneficial-ai",
+        "rss-2026-10-30-03-api-credits-benefit-for-eligible-chatgpt-subscriptions",
+        "rss-2026-10-30-04-quoting-ben-hylak",
+        "rss-2026-10-30-05-ling-31-flash-1019-now-available-on-ai-gateway-for-free",
+        "rss-2026-10-30-06-strix-now-supports-vercel-ai-gateway",
+        "rss-2026-10-30-07-builder-theme-thibault-sottiaux-on-day-25-we-are-doubling-all-usage-limits-for-all-pro-100200500-tier",
+        "rss-2026-10-30-08-builder-theme-thariq-on-theres-100-a-kind-of-mania-you-can-get-into-with-coding-agents-whe"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-29": {
       "briefingIds": [
         "rss-2026-10-29"
