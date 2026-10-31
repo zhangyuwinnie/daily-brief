@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-10-31",
     "2026-10-30",
     "2026-10-29",
     "2026-10-28",
@@ -263,6 +264,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-10-31": {
+      "briefingIds": [
+        "rss-2026-10-31"
+      ],
+      "insightIds": [
+        "rss-2026-10-31-01-making-it-easier-for-websites-to-express-ai-training-preferences",
+        "rss-2026-10-31-02-fair-use-benefits-everyone",
+        "rss-2026-10-31-03-dbreunignesformer",
+        "rss-2026-10-31-04-simplifying-runtime-caching-on-vercel",
+        "rss-2026-10-31-05-data-cache-is-moving-to-runtime-cache",
+        "rss-2026-10-31-06-microsoft-research-focus-edition-97",
+        "rss-2026-10-31-07-builder-theme-claude-on-were-renaming-our-max-plans-max-5x-max-max-20x-ultra-max-is-sti",
+        "rss-2026-10-31-08-builder-theme-boris-cherny-on-were-removing-the-5-hour-limit-for-verified-ultra-accounts"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-30": {
       "briefingIds": [
         "rss-2026-10-30"

@@ -51057,5 +51057,180 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "briefings": [
+      {
+        "id": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-10-31",
+        "filePath": "2026-10-31.md",
+        "summaryTopline": "Making it easier for websites to express AI training preferences",
+        "insightIds": [
+          "rss-2026-10-31-01-making-it-easier-for-websites-to-express-ai-training-preferences",
+          "rss-2026-10-31-02-fair-use-benefits-everyone",
+          "rss-2026-10-31-03-dbreunignesformer",
+          "rss-2026-10-31-04-simplifying-runtime-caching-on-vercel",
+          "rss-2026-10-31-05-data-cache-is-moving-to-runtime-cache",
+          "rss-2026-10-31-06-microsoft-research-focus-edition-97",
+          "rss-2026-10-31-07-builder-theme-claude-on-were-renaming-our-max-plans-max-5x-max-max-20x-ultra-max-is-sti",
+          "rss-2026-10-31-08-builder-theme-boris-cherny-on-were-removing-the-5-hour-limit-for-verified-ultra-accounts"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-10-31-01-making-it-easier-for-websites-to-express-ai-training-preferences",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+        "publishedDate": "2026-10-30",
+        "title": "Making it easier for websites to express AI training preferences",
+        "summary": "OpenAI宣布将遵循一个共享的robots.txt信号，使网站运营者能向参与该机制的AI提供商统一表达其AI训练偏好。",
+        "take": "这为数据采集合规提供了标准化的机器可读声明层，开发者需在爬虫与训练管线中解析并尊重该共享信号，而非仅依赖各厂商私有约定。Agent与数据管道应将该偏好信号纳入抓取决策，降低合规风险。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-31-02-fair-use-benefits-everyone",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone",
+        "publishedDate": "2026-10-30",
+        "title": "Fair use benefits everyone",
+        "summary": "OpenAI公布创作者、学者、无障碍倡导者及法律专家提交的法庭简报节选，论证合理使用（fair use）原则支撑AI训练与创新。",
+        "take": "这是法律与政策层面的论证，而非工程信号；对构建者的直接影响在于训练数据版权合规路径的确定性，但简报内容本身不含任何技术架构或工具链信息。若合理使用被削弱，数据获取与模型训练流程可能需引入授权与溯源机制。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-31-03-dbreunignesformer",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Oct/30/nesformer/",
+        "publishedDate": "2026-10-30",
+        "title": "dbreunig/nesformer",
+        "summary": "Drew Breunig 受 qwenputer 启发，将可运行的 NES 6502 CPU 模拟器直接烘焙进 Qwen3.5-4B 的模型权重中，使 NES ROM（如超级马里奥）能在 LLM 内部以极低速度运行。",
+        "take": "这验证了将确定性状态机（CPU/内存模拟）编码进模型权重、而非依赖外部工具的可行性，为 agent 提供了内化执行环境的新范式。工程上需关注：权重内模拟器的时钟速度受模型规模与推理速度约束，短期无法达到标准时钟频率，适合实验验证但不适合实用。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-10-31-04-simplifying-runtime-caching-on-vercel",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+        "publishedDate": "2026-10-30",
+        "title": "Simplifying runtime caching on Vercel",
+        "summary": "Vercel将Data Cache整合进Runtime Cache，为Next.js fetch缓存及unstable_cache提供单一跨框架的数据缓存产品，并提升流量高峰读取性能与Pro/Enterprise存储配额。",
+        "take": "开发者无需改动现有Next.js缓存代码即可获得统一的数据缓存层，减少自运维缓存服务的需求。Agent与RAG工作流可直接复用请求间的计算结果，降低重复抓取与计算开销，同时更大存储配额有利于长上下文与知识库缓存。",
+        "topics": [
+          "Agents",
+          "RAG",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-31-05-data-cache-is-moving-to-runtime-cache",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache",
+        "publishedDate": "2026-10-30",
+        "title": "Data Cache is moving to Runtime Cache",
+        "summary": "Vercel将Next.js的Data Cache迁移至Runtime Cache，fetch缓存与unstable_cache无需改代码即自动切换，Pro项目独立存储配额提升8倍、企业版提升10倍，但此前免费的读写开始按每百万读$0.40、每百万写$4.00计费。",
+        "take": "原先免费的Next.js缓存层现在变成按量计费的基础设施成本，构建者需重新评估fetch与unstable_cache的调用频率与缓存命中率以控制开销。存储隔离到项目级意味着多项目团队获得更大配额，但成本核算粒度也从团队级下沉到项目级。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-31-06-microsoft-research-focus-edition-97",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+        "publishedDate": "2026-10-29",
+        "title": "Microsoft Research Focus – Edition #97",
+        "summary": "微软研究院在第97期Focus播客中集中讨论了编码智能体面临的核心挑战、职场中AI的实际使用模式以及改进的延伸期天气预报技术。",
+        "take": "编码智能体的瓶颈已从生成能力转向真实工程环境中的可靠性与可调试性，构建者应优先设计可观测、可回滚的智能体执行框架。同时，职场AI使用数据表明落地场景高度集中于辅助性任务，提示产品应围绕人机协作而非全自动来设计。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-31-07-builder-theme-claude-on-were-renaming-our-max-plans-max-5x-max-max-20x-ultra-max-is-sti",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Claude",
+        "sourceUrl": "https://x.com/claudeai/status/2116220869479428500",
+        "title": "Builder Theme: Claude on We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is sti...",
+        "summary": "Anthropic将Claude Max订阅计划更名为Max与Ultra（价格维持100/200美元不变），并对已验证的Ultra账户取消5小时滚动限制，仅保留周限额，新账户需通过验证后才解除临时限制。",
+        "take": "对高频使用Claude API/CLI的构建者而言，Ultra取消5小时窗口意味着可支撑长时间连续编码或Agent长任务，无需再做窗口内的请求节流。工程上需注意周限额仍是硬约束，应据此设计批处理与上下文压缩策略。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-10-31-08-builder-theme-boris-cherny-on-were-removing-the-5-hour-limit-for-verified-ultra-accounts",
+        "briefingId": "rss-2026-10-31",
+        "date": "2026-10-31",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2116222842413142111",
+        "title": "Builder Theme: Boris Cherny on We're removing the 5-hour limit for verified Ultra accounts.",
+        "summary": "Boris Cherny宣布对已验证的Ultra账户取消5小时使用限额，直接放宽高频重度用户的长时任务约束。",
+        "take": "对AI构建者而言，这意味着长时间运行的代理任务和持续编程工作流不再被硬性时间窗打断，可按需设计持续数小时或更长的自动化流水线。工程上应重新评估会话保持、状态持久化与成本控制策略，而非围绕固定重置周期做调度。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
