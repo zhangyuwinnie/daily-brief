@@ -51232,5 +51232,117 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-01": {
+    "date": "2026-11-01",
+    "briefings": [
+      {
+        "id": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-01",
+        "filePath": "2026-11-01.md",
+        "summaryTopline": "Quoting Kyle Kingsbury",
+        "insightIds": [
+          "rss-2026-11-01-01-quoting-kyle-kingsbury",
+          "rss-2026-11-01-02-how-we-took-over-chatgpt-accounts",
+          "rss-2026-11-01-03-builder-theme-using-agents-for-long-horizon-financial-work-aman-singh-arca",
+          "rss-2026-11-01-04-builder-theme-thibault-sottiaux-on-banked-12",
+          "rss-2026-11-01-05-builder-theme-aaron-levie-on-this-is-one-of-the-better-litmus-tests-for-whether-youre-pushing-you"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-01-01-quoting-kyle-kingsbury",
+        "briefingId": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+        "publishedDate": "2026-11-01",
+        "title": "Quoting Kyle Kingsbury",
+        "summary": "Kyle Kingsbury指出，LLM的广泛使用侵蚀了人们对文档、软件及其生产组织的信任，因为过去用以判断系统成熟度的信号如今更容易被伪造，由此提出维护者如何在LLM时代确保软件与文档正确性并向用户证明质量的核心问题。",
+        "take": "工程侧需将“正确性证明”从依赖人工可信信号转向可验证的自动化证据链，例如可复现构建、形式化验证与可审计测试。维护者应把质量信号设计为难以低成本伪造的机制，并将其作为交付物的一部分对外暴露。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-01-02-how-we-took-over-chatgpt-accounts",
+        "briefingId": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+        "publishedDate": "2026-10-31",
+        "title": "How We Took Over ChatGPT Accounts",
+        "summary": "Parameter Labs 披露了一条针对 ChatGPT HTML 预览沙箱的完整逃逸链：利用 OpenAI 引入的 MathLive 库虚拟键盘作为 postMessage 入口，结合接收端使用 innerHTML 造成的注入缺陷，从沙箱 iframe 突破到父页面上下文。",
+        "take": "沙箱安全的关键在于父页面接收方对 postMessage 的处理方式；任何 innerHTML 直插外部可控数据都会绕过 iframe 隔离。构建 agent 或可执行 HTML 预览功能时，必须对 message 来源做严格校验、改用 textContent 或结构化渲染，并将第三方库（如数学/图表库）自带的事件桥接视为攻击面。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-01-03-builder-theme-using-agents-for-long-horizon-financial-work-aman-singh-arca",
+        "briefingId": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Latent Space",
+        "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
+        "title": "Builder Theme: Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
+        "summary": "Arca 构建了由 AI 智能体持续运行的全自动财富管理平台，其核心架构反转了人机交互模式：智能体主动向人类发起提示并驱动任务流，而非被动等待人类指令。",
+        "take": "这标志着智能体从被动工具向主动服务层的范式转变——系统由持续运行的智能体循环驱动，人类仅在关键节点被拉入。构建者需优先设计事件驱动、7x24 运行的智能体架构，并将人类置于审批或异常处理环节，而非指令源头。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-01-04-builder-theme-thibault-sottiaux-on-banked-12",
+        "briefingId": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2116692529970311254",
+        "title": "Builder Theme: Thibault Sottiaux on Banked 1/2",
+        "summary": "Thibault Sottiaux 提出 Banked 1/2 概念，探讨将部分算力或资源预存/分层用于 AI 构建的工作流机制。",
+        "take": "该思路指向资源预算与任务调度分层：把高频轻任务与重型任务隔离到不同资源池，可降低延迟并控制成本。构建者应评估在 agent 流水线中引入配额预留或分级执行策略，而非单一资源调度。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-01-05-builder-theme-aaron-levie-on-this-is-one-of-the-better-litmus-tests-for-whether-youre-pushing-you",
+        "briefingId": "rss-2026-11-01",
+        "date": "2026-11-01",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2116652002830963114",
+        "title": "Builder Theme: Aaron Levie on This is one of the better litmus tests for whether you’re pushing you...",
+        "summary": "Aaron Levie提出以产出是否超越原有能力作为衡量AI使用是否充分的试金石，指出AI已从单纯提速存量工作，转向能够交付功能更优的原型、性能更强的架构以及覆盖全域事实的研究。",
+        "take": "评估AI工作流时应以产出上限而非效率提升为标准：原型需具备原不具备的交互与功能，架构需实现原本无法达成的性能目标。这要求开发者重构工作流，将AI用于拓展能力边界而非压缩既有任务耗时。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

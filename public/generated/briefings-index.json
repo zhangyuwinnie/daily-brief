@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-01",
     "2026-10-31",
     "2026-10-30",
     "2026-10-29",
@@ -264,6 +265,22 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-01": {
+      "briefingIds": [
+        "rss-2026-11-01"
+      ],
+      "insightIds": [
+        "rss-2026-11-01-01-quoting-kyle-kingsbury",
+        "rss-2026-11-01-02-how-we-took-over-chatgpt-accounts",
+        "rss-2026-11-01-03-builder-theme-using-agents-for-long-horizon-financial-work-aman-singh-arca",
+        "rss-2026-11-01-04-builder-theme-thibault-sottiaux-on-banked-12",
+        "rss-2026-11-01-05-builder-theme-aaron-levie-on-this-is-one-of-the-better-litmus-tests-for-whether-youre-pushing-you"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-10-31": {
       "briefingIds": [
         "rss-2026-10-31"
