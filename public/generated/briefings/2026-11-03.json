@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-03",
+  "briefings": [
+    {
+      "id": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-03",
+      "filePath": "2026-11-03.md",
+      "summaryTopline": "llm 0.37",
+      "insightIds": [
+        "rss-2026-11-03-01-llm-037",
+        "rss-2026-11-03-02-vercel-mcp-now-supports-client-id-metadata-documents",
+        "rss-2026-11-03-03-agentic-cheminformatics-with-google-antigravity",
+        "rss-2026-11-03-04-qwen-38-27b-on-my-laptop-can-interpret-model-weights-too",
+        "rss-2026-11-03-05-longcat-25-now-available-on-ai-gateway",
+        "rss-2026-11-03-06-cwe-bench-v2-more-coverage-quality-and-transparency",
+        "rss-2026-11-03-07-accelerating-engineering-for-the-physical-world",
+        "rss-2026-11-03-08-scaling-git-at-openai",
+        "rss-2026-11-03-09-builder-theme-thariq-on-one-week-in-my-takeaway-is-that-you-dont-need-unlimited-tokens-to-do",
+        "rss-2026-11-03-10-builder-theme-josh-woodward-on-hbd-srk"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-03-01-llm-037",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/2/llm/",
+      "publishedDate": "2026-11-02",
+      "title": "llm 0.37",
+      "summary": "Simon Willison发布LLM CLI工具及Python库0.37版本，新增gpt-6.1-sol与gpt-6.1-terra模型支持、llm openai endpoint add命令以配置OpenAI兼容端点、将默认模型切换为价格减半的gpt-6-luna，并让嵌入功能支持不同二进制内容的多content-type（适配Gemini Embedding 2的多模态嵌入）。",
+      "take": "多模态嵌入的content-type支持意味着检索与RAG管线需从单一文本向量模型转向按模态路由的嵌入层设计；新增endpoint命令降低了接入任意OpenAI兼容后端的成本，工具链正朝模型无关的可插拔架构演进。维护者应提前为AI辅助PR洪流建立自动化审查与贡献门槛机制。",
+      "topics": [
+        "RAG",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-03-02-vercel-mcp-now-supports-client-id-metadata-documents",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+      "publishedDate": "2026-11-02",
+      "title": "Vercel MCP now supports Client ID Metadata Documents",
+      "summary": "Vercel MCP 现已支持任意 MCP 客户端通过在其自有域名发布 Client ID Metadata Document（CIMD）JSON 文件、并以该文件的 HTTPS URL 作为 OAuth client_id 来免审核接入，取代此前的人工白名单机制，遵循 MCP 授权规范推荐 CIMD 优于动态客户端注册的导向。",
+      "take": "OAuth 客户端注册从平台中心化审核转向基于域名归属的自声明元数据，降低了第三方客户端的接入摩擦；构建者可直接在自己的域名托管 CIMD 文件实现零等待接入，但需注意 consent 界面将以元数据 hostname 展示来源，信任锚点从平台背书转移至域名所有权。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-03-03-agentic-cheminformatics-with-google-antigravity",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "publishedDate": "2026-11-03",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "summary": "Google DeepMind推出Antigravity平台及配套化学信息学技能模块，通过智能体工作流实现化合物检索与新型刚性大环分子提案，加速药物发现流程。",
+      "take": "将领域专用工具封装为智能体可调用的技能模块，使LLM从被动问答转向主动编排化学信息学工具链。开发者应关注如何将专业领域工具抽象为Agent可组合的原子能力，而非直接依赖通用模型推理。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-03-04-qwen-38-27b-on-my-laptop-can-interpret-model-weights-too",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "publishedDate": "2026-11-03",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "summary": "研究者提出“权重空间编程”（Weight-Space Programming），证明前沿模型（如 GPT-6 Astra）乃至本地运行的 Qwen 3.8 27B 能直接读取并修改以浮点数文本表示的神经网络原始权重。",
+      "take": "这开辟了以自然语言直接检查与编辑模型内部参数的新范式，无需传统微调或训练流程。构建者应探索将权重文本化作为模型自省、定向参数修正与轻量代理式改权的可行接口。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-05-longcat-25-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+      "publishedDate": "2026-11-02",
+      "title": "LongCat 2.5 now available on AI Gateway",
+      "summary": "美团 LongCat 2.5 通过 Vercel AI Gateway 上线，将原生视觉理解与编码、多步工具调用结合，支持 100 万 token 上下文窗口，可直接在 Claude Code、Codex、Cursor 等编码 Agent 中调用。",
+      "take": "超长上下文与原生视觉能力让 Agent 能跨复杂代码库和全项目构建维持任务历史，工程工作从规划到执行可在单会话内连贯推进。工具链接入方式统一为模型标识符 meituan/longcat-2.5，降低了在现有编码 Agent 中切换或并行调用异构模型的集成成本。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-06-cwe-bench-v2-more-coverage-quality-and-transparency",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/cwe-bench",
+      "publishedDate": "2026-11-03",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "summary": "Hugging Face 发布 CWE-bench v2，通过扩大漏洞覆盖范围、提升数据质量并增强透明度，为代码安全漏洞检测模型提供更全面的基准评测。",
+      "take": "对构建安全 Agent 与代码审查工具的开发者而言，该基准的覆盖面和透明度提升意味着可以更可靠地量化 RAG 或模型在真实 CWE 漏洞上的检出能力。选型时应关注其 v1 到 v2 的评测集差异，避免沿用旧基准结论。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "RAG",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-07-accelerating-engineering-for-the-physical-world",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "publishedDate": "2026-11-03",
+      "title": "Accelerating engineering for the physical world",
+      "summary": "OpenAI展示ChatGPT与Codex如何切入CAD、PCB设计与仿真等物理世界工程流程，将大模型能力嵌入硬件研发工具链。",
+      "take": "Codex正从纯软件代码生成扩展到物理工程领域，通过自然语言驱动CAD/PCB等专业工具的脚本化与自动化。工程团队应关注将LLM作为硬件设计工作流的编排层，而非仅视为编码助手。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-08-scaling-git-at-openai",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+      "publishedDate": "2026-11-02",
+      "title": "Scaling Git at OpenAI",
+      "summary": "OpenAI 构建了名为 Pando 的 Git 兼容后端，以支撑 Codex 带来的大规模代码开发场景。",
+      "take": "Git 后端正从单机仓库架构向可水平扩展的分布式兼容层演进；构建者应关注在大规模 AI 生成代码工作流下，如何通过自定义存储后端解耦 Git 协议与底层实现，以应对并发与容量瓶颈。",
+      "topics": [
+        "Coding Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-09-builder-theme-thariq-on-one-week-in-my-takeaway-is-that-you-dont-need-unlimited-tokens-to-do",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2117305792923889731",
+      "title": "Builder Theme: Thariq on one week in my takeaway is that you don't need unlimited tokens to do...",
+      "summary": "Thariq基于一周实践指出，完成高质量工作并不依赖无限Token，200美元订阅档位已能满足需求，且当前是智能成本的历史最高点。",
+      "take": "工程上应优先优化上下文与Token使用效率，而非盲目追求更大配额；模型调用成本预期将持续下降，当前高价方案只适合作为短期过渡或高价值场景投入。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-03-10-builder-theme-josh-woodward-on-hbd-srk",
+      "briefingId": "rss-2026-11-03",
+      "date": "2026-11-03",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Josh Woodward",
+      "sourceUrl": "https://x.com/joshwoodward/status/2117262979955912732",
+      "title": "Builder Theme: Josh Woodward on HBD SRK!",
+      "summary": "Josh Woodward 仅发布了一条庆祝 SRK 生日的简短推文，未包含任何技术细节、架构信息或工程方法。",
+      "take": "该推文无构建者相关信号，不包含可行动的技术洞察或工作流变更，建议忽略。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

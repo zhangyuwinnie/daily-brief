@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-03",
     "2026-11-02",
     "2026-11-01",
     "2026-10-31",
@@ -266,6 +267,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-03": {
+      "briefingIds": [
+        "rss-2026-11-03"
+      ],
+      "insightIds": [
+        "rss-2026-11-03-01-llm-037",
+        "rss-2026-11-03-02-vercel-mcp-now-supports-client-id-metadata-documents",
+        "rss-2026-11-03-03-agentic-cheminformatics-with-google-antigravity",
+        "rss-2026-11-03-04-qwen-38-27b-on-my-laptop-can-interpret-model-weights-too",
+        "rss-2026-11-03-05-longcat-25-now-available-on-ai-gateway",
+        "rss-2026-11-03-06-cwe-bench-v2-more-coverage-quality-and-transparency",
+        "rss-2026-11-03-07-accelerating-engineering-for-the-physical-world",
+        "rss-2026-11-03-08-scaling-git-at-openai",
+        "rss-2026-11-03-09-builder-theme-thariq-on-one-week-in-my-takeaway-is-that-you-dont-need-unlimited-tokens-to-do",
+        "rss-2026-11-03-10-builder-theme-josh-woodward-on-hbd-srk"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-02": {
       "briefingIds": [
         "rss-2026-11-02"
