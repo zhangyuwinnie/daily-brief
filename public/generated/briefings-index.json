@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-04",
     "2026-11-03",
     "2026-11-02",
     "2026-11-01",
@@ -267,6 +268,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-04": {
+      "briefingIds": [
+        "rss-2026-11-04"
+      ],
+      "insightIds": [
+        "rss-2026-11-04-01-workflow-sdk-adds-idempotent-starts",
+        "rss-2026-11-04-02-datasette-llm-01a10",
+        "rss-2026-11-04-03-datasette-agent-05a0",
+        "rss-2026-11-04-04-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway",
+        "rss-2026-11-04-05-openai-to-acquire-pierre-computer-company-inc",
+        "rss-2026-11-04-06-how-cisco-defends-at-machine-speed-with-openai",
+        "rss-2026-11-04-07-builder-theme-sam-altman-on-people-should-always-be-in-control-of-the-future-openai-is-against-t",
+        "rss-2026-11-04-08-builder-theme-cat-wu-on-friday-was-my-last-day-at-anthropic-two-years-ago-when-claude-code"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-03": {
       "briefingIds": [
         "rss-2026-11-03"
