@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-05",
     "2026-11-04",
     "2026-11-03",
     "2026-11-02",
@@ -268,6 +269,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-05": {
+      "briefingIds": [
+        "rss-2026-11-05"
+      ],
+      "insightIds": [
+        "rss-2026-11-05-01-gpt6-cyber-advancing-the-frontier-of-aligned-cybersecurity-agents",
+        "rss-2026-11-05-02-setting-a-new-standard-for-responsible-ai-infrastructure",
+        "rss-2026-11-05-03-gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+        "rss-2026-11-05-04-datasette-apps-03a0",
+        "rss-2026-11-05-05-llm-0371",
+        "rss-2026-11-05-06-introducing-vercel-schedules",
+        "rss-2026-11-05-07-formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit",
+        "rss-2026-11-05-08-builder-theme-the-inside-story-of-the-50-who-built-modern-ai-with-kevin-roose",
+        "rss-2026-11-05-09-builder-theme-cat-wu-on-some-news-im-joining-openai-to-lead-product-management-for-core-pro",
+        "rss-2026-11-05-10-builder-theme-amjad-masad-on-wow-cant-believe-michigan-is-under-shawerma-law-now"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-04": {
       "briefingIds": [
         "rss-2026-11-04"
