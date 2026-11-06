@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-06",
     "2026-11-05",
     "2026-11-04",
     "2026-11-03",
@@ -269,6 +270,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-06": {
+      "briefingIds": [
+        "rss-2026-11-06"
+      ],
+      "insightIds": [
+        "rss-2026-11-06-01-partnering-with-hacktron-to-find-vulnerabilities-in-openais-systems",
+        "rss-2026-11-06-02-measuring-how-ai-agents-handle-everyday-wet-lab-science",
+        "rss-2026-11-06-03-quoting-nilay-patel",
+        "rss-2026-11-06-04-inside-github8217s-new-git-storage-architecture",
+        "rss-2026-11-06-05-gemini-omni-12-flash-now-available-on-ai-gateway",
+        "rss-2026-11-06-06-builder-theme-claude-on-introducing-personal-finance-in-claude-in-beta-in-the-us-connect-th",
+        "rss-2026-11-06-07-builder-theme-thibault-sottiaux-on-i-can-confidently-say-that-humans-were-not-very-good-at-writing-secur"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-05": {
       "briefingIds": [
         "rss-2026-11-05"
