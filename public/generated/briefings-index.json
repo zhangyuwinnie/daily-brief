@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-07",
     "2026-11-06",
     "2026-11-05",
     "2026-11-04",
@@ -270,6 +271,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-07": {
+      "briefingIds": [
+        "rss-2026-11-07"
+      ],
+      "insightIds": [
+        "rss-2026-11-07-01-cultfit-builds-operational-muscle-with-codex",
+        "rss-2026-11-07-02-beyond-code-generation-a-developer8217s-guide-to-agentic-engineering",
+        "rss-2026-11-07-03-deepseek-v41-flash-1017-ultrafast-now-available-on-ai-gateway",
+        "rss-2026-11-07-04-chat-sdk-agents-can-now-stream-generative-ui-with-json-render",
+        "rss-2026-11-07-05-builder-theme-thibault-sottiaux-on-its-friday",
+        "rss-2026-11-07-06-builder-theme-thariq-on-too-many-people-building-agents-and-not-enough-people-using-software"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-06": {
       "briefingIds": [
         "rss-2026-11-06"
