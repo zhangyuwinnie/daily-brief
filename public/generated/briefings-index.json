@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-08",
     "2026-11-07",
     "2026-11-06",
     "2026-11-05",
@@ -271,6 +272,19 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-08": {
+      "briefingIds": [
+        "rss-2026-11-08"
+      ],
+      "insightIds": [
+        "rss-2026-11-08-01-builder-theme-andrej-karpathy-on-earlier-this-week-tristan-published-his-top-youtube-channels-which-l",
+        "rss-2026-11-08-02-builder-theme-thibault-sottiaux-on-saw-some-confusions-but-all-pro-plans-have-no-5-hour-limits-and-giv"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-07": {
       "briefingIds": [
         "rss-2026-11-07"

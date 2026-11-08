@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-08",
+  "briefings": [
+    {
+      "id": "rss-2026-11-08",
+      "date": "2026-11-08",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-08",
+      "filePath": "2026-11-08.md",
+      "summaryTopline": "Builder Theme: Andrej Karpathy on Earlier this week Tristan published his top YouTube channels: Which l...",
+      "insightIds": [
+        "rss-2026-11-08-01-builder-theme-andrej-karpathy-on-earlier-this-week-tristan-published-his-top-youtube-channels-which-l",
+        "rss-2026-11-08-02-builder-theme-thibault-sottiaux-on-saw-some-confusions-but-all-pro-plans-have-no-5-hour-limits-and-giv"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-08-01-builder-theme-andrej-karpathy-on-earlier-this-week-tristan-published-his-top-youtube-channels-which-l",
+      "briefingId": "rss-2026-11-08",
+      "date": "2026-11-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2119114537442189652",
+      "title": "Builder Theme: Andrej Karpathy on Earlier this week Tristan published his top YouTube channels: Which l...",
+      "summary": "Karpathy使用Claude Code在三分钟内一次性生成TristanTube，将4.7万个硬核技术视频与TV模式整合为可休闲观看的聚合界面。",
+      "take": "这印证了单次提示即可交付完整可用应用，将开发周期压缩至分钟级；工程师应把重心从逐行编码转向精准定义需求与验证产物，将重复性UI/数据聚合工作交给编码代理。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-08-02-builder-theme-thibault-sottiaux-on-saw-some-confusions-but-all-pro-plans-have-no-5-hour-limits-and-giv",
+      "briefingId": "rss-2026-11-08",
+      "date": "2026-11-08",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2119296267545419987",
+      "title": "Builder Theme: Thibault Sottiaux on Saw some confusions, but all Pro plans have no 5-hour limits, and giv...",
+      "summary": "Thibault Sottiaux澄清Pro订阅方案取消5小时限制，并明确Pro 100/200/500分别提供相对Plus的10倍、20倍、50倍用量配额，同时开放ultrafast访问权限。",
+      "take": "订阅层级从时间窗口限流切换为纯配额倍数模型，意味着可按倍数预测量与成本规划AI工作负载。ultrafast权限下放至Pro档，高吞吐场景的延迟优化不再仅限顶配。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    }
+  ]
+}

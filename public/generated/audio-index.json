@@ -2009,5 +2009,12 @@
     "status": "pending",
     "provider": "notebooklm",
     "title": "Daily Brief for 2026-11-07"
+  },
+  "2026-11-08": {
+    "id": "audio-2026-11-08",
+    "briefingDate": "2026-11-08",
+    "status": "pending",
+    "provider": "notebooklm",
+    "title": "Daily Brief for 2026-11-08"
   }
 }
