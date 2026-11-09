@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-09",
+  "briefings": [
+    {
+      "id": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-09",
+      "filePath": "2026-11-09.md",
+      "summaryTopline": "CodeRabbit scales agentic software development and ships 20x more",
+      "insightIds": [
+        "rss-2026-11-09-01-coderabbit-scales-agentic-software-development-and-ships-20x-more",
+        "rss-2026-11-09-02-hide-your-slop-pr-descriptions-behind",
+        "rss-2026-11-09-03-workflow-sdk-now-writes-over-websockets-on-vercel",
+        "rss-2026-11-09-04-control-room-a-central-system-to-track-and-stop-model-workloads-across-our-research-infrastructure",
+        "rss-2026-11-09-05-claude-fable-52-now-available-on-ai-gateway",
+        "rss-2026-11-09-06-parse_number-as-a-sqlite-extension-c-vs-rust",
+        "rss-2026-11-09-07-bair-at-corl-2026",
+        "rss-2026-11-09-08-builder-theme-one-million-ai-engineer-special-how-stanford-teaches-ai-native-engineering-mihail-eric-monaco",
+        "rss-2026-11-09-09-builder-theme-guillermo-rauch-on-built-a-physical-simulation-of-a-record-player-with-webgl2-and-web-au",
+        "rss-2026-11-09-10-builder-theme-matt-turck-on-lol-not-elon-now-after-nailing-the-tucker-carlson-impersonation-ab"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-09-01-coderabbit-scales-agentic-software-development-and-ships-20x-more",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/coderabbit-codex-daybreak",
+      "publishedDate": "2026-11-09",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "summary": "CodeRabbit利用OpenAI模型治理和信任AI生成的代码，并借助Codex使同一工程团队的软件交付量提升20倍。",
+      "take": "这验证了将代码生成（Codex）与自动化代码审查/治理模型分离的架构模式：生成负责吞吐，审查层负责质量门禁，二者组合可在不扩充团队的情况下实现数量级交付提升。对Agent工程而言，核心范式是把“可信度验证”作为独立于生成流程的一等组件来设计。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-09-02-hide-your-slop-pr-descriptions-behind",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "publishedDate": "2026-11-09",
+      "title": "Hide your slop PR descriptions behind",
+      "summary": "Simon Willison指出，Claude Code与Codex等编码智能体生成的PR描述因过于准确详尽而呈现出“AI味”，建议使用HTML的<details>/<summary>标签将冗长描述折叠隐藏。",
+      "take": "PR描述应分层呈现：将核心变更摘要置于可见区域，把智能体生成的详细验证步骤与实现说明折叠收起。这为编码智能体输出设计提供了范式——高密度信息需配合渐进式披露机制，而非直接平铺。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-09-03-workflow-sdk-now-writes-over-websockets-on-vercel",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/workflow-writes-now-use-websockets-on-vercel",
+      "publishedDate": "2026-11-09",
+      "title": "Workflow SDK now writes over WebSockets on Vercel",
+      "summary": "Vercel Workflow SDK 5.2.0 默认将事件与流的写入从每条数据一次 HTTP 请求改为通过单条 WebSocket 连接传输，无需改动代码，仅升级版本即可生效。",
+      "take": "将高频写操作从请求-响应模型迁移到持久长连接，是降低 Agent 流式输出延迟的关键架构手段，基准显示令牌流完整响应提速 4.2 倍且无超过 1 秒的卡顿。构建高频流式或事件驱动的 Agent 工作流时，应优先评估 WebSocket 复用替代逐请求写入，并注意进行中的运行仍留在原部署上完成。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-09-04-control-room-a-central-system-to-track-and-stop-model-workloads-across-our-research-infrastructure",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/control-room",
+      "publishedDate": "2026-11-09",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "summary": "OpenAI推出Control Room集中式系统，用于跨研究基础设施追踪模型工作负载，并在出现安全或安保风险时快速中止任务。",
+      "take": "这体现了一种面向AI基础设施的统一工作负载追踪与紧急制动架构，将安全治理前置到调度层。Builder应借鉴：为分布式训练/推理任务设计可观测、可强制终止的控制平面，而非依赖事后告警。",
+      "topics": [
+        "Retrieval",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-05-claude-fable-52-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/claude-fable-5-2-now-available-on-ai-gateway",
+      "publishedDate": "2026-11-09",
+      "title": "Claude Fable 5.2 now available on AI Gateway",
+      "summary": "Anthropic 的 Claude Fable 5.2 模型通过 Vercel AI Gateway 上线，该模型擅长处理开放式长周期模糊任务，可作为编排器将简单任务分发给小模型，或作为顾问被其他 Claude 模型咨询难题，并支持从 low 到 max 的推理强度设置（API 默认 high）。",
+      "take": "多模型编排与顾问式协作成为可调用的原生能力，构建者可将长链路任务交给该模型做调度中枢而非单点执行。需注意该模型强制要求数据留存（提示与补全保留 30 天，不支持零数据留存），对数据合规敏感的生产环境构成硬性约束。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-06-parse_number-as-a-sqlite-extension-c-vs-rust",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "publishedDate": "2026-11-08",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "summary": "Simon Willison 借助 Claude Opus 5.5 分别用 C 和 Rust 实现 SQLite 自定义函数 parse_number()（剥离货币符号、千分位与百分号并解析数值），对比代码复杂度与 .so 体积（Rust 版为 321 KB）。",
+      "take": "同一功能需求下，用 LLM 生成多语言实现并横向对比，可作为快速评估扩展方案在代码复杂度与产物体积上权衡的低成本方法；SQLite 扩展仍是把字符串清洗与类型转换下推到数据库层、从而支持聚合与排序的轻量路径。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-07-bair-at-corl-2026",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The Berkeley Artificial Intelligence Research Blog",
+      "sourceUrl": "http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026/",
+      "publishedDate": "2026-11-09",
+      "title": "BAIR at CoRL 2026",
+      "summary": "BAIR在CoRL 2026公布其研究人员参与的多项机器人学习论文与会议日程，涵盖强化学习、规划与推理等方向。",
+      "take": "会议日程与论文清单本身不构成技术细节，需进一步获取具体论文以提取可复用的架构或训练范式的工程信号。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-08-builder-theme-one-million-ai-engineer-special-how-stanford-teaches-ai-native-engineering-mihail-eric-monaco",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Latent Space",
+      "sourceUrl": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "title": "Builder Theme: One Million AI Engineer Special How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "summary": "斯坦福讲师兼Monaco AI负责人Mihail Eric在Latent Space播客中，系统性地将AI原生开发最佳实践提炼为一门正式课程，把AI辅助编码从个人技巧升级为可教学的工程方法论。",
+      "take": "AI原生开发正在从零散经验固化为标准课程体系，这意味着工具链与工作流的最佳实践将加速标准化。构建者应关注课程中关于系统性对抗低质量生成代码与提升重构雄心的模式，而非停留在单点提示技巧。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-09-builder-theme-guillermo-rauch-on-built-a-physical-simulation-of-a-record-player-with-webgl2-and-web-au",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2119536313712230802",
+      "title": "Builder Theme: Guillermo Rauch on Built a physical simulation of a record player with WebGL2 and Web Au...",
+      "summary": "Guillermo Rauch 使用 WebGL2 与 Web Audio 构建了唱片机的物理级模拟：将歌曲转换为纹槽的物理几何形状，由模拟唱针以每秒 38.4 万次的频率沿槽壁运动，并直接输出该运动在唱头中感应的电压信号，而非播放音频文件。",
+      "take": "核心信号是“物理仿真即渲染”：爆裂声、抖晃、内圈沉闷等听感均由几何与动力学自然涌现，而非后期贴上的音效层。对构建者而言，这意味着把音频/视觉内容编码为可交互的物理场，让 Agent 与工具链在仿真层而非素材层操作，可获得可复现、可调参的高保真副产物。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-09-10-builder-theme-matt-turck-on-lol-not-elon-now-after-nailing-the-tucker-carlson-impersonation-ab",
+      "briefingId": "rss-2026-11-09",
+      "date": "2026-11-09",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Matt Turck",
+      "sourceUrl": "https://x.com/mattturck/status/2119457959625498698",
+      "title": "Builder Theme: Matt Turck on Lol not Elon now, after nailing the Tucker Carlson impersonation 😂Ab...",
+      "summary": "该推文仅以调侃语气提及Jeremy Culhane模仿Tucker Carlson的表演及Elon相关玩笑，未涉及任何AI工程技术、架构或工具链信息。",
+      "take": "该内容为社交媒体娱乐性互动，缺乏可供AI构建者参考的工程信号或技术机制；建议直接过滤，不纳入技术简报。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-09",
     "2026-11-08",
     "2026-11-07",
     "2026-11-06",
@@ -272,6 +273,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-09": {
+      "briefingIds": [
+        "rss-2026-11-09"
+      ],
+      "insightIds": [
+        "rss-2026-11-09-01-coderabbit-scales-agentic-software-development-and-ships-20x-more",
+        "rss-2026-11-09-02-hide-your-slop-pr-descriptions-behind",
+        "rss-2026-11-09-03-workflow-sdk-now-writes-over-websockets-on-vercel",
+        "rss-2026-11-09-04-control-room-a-central-system-to-track-and-stop-model-workloads-across-our-research-infrastructure",
+        "rss-2026-11-09-05-claude-fable-52-now-available-on-ai-gateway",
+        "rss-2026-11-09-06-parse_number-as-a-sqlite-extension-c-vs-rust",
+        "rss-2026-11-09-07-bair-at-corl-2026",
+        "rss-2026-11-09-08-builder-theme-one-million-ai-engineer-special-how-stanford-teaches-ai-native-engineering-mihail-eric-monaco",
+        "rss-2026-11-09-09-builder-theme-guillermo-rauch-on-built-a-physical-simulation-of-a-record-player-with-webgl2-and-web-au",
+        "rss-2026-11-09-10-builder-theme-matt-turck-on-lol-not-elon-now-after-nailing-the-tucker-carlson-impersonation-ab"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-08": {
       "briefingIds": [
         "rss-2026-11-08"
