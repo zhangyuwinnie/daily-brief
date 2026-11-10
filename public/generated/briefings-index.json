@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-10",
     "2026-11-09",
     "2026-11-08",
     "2026-11-07",
@@ -273,6 +274,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-10": {
+      "briefingIds": [
+        "rss-2026-11-10"
+      ],
+      "insightIds": [
+        "rss-2026-11-10-01-introducing-alphaproof-code-a-breakthrough-in-verifying-complex-software-at-depth",
+        "rss-2026-11-10-02-llm-anthropic-031",
+        "rss-2026-11-10-03-introducing-our-smallest-most-efficient-model-muse-ember",
+        "rss-2026-11-10-04-vercel-container-registry-now-supports-2-gb-compressed-image-layers",
+        "rss-2026-11-10-05-glm-53-flash-is-now-available-in-token-pass",
+        "rss-2026-11-10-06-gemini-robotics-25-accelerates-real-world-general-dexterity",
+        "rss-2026-11-10-07-kuken-industries-searches-70-years-of-drawings-in-minutes",
+        "rss-2026-11-10-08-work-at-the-frontier-ais-effect-on-freelance-work",
+        "rss-2026-11-10-09-builder-theme-boris-cherny-on-we-wanted-to-do-more-for-the-people-whove-been-with-us-the-longest",
+        "rss-2026-11-10-10-builder-theme-alex-albert-on-every-time-we-have-a-new-model-i-run-the-same-simple-prompt-on-all-m"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-09": {
       "briefingIds": [
         "rss-2026-11-09"

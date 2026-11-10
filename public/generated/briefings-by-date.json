@@ -52651,5 +52651,217 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "briefings": [
+      {
+        "id": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-10",
+        "filePath": "2026-11-10.md",
+        "summaryTopline": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+        "insightIds": [
+          "rss-2026-11-10-01-introducing-alphaproof-code-a-breakthrough-in-verifying-complex-software-at-depth",
+          "rss-2026-11-10-02-llm-anthropic-031",
+          "rss-2026-11-10-03-introducing-our-smallest-most-efficient-model-muse-ember",
+          "rss-2026-11-10-04-vercel-container-registry-now-supports-2-gb-compressed-image-layers",
+          "rss-2026-11-10-05-glm-53-flash-is-now-available-in-token-pass",
+          "rss-2026-11-10-06-gemini-robotics-25-accelerates-real-world-general-dexterity",
+          "rss-2026-11-10-07-kuken-industries-searches-70-years-of-drawings-in-minutes",
+          "rss-2026-11-10-08-work-at-the-frontier-ais-effect-on-freelance-work",
+          "rss-2026-11-10-09-builder-theme-boris-cherny-on-we-wanted-to-do-more-for-the-people-whove-been-with-us-the-longest",
+          "rss-2026-11-10-10-builder-theme-alex-albert-on-every-time-we-have-a-new-model-i-run-the-same-simple-prompt-on-all-m"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-10-01-introducing-alphaproof-code-a-breakthrough-in-verifying-complex-software-at-depth",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "publishedDate": "2026-11-10",
+        "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+        "summary": "Google DeepMind推出AlphaProof Code智能体，用Lean证明语言为Signal核心加密代码自动生成三百万行形式化证明，实现深度软件验证。",
+        "take": "智能体驱动的形式化验证从理论走向工程规模，AI可自动生成大规模机器可检验证明。开发者应关注将Lean等证明助手接入CI流程，把安全关键代码的验证从人工负担转为可自动化的持续验证环节。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-10-02-llm-anthropic-031",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+        "publishedDate": "2026-11-09",
+        "title": "llm-anthropic 0.31",
+        "summary": "Anthropic发布Fable 5.2与Mythos 5.2模型，前者在Artificial Analysis排名第一并声称解决黑洞物理学开放问题；llm-anthropic 0.31插件已集成新模型，支持通过CLI直接调用。",
+        "take": "模型新增五档推理级别（low至max），但max级别因耗尽128,000 token思考预算而无法输出结果，暴露极端推理深度的token预算权衡问题。开发者应优先测试xhigh级别，在复杂任务中平衡推理深度与输出可靠性。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-10-03-introducing-our-smallest-most-efficient-model-muse-ember",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+        "publishedDate": "2026-11-10",
+        "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+        "summary": "Meta AI 发布最小高效模型 Muse Ember，主打工具调用、编码子任务、路由、抽取与长文档解析等智能体高频重复工作，短提示定价与 GPT-6 Luna、Claude Haiku 5.5 同为每百万输入 0.10 美元、输出 0.50 美元，长提示则设有涨价阈值。",
+        "take": "小模型竞争已明确转向智能体循环中的廉价高频任务层，成本结构而非推理上限成为选型关键。工程上应把路由、抽取、工具调用等可重复子任务下沉到该价位模型，并按输入长度阈值做分档调度以控制长上下文成本。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-10-04-vercel-container-registry-now-supports-2-gb-compressed-image-layers",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers",
+        "publishedDate": "2026-11-09",
+        "title": "Vercel Container Registry now supports 2 GB compressed image layers",
+        "summary": "Vercel容器注册表将单个压缩镜像层的大小上限从500 MB提升至2 GB，镜像总大小上限保持15 GB不变，同时兼容docker push/pull/tag标准工作流并支持按团队粒度的公开只读或指定共享权限。",
+        "take": "开发者可将更大的模型权重、依赖包或运行时层单层打包部署，减少因层大小限制而被迫拆分镜像的工程负担。单层上限提高直接降低了镜像构建与推送的层数开销，但总镜像15 GB的约束意味着仍需控制整体体积，Vercel Sandbox运行所依赖的托管镜像也复用同一套公开仓库机制，表明该注册表已作为内部基础设施的通用构件。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-05-glm-53-flash-is-now-available-in-token-pass",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/glm-5-3-flash-is-now-available-in-token-pass",
+        "publishedDate": "2026-11-09",
+        "title": "GLM 5.3 Flash is now available in Token Pass",
+        "summary": "Vercel在Token Pass中集成Z.ai原生多模态编码模型GLM 5.3 Flash，该模型支持100万token上下文窗口，通过AI Gateway以每月30美元订阅提供80美元额度，并默认启用零数据保留。",
+        "take": "超长上下文（1M token）的多模态编码模型开始通过统一网关以订阅制打包分发，降低了编码Agent接入前沿模型的成本门槛。开发者可借助AI SDK或现成编码Agent（如Cline）直接调用，网关层默认零数据保留简化了合规接入。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-06-gemini-robotics-25-accelerates-real-world-general-dexterity",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "publishedDate": "2026-11-09",
+        "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+        "summary": "Google DeepMind发布Gemini Robotics 2.5视觉-语言-动作模型，通过增强机器人灵巧度、可靠性与安全性，实现真实世界通用操作能力的加速落地。",
+        "take": "VLA模型正从感知理解转向端到端动作生成，开发者需关注多模态模型如何直接驱动物理执行，而非仅做感知层。机器人可靠性与安全约束应作为模型训练与部署的核心工程指标，而非事后补丁。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-07-kuken-industries-searches-70-years-of-drawings-in-minutes",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/kuken",
+        "publishedDate": "2026-11-09",
+        "title": "Kuken Industries searches 70 years of drawings in minutes",
+        "summary": "Kuken Industries 通过 OpenAI API 对 70 年冷却塔图纸进行语义检索，将工程师查找维修图纸的时间从近一小时缩短至 4.5 分钟。",
+        "take": "单一痛点优先的检索增强路径：把长期积累的工程图纸转成可被 LLM 理解与检索的知识库，无需重建工作流即可显著降低维修响应时间。对构建者而言，真正的价值不在模型本身，而在于将非结构化历史资产接入 API 并嵌入现有工程师查询动作。",
+        "topics": [
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-08-work-at-the-frontier-ais-effect-on-freelance-work",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/ai-effect-on-freelance-work",
+        "publishedDate": "2026-11-10",
+        "title": "Work at the Frontier: AI’s effect on freelance work",
+        "summary": "OpenAI与Upwork联合研究发现，自由职业市场对AI相关项目的需求上升，表现为预算更高、工时更多，并催生出新的技能组合需求。",
+        "take": "AI相关自由职业项目的预算与工时同步增长，表明企业正将AI能力嵌入实际生产环节而非试验性投入。开发者应关注跨领域技能组合（如AI+行业知识）的溢价，这正在重塑外包任务的定价与分工结构。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-09-builder-theme-boris-cherny-on-we-wanted-to-do-more-for-the-people-whove-been-with-us-the-longest",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2119873095129550880",
+        "title": "Builder Theme: Boris Cherny on We wanted to do more for the people who’ve been with us the longest....",
+        "summary": "Boris Cherny宣布Fable 5.2引入基于订阅时长的差异化配额机制，用户订阅越久获得的Fable重置次数越多。",
+        "take": "这是将用户留存时长直接编码为产品资源分配策略的工程化做法，而非单纯的功能升级。对于构建订阅制AI工具或Agent平台的团队，可借鉴此模式设计分层配额系统，把历史留存数据转化为可量化的资源权益，以降低早期用户流失。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-10-10-builder-theme-alex-albert-on-every-time-we-have-a-new-model-i-run-the-same-simple-prompt-on-all-m",
+        "briefingId": "rss-2026-11-10",
+        "date": "2026-11-10",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Alex Albert",
+        "sourceUrl": "https://x.com/alexalbert__/status/2119884951550386671",
+        "title": "Builder Theme: Alex Albert on Every time we have a new model, I run the same simple prompt on all m...",
+        "summary": "Alex Albert提出一种标准化模型能力测试方法：每次新模型发布时，对全部项目运行同一提示词，要求模型读取完整项目并识别破损、不一致、低效或冗余内容，确定的部分直接修复，其余列清单待人工审查。",
+        "take": "该模式将新模型评估从基准分数转向真实代码库的端到端维护能力，可用作模型迭代的回归测试与能力探针。工程上可把“全项目审计+自动修复+待审清单”固化为CI或Agent工作流，让模型承担代码库卫生治理并保留人工决策边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
