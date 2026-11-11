@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-11",
     "2026-11-10",
     "2026-11-09",
     "2026-11-08",
@@ -274,6 +275,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-11": {
+      "briefingIds": [
+        "rss-2026-11-11"
+      ],
+      "insightIds": [
+        "rss-2026-11-11-01-llm-gemini-036",
+        "rss-2026-11-11-02-locating-the-source-of-a-mysterious-beep-with-claude",
+        "rss-2026-11-11-03-cogent-and-openai-build-cyber-defense-factories-for-enterprises",
+        "rss-2026-11-11-04-botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-agentic-language-model",
+        "rss-2026-11-11-05-lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
+        "rss-2026-11-11-06-minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+        "rss-2026-11-11-07-gemini-4-carbon-is-now-available",
+        "rss-2026-11-11-08-helping-caregivers-use-ai-in-everyday-life",
+        "rss-2026-11-11-09-builder-theme-thibault-sottiaux-on-how-many-of-you-have-a-small-business",
+        "rss-2026-11-11-10-builder-theme-claude-on-also-new-with-interactive-connectors-you-can-now-open-the-full-vers"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-10": {
       "briefingIds": [
         "rss-2026-11-10"

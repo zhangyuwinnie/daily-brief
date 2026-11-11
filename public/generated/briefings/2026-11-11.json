@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-11",
+  "briefings": [
+    {
+      "id": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-11",
+      "filePath": "2026-11-11.md",
+      "summaryTopline": "llm-gemini 0.36",
+      "insightIds": [
+        "rss-2026-11-11-01-llm-gemini-036",
+        "rss-2026-11-11-02-locating-the-source-of-a-mysterious-beep-with-claude",
+        "rss-2026-11-11-03-cogent-and-openai-build-cyber-defense-factories-for-enterprises",
+        "rss-2026-11-11-04-botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-agentic-language-model",
+        "rss-2026-11-11-05-lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
+        "rss-2026-11-11-06-minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+        "rss-2026-11-11-07-gemini-4-carbon-is-now-available",
+        "rss-2026-11-11-08-helping-caregivers-use-ai-in-everyday-life",
+        "rss-2026-11-11-09-builder-theme-thibault-sottiaux-on-how-many-of-you-have-a-small-business",
+        "rss-2026-11-11-10-builder-theme-claude-on-also-new-with-interactive-connectors-you-can-now-open-the-full-vers"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-11-01-llm-gemini-036",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "publishedDate": "2026-11-10",
+      "title": "llm-gemini 0.36",
+      "summary": "llm-gemini 0.36 版本发布，将此前仅限“cyber defenders”使用的 Gemini 4 Carbon 开放给所有人，定价 $2/$10 每百万 token（12 月 1 日翻倍至 $4/$20），并支持低/中/高三档 thinking effort（默认中档）。",
+      "take": "模型能力已非瓶颈，定价窗口与 thinking effort 档位成为新的工程变量——在 12 月 1 日涨价前完成批处理与高推理任务的迁移可锁低成本。同时应像测 Claude 一样跨 IDE（如 Antigravity）用同一 prompt 做基准回归，而非依赖单次 demo 判断模型质量。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-11-02-locating-the-source-of-a-mysterious-beep-with-claude",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "publishedDate": "2026-11-09",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "summary": "西蒙·威利森使用Claude Code构建了Beep Locator系统，通过Python网页服务器协调多台设备（iPad、手机、笔记本）作为监听节点，利用多点三角定位原理定位房间内间歇性蜂鸣声的来源。",
+      "take": "该案例展示了编码代理将物理世界问题快速转化为多设备分布式传感系统的能力。关键工程范式在于：通过LLM生成协调多个异构终端的轻量级服务器-客户端架构，实现传统上需要专门硬件才能完成的声源定位任务。",
+      "topics": [
+        "Coding Agents",
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-11-03-cogent-and-openai-build-cyber-defense-factories-for-enterprises",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/cogent-security",
+      "publishedDate": "2026-11-10",
+      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+      "summary": "Cogent将OpenAI模型与企业上下文结合，通过智能体自动完成漏洞修复。",
+      "take": "核心工程信号是“安全修复智能体”将漏洞扫描到修复执行的闭环自动化。关键在于企业上下文注入，使模型能理解环境依赖并生成可执行修复动作，而非仅输出告警。这标志着安全运营从告警分诊向智能体驱动的自动修复范式转变。",
+      "topics": [
+        "Agents",
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-11-04-botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-agentic-language-model",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/qvac/botpsy",
+      "publishedDate": "2026-11-11",
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "summary": "BotPsy 在 Hugging Face 发布了一个十亿参数以下的端侧智能体语言模型，用于驱动设备本地的个人助理，实现无需云端依赖的自主任务执行。",
+      "take": "端侧亚十亿参数模型可承载完整 agentic 工作流，意味着隐私敏感与低延迟场景可脱离云端推理。开发者应关注此类小模型在工具调用与多步规划上的能力边界，作为本地 agent 架构的轻量基座。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-05-lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "publishedDate": "2026-11-10",
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "summary": "微软研究院发现名为“Lazarus”的后门技术，通过向大模型植入隐藏触发器，重新编程其休眠神经元，使具备工具或终端访问权限的AI智能体在触发时静默下载并执行攻击者代码。",
+      "take": "该机制揭示了智能体安全的新攻击面：后门可直接嵌入模型权重内部，而非依赖外部提示注入或恶意依赖，传统输入过滤难以防御。构建者需在部署前对模型进行神经元级异常检测与行为沙箱隔离，并对智能体的代码执行权限实施最小化与运行时审计。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-06-minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+      "publishedDate": "2026-11-10",
+      "title": "MiniMax H3 Image and Highspeed now available on AI Gateway",
+      "summary": "Vercel AI Gateway 上线 MiniMax H3 Image 与 Highspeed 两款图像模型，开发者可使用单一 API 密钥免注册 MiniMax 账户，通过文本生成或图像编辑实现 2K/4K 自定义尺寸输出，并兼容 OpenAI 的 /v1/images/generations 与 /v1/images/edits 接口。",
+      "take": "统一 API 网关聚合多模型并按 OpenAI 兼容路由暴露，使开发者无需改动现有调用代码即可切换图像生成后端，降低多供应商接入成本。图像编辑通过回传原图加指令实现，为 agent 构建可迭代的视觉生成与修改工作流提供了标准化原语。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-07-gemini-4-carbon-is-now-available",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Google DeepMind News",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "publishedDate": "2026-11-10",
+      "title": "Gemini 4 Carbon is now available",
+      "summary": "Google DeepMind 发布 Gemini 4 Carbon，但目前披露的信息仅包含发布公告标题，缺乏关于模型架构、训练方法或能力基准的具体技术细节。",
+      "take": "在官方技术文档或模型卡发布前，无法评估该版本相较前代在推理、上下文窗口或多模态能力上的实际工程变化；建议等待 API 规格与基准数据再决定是否纳入生产工具链。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-08-helping-caregivers-use-ai-in-everyday-life",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "publishedDate": "2026-11-10",
+      "title": "Helping caregivers use AI in everyday life",
+      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.。",
+      "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-09-builder-theme-thibault-sottiaux-on-how-many-of-you-have-a-small-business",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2120267268517249036",
+      "title": "Builder Theme: Thibault Sottiaux on How many of you have a small business?",
+      "summary": "Thibault Sottiaux在X上发起针对小型企业主的开放性调查，意在收集AI构建者在真实商业场景中的需求信号。",
+      "take": "此类面向真实用户的信号采集可作为产品需求验证的低成本手段。构建者应关注其后续互动中暴露的小型企业工作流痛点，而非调查本身。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-11-10-builder-theme-claude-on-also-new-with-interactive-connectors-you-can-now-open-the-full-vers",
+      "briefingId": "rss-2026-11-11",
+      "date": "2026-11-11",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Claude",
+      "sourceUrl": "https://x.com/claudeai/status/2120206375137484875",
+      "title": "Builder Theme: Claude on Also new: with interactive connectors, you can now open the full vers...",
+      "summary": "Claude推出交互式连接器，允许用户直接在对话界面内嵌打开Adobe、Atlassian和Box等工具的完整版本，实现人机协同编辑与操作。",
+      "take": "这意味着AI助手从纯文本对话转向嵌入式工具操作界面，Agent可直接在第三方应用上下文中执行修改。开发者需关注连接器架构如何承载完整应用UI与状态同步，以及人机协作编辑的权限与冲突处理机制。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
