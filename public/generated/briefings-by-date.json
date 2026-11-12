@@ -53080,5 +53080,221 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "briefings": [
+      {
+        "id": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-12",
+        "filePath": "2026-11-12.md",
+        "summaryTopline": "Holiday Extras is rethinking what it can build with Codex",
+        "insightIds": [
+          "rss-2026-11-12-01-holiday-extras-is-rethinking-what-it-can-build-with-codex",
+          "rss-2026-11-12-02-supporting-research-on-ai-and-childrens-safety",
+          "rss-2026-11-12-03-introducing-gemini-4-hydrogen",
+          "rss-2026-11-12-04-gemini-decisions-api",
+          "rss-2026-11-12-05-aws-emulator",
+          "rss-2026-11-12-06-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+          "rss-2026-11-12-07-wtf-are-evals-how-to-test-agents-and-the-software-they-use",
+          "rss-2026-11-12-08-gemini-4-hydrogen-now-available-on-ai-gateway",
+          "rss-2026-11-12-09-builder-theme-thibault-sottiaux-on-its-been-a-while-without-resets-maybe-i-should-come-back-out-of-the",
+          "rss-2026-11-12-10-builder-theme-amjad-masad-on-why-are-old-stories-that-were-not-even-covered-up-all-that-well-becom"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-12-01-holiday-extras-is-rethinking-what-it-can-build-with-codex",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/business/customer-stories/holidays-extras-codex",
+        "publishedDate": "2026-11-12",
+        "title": "Holiday Extras is rethinking what it can build with Codex",
+        "summary": "Holiday Extras 利用 OpenAI Codex 将业务专家的领域知识直接转化为应用代码，从而提升应用质量、提高预订转化率并拓展增长空间。",
+        "take": "核心工程信号是：领域专家（而非仅工程师）借助代码生成模型直接参与应用构建，这意味着开发工作流需为业务人员提供安全、可控的代码生成与审查通道。工具链设计应优先考虑如何把隐性业务知识结构化地注入模型上下文，而这比单纯提升代码生成速度更具杠杆效应。",
+        "topics": [
+          "Coding Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-12-02-supporting-research-on-ai-and-childrens-safety",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/children-first-declaration",
+        "publishedDate": "2026-11-12",
+        "title": "Supporting research on AI and children’s safety",
+        "summary": "OpenAI投入200万美元资助AI与儿童安全研究，用于开发衡量未成年人面临风险与机会的共享工具。",
+        "take": "此举将儿童安全从单一产品策略转向可复用的风险评估工具体系，为开发者提供标准化度量框架。构建面向未成年人的AI应用时，需预留安全评估接口并关注共享工具的标准化进展。",
+        "topics": [
+          "Evals",
+          "Retrieval",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-12-03-introducing-gemini-4-hydrogen",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+        "publishedDate": "2026-11-12",
+        "title": "Introducing Gemini 4 Hydrogen",
+        "summary": "Google DeepMind 发布 Gemini 4 Hydrogen，具体技术细节与架构未在摘要中披露。",
+        "take": "缺乏可验证的技术信息，无法提取工程信号；建议直接查阅原文确认模型架构、工具链变更与 agentic 能力差异，避免基于标题做架构判断。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-12-04-gemini-decisions-api",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+        "publishedDate": "2026-11-11",
+        "title": "Gemini Decisions API",
+        "summary": "Google发布Gemini Decision 1多模态决策模型API，支持是/否、选择与评分三种查询类型，覆盖文本、图像、音频、视频和PDF，定价为每百万输入token 10美分、输出免费，正式加入Jev与OpenAI所在的决策模型品类。",
+        "take": "决策模型已从文本/JSON专用走向原生多模态，视频可直接作为判定输入，为RAG与Agent流程中的结构化判定环节（如结果校验、路由选择、评分）提供了统一API层。工程上可将此类模型视为确定性分类/打分组件嵌入流水线，但需关注其按输入token计费且输出免费的成本结构对长上下文视频场景的影响。",
+        "topics": [
+          "Agents",
+          "RAG"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-05-aws-emulator",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+        "publishedDate": "2026-11-11",
+        "title": "aws-emulator",
+        "summary": "AWS发布了用Rust编写的官方本地服务模拟器，其代码库由大规模智能体集群在项目前三周内产生29,684次提交，目前macOS和Windows上依赖Docker运行。",
+        "take": "智能体集群可在极短时间内产出大规模生产级Rust代码库，验证了多智能体并行工程在大型基础设施项目中的可行性；本地化模拟服务使测试无需真实云凭据，降低了CI与开发反馈回路的成本。后续若支持单二进制分发，将更利于嵌入多语言标准测试套件。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-06-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "publishedDate": "2026-11-12",
+        "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+        "summary": "IBM 在 Granite 4.1 3B/8B 模型中引入 LLMON，一种专为 LLM 原生设计的标记语言，用于替代或补充传统自然语言提示与结构化输出格式。",
+        "take": "LLMON 将结构化指令与模型原生表示对齐，减少提示工程中的格式摩擦与解析开销。开发者应关注其对 agentic 工作流中工具调用与状态传递格式的潜在替代价值。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-07-wtf-are-evals-how-to-test-agents-and-the-software-they-use",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/wtf-are-evals",
+        "publishedDate": "2026-11-12",
+        "title": "WTF are evals? How to test agents and the software they use",
+        "summary": "Vercel提出以“Agent作为软件用户”为核心视角的评估框架，将Agent使用软件的过程拆解为Discovery、Selection、Access、Success四个漏斗阶段，并重点讨论最终的Success阶段——即如何判断Agent是否正确完成用户任务（如点单冷热错误这类“请求成功但结果错误”的情况）。",
+        "take": "Eval设计需从“请求是否成功”转向“任务是否被正确完成”，因为日志与可观测性信号无法捕捉语义层面的错误。构建面向Agent的API/CLI/MCP/SDK时，应把可验证的任务成功判据作为一等工程产物，而非事后附加。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-08-gemini-4-hydrogen-now-available-on-ai-gateway",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/gemini-4-hydrogen-now-available-on-ai-gateway",
+        "publishedDate": "2026-11-12",
+        "title": "Gemini 4 Hydrogen now available on AI Gateway",
+        "summary": "Vercel 的 AI Gateway 现已上线 Google 的 Gemini 4 Hydrogen 模型，该模型在同级延迟下提升了智能体编程、工具调用编排与长对话稳定性，并减少编码报告中的工具或测试结果幻觉。",
+        "take": "对于构建编码智能体和多步工作流的开发者，可直接通过 google/gemini-4-hydrogen 接入 Claude Code、Codex 等工具链，在保持延迟不变的前提下获得更强的长任务执行与指令遵循能力。核心价值在于更可靠的工具编排和更低的幻觉率，这减少了智能体在长链路任务中的纠错开销。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-09-builder-theme-thibault-sottiaux-on-its-been-a-while-without-resets-maybe-i-should-come-back-out-of-the",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2120410006273380750",
+        "title": "Builder Theme: Thibault Sottiaux on It’s been a while without resets. Maybe I should come back out of the...",
+        "summary": "Thibault Sottiaux 在 X 上发布了一条个人动态，称“好久没有重置了，也许我该从地下室出来了”，内容不涉及任何具体技术实现或架构信息。",
+        "take": "该内容为无技术信号的个人状态更新，对 AI 构建者而言无可用工程价值，建议直接过滤，不应占用简报带宽。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-12-10-builder-theme-amjad-masad-on-why-are-old-stories-that-were-not-even-covered-up-all-that-well-becom",
+        "briefingId": "rss-2026-11-12",
+        "date": "2026-11-12",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Amjad Masad",
+        "sourceUrl": "https://x.com/amasad/status/2120671838909194695",
+        "title": "Builder Theme: Amjad Masad on Why are old stories that were not even covered up all that well becom...",
+        "summary": "Amjad Masad 质疑旧闻被重新包装为国际地缘政治新闻的时机，暗示针对开源模型倡导者 Jensen 的舆论攻势可能服务于推动 AI 闭源集中控制、中期选举及即将到来的 IPO 利益。",
+        "take": "开源与闭源之争已从技术路线延伸至舆论与地缘政治操控层面，构建者需警惕以新闻叙事为载体的监管与生态打压。评估 AI 政策与平台风险时，应穿透表面事件，识别背后的资本与政治动机及对开放模型工具链的潜在冲击。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

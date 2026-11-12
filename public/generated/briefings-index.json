@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-12",
     "2026-11-11",
     "2026-11-10",
     "2026-11-09",
@@ -275,6 +276,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-12": {
+      "briefingIds": [
+        "rss-2026-11-12"
+      ],
+      "insightIds": [
+        "rss-2026-11-12-01-holiday-extras-is-rethinking-what-it-can-build-with-codex",
+        "rss-2026-11-12-02-supporting-research-on-ai-and-childrens-safety",
+        "rss-2026-11-12-03-introducing-gemini-4-hydrogen",
+        "rss-2026-11-12-04-gemini-decisions-api",
+        "rss-2026-11-12-05-aws-emulator",
+        "rss-2026-11-12-06-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+        "rss-2026-11-12-07-wtf-are-evals-how-to-test-agents-and-the-software-they-use",
+        "rss-2026-11-12-08-gemini-4-hydrogen-now-available-on-ai-gateway",
+        "rss-2026-11-12-09-builder-theme-thibault-sottiaux-on-its-been-a-while-without-resets-maybe-i-should-come-back-out-of-the",
+        "rss-2026-11-12-10-builder-theme-amjad-masad-on-why-are-old-stories-that-were-not-even-covered-up-all-that-well-becom"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-11": {
       "briefingIds": [
         "rss-2026-11-11"
