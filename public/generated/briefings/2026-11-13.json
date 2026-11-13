@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-13",
+  "briefings": [
+    {
+      "id": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-13",
+      "filePath": "2026-11-13.md",
+      "summaryTopline": "Introducing ChatGPT Wallet",
+      "insightIds": [
+        "rss-2026-11-13-01-introducing-chatgpt-wallet",
+        "rss-2026-11-13-02-how-amplitude-ships-product-improvements-in-12-days-with-openai",
+        "rss-2026-11-13-03-llm-gemini-037",
+        "rss-2026-11-13-04-build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+        "rss-2026-11-13-05-vercel-security-review-no-longer-requires-a-linked-vercel-project",
+        "rss-2026-11-13-06-vercel-sandbox-starts-up-to-4x-faster",
+        "rss-2026-11-13-07-microsoft-research-focus-edition-98",
+        "rss-2026-11-13-08-builder-theme-thibault-sottiaux-on-how-can-codex-be-improved-try-not-to-say-model",
+        "rss-2026-11-13-09-builder-theme-amjad-masad-on-makes-total-sense-that-congressman-leading-the-inquiry-into-jensens"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-13-01-introducing-chatgpt-wallet",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet",
+      "publishedDate": "2026-11-13",
+      "title": "Introducing ChatGPT Wallet",
+      "summary": "OpenAI推出ChatGPT Wallet，让ChatGPT Work、Codex和dots中的智能体在用户批准及现有银行卡保护机制下完成购买。",
+      "take": "智能体首次获得受控的真实支付执行能力，工作流从“生成建议”延伸至“闭环交易”；工程上需关注支付授权边界、用户审批流程与凭证安全隔离，这为Agentic commerce的权限模型设定了参考范式。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-13-02-how-amplitude-ships-product-improvements-in-12-days-with-openai",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/business/customer-stories/amplitude",
+      "publishedDate": "2026-11-12",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "Amplitude基于OpenAI模型构建了主动式产品代理Wave，该代理覆盖从识别需求、借助Coding Agent协助团队交付变更到度量影响的完整产品迭代闭环，将产品改进周期压缩至1到2天。",
+      "take": "这展示了Agent从被动响应工具向主动驱动工作流的关键转变：代理不仅执行编码任务，还能自主识别构建目标并闭环验证效果。对构建者而言，核心工程信号在于将模型能力编排为多阶段流水线（发现-生成-评估），而非单点调用，从而显著压缩迭代延迟。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-13-03-llm-gemini-037",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+      "publishedDate": "2026-11-12",
+      "title": "llm-gemini 0.37",
+      "summary": "Google发布Gemini 4系列最低价模型Hydrogen（输入$1.5/M、输出$7.5/M），与Carbon/Argon采用差异化定价，后两者同价且将于12月1日翻倍。",
+      "take": "Gemini 4系列定价结构混乱，同价双模型Carbon/Argon暗示差异化可能体现在推理速度与token效率而非成本。构建者需警惕12月1日价格翻倍，提前评估缓存输入（$0.075/M vs $0.1/M）的成本优势以优化工作流。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-13-04-build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "publishedDate": "2026-11-12",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "summary": "GitHub提出“Agent技能”范式：将可复用的工程逻辑封装为团队可审查、可复用的文件，而工具、项目上下文与权限仍由各宿主Agent自行提供。",
+      "take": "核心机制是逻辑与执行环境的解耦——技能文件只承载确定性工作流，宿主提供工具与权限，从而实现“一次构建、跨Agent运行”。这为Agent能力标准化与跨平台复用提供了可审查的架构模式。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-13-05-vercel-security-review-no-longer-requires-a-linked-vercel-project",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-security-review-no-longer-requires-a-linked-vercel-project",
+      "publishedDate": "2026-11-13",
+      "title": "Vercel Security Review no longer requires a linked Vercel project",
+      "summary": "Vercel Security Review 现可对未关联 Vercel 项目的 GitHub 仓库直接扫描代码变更中的漏洞，通过 Vercel GitHub App 默认覆盖所有可访问仓库，每次 push 自动触发审查，无需项目或部署。",
+      "take": "AI 安全审查正从“部署依赖”转向“代码仓库级前置拦截”，使未部署或早期阶段的项目也能纳入自动化漏洞扫描。Agent 工作流可直接在 push 事件上挂载审查能力，降低接入门槛并扩大覆盖范围。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-13-06-vercel-sandbox-starts-up-to-4x-faster",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster",
+      "publishedDate": "2026-11-13",
+      "title": "Vercel Sandbox starts up to 4x faster",
+      "summary": "Vercel Sandbox通过在各区域部署区域化镜像缓存，将复用的镜像数据缓存至沙箱运行地附近，避免回源至iad1的镜像存储，使非华盛顿特区区域的启动速度最高提升4倍，例如巴黎端到端启动时间下降约75%、首尔从约3.5秒降至1.05秒。",
+      "take": "边缘沙箱的冷启动瓶颈正从计算调度转向镜像数据的跨区拉取，将复用镜像与快照就近缓存可显著压缩环境初始化延迟。对构建Agent或CI/CD流水线的团队而言，应优先评估镜像分层复用与地域亲和性，把镜像缓存纳入启动时间的关键路径优化。",
+      "topics": [
+        "Agents",
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-13-07-microsoft-research-focus-edition-98",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "publishedDate": "2026-11-12",
+      "title": "Microsoft Research Focus – Edition #98",
+      "summary": "微软研究院在最新一期Focus中展示了多项研究进展，包括AI驱动的通用翻译、一项31年数学难题的突破，以及提升AI编码智能体速度与效率的优化方案。",
+      "take": "编码智能体的效率优化正从模型能力转向推理速度与资源利用率的工程化改进，这将直接影响开发工作流中智能体的实用性与迭代频率。同时，跨领域基础研究（数学、翻译）的突破可能为智能体提供新的推理与泛化底层能力。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-13-08-builder-theme-thibault-sottiaux-on-how-can-codex-be-improved-try-not-to-say-model",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2121062974161092792",
+      "title": "Builder Theme: Thibault Sottiaux on How can codex be improved? Try not to say model.",
+      "summary": "Thibault Sottiaux提出关于Codex改进的讨论，明确排除“模型”因素，聚焦于模型之外的工程与系统层面优化。",
+      "take": "编码Agent的提升正从依赖模型能力转向上下文工程、工具调用、检索架构与执行循环等系统性优化。构建者应关注Agent脚手架与工作流设计，而非单纯等待更强的基座模型。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-13-09-builder-theme-amjad-masad-on-makes-total-sense-that-congressman-leading-the-inquiry-into-jensens",
+      "briefingId": "rss-2026-11-13",
+      "date": "2026-11-13",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Amjad Masad",
+      "sourceUrl": "https://x.com/amasad/status/2121081862659739870",
+      "title": "Builder Theme: Amjad Masad on Makes total sense that congressman leading the inquiry into Jensen’s...",
+      "summary": "Amjad Masad 以讽刺语气指出，主导调查 Jensen 所谓外国关系的国会议员，正是曾身穿外国军装现身国会大厦的人。",
+      "take": "该推文属于政治评论，不含 AI 工程、架构或工具链相关技术信号，对构建者无实质参考价值。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

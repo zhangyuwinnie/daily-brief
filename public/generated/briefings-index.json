@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-13",
     "2026-11-12",
     "2026-11-11",
     "2026-11-10",
@@ -276,6 +277,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-13": {
+      "briefingIds": [
+        "rss-2026-11-13"
+      ],
+      "insightIds": [
+        "rss-2026-11-13-01-introducing-chatgpt-wallet",
+        "rss-2026-11-13-02-how-amplitude-ships-product-improvements-in-12-days-with-openai",
+        "rss-2026-11-13-03-llm-gemini-037",
+        "rss-2026-11-13-04-build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+        "rss-2026-11-13-05-vercel-security-review-no-longer-requires-a-linked-vercel-project",
+        "rss-2026-11-13-06-vercel-sandbox-starts-up-to-4x-faster",
+        "rss-2026-11-13-07-microsoft-research-focus-edition-98",
+        "rss-2026-11-13-08-builder-theme-thibault-sottiaux-on-how-can-codex-be-improved-try-not-to-say-model",
+        "rss-2026-11-13-09-builder-theme-amjad-masad-on-makes-total-sense-that-congressman-leading-the-inquiry-into-jensens"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-12": {
       "briefingIds": [
         "rss-2026-11-12"
