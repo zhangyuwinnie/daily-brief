@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-14",
     "2026-11-13",
     "2026-11-12",
     "2026-11-11",
@@ -277,6 +278,25 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-14": {
+      "briefingIds": [
+        "rss-2026-11-14"
+      ],
+      "insightIds": [
+        "rss-2026-11-14-01-shield-helps-technicians-hand-off-legacy-portal-work-with-openai",
+        "rss-2026-11-14-02-advancing-science-engineering-with-antigravitys-teamwork",
+        "rss-2026-11-14-03-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+        "rss-2026-11-14-04-daemons-can-now-send-traces-to-vercel-tracing",
+        "rss-2026-11-14-05-token-pass-now-includes-150-in-tokens-for-30month",
+        "rss-2026-11-14-06-builder-theme-a-model-for-everyone-how-ronak-from-trajectory-is-building-products-for-continual-learning",
+        "rss-2026-11-14-07-builder-theme-amjad-masad-on-read-the-stand-with-jensen-letter-and-consider-adding-your-name-sta",
+        "rss-2026-11-14-08-builder-theme-guillermo-rauch-on-co-sign"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-13": {
       "briefingIds": [
         "rss-2026-11-13"

@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-14",
+  "briefings": [
+    {
+      "id": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-14",
+      "filePath": "2026-11-14.md",
+      "summaryTopline": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "insightIds": [
+        "rss-2026-11-14-01-shield-helps-technicians-hand-off-legacy-portal-work-with-openai",
+        "rss-2026-11-14-02-advancing-science-engineering-with-antigravitys-teamwork",
+        "rss-2026-11-14-03-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+        "rss-2026-11-14-04-daemons-can-now-send-traces-to-vercel-tracing",
+        "rss-2026-11-14-05-token-pass-now-includes-150-in-tokens-for-30month",
+        "rss-2026-11-14-06-builder-theme-a-model-for-everyone-how-ronak-from-trajectory-is-building-products-for-continual-learning",
+        "rss-2026-11-14-07-builder-theme-amjad-masad-on-read-the-stand-with-jensen-letter-and-consider-adding-your-name-sta",
+        "rss-2026-11-14-08-builder-theme-guillermo-rauch-on-co-sign"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-14-01-shield-helps-technicians-hand-off-legacy-portal-work-with-openai",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/business/customer-stories/shield",
+      "publishedDate": "2026-11-13",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "summary": "Shield 利用 OpenAI 模型构建 Forge 智能体，在缺乏 API 的遗留门户系统中自动导航并完成事务性操作，从而将低判断力的重复性 IT 工单从技术人员手中剥离。",
+      "take": "核心工程信号是：当目标系统无 API 且界面异构时，基于视觉与推理的 GUI 智能体可绕过集成开发，直接复用人类操作路径。这为遗留系统自动化提供了一种无需系统改造、以端到端代理替代 RPA 的可行架构范式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-14-02-advancing-science-engineering-with-antigravitys-teamwork",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "The latest research from Google",
+      "sourceUrl": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "publishedDate": "2026-11-13",
+      "title": "Advancing science & engineering with Antigravity’s /teamwork",
+      "summary": "Google Research 推出 Antigravity 的 /teamwork 功能，通过多智能体协作架构让多个专用 AI 代理分工执行科学工程任务。",
+      "take": "多代理编排正从单模型调用转向角色化流水线，工程重点在于任务分解、代理间状态传递与结果聚合机制的设计。",
+      "topics": [
+        "Agents",
+        "Retrieval"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-14-03-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "publishedDate": "2026-11-12",
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "summary": "IBM在Granite 4.1 3B与8B模型中引入了LLMON——一种专为LLM原生解析与生成设计的标记语言，替代传统JSON/XML等通用格式以降低token开销与结构解析负担。",
+      "take": "为LLM设计专用标记语言意味着结构化输出与工具调用不再依赖通用序列化格式，模型可原生理解并生成更紧凑的表示。构建者应关注此类原生格式对prompt效率、解析可靠性和agent工具链的潜在替换效应。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-14-04-daemons-can-now-send-traces-to-vercel-tracing",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
+      "publishedDate": "2026-11-13",
+      "title": "Daemons can now send traces to Vercel Tracing",
+      "summary": "Vercel Daemons 通过 Unix socket 接收 OTLP/HTTP 追踪数据，将后台 worker 的 OpenTelemetry spans 导出至 Vercel Tracing，与项目其他链路统一查看。",
+      "take": "后台 worker 可观测性被纳入主链路，Agent 可通过 Vercel CLI 按服务名检索并以 JSON 获取 span，便于程序化诊断异步任务。@vercel/otel 2.3.0+ 默认配置即自动导出 Node.js daemon 的 trace。",
+      "topics": [
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-14-05-token-pass-now-includes-150-in-tokens-for-30month",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
+      "publishedDate": "2026-11-13",
+      "title": "Token Pass now includes $150 in tokens for $30/month",
+      "summary": "Vercel将Team版Token Pass月度额度从80美元提升至150美元（价格维持30美元/月），该额度仅适用于AI Gateway托管的精选开源权重模型（Kimi K3/K3.1 Pro、GLM 5.3/5.3 Flash、DeepSeek V4.1 Flash），账期内不滚存，额度耗尽时标准Gateway密钥或OIDC令牌回退至团队Gateway余额，而Token Pass作用域密钥直接停止调用且无超量计费。",
+      "take": "该模式将模型调用预算与具体API密钥作用域绑定，使编码Agent可通过`vercel token-pass`CLI或专用密钥接入，并在额度耗尽时硬性熔断而非溢出计费，为Agent工作流提供了可控成本的模型访问层。工程上需区分标准密钥与Token Pass密钥的降级策略，避免Agent在额度耗尽后静默失败。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-14-06-builder-theme-a-model-for-everyone-how-ronak-from-trajectory-is-building-products-for-continual-learning",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Training Data",
+      "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "title": "Builder Theme: A Model For Everyone: How Ronak From Trajectory Is Building Products For Continual Learning",
+      "summary": "Trajectory 创始人 Ronak 借鉴苹果整合式产品思路，将训练、评估与部署整合至同一平台，使模型上线后能回传生产环境新轨迹以持续闭环迭代。",
+      "take": "训练-评估-部署一体化消除了跨工具链摩擦，使生产数据回流形成持续学习闭环；对构建者而言，未来 AI 产品的核心架构应按“单平台闭环”设计，而非拼接分离的训练与推理流水线。",
+      "topics": [
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-14-07-builder-theme-amjad-masad-on-read-the-stand-with-jensen-letter-and-consider-adding-your-name-sta",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Amjad Masad",
+      "sourceUrl": "https://x.com/amasad/status/2121377395244749097",
+      "title": "Builder Theme: Amjad Masad on Read the Stand with Jensen letter and consider adding your name. #sta...",
+      "summary": "Replit CEO Amjad Masad在X上呼吁AI构建者阅读并签署支持英伟达CEO黄仁勋的公开信（Stand with Jensen）。",
+      "take": "该事件反映AI开发生态中头部平台与算力供应商之间的政治联盟正在形成，开发者需关注此类行业联名对开源模型获取、API定价及算力政策的潜在影响。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-14-08-builder-theme-guillermo-rauch-on-co-sign",
+      "briefingId": "rss-2026-11-14",
+      "date": "2026-11-14",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Guillermo Rauch",
+      "sourceUrl": "https://x.com/rauchg/status/2121351007615811799",
+      "title": "Builder Theme: Guillermo Rauch on Co-sign",
+      "summary": "Vercel CEO Guillermo Rauch 提出“Co-sign”概念，指向人与AI代理协作中由人类对代理行为进行确认或共同签署的交互机制。",
+      "take": "随着代理自主执行动作增多，关键操作需引入人类共同签署的审批层，将权限控制与可审计性内建到代理工作流中。开发者应把代理输出视为待批准提案而非直接执行结果。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
