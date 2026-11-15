@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-15",
+  "briefings": [
+    {
+      "id": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-15",
+      "filePath": "2026-11-15.md",
+      "summaryTopline": "datasette-llm 0.1a11",
+      "insightIds": [
+        "rss-2026-11-15-01-datasette-llm-01a11",
+        "rss-2026-11-15-02-understanding-positional-embeddings-in-modern-llms",
+        "rss-2026-11-15-03-builder-theme-ep-97-jev-creator-on-decision-models-benchmark-fatigue-amp-why-the-labs-missed-it",
+        "rss-2026-11-15-04-builder-theme-thibault-sottiaux-on-cyber-team-wants-your-feedback-on-daybreak-models-codex-plugins-bl",
+        "rss-2026-11-15-05-builder-theme-amjad-masad-on-weve-entered-murphys-world-anything-that-can-go-wrong-will-go-wron"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-15-01-datasette-llm-01a11",
+      "briefingId": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "publishedDate": "2026-11-14",
+      "title": "datasette-llm 0.1a11",
+      "summary": "Datasette-llm 0.1a11 新增对 OpenAI 兼容端点的支持，允许通过配置 api_base 将 Datasette 及其 Agent 插件指向本地 LM Studio、Ollama 或 llama.cpp 托管的模型。",
+      "take": "统一 OpenAI 伪协议已成为本地与远程 LLM 的通用接入层，工具链只需实现一次适配即可切换任意后端。这降低了 Agent 应用对特定模型供应商的耦合，使本地推理可直接嵌入数据服务与自动化工作流。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-15-02-understanding-positional-embeddings-in-modern-llms",
+      "briefingId": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Ahead of AI",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "publishedDate": "2026-11-15",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "summary": "Sebastian Raschka系统梳理了现代LLM中位置嵌入的各类方法，涵盖绝对位置编码与相对位置编码（如RoPE、ALiBi）的架构原理及实现差异。",
+      "take": "位置编码的选择直接影响长上下文外推能力与注意力机制的稳定性，构建者在选型时需明确绝对编码与相对编码在长度泛化上的工程权衡。RoPE等相对方案已成为主流，理解其旋转机制对扩展上下文窗口至关重要。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-15-03-builder-theme-ep-97-jev-creator-on-decision-models-benchmark-fatigue-amp-why-the-labs-missed-it",
+      "briefingId": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Unsupervised Learning",
+      "sourceUrl": "https://www.youtube.com/@RedpointAI",
+      "title": "Builder Theme: Ep 97: Jev Creator on Decision Models, Benchmark Fatigue &amp; Why the Labs Missed It",
+      "summary": "Jev Creator在访谈中指出，当前AI市场对Anthropic等头部实验室的估值存在系统性误判，根源在于将“构建通用人工智能”简单等同于无限价值，而非建立在对模型能力边界与实际落地路径的准确建模之上。",
+      "take": "构建者应警惕以“AGI无限潜力”为前提的估值与路线判断，转而基于可验证的模型能力边界与决策模型做工程规划，避免因基准测试疲劳和叙事驱动导致的资源错配。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-15-04-builder-theme-thibault-sottiaux-on-cyber-team-wants-your-feedback-on-daybreak-models-codex-plugins-bl",
+      "briefingId": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2121845965997101118",
+      "title": "Builder Theme: Thibault Sottiaux on Cyber team wants your feedback on Daybreak. Models, codex plugins, bl...",
+      "summary": "Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, red teaming & defense factory... What can we do better or improve?。",
+      "take": "这件事与 AI builders、x 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-15-05-builder-theme-amjad-masad-on-weve-entered-murphys-world-anything-that-can-go-wrong-will-go-wron",
+      "briefingId": "rss-2026-11-15",
+      "date": "2026-11-15",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Amjad Masad",
+      "sourceUrl": "https://x.com/amasad/status/2121519931741127144",
+      "title": "Builder Theme: Amjad Masad on We’ve entered Murphy’s world. Anything that can go wrong will go wron...",
+      "summary": "Replit CEO Amjad Masad 指出，在数十亿并发、递归互依且高速加速的系统中，过去被视为罕见故障的事件已演变为日常现象，即系统已进入墨菲定律主导的失效常态。",
+      "take": "对 AI 构建者而言，容错设计必须从异常分支升级为架构的一等公民：将幂等、重试、降级与可观测性内建于 agent 工作流与工具链中。多智能体与递归依赖的不确定性意味着应以默认失败为前提设计恢复路径，而非追求单点零错误。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
