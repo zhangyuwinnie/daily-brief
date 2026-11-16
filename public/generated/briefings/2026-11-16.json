@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-16",
+  "briefings": [
+    {
+      "id": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-16",
+      "filePath": "2026-11-16.md",
+      "summaryTopline": "Agents are users, so your software needs evals",
+      "insightIds": [
+        "rss-2026-11-16-01-agents-are-users-so-your-software-needs-evals",
+        "rss-2026-11-16-02-tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient",
+        "rss-2026-11-16-03-advancing-computer-use-agents-for-healthcare-teams",
+        "rss-2026-11-16-04-ai-gateway-now-supports-private-inference",
+        "rss-2026-11-16-05-datasette-agent-06a0",
+        "rss-2026-11-16-06-datasette-apps-04a0",
+        "rss-2026-11-16-07-more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+        "rss-2026-11-16-08-builder-theme-thibault-sottiaux-on-codex-team-might-have-actually-fixed-the-model-at-capacity-errors-t",
+        "rss-2026-11-16-09-builder-theme-thariq-on-a-new-arena-and-two-new-characters"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-16-01-agents-are-users-so-your-software-needs-evals",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/agent-evals",
+      "publishedDate": "2026-11-16",
+      "title": "Agents are users, so your software needs evals",
+      "summary": "Vercel提出应将Agent视为软件的真实用户，并按照发现、选择、访问、成功四个漏斗阶段构建evals，其中成功阶段的评估需超越传统可观测性日志，验证任务语义是否正确完成（如区分冰热拿铁）。",
+      "take": "构建Agent或供Agent调用的软件（API、CLI、MCP server、SDK）时，必须用evals量化任务完成度而非仅依赖请求成功的日志指标。传统Observability只能证明请求成功，无法捕捉语义错误，需在成功阶段引入面向任务正确性的语义评估。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-16-02-tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "publishedDate": "2026-11-16",
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient",
+      "summary": "微软研究院开源了 TokenEconomizer 插件，它通过从历史会话中提取并复用经验教训，让 AI 编码代理在保持任务成功率的同时减少重复试错，从而降低 token 消耗与计算成本。",
+      "take": "该方案将“经验复用”作为独立的优化维度引入代理架构，使代理不仅学习如何完成任务，还学习如何更高效地分配计算资源。对构建者而言，可据此设计带会话记忆沉淀与成本感知决策的编码代理工作流，把 token 预算纳入代理的运行时策略。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-16-03-advancing-computer-use-agents-for-healthcare-teams",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "publishedDate": "2026-11-16",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "summary": "OpenAI发布面向医疗团队的计算机使用智能体（computer-use agents），使智能体能够直接操作医疗软件界面，以完成与临床工作流相关的计算机交互任务。",
+      "take": "核心转变在于智能体从对话式API调用扩展到直接操控GUI界面，从而绕过医疗系统缺乏API集成的现实瓶颈。工程上需要关注的是智能体在敏感医疗环境中的操作可靠性、权限边界与审计可追溯性，这将成为在受限行业中部署computer-use能力的关键约束。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-16-04-ai-gateway-now-supports-private-inference",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/ai-gateway-now-supports-private-inference",
+      "publishedDate": "2026-11-16",
+      "title": "AI Gateway now supports Private Inference",
+      "summary": "Vercel AI Gateway 新增 Private Inference，将企业自托管、微调或预发布模型端点接入统一网关，通过格式转换层复用同一套认证、SDK、API 和可观测性，切换模型仅需更改 model ID。",
+      "take": "模型接入层与推理后端解耦：网关承担请求格式适配，使私有模型与目录模型走同一调用路径，消除了多套密钥、客户端代码和日志的维护成本。对 Agent 与编码工具链而言，这意味着可在统一接口下按任务在私有微调模型与公共模型间切换，同时凭团队级隔离、加密凭据和零数据保留满足企业合规边界。",
+      "topics": [
+        "Agents",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-16-05-datasette-agent-06a0",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
+      "publishedDate": "2026-11-15",
+      "title": "datasette-agent 0.6a0",
+      "summary": "Datasette-agent 0.6a0 在 Datasette 首页直接集成代理提示输入框，并支持通过哈希提及表与查询对象，从而将自然语言查询入口嵌入数据界面。",
+      "take": "将代理入口前置到数据浏览首页，意味着查询不再依赖独立聊天界面，而是与数据集上下文原位绑定。哈希提及机制为 LLM 提供了明确的表/查询引用，降低了歧义，是可复用的数据代理交互模式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-16-06-datasette-apps-04a0",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+      "publishedDate": "2026-11-15",
+      "title": "datasette-apps 0.4a0",
+      "summary": "Datasette-apps 0.4a0 为 Datasette 内沙箱化的 HTML/JS 应用新增 URL fragment 链接支持，应用可读取 URL 中的 #fragments，并将支持的 URL scheme 报告给 Datasette Agent，使其能生成互相链接的应用。",
+      "take": "这为数据应用引入了声明式可寻址接口：每个应用暴露可链接的 URL scheme，Agent 据此自动编排应用间的导航链路，实现搜索/详情等职责分离的模块化组合。构建者应将应用视为可通过 URL 协议互操作的独立组件，而非单体界面。",
+      "topics": [
+        "Agents",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-16-07-more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "publishedDate": "2026-11-16",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "summary": "OpenAI为ChatGPT医疗版引入计算机使用智能体（computer-use agents）、增强的临床问答能力及可跨医疗软件运行的插件，使AI能直接操作医疗系统界面完成实际任务。",
+      "take": "计算机使用智能体将LLM从对话接口扩展为可操作GUI的执行层，意味着Agent集成需优先考虑跨软件互操作与操作可靠性；医疗插件模式展示了垂直领域Agent通过标准化插件接入异构系统的可行路径。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-16-08-builder-theme-thibault-sottiaux-on-codex-team-might-have-actually-fixed-the-model-at-capacity-errors-t",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2122206990101536852",
+      "title": "Builder Theme: Thibault Sottiaux on Codex team might have actually fixed the \"model at capacity\" errors t...",
+      "summary": "Codex团队通过工程手段修复了长期困扰开发者的模型容量不足（model at capacity）错误。",
+      "take": "容量瓶颈的缓解直接提升Agent与AI工作流的可用性，减少因排队或限流导致的任务中断。开发者应重新评估此前受限于容量问题的并发调用与批处理策略。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-16-09-builder-theme-thariq-on-a-new-arena-and-two-new-characters",
+      "briefingId": "rss-2026-11-16",
+      "date": "2026-11-16",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2122154124024381828",
+      "title": "Builder Theme: Thariq on a new arena and two new characters",
+      "summary": "Thariq 发布了“新竞技场与两个新角色”，但内容片段未披露具体技术架构或实现细节。",
+      "take": "由于源信息缺乏技术实质，无法提取可操作的工程信号；建议直接核查原始链接以确认其是否为新的 agent 评测环境或角色化工作流范式。",
+      "topics": [
+        "Agents",
+        "Evals",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}

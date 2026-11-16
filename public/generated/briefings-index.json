@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-16",
     "2026-11-15",
     "2026-11-14",
     "2026-11-13",
@@ -279,6 +280,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-16": {
+      "briefingIds": [
+        "rss-2026-11-16"
+      ],
+      "insightIds": [
+        "rss-2026-11-16-01-agents-are-users-so-your-software-needs-evals",
+        "rss-2026-11-16-02-tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient",
+        "rss-2026-11-16-03-advancing-computer-use-agents-for-healthcare-teams",
+        "rss-2026-11-16-04-ai-gateway-now-supports-private-inference",
+        "rss-2026-11-16-05-datasette-agent-06a0",
+        "rss-2026-11-16-06-datasette-apps-04a0",
+        "rss-2026-11-16-07-more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+        "rss-2026-11-16-08-builder-theme-thibault-sottiaux-on-codex-team-might-have-actually-fixed-the-model-at-capacity-errors-t",
+        "rss-2026-11-16-09-builder-theme-thariq-on-a-new-arena-and-two-new-characters"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-15": {
       "briefingIds": [
         "rss-2026-11-15"
