@@ -53983,5 +53983,218 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "briefings": [
+      {
+        "id": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-17",
+        "filePath": "2026-11-17.md",
+        "summaryTopline": "Building the Agent Host Protocol for sessions that continue across devices",
+        "insightIds": [
+          "rss-2026-11-17-01-building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+          "rss-2026-11-17-02-introducing-eve-10",
+          "rss-2026-11-17-03-running-the-full-server-side-datasette-python-app-in-the-browser-with-service-workers-and-pyodide",
+          "rss-2026-11-17-04-maintainers-don8217t-need-more-ai-bug-reports-they-need-fixes",
+          "rss-2026-11-17-05-hy4-flash-now-available-on-ai-gateway-for-50-off",
+          "rss-2026-11-17-06-introducing-gpt-62-astra-and-sol",
+          "rss-2026-11-17-07-llm-0373",
+          "rss-2026-11-17-08-science-at-the-frontier-how-scientists-use-chatgpt",
+          "rss-2026-11-17-09-builder-theme-thariq-on-software-factories-feel-like-a-temporary-problem-the-models-will-lea",
+          "rss-2026-11-17-10-builder-theme-guillermo-rauch-on-a-new-era-of-software-is-upon-us-personalized-fully-owned-open-sou"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-17-01-building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+        "publishedDate": "2026-11-17",
+        "title": "Building the Agent Host Protocol for sessions that continue across devices",
+        "summary": "GitHub 发布了开放 Agent Host Protocol，通过标准化协议在编辑器、应用、手机和云端之间同步并保持 AI Agent 会话的连续性。",
+        "take": "该协议将 Agent 会话状态与具体的宿主环境解耦，使 Agent 能够跨设备无缝迁移。开发者应关注会话持久化与状态同步的接口设计，这为构建多端协同的 Agent 工作流奠定了基础。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-17-02-introducing-eve-10",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/eve-is-now-generally-available",
+        "publishedDate": "2026-11-17",
+        "title": "Introducing eve 1.0",
+        "summary": "Vercel发布eve 1.0开源框架，通过自有的模型调用循环、工具执行与基础设施harness，支持生产级Agent的构建、安全审批控制与可观测性。",
+        "take": "Agent开发正从自建harness转向复用成熟运行时基础设施，开发者应聚焦业务逻辑而非编排循环。需关注其对编码Agent的专项优化与评估套件，这或将重塑Agent工具链的集成标准。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-17-03-running-the-full-server-side-datasette-python-app-in-the-browser-with-service-workers-and-pyodide",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+        "publishedDate": "2026-11-17",
+        "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+        "summary": "Simon Willison 利用 Service Worker 与 Pyodide 将完整服务端 Datasette Python 应用重写为浏览器内运行版本，可直接加载任意 SQLite/JSON/CSV 文件、指定 PyPI 版本或 GitHub 提交、从 100 多个 SQLite 版本中选择，并安装 PyPI 插件。",
+        "take": "浏览器端 Service Worker 拦截请求并路由至 Pyodide 中的 Python 运行时，使纯前端应用具备接近服务端的路由与插件能力；这为免后端部署的数据工具与 Agent 本地化执行提供了可复用架构范式。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-17-04-maintainers-don8217t-need-more-ai-bug-reports-they-need-fixes",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+        "publishedDate": "2026-11-17",
+        "title": "Maintainers don&#8217;t need more AI bug reports. They need fixes.",
+        "summary": "GitHub与微软在Codename MDASH试点中，将数千条AI原始发现经AI与人工协同过滤转化为99份附带修复建议的私有报告，提交给六个广泛使用的开源项目，维护者已修复过半。",
+        "take": "核心工程信号在于验证了从“AI生成海量噪音”到“AI生成高精度可执行修复建议”的流水线可行性，将AI定位为修复生成器而非报告生成器可显著提升维护者处理效率。对构建者而言，关键架构模式是AI发现加人工筛选与修复建议的协同过滤层，而非单纯堆叠模型检测能力。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-05-hy4-flash-now-available-on-ai-gateway-for-50-off",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/hy4-flash-now-available-on-ai-gateway-for-50-off",
+        "publishedDate": "2026-11-16",
+        "title": "Hy4 Flash now available on AI Gateway for 50% off",
+        "summary": "腾讯Hy4 Flash模型通过Vercel AI Gateway上线，以约十分之一的价格提供完整Hy4功能（跨轮保留思考过程的推理、工具调用、结构化输出、提示缓存、图像输入及100万token上下文），并支持按需关闭推理，模型名为tencent/hy4-flash。",
+        "take": "低成本模型配合可开关的推理与百万级上下文，使高并发编码、Agent与文档处理工作负载的单位成本大幅下降；开发者可直接在Claude Code、Codex、Cursor等编码Agent中切换该模型，需安装最新Vercel CLI并执行setup后选择tencent/hy4-flash。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-06-introducing-gpt-62-astra-and-sol",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "publishedDate": "2026-11-17",
+        "title": "Introducing GPT-6.2 Astra and Sol",
+        "summary": "OpenAI发布GPT-6.2 Astra与Sol，在ChatGPT Work、Codex和API中提升专业输出、编码、计算机操作能力并降低推理成本。",
+        "take": "模型迭代正把计算机操作与编码能力作为核心竞争维度，成本下降意味着Agent工作流可更大规模部署。开发者应优先在Codex与API链路中验证多步任务可靠性，而非追求单次输出质量。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-07-llm-0373",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/16/llm/",
+        "publishedDate": "2026-11-16",
+        "title": "llm 0.37.3",
+        "summary": "LLM 0.37.3 发布，修复了 Homebrew 自带 SQLite 升级至 3.54.1 后导致的日志代码故障，根本原因是 3.54.1 修正了子查询返回 SQL 文本而非 JSON 的行为。",
+        "take": "依赖 SQLite JSON 函数的工具需注意：在 3.54.1+ 中，嵌套查询返回的是 SQL 文本而非 JSON 对象，需显式用 json() 包裹子查询结果，或在版本升级时审查相关 SQL 逻辑。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-08-science-at-the-frontier-how-scientists-use-chatgpt",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/science-at-the-frontier",
+        "publishedDate": "2026-11-16",
+        "title": "Science at the Frontier: How scientists use ChatGPT",
+        "summary": "OpenAI基于1800余名科学家的使用数据，揭示了ChatGPT在科研日常流程中的实际渗透情况、生产力提升幅度及对科学发现的预期。",
+        "take": "科研工作流正被LLM深度嵌入，从文献处理到实验设计均出现可量化的效率增益；构建者应关注科学家群体的真实使用模式而非通用场景，针对高价值科研环节（如假设生成、数据解读）设计专用agent能力，而非泛化聊天接口。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-09-builder-theme-thariq-on-software-factories-feel-like-a-temporary-problem-the-models-will-lea",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2122438326431154210",
+        "title": "Builder Theme: Thariq on software factories feel like a temporary problem. the models will lea...",
+        "summary": "Thariq提出软件工厂是暂时性问题，模型将自行构建，真正的重点转向设计支持智能体与人类协作的工作空间架构。",
+        "take": "当前手工设计的Agent编排与构建流水线属于过渡态，应押注模型自主生成这些结构。架构重心需从流水线自动化转向构建人机协作的工作空间，即Agent与人共享上下文、可并发协作的交互层。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-17-10-builder-theme-guillermo-rauch-on-a-new-era-of-software-is-upon-us-personalized-fully-owned-open-sou",
+        "briefingId": "rss-2026-11-17",
+        "date": "2026-11-17",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2122396034186014919",
+        "title": "Builder Theme: Guillermo Rauch on A new era of software is upon us. Personalized, fully owned, open sou...",
+        "summary": "Vercel CEO Guillermo Rauch 提出软件新范式：个人化、完全自有、开源，且质量高于所替代的闭源产品。",
+        "take": "该主张指向软件分发与所有权的结构性转变：开发者可从闭源 SaaS 转向可自行托管、可修改的开源替代品，同时借助 AI 工具弥补开源产品在质量与体验上的差距。对构建者而言，这意味着产品设计需优先考虑可移植性与数据主权，而非锁定效应。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

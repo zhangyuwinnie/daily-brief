@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-17",
     "2026-11-16",
     "2026-11-15",
     "2026-11-14",
@@ -280,6 +281,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-17": {
+      "briefingIds": [
+        "rss-2026-11-17"
+      ],
+      "insightIds": [
+        "rss-2026-11-17-01-building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+        "rss-2026-11-17-02-introducing-eve-10",
+        "rss-2026-11-17-03-running-the-full-server-side-datasette-python-app-in-the-browser-with-service-workers-and-pyodide",
+        "rss-2026-11-17-04-maintainers-don8217t-need-more-ai-bug-reports-they-need-fixes",
+        "rss-2026-11-17-05-hy4-flash-now-available-on-ai-gateway-for-50-off",
+        "rss-2026-11-17-06-introducing-gpt-62-astra-and-sol",
+        "rss-2026-11-17-07-llm-0373",
+        "rss-2026-11-17-08-science-at-the-frontier-how-scientists-use-chatgpt",
+        "rss-2026-11-17-09-builder-theme-thariq-on-software-factories-feel-like-a-temporary-problem-the-models-will-lea",
+        "rss-2026-11-17-10-builder-theme-guillermo-rauch-on-a-new-era-of-software-is-upon-us-personalized-fully-owned-open-sou"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-16": {
       "briefingIds": [
         "rss-2026-11-16"
