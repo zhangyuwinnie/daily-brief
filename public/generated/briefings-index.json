@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-18",
     "2026-11-17",
     "2026-11-16",
     "2026-11-15",
@@ -281,6 +282,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-18": {
+      "briefingIds": [
+        "rss-2026-11-18"
+      ],
+      "insightIds": [
+        "rss-2026-11-18-01-external-sandboxes-for-coding-agents",
+        "rss-2026-11-18-02-inside-the-codex-sandbox",
+        "rss-2026-11-18-03-gpt62-astra-and-gpt62-sol",
+        "rss-2026-11-18-04-introducing-vercel-x",
+        "rss-2026-11-18-05-vercel-drives-now-reads-files-up-to-6x-faster",
+        "rss-2026-11-18-06-advancing-chip-design-with-openai-models",
+        "rss-2026-11-18-07-builder-theme-building-visual-intelligence-andreas-blattmann-amp-dustin-podell-black-forest-labs",
+        "rss-2026-11-18-08-builder-theme-sam-altman-on-62-sol-and-astra-are-out-these-models-can-do-amazing-things-and-are",
+        "rss-2026-11-18-09-builder-theme-thibault-sottiaux-on-one-of-the-funny-reasons-for-the-difference-in-vibes-between-the-infl"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-17": {
       "briefingIds": [
         "rss-2026-11-17"

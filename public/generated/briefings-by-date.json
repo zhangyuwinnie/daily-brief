@@ -54196,5 +54196,201 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "briefings": [
+      {
+        "id": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-18",
+        "filePath": "2026-11-18.md",
+        "summaryTopline": "External sandboxes for coding agents",
+        "insightIds": [
+          "rss-2026-11-18-01-external-sandboxes-for-coding-agents",
+          "rss-2026-11-18-02-inside-the-codex-sandbox",
+          "rss-2026-11-18-03-gpt62-astra-and-gpt62-sol",
+          "rss-2026-11-18-04-introducing-vercel-x",
+          "rss-2026-11-18-05-vercel-drives-now-reads-files-up-to-6x-faster",
+          "rss-2026-11-18-06-advancing-chip-design-with-openai-models",
+          "rss-2026-11-18-07-builder-theme-building-visual-intelligence-andreas-blattmann-amp-dustin-podell-black-forest-labs",
+          "rss-2026-11-18-08-builder-theme-sam-altman-on-62-sol-and-astra-are-out-these-models-can-do-amazing-things-and-are",
+          "rss-2026-11-18-09-builder-theme-thibault-sottiaux-on-one-of-the-funny-reasons-for-the-difference-in-vibes-between-the-infl"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-18-01-external-sandboxes-for-coding-agents",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+        "publishedDate": "2026-11-17",
+        "title": "External sandboxes for coding agents",
+        "summary": "Simon Willison与Prime Radiant合作提出“外部沙箱”模式，让编码代理执行的代码运行在专用隔离沙箱中（如基于v86的WebAssembly版Alpine Linux或容器实现），而代理本身留在沙箱外。",
+        "take": "该架构将代理与执行环境解耦，使本地模型和提示注入攻击无法直接危害宿主机，为安全试验不可信模型提供了可复用的工程范式。构建者应把沙箱边界作为代理运行时的默认设计，而非事后加固。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-18-02-inside-the-codex-sandbox",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/inside-the-codex-sandbox",
+        "publishedDate": "2026-11-18",
+        "title": "Inside the Codex sandbox",
+        "summary": "OpenAI公开Codex沙箱机制，在macOS、Linux和Windows上执行本地命令时强制实施用户可控的文件系统与网络边界限制。",
+        "take": "在本地执行AI生成命令需默认采用操作系统级沙箱隔离，并将文件系统与网络策略作为显式可控的边界条件。这为构建Agent工具链确立了\"受限执行环境\"的标准范式，安全约束应前置于能力释放。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-18-03-gpt62-astra-and-gpt62-sol",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+        "publishedDate": "2026-11-17",
+        "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+        "summary": "OpenAI发布GPT-6.2 Astra（前沿模型，API定价$8/$40每百万token，缓存$0.40，为前代80%）与GPT-6.2 Sol（日常高效模型，$2/$10），Simon Willison同步发布LLM 0.38支持。",
+        "take": "缓存token价格大幅降至$0.40/百万token，直接降低长时运行agentic会话的边际成本，使多轮工具调用与长上下文智能体工作流更具经济可行性。模型分层（前沿Astra+高效Sol）要求开发者在agent编排中按任务复杂度动态路由，以平衡成本与推理能力。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-18-04-introducing-vercel-x",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/vercel-x",
+        "publishedDate": "2026-11-18",
+        "title": "Introducing Vercel X",
+        "summary": "Vercel推出为期六周的Vercel X加速器，面向构思期和种子前阶段的AI创业团队，在旧金山总部招募40支团队，不占股权，并提供来自Vercel、AWS、Anthropic、OpenAI等合作伙伴总计超900万美元的额度池。",
+        "take": "对AI构建者而言，这本质上是获取算力与模型API低成本入口的渠道：通过加入加速器，可免费使用Anthropic和OpenAI的额度来支撑原型与Agent开发。无股权换取资源意味着早期团队能以极低试错成本验证架构与工作流，而非过早稀释控制权。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-18-05-vercel-drives-now-reads-files-up-to-6x-faster",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-drives-now-reads-files-up-to-6x-faster",
+        "publishedDate": "2026-11-18",
+        "title": "Vercel Drives now reads files up to 6x faster",
+        "summary": "Vercel Drives 通过读取预取算法，根据应用访问模式在需要前从持久存储加载数据，将冷读取性能提升最高 6 倍，且自动生效、无需 SDK 升级或配置变更。",
+        "take": "预取算法利用访问模式预测I/O需求，是降低存储延迟的关键手段；对RAG等频繁检索场景，冷读取性能提升直接减少等待时间；该优化自动生效，意味着无需改代码即可获得吞吐收益。",
+        "topics": [
+          "RAG",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-18-06-advancing-chip-design-with-openai-models",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "publishedDate": "2026-11-18",
+        "title": "Advancing chip design with OpenAI models",
+        "summary": "OpenAI利用GPT-6 Astra模型优化了Jalapeño芯片中的电路并改进了RISC-V核心设计，验证了AI辅助芯片设计的可行性。",
+        "take": "AI模型开始进入硬件设计回路，可对电路与核心架构进行实际优化而非仅辅助生成。这意味着芯片设计工作流将新增“模型驱动优化”环节，开发者需关注如何将LLM接入EDA工具链以加速迭代。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-18-07-builder-theme-building-visual-intelligence-andreas-blattmann-amp-dustin-podell-black-forest-labs",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Latent Space",
+        "sourceUrl": "https://www.youtube.com/watch?v=8cGfJOU3AlQ",
+        "title": "Builder Theme: Building Visual Intelligence — Andreas Blattmann &amp; Dustin Podell, Black Forest Labs",
+        "summary": "Black Forest Labs联合创始人Andreas Blattmann（潜在扩散共同发明人）与Dustin Podell（SDXL、Control LoRA、FLUX系列模型负责人）在访谈中复盘了从Stability AI分离、组建BFL并迭代FLUX.1、FLUX Ultra与FLUX Context的视觉生成模型研发路径。",
+        "take": "核心工程信号在于：视觉生成正沿“潜在扩散底层机制+后训练与条件控制（Control LoRA、Context）”的双轨演进，模型能力差异越来越取决于后训练与可控性工程而非单一架构创新。对构建者而言，应把可控生成与上下文条件作为Agent视觉工作流的一等能力来设计，而非事后补丁。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-18-08-builder-theme-sam-altman-on-62-sol-and-astra-are-out-these-models-can-do-amazing-things-and-are",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2122798039899263456",
+        "title": "Builder Theme: Sam Altman on 6.2 Sol and Astra are out. These models can do amazing things and are...",
+        "summary": "Sam Altman宣布6.2 Sol与Astra模型发布，主打高令牌效率与“6.2 Sol ultrafast”超高速推理能力。",
+        "take": "令牌效率提升直接降低单次推理成本，对高频调用与长上下文场景的架构设计有实质影响；ultrafast分支则为低延迟交互型Agent工作流提供了新的性能基座。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-18-09-builder-theme-thibault-sottiaux-on-one-of-the-funny-reasons-for-the-difference-in-vibes-between-the-infl",
+        "briefingId": "rss-2026-11-18",
+        "date": "2026-11-18",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2122929634916679820",
+        "title": "Builder Theme: Thibault Sottiaux on One of the funny reasons for the difference in vibes between the infl...",
+        "summary": "OpenAI团队成员Thibault Sottiaux披露，6.2版Sol/Astra模型引发的“体验反差”源于部分创作者在3-4天前获得早期访问权后未做重新测试，产出的内容基于上周的旧版本视频。",
+        "take": "模型迭代期内，早期访问的评测内容会因快速变更而失真，构建者在参考外部评测时应校验其测试时间戳与模型版本；同时官方承认当前版本在“品味”与“易用性”上仍有明确改进项，说明后续迭代会直接针对交互体验而非仅基准分数优化。",
+        "topics": [
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
