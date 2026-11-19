@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-19",
     "2026-11-18",
     "2026-11-17",
     "2026-11-16",
@@ -282,6 +283,28 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-19": {
+      "briefingIds": [
+        "rss-2026-11-19"
+      ],
+      "insightIds": [
+        "rss-2026-11-19-01-introducing-vercel-board",
+        "rss-2026-11-19-02-vercel-board-is-now-available",
+        "rss-2026-11-19-03-llm-gemini-038",
+        "rss-2026-11-19-04-research-acceleration-the-jagged-frontier",
+        "rss-2026-11-19-05-introducing-gemini-4-neon",
+        "rss-2026-11-19-06-how-openais-performance-factory-keeps-chatgpt-fast",
+        "rss-2026-11-19-07-quoting-daniel-stenberg",
+        "rss-2026-11-19-08-the-best-things-in-open-source-are-built-together",
+        "rss-2026-11-19-09-builder-theme-notions-founder-on-the-one-thing-your-ai-is-missing",
+        "rss-2026-11-19-10-builder-theme-thibault-sottiaux-on-how-is-62-sol-treating-you-today",
+        "rss-2026-11-19-11-builder-theme-sam-altman-on-so-fun-to-do-dealbook-with-my-friend-and-partner-of-11-years-gdb-t"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-18": {
       "briefingIds": [
         "rss-2026-11-18"

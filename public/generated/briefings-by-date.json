@@ -54392,5 +54392,238 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "briefings": [
+      {
+        "id": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-19",
+        "filePath": "2026-11-19.md",
+        "summaryTopline": "Introducing Vercel Board",
+        "insightIds": [
+          "rss-2026-11-19-01-introducing-vercel-board",
+          "rss-2026-11-19-02-vercel-board-is-now-available",
+          "rss-2026-11-19-03-llm-gemini-038",
+          "rss-2026-11-19-04-research-acceleration-the-jagged-frontier",
+          "rss-2026-11-19-05-introducing-gemini-4-neon",
+          "rss-2026-11-19-06-how-openais-performance-factory-keeps-chatgpt-fast",
+          "rss-2026-11-19-07-quoting-daniel-stenberg",
+          "rss-2026-11-19-08-the-best-things-in-open-source-are-built-together",
+          "rss-2026-11-19-09-builder-theme-notions-founder-on-the-one-thing-your-ai-is-missing",
+          "rss-2026-11-19-10-builder-theme-thibault-sottiaux-on-how-is-62-sol-treating-you-today",
+          "rss-2026-11-19-11-builder-theme-sam-altman-on-so-fun-to-do-dealbook-with-my-friend-and-partner-of-11-years-gdb-t"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-19-01-introducing-vercel-board",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/introducing-vercel-board",
+        "publishedDate": "2026-11-18",
+        "title": "Introducing Vercel Board",
+        "summary": "Vercel 推出 Board，一个面向多智能体协同的共享消息板原语，用于跟踪任务、委派、状态、日志与完成工作，已在其安全智能体集群和 v0 软件工厂中落地，后者当前自动合并超过 50% 的 PR。",
+        "take": "单智能体用 Markdown 文件记录工作已不够用，多智能体与子智能体的协调需要专门的任务状态与委派原语，Board 可作为该层基础设施。将共享消息板作为一等公民原语，可让智能体集群的日志、状态和交接可观测、可编排，直接提升自动化 PR 合并率。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-19-02-vercel-board-is-now-available",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/vercel-board-is-now-available",
+        "publishedDate": "2026-11-18",
+        "title": "Vercel Board is now available",
+        "summary": "Vercel推出实验性消息板Vercel Board，为智能体提供共享安全的任务协调与上下文保持空间，支持通过CLI或JS SDK接入，并与Slack、GitHub等工具双向同步。",
+        "take": "这是智能体协作基础设施的关键转变：将多智能体协调从临时脚本升级为可寻址、有权限控制的持久消息层。开发者可借此构建智能体蜂群和软件工厂，但需关注其实验性定位与跨渠道同步的可靠性。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-19-03-llm-gemini-038",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+        "publishedDate": "2026-11-18",
+        "title": "llm-gemini 0.38",
+        "summary": "llm-gemini 0.38 版本发布，配合 Google 推出 Gemini 4 Neon 模型，使 Gemini 4 系列（Carbon、Neon、Hydrogen）的定价层级因临时折扣与 12 月 1 日价格调整而变得更加复杂且难以横向比较。",
+        "take": "构建者在选型时需要自行建立成本模型，而非依赖官方定价页：按当前价格 Neon 的单位成本高于 Carbon，但折扣到期后各型号相对价格会翻转。建议在工具链中显式抽象模型标识与计价规则，避免硬编码单价。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-19-04-research-acceleration-the-jagged-frontier",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/research-acceleration-jagged-frontier",
+        "publishedDate": "2026-11-18",
+        "title": "Research acceleration: The jagged frontier",
+        "summary": "OpenAI通过内部基准测试量化了编码Agent对AI研究的加速效果，发现其性能呈现不均衡的“锯齿状前沿”，并据此评估递归自我改进的信号。",
+        "take": "编码Agent的实际提效高度依赖任务类型，存在明显的性能参差，因此不能假设其能力可线性泛化。构建者应在任务分发前做能力边界探测，并将Agent优先嵌入结构化、可验证的研发环节，而非全流程自动委托。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-05-introducing-gemini-4-neon",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "publishedDate": "2026-11-18",
+        "title": "Introducing Gemini 4 Neon",
+        "summary": "谷歌DeepMind发布Gemini 4 Neon模型，但提供的源内容片段为空，无法确认其具体架构、方法或能力细节。",
+        "take": "由于缺乏实质内容，无法提炼可操作的工程信号；建议在获得完整技术文档前，不要基于该标题做架构或工具链决策。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-06-how-openais-performance-factory-keeps-chatgpt-fast",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "publishedDate": "2026-11-19",
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "summary": "OpenAI构建了由Codex驱动的Performance Factory工作流系统，自动定位并修复ChatGPT的性能问题以维持其响应速度。",
+        "take": "这表明编码代理可被编排为持续性能优化的自动化流水线，将性能调优从人工被动排查转为代理主动发现与修复的闭环，为大规模服务的性能治理提供了可复用的工程范式。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-07-quoting-daniel-stenberg",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+        "publishedDate": "2026-11-18",
+        "title": "Quoting Daniel Stenberg",
+        "summary": "curl作者Daniel Stenberg指出，在AI代理将18.5万行C代码转写为34万行Rust的三周多时间里，真实curl项目合并了300多个提交，修复了200多个bug和若干漏洞，凸显代理重写版本与主动维护的上游代码之间持续拉大的差距。",
+        "take": "LLM代理生成的代码移植虽能快速扩张代码量，但其产物缺乏上游真实项目通过持续迭代积累的缺陷修复与安全补丁，存在同步滞后风险。工程团队应将代理重写定位为探索性产物而非维护替代，并建立与上游提交的持续对齐机制，防止克隆版本腐化。",
+        "topics": [
+          "Agents",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-08-the-best-things-in-open-source-are-built-together",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+        "publishedDate": "2026-11-19",
+        "title": "The best things in open source are built together",
+        "summary": "GitHub 推出 Replica 与开源无障碍框架（Open Source Accessibility Framework）两个新开源项目，旨在通过标准化协作工具与包容性设计基础设施降低开源社区参与门槛。",
+        "take": "将无障碍性从产品特性提升为可复用的框架级基础设施，意味着工具链与协作平台需要把包容性作为架构约束而非事后补丁。对构建者而言，这为社区贡献管线和 AI 辅助协作提供了可集成的规范化组件。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-09-builder-theme-notions-founder-on-the-one-thing-your-ai-is-missing",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=PGWvMrF4XIA",
+        "title": "Builder Theme: Notion’s Founder on the One Thing Your AI Is Missing",
+        "summary": "Everybody can start making their own software, no? In some sense, the original vision of the 60s, 70s, hippie generation of computing come to life, and that's actually why Notion w。",
+        "take": "这件事与 AI builders、podcast 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-10-builder-theme-thibault-sottiaux-on-how-is-62-sol-treating-you-today",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2123113107048501273",
+        "title": "Builder Theme: Thibault Sottiaux on How is 6.2 Sol treating you today?",
+        "summary": "OpenAI团队成员Thibault Sottiaux就代号为“6.2 Sol”的模型/系统向开发者社区征集使用体验反馈。",
+        "take": "此类反馈征集表明新版本模型已进入实际测试或部署阶段，构建者应密切关注社区反馈中暴露的能力边界变化与工作流适配问题，及时评估是否切换或调整现有管线。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-19-11-builder-theme-sam-altman-on-so-fun-to-do-dealbook-with-my-friend-and-partner-of-11-years-gdb-t",
+        "briefingId": "rss-2026-11-19",
+        "date": "2026-11-19",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2123103873166381287",
+        "title": "Builder Theme: Sam Altman on So fun to do DealBook with my friend and partner of 11 years, @gdb. T...",
+        "summary": "Sam Altman公开回顾Greg Brockman在OpenAI的角色演变：从早期每周编写100小时代码的工程师，转变为目前负责公司最难且最具影响力业务板块的领导者。",
+        "take": "这揭示了AI头部实验室的一种组织演进模式：核心创始人从直接的编码执行转向承担高杠杆、高难度的业务与架构决策。对构建者的启示是，随着AI系统复杂度上升，创始团队需要重新分配工程与领导职责，将技术判断力迁移到更高层的系统设计与组织决策中。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
