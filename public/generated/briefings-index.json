@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-20",
     "2026-11-19",
     "2026-11-18",
     "2026-11-17",
@@ -283,6 +284,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-20": {
+      "briefingIds": [
+        "rss-2026-11-20"
+      ],
+      "insightIds": [
+        "rss-2026-11-20-01-combatting-adversarial-distillation",
+        "rss-2026-11-20-02-explore-the-codex-security-plugin",
+        "rss-2026-11-20-03-quoting-levent-alpoge",
+        "rss-2026-11-20-04-token-fraud-is-here-and-its-bad-youtube",
+        "rss-2026-11-20-05-vercel-completes-isoiec-420012023-certification",
+        "rss-2026-11-20-06-agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+        "rss-2026-11-20-07-builder-theme-superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew",
+        "rss-2026-11-20-08-builder-theme-thariq-on",
+        "rss-2026-11-20-09-builder-theme-thibault-sottiaux-on-were-also-working-on-a-new-mobile-experience-for-chatgpt-its-easie"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-19": {
       "briefingIds": [
         "rss-2026-11-19"

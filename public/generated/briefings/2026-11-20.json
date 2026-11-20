@@ -1,0 +1,196 @@
+{
+  "date": "2026-11-20",
+  "briefings": [
+    {
+      "id": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-20",
+      "filePath": "2026-11-20.md",
+      "summaryTopline": "Combatting adversarial distillation",
+      "insightIds": [
+        "rss-2026-11-20-01-combatting-adversarial-distillation",
+        "rss-2026-11-20-02-explore-the-codex-security-plugin",
+        "rss-2026-11-20-03-quoting-levent-alpoge",
+        "rss-2026-11-20-04-token-fraud-is-here-and-its-bad-youtube",
+        "rss-2026-11-20-05-vercel-completes-isoiec-420012023-certification",
+        "rss-2026-11-20-06-agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+        "rss-2026-11-20-07-builder-theme-superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew",
+        "rss-2026-11-20-08-builder-theme-thariq-on",
+        "rss-2026-11-20-09-builder-theme-thibault-sottiaux-on-were-also-working-on-a-new-mobile-experience-for-chatgpt-its-easie"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-20-01-combatting-adversarial-distillation",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation",
+      "publishedDate": "2026-11-20",
+      "title": "Combatting adversarial distillation",
+      "summary": "OpenAI披露其针对对抗性蒸馏采用模型训练、安全护栏、检测与执法相结合的分层防御方法，以阻止能力提取。",
+      "take": "防御对抗性蒸馏需在训练阶段注入鲁棒性、推理阶段部署输出检测与访问控制，形成多层防线而非单一过滤。对构建者而言，模型能力保护应作为架构设计的一等约束，而非事后补丁。",
+      "topics": [
+        "Security"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-20-02-explore-the-codex-security-plugin",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "publishedDate": "2026-11-19",
+      "title": "Explore the Codex Security Plugin",
+      "summary": "OpenAI发布Codex安全插件演示，展示从初始化到结果审查的完整安全工作流。",
+      "take": "该插件将安全审查嵌入Codex工作流，开发者可在代码生成流程中直接触发漏洞检测，减少工具切换成本。工程团队应评估将安全检查左移集成到AI辅助编码环节，而非作为独立事后环节。",
+      "topics": [
+        "Coding Agents",
+        "Evals",
+        "Security",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-20-03-quoting-levent-alpoge",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "publishedDate": "2026-11-20",
+      "title": "Quoting Levent Alpöge",
+      "summary": "数学家Levent Alpöge宣称与Claude协作发现并完成了黎曼猜想及广义黎曼猜想的无假设形式化证明，Claude在收尾阶段贡献显著超出人类。",
+      "take": "若属实，这标志着LLM已从辅助工具跃升为能主导高难度数学证明与形式化验证的协作主体，验证了「人机协同推导+自动形式化」的新研究范式。工程上需关注模型在长程逻辑链、定理证明器接口（如Lean）集成及可复现形式化验证流程上的能力边界。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-20-04-token-fraud-is-here-and-its-bad-youtube",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "publishedDate": "2026-11-20",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "summary": "ChatPRD创始人Claire Vo披露其AI产品遭遇大规模token欺诈：外部团伙通过循环注册免费试用和促销码，经隧道接入其Agent，将免费AI额度用于构建Roblox/Fortnite地图等商业转售业务。",
+      "take": "Agent产品的免费额度正成为可被规模化套利的基础设施，启动期必须按账号、IP、行为模式做多维配额控制，并将Agent的后端调用与试用身份强绑定。欺诈动机已从个人白嫖转向商业转售，防御需按对抗性租户设计而非普通用户限流。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-20-05-vercel-completes-isoiec-420012023-certification",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification",
+      "publishedDate": "2026-11-20",
+      "title": "Vercel completes ISO/IEC 42001:2023 certification",
+      "summary": "Vercel 通过 ISO/IEC 42001:2023 认证，其 AI 管理体系覆盖 AI Gateway、Vercel Agent、v0 及开源 AI 框架等核心产品及背后的流程与人员。",
+      "take": "对构建者而言，该认证为在 Vercel 上部署 Agent 提供了合规背书，降低了企业级 AI 应用的治理审查成本。这标志着 AI 基础设施平台正将 Agent 治理纳入标准化管理体系，而非事后补丁。",
+      "topics": [
+        "Agents",
+        "Security",
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-20-06-agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+      "publishedDate": "2026-11-19",
+      "title": "Agents can now find Vercel CLI commands by describing the task",
+      "summary": "Vercel 在 CLI 中新增 `vercel help search` 命令，允许编码代理用自然语言描述任务来检索匹配命令，并支持 `--with-help` 返回首个结果的帮助页、`--json` 结构化输出，以及在匹配 API 端点时返回带必填参数占位符的 `vercel api` 调用。",
+      "take": "CLI 从静态文档转为可被代理检索的接口，代理无需记忆命令与 API 路径即可确定性地发现调用方式。`--with-help` 与 `--json` 将命令发现与参数获取合并为单次调用，减少代理的猜测与多轮试错。这为工具链设计提供了范式：把帮助系统做成机器可读的搜索 API，而非仅面向人类的手册。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-20-07-builder-theme-superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=_wLzJINt9iQ",
+      "title": "Builder Theme: Superintelligence Needs the Physical World with CEO and Co-Founder of Arda Bob McGrew",
+      "summary": "Arda CEO Bob McGrew提出，仅靠数字世界的AI进展不足以实现超级智能，必须将AI能力延伸至物理世界，通过机器人、自动驾驶等实体系统闭环来突破当前数字优化的瓶颈。",
+      "take": "AI构建者应将架构重心从纯软件/数字工作流转向物理世界交互层，关注感知-决策-执行的实时闭环与硬件协同；物理世界的反馈信号将成为下一阶段模型能力跃迁的关键数据来源。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-20-08-builder-theme-thariq-on",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2123457177419760100",
+      "title": "Builder Theme: Thariq on",
+      "summary": "Thariq 在 X 上发布了一条以“Builder Theme”为主题的帖子，但提供的链接内容无法获取，具体技术机制与架构细节不明。",
+      "take": "源材料信息不足，无法提取可操作的工程信号；建议直接访问原链接获取完整上下文后再评估其技术价值。",
+      "topics": [
+        "Evals"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-20-09-builder-theme-thibault-sottiaux-on-were-also-working-on-a-new-mobile-experience-for-chatgpt-its-easie",
+      "briefingId": "rss-2026-11-20",
+      "date": "2026-11-20",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2123557171321561133",
+      "title": "Builder Theme: Thibault Sottiaux on We’re also working on a new mobile experience for ChatGPT! It’s easie...",
+      "summary": "OpenAI产品负责人Thibault Sottiaux宣布为ChatGPT推出新版移动端界面，为Pro用户及拥有或可创建dot的用户提供独立dot标签页，并允许将Codex、Projects、Images等功能固定到标签栏，用户可在设置中随时开关。",
+      "take": "ChatGPT移动端正从对话式界面转向以功能标签和个性化中枢（dot）为核心的应用化架构，Codex等编码能力被提升至一级入口。对构建者而言，这意味着移动端Agent工作流的入口正在被重新设计，需关注dot作为个人上下文载体的扩展潜力。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
