@@ -54821,5 +54821,137 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-21": {
+    "date": "2026-11-21",
+    "briefings": [
+      {
+        "id": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-21",
+        "filePath": "2026-11-21.md",
+        "summaryTopline": "Hebbia sees improvements in financial research with GPT-6 Astra",
+        "insightIds": [
+          "rss-2026-11-21-01-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra",
+          "rss-2026-11-21-02-how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+          "rss-2026-11-21-03-llm-gemini-0381",
+          "rss-2026-11-21-04-builder-theme-scaling-linears-gtm-to-100m-arr-cristina-cordova-coo",
+          "rss-2026-11-21-05-builder-theme-thibault-sottiaux-on-weve-been-messing-around-a-bit-and-inadvertently-created-an-experien",
+          "rss-2026-11-21-06-builder-theme-aaron-levie-on-going-to-be-a-big-day-in-math"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-21-01-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+        "publishedDate": "2026-11-20",
+        "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+        "summary": "Hebbia在预发布评估中测试了GPT-6 Astra用于金融研究，在来源覆盖率、引用相关性和呈现质量方面均有所提升。",
+        "take": "GPT-6级别的模型能力可能降低RAG系统对复杂检索编排的依赖，提升引用准确性和多源覆盖将成为评估AI研究代理的新基线指标。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Retrieval"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-21-02-how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The latest research from Google",
+        "sourceUrl": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+        "publishedDate": "2026-11-20",
+        "title": "How Google Duplex evolved to also call businesses for you in Gemini",
+        "summary": "Google将Duplex从基于模板的封闭任务系统重构为依托Gemini生成式AI的通用电话代理，使其能代表用户致电本地商家完成预约、询价等开放式任务。",
+        "take": "架构重心从预设对话脚本转向LLM驱动的实时语音理解与生成，使语音代理具备处理非结构化、多轮商业对话的泛化能力。构建者应关注电话代理从窄域自动化向通用任务执行的范式迁移，以及由此带来的延迟、可靠性与权限边界设计挑战。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-21-03-llm-gemini-0381",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+        "publishedDate": "2026-11-20",
+        "title": "llm-gemini 0.38.1",
+        "summary": "llm-gemini 0.38.1 修复了插件遗漏的 Gemini 4 Hydrogen 与 Neon 模型专属的 xhigh 推理等级参数支持，使该等级可被正确调用。",
+        "take": "推理等级是直接影响输出token消耗与成本的关键API参数，需针对不同模型版本逐一核对可用等级集合；xhigh等级可使Hydrogen的输出token从5,311增至31,477，成本从3.99美分升至23.61美分但质量显著提升，说明推理预算应按任务质量需求而非默认值进行显式配置。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-21-04-builder-theme-scaling-linears-gtm-to-100m-arr-cristina-cordova-coo",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Latent Space",
+        "sourceUrl": "https://www.youtube.com/watch?v=x0VSm6IjcDQ",
+        "title": "Builder Theme: Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
+        "summary": "Linear COO Cristina Cordova 阐述了其如何将 GTM 体系扩展至 1 亿美元 ARR，核心在于主动宣告“手工问题追踪已死”，并以 AI 原生工作流重构产品定位，而非因既有业务而自我掣肘。",
+        "take": "构建 AI 原生工具时，最大的组织阻力往往来自对旧业务模式的自我颠覆；团队应尽早明确哪些旧范式（如手动追踪）将被淘汰，并据此重构产品与 GTM 叙事。规模较小的公司反而具备“自我革命”的结构性优势，可将此转化为对抗大厂既有收入依赖的竞争壁垒。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-21-05-builder-theme-thibault-sottiaux-on-weve-been-messing-around-a-bit-and-inadvertently-created-an-experien",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2123997735326232775",
+        "title": "Builder Theme: Thibault Sottiaux on We’ve been messing around a bit and inadvertently created an experien...",
+        "summary": "Thibault Sottiaux 透露其团队在内部试验中无意间构建出一个交互体验，因趣味性过强导致成员沉迷使用而非投入正常工作。",
+        "take": "该信号表明高度沉浸式的交互范式可能重塑内部工具的使用行为，甚至影响团队生产效率的度量基准。对构建者而言，需在设计 AI 交互时显式评估“过度趣味性”带来的注意力占用与生产力权衡。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-21-06-builder-theme-aaron-levie-on-going-to-be-a-big-day-in-math",
+        "briefingId": "rss-2026-11-21",
+        "date": "2026-11-21",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Aaron Levie",
+        "sourceUrl": "https://x.com/levie/status/2123792233535332448",
+        "title": "Builder Theme: Aaron Levie on Going to be a big day in math",
+        "summary": "Aaron Levie仅以“数学领域将迎来重大日子”预告某未具名的数学相关发布，未提供任何具体技术细节、架构或产品信息。",
+        "take": "该推文不含可提取的工程信号，无法据此判断任何工具链、工作流或代理能力的变化。建议等待具体发布内容后再评估其架构或范式影响。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

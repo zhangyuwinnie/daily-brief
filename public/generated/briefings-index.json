@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-21",
     "2026-11-20",
     "2026-11-19",
     "2026-11-18",
@@ -284,6 +285,23 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-21": {
+      "briefingIds": [
+        "rss-2026-11-21"
+      ],
+      "insightIds": [
+        "rss-2026-11-21-01-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra",
+        "rss-2026-11-21-02-how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+        "rss-2026-11-21-03-llm-gemini-0381",
+        "rss-2026-11-21-04-builder-theme-scaling-linears-gtm-to-100m-arr-cristina-cordova-coo",
+        "rss-2026-11-21-05-builder-theme-thibault-sottiaux-on-weve-been-messing-around-a-bit-and-inadvertently-created-an-experien",
+        "rss-2026-11-21-06-builder-theme-aaron-levie-on-going-to-be-a-big-day-in-math"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-20": {
       "briefingIds": [
         "rss-2026-11-20"
