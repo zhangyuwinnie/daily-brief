@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-22",
     "2026-11-21",
     "2026-11-20",
     "2026-11-19",
@@ -285,6 +286,21 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-22": {
+      "briefingIds": [
+        "rss-2026-11-22"
+      ],
+      "insightIds": [
+        "rss-2026-11-22-01-muru",
+        "rss-2026-11-22-02-builder-theme-powering-ai-driven-drug-discovery-with-president-of-isomorphic-labs-max-jaderberg",
+        "rss-2026-11-22-03-builder-theme-thibault-sottiaux-on-team-is-already-preparing-another-big-update-but-how-are-things-sinc",
+        "rss-2026-11-22-04-builder-theme-garry-tan-on-given-ai-and-all-the-gta-vi-hate-how-long-before-a-vibe-coded-hobbyi"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-21": {
       "briefingIds": [
         "rss-2026-11-21"

@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-22",
+  "briefings": [
+    {
+      "id": "rss-2026-11-22",
+      "date": "2026-11-22",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-22",
+      "filePath": "2026-11-22.md",
+      "summaryTopline": "Muru",
+      "insightIds": [
+        "rss-2026-11-22-01-muru",
+        "rss-2026-11-22-02-builder-theme-powering-ai-driven-drug-discovery-with-president-of-isomorphic-labs-max-jaderberg",
+        "rss-2026-11-22-03-builder-theme-thibault-sottiaux-on-team-is-already-preparing-another-big-update-but-how-are-things-sinc",
+        "rss-2026-11-22-04-builder-theme-garry-tan-on-given-ai-and-all-the-gta-vi-hate-how-long-before-a-vibe-coded-hobbyi"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-22-01-muru",
+      "briefingId": "rss-2026-11-22",
+      "date": "2026-11-22",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/21/muru/",
+      "publishedDate": "2026-11-21",
+      "title": "Muru",
+      "summary": "Graham Dumpleton（mod_wsgi 作者）发布 AI 辅助开发的 Rust 服务器 Muru，旨在为开发与生产环境提供运行 ASGI 和 WSGI Python 应用的最佳工具，并以系列博客同步记录其架构设计与开发过程。",
+      "take": "Rust 作为高性能运行时宿主、Python 作为应用层的组合，正在成为替代传统 WSGI 容器的可行路径。同时，将开发日志作为工程产出一并发布，使架构决策过程本身可被复用与审查，这一做法值得借鉴。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-22-02-builder-theme-powering-ai-driven-drug-discovery-with-president-of-isomorphic-labs-max-jaderberg",
+      "briefingId": "rss-2026-11-22",
+      "date": "2026-11-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "No Priors",
+      "sourceUrl": "https://www.youtube.com/watch?v=IiKf3BgBezE",
+      "title": "Builder Theme: Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg",
+      "summary": "Isomorphic Labs总裁Max Jaderberg指出，传统药物研发因依赖经验性试错、直到临床试验阶段才暴露毒性等问题而失败率高，其核心思路是将药物发现全流程迁移至计算机，以在进入患者之前大幅提升对疾病生物学的预测性理解。",
+      "take": "这标志着药物发现正从湿实验驱动的经验试错，转向以计算模拟与预测模型为核心的in silico（计算机模拟）范式。对AI构建者而言，关键工程挑战在于构建能提前预测毒性与疗效的高保真度生物学预测模型，从而把验证成本从临床阶段前移到计算阶段。疾病生物学的预测性理解能否出现阶跃式提升，是未来五年衡量该范式成败的核心指标。",
+      "topics": [],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-22-03-builder-theme-thibault-sottiaux-on-team-is-already-preparing-another-big-update-but-how-are-things-sinc",
+      "briefingId": "rss-2026-11-22",
+      "date": "2026-11-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thibault Sottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2124322968499282388",
+      "title": "Builder Theme: Thibault Sottiaux on Team is already preparing another big update, but how are things sinc...",
+      "summary": "OpenAI ChatGPT/Codex桌面应用团队在昨日更新后已着手筹备下一次重大更新，并通过推文向开发者征集仍待修复的问题反馈。",
+      "take": "Codex桌面端进入高频迭代节奏，工程团队应关注API与本地工具链的稳定性回归，及时上报阻塞性缺陷以影响下一版本优先级。这表明Agentic编码工作流正从模型能力转向桌面端集成与反馈闭环的竞争。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-22-04-builder-theme-garry-tan-on-given-ai-and-all-the-gta-vi-hate-how-long-before-a-vibe-coded-hobbyi",
+      "briefingId": "rss-2026-11-22",
+      "date": "2026-11-22",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Garry Tan",
+      "sourceUrl": "https://x.com/garrytan/status/2124154280450134231",
+      "title": "Builder Theme: Garry Tan on Given AI and all the GTA VI hate, how long before a vibe coded hobbyi...",
+      "summary": "Garry Tan 提出，借助 Given AI 等工具和充足 token，玩家或爱好者可在 1-2 个月内用 vibe coding 方式复刻 GTA VI 式开放世界游戏，并移除原作被诟病的设计缺陷。",
+      "take": "核心信号是 AI 辅助编程正将大型商业游戏的复刻门槛降至个人开发者级别，token 预算成为新的产能瓶颈而非人力。工程上应关注 vibe coding 在复杂系统级项目（如开放世界引擎、玩法逻辑）中的可行边界，以及模块化资产与代码生成流水线的复用价值。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
