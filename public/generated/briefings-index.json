@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-24",
     "2026-11-23",
     "2026-11-22",
     "2026-11-21",
@@ -287,6 +288,26 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-24": {
+      "briefingIds": [
+        "rss-2026-11-24"
+      ],
+      "insightIds": [
+        "rss-2026-11-24-01-agents-can-now-manage-ai-gateway-through-vercel-mcp",
+        "rss-2026-11-24-02-glm-54-toward-generalized-coding-with-our-first-loop-transformer",
+        "rss-2026-11-24-03-how-ifood-scales-coding-agents-across-15000-repositories",
+        "rss-2026-11-24-04-all-sandbox-runtimes-now-use-vercel-managed-images",
+        "rss-2026-11-24-05-datasette-agent-07a1",
+        "rss-2026-11-24-06-microduck-obstacle-avoidance-a-sim2real-workflow-with-isaac-lab-and-newton",
+        "rss-2026-11-24-07-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+        "rss-2026-11-24-08-builder-theme-sam-altman-on-jensen",
+        "rss-2026-11-24-09-builder-theme-thariq-on-they-cut-the-scene-in-hitchhikers-guide-where-the-computer-follows-4"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-23": {
       "briefingIds": [
         "rss-2026-11-23"

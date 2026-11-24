@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-24",
+  "briefings": [
+    {
+      "id": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "title": "Daily Briefing: 2026-11-24",
+      "filePath": "2026-11-24.md",
+      "summaryTopline": "Agents can now manage AI Gateway through Vercel MCP",
+      "insightIds": [
+        "rss-2026-11-24-01-agents-can-now-manage-ai-gateway-through-vercel-mcp",
+        "rss-2026-11-24-02-glm-54-toward-generalized-coding-with-our-first-loop-transformer",
+        "rss-2026-11-24-03-how-ifood-scales-coding-agents-across-15000-repositories",
+        "rss-2026-11-24-04-all-sandbox-runtimes-now-use-vercel-managed-images",
+        "rss-2026-11-24-05-datasette-agent-07a1",
+        "rss-2026-11-24-06-microduck-obstacle-avoidance-a-sim2real-workflow-with-isaac-lab-and-newton",
+        "rss-2026-11-24-07-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+        "rss-2026-11-24-08-builder-theme-sam-altman-on-jensen",
+        "rss-2026-11-24-09-builder-theme-thariq-on-they-cut-the-scene-in-hitchhikers-guide-where-the-computer-follows-4"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "rss-2026-11-24-01-agents-can-now-manage-ai-gateway-through-vercel-mcp",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/agents-can-now-manage-ai-gateway-through-vercel-mcp",
+      "publishedDate": "2026-11-24",
+      "title": "Agents can now manage AI Gateway through Vercel MCP",
+      "summary": "Vercel 通过其 MCP 接口让 AI 代理以自然语言直接管理 AI Gateway，实现虚拟模型创建、路由规则配置与团队预算设置，应用可通过固定模型 ID（如 vmc/coding-agent）解耦底层模型配置。",
+      "take": "将模型配置从代码中抽离为可动态管理的网关资源，使代理能在不重新部署客户端的情况下切换底层模型或参数。工程上这意味着多模型路由、成本控制和配置变更可纳入代理自主运维闭环，降低客户端与模型版本的耦合度。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-24-02-glm-54-toward-generalized-coding-with-our-first-loop-transformer",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "publishedDate": "2026-11-23",
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "summary": "中国AI实验室Z.ai发布GLM-5.4，这是其首个采用循环Transformer架构的模型：通过一组权重共享层进行多次迭代来精细化隐藏状态，从而在不增加参数量的情况下获得更深的网络。",
+      "take": "循环Transformer正成为在固定参数预算下提升推理深度的新范式（一周内Thinking Machines Lab的Inkling 2 Mini也采用了该架构）。构建者应关注其通过迭代精炼隐藏状态换取更强推理能力的机制，这可能改变模型规模扩展与智能体推理能力的权衡方式。",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-24-03-how-ifood-scales-coding-agents-across-15000-repositories",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/business/customer-stories/ifood",
+      "publishedDate": "2026-11-24",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "summary": "iFood 基于 OpenAI 模型构建编码智能体，并在 15,000 个代码仓库上规模化部署，用于自动化代码审查、缺陷修复与工程任务处理。",
+      "take": "核心工程信号在于：编码智能体的规模化瓶颈已从单点模型能力转向跨海量仓库的上下文注入、权限隔离与工作流编排。构建者需优先设计仓库级的检索与索引层，以及智能体与 CI/CD 的确定性集成接口，而非依赖模型端到端自主执行。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Retrieval",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": true
+    },
+    {
+      "id": "rss-2026-11-24-04-all-sandbox-runtimes-now-use-vercel-managed-images",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Vercel News",
+      "sourceUrl": "https://vercel.com/changelog/all-sandbox-runtimes-now-use-vercel-managed-images",
+      "publishedDate": "2026-11-24",
+      "title": "All Sandbox runtimes now use Vercel Managed Images",
+      "summary": "Vercel 将所有 Sandbox 运行时迁移至基于开源 vercel/sandbox 仓库、经 Vercel Container Registry 分发的托管镜像（VMI），统一提供 64GB 存储，并通过每日构建的 universal 镜像内置 Node.js、Python、Claude Code 等编码代理。",
+      "take": "沙箱运行时标准化为可复现的镜像制品，开发者可用 digest 固定环境、用滚动标签跟随代理工具链更新，标志着代理执行环境正从临时容器转向版本化的基础设施依赖。编码代理（如 Claude Code）被预置进基础镜像，意味着代理能力正下沉为运行时默认层而非外挂工具。",
+      "topics": [
+        "Coding Agents",
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-24-05-datasette-agent-07a1",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+      "publishedDate": "2026-11-24",
+      "title": "datasette-agent 0.7a1",
+      "summary": "Datasette Agent 0.7a1 改进了 iframe 侧边面板的导航机制，通过支持 fragment hash 实现与其他 Datasette 插件状态变化的深度集成。",
+      "take": "Agent 界面与宿主应用的状态同步可借助 URL fragment 而非专有协议实现松耦合集成；插件在用户交互时更新 fragment hash 即可让 Agent 感知外部状态变化，这为构建可组合的 Agent 侧边栏提供了低成本范式。",
+      "topics": [
+        "Agents",
+        "RAG"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-24-06-microduck-obstacle-avoidance-a-sim2real-workflow-with-isaac-lab-and-newton",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "Hugging Face - Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "publishedDate": "2026-11-24",
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "summary": "NVIDIA 利用 Isaac Lab 与 Newton 物理引擎，为微型机器人 Microduck 构建了从仿真训练到真机部署的障碍物规避 Sim2Real 工作流。",
+      "take": "该工作流验证了基于物理引擎的仿真环境可直接训练出可迁移至真实硬件的导航策略，降低了对真实数据采集的依赖。构建者应关注 Isaac Lab 训练管线与 Newton 引擎的耦合方式，以便复用到自有机器人的端到端策略训练中。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-24-07-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "RSS Briefing",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "publishedDate": "2026-11-24",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "summary": "OpenAI报告称GPT-6模型通过推理与代码生成直接设计蛋白质结构与序列，实验室测试在五个靶点上观察到结合证据。",
+      "take": "推理模型正从文本生成扩展到科学设计领域，开发者可将蛋白质设计转化为代码生成与推理任务，而非依赖专用结构预测工具。这标志着通用推理模型开始具备领域内自主设计能力，值得关注其在生物工程工具链中的集成方式。",
+      "topics": [
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-24-08-builder-theme-sam-altman-on-jensen",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Sam Altman",
+      "sourceUrl": "https://x.com/sama/status/2124887162206495228",
+      "title": "Builder Theme: Sam Altman on Jensen!",
+      "summary": "Sam Altman在X上仅发布“Jensen!”一词，向NVIDIA CEO黄仁勋致意，未附任何技术细节或上下文。",
+      "take": "该推文不含可提取的工程信号，无法据此推断架构变更、工具链更新或智能体能力演进。建议将此类缺乏实质内容的互动视为噪音过滤，不作为构建决策依据。",
+      "topics": [
+        "Agents",
+        "Tooling"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    },
+    {
+      "id": "rss-2026-11-24-09-builder-theme-thariq-on-they-cut-the-scene-in-hitchhikers-guide-where-the-computer-follows-4",
+      "briefingId": "rss-2026-11-24",
+      "date": "2026-11-24",
+      "sourceType": "rss",
+      "sourceLabel": "Follow Builders",
+      "sourceName": "Thariq",
+      "sourceUrl": "https://x.com/trq212/status/2124767804247379968",
+      "title": "Builder Theme: Thariq on they cut the scene in Hitchhiker's Guide where the computer follows 4...",
+      "summary": "Thariq指出，《银河系漫游指南》删掉了电脑在算出42后用5亿页Lean代码跟随验证的场景，讽刺了当前AI生成形式化证明时冗长且不可读的输出机制。",
+      "take": "形式化验证（如Lean）对AI而言仍是token密集型任务，生成而非精简证明是当前默认范式。构建者应关注将AI证明生成与可读性抽象、证明压缩结合的工具链，否则输出规模会超出人类审查能力。",
+      "topics": [
+        "Tooling",
+        "Learning Resource"
+      ],
+      "entities": [],
+      "isTopSignal": false
+    }
+  ]
+}
