@@ -55043,5 +55043,218 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "briefings": [
+      {
+        "id": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-23",
+        "filePath": "2026-11-23.md",
+        "summaryTopline": "OpenAI and Cisco introduce Shirudo",
+        "insightIds": [
+          "rss-2026-11-23-01-openai-and-cisco-introduce-shirudo",
+          "rss-2026-11-23-02-connected-intelligence-for-in-house-legal",
+          "rss-2026-11-23-03-finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+          "rss-2026-11-23-04-ladybirds-first-alpha-release",
+          "rss-2026-11-23-05-datasette-charts-01a0",
+          "rss-2026-11-23-06-how-to-build-and-maintain-an-agentic-evaluation",
+          "rss-2026-11-23-07-introducing-audited-zdr-on-ai-gateway",
+          "rss-2026-11-23-08-builder-theme-a-new-vision-for-human-work-after-automation",
+          "rss-2026-11-23-09-builder-theme-sam-altman-on-i-believe-frontier-model-developers-should-jointly-endeavour-to-esta",
+          "rss-2026-11-23-10-builder-theme-guillermo-rauch-on-this-aged-extremely-well-theres-a-tweet-out-there-will-likely-get"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-23-01-openai-and-cisco-introduce-shirudo",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/introducing-shirudo",
+        "publishedDate": "2026-11-23",
+        "title": "OpenAI and Cisco introduce Shirudo",
+        "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.。",
+        "take": "这件事与 OpenAI 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-23-02-connected-intelligence-for-in-house-legal",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+        "publishedDate": "2026-11-23",
+        "title": "Connected intelligence for in-house legal",
+        "summary": "OpenAI联合LECG与Cooley探讨内部法务团队如何利用AI连接业务上下文、构建可复用工作流并提升外部律师协作效率。",
+        "take": "核心工程启示在于将业务上下文作为AI工作流的输入层，通过可复用工作流模板替代一次性提示，实现法务流程的标准化编排。这标志着AI应用从单点问答转向上下文感知的流程自动化范式。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-23-03-finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Google DeepMind News",
+        "sourceUrl": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "publishedDate": "2026-11-23",
+        "title": "Finding faster quantum algorithms with agents and formal verification",
+        "summary": "Google DeepMind利用智能体团队结合形式化验证方法，自动搜索并优化了面向聚变与化学模拟的量子算法，提升了算法效率。",
+        "take": "将多智能体协作与形式化验证闭环引入算法发现流程，可显著降低对人工直觉的依赖并保证正确性；这一模式可迁移至更广泛的科学计算与代码生成场景，标志着AI辅助算法设计从启发式搜索转向可验证的自动化管线。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-23-04-ladybirds-first-alpha-release",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/23/ladybird/",
+        "publishedDate": "2026-11-23",
+        "title": "Ladybird's first alpha release",
+        "summary": "Ladybird 项目发布首个 alpha 版本，这是一个从零开始实现的浏览器，包含自研的 HTML 解析、CSS 引擎、布局、JavaScript 和 WebAssembly，仅依赖 HarfBuzz、Skia、ffmpeg 和 SQLite 等少数外部组件，现可在 macOS 和 Linux 上直接安装而无需自行编译。",
+        "take": "自研浏览器核心组件为开发者提供了完全可控的渲染与脚本执行栈，可作为研究浏览器架构或构建定制化 Web 运行时的替代基座；其轻量 UI 与快速体验表明，从底层重写而非依赖 Chromium 的路径在工程上可行，值得关注其后续对现代 Web 标准的覆盖进度。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-05-datasette-charts-01a0",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
+        "publishedDate": "2026-11-23",
+        "title": "datasette-charts 0.1a0",
+        "summary": "Simon Willison 使用 Claude Fable 5.2 快速构建了 Datasette 图表插件 datasette-charts 0.1a0，该插件基于内置的 D3、Observable Plot 与 topojson-client，针对任意表或 SQL 查询结果，通过启发式规则自动匹配并生成可视化建议缩略图与可编辑图表。",
+        "take": "借助 LLM 从原型到插件的快速交付，验证了将渲染库与启发式匹配逻辑解耦、再交由模型生成粘合代码的工程路径。对 AI 构建者而言，这意味着可以将领域内稳定的可视化与数据处理原语沉淀为工具，让模型负责组合与生成，从而极大压缩从想法到可用插件的迭代周期。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-06-how-to-build-and-maintain-an-agentic-evaluation",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/agentic-evals",
+        "publishedDate": "2026-11-23",
+        "title": "How to build and maintain an agentic evaluation",
+        "summary": "Hugging Face发布博客指南，系统阐述如何构建并持续维护agentic评测体系，聚焦于用可执行任务与环境交互来度量多步Agent行为而非单次输出。",
+        "take": "Agent评测的核心难点在于非确定性轨迹与长周期任务的稳定性，需将评测视为可版本化的工程流水线：固定任务环境、记录完整轨迹、分层打分（目标达成/过程合规/效率）。 builders应把评测集当作持续迭代的测试套件，随工具与模型变更做回归，避免用静态基准误判Agent真实能力。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling",
+          "Learning Resource"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-07-introducing-audited-zdr-on-ai-gateway",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway",
+        "publishedDate": "2026-11-23",
+        "title": "Introducing Audited ZDR on AI Gateway",
+        "summary": "Vercel在AI Gateway上推出Audited ZDR机制，由独立安全公司针对推理供应商的代码、基础设施和实时流量验证其零数据保留声明，并公开发布审计报告，Baseten、Modal和Wafer为首批参与审计的合作伙伴。",
+        "take": "推理层的数据保留承诺从供应商自述升级为可外部验证的审计凭证，为处理源码、客户记录和受监管数据的Agent工作流提供了可依赖的合规基线。构建者应将Audited ZDR纳入推理供应商选型标准，并据此重新评估敏感数据在RAG与Agent链路中的流转边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "RAG",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-08-builder-theme-a-new-vision-for-human-work-after-automation",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "AI & I by Every",
+        "sourceUrl": "https://www.youtube.com/watch?v=WstNofgQF5Q",
+        "title": "Builder Theme: A New Vision for Human Work After Automation",
+        "summary": "在Every举办的首届V.C.S.S.大会上，Every CEO Dan Shipper基于季度客户调研数据，发布了“Builder Theme”框架，提出自动化之后人类工作应以“构建者”角色为核心的新愿景。",
+        "take": "这标志着开发者工作流从执行任务转向定义问题、编排AI系统与验证结果。工程团队应重新设计角色分工，将AI作为默认执行层，人类专注架构决策与质量把关。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-09-builder-theme-sam-altman-on-i-believe-frontier-model-developers-should-jointly-endeavour-to-esta",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2124551883130114403",
+        "title": "Builder Theme: Sam Altman on \"I believe frontier model developers should jointly endeavour to esta...",
+        "summary": "Sam Altman提议前沿模型开发者应在模型首次使用前共同建立共享评估规范、红队安全案例和透明度标准，并基于困惑度等可跨实验室追踪的指标设定共同开发上限，直到AI行为监测能力达到具体里程碑（如CoT监控器的后继者）后方可突破。",
+        "take": "这标志着AI安全治理从各自为政转向可量化、可验证的行业协同标准，开发者需提前将评测指标与监测里程碑纳入模型发布流程设计。工程团队应关注困惑度等可跨实验室对比的度量体系，并将其作为模型迭代的硬性发布门控。",
+        "topics": [
+          "Evals",
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-23-10-builder-theme-guillermo-rauch-on-this-aged-extremely-well-theres-a-tweet-out-there-will-likely-get",
+        "briefingId": "rss-2026-11-23",
+        "date": "2026-11-23",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Guillermo Rauch",
+        "sourceUrl": "https://x.com/rauchg/status/2124595496849445079",
+        "title": "Builder Theme: Guillermo Rauch on This aged extremely well. There's a tweet out there (will likely get...",
+        "summary": "Vercel CEO Guillermo Rauch 指出，所谓“免费”的隐身模型与 ZDR 服务实质上是工业级数据外泄通道，可能将客户数据、代码与机密传输至境外国家项目，而 Vercel AI Gateway 在未采用此类捷径的情况下积累了真实 token 规模。",
+        "take": "选择推理供应商时，应将数据流向与司法管辖归属视为与模型能力同等重要的架构约束，免费或“隐身”模型可能以数据主权为代价。构建 Agent 与 AI 工作流时，应优先通过可审计的网关层统一管控模型调用与数据驻留，避免直接接入来源不明的推理端点。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }

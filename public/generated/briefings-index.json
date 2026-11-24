@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-23",
     "2026-11-22",
     "2026-11-21",
     "2026-11-20",
@@ -286,6 +287,27 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-23": {
+      "briefingIds": [
+        "rss-2026-11-23"
+      ],
+      "insightIds": [
+        "rss-2026-11-23-01-openai-and-cisco-introduce-shirudo",
+        "rss-2026-11-23-02-connected-intelligence-for-in-house-legal",
+        "rss-2026-11-23-03-finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+        "rss-2026-11-23-04-ladybirds-first-alpha-release",
+        "rss-2026-11-23-05-datasette-charts-01a0",
+        "rss-2026-11-23-06-how-to-build-and-maintain-an-agentic-evaluation",
+        "rss-2026-11-23-07-introducing-audited-zdr-on-ai-gateway",
+        "rss-2026-11-23-08-builder-theme-a-new-vision-for-human-work-after-automation",
+        "rss-2026-11-23-09-builder-theme-sam-altman-on-i-believe-frontier-model-developers-should-jointly-endeavour-to-esta",
+        "rss-2026-11-23-10-builder-theme-guillermo-rauch-on-this-aged-extremely-well-theres-a-tweet-out-there-will-likely-get"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-22": {
       "briefingIds": [
         "rss-2026-11-22"
