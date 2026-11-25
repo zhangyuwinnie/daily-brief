@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-25",
     "2026-11-24",
     "2026-11-23",
     "2026-11-22",
@@ -288,6 +289,30 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-25": {
+      "briefingIds": [
+        "rss-2026-11-25"
+      ],
+      "insightIds": [
+        "rss-2026-11-25-01-three-llm-inflection-points-in-twelve-months",
+        "rss-2026-11-25-02-delete-a-runs-data-on-demand-in-workflow-sdk",
+        "rss-2026-11-25-03-workflow-is-10x-faster-again",
+        "rss-2026-11-25-04-verifiable-social-reasoning-for-llm-assistants",
+        "rss-2026-11-25-05-an-indic-voice-agent-with-cuga",
+        "rss-2026-11-25-06-gpt-62-astra-solves-a-historical-mystery",
+        "rss-2026-11-25-07-clay-helps-sales-teams-win-with-codex-and-chatgpt",
+        "rss-2026-11-25-08-where-scientists-draw-the-line-on-ai-agents",
+        "rss-2026-11-25-09-how-to-choose-the-next-safe-step-in-application-modernization",
+        "rss-2026-11-25-10-searching-for-distant-planets-with-astra",
+        "rss-2026-11-25-11-builder-theme-ep-98-china-expert-on-jensens-return",
+        "rss-2026-11-25-12-builder-theme-thibault-sottiaux-on-to-all-the-chatgpt-business-teams-out-there-we-have-two-small-things",
+        "rss-2026-11-25-13-builder-theme-boris-cherny-on-really-excited-about-this-one-mcp-servers-can-now-ship-with-their-ow"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-24": {
       "briefingIds": [
         "rss-2026-11-24"

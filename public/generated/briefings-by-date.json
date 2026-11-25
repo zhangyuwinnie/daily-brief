@@ -55450,5 +55450,284 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-25": {
+    "date": "2026-11-25",
+    "briefings": [
+      {
+        "id": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-25",
+        "filePath": "2026-11-25.md",
+        "summaryTopline": "Three LLM inflection points in twelve months",
+        "insightIds": [
+          "rss-2026-11-25-01-three-llm-inflection-points-in-twelve-months",
+          "rss-2026-11-25-02-delete-a-runs-data-on-demand-in-workflow-sdk",
+          "rss-2026-11-25-03-workflow-is-10x-faster-again",
+          "rss-2026-11-25-04-verifiable-social-reasoning-for-llm-assistants",
+          "rss-2026-11-25-05-an-indic-voice-agent-with-cuga",
+          "rss-2026-11-25-06-gpt-62-astra-solves-a-historical-mystery",
+          "rss-2026-11-25-07-clay-helps-sales-teams-win-with-codex-and-chatgpt",
+          "rss-2026-11-25-08-where-scientists-draw-the-line-on-ai-agents",
+          "rss-2026-11-25-09-how-to-choose-the-next-safe-step-in-application-modernization",
+          "rss-2026-11-25-10-searching-for-distant-planets-with-astra",
+          "rss-2026-11-25-11-builder-theme-ep-98-china-expert-on-jensens-return",
+          "rss-2026-11-25-12-builder-theme-thibault-sottiaux-on-to-all-the-chatgpt-business-teams-out-there-we-have-two-small-things",
+          "rss-2026-11-25-13-builder-theme-boris-cherny-on-really-excited-about-this-one-mcp-servers-can-now-ship-with-their-ow"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-25-01-three-llm-inflection-points-in-twelve-months",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+        "publishedDate": "2026-11-24",
+        "title": "Three LLM inflection points in twelve months",
+        "summary": "Simon Willison 总结过去一年 LLM 与编程 Agent 能力的三个关键拐点，并以 2025 年 11 月 24 日发布的 Claude Opus 4.5 为起点，指出该模型在模糊需求下自主推理权衡、定位并修复复杂多系统 Bug 的能力显著跃升。",
+        "take": "拐点信号在于 Agent 从“按指令补全代码”转向“在模糊与多系统环境中自主决策并端到端修复问题”，工程重点应转向评估其在真实复杂任务上的自主闭环能力，而非单点代码生成质量。",
+        "topics": [
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-25-02-delete-a-runs-data-on-demand-in-workflow-sdk",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/delete-run-data-workflow-sdk",
+        "publishedDate": "2026-11-24",
+        "title": "Delete a run's data on demand in Workflow SDK",
+        "summary": "Vercel Workflow SDK新增按需删除已完成运行数据的功能，可通过Dashboard、CLI或代码调用清除输入、输出、钩子载荷及错误追踪，但保留元数据与可观测性记录。",
+        "take": "为敏感数据合规清除提供了运行级原子操作，同时通过分离载荷与元数据实现了数据最小化与可观测性的解耦。构建者需注意该操作仅作用于已完成的运行，正在执行的运行会被跳过，删除时机需与工作流生命周期对齐。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-25-03-workflow-is-10x-faster-again",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/changelog/workflows-speculative-execution",
+        "publishedDate": "2026-11-25",
+        "title": "Workflow is 10x faster, again",
+        "summary": "Vercel Workflow SDK 5.8 采用全新执行引擎，将步骤间 p75 延迟从 85ms 降至 7ms，256 个并行步骤的 fan-out 场景函数开销降低 14 倍，直接缩短持久化 AI agent 的回合时间。",
+        "take": "持久化 agent 的瓶颈正从模型推理转向编排层开销，升级至 5.8 可显著降低 step-to-step 与 fan-out 成本。前提是步骤需具备幂等性，这是充分利用新引擎并保障安全重跑的关键约束。",
+        "topics": [
+          "Agents",
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-25-04-verifiable-social-reasoning-for-llm-assistants",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The latest research from Google",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "publishedDate": "2026-11-25",
+        "title": "Verifiable Social Reasoning for LLM Assistants",
+        "summary": "Google研究提出面向LLM助手的可验证社会推理框架，通过将社会规范推理过程显式化并支持形式化验证，使助手在多方社交场景中的决策可被审计与纠错。",
+        "take": "该工作将社会推理从黑盒生成转为可验证的结构化流程，为构建高可信多智能体协作与社交合规Agent提供了工程化路径。开发者可借鉴其分离推理步骤与验证层的设计，降低LLM在复杂人际场景中的不可控输出风险。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-05-an-indic-voice-agent-with-cuga",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+        "publishedDate": "2026-11-25",
+        "title": "An Indic Voice Agent with CUGA",
+        "summary": "IBM Research 基于 CUGA 架构构建了面向印度语言（Indic）的语音智能体，将语音识别、语言理解与工具调用整合为端到端可执行的 Agent 流水线。",
+        "take": "CUGA 展示了如何把多语言语音输入与 Agent 工具编排解耦组合，为低资源语言的语音 Agent 提供了可复用的架构范式。构建者应关注其语音到动作的链路设计，而非单一模型能力，这决定了多语言 Agent 的工程可行性。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-06-gpt-62-astra-solves-a-historical-mystery",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+        "publishedDate": "2026-11-24",
+        "title": "GPT 6.2 Astra Solves a Historical Mystery",
+        "summary": "历史学教授Mark Humphries仅用极简提示，让GPT-6.2 Astra在22分钟内自主利用公开一手与二手资料锁定耶鲁Beinecke图书馆藏1808年匿名素描本的作者，并主动发现一份冷门档案论文、预测其可验证假设，最终证实该档案本身亦为加拿大与毛皮贸易史的重要新发现。",
+        "take": "这是LLM从被动检索工具转向主动研究代理的标志性案例：模型能够自主生成假设、规划证据链并定位未数字化的冷门原始档案，而非仅总结已有文本。对构建者的启示是，agentic架构的核心价值在于“假设—预测—验证”闭环与跨异构档案源的自主导航能力，而非更大的上下文窗口。",
+        "topics": [
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-07-clay-helps-sales-teams-win-with-codex-and-chatgpt",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/business/customer-stories/clay-plugins-openai",
+        "publishedDate": "2026-11-24",
+        "title": "Clay helps sales teams win with Codex and ChatGPT",
+        "summary": "Clay集成Codex与ChatGPT，利用GPT-6模型进行推理，帮助销售团队研究交易并将数据转化为市场推广策略。",
+        "take": "核心工程信号在于将推理模型直接嵌入销售数据工作流，实现从原始数据到可执行GTM策略的自动化转化。这标志着代理能力正从通用对话向垂直业务场景的深度集成演进，开发者应关注如何将推理模型作为数据管道的原生组件而非外挂工具。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-08-where-scientists-draw-the-line-on-ai-agents",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+        "publishedDate": "2026-11-25",
+        "title": "Where scientists draw the line on AI agents",
+        "summary": "Allen AI在Hugging Face博客中基于科学家调研，界定了AI agent在科研流程中的能力边界与人类监督红线。",
+        "take": "构建科研agent需明确自主执行与人类审核的交接点，而非追求全自动化；信任度取决于任务可验证性与错误代价，高风险环节应保留人类介入。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-09-how-to-choose-the-next-safe-step-in-application-modernization",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "The GitHub Blog",
+        "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+        "publishedDate": "2026-11-25",
+        "title": "How to choose the next safe step in application modernization",
+        "summary": "GitHub 提出一种应用现代化方法：先评估遗留应用，再选择有边界的改造步骤，并将该方法复用为 GitHub Copilot 的 Agent Skill。",
+        "take": "核心工程信号是：将遗留系统改造拆解为可复用的 Agent Skill，使 Copilot 能以受控范围执行现代化任务。这为开发者提供了一条路径：把架构评估与渐进式重构流程封装为可被智能体重复调用的工具链。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-10-searching-for-distant-planets-with-astra",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "OpenAI News",
+        "sourceUrl": "https://openai.com/index/searching-for-distant-planets-with-astra",
+        "publishedDate": "2026-11-24",
+        "title": "Searching for distant planets with Astra",
+        "summary": "两位业余天文学家利用OpenAI Codex与Astra，在NASA开普勒和TESS望远镜的公开数据中识别出潜在系外行星。",
+        "take": "这展示了LLM驱动的代码生成工具正将复杂科学数据分析的门槛降至业余爱好者级别，使非专业开发者能快速构建领域特定的数据处理与信号检测管线。对构建者而言，关键信号是Codex作为通用分析代理在真实科研工作流中的端到端落地能力。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Retrieval",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-11-builder-theme-ep-98-china-expert-on-jensens-return",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Unsupervised Learning",
+        "sourceUrl": "https://www.youtube.com/watch?v=gkd5eOQGASU",
+        "title": "Builder Theme: Ep 98: China Expert on Jensen’s Return",
+        "summary": "播客《Unsupervised Learning》第98期邀请China Talk的Jordan Schneider，围绕黄仁勋离开并重返NVIDIA这一事件，剖析其背后的地缘政治博弈、幕后推手及对美中AI生态的影响。",
+        "take": "该事件揭示AI芯片龙头的管理层稳定性已与美中地缘政治深度绑定，而非单纯的公司治理问题。Builder应关注政策与供应链波动对算力供给的传导风险，并将其纳入基础设施规划的假设中。",
+        "topics": [
+          "Security"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-12-builder-theme-thibault-sottiaux-on-to-all-the-chatgpt-business-teams-out-there-we-have-two-small-things",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
+        "title": "Builder Theme: Thibault Sottiaux on To all the ChatGPT Business teams out there. We have two small things...",
+        "summary": "OpenAI产品负责人Thibault Sottiaux宣布为ChatGPT Business团队提供两项临时功能：可累积的额度重置（banked reset）以及截至12月31日免费的快速模式（fast mode）。",
+        "take": "banked reset机制让团队可按需累积并延后使用额度重置，为容量调度提供了新的账户级弹性原语；free fast mode则表明OpenAI正以限时免费方式测试企业侧低延迟推理的承载与采用曲线，builder应评估将延迟敏感型工作流迁移至该模式的实际收益。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-25-13-builder-theme-boris-cherny-on-really-excited-about-this-one-mcp-servers-can-now-ship-with-their-ow",
+        "briefingId": "rss-2026-11-25",
+        "date": "2026-11-25",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Boris Cherny",
+        "sourceUrl": "https://x.com/bcherny/status/2125292098165612585",
+        "title": "Builder Theme: Boris Cherny on Really excited about this one. MCP servers can now ship with their ow...",
+        "summary": "Boris Cherny宣布MCP服务器现可自带技能(skills)一同分发，使Claude Code无需额外配置即可开箱识别并调用这些服务器。",
+        "take": "这意味着工具分发从“提供接口”演进为“接口+使用知识”一体化打包，消除了Agent侧的手动配置与提示工程开销。开发者应把MCP server视为自带领域操作说明的自描述能力单元，从而降低多工具集成的摩擦并提升Agent自主调用可靠性。",
+        "topics": [
+          "Coding Agents",
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
