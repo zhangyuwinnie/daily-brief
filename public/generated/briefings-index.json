@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-26",
     "2026-11-25",
     "2026-11-24",
     "2026-11-23",
@@ -289,6 +290,24 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-26": {
+      "briefingIds": [
+        "rss-2026-11-26"
+      ],
+      "insightIds": [
+        "rss-2026-11-26-01-quoting-jack-despain-zhou",
+        "rss-2026-11-26-02-quoting-scott-aaronson",
+        "rss-2026-11-26-03-swarms-flocks-gangs-how-to-build-train-and-evaluate-multi-agent-systems",
+        "rss-2026-11-26-04-how-cozey-turns-its-operators-into-software-builders-on-vercel",
+        "rss-2026-11-26-05-builder-theme-openais-noam-brown-why-game-theory-didnt-lead-to-general-intelligence-live-at-no-limit-finals",
+        "rss-2026-11-26-06-builder-theme-thariq-on-ive-joined-openai-im-very-proud-of-my-time-at-anthropic-and-ill",
+        "rss-2026-11-26-07-builder-theme-thibault-sottiaux-on-we-made-a-billing-mistake-at-launch-of-gpt-62-that-incorrectly-disco"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-25": {
       "briefingIds": [
         "rss-2026-11-25"

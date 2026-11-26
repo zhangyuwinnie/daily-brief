@@ -55729,5 +55729,155 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "briefings": [
+      {
+        "id": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-26",
+        "filePath": "2026-11-26.md",
+        "summaryTopline": "Quoting Jack Despain Zhou",
+        "insightIds": [
+          "rss-2026-11-26-01-quoting-jack-despain-zhou",
+          "rss-2026-11-26-02-quoting-scott-aaronson",
+          "rss-2026-11-26-03-swarms-flocks-gangs-how-to-build-train-and-evaluate-multi-agent-systems",
+          "rss-2026-11-26-04-how-cozey-turns-its-operators-into-software-builders-on-vercel",
+          "rss-2026-11-26-05-builder-theme-openais-noam-brown-why-game-theory-didnt-lead-to-general-intelligence-live-at-no-limit-finals",
+          "rss-2026-11-26-06-builder-theme-thariq-on-ive-joined-openai-im-very-proud-of-my-time-at-anthropic-and-ill",
+          "rss-2026-11-26-07-builder-theme-thibault-sottiaux-on-we-made-a-billing-mistake-at-launch-of-gpt-62-that-incorrectly-disco"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-26-01-quoting-jack-despain-zhou",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+        "publishedDate": "2026-11-26",
+        "title": "Quoting Jack Despain Zhou",
+        "summary": "Jack Despain Zhou 指出，LLM（尤其是 Claude）的广泛使用正在导致内容同质化和去个体化，例如在视频、演讲和邮件中都能识别出 Claude 生成的痕迹。",
+        "take": "这揭示了 AI 生成内容在风格和表达上的趋同性，促使开发者需要关注模型微调、风格控制或输出多样性机制，以应对实际应用中由模型默认风格主导输出内容的问题。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-26-02-quoting-scott-aaronson",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceUrl": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+        "publishedDate": "2026-11-25",
+        "title": "Quoting Scott Aaronson",
+        "summary": "Scott Aaronson 指出，LLM 正将数学研究从零星解决单个复杂性难题，转变为系统性地探索此前仅能朦胧窥见的、全新的数学真理大陆，其分辨率提升堪比显微镜或望远镜的发明。",
+        "take": "LLM 正成为数学发现的通用仪器，而非零散解题工具，这将重塑理论计算机科学与形式化证明的研究范式。工程师应关注如何将 LLM 接入形式化验证与定理证明工具链，把模型能力转化为可复现的数学探索流程。",
+        "topics": [
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-26-03-swarms-flocks-gangs-how-to-build-train-and-evaluate-multi-agent-systems",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Hugging Face - Blog",
+        "sourceUrl": "https://huggingface.co/blog/training-swarms",
+        "publishedDate": "2026-11-26",
+        "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+        "summary": "Hugging Face博客系统阐述了多智能体系统的构建、训练与评估方法论，涵盖群体（swarm）、集群（flock）、帮派（gang）等不同协作拓扑下的智能体组织范式。",
+        "take": "多智能体系统的核心工程挑战在于协作拓扑设计与评估体系，而非单体智能体能力；开发者需根据任务分解粒度选择swarm/flock/gang等架构模式，并建立针对涌现行为的定量评估指标，这标志着agent工程正从单agent提示工程转向系统级架构设计。",
+        "topics": [
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-26-04-how-cozey-turns-its-operators-into-software-builders-on-vercel",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "RSS Briefing",
+        "sourceName": "Vercel News",
+        "sourceUrl": "https://vercel.com/blog/how-cozey-turns-its-operators-into-software-builders-on-vercel",
+        "publishedDate": "2026-11-25",
+        "title": "How Cozey turns its operators into software builders on Vercel",
+        "summary": "Cozey通过让仓库、财务、客服等非工程员工在Vercel平台上自主构建并安全部署应用，将一线运营人员转变为软件构建者，目前已有六个项目（含店面）接入AI Gateway。",
+        "take": "平台工程与低门槛部署工具正在把应用开发能力下沉到业务一线，非技术角色可绕过工程排期直接解决自身问题；同时用Vercel Flags替代独立工具节省约8万美元/年，显示统一平台可同时压缩研发瓶颈与工具成本。",
+        "topics": [
+          "Security",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-26-05-builder-theme-openais-noam-brown-why-game-theory-didnt-lead-to-general-intelligence-live-at-no-limit-finals",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Training Data",
+        "sourceUrl": "https://www.youtube.com/watch?v=tRaFbDFBl_A",
+        "title": "Builder Theme: OpenAI’s Noam Brown: Why Game Theory Didn’t Lead to General Intelligence (Live at No Limit Finals)",
+        "summary": "Speaker 1 | 00:00 - 00:22 Please join me in a round of applause for Noam and Alfred. Hey, Noam. Thank you for coming. It's been a rainy day, and this is this is actually all becaus。",
+        "take": "这件事与 AI builders、podcast 直接相关，值得优先评估它是否改变了构建 agent、工具链或自动化流程的可行边界。",
+        "topics": [
+          "Agents",
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-26-06-builder-theme-thariq-on-ive-joined-openai-im-very-proud-of-my-time-at-anthropic-and-ill",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thariq",
+        "sourceUrl": "https://x.com/trq212/status/2125675533761671405",
+        "title": "Builder Theme: Thariq on I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll...",
+        "summary": "Anthropic核心工程师Thariq宣布跳槽至OpenAI，将加入一个由多位知名开发者组成的团队，参与面向十亿级用户规模的AI产品研发工作。",
+        "take": "头部实验室之间的人才流动正加速前沿技术理念与工程实践的交叉渗透，开发者应关注Thariq在新东家落地的具体产品形态与架构演进。此类核心人员迁移往往预示产品路线图与Agent能力边界的潜在变化，值得追踪其后续技术输出。",
+        "topics": [
+          "Agents"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      },
+      {
+        "id": "rss-2026-11-26-07-builder-theme-thibault-sottiaux-on-we-made-a-billing-mistake-at-launch-of-gpt-62-that-incorrectly-disco",
+        "briefingId": "rss-2026-11-26",
+        "date": "2026-11-26",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+        "title": "Builder Theme: Thibault Sottiaux on We made a billing mistake at launch of GPT-6.2 that incorrectly disco...",
+        "summary": "OpenAI产品负责人Thibault Sottiaux披露GPT-6.2发布时计费折扣配置错误，导致Astra与Sol模型用量被低估，修复后同等任务消耗配额增加，Astra触达上限速度加快40%、Sol加快25%。",
+        "take": "AI产品上线前必须对计费与配额扣减逻辑做独立验证，模型定价权重配置错误会直接扭曲用户成本预期与容量规划。对构建者而言，应按修正后的真实消耗率重新核算多模型路由与Agent工作流的单位成本，避免基于错误折扣做架构决策。",
+        "topics": [
+          "Agents",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": false
+      }
+    ]
   }
 }
