@@ -1,5 +1,6 @@
 {
   "availableDates": [
+    "2026-11-27",
     "2026-11-26",
     "2026-11-25",
     "2026-11-24",
@@ -290,6 +291,20 @@
     "2026-02-08"
   ],
   "byDate": {
+    "2026-11-27": {
+      "briefingIds": [
+        "rss-2026-11-27"
+      ],
+      "insightIds": [
+        "rss-2026-11-27-01-builder-theme-the-revolution-vs-the-renaissance-thariq-shihipar-openai",
+        "rss-2026-11-27-02-builder-theme-sam-altman-on-i-am-thankful-for-a-lot-of-things-in-life-but-my-family-is-the-best",
+        "rss-2026-11-27-03-builder-theme-thibault-sottiaux-on-banked-reset-is-online"
+      ],
+      "hasAudio": false,
+      "sourceTypes": [
+        "rss"
+      ]
+    },
     "2026-11-26": {
       "briefingIds": [
         "rss-2026-11-26"

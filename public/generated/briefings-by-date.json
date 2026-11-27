@@ -55879,5 +55879,76 @@
         "isTopSignal": false
       }
     ]
+  },
+  "2026-11-27": {
+    "date": "2026-11-27",
+    "briefings": [
+      {
+        "id": "rss-2026-11-27",
+        "date": "2026-11-27",
+        "sourceType": "rss",
+        "title": "Daily Briefing: 2026-11-27",
+        "filePath": "2026-11-27.md",
+        "summaryTopline": "Builder Theme: The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+        "insightIds": [
+          "rss-2026-11-27-01-builder-theme-the-revolution-vs-the-renaissance-thariq-shihipar-openai",
+          "rss-2026-11-27-02-builder-theme-sam-altman-on-i-am-thankful-for-a-lot-of-things-in-life-but-my-family-is-the-best",
+          "rss-2026-11-27-03-builder-theme-thibault-sottiaux-on-banked-reset-is-online"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "id": "rss-2026-11-27-01-builder-theme-the-revolution-vs-the-renaissance-thariq-shihipar-openai",
+        "briefingId": "rss-2026-11-27",
+        "date": "2026-11-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Latent Space",
+        "sourceUrl": "https://www.youtube.com/watch?v=Qe9d9dWyED0",
+        "title": "Builder Theme: The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+        "summary": "前Anthropic工程师Thariq Shihipar加入OpenAI，在AIE Code Summit上提出构建智能体的核心瓶颈已从模型智能转向开发者野心，并质疑完全无头自主改进模型的必要性。",
+        "take": "智能体开发的下一个工程拐点在于扩展任务范围与人类在环（human-in-the-loop）的架构设计，而非单纯等待更强模型；构建者应重新评估完全自主运行的边界与收益。",
+        "topics": [
+          "Agents",
+          "Evals"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-27-02-builder-theme-sam-altman-on-i-am-thankful-for-a-lot-of-things-in-life-but-my-family-is-the-best",
+        "briefingId": "rss-2026-11-27",
+        "date": "2026-11-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Sam Altman",
+        "sourceUrl": "https://x.com/sama/status/2125983591389974980",
+        "title": "Builder Theme: Sam Altman on I am thankful for a lot of things in life, but my family is the best...",
+        "summary": "Sam Altman在X上发布个人感恩节感悟，提及家庭与伴侣Ollie的支持，未涉及任何AI技术、工程架构或产品信息。",
+        "take": "该内容为个人生活分享，对AI开发者无工程信号或可操作洞察，建议从技术信息流中过滤此类噪声。",
+        "topics": [],
+        "entities": [],
+        "isTopSignal": true
+      },
+      {
+        "id": "rss-2026-11-27-03-builder-theme-thibault-sottiaux-on-banked-reset-is-online",
+        "briefingId": "rss-2026-11-27",
+        "date": "2026-11-27",
+        "sourceType": "rss",
+        "sourceLabel": "Follow Builders",
+        "sourceName": "Thibault Sottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
+        "title": "Builder Theme: Thibault Sottiaux on Banked reset is online",
+        "summary": "Thibault Sottiaux 宣布 Banked reset 功能已上线，但其推文内容未提供任何具体技术细节或架构说明。",
+        "take": "当前信息量不足，无法提炼可落地的工程要点；建议等待官方文档或代码示例发布后再评估其对构建者工作流的影响。",
+        "topics": [
+          "Evals",
+          "Tooling"
+        ],
+        "entities": [],
+        "isTopSignal": true
+      }
+    ]
   }
 }
